@@ -1,0 +1,576 @@
+/*
+Design based on Free CSS Templates
+--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/* from gnome-doc-utils */
+@import "gnome.css";
+
+@font-face {
+        font-family: 'VLPGothic';
+        src: url(http://vlgothic.dicey.org/files/VL-PGothic-Regular.woff) format("woff");
+}
+
+@font-face {
+        font-family: 'VLGothic';
+        src: url(http://vlgothic.dicey.org/files/VL-Gothic-Regular.woff) format("woff");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(/docs/vine6/images/header.jpg) repeat-x left top;
+	font-size: 13px;
+	color: #222222;
+}
+
+p {
+	/* vine-manual-base original */
+	text-indent: 1em;
+}
+
+h1, h2, h3 {
+	margin-top: 0;
+	color: #333366;
+	font-family: 'VL Pゴシック', 'VL PGothic', Arial, Tahoma, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dashed #DDDDDD;
+	color: #333366;
+}
+
+a:hover {
+	border-bottom: none;
+	border-bottom: 1px dashed #CCCCCC;
+	text-shadow: 1px 1px 12px #8888AA;
+}
+
+a img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+/* Header */
+
+#toplogo {
+	width: 980px;
+	height: 108px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+#toplogo #toplogo-title {
+	float: left;
+}
+
+#toplogo h1, #toplogo p {
+	//float: left;
+	margin: 2px 0 0 -10px;
+	color: #FFFFFF;
+}
+
+#toplogo h1 {
+	padding: 32px 0 0 0;
+	margin-left: -15px;
+	line-height: 100%;
+	text-transform: uppercase;
+	font-family: 'VLPGothic', 'VL Pゴシック', 'VL PGothic', Arial, Tahoma, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, sans-serif;
+	font-weight: normal;
+	font-size: 2.2em;
+	text-shadow: 1px 1px 8px #CCCCCC;
+}
+
+#toplogo h1 strong {
+	padding: 22px 0 0 0;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 8px #CCCCCC;
+}
+
+#toplogo p {
+	text-transform: uppercase;
+	padding: 0;
+	margin-left: -12px;
+	text-indent: 0;
+	font-family: 'VLPGothic', 'VL Pゴシック', 'VL PGothic', Arial, Tahoma, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, sans-serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 3px #CCCCCC;
+	clear: both;
+}
+
+#toplogo a {
+	border: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#toplogo img {
+	padding: 15px 0 0 0;
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+#toplogo #ads {
+	float: right;
+	margin: 0 -5px 0 0;
+	padding: 8px 0 0 0;
+}
+
+/* Menu */
+
+#menu {
+	width: 980px;
+	height: 45px;
+	margin: 0 auto;
+	padding-top: 5px;
+	font-family: 'VL Pゴシック', 'VL PGothic', Arial, Tahoma, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, sans-serif;
+}
+
+#menu ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	//margin: 0 3px 0 0;
+	background: url(/docs/vine6/images/sep.gif) no-repeat left 50%;
+	padding: 10px 15px 10px 15px;
+	border: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #444444;
+}
+
+#menu a:hover {
+	margin: 0 0 0 0;
+	padding: 10px 15px 10px 15px;
+	color: #000000;
+	border-bottom: dashed 1px;
+	font-weight: normal;
+}
+
+#menu a.left {
+	background: none;
+	margin: 0 3px 0 0;
+	padding: 10px 15px 10px 0px;
+	border: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #444444;
+}
+
+#menu a.left:hover {
+	margin: 0 3px 0 0;
+	padding: 10px 15px 10px 0px;
+	color: #000000;
+	border-bottom: dashed 1px;
+	font-weight: normal;
+}
+
+#menu .current a {
+	background: none;
+	margin: 0 3px 0 0;
+	padding: 10px 15px 10px 0px;
+	color: #000000;
+	font-weight: bold;
+}
+
+/* Wrapper */
+
+#wrapper {
+}
+
+/* Page */
+
+#page {
+	width: 980px;
+	margin: 0 auto;
+	padding: 30px 10px;
+}
+
+/* Latest Post */
+
+#latest-post {
+	padding: 20px;
+	border: 1px dashed #8D8D8D;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 628px;
+}
+
+#content-wide {
+	float: left;
+	width: 748px;
+}
+
+#content-full {
+	width: 100%;
+}
+
+.post {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	line-height: 200%;
+}
+
+#content-full h1, #content-wide h1, #content h1 {
+	font-weight: bold;
+	font-size: 28px;
+	text-shadow: 1px 1px 4px #AAAAAA;
+	border-bottom: dashed 1px #8D8D8D;
+	margin-bottom: 20px;
+}
+
+#content-full h2, #content-wide h2, #content h2 {
+	font-size: 24px;
+	text-shadow: 1px 1px 3px #AAAAAA;
+	border-bottom: dashed 1px #8D8D8D;
+	margin-bottom: 15px;
+}
+
+#content-full h3, #content-wide h3, #content h3 {
+	font-size: 18px;
+	font-weight: normal;
+	text-shadow: 1px 1px 3px #CCCCCC;
+	border-bottom: dashed 1px #ADADAD;
+	margin-bottom: 15px;
+}
+
+#content-full h4, #content-wide h4, #content h4 {
+	font-size: 16px;
+	font-weight: normal;
+	text-shadow: 1px 1px 3px #DDDDDD;
+	border-bottom: dashed 1px #CDCDCD;
+	margin-bottom: 15px;
+}
+
+#content-full ul, #content-wide ul, #content ul {
+	 //margin: 0;
+	 margin-left: 30px;
+	 padding: 0;
+}
+
+#content-full dl,ul, #content-wide dl ul, #content dl ul {
+	 margin-left: 0px;
+}
+
+
+.title {
+	margin: 0;
+	padding-bottom: 6px;
+	font-weight: normal;
+}
+
+.title a {
+	border-bottom: none;
+}
+
+.title a:hover {
+	border-bottom: 1px dashed #CCCCCC;
+}
+
+.byline {
+	border-top: 1px dashed #8D8D8D;
+	//margin: 0 0 20px 0;
+	text-transform: uppercase;
+}
+
+.news table {
+	margin-bottom: 20px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.news table th {
+	color: black;
+        border-bottom: 1px dashed #BBBBBB;
+	padding: 3px 10px 3px 5px;
+}
+
+.news table tr td {
+        color: black;
+        border-bottom: 1px dashed #BBBBBB;
+	//border-left: 1px dashed #CCCCCC;
+	padding: 3px 10px 3px 5px;
+}
+
+table.about {
+	margin-bottom: 20px;
+	text-align: left;
+	vertical-align: top;
+}
+
+table.about th {
+	color: black;
+        border-bottom: 1px dashed #BBBBBB;
+	//border-right: 1px dashed #CCCCCC;
+	padding: 3px 10px 3px 5px;
+}
+
+table.about tr td {
+        color: black;
+        border-bottom: 1px dashed #BBBBBB;
+	border-left: 1px dashed #CCCCCC;
+	padding: 3px 10px 3px 5px;
+}
+
+dl.paypal dt {
+	//border-bottom: 1px dashed #999999;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.links {
+	border-bottom: 1px dashed #8D8D8D;
+	font-size: 11px;
+}
+
+.links a {
+	display: block;
+	border: none;
+	color: #FFFFFF;
+}
+
+.links a:hover {
+}
+
+.links .more {
+	float: left;
+	padding-left: 25px;
+	padding-right: 15px;
+	background: #AAAADD url(/docs/vine6/images/links.jpg) no-repeat left 50%;
+	text-transform: uppercase;
+}
+
+.links .comments {
+	float: left;
+	padding-left: 20px;
+	background: url(/docs/vine6/images/links.jpg) no-repeat left top;
+}
+
+/* Foot Links */
+
+#footlinks {
+	text-align: center;
+}
+
+#footlinks img {
+	vertical-align: middle;
+}
+
+#footlinks a {
+	margin: 0;
+	padding: 5px;
+	border: none;
+	text-decoration: none;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+
+/* Footer */
+
+#ads-footer {
+        text-align: center;
+}
+
+#footer {
+	background: #565656 url(/docs/vine6/images/footer.jpg) repeat-x left top;
+	height: 100px;
+}
+
+#footer p {
+	margin: 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+
+#footmenu {
+	margin: 0;
+	padding-top: 30px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#footmenu a {
+	margin: 0;
+	padding: 10px 15px 0px 15px;
+	border: none;
+	text-decoration: none;
+	font-size: 11px;
+	color: #FFFFFF;
+}
+
+#download {
+	margin-bottom: 30px;
+}
+
+.getbutton {
+        color: 666699;
+        background-color: #BBBBDD;
+        padding: 10px 10px 5px 10px;
+        margin: 5px 15px 0px 15px;
+        width: 230px;
+        border-width: 1px 1px 1px 1px;
+        border-color: #666699;
+        border-style: solid;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+	float: left;
+	text-shadow: 1px 1px 8px #EEEEFF;
+}
+
+.getbutton div.sub {
+        font-size: 8px;
+        color: #333366;
+	text-shadow: 1px 1px 8px #EEEEFF;
+}
+
+blockquote {
+        border-width: 0px 0px 0px 5px;
+        border-color: #DDDDDF;
+        border-style: solid;
+	margin: 15px 30px 15px 30px;
+	padding-left: 10px;
+}
+
+/* errata */
+.errata li {
+	margin-left: 40px;
+}
+
+.errata dl dt {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.errata table {
+	width: 100%;
+}
+
+.errata th {
+	text-align: left;
+	border-bottom: 1px dashed #888888;
+}
+
+.errata td {
+	margin-left: 20px;
+	font-size: 14px;
+	border-bottom: 1px dashed #EFEFEF;
+}
+
+.errata td.title {
+	width: 70%;
+}
+
+.errata td.date {
+	width: 30%;
+}
+
+.news table {
+	vertical-align: bottom;
+}
+
+.news table tr td.title {
+	width: 80%;
+	vertical-align: top;
+}
+
+.news table tr td.date {
+	width: 20%;
+	vertical-align: top;
+}
+
+.news dl dt {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+
+table.erratalimit {
+        width: 50%;
+	border: 1px solid #DDDDDD;
+}
+
+table.erratalimit th {
+	text-align: left;
+	border-bottom: 1px dashed #888888;
+}
+
+table.erratalimit td {
+	margin-left: 20px;
+	font-size: 14px;
+	border-bottom: 1px dashed #EFEFEF;
+}
+
+dl dt {
+	font-weight: bold;
+}
+
+pre.screen {
+	background-color: #444444;
+	color: #F7F7F7;
+	padding: 3px;
+	padding-left: 10px;
+	border-left: solid 10px #BBBBBB;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+

@@ -1,0 +1,6 @@
+2014-04-03 12:48:21,541 - ubuntuone.controlpanel.backend - INFO - ControlBackend: instance started.
+2014-04-03 12:48:21,663 - ubuntuone.controlpanel.backend - INFO - set_public_files_list_handler: args (<ubuntuone.controlpanel.backend.ControlBackend object at 0x1b8ed50>, <bound method ShareLinksPanel._load_public_files of <ubuntuone.controlpanel.gui.qt.share_links.ShareLinksPanel object at 0x1b9fb00>>), kwargs {}.
+2014-04-03 12:48:21,815 - ubuntuone.controlpanel.qt.gui - INFO - Updates available? None
+2014-04-03 12:48:22,051 - ubuntuone.controlpanel.qt.wizard - INFO - initializePage: args (<ubuntuone.controlpanel.gui.qt.wizard.UbuntuOneWizard object at 0x1f15050>, 1), kwargs {}.
+2014-04-03 12:48:22,051 - ubuntuone.controlpanel.qt.wizard - INFO - UbuntuOneWizard.initializePage: new page is <ubuntuone.controlpanel.gui.qt.wizard.SignInPage object at 0x1f16770>, new button layout is [9, 4], new side widget stage is 1.
+2014-04-03 12:48:22,954 - ubuntuone.controlpanel.backend - INFO - get_public_files: args (<ubuntuone.controlpanel.backend.ControlBackend object at 0x1b8ed50>,), kwargs {}.

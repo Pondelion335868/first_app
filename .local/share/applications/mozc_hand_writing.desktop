@@ -1,0 +1,8 @@
+[Desktop Entry]
+Comment=mozc hand writing
+Terminal=false
+Name=Mozc 手書き文字認識
+Exec=/usr/lib/mozc/mozc_tool --mode=hand_writing
+Type=Application
+Icon=/usr/share/ibus-mozc/tool.png
+Keywords=tegaki

@@ -1,0 +1,7 @@
+[user]
+	name = Nakajima
+	email = na_masabon@yahoo.co.jp
+[alias]
+	co = checkout
+[core]
+	editor = gedit -w

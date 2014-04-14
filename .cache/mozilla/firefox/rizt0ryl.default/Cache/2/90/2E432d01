@@ -1,0 +1,839 @@
+//
+// --------------------------------------------------------------------
+//  Copyright (c) 2007 - 2012 Business Search Technologies Corporation
+// --------------------------------------------------------------------
+//
+
+function popWord(param) {
+  var self = this;
+  if (param === undefined || param === null) param = {};
+
+  self.url    = 'http://popword-api.probo.biz/';
+  self.css    = 'http://popword-js.probo.biz/popword.css';
+  self.durl   = 'http://log.probo.biz/';
+  self.ssl_url  = 'https://popword-api.probo.biz/';
+  self.ssl_css  = 'https://popword-js.probo.biz/popword.css';
+  self.ssl_durl = 'https://log.probo.biz/';
+
+
+  self.disable = 0;
+  self.interval = 200;
+  self.param = param;
+
+  self.targetid = 'query';
+  if (param.targetid !== undefined ) {
+    self.targetid = param.targetid;
+  }
+  self.targetname = null;
+  if (param.query !== undefined) {
+    self.targetname = param.query;
+  }
+  self.uid = '';
+  if (param.uid !== undefined) {
+    self.uid = param.uid;
+  }
+  self.maxitems = '';
+  if (param.show_count !== undefined ) {
+    self.maxitems = param.show_count;
+  }
+  if (param.maxitems !== undefined) {
+    self.maxitems = param.maxitems;
+  }
+  self.colnum = '1';
+  if (param.colnum !== undefined) {
+    self.colnum = param.colnum;
+  }
+  self.cssid = 'popword';
+  if (param.cssid !== undefined) {
+    self.param.fit_searchbox_height = 'off';
+    self.param.fit_searchbox_width  = 'off';
+    self.param.fit_boxparent_height = 'off';
+    self.param.fit_boxparent_width  = 'off';
+    self.cssid = param.cssid;
+  }
+  if (param.css !== undefined) {
+    self.css = param.css;
+  }
+  self.enter = '';
+  if (param.enter !== undefined) {
+    self.enter = param.enter;
+  }
+  self.click = '';
+  if (param.click !== undefined) {
+    self.click = param.click;
+  }
+
+  self.ua = navigator.userAgent.toLowerCase();
+  self.vr = navigator.appVersion.toLowerCase();
+  if (param.css_ie6 !== undefined && /msie *6/.test(self.ua)) self.css = param.css_ie6;
+  if (param.css_ie7 !== undefined && /msie *7/.test(self.ua)) self.css = param.css_ie7;
+  if (param.css_ie8 !== undefined && /msie *8/.test(self.ua)) self.css = param.css_ie8;
+  if (param.css_ie9 !== undefined && /msie *9/.test(self.ua)) self.css = param.css_ie9;
+  if (param.css_ff !== undefined && /firefox/.test(self.ua)) self.css = param.css_ff;
+  if (param.css_gc !== undefined && /chrome/.test(self.ua))  self.css = param.css_gc;
+  if (param.css_op !== undefined && /opera/.test(self.ua))   self.css = param.css_op;
+  if (param.css_sf !== undefined && /applewebkit/.test(self.ua))  self.css = param.css_sf;
+
+  if ('https:' == document.location.protocol) {
+      self.url  = self.ssl_url;
+      self.css  = self.ssl_css;
+      self.durl = self.ssl_durl;
+  }
+
+  self.query = '';
+  self.list = [];
+  self.menu = null;
+  self.menu_top = null;
+  self.menu_bottom = null;
+  self.current = null;
+  self.target = document.getElementById(self.targetid);
+  if (self.targetname !== null) {
+    self.target = document.getElementsByName(self.targetname)[0];
+  }
+  self.cbfunc = 'bst_popword_callback_' + (new Date()).getTime();
+  self.tbd = null;
+  self.track = 0;
+
+  self.initialize = function () {
+    self.f_createtbl();
+    self.f_construct();
+    var x = self.target;
+    x.setAttribute('autocomplete', 'off');
+    self.bindevent(x, "focus",   self.h_focus);
+    self.bindevent(x, "blur",    self.h_blur);
+    self.bindevent(x, "keyup",   self.h_keyup);
+    self.bindevent(x, "keydown", self.h_keydown);
+    self.query = self.target.value;
+    self.f_hide();
+    self.poling();
+  };
+
+  self.f_createtbl = function () {
+    self.menu = document.createElement("table");
+    self.menu.setAttribute("id", self.cssid);
+    var pp = self.target.parentNode;
+    pp.insertBefore(self.menu, self.target.nextSibling);
+    self.menu.style.position = "absolute";
+    self.menu.style.display = "inline";
+    var tbd = document.createElement("tbody");
+    self.menu.appendChild(tbd);
+    self.tbd = tbd;
+  };
+
+  self.f_construct = function () {
+    var tr;
+    var tbd = document.createElement("tbody");
+    for (i = 0; i < self.list.length; i++) {
+      var rec = self.list[i];
+      tr = document.createElement("tr");
+        var val = rec;
+        var td = document.createElement("td");
+        document.all ? td.innerText = val : td.textContent = val;
+        if (self.param.fit_searchbox_width !== "off") {
+          td.style.width = self.getWidth(self.target);
+        }
+        tr.appendChild(td);
+      self.bindevent (tr, "mousedown", self.h_menu_mousedown);
+      self.bindevent (tr, "mouseup", self.h_menu_mouseup);
+      self.bindevent (tr, "mouseover", self.h_menu_mouseover);
+      self.bindevent (tr, "mouseout", self.h_menu_mouseout);
+      tbd.appendChild(tr);
+      if (i == 0) self.menu_top = tr;
+    }
+    self.menu_bottom = tr;
+    if (self.param.fit_searchbox_width !== "off") {
+      self.menu.style.width = self.getWidth(self.target);
+    }
+    if (self.param.fit_boxparent_height !== "off") {
+      self.menu.style.marginTop = self.getVOffset2(self.target);
+      self.menu.style.marginLeft = self.getHOffset(self.target);
+    }
+    if (self.param.fit_searchbox_height !== "off") {
+      self.menu.style.marginTop = self.getVOffset(self.target);
+      self.menu.style.marginLeft = self.getHOffset(self.target);
+    }
+    self.menu.replaceChild(tbd, self.tbd);
+    self.tbd = tbd;
+  };
+
+  self.f_show = function () {
+    if (!self.menu) return;
+    if (self.disable > 0) return;
+    if (self.list.length == 0) return;
+    self.menu.setAttribute("class", self.cssid + "_visible");
+    self.menu.style.visibility = "visible";
+    self.menu.style.display = "inline";
+  };
+
+  self.f_hide = function () {
+    if (!self.menu) return;
+    self.menu.setAttribute('class', self.cssid + "_hidden");
+    self.menu.style.visibility = "hidden";
+    self.menu.style.display = "none";
+  };
+
+  self.f_up = function () {
+    if (!self.menu) return;
+    var c = self.current;
+    if (c != null) c = c.previousSibling;
+    if (c == null) c = self.menu_bottom;
+    self.f_highlight(c);
+  };
+
+  self.f_down = function () {
+    if (!self.menu) return;
+    var c = self.current;
+    if (c != null) c = c.nextSibling;
+    if (c == null) c = self.menu_top;
+    self.f_highlight(c);
+  };
+
+  self.f_highlight = function (e) {
+    var r = self.menu.getElementsByTagName('tr');
+    var i;
+    for (i = 0; i < r.length; i++) {
+      var c = '\v' == 'v' ? 'className' : 'class';
+      if (document.documentMode == 8) c = 'class';
+      if (r[i] === e) {
+        self.current = e;
+        r[i].setAttribute(c , self.cssid + '_selected');
+      } else {
+        r[i].removeAttribute(c);
+      }
+    }
+  };
+
+  self.f_select = function () {
+    var e = self.current;
+    if (e === null) return;
+    var d = e.getElementsByTagName('td');
+    var t = document.all ? d[0].innerText : d[0].textContent;
+    if(self.popword_click){ self.popword_click( t ); }
+    self.selected = 1;
+    self.target.value = t;
+    self.query = t;
+  };
+
+  self.f_submit = function () {
+    var t = self.target;
+    while (t.tagName.toLowerCase() !== 'form') {
+      t = t.parentNode;
+    }
+    if (t.submit) t.submit();
+  };
+
+  self.h_menu_mouseover = function () {
+    var e = document.all ? event.srcElement.parentNode : this;
+    self.f_highlight(e);
+  };
+
+  self.h_menu_mouseout = function () {
+    var e = document.all ? event.srcElement.parentNode : this;
+    self.f_highlight(null);
+    self.current = null;
+  };
+
+  self.h_menu_mouseup = function () {
+    self.endtrack();
+    self.f_select();
+    self.update();
+    self.target.focus();
+   if (self.click == 'submit') {
+      self.f_select();
+      self.f_submit();
+    }
+  };
+
+  self.h_menu_mousedown = function () {
+    var e = document.all ? event.srcElement.parentNode : this;
+    self.current = e;
+    self.starttrack();
+//    if (self.click == 'submit') {
+//      self.f_select();
+//      self.f_submit();
+//    }
+  };
+
+  self.h_focus = function () {
+    self.current = null;
+    self.update();
+    self.f_highlight(null);
+    self.f_show();
+  };
+
+  self.h_blur = function () {
+    if (self.track != 0) return;
+    self.f_hide();
+    self.current = null;
+    self.f_highlight(null);
+  };
+
+  self.h_keydown = function (e) {
+    var k = e.keyCode ? e.keyCode : e.charCode;
+    if (k == 27) {
+      self.f_hide();
+      //self.disable = 1;
+      return;
+    }
+    else if (k == 38) self.f_up();
+    else if (k == 40) self.f_down();
+    else if (k == 13) {
+      if (self.current === null) return;
+      self.f_select();
+      self.update();
+      if (self.enter !== 'submit') {
+        self.cancelevent (e);
+      }
+      self.f_hide();
+      return;
+    }
+    else if (k == 39) {
+      if (self.current === null) return;
+      self.f_select();
+      self.update();
+    }
+    self.f_show();
+  };
+
+  self.h_keyup = function (e) {
+    var k = e.keyCode;
+  };
+
+  self.starttrack = function () {
+    self.track = 1;
+    var e = document.all ? document.body : document;
+    self.bindevent(e, "mouseup", self.h_menu_mouseup);
+  };
+
+  self.endtrack = function () {
+    var e = document.all ? document.body : document;
+    self.unbindevent(e, "mouseup", self.h_menu_mouseup);
+    self.track = 0;
+  };
+
+  self.bindevent = function (target, event, handler) {
+    if (target.addEventListener) {
+      target.addEventListener (event, handler, false);
+    } else {
+      target.attachEvent ("on" + event, handler);
+    }
+  };
+
+  self.unbindevent = function (target, event, handler) {
+    if (target.removeEventListener) {
+      target.removeEventListener (event, handler, false);
+    } else {
+      target.detachEvent ("on" + event, handler);
+    }
+  };
+
+  self.cancelevent = function (event) {
+    if (event.preventDefault) {
+      event.preventDefault();
+    } else {
+      window.event.returnValue = false;
+    }
+  };
+
+  self.cancelbubble = function (event) {
+    if (event.stopPropagation) {
+      event.stopPropagation();
+    } else {
+      window.event.cancelBubble = true;
+    }
+  };
+
+  self.dispatchKeydown = function (keycode) {
+    if (document.all) {
+      var evt = document.createEventObject();
+      evt.keyCode = keycode;
+      self.target.fireEvent("onkeydown", evt);
+    }
+    else {
+      var evt = document.createEvent("KeyboardEvent");
+      evt.initKeyEvent("keydown", true, true, null, false, false, false, false, keycode, 0);
+      self.target.dispatchEvent(evt);
+    }
+  };
+
+  self.getwidth = function (e) {
+    if (document.defaultView) {
+      var t = document.defaultView.getComputedStyle(e, null);
+      return t.getPropertyValue('width');
+    }
+    else if (e.offsetWidth) {
+      return e.offsetWidth;
+    }
+    return 0;
+  };
+
+  self.getheight = function (e) {
+    if (document.defaultView) {
+      var t = document.defaultView.getComputedStyle(e, null);
+      return t.getPropertyValue('height');
+    }
+    else if (e.offsetHeight) {
+      return e.offsetHeight;
+    }
+    return 0;
+  };
+
+  self.getBorderWidth = function (e) {
+    var l = 0, r = 0, t = 0, b = 0;
+    if (e.currentStyle) {
+      l = e.currentStyle.borderLeftWidth;
+      r = e.currentStyle.borderRightWidth;
+      t = e.currentStyle.borderTopWidth;
+      b = e.currentStyle.borderBottomWidth;
+    }
+    else if (window.getComputedStyle) {
+      var x = window.getComputedStyle(e, null);
+      l = x.borderLeftWidth;
+      r = x.borderRightWidth;
+      t = x.borderTopWidth;
+      b = x.borderBottomWidth;
+    }
+    l = parseInt(l);
+    r = parseInt(r);
+    t = parseInt(t);
+    b = parseInt(b);
+    if (isNaN(l)) l = 0;
+    if (isNaN(r)) r = 0;
+    if (isNaN(t)) t = 0;
+    if (isNaN(b)) b = 0;
+    return {'left':l, 'right':r, 'top':t, 'bottom':b};
+  };
+
+  self.getMargin = function (e) {
+    var l = 0, r = 0, t = 0, b = 0;
+    if (e.currentStyle) {
+      l = e.currentStyle.marginLeft;
+      r = e.currentStyle.marginRight;
+      t = e.currentStyle.marginTop;
+      b = e.currentStyle.marginBottom;
+    }
+    else if (window.getComputedStyle) {
+      var x = window.getComputedStyle(e, null);
+      l = x.marginLeft;
+      r = x.marginRight;
+      t = x.marginTop;
+      b = x.marginBottom;
+    }
+    l = parseInt(l);
+    r = parseInt(r);
+    t = parseInt(t);
+    b = parseInt(b);
+    if (isNaN(l)) l = 0;
+    if (isNaN(r)) r = 0;
+    if (isNaN(t)) t = 0;
+    if (isNaN(b)) b = 0;
+    return {'left':l, 'right':r, 'top':t, 'bottom':b};
+  };
+
+  self.getPadding = function (e) {
+    var l = 0, r = 0, t = 0, b = 0;
+    if (e.currentStyle) {
+      l = e.currentStyle.paddingLeft;
+      r = e.currentStyle.paddingRight;
+      t = e.currentStyle.paddingTop;
+      b = e.currentStyle.paddingBottom;
+    }
+    else if (window.getComputedStyle) {
+      var x = window.getComputedStyle(e, null);
+      l = x.paddingLeft;
+      r = x.paddingRight;
+      t = x.paddingTop;
+      b = x.paddingBottom;
+    }
+    l = parseInt(l);
+    r = parseInt(r);
+    t = parseInt(t);
+    b = parseInt(b);
+    if (isNaN(l)) l = 0;
+    if (isNaN(r)) r = 0;
+    if (isNaN(t)) t = 0;
+    if (isNaN(b)) b = 0;
+    return {'left':l, 'right':r, 'top':t, 'bottom':b};
+  };
+
+  self.getLineheight = function (e) {
+    var r = 0;
+    if (e.currentStyle) {
+      r = e.currentStyle.lineHeight;
+    }
+    else if (window.getComputedStyle) {
+      r = window.getComputedStyle(e, null).lineHeight;
+    }
+    r = parseInt(r);
+    if (isNaN(r)) r = 0;
+    return r;
+  };
+
+  self.getWidth = function (e) {
+    var w = parseInt(self.getwidth(e));
+    var b = self.getBorderWidth(e);
+    var m = self.getMargin(e);
+    var p = self.getPadding(e);
+    var r = w + b.left + b.right + p.left + p.right;
+    if (/msie */.test(self.ua)) {
+      if (document.documentMode ) {
+        if (document.documentMode < 9) r = w;
+      } else {
+        r = w;
+      }
+    }
+    return r + "px";
+  };
+
+  self.getVOffset = function (e) {
+    var h = parseInt(self.getheight(e));
+    var b = self.getBorderWidth(e);
+    var m = self.getMargin(e);
+    var p = self.getPadding(e);
+    var l = self.getLineheight(e);
+    var r = h + b.top + b.bottom + p.top + p.bottom + m.top;
+    if (/msie */.test(self.ua)) {
+      if (document.documentMode ) {
+        if (document.documentMode < 9) r = h + m.top;
+      } else {
+        r = h + m.top;
+      }
+    }
+    return r + "px";
+  };
+
+  self.getVOffset2 = function (e) {
+    var r = 0;
+    var c = e.parentNode.firstChild;
+    while (c != e.parentNode.lastChild) {
+      if (c.nodeType == 1 && c.getAttribute('id') !== self.cssid) {
+        var i = parseInt(self.getVOffset (c));
+        if (r < i) r = i;
+      }
+      c = c.nextSibling;
+    }
+    return r + "px";
+  };
+
+  self.getHOffset = function (e) {
+    var w = parseInt(self.getwidth(e));
+    var b = self.getBorderWidth(e);
+    var m = self.getMargin(e);
+    var p = self.getPadding(e);
+    var r = w + b.left + b.right + m.right + p.left + p.right;
+    if (/msie */.test(self.ua)) {
+      if (document.documentMode ) {
+        if (document.documentMode < 9) r = w + m.right;
+      } else {
+        r = w + m.right;
+      }
+    }
+    return '-' + r + "px";
+  };
+
+  self.update = function () {
+    var r = '';
+    if (/msie *6/.test(self.ua)) r = '&o=' + (new Date()).getTime();
+    if (/msie *7/.test(self.ua)) r = '&o=' + (new Date()).getTime();
+    var url = this.url +
+              '?callback=' + self.cbfunc +
+              '&id=' + self.uid +
+              '&k=' + encodeURIComponent(self.query) +
+              '&c=' + self.maxitems + r;
+    if(self.selected === 1){
+      url += '&s=1';
+      self.selected = 0;
+    }
+    window[self.cbfunc] = function (res) {
+      self.callback (res);
+    };
+    var sc = document.createElement('script');
+    sc.src = url;
+    sc.type = 'text/javascript';
+    sc.charset = 'utf-8';
+    //sc.async = true;
+    var h = document.getElementsByTagName('head');
+    if(self.query != "") h[0].appendChild(sc);
+  };
+
+  self.callback = function (res) {
+    self.current = null;
+    if (res.list === null || res.list.length === 0) {
+      self.list = [];
+      self.f_construct ();
+      self.f_hide();
+    } else {
+      self.list = res.list;
+      self.f_construct();
+      self.f_show();
+    }
+  };
+
+  self.poling = function () {
+    if (self.query === self.target.value) {
+      ;
+    }
+    else if (self.target.value == '') {
+      self.query = '';
+      self.current = null;
+      self.list = [];
+      self.f_construct ();
+      self.f_hide ();
+    } else {
+      self.query = self.target.value;
+      self.current = null;
+      self.update ();
+      self.f_construct ();
+      self.f_show ();
+    }
+    setTimeout (self.poling, self.interval);
+  };
+
+  self.initialize();
+
+  self.defaultword = '';
+  self.hitcount = 0;
+  self.user = '';
+
+  self.max_record = 10;
+  self.stop_cookie_len = 3800;
+  self.getCookieObjs = function (tgt) {
+    tgt += "=";
+    var objs = [];
+    var str = document.cookie + ';';
+    var ps = str.indexOf (tgt);
+    if (ps == -1) return objs;
+    var pe = str.indexOf (';', ps);
+    var s  = str.substring (ps + tgt.length, pe).split (':');
+    var i, k, v, n, t, o;
+    for (i = 0; i < s.length; i++) {
+      k = unescape (s[i]);
+      i++;
+      v = unescape (s[i]);
+      t = k.split ('_');
+      k = t[0];
+      n = parseInt(t[1], 10);
+      if (objs[n] === undefined) {
+        o = new Object;
+        objs[n] = o;
+      }
+      o[k] = v;
+    }
+    return objs;
+  };
+
+  self.setCookieObjs = function (tgt, objs) {
+    var i, k, v, o, s, t, m, str = '';
+    m = objs.length;
+    if (m > self.max_record) {
+      m = self.max_record;
+    }
+    for (i = 0; i < m; i++) {
+      o = objs[i];
+      t = '';
+      for (k in o) {
+        v = o[k];
+        k += '_' + Number(i).toString();
+        s = escape(k) + ':' + escape (v);
+        if (t != '') t += ':';
+        t += s;
+      }
+      if (str.length + s.length > self.stop_cookie_len) break;
+      if (str != '') str += ':';
+      str += t;
+    }
+    var edt = "Wed, 01-Jan-2020 11:22:33 GMT;";
+    var c = tgt + "=" + str + ";expires=" + edt;
+    if (self.domain !== '') {
+      c += ";domain=" + self.domain + ";path=/";
+    }
+    if (self.secure !== '') {
+      c += ';secure';
+    }
+    document.cookie = c;
+  };
+
+  self.submitObjs2 = function (o, t) {
+    var url = self.durl + '?';
+    var v, p = '';
+    for (k in o) {
+      v = o[k];
+      if (p.length > 0) p += '&';
+      p += escape(k) + '=' + escape(v);
+    }
+    p += '&tp=' + t + '&o=' + self.user;
+    var sc = document.createElement('script');
+    sc.src = url + p;
+    sc.type = 'text/javascript';
+    sc.charset = 'utf-8';
+    //sc.async = true;
+    var h = document.getElementsByTagName('head');
+    h[0].appendChild(sc);
+  };
+
+  self.submitObjs = function (o, t) {
+    var url = self.durl + '?';
+    var v, p = '';
+    for (k in o) {
+      v = o[k];
+      if (p.length > 0) p += '&';
+      p += escape(k) + '=' + escape(v);
+    }
+    p += '&tp=' + t + '&o=' + self.user;
+    p = url + p;
+    httpObj = null;
+    try {
+      httpObj = new XMLHttpRequest();
+    } catch (e) {
+      try {
+        httpObj = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e) {}
+    }
+    if (httpObj === null) return;
+    httpObj.open ('get', p, false);
+    httpObj.send ();
+  };
+
+  self.add_search = function (word, old) {
+    var prev = self.getCookieObjs('PBHS');
+    var next = [];
+    var i, j= 1, o;
+    o = new Object;
+    o['w'] = word;
+    o['p'] = old;
+    d = new Date;
+    o['d'] = '' + d.getFullYear() + '/' + d.getMonth() + '/' + d.getDate()
+      + '-' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+    o['h'] = self.hitcount;
+    for (i = 0; i < self.max_record; i++) {
+      if (prev[i] === undefined ) continue;
+      if (prev[i].w === word) continue;
+      next[j] = prev[i];
+      j++;
+    }
+    o['U'] = self.uid;
+    o['T'] = 'popword';
+    o['L'] = document.location;
+    next[0] = o;
+    self.submitObjs (o, 's');
+    self.setCookieObjs('PBHS', next);
+  };
+
+  self.add_click = function (title, url, word, image) {
+    var prev = self.getCookieObjs('PBHC');
+    var next = [];
+    var i, j = 1, o;
+    o = new Object;
+    o['t'] = title;
+    o['u'] = url;
+    if (word !== undefined) {
+      o['w'] = word;
+    }
+    if (image !== undefined){
+      o['i'] = image;
+    }
+    o['U'] = self.uid;
+    o['T'] = 'popword';
+    o['L'] = document.location;
+    for (i = 0; i < self.max_record; i++) {
+      if (prev[i] === undefined ) continue;
+      if (prev[i].u === url) continue;
+      next[j] = prev[i];
+      j++;
+    }
+    d = new Date;
+    o['d'] = '' + d.getFullYear() + '/' + d.getMonth() + '/' + d.getDate()
+      + '-' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
+    next[0] = o;
+    self.submitObjs (o, 'c');
+    self.setCookieObjs('PBHC', next);
+  };
+
+  self.update_user = function () {
+    var objs = self.getCookieObjs ("PBUS");
+    var o,d;
+    if (objs.length === 0) {
+      o = new Object;
+      d = new Date;
+      o['id'] = 'pb' + Math.random();
+      objs.push(o);
+    }
+    self.user = objs[0].id;
+    self.setCookieObjs("PBUS", objs);
+  };
+
+  self.searchlog = function (e) {
+    self.cancelbubble(e);
+    var w = document.getElementById(self.targetid).value;
+    if (w !== '') {
+      self.add_search (w, self.defaultword);
+    }
+    return true;
+  };
+
+  self.clicklog = function (e) {
+    var t = e.getAttribute ('title');
+    if (t === undefined || t === null || t ==='') {
+      t = document.all ? e.innerText : e.textContent;
+    }
+    var h = e.getAttribute ('href');
+    var i = e.getAttribute ('src');
+    self.add_click (t, h, self.defaultword, i);
+    self.show_click_box ('pbClickHistory');
+    return false;
+  };
+
+  self.init = function () {
+    var i = 0;
+    var el = [];
+    var ea = document.getElementsByTagName('a');
+    var ec, h;
+
+    if (self.css != null) {
+      var c = document.createElement('link');
+      c.setAttribute('rel', 'stylesheet');
+      c.setAttribute('type', 'text/css');
+      c.setAttribute('href', self.css);
+      h = document.getElementsByTagName ('head')[0];
+      h.appendChild(c);
+    }
+
+    self.update_user ();
+    self.defaultword = document.getElementById(self.targetid).value;
+
+    ec = document.getElementById(self.counterid);
+    if (ec !== undefined && ec !== null) {
+      self.hitcount = document.all ? ec.innerText : ec.textContent;
+    }
+
+    for (i = 0; i < ea.length; i++) {
+      if (ea[i].getAttribute('className') == 'pbClick'
+        || ea[i].getAttribute('class') == 'pbClick') {
+        el.push (ea[i]);
+      }
+    }
+    for (i = 0; i < el.length; i++) {
+      self.bindevent (el[i],
+              "mousedown",
+              (function (e) {
+                 return function (){ self.clicklog (e);};
+               }) (el[i])
+              );
+    }
+
+    el = document.getElementById (self.targetid);
+            while (el.tagName.toLowerCase() !== 'form') {
+              if (!el.parentNode) break;
+      el = el.parentNode;
+    }
+    //self.bindevent (el, "submit", self.searchlog);
+
+    // self.show_history_box ('pbSearchHistory');
+    // self.show_click_box ('pbClickHistory');
+  };
+
+  self.init();
+
+}
+
+

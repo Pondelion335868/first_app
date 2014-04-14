@@ -1,0 +1,3960 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-31J">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" src="/15/pc/js/common.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15744888-2']);
+  _gaq.push(['_setDomainName', '.mynavi.jp']);
+  _gaq.push(['_trackPageview']);
+  var encryptedMemberId = "jtaz6Ln0flC6NKGwUxWcKg";  
+  if(encryptedMemberId != "") {
+	  _gaq.push(['_setCustomVar', 50, 'customer', encryptedMemberId, 2]);
+  }
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+try{
+  var smartPhoneDefaultCssPath = "/15/pc/css/smartphone.css";
+  var smartPhoneCssPath = smartPhoneDefaultCssPath.substr(0,smartPhoneDefaultCssPath.lastIndexOf("/")+1);
+  var staticpath = smartPhoneCssPath ;
+}catch(e){}
+</script>
+
+
+
+
+
+<script type="text/javascript" src="/15/pc/js/submit.js"></script>
+<script language="JavaScript" src="/15/pc/js/stuCommon.js"></script>
+<script type="text/javascript" src="/15/pc/js/scroll/scrollsmoothly.js"></script>
+<script type="text/javascript" src="/15/pc/js/accordion/accordion.js"></script>
+
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+
+<meta name="keywords" content="マイナビ,就職情報">
+<link rel="alternate" media="handheld" href="http://j.mynavi.jp">
+
+
+
+	
+	
+	
+	
+		<title>マイナビ2015 - メッセージ - お知らせ箱</title>
+	
+	
+	
+	
+
+
+<script language="JavaScript" src="/15/pc/js/extend.js"></script>
+
+
+<script type="text/javascript" src="/15/pc/js/jquery.js"></script>
+<script type="text/javascript" src="/15/pc/js/trigger/jquery.pc.trigger.js"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function () {
+
+	
+	if (navigator.userAgent.indexOf("MSIE",0) > 0) {
+		var movePage = document.getElementById("movePage").value;
+		var currentPage = document.getElementById("currentPage").value;
+		if (movePage != currentPage) {
+			document.getElementById("movePage").value =  currentPage;
+		}
+	}
+});
+
+
+function checkAll(aChkAll) {
+	if(aChkAll.checked){
+		MC.checkbox.checkedAll("check");
+		for(i = 0; i < document.getElementsByName("check").length; i++){
+			var trId = document.getElementById("data_" + i).className ;
+			
+			document.getElementById("data_" + i).className = trId +" checked";
+		}
+	}else{
+		MC.checkbox.clearAll("check");
+		for(i = 0; i < document.getElementsByName("check").length; i++){
+			var trId = document.getElementById("data_" + i).className ;
+			var value = trId.replace(/ checked/g, "");
+			document.getElementById("data_" + i).className = value;
+		}
+	}
+
+	return false;
+}
+
+
+function changeColor(aRow,aId) {
+	var trId = document.getElementById("data_" + aId).className ;
+	if (aRow.checked) {
+		document.getElementById("data_" + aId).className = trId+" checked";
+	}else {
+		var value = trId.replace(/ checked/g, ""); 
+		document.getElementById("data_" + aId).className = value;
+	}
+}
+
+
+function prvPgLnkClick(){
+	var formAcrtion = document.getElementById("message").action;
+	var movePage = document.getElementById("movePage").value;
+	document.getElementById("movePage").value="PREV";
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doSearchMessageList/";
+	document.getElementById("message").submit();
+	document.getElementById("movePage").value = movePage;
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+
+function nxtPgLnkClick(){
+	var formAcrtion = document.getElementById("message").action;
+	var movePage = document.getElementById("movePage").value;
+	document.getElementById("movePage").value="NEXT";
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doSearchMessageList/";
+	document.getElementById("message").submit();
+	document.getElementById("movePage").value = movePage;
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+
+function pgLnkClick(aPgNo){
+	var formAcrtion = document.getElementById("message").action;
+	var movePage = document.getElementById("movePage").value;
+	document.getElementById("movePage").value=aPgNo;
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doSearchMessageList/";
+	document.getElementById("message").submit();
+	document.getElementById("movePage").value = movePage;
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+function allLnkClick(){
+	var formAcrtion = document.getElementById("message").action;
+	document.getElementById("messageCond").value="";
+	document.getElementById("industryCond").value="";
+	document.getElementById("bookmarkCond").value="";
+	document.getElementById("optionCond").value="";
+	if(document.getElementById("corpNameCond") != null) {
+		document.getElementById("corpNameCond").value="";
+	}
+	document.getElementById("corpNameCondTemp").value="";
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doSearchMessageList/";
+	document.getElementById("message").submit();
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+
+function memIndLnkClick(aIndCondCd){
+	var formAcrtion = document.getElementById("message").action;
+	if(aIndCondCd != document.getElementById("industryCond").value){
+		document.getElementById("industryCond").value=aIndCondCd;
+	}else{
+		document.getElementById("industryCond").value="";
+	}
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doSearchMessageList/";
+	document.getElementById("message").submit();
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+
+function msgLnkClick(aMsgCondCd){
+	var formAcrtion = document.getElementById("message").action;
+	if(aMsgCondCd != document.getElementById("messageCond").value){
+		document.getElementById("messageCond").value=aMsgCondCd;
+	}else{
+		document.getElementById("messageCond").value="";
+	}
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doSearchMessageList/";
+	document.getElementById("message").submit();
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+
+function optLnkClick(aOptCondCd){
+	var formAcrtion = document.getElementById("message").action;
+	if(aOptCondCd != document.getElementById("optionCond").value){
+		document.getElementById("optionCond").value=aOptCondCd;
+	}else{
+		document.getElementById("optionCond").value="";
+	}
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doSearchMessageList/";
+	document.getElementById("message").submit();
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+
+function bmLnkClick(aBmCondCd){
+	var formAcrtion = document.getElementById("message").action;
+	if(aBmCondCd != document.getElementById("bookmarkCond").value){
+		document.getElementById("bookmarkCond").value=aBmCondCd;
+	}else{
+		document.getElementById("bookmarkCond").value="";
+	}
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doSearchMessageList/";
+	document.getElementById("message").submit();
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+
+function doSrchCorp() {
+	document.getElementById("corpNameCondTemp").value = document.getElementById("corpNameCond").value;
+    return false;
+}
+
+
+function titleLnkClick(aRowNo){
+	var formAcrtion = document.getElementById("message").action;
+	var id = "messageList[" + aRowNo + "].";
+	document.getElementById("selectRow").value=aRowNo;
+	document.getElementById("mailNo").value=document.getElementById(id + "mailNo").value;
+	document.getElementById("rcvDate").value=document.getElementById(id + "rcvDate").value;
+	document.getElementById("nextMailNo").value=document.getElementById(id + "nextMailNo").value;
+	document.getElementById("nextRcvDate").value=document.getElementById(id + "nextRcvDate").value;
+	document.getElementById("prevMailNo").value=document.getElementById(id + "prevMailNo").value;
+	document.getElementById("prevRcvDate").value=document.getElementById(id + "prevRcvDate").value;
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doMessage/";
+	document.getElementById("message").submit();
+	document.getElementById("message").action = formAcrtion;
+    return false;
+}
+
+function moveUserFolderClick(aBoxType){
+	var formAcrtion = document.getElementById("message").action;
+	document.getElementById("message").elements["moveBox"].value=aBoxType;
+	document.getElementById("message").action="/15/pc/user/displayMessageList/doMoveUserFolder/";
+	document.getElementById("message").submit();
+	document.getElementById("message").action = formAcrtion;
+}
+
+var clientwidth = "device-width";
+-->
+</script>
+
+
+ 
+ 
+	<link rel="stylesheet" type="text/css" href="/15/pc/css/common.css" >
+	<link rel="stylesheet" type="text/css" href="/15/pc/css/layout30.css" >
+ 
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function jumpNocache(a) {
+	top.location.href = a.href + (a.search ? "&" : "?") + (new Date).getTime();
+	return false;
+}
+//-->
+</script>
+		
+		
+		
+			
+			
+				
+				
+				
+			
+			
+			
+			
+			
+			
+			
+			
+		
+
+
+
+	
+	
+		
+	
+
+
+		<div id="top"></div>
+
+		<div id="headerMain" class="c03">
+			<div class="innerUpper">
+				<div id="innerHeader">
+					<div id="logo">
+						
+						
+						
+						
+							<h1><a href="/15/pc/toppage/displayTopPage/index?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU&__rd=1435640526" target="_top"><img src="/15/pc/images/share/common_header_main_logo.gif" height="37" width="200" border="0" id="commonHeaderMainLogo" alt="マイナビ2015"></a></h1>
+						
+					</div>
+					
+					
+				</div>
+				
+				
+				<script language="JavaScript" type="text/javascript">
+					<!--
+						function logoutDisp(){
+							if(wasNotSubmittedYet()){
+								document.getElementById("logoutForm").submit();
+								event.returnValue = false;
+								return true;
+							}
+							return false;
+						}
+					//-->
+				</script>
+				<script language="JavaScript" type="text/JavaScript">
+				_gaq.push(['_setCustomVar', 5, 'ログイン状態', 'ログイン済み', 2]);
+				</script>
+				
+				<div id="headerRight">
+					<div id="myname">
+						<div id="date">
+							<p class="date">
+								2014年4月9日
+							</p>
+						</div>
+						<form name="toppage_loginActionForm" id="logoutForm" method="post" action="/15/pc/toppage/login/doLogout" onsubmit="var closure = function() { return wasNotSubmittedYet(); };var ret = closure.call(this);if (ret == false) { return false; } else { MC.form.preventDouble(this); };" target="_top"><div><input type="hidden" name="_vsm" value="Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU"></div>
+						<div id="myPageHead">
+							<p class="myPageHeadName">
+								<strong class="nickName">中島正晴</strong>
+								<strong class="kaiinid">(pondelion)</strong>
+								<span>さんのマイページ</span>
+							</p>
+							<ul id="myPageHeadLinks">
+								<!--改行不可--><li class="myPageHeadLinksHenkou"><a href="https://job.mynavi.jp/15/pc/regist/registLogin/index?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_top" id="memberDeleteLink">変更・退会</a></li><li class="myPageHeadLinksHelp"><a href="http://job.mynavi.jp/conts/2015/kaiin/toiawase.html?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_top" id="helpLink" class="last">ヘルプ</a></li><li class="myPageHeadLinksLogout"><button type="submit" class="btnHeaderLogout" onclick="javascript:logoutDisp();"><span>ログアウト</span></button></li>
+							</ul>
+						</div>
+						</form>
+						
+					</div>
+
+				</div>
+				
+
+				
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+			<div class="innerBottom">
+				<div id="globalNavMain">
+					<ul id="globalNav">
+					<!--改行不可--><li class="nav01"><a href="/15/pc/toppage/displayTopPage/index?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU&__rd=906492134" target="_top" id="topTab"><span>トップ</span></a></li><li class="nav02"><a href="/15/pc/corpinfo/displayCorpSearch/index?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU&__rd=1361928953" target="_top" id="corpSearchTab"><span>企業検索</span></a></li><li class="nav03"><a href="/15/pc/user/displayMessageList/index?screen=headMenu&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU&__rd=226634344" target="_top" id="mypageTab"><span>マイページ</span></a></li><li class="nav04"><a href="http://job.mynavi.jp/conts/2015/event/index.html?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_top" id="eventTab" onclick="return jumpNocache(this);"><span>イベント</span></a></li><li class="nav05"><a href="http://job.mynavi.jp/conts/2015/tv/index.html?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_top" id="tvTab" onclick="return jumpNocache(this);"><span>ＷＥＢセミナー</span></a></li><li class="nav06"><a href="http://job.mynavi.jp/conts/2015/sp/index.html?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_top" id="featureTab" onclick="return jumpNocache(this);"><span>業界特集</span></a></li><li class="nav07"><a href="http://job.mynavi.jp/conts/2015/index_v.html?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_top" id="helpTab" onclick="return jumpNocache(this);"><span>就活支援</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+
+	
+	
+		
+		
+			_gaq.push(['_setCustomVar', 6, '端末', 'PC版_UAがPC', 2]);
+		
+	
+
+</script>
+
+
+
+
+<form name="user_displayMessageListActionForm" id="message" method="post" action="/15/pc/user/displayMessageList/" onsubmit="MC.form.preventDouble(this);" onkeypress="return MC.form.hookDefaultSubmit(event,'doSearchCorpName');"><div><input type="hidden" name="_vsm" value="Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU"></div><script type="text/javascript">MC.util.addBodyEvent("keypress", function(event) {MC.form.hookBodyDefaultSubmit(event);}, false, false);</script>
+<div id="contentsarea">
+	<div id="contentsleft">
+
+
+
+
+	
+	
+	
+		
+	
+	
+	
+	
+
+<input type="hidden" name="boxType" value="info" id="boxType">
+<input type="hidden" name="boxCd" value="1" id="boxCd">
+<input type="hidden" name="messageCond" value="" id="messageCond">
+<input type="hidden" name="optionCond" value="" id="optionCond">
+<input type="hidden" name="bookmarkCond" value="" id="bookmarkCond">
+<input type="hidden" name="industryCond" value="" id="industryCond">
+<input type="hidden" name="corpNameCondTemp" value="" id="corpNameCondTemp">
+<input type="hidden" name="currentPage" value="1" id="currentPage">
+<input type="hidden" name="movePage" value="1" id="movePage">
+<input type="hidden" name="nextPageFlg" value="1" id="nextPageFlg">
+<input type="hidden" name="prevPageFlg" value="0" id="prevPageFlg">
+<input type="hidden" name="mailNo" value="" id="mailNo">
+<input type="hidden" name="rcvDate" value="" id="rcvDate">
+<input type="hidden" name="nextMailNo" value="" id="nextMailNo">
+<input type="hidden" name="nextRcvDate" value="" id="nextRcvDate">
+<input type="hidden" name="prevMailNo" value="" id="prevMailNo">
+<input type="hidden" name="prevRcvDate" value="" id="prevRcvDate">
+
+
+		<div class="subnaviWrapper split4 schedule">
+			<ul>
+				
+					
+						<li class="message now"><a href="/15/pc/user/displayMessageList/index?screen=headMenu&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="messageLink">メッセージ</a></li>
+					
+					
+				
+				
+					
+					
+						<li class="bookmark"><a href="/15/pc/user/displayBookmarkList/index?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="bookmarkLink">活動履歴(ブックマーク)</a></li>
+					
+				
+				
+					
+					
+					
+					
+						<li class="schedule"><a href="/15/pc/user/displaySchedule/index?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="scheduleLink">スケジュール</a></li>
+					
+				
+				
+					
+					
+						<li class="history"><a href="/15/pc/user/displayBrowsingHistoryList/index?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="browsingHistoryLink">最近チェックした企業</a></li>
+					
+				
+				
+			</ul>
+		</div>
+<div class="subnavi2Wrapper split5 message">
+	<ul>
+
+		
+			
+			
+	<li class="ohenji">
+			
+		
+		<a href="/15/pc/user/displayMessageList/index?boxType=reply&procKepFlg=0&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="replyLink">お返事箱</a>
+	</li>
+	<li  class="oshirase now">
+		<a href="/15/pc/user/displayMessageList/index?boxType=info&procKepFlg=0&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="infoLink">お知らせ箱
+			<span class="f10">(1063)</span></a>
+	</li>
+	<li class="skauto">
+		<a href="/15/pc/user/displayMessageList/index?boxType=draft&procKepFlg=0&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="draftLink">スカウト箱</a>
+	</li>
+
+	<li class="gp">
+		<a href="/15/pc/user/displayGP/index?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="displayGpLink">ＧＰ</a>
+	</li>
+
+
+	<li class="henshuubu">
+		<a href="/15/pc/user/displayMessageList/index?boxType=ed&procKepFlg=0&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="myComLink">編集部から</a>
+	</li>
+	
+		
+		
+			<li class="school1">&nbsp;</li>
+		
+	
+	</ul>
+</div>
+	
+		<div id="boxSpMessageCount">
+			<div class="inner">
+				<p class="count">
+					
+						
+						
+					
+					
+						お知らせ箱には
+						
+					
+					
+						
+						
+					
+					
+						
+						
+					
+					
+						
+						
+					
+					未読が<span>1063</span>件あります。
+				</p>
+				<p class="attention">
+					(未読件数には<a href="/15/pc/user/displayMessageList/index/?boxType=info&boxCd=80&procKepFlg=0&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU">ゴミ箱</a>にある未読件数も含まれています)
+				</p>
+			</div>
+		</div>
+	
+<div class="folders">
+	<div class="inner">
+		<ul>
+			
+				
+						<li class="jyushin now"><a>受信箱</a></li>
+				
+				
+			
+			
+				
+				
+					<li class="gomi"><a href="/15/pc/user/displayMessageList/index/?boxType=info&boxCd=80&procKepFlg=0&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="trachBox"><span id="trash">ごみ箱</span></a></li>
+				
+			
+	
+			
+			
+			
+			
+					<li class="edit"><a href="/15/pc/user/registFolder/index/?boxType=info&procKepFlg=0&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" id="myFolderMakeLnk"><span class="">フォルダ編集</span></a></li>
+					
+				
+			
+				<li class="help">
+					<a href="javascript:;" id="helpTab" onclick="openWindowHelp('http://job.mynavi.jp/conts/2015/help/16-1.html');return false;">この画面の使い方</a>
+				</li>
+			
+		</ul>
+	</div>
+</div>
+
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+_gaq.push(['_setCustomVar', 39, '利用機能(メッセージ一覧)', '利用あり', 2]);
+
+_gaq.push(['_setCustomVar', 9, '利用機能(メッセージ一覧)(お知らせ箱)', '利用あり', 2]);
+
+
+
+_gaq.push(['_trackEvent', 'PageLoad','利用機能(メッセージ一覧)','利用あり_お知らせ箱']);
+</script>
+<input type="hidden" name="selectRow" value="" id="selectRow">
+<input type="hidden" name="moveBox" value="" id="moveBox">
+
+
+
+<div class="boxexclude message">
+
+	<div class="contentsHeader" onClick="checkExpand('excludeinner');">
+		<strong>絞り込み</strong>
+	</div>
+	<div class="contents" id="excludeinner">
+		<div class="inner">
+			<h4>すべて表示</h4>
+			<div class="innerBody">
+				<ul class="split all">
+					
+						
+						
+							<li class="now"><a href="javascript:;" class="noncolor" id="allLink">すべてのメッセージを表示</a></li>
+						
+					
+				</ul>
+			</div>
+		</div>
+		<div class="inner">
+			<h4>未読・既読</h4>
+			<div class="innerBody">
+				<ul>
+					
+						
+						
+							<li><a href="JavaScript:;" id="messageNoReadLnk" class="noncolor" onclick="msgLnkClick('0');return false;">未読のみ</a></li>
+						
+					
+					
+						
+						
+							<li><a href="JavaScript:;" id="messageReadLnk" class="noncolor" onclick="msgLnkClick('1');return false;">既読のみ</a></li>
+						
+					
+				</ul>
+			</div>
+		</div>
+
+		
+			<div class="inner">
+				<h4>志望業種</h4>
+				<div class="innerBody">
+					<ul>
+					
+						
+							
+								
+								
+								
+									<li><a href="JavaScript:;" id="industryLnk[0]" class="noncolor;" onclick="memIndLnkClick('12');return false;">電子・電気機器</a>
+									 </li>
+								
+								
+							
+								
+								
+								
+									<li><a href="JavaScript:;" id="industryLnk[1]" class="noncolor;" onclick="memIndLnkClick('20');return false;">スポーツ・ゲーム・アミューズメント製品</a>
+									 </li>
+								
+								
+							
+								
+								
+								
+									<li><a href="JavaScript:;" id="industryLnk[2]" class="noncolor;" onclick="memIndLnkClick('40');return false;">ソフトウエア・ゲーム・ネット関連</a>
+									 </li>
+								
+								
+							
+								
+								
+								
+									<li><a href="JavaScript:;" id="industryLnk[3]" class="noncolor;" onclick="memIndLnkClick('42');return false;">通信</a>
+									 </li>
+								
+								
+							
+							<li class="change">
+								<a href="JavaScript:;" id="doIndustryChange" class="noncolor;" onclick="openWindowIndustry('/15/pc/regist/regUpdIndustry/index');return false;">志望業種を変更</a>
+							</li>
+						
+						
+					
+					</ul>
+				</div>
+			</div>
+		
+		
+			
+				<div class="inner">
+					<h4>エントリー</h4>
+					<div class="innerBody">
+						<ul>
+							
+								
+								
+										<li><a href="JavaScript:;" id="optionEntryLnk" class="noncolor" onclick="optLnkClick('1');return false;">エントリー可</a></li>
+							
+							
+							
+								
+								
+										<li><a href="JavaScript:;" id="optionSeminarLnk" class="noncolor" onclick="optLnkClick('2');return false;">日程・予約情報あり</a></li>
+								
+							
+						</ul>
+					</div>
+				</div>
+				
+					<div class="inner">
+						<h4>ブックマーク</h4>
+						<div class="innerBody">
+							<ul>
+								
+									
+									
+											<li><a href="JavaScript:;" id="bookmarkOnLnk" class="noncolor" onclick="bmLnkClick('1');return false;">ブックマーク済みの企業</a></li>
+								
+								
+								
+									
+									
+										<li><a href="JavaScript:;" id="bookmarkOffLnk" onclick="bmLnkClick('0');return false;">未ブックマークの企業</a></li>
+									
+								
+							</ul>
+						</div>
+					</div>
+				
+			
+			
+				<div class="inner">
+				<h4>企業名</h4>
+					<div class="innerBody">
+						<dl class="search">
+							<dt>
+								<input type="text" name="corpNameCond" size="12" value="" id="corpNameCond" class="inputKeyword">
+							</dt>
+							<dd>
+								<input type="submit" name="doSearchCorpName" preventdouble="true" value="企業名で絞り込み" onclick="javascript:doSrchCorp();" id="doSearchCorpName" class="btnSmallCommonW8em">
+							</dd>
+						</dl>
+					</div>
+				</div>
+			
+		
+	</div>
+</div>
+
+	
+	
+	
+
+	<div class="mainpagePnation messageList upper">
+		<div class="inner">
+			<ul class="leftRight">
+				
+					
+					
+						<li class="left noLink">
+							<span>前の50件</span>
+						</li>
+					
+				
+				<li class="center paging">
+					
+						
+							［1-50件目を表示中］
+						
+						
+					
+				</li>
+				
+					
+						
+							<li class="center noLink">
+								<span>1</span>
+							</li>
+						
+						
+					
+				
+					
+						
+						
+							<li class="center">
+							<a href="JavaScript:;" id="pageNoTopLnk[2]" onclick="pgLnkClick('2');return false;">2</a>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class="center">
+							<a href="JavaScript:;" id="pageNoTopLnk[3]" onclick="pgLnkClick('3');return false;">3</a>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class="center">
+							<a href="JavaScript:;" id="pageNoTopLnk[4]" onclick="pgLnkClick('4');return false;">4</a>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class="center">
+							<a href="JavaScript:;" id="pageNoTopLnk[5]" onclick="pgLnkClick('5');return false;">5</a>
+							</li>
+						
+					
+				
+				
+					
+						<li class="right">
+							<a href="JavaScript:;" id="nextTopLnk" onclick="nxtPgLnkClick();return false;">次の50件</a>
+						</li>
+					
+					
+				
+			</ul>
+		</div>
+	</div>
+
+	<div class="funcMessageList upper spHidden">
+		<div class="inner">
+			<p class="btntxt">選択したメッセージを</p>
+			
+				
+				
+			
+			
+			
+				
+					<input type="submit" name="doMoveGarbage" preventdouble="true" value="ごみ箱へ" id="doMoveGarbageUp" class="btnSmallCommonW3em">
+				
+				
+			
+			<input type="submit" name="doUpdateRead" preventdouble="true" value="既読にする" id="doUpdateReadUp" class="btnSmallCommonW5em">
+		</div>
+	</div>
+
+	<div class="boxMessageTablearea">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr class="head">
+				<th class="th01"><input type="checkbox" id="doSecletAllUp" onclick="checkAll(this);" /></th>
+				<th class="th02">発信元/タイトル</th>
+				<th class="th03">受信日/画面</th>
+			</tr>
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_0">
+				<td width="24" class="td01" id="check_0">
+					<p class="chn">
+						<input type="checkbox" name="check" value="0" onclick="changeColor(this,'0')" id="check[v_0]">
+					</p>
+				</td>
+				<td class="td02"id="title_0">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[0]" onclick="titleLnkClick('0');return false;">【日立グループ】5月10日(土)東京&amp;5月17日(土)大阪開催！HITACHI GROUP FORUM ～予約受付中～</a>
+						</p>
+						<p class="linkCorpName">
+							日立グループ
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>総合電機</span>
+							
+								<span>プラント・エンジニアリング</span>
+							
+								<span>重電・産業用電気機器</span>
+							
+								<span>家電・ＡＶ機器</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_0">
+					<p class="date">2014.4.9</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[0].mailNo" value="3845849" id="messageList[0].mailNo">
+			<input type="hidden" name="messageList[0].rcvDate" value="20140409000004" id="messageList[0].rcvDate">
+			<input type="hidden" name="messageList[0].nextMailNo" value="3779059" id="messageList[0].nextMailNo">
+			<input type="hidden" name="messageList[0].nextRcvDate" value="20140409000002" id="messageList[0].nextRcvDate">
+			<input type="hidden" name="messageList[0].prevMailNo" value="" id="messageList[0].prevMailNo">
+			<input type="hidden" name="messageList[0].prevRcvDate" value="" id="messageList[0].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_1">
+				<td width="24" class="td01" id="check_1">
+					<p class="chn">
+						<input type="checkbox" name="check" value="1" onclick="changeColor(this,'1')" id="check[v_1]">
+					</p>
+				</td>
+				<td class="td02"id="title_1">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[1]" onclick="titleLnkClick('1');return false;">【JFE商事鋼管管材(JKK)】【総合職向け】選考会受付開始！</a>
+						</p>
+						<p class="linkCorpName">
+							JFE商事鋼管管材(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>商社（鉄鋼・鉱業）</span>
+							
+								<span>鉄鋼</span>
+							
+								<span>金属製品</span>
+							
+								<span>商社（その他製品）</span>
+							
+								<span>商社（金属製品・非鉄金属）</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_1">
+					<p class="date">2014.4.9</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[1].mailNo" value="3779059" id="messageList[1].mailNo">
+			<input type="hidden" name="messageList[1].rcvDate" value="20140409000002" id="messageList[1].rcvDate">
+			<input type="hidden" name="messageList[1].nextMailNo" value="3915732" id="messageList[1].nextMailNo">
+			<input type="hidden" name="messageList[1].nextRcvDate" value="20140409000002" id="messageList[1].nextRcvDate">
+			<input type="hidden" name="messageList[1].prevMailNo" value="3845849" id="messageList[1].prevMailNo">
+			<input type="hidden" name="messageList[1].prevRcvDate" value="20140409000004" id="messageList[1].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_2">
+				<td width="24" class="td01" id="check_2">
+					<p class="chn">
+						<input type="checkbox" name="check" value="2" onclick="changeColor(this,'2')" id="check[v_2]">
+					</p>
+				</td>
+				<td class="td02"id="title_2">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[2]" onclick="titleLnkClick('2');return false;">まだ間に合います！！【アイセロ】</a>
+						</p>
+						<p class="linkCorpName">
+							(株)アイセロ【アイセロ化学(株)より2013年9月に社名変更】 
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>化学</span>
+							
+								<span>総合電機</span>
+							
+								<span>機械</span>
+							
+								<span>環境・リサイクル</span>
+							
+								<span>その他電気・電子関連</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_2">
+					<p class="date">2014.4.9</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[2].mailNo" value="3915732" id="messageList[2].mailNo">
+			<input type="hidden" name="messageList[2].rcvDate" value="20140409000002" id="messageList[2].rcvDate">
+			<input type="hidden" name="messageList[2].nextMailNo" value="3932339" id="messageList[2].nextMailNo">
+			<input type="hidden" name="messageList[2].nextRcvDate" value="20140409000001" id="messageList[2].nextRcvDate">
+			<input type="hidden" name="messageList[2].prevMailNo" value="3779059" id="messageList[2].prevMailNo">
+			<input type="hidden" name="messageList[2].prevRcvDate" value="20140409000002" id="messageList[2].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_3">
+				<td width="24" class="td01" id="check_3">
+					<p class="chn">
+						<input type="checkbox" name="check" value="3" onclick="changeColor(this,'3')" id="check[v_3]">
+					</p>
+				</td>
+				<td class="td02"id="title_3">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[3]" onclick="titleLnkClick('3');return false;">【IREM（アイレム）】《大阪地区最終》会社説明会＆プログラマー1次選考会　大詰めです！</a>
+						</p>
+						<p class="linkCorpName">
+							アイレムソフトウエアエンジニアリング(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ゲーム・玩具・アミューズメント製品</span>
+							
+								<span>ソフトウエア</span>
+							
+								<span>ゲームソフト</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_3">
+					<p class="date">2014.4.9</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[3].mailNo" value="3932339" id="messageList[3].mailNo">
+			<input type="hidden" name="messageList[3].rcvDate" value="20140409000001" id="messageList[3].rcvDate">
+			<input type="hidden" name="messageList[3].nextMailNo" value="3740170" id="messageList[3].nextMailNo">
+			<input type="hidden" name="messageList[3].nextRcvDate" value="20140408000005" id="messageList[3].nextRcvDate">
+			<input type="hidden" name="messageList[3].prevMailNo" value="3915732" id="messageList[3].prevMailNo">
+			<input type="hidden" name="messageList[3].prevRcvDate" value="20140409000002" id="messageList[3].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_4">
+				<td width="24" class="td01" id="check_4">
+					<p class="chn">
+						<input type="checkbox" name="check" value="4" onclick="changeColor(this,'4')" id="check[v_4]">
+					</p>
+				</td>
+				<td class="td02"id="title_4">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[4]" onclick="titleLnkClick('4');return false;">＜電気分野/研究・開発・設計職募集＞国内トップのリーディングカンパニー新川だからできること！---説明会予約受付中---</a>
+						</p>
+						<p class="linkCorpName">
+							(株)新川【東証一部上場】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>半導体・電子・電気機器</span>
+							
+								<span>機械</span>
+							
+								<span>精密機器</span>
+							
+								<span>重電・産業用電気機器</span>
+							
+								<span>その他電気・電子関連</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_4">
+					<p class="date">2014.4.8</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[4].mailNo" value="3740170" id="messageList[4].mailNo">
+			<input type="hidden" name="messageList[4].rcvDate" value="20140408000005" id="messageList[4].rcvDate">
+			<input type="hidden" name="messageList[4].nextMailNo" value="3877018" id="messageList[4].nextMailNo">
+			<input type="hidden" name="messageList[4].nextRcvDate" value="20140408000005" id="messageList[4].nextRcvDate">
+			<input type="hidden" name="messageList[4].prevMailNo" value="3932339" id="messageList[4].prevMailNo">
+			<input type="hidden" name="messageList[4].prevRcvDate" value="20140409000001" id="messageList[4].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_5">
+				<td width="24" class="td01" id="check_5">
+					<p class="chn">
+						<input type="checkbox" name="check" value="5" onclick="changeColor(this,'5')" id="check[v_5]">
+					</p>
+				</td>
+				<td class="td02"id="title_5">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[5]" onclick="titleLnkClick('5');return false;">【Last 開催！】4月で最終回です！ご予約はお急ぎください。【業界TOP！売上2兆円の秘密とは？----マルハン】</a>
+						</p>
+						<p class="linkCorpName">
+							(株)マルハン
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>アミューズメント</span>
+							
+								<span>レジャーサービス</span>
+							
+								<span>芸能・エンタテインメント</span>
+							
+								<span>レストラン・給食・フードサービス</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_5">
+					<p class="date">2014.4.8</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[5].mailNo" value="3877018" id="messageList[5].mailNo">
+			<input type="hidden" name="messageList[5].rcvDate" value="20140408000005" id="messageList[5].rcvDate">
+			<input type="hidden" name="messageList[5].nextMailNo" value="3894817" id="messageList[5].nextMailNo">
+			<input type="hidden" name="messageList[5].nextRcvDate" value="20140408000002" id="messageList[5].nextRcvDate">
+			<input type="hidden" name="messageList[5].prevMailNo" value="3740170" id="messageList[5].prevMailNo">
+			<input type="hidden" name="messageList[5].prevRcvDate" value="20140408000005" id="messageList[5].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_6">
+				<td width="24" class="td01" id="check_6">
+					<p class="chn">
+						<input type="checkbox" name="check" value="6" onclick="changeColor(this,'6')" id="check[v_6]">
+					</p>
+				</td>
+				<td class="td02"id="title_6">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[6]" onclick="titleLnkClick('6');return false;">関西大学 理工系学科【積極採用中】2015年卒マイナビ大学生就職企業人気ランキング１００位以内に入りました！</a>
+						</p>
+						<p class="linkCorpName">
+							(株)アルプス技研【東証一部上場】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>受託開発・特定技術派遣</span>
+							
+								<span>自動車・自動車部品</span>
+							
+								<span>総合電機</span>
+							
+								<span>医療用機器・医療関連</span>
+							
+								<span>ソフトウエア</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_6">
+					<p class="date">2014.4.8</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[6].mailNo" value="3894817" id="messageList[6].mailNo">
+			<input type="hidden" name="messageList[6].rcvDate" value="20140408000002" id="messageList[6].rcvDate">
+			<input type="hidden" name="messageList[6].nextMailNo" value="3895511" id="messageList[6].nextMailNo">
+			<input type="hidden" name="messageList[6].nextRcvDate" value="20140408000002" id="messageList[6].nextRcvDate">
+			<input type="hidden" name="messageList[6].prevMailNo" value="3877018" id="messageList[6].prevMailNo">
+			<input type="hidden" name="messageList[6].prevRcvDate" value="20140408000005" id="messageList[6].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_7">
+				<td width="24" class="td01" id="check_7">
+					<p class="chn">
+						<input type="checkbox" name="check" value="7" onclick="changeColor(this,'7')" id="check[v_7]">
+					</p>
+				</td>
+				<td class="td02"id="title_7">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[7]" onclick="titleLnkClick('7');return false;">【会社説明会のご案内】オーダーメイドの照明器具で空間を演出！八紘電機です。</a>
+						</p>
+						<p class="linkCorpName">
+							八紘電機(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>その他電気・電子関連</span>
+							
+								<span>インテリア・住宅関連</span>
+							
+								<span>商社（電子・電気機器）</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_7">
+					<p class="date">2014.4.8</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[7].mailNo" value="3895511" id="messageList[7].mailNo">
+			<input type="hidden" name="messageList[7].rcvDate" value="20140408000002" id="messageList[7].rcvDate">
+			<input type="hidden" name="messageList[7].nextMailNo" value="3896234" id="messageList[7].nextMailNo">
+			<input type="hidden" name="messageList[7].nextRcvDate" value="20140408000002" id="messageList[7].nextRcvDate">
+			<input type="hidden" name="messageList[7].prevMailNo" value="3894817" id="messageList[7].prevMailNo">
+			<input type="hidden" name="messageList[7].prevRcvDate" value="20140408000002" id="messageList[7].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_8">
+				<td width="24" class="td01" id="check_8">
+					<p class="chn">
+						<input type="checkbox" name="check" value="8" onclick="changeColor(this,'8')" id="check[v_8]">
+					</p>
+				</td>
+				<td class="td02"id="title_8">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[8]" onclick="titleLnkClick('8');return false;">（株）サニー技研　会社説明会のご案内［本社(兵庫)、名古屋事業所］</a>
+						</p>
+						<p class="linkCorpName">
+							(株)サニー技研
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ソフトウエア</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+								<span>情報処理</span>
+							
+								<span>コンピュータ・通信機器</span>
+							
+								<span>精密機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_8">
+					<p class="date">2014.4.8</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[8].mailNo" value="3896234" id="messageList[8].mailNo">
+			<input type="hidden" name="messageList[8].rcvDate" value="20140408000002" id="messageList[8].rcvDate">
+			<input type="hidden" name="messageList[8].nextMailNo" value="3896885" id="messageList[8].nextMailNo">
+			<input type="hidden" name="messageList[8].nextRcvDate" value="20140408000002" id="messageList[8].nextRcvDate">
+			<input type="hidden" name="messageList[8].prevMailNo" value="3895511" id="messageList[8].prevMailNo">
+			<input type="hidden" name="messageList[8].prevRcvDate" value="20140408000002" id="messageList[8].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_9">
+				<td width="24" class="td01" id="check_9">
+					<p class="chn">
+						<input type="checkbox" name="check" value="9" onclick="changeColor(this,'9')" id="check[v_9]">
+					</p>
+				</td>
+				<td class="td02"id="title_9">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[9]" onclick="titleLnkClick('9');return false;">さあ今、成長しよう。＝transcosmos＝</a>
+						</p>
+						<p class="linkCorpName">
+							トランスコスモス(株)【東証一部上場】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>情報処理</span>
+							
+								<span>ネット関連技術</span>
+							
+								<span>広告</span>
+							
+								<span>機械</span>
+							
+								<span>建築設計</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_9">
+					<p class="date">2014.4.8</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[9].mailNo" value="3896885" id="messageList[9].mailNo">
+			<input type="hidden" name="messageList[9].rcvDate" value="20140408000002" id="messageList[9].rcvDate">
+			<input type="hidden" name="messageList[9].nextMailNo" value="3897503" id="messageList[9].nextMailNo">
+			<input type="hidden" name="messageList[9].nextRcvDate" value="20140408000002" id="messageList[9].nextRcvDate">
+			<input type="hidden" name="messageList[9].prevMailNo" value="3896234" id="messageList[9].prevMailNo">
+			<input type="hidden" name="messageList[9].prevRcvDate" value="20140408000002" id="messageList[9].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_10">
+				<td width="24" class="td01" id="check_10">
+					<p class="chn">
+						<input type="checkbox" name="check" value="10" onclick="changeColor(this,'10')" id="check[v_10]">
+					</p>
+				</td>
+				<td class="td02"id="title_10">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[10]" onclick="titleLnkClick('10');return false;">関西大学の方へ　■松井製作所　大阪　見学会＋選考会 予約受付中！（海外展開　機械メーカー　設計・開発・営業）</a>
+						</p>
+						<p class="linkCorpName">
+							(株)松井製作所
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>機械</span>
+							
+								<span>重電・産業用電気機器</span>
+							
+								<span>精密機器</span>
+							
+								<span>プラント・エンジニアリング</span>
+							
+								<span>その他メーカー</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_10">
+					<p class="date">2014.4.8</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[10].mailNo" value="3897503" id="messageList[10].mailNo">
+			<input type="hidden" name="messageList[10].rcvDate" value="20140408000002" id="messageList[10].rcvDate">
+			<input type="hidden" name="messageList[10].nextMailNo" value="3894340" id="messageList[10].nextMailNo">
+			<input type="hidden" name="messageList[10].nextRcvDate" value="20140408000001" id="messageList[10].nextRcvDate">
+			<input type="hidden" name="messageList[10].prevMailNo" value="3896885" id="messageList[10].prevMailNo">
+			<input type="hidden" name="messageList[10].prevRcvDate" value="20140408000002" id="messageList[10].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_11">
+				<td width="24" class="td01" id="check_11">
+					<p class="chn">
+						<input type="checkbox" name="check" value="11" onclick="changeColor(this,'11')" id="check[v_11]">
+					</p>
+				</td>
+				<td class="td02"id="title_11">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[11]" onclick="titleLnkClick('11');return false;">関西大学の皆様へ　ご応募をお待ちしております</a>
+						</p>
+						<p class="linkCorpName">
+							(株)コベルコマテリアル銅管
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>非鉄金属</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_11">
+					<p class="date">2014.4.8</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[11].mailNo" value="3894340" id="messageList[11].mailNo">
+			<input type="hidden" name="messageList[11].rcvDate" value="20140408000001" id="messageList[11].rcvDate">
+			<input type="hidden" name="messageList[11].nextMailNo" value="3845830" id="messageList[11].nextMailNo">
+			<input type="hidden" name="messageList[11].nextRcvDate" value="20140407000004" id="messageList[11].nextRcvDate">
+			<input type="hidden" name="messageList[11].prevMailNo" value="3897503" id="messageList[11].prevMailNo">
+			<input type="hidden" name="messageList[11].prevRcvDate" value="20140408000002" id="messageList[11].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_12">
+				<td width="24" class="td01" id="check_12">
+					<p class="chn">
+						<input type="checkbox" name="check" value="12" onclick="changeColor(this,'12')" id="check[v_12]">
+					</p>
+				</td>
+				<td class="td02"id="title_12">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[12]" onclick="titleLnkClick('12');return false;">【日立グループ】5月10日(土)東京&amp;5月17日(土)大阪開催！HITACHI GROUP FORUM ～予約受付中～</a>
+						</p>
+						<p class="linkCorpName">
+							日立グループ
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>総合電機</span>
+							
+								<span>プラント・エンジニアリング</span>
+							
+								<span>重電・産業用電気機器</span>
+							
+								<span>家電・ＡＶ機器</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_12">
+					<p class="date">2014.4.7</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[12].mailNo" value="3845830" id="messageList[12].mailNo">
+			<input type="hidden" name="messageList[12].rcvDate" value="20140407000004" id="messageList[12].rcvDate">
+			<input type="hidden" name="messageList[12].nextMailNo" value="3867939" id="messageList[12].nextMailNo">
+			<input type="hidden" name="messageList[12].nextRcvDate" value="20140407000002" id="messageList[12].nextRcvDate">
+			<input type="hidden" name="messageList[12].prevMailNo" value="3894340" id="messageList[12].prevMailNo">
+			<input type="hidden" name="messageList[12].prevRcvDate" value="20140408000001" id="messageList[12].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_13">
+				<td width="24" class="td01" id="check_13">
+					<p class="chn">
+						<input type="checkbox" name="check" value="13" onclick="changeColor(this,'13')" id="check[v_13]">
+					</p>
+				</td>
+				<td class="td02"id="title_13">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[13]" onclick="titleLnkClick('13');return false;">【4月17日説明会　申込受付中！】多数の病院・薬局等で採用されているシステムの秘訣とは？</a>
+						</p>
+						<p class="linkCorpName">
+							(株)プロアス
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>情報処理</span>
+							
+								<span>ソフトウエア</span>
+							
+								<span>ネット関連技術</span>
+							
+								<span>商社（コンピュータ・通信機器・ゲーム製品）</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_13">
+					<p class="date">2014.4.7</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[13].mailNo" value="3867939" id="messageList[13].mailNo">
+			<input type="hidden" name="messageList[13].rcvDate" value="20140407000002" id="messageList[13].rcvDate">
+			<input type="hidden" name="messageList[13].nextMailNo" value="3878376" id="messageList[13].nextMailNo">
+			<input type="hidden" name="messageList[13].nextRcvDate" value="20140407000002" id="messageList[13].nextRcvDate">
+			<input type="hidden" name="messageList[13].prevMailNo" value="3845830" id="messageList[13].prevMailNo">
+			<input type="hidden" name="messageList[13].prevRcvDate" value="20140407000004" id="messageList[13].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_14">
+				<td width="24" class="td01" id="check_14">
+					<p class="chn">
+						<input type="checkbox" name="check" value="14" onclick="changeColor(this,'14')" id="check[v_14]">
+					</p>
+				</td>
+				<td class="td02"id="title_14">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[14]" onclick="titleLnkClick('14');return false;">◆4/14(月).4/16(水)大阪にて会社説明＋1次選考会を開催します◆様々な世界初を実現する高い技術力で、省エネ性能の高い機器を生み出し続ける機械メーカー！※説明会開催も残りわずか！</a>
+						</p>
+						<p class="linkCorpName">
+							川重冷熱工業(株)［川崎重工グループ］
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>機械</span>
+							
+								<span>プラント・エンジニアリング</span>
+							
+								<span>環境・リサイクル</span>
+							
+								<span>設備工事</span>
+							
+								<span>ガス・エネルギー</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_14">
+					<p class="date">2014.4.7</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[14].mailNo" value="3878376" id="messageList[14].mailNo">
+			<input type="hidden" name="messageList[14].rcvDate" value="20140407000002" id="messageList[14].rcvDate">
+			<input type="hidden" name="messageList[14].nextMailNo" value="3858981" id="messageList[14].nextMailNo">
+			<input type="hidden" name="messageList[14].nextRcvDate" value="20140404000005" id="messageList[14].nextRcvDate">
+			<input type="hidden" name="messageList[14].prevMailNo" value="3867939" id="messageList[14].prevMailNo">
+			<input type="hidden" name="messageList[14].prevRcvDate" value="20140407000002" id="messageList[14].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_15">
+				<td width="24" class="td01" id="check_15">
+					<p class="chn">
+						<input type="checkbox" name="check" value="15" onclick="changeColor(this,'15')" id="check[v_15]">
+					</p>
+				</td>
+				<td class="td02"id="title_15">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[15]" onclick="titleLnkClick('15');return false;">【締切間近！】大阪・SE編 説明選考会</a>
+						</p>
+						<p class="linkCorpName">
+							大塚商会グループ
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>情報処理</span>
+							
+								<span>ソフトウエア</span>
+							
+								<span>商社（文具・事務機器・OA機器・印刷関連）</span>
+							
+								<span>商社（コンピュータ・通信機器・ゲーム製品）</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_15">
+					<p class="date">2014.4.4</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[15].mailNo" value="3858981" id="messageList[15].mailNo">
+			<input type="hidden" name="messageList[15].rcvDate" value="20140404000005" id="messageList[15].rcvDate">
+			<input type="hidden" name="messageList[15].nextMailNo" value="3863929" id="messageList[15].nextMailNo">
+			<input type="hidden" name="messageList[15].nextRcvDate" value="20140404000005" id="messageList[15].nextRcvDate">
+			<input type="hidden" name="messageList[15].prevMailNo" value="3878376" id="messageList[15].prevMailNo">
+			<input type="hidden" name="messageList[15].prevRcvDate" value="20140407000002" id="messageList[15].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_16">
+				<td width="24" class="td01" id="check_16">
+					<p class="chn">
+						<input type="checkbox" name="check" value="16" onclick="changeColor(this,'16')" id="check[v_16]">
+					</p>
+				</td>
+				<td class="td02"id="title_16">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[16]" onclick="titleLnkClick('16');return false;">説明会開催中！【人間力】出身学部・学科、資格よりも人物評価</a>
+						</p>
+						<p class="linkCorpName">
+							トランスコスモス(株)【東証一部上場】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>情報処理</span>
+							
+								<span>ネット関連技術</span>
+							
+								<span>広告</span>
+							
+								<span>機械</span>
+							
+								<span>建築設計</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_16">
+					<p class="date">2014.4.4</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[16].mailNo" value="3863929" id="messageList[16].mailNo">
+			<input type="hidden" name="messageList[16].rcvDate" value="20140404000005" id="messageList[16].rcvDate">
+			<input type="hidden" name="messageList[16].nextMailNo" value="3851402" id="messageList[16].nextMailNo">
+			<input type="hidden" name="messageList[16].nextRcvDate" value="20140404000002" id="messageList[16].nextRcvDate">
+			<input type="hidden" name="messageList[16].prevMailNo" value="3858981" id="messageList[16].prevMailNo">
+			<input type="hidden" name="messageList[16].prevRcvDate" value="20140404000005" id="messageList[16].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_17">
+				<td width="24" class="td01" id="check_17">
+					<p class="chn">
+						<input type="checkbox" name="check" value="17" onclick="changeColor(this,'17')" id="check[v_17]">
+					</p>
+				</td>
+				<td class="td02"id="title_17">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[17]" onclick="titleLnkClick('17');return false;">電気・電子系専攻のみなさまへ　技術系専門職のエントリーシートを受付中です！</a>
+						</p>
+						<p class="linkCorpName">
+							京阪電気鉄道(株)【技術系専門職】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>鉄道</span>
+							
+								<span>不動産</span>
+							
+								<span>レジャーサービス</span>
+							
+								<span>ホテル・旅館</span>
+							
+								<span>建設</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_17">
+					<p class="date">2014.4.4</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[17].mailNo" value="3851402" id="messageList[17].mailNo">
+			<input type="hidden" name="messageList[17].rcvDate" value="20140404000002" id="messageList[17].rcvDate">
+			<input type="hidden" name="messageList[17].nextMailNo" value="3853142" id="messageList[17].nextMailNo">
+			<input type="hidden" name="messageList[17].nextRcvDate" value="20140404000002" id="messageList[17].nextRcvDate">
+			<input type="hidden" name="messageList[17].prevMailNo" value="3863929" id="messageList[17].prevMailNo">
+			<input type="hidden" name="messageList[17].prevRcvDate" value="20140404000005" id="messageList[17].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_18">
+				<td width="24" class="td01" id="check_18">
+					<p class="chn">
+						<input type="checkbox" name="check" value="18" onclick="changeColor(this,'18')" id="check[v_18]">
+					</p>
+				</td>
+				<td class="td02"id="title_18">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[18]" onclick="titleLnkClick('18');return false;">【本年度最初】システム開発現場を見学できる会社説明会です★文理問わず・未経験者歓迎！長期の新入社員研修で１からサポート！</a>
+						</p>
+						<p class="linkCorpName">
+							(株)アイティーエス
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ソフトウエア</span>
+							
+								<span>情報処理</span>
+							
+								<span>専門コンサルタント</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_18">
+					<p class="date">2014.4.4</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[18].mailNo" value="3853142" id="messageList[18].mailNo">
+			<input type="hidden" name="messageList[18].rcvDate" value="20140404000002" id="messageList[18].rcvDate">
+			<input type="hidden" name="messageList[18].nextMailNo" value="3854706" id="messageList[18].nextMailNo">
+			<input type="hidden" name="messageList[18].nextRcvDate" value="20140404000002" id="messageList[18].nextRcvDate">
+			<input type="hidden" name="messageList[18].prevMailNo" value="3851402" id="messageList[18].prevMailNo">
+			<input type="hidden" name="messageList[18].prevRcvDate" value="20140404000002" id="messageList[18].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_19">
+				<td width="24" class="td01" id="check_19">
+					<p class="chn">
+						<input type="checkbox" name="check" value="19" onclick="changeColor(this,'19')" id="check[v_19]">
+					</p>
+				</td>
+				<td class="td02"id="title_19">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[19]" onclick="titleLnkClick('19');return false;">大阪会場4/11(金)説明会 シチズン電子があなたのもとへ…‥・★</a>
+						</p>
+						<p class="linkCorpName">
+							シチズン電子(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>半導体・電子・電気機器</span>
+							
+								<span>家電・ＡＶ機器</span>
+							
+								<span>精密機器</span>
+							
+								<span>金属製品</span>
+							
+								<span>その他電気・電子関連</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_19">
+					<p class="date">2014.4.4</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[19].mailNo" value="3854706" id="messageList[19].mailNo">
+			<input type="hidden" name="messageList[19].rcvDate" value="20140404000002" id="messageList[19].rcvDate">
+			<input type="hidden" name="messageList[19].nextMailNo" value="3863601" id="messageList[19].nextMailNo">
+			<input type="hidden" name="messageList[19].nextRcvDate" value="20140404000002" id="messageList[19].nextRcvDate">
+			<input type="hidden" name="messageList[19].prevMailNo" value="3853142" id="messageList[19].prevMailNo">
+			<input type="hidden" name="messageList[19].prevRcvDate" value="20140404000002" id="messageList[19].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_20">
+				<td width="24" class="td01" id="check_20">
+					<p class="chn">
+						<input type="checkbox" name="check" value="20" onclick="changeColor(this,'20')" id="check[v_20]">
+					</p>
+				</td>
+				<td class="td02"id="title_20">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[20]" onclick="titleLnkClick('20');return false;">【機械/電気・電子系】の皆さんが活躍できる、東証一部上場／世界第３位の機械メーカー【説明会受付中！】</a>
+						</p>
+						<p class="linkCorpName">
+							(株)やまびこ【東証一部上場】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>機械</span>
+							
+								<span>重電・産業用電気機器</span>
+							
+								<span>環境・リサイクル</span>
+							
+								<span>商社（機械・プラント）</span>
+							
+								<span>農林・水産</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_20">
+					<p class="date">2014.4.4</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[20].mailNo" value="3863601" id="messageList[20].mailNo">
+			<input type="hidden" name="messageList[20].rcvDate" value="20140404000002" id="messageList[20].rcvDate">
+			<input type="hidden" name="messageList[20].nextMailNo" value="3863659" id="messageList[20].nextMailNo">
+			<input type="hidden" name="messageList[20].nextRcvDate" value="20140404000002" id="messageList[20].nextRcvDate">
+			<input type="hidden" name="messageList[20].prevMailNo" value="3854706" id="messageList[20].prevMailNo">
+			<input type="hidden" name="messageList[20].prevRcvDate" value="20140404000002" id="messageList[20].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_21">
+				<td width="24" class="td01" id="check_21">
+					<p class="chn">
+						<input type="checkbox" name="check" value="21" onclick="changeColor(this,'21')" id="check[v_21]">
+					</p>
+				</td>
+				<td class="td02"id="title_21">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[21]" onclick="titleLnkClick('21');return false;">セミナー開催決定！化粧品や食品、人気サイト開発に興味がある方はご参加ください！セミナー特別開催このメッセージから予約可！ヒット商品連発！美と健康の分野にとどまらず世界一ワクワクできる会社に！</a>
+						</p>
+						<p class="linkCorpName">
+							(株)コマースゲート
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>化粧品</span>
+							
+								<span>食品</span>
+							
+								<span>広告</span>
+							
+								<span>通信販売・インターネット販売</span>
+							
+								<span>商社（化粧品）</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_21">
+					<p class="date">2014.4.4</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[21].mailNo" value="3863659" id="messageList[21].mailNo">
+			<input type="hidden" name="messageList[21].rcvDate" value="20140404000002" id="messageList[21].rcvDate">
+			<input type="hidden" name="messageList[21].nextMailNo" value="3849198" id="messageList[21].nextMailNo">
+			<input type="hidden" name="messageList[21].nextRcvDate" value="20140404000001" id="messageList[21].nextRcvDate">
+			<input type="hidden" name="messageList[21].prevMailNo" value="3863601" id="messageList[21].prevMailNo">
+			<input type="hidden" name="messageList[21].prevRcvDate" value="20140404000002" id="messageList[21].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_22">
+				<td width="24" class="td01" id="check_22">
+					<p class="chn">
+						<input type="checkbox" name="check" value="22" onclick="changeColor(this,'22')" id="check[v_22]">
+					</p>
+				</td>
+				<td class="td02"id="title_22">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[22]" onclick="titleLnkClick('22');return false;">【ＣＡＳＩＯ】エントリーシートの締め切り間近！！</a>
+						</p>
+						<p class="linkCorpName">
+							カシオ計算機(株)【CASIO】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>半導体・電子・電気機器</span>
+							
+								<span>精密機器</span>
+							
+								<span>総合電機</span>
+							
+								<span>その他電気・電子関連</span>
+							
+								<span>文具・事務機器関連</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_22">
+					<p class="date">2014.4.4</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[22].mailNo" value="3849198" id="messageList[22].mailNo">
+			<input type="hidden" name="messageList[22].rcvDate" value="20140404000001" id="messageList[22].rcvDate">
+			<input type="hidden" name="messageList[22].nextMailNo" value="3844169" id="messageList[22].nextMailNo">
+			<input type="hidden" name="messageList[22].nextRcvDate" value="20140403000005" id="messageList[22].nextRcvDate">
+			<input type="hidden" name="messageList[22].prevMailNo" value="3863659" id="messageList[22].prevMailNo">
+			<input type="hidden" name="messageList[22].prevRcvDate" value="20140404000002" id="messageList[22].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_23">
+				<td width="24" class="td01" id="check_23">
+					<p class="chn">
+						<input type="checkbox" name="check" value="23" onclick="changeColor(this,'23')" id="check[v_23]">
+					</p>
+				</td>
+				<td class="td02"id="title_23">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[23]" onclick="titleLnkClick('23');return false;">当社で高いＩＴスキルと専門性を身につけませんか？</a>
+						</p>
+						<p class="linkCorpName">
+							(株)CACエクシケア
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>薬品</span>
+							
+								<span>情報処理</span>
+							
+								<span>受託開発・特定技術派遣</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_23">
+					<p class="date">2014.4.3</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[23].mailNo" value="3844169" id="messageList[23].mailNo">
+			<input type="hidden" name="messageList[23].rcvDate" value="20140403000005" id="messageList[23].rcvDate">
+			<input type="hidden" name="messageList[23].nextMailNo" value="3845813" id="messageList[23].nextMailNo">
+			<input type="hidden" name="messageList[23].nextRcvDate" value="20140403000004" id="messageList[23].nextRcvDate">
+			<input type="hidden" name="messageList[23].prevMailNo" value="3849198" id="messageList[23].prevMailNo">
+			<input type="hidden" name="messageList[23].prevRcvDate" value="20140404000001" id="messageList[23].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_24">
+				<td width="24" class="td01" id="check_24">
+					<p class="chn">
+						<input type="checkbox" name="check" value="24" onclick="changeColor(this,'24')" id="check[v_24]">
+					</p>
+				</td>
+				<td class="td02"id="title_24">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[24]" onclick="titleLnkClick('24');return false;">【日立グループ】5月10日(土)東京&amp;5月17日(土)大阪開催！HITACHI GROUP FORUM ～予約受付中～</a>
+						</p>
+						<p class="linkCorpName">
+							日立グループ
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>総合電機</span>
+							
+								<span>プラント・エンジニアリング</span>
+							
+								<span>重電・産業用電気機器</span>
+							
+								<span>家電・ＡＶ機器</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_24">
+					<p class="date">2014.4.3</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[24].mailNo" value="3845813" id="messageList[24].mailNo">
+			<input type="hidden" name="messageList[24].rcvDate" value="20140403000004" id="messageList[24].rcvDate">
+			<input type="hidden" name="messageList[24].nextMailNo" value="3846125" id="messageList[24].nextMailNo">
+			<input type="hidden" name="messageList[24].nextRcvDate" value="20140403000003" id="messageList[24].nextRcvDate">
+			<input type="hidden" name="messageList[24].prevMailNo" value="3844169" id="messageList[24].prevMailNo">
+			<input type="hidden" name="messageList[24].prevRcvDate" value="20140403000005" id="messageList[24].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_25">
+				<td width="24" class="td01" id="check_25">
+					<p class="chn">
+						<input type="checkbox" name="check" value="25" onclick="changeColor(this,'25')" id="check[v_25]">
+					</p>
+				</td>
+				<td class="td02"id="title_25">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[25]" onclick="titleLnkClick('25');return false;">関西大学のみなさんへ　【ＥＳ配布】（総合職・一般職）長谷工グループ会社説明会</a>
+						</p>
+						<p class="linkCorpName">
+							長谷工グループ【HASEKO】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>不動産</span>
+							
+								<span>住宅</span>
+							
+								<span>建設</span>
+							
+								<span>建築設計</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_25">
+					<p class="date">2014.4.3</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[25].mailNo" value="3846125" id="messageList[25].mailNo">
+			<input type="hidden" name="messageList[25].rcvDate" value="20140403000003" id="messageList[25].rcvDate">
+			<input type="hidden" name="messageList[25].nextMailNo" value="3807495" id="messageList[25].nextMailNo">
+			<input type="hidden" name="messageList[25].nextRcvDate" value="20140403000002" id="messageList[25].nextRcvDate">
+			<input type="hidden" name="messageList[25].prevMailNo" value="3845813" id="messageList[25].prevMailNo">
+			<input type="hidden" name="messageList[25].prevRcvDate" value="20140403000004" id="messageList[25].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_26">
+				<td width="24" class="td01" id="check_26">
+					<p class="chn">
+						<input type="checkbox" name="check" value="26" onclick="changeColor(this,'26')" id="check[v_26]">
+					</p>
+				</td>
+				<td class="td02"id="title_26">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[26]" onclick="titleLnkClick('26');return false;">関西大学のみなさんへ　株式会社アップ（教育サービス／研伸館、個別館、進学館、開進館など運営）より会社セミナーのご案内</a>
+						</p>
+						<p class="linkCorpName">
+							(株)アップ（アップ教育企画）
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>教育</span>
+							
+								<span>商社（教育）</span>
+							
+								<span>ネット関連技術</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_26">
+					<p class="date">2014.4.3</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[26].mailNo" value="3807495" id="messageList[26].mailNo">
+			<input type="hidden" name="messageList[26].rcvDate" value="20140403000002" id="messageList[26].rcvDate">
+			<input type="hidden" name="messageList[26].nextMailNo" value="3798078" id="messageList[26].nextMailNo">
+			<input type="hidden" name="messageList[26].nextRcvDate" value="20140402000004" id="messageList[26].nextRcvDate">
+			<input type="hidden" name="messageList[26].prevMailNo" value="3846125" id="messageList[26].prevMailNo">
+			<input type="hidden" name="messageList[26].prevRcvDate" value="20140403000003" id="messageList[26].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_27">
+				<td width="24" class="td01" id="check_27">
+					<p class="chn">
+						<input type="checkbox" name="check" value="27" onclick="changeColor(this,'27')" id="check[v_27]">
+					</p>
+				</td>
+				<td class="td02"id="title_27">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[27]" onclick="titleLnkClick('27');return false;">一次締切間近！＜特定市場営業職＞本エントリー受付について</a>
+						</p>
+						<p class="linkCorpName">
+							明治安田生命保険相互会社
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>生命保険</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_27">
+					<p class="date">2014.4.2</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[27].mailNo" value="3798078" id="messageList[27].mailNo">
+			<input type="hidden" name="messageList[27].rcvDate" value="20140402000004" id="messageList[27].rcvDate">
+			<input type="hidden" name="messageList[27].nextMailNo" value="3804270" id="messageList[27].nextMailNo">
+			<input type="hidden" name="messageList[27].nextRcvDate" value="20140402000002" id="messageList[27].nextRcvDate">
+			<input type="hidden" name="messageList[27].prevMailNo" value="3807495" id="messageList[27].prevMailNo">
+			<input type="hidden" name="messageList[27].prevRcvDate" value="20140403000002" id="messageList[27].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_28">
+				<td width="24" class="td01" id="check_28">
+					<p class="chn">
+						<input type="checkbox" name="check" value="28" onclick="changeColor(this,'28')" id="check[v_28]">
+					</p>
+				</td>
+				<td class="td02"id="title_28">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[28]" onclick="titleLnkClick('28');return false;">★モノづくりの国である日本において欠かせないパッケージング技術を持つ、親和パッケージ(株)の説明会のご案内です★</a>
+						</p>
+						<p class="linkCorpName">
+							親和パッケージ(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>その他メーカー</span>
+							
+								<span>金属製品</span>
+							
+								<span>鉄鋼</span>
+							
+								<span>商社（金属製品・非鉄金属）</span>
+							
+								<span>環境・リサイクル</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_28">
+					<p class="date">2014.4.2</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[28].mailNo" value="3804270" id="messageList[28].mailNo">
+			<input type="hidden" name="messageList[28].rcvDate" value="20140402000002" id="messageList[28].rcvDate">
+			<input type="hidden" name="messageList[28].nextMailNo" value="3813911" id="messageList[28].nextMailNo">
+			<input type="hidden" name="messageList[28].nextRcvDate" value="20140402000002" id="messageList[28].nextRcvDate">
+			<input type="hidden" name="messageList[28].prevMailNo" value="3798078" id="messageList[28].prevMailNo">
+			<input type="hidden" name="messageList[28].prevRcvDate" value="20140402000004" id="messageList[28].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_29">
+				<td width="24" class="td01" id="check_29">
+					<p class="chn">
+						<input type="checkbox" name="check" value="29" onclick="changeColor(this,'29')" id="check[v_29]">
+					</p>
+				</td>
+				<td class="td02"id="title_29">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[29]" onclick="titleLnkClick('29');return false;">【 株式会社ＴＡＩＹＯ 】機械部品・自動組立ライン製造メーカーです</a>
+						</p>
+						<p class="linkCorpName">
+							(株)TAIYO
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>機械</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_29">
+					<p class="date">2014.4.2</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[29].mailNo" value="3813911" id="messageList[29].mailNo">
+			<input type="hidden" name="messageList[29].rcvDate" value="20140402000002" id="messageList[29].rcvDate">
+			<input type="hidden" name="messageList[29].nextMailNo" value="3814674" id="messageList[29].nextMailNo">
+			<input type="hidden" name="messageList[29].nextRcvDate" value="20140402000002" id="messageList[29].nextRcvDate">
+			<input type="hidden" name="messageList[29].prevMailNo" value="3804270" id="messageList[29].prevMailNo">
+			<input type="hidden" name="messageList[29].prevRcvDate" value="20140402000002" id="messageList[29].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_30">
+				<td width="24" class="td01" id="check_30">
+					<p class="chn">
+						<input type="checkbox" name="check" value="30" onclick="changeColor(this,'30')" id="check[v_30]">
+					</p>
+				</td>
+				<td class="td02"id="title_30">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[30]" onclick="titleLnkClick('30');return false;">IT系総合職募集！あなたのアイデアと技術が会社を変える！鋲螺業界をリードする東証一部上場企業　小林産業（株）説明会のご案内</a>
+						</p>
+						<p class="linkCorpName">
+							小林産業(株)【東証一部上場】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>商社（金属製品・非鉄金属）</span>
+							
+								<span>商社（インテリア・建材・住宅関連）</span>
+							
+								<span>商社（その他製品）</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_30">
+					<p class="date">2014.4.2</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[30].mailNo" value="3814674" id="messageList[30].mailNo">
+			<input type="hidden" name="messageList[30].rcvDate" value="20140402000002" id="messageList[30].rcvDate">
+			<input type="hidden" name="messageList[30].nextMailNo" value="3820340" id="messageList[30].nextMailNo">
+			<input type="hidden" name="messageList[30].nextRcvDate" value="20140402000002" id="messageList[30].nextRcvDate">
+			<input type="hidden" name="messageList[30].prevMailNo" value="3813911" id="messageList[30].prevMailNo">
+			<input type="hidden" name="messageList[30].prevRcvDate" value="20140402000002" id="messageList[30].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_31">
+				<td width="24" class="td01" id="check_31">
+					<p class="chn">
+						<input type="checkbox" name="check" value="31" onclick="changeColor(this,'31')" id="check[v_31]">
+					</p>
+				</td>
+				<td class="td02"id="title_31">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[31]" onclick="titleLnkClick('31');return false;">【上場企業・グローバル企業】世界TOPを目指す当社にてものづくりで挑戦しませんか</a>
+						</p>
+						<p class="linkCorpName">
+							(株)ジーテクト
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>自動車・自動車部品</span>
+							
+								<span>金属製品</span>
+							
+								<span>機械</span>
+							
+								<span>輸送用機器</span>
+							
+								<span>精密機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_31">
+					<p class="date">2014.4.2</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[31].mailNo" value="3820340" id="messageList[31].mailNo">
+			<input type="hidden" name="messageList[31].rcvDate" value="20140402000002" id="messageList[31].rcvDate">
+			<input type="hidden" name="messageList[31].nextMailNo" value="3824317" id="messageList[31].nextMailNo">
+			<input type="hidden" name="messageList[31].nextRcvDate" value="20140402000002" id="messageList[31].nextRcvDate">
+			<input type="hidden" name="messageList[31].prevMailNo" value="3814674" id="messageList[31].prevMailNo">
+			<input type="hidden" name="messageList[31].prevRcvDate" value="20140402000002" id="messageList[31].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_32">
+				<td width="24" class="td01" id="check_32">
+					<p class="chn">
+						<input type="checkbox" name="check" value="32" onclick="changeColor(this,'32')" id="check[v_32]">
+					</p>
+				</td>
+				<td class="td02"id="title_32">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[32]" onclick="titleLnkClick('32');return false;">【株式会社 NSI】当社の説明会は社員との懇談会がメインです！</a>
+						</p>
+						<p class="linkCorpName">
+							(株)NSI
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ソフトウエア</span>
+							
+								<span>情報処理</span>
+							
+								<span>ネット関連技術</span>
+							
+								<span>専門コンサルタント</span>
+							
+								<span>通信事業サービス</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_32">
+					<p class="date">2014.4.2</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[32].mailNo" value="3824317" id="messageList[32].mailNo">
+			<input type="hidden" name="messageList[32].rcvDate" value="20140402000002" id="messageList[32].rcvDate">
+			<input type="hidden" name="messageList[32].nextMailNo" value="3785331" id="messageList[32].nextMailNo">
+			<input type="hidden" name="messageList[32].nextRcvDate" value="20140401000004" id="messageList[32].nextRcvDate">
+			<input type="hidden" name="messageList[32].prevMailNo" value="3820340" id="messageList[32].prevMailNo">
+			<input type="hidden" name="messageList[32].prevRcvDate" value="20140402000002" id="messageList[32].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_33">
+				<td width="24" class="td01" id="check_33">
+					<p class="chn">
+						<input type="checkbox" name="check" value="33" onclick="changeColor(this,'33')" id="check[v_33]">
+					</p>
+				</td>
+				<td class="td02"id="title_33">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[33]" onclick="titleLnkClick('33');return false;">本エントリー 二次募集中～「何にでも」「どこへでも」「誰とでも」　戦える市場価値のあるエンジニア集団～</a>
+						</p>
+						<p class="linkCorpName">
+							豊田合成(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>自動車・自動車部品</span>
+							
+								<span>輸送用機器</span>
+							
+								<span>ゴム</span>
+							
+								<span>機械</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_33">
+					<p class="date">2014.4.1</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[33].mailNo" value="3785331" id="messageList[33].mailNo">
+			<input type="hidden" name="messageList[33].rcvDate" value="20140401000004" id="messageList[33].rcvDate">
+			<input type="hidden" name="messageList[33].nextMailNo" value="3785321" id="messageList[33].nextMailNo">
+			<input type="hidden" name="messageList[33].nextRcvDate" value="20140401000002" id="messageList[33].nextRcvDate">
+			<input type="hidden" name="messageList[33].prevMailNo" value="3824317" id="messageList[33].prevMailNo">
+			<input type="hidden" name="messageList[33].prevRcvDate" value="20140402000002" id="messageList[33].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_34">
+				<td width="24" class="td01" id="check_34">
+					<p class="chn">
+						<input type="checkbox" name="check" value="34" onclick="changeColor(this,'34')" id="check[v_34]">
+					</p>
+				</td>
+				<td class="td02"id="title_34">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[34]" onclick="titleLnkClick('34');return false;">【東京】＜個別＞会社説明会兼就職活動相談会実施！</a>
+						</p>
+						<p class="linkCorpName">
+							(株)ギブリー
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ネット関連技術</span>
+							
+								<span>広告</span>
+							
+								<span>専門コンサルタント</span>
+							
+								<span>人材派遣・人材紹介</span>
+							
+								<span>教育</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_34">
+					<p class="date">2014.4.1</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[34].mailNo" value="3785321" id="messageList[34].mailNo">
+			<input type="hidden" name="messageList[34].rcvDate" value="20140401000002" id="messageList[34].rcvDate">
+			<input type="hidden" name="messageList[34].nextMailNo" value="3788448" id="messageList[34].nextMailNo">
+			<input type="hidden" name="messageList[34].nextRcvDate" value="20140401000002" id="messageList[34].nextRcvDate">
+			<input type="hidden" name="messageList[34].prevMailNo" value="3785331" id="messageList[34].prevMailNo">
+			<input type="hidden" name="messageList[34].prevRcvDate" value="20140401000004" id="messageList[34].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_35">
+				<td width="24" class="td01" id="check_35">
+					<p class="chn">
+						<input type="checkbox" name="check" value="35" onclick="changeColor(this,'35')" id="check[v_35]">
+					</p>
+				</td>
+				<td class="td02"id="title_35">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[35]" onclick="titleLnkClick('35');return false;">【三社電機製作所（東証二部上場）】会社説明会（理系限定）を開催します。</a>
+						</p>
+						<p class="linkCorpName">
+							(株)三社電機製作所
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>重電・産業用電気機器</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+								<span>精密機器</span>
+							
+								<span>その他電気・電子関連</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_35">
+					<p class="date">2014.4.1</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[35].mailNo" value="3788448" id="messageList[35].mailNo">
+			<input type="hidden" name="messageList[35].rcvDate" value="20140401000002" id="messageList[35].rcvDate">
+			<input type="hidden" name="messageList[35].nextMailNo" value="3803392" id="messageList[35].nextMailNo">
+			<input type="hidden" name="messageList[35].nextRcvDate" value="20140401000002" id="messageList[35].nextRcvDate">
+			<input type="hidden" name="messageList[35].prevMailNo" value="3785321" id="messageList[35].prevMailNo">
+			<input type="hidden" name="messageList[35].prevRcvDate" value="20140401000002" id="messageList[35].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_36">
+				<td width="24" class="td01" id="check_36">
+					<p class="chn">
+						<input type="checkbox" name="check" value="36" onclick="changeColor(this,'36')" id="check[v_36]">
+					</p>
+				</td>
+				<td class="td02"id="title_36">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[36]" onclick="titleLnkClick('36');return false;">設立以来赤字なし！ソフトウェア会社『ＡＶＣマルチメディアソフト（株）』の会社説明会</a>
+						</p>
+						<p class="linkCorpName">
+							AVCマルチメディアソフト(株)【旧社名　パナソニックAVCマルチメディアソフト(株)】
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ソフトウエア</span>
+							
+								<span>情報処理</span>
+							
+								<span>家電・ＡＶ機器</span>
+							
+								<span>コンピュータ・通信機器</span>
+							
+								<span>ネット関連技術</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_36">
+					<p class="date">2014.4.1</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[36].mailNo" value="3803392" id="messageList[36].mailNo">
+			<input type="hidden" name="messageList[36].rcvDate" value="20140401000002" id="messageList[36].rcvDate">
+			<input type="hidden" name="messageList[36].nextMailNo" value="3802087" id="messageList[36].nextMailNo">
+			<input type="hidden" name="messageList[36].nextRcvDate" value="20140401000001" id="messageList[36].nextRcvDate">
+			<input type="hidden" name="messageList[36].prevMailNo" value="3788448" id="messageList[36].prevMailNo">
+			<input type="hidden" name="messageList[36].prevRcvDate" value="20140401000002" id="messageList[36].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_37">
+				<td width="24" class="td01" id="check_37">
+					<p class="chn">
+						<input type="checkbox" name="check" value="37" onclick="changeColor(this,'37')" id="check[v_37]">
+					</p>
+				</td>
+				<td class="td02"id="title_37">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[37]" onclick="titleLnkClick('37');return false;">【東北新社　WEBデザイナー職】募集中！</a>
+						</p>
+						<p class="linkCorpName">
+							(株)東北新社
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>広告</span>
+							
+								<span>放送</span>
+							
+								<span>芸術関連</span>
+							
+								<span>ネット関連技術</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_37">
+					<p class="date">2014.4.1</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[37].mailNo" value="3802087" id="messageList[37].mailNo">
+			<input type="hidden" name="messageList[37].rcvDate" value="20140401000001" id="messageList[37].rcvDate">
+			<input type="hidden" name="messageList[37].nextMailNo" value="3770775" id="messageList[37].nextMailNo">
+			<input type="hidden" name="messageList[37].nextRcvDate" value="20140331000002" id="messageList[37].nextRcvDate">
+			<input type="hidden" name="messageList[37].prevMailNo" value="3803392" id="messageList[37].prevMailNo">
+			<input type="hidden" name="messageList[37].prevRcvDate" value="20140401000002" id="messageList[37].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_38">
+				<td width="24" class="td01" id="check_38">
+					<p class="chn">
+						<input type="checkbox" name="check" value="38" onclick="changeColor(this,'38')" id="check[v_38]">
+					</p>
+				</td>
+				<td class="td02"id="title_38">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[38]" onclick="titleLnkClick('38');return false;">関西大学の皆さんへ 【理系限定】大手上場企業で開発職に携わるならアルテクナ</a>
+						</p>
+						<p class="linkCorpName">
+							(株)アル テクナ
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>受託開発・特定技術派遣</span>
+							
+								<span>機械</span>
+							
+								<span>自動車・自動車部品</span>
+							
+								<span>家電・ＡＶ機器</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_38">
+					<p class="date">2014.3.31</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[38].mailNo" value="3770775" id="messageList[38].mailNo">
+			<input type="hidden" name="messageList[38].rcvDate" value="20140331000002" id="messageList[38].rcvDate">
+			<input type="hidden" name="messageList[38].nextMailNo" value="3589905" id="messageList[38].nextMailNo">
+			<input type="hidden" name="messageList[38].nextRcvDate" value="20140328000005" id="messageList[38].nextRcvDate">
+			<input type="hidden" name="messageList[38].prevMailNo" value="3802087" id="messageList[38].prevMailNo">
+			<input type="hidden" name="messageList[38].prevRcvDate" value="20140401000001" id="messageList[38].prevRcvDate">
+		
+			
+				
+					
+					
+					
+						
+					
+				
+				
+			
+			<tr class='TrPremiumRead' id="data_39">
+				<td width="24" class="td01" id="check_39">
+					<p class="chn">
+						<input type="checkbox" name="check" value="39" onclick="changeColor(this,'39')" id="check[v_39]">
+					</p>
+				</td>
+				<td class="td02"id="title_39">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[39]" onclick="titleLnkClick('39');return false;">関西大学のあなたへ　＜特別オファー＞　「スキルアップできる環境」と「充実の教育・研修」をご用意いたします！</a>
+						</p>
+						<p class="linkCorpName">
+							(株)トラスト・テック
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>受託開発・特定技術派遣</span>
+							
+								<span>自動車・自動車部品</span>
+							
+								<span>機械</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+								<span>輸送用機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_39">
+					<p class="date">2014.3.28</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[39].mailNo" value="3589905" id="messageList[39].mailNo">
+			<input type="hidden" name="messageList[39].rcvDate" value="20140328000005" id="messageList[39].rcvDate">
+			<input type="hidden" name="messageList[39].nextMailNo" value="3713206" id="messageList[39].nextMailNo">
+			<input type="hidden" name="messageList[39].nextRcvDate" value="20140328000005" id="messageList[39].nextRcvDate">
+			<input type="hidden" name="messageList[39].prevMailNo" value="3770775" id="messageList[39].prevMailNo">
+			<input type="hidden" name="messageList[39].prevRcvDate" value="20140331000002" id="messageList[39].prevRcvDate">
+		
+			
+				
+					
+					
+					
+						
+					
+				
+				
+			
+			<tr class='TrPremiumRead' id="data_40">
+				<td width="24" class="td01" id="check_40">
+					<p class="chn">
+						<input type="checkbox" name="check" value="40" onclick="changeColor(this,'40')" id="check[v_40]">
+					</p>
+				</td>
+				<td class="td02"id="title_40">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[40]" onclick="titleLnkClick('40');return false;">社会基盤を支えるシステムを一緒に創り上げていきませんか？会社説明会【大阪会場】のご案内</a>
+						</p>
+						<p class="linkCorpName">
+							(株)システムデザイン
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ソフトウエア</span>
+							
+								<span>情報処理</span>
+							
+								<span>ネット関連技術</span>
+							
+								<span>サービス（その他）</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_40">
+					<p class="date">2014.3.28</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[40].mailNo" value="3713206" id="messageList[40].mailNo">
+			<input type="hidden" name="messageList[40].rcvDate" value="20140328000005" id="messageList[40].rcvDate">
+			<input type="hidden" name="messageList[40].nextMailNo" value="3757638" id="messageList[40].nextMailNo">
+			<input type="hidden" name="messageList[40].nextRcvDate" value="20140328000003" id="messageList[40].nextRcvDate">
+			<input type="hidden" name="messageList[40].prevMailNo" value="3589905" id="messageList[40].prevMailNo">
+			<input type="hidden" name="messageList[40].prevRcvDate" value="20140328000005" id="messageList[40].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_41">
+				<td width="24" class="td01" id="check_41">
+					<p class="chn">
+						<input type="checkbox" name="check" value="41" onclick="changeColor(this,'41')" id="check[v_41]">
+					</p>
+				</td>
+				<td class="td02"id="title_41">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[41]" onclick="titleLnkClick('41');return false;">【製薬会社MSD】生産本部所属スタッフ職　一次選考受付開始のご案内</a>
+						</p>
+						<p class="linkCorpName">
+							MSD(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>薬品</span>
+							
+								<span>医療用機器・医療関連</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_41">
+					<p class="date">2014.3.28</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[41].mailNo" value="3757638" id="messageList[41].mailNo">
+			<input type="hidden" name="messageList[41].rcvDate" value="20140328000003" id="messageList[41].rcvDate">
+			<input type="hidden" name="messageList[41].nextMailNo" value="3614230" id="messageList[41].nextMailNo">
+			<input type="hidden" name="messageList[41].nextRcvDate" value="20140328000002" id="messageList[41].nextRcvDate">
+			<input type="hidden" name="messageList[41].prevMailNo" value="3713206" id="messageList[41].prevMailNo">
+			<input type="hidden" name="messageList[41].prevRcvDate" value="20140328000005" id="messageList[41].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_42">
+				<td width="24" class="td01" id="check_42">
+					<p class="chn">
+						<input type="checkbox" name="check" value="42" onclick="changeColor(this,'42')" id="check[v_42]">
+					</p>
+				</td>
+				<td class="td02"id="title_42">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[42]" onclick="titleLnkClick('42');return false;">【説明会予約受付中！】私たちと一緒に「関西を元気にしたい！」という方を求めています。</a>
+						</p>
+						<p class="linkCorpName">
+							一般財団法人関西情報センター（ＫＩＩＳ）
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>公益・特殊・独立行政法人</span>
+							
+								<span>ソフトウエア</span>
+							
+								<span>情報処理</span>
+							
+								<span>ネット関連技術</span>
+							
+								<span>シンクタンク・マーケティング・調査</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_42">
+					<p class="date">2014.3.28</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[42].mailNo" value="3614230" id="messageList[42].mailNo">
+			<input type="hidden" name="messageList[42].rcvDate" value="20140328000002" id="messageList[42].rcvDate">
+			<input type="hidden" name="messageList[42].nextMailNo" value="3756781" id="messageList[42].nextMailNo">
+			<input type="hidden" name="messageList[42].nextRcvDate" value="20140328000002" id="messageList[42].nextRcvDate">
+			<input type="hidden" name="messageList[42].prevMailNo" value="3757638" id="messageList[42].prevMailNo">
+			<input type="hidden" name="messageList[42].prevRcvDate" value="20140328000003" id="messageList[42].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_43">
+				<td width="24" class="td01" id="check_43">
+					<p class="chn">
+						<input type="checkbox" name="check" value="43" onclick="changeColor(this,'43')" id="check[v_43]">
+					</p>
+				</td>
+				<td class="td02"id="title_43">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[43]" onclick="titleLnkClick('43');return false;">株式会社UBIC　米国ナスダック・東証マザーズ上場】　人工知能・テキストマイニング・データマイニング、に興味のある方を対象とした開発・技術職希望者向け新卒説明会ご案内</a>
+						</p>
+						<p class="linkCorpName">
+							(株)UBIC【米国ナスダック、東証マザーズ上場】 
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>シンクタンク・マーケティング・調査</span>
+							
+								<span>情報処理</span>
+							
+								<span>ソフトウエア</span>
+							
+								<span>専門コンサルタント</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_43">
+					<p class="date">2014.3.28</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[43].mailNo" value="3756781" id="messageList[43].mailNo">
+			<input type="hidden" name="messageList[43].rcvDate" value="20140328000002" id="messageList[43].rcvDate">
+			<input type="hidden" name="messageList[43].nextMailNo" value="3757306" id="messageList[43].nextMailNo">
+			<input type="hidden" name="messageList[43].nextRcvDate" value="20140328000002" id="messageList[43].nextRcvDate">
+			<input type="hidden" name="messageList[43].prevMailNo" value="3614230" id="messageList[43].prevMailNo">
+			<input type="hidden" name="messageList[43].prevRcvDate" value="20140328000002" id="messageList[43].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_44">
+				<td width="24" class="td01" id="check_44">
+					<p class="chn">
+						<input type="checkbox" name="check" value="44" onclick="changeColor(this,'44')" id="check[v_44]">
+					</p>
+				</td>
+				<td class="td02"id="title_44">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[44]" onclick="titleLnkClick('44');return false;">会社説明会のお知らせ</a>
+						</p>
+						<p class="linkCorpName">
+							菱電工機エンジニアリング(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>サービス（その他）</span>
+							
+								<span>その他電気・電子関連</span>
+							
+								<span>機械</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+								<span>精密機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_44">
+					<p class="date">2014.3.28</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[44].mailNo" value="3757306" id="messageList[44].mailNo">
+			<input type="hidden" name="messageList[44].rcvDate" value="20140328000002" id="messageList[44].rcvDate">
+			<input type="hidden" name="messageList[44].nextMailNo" value="3724941" id="messageList[44].nextMailNo">
+			<input type="hidden" name="messageList[44].nextRcvDate" value="20140328000001" id="messageList[44].nextRcvDate">
+			<input type="hidden" name="messageList[44].prevMailNo" value="3756781" id="messageList[44].prevMailNo">
+			<input type="hidden" name="messageList[44].prevRcvDate" value="20140328000002" id="messageList[44].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_45">
+				<td width="24" class="td01" id="check_45">
+					<p class="chn">
+						<input type="checkbox" name="check" value="45" onclick="changeColor(this,'45')" id="check[v_45]">
+					</p>
+				</td>
+				<td class="td02"id="title_45">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[45]" onclick="titleLnkClick('45');return false;">関西大学【重要】理系の採用活動のお知らせ　　　　　　　　　　　　　　　　　　　愛知機械工業（株）【日産自動車グループ】</a>
+						</p>
+						<p class="linkCorpName">
+							愛知機械工業(株)（日産グループ）
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>自動車・自動車部品</span>
+							
+								<span>輸送用機器</span>
+							
+								<span>機械</span>
+							
+								<span>金属製品</span>
+							
+								<span>その他メーカー</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_45">
+					<p class="date">2014.3.28</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[45].mailNo" value="3724941" id="messageList[45].mailNo">
+			<input type="hidden" name="messageList[45].rcvDate" value="20140328000001" id="messageList[45].rcvDate">
+			<input type="hidden" name="messageList[45].nextMailNo" value="3722162" id="messageList[45].nextMailNo">
+			<input type="hidden" name="messageList[45].nextRcvDate" value="20140327000002" id="messageList[45].nextRcvDate">
+			<input type="hidden" name="messageList[45].prevMailNo" value="3757306" id="messageList[45].prevMailNo">
+			<input type="hidden" name="messageList[45].prevRcvDate" value="20140328000002" id="messageList[45].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_46">
+				<td width="24" class="td01" id="check_46">
+					<p class="chn">
+						<input type="checkbox" name="check" value="46" onclick="changeColor(this,'46')" id="check[v_46]">
+					</p>
+				</td>
+				<td class="td02"id="title_46">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[46]" onclick="titleLnkClick('46');return false;">【岡山のシステム会社『せとうちシステム』】から会社説明会＆採用1次試験のご案内です！</a>
+						</p>
+						<p class="linkCorpName">
+							（株）せとうちシステム
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ソフトウエア</span>
+							
+								<span>情報処理</span>
+							
+								<span>ネット関連技術</span>
+							
+								<span>データ通信</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_46">
+					<p class="date">2014.3.27</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[46].mailNo" value="3722162" id="messageList[46].mailNo">
+			<input type="hidden" name="messageList[46].rcvDate" value="20140327000002" id="messageList[46].rcvDate">
+			<input type="hidden" name="messageList[46].nextMailNo" value="3716090" id="messageList[46].nextMailNo">
+			<input type="hidden" name="messageList[46].nextRcvDate" value="20140326000005" id="messageList[46].nextRcvDate">
+			<input type="hidden" name="messageList[46].prevMailNo" value="3724941" id="messageList[46].prevMailNo">
+			<input type="hidden" name="messageList[46].prevRcvDate" value="20140328000001" id="messageList[46].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_47">
+				<td width="24" class="td01" id="check_47">
+					<p class="chn">
+						<input type="checkbox" name="check" value="47" onclick="changeColor(this,'47')" id="check[v_47]">
+					</p>
+				</td>
+				<td class="td02"id="title_47">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[47]" onclick="titleLnkClick('47');return false;">【Communication × Idea】 経営陣と社員をつなぐコミュニケーション部門◇アドミンスタッフとは？？</a>
+						</p>
+						<p class="linkCorpName">
+							(株)ワークスアプリケーションズ
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>ソフトウエア</span>
+							
+								<span>専門コンサルタント</span>
+							
+								<span>情報処理</span>
+							
+								<span>ネット関連技術</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_47">
+					<p class="date">2014.3.26</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[47].mailNo" value="3716090" id="messageList[47].mailNo">
+			<input type="hidden" name="messageList[47].rcvDate" value="20140326000005" id="messageList[47].rcvDate">
+			<input type="hidden" name="messageList[47].nextMailNo" value="3713761" id="messageList[47].nextMailNo">
+			<input type="hidden" name="messageList[47].nextRcvDate" value="20140326000004" id="messageList[47].nextRcvDate">
+			<input type="hidden" name="messageList[47].prevMailNo" value="3722162" id="messageList[47].prevMailNo">
+			<input type="hidden" name="messageList[47].prevRcvDate" value="20140327000002" id="messageList[47].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+						
+					
+				
+			
+			<tr class='TrPremiumNotRead' id="data_48">
+				<td width="24" class="td01" id="check_48">
+					<p class="chn">
+						<input type="checkbox" name="check" value="48" onclick="changeColor(this,'48')" id="check[v_48]">
+					</p>
+				</td>
+				<td class="td02"id="title_48">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[48]" onclick="titleLnkClick('48');return false;">本エントリー 二次募集中～「何にでも」「どこへでも」「誰とでも」　戦える市場価値のあるエンジニア集団～</a>
+						</p>
+						<p class="linkCorpName">
+							豊田合成(株)
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>自動車・自動車部品</span>
+							
+								<span>輸送用機器</span>
+							
+								<span>ゴム</span>
+							
+								<span>機械</span>
+							
+								<span>半導体・電子・電気機器</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_48">
+					<p class="date">2014.3.26</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[48].mailNo" value="3713761" id="messageList[48].mailNo">
+			<input type="hidden" name="messageList[48].rcvDate" value="20140326000004" id="messageList[48].rcvDate">
+			<input type="hidden" name="messageList[48].nextMailNo" value="3683520" id="messageList[48].nextMailNo">
+			<input type="hidden" name="messageList[48].nextRcvDate" value="20140326000002" id="messageList[48].nextRcvDate">
+			<input type="hidden" name="messageList[48].prevMailNo" value="3716090" id="messageList[48].prevMailNo">
+			<input type="hidden" name="messageList[48].prevRcvDate" value="20140326000005" id="messageList[48].prevRcvDate">
+		
+			
+				
+				
+					
+					
+					
+					
+				
+			
+			<tr class='TrNormalNotRead' id="data_49">
+				<td width="24" class="td01" id="check_49">
+					<p class="chn">
+						<input type="checkbox" name="check" value="49" onclick="changeColor(this,'49')" id="check[v_49]">
+					</p>
+				</td>
+				<td class="td02"id="title_49">
+					<p class="linkDMTitle">
+							<a href="JavaScript:;" id="titleLink[49]" onclick="titleLnkClick('49');return false;">初めて大阪での会社説明会開催致します！！</a>
+						</p>
+						<p class="linkCorpName">
+							(株)メイクスレント
+						</p>
+						
+						<p class="textGyoshu">
+							
+								<span>不動産</span>
+							
+								<span>不動産（管理）</span>
+							
+								<span>ビル管理・メンテナンス</span>
+							
+								<span>専門コンサルタント</span>
+							
+								<span>インテリア・住宅関連</span>
+							
+							</p>
+						
+				</td>
+				<td class="td03" id="rcvDt_49">
+					<p class="date">2014.3.26</p>
+					
+						<p class="entryOK">エントリー可能</p>
+					
+					
+						<p class="entryOK">日程・予約情報あり</p>
+					
+				</td>
+			</tr>
+			<input type="hidden" name="messageList[49].mailNo" value="3683520" id="messageList[49].mailNo">
+			<input type="hidden" name="messageList[49].rcvDate" value="20140326000002" id="messageList[49].rcvDate">
+			<input type="hidden" name="messageList[49].nextMailNo" value="" id="messageList[49].nextMailNo">
+			<input type="hidden" name="messageList[49].nextRcvDate" value="" id="messageList[49].nextRcvDate">
+			<input type="hidden" name="messageList[49].prevMailNo" value="3713761" id="messageList[49].prevMailNo">
+			<input type="hidden" name="messageList[49].prevRcvDate" value="20140326000004" id="messageList[49].prevRcvDate">
+		
+		</table>
+	</div>
+
+	<div class="funcMessageList bottom">
+		<div class="inner">
+			<p class="btntxt">選択したメッセージを</p>
+			
+				
+				
+			
+			
+			
+				
+					<input type="submit" name="doMoveGarbage" preventdouble="true" value="ごみ箱へ" id="doMoveGarbageLower" class="btnSmallCommonW3em">
+				
+				
+			
+			<input type="submit" name="doUpdateRead" preventdouble="true" value="既読にする" id="doUpdateReadLower" class="btnSmallCommonW5em">
+		</div>
+	</div>
+	
+	<div class="mainpagePnation messageList bottom">
+		<div class="inner">
+			<ul class="leftRight">
+				
+					
+					
+						<li class="left noLink">
+							<span>前の50件</span>
+						</li>
+					
+				
+				<li class="center paging">
+					
+						
+							［1-50件目を表示中］
+						
+						
+					
+				</li>
+				
+					
+						
+							<li class="center noLink">
+								<span>1</span>
+							</li>
+						
+						
+					
+				
+					
+						
+						
+							<li class="center">
+							<a href="JavaScript:;" id="pageNoLowerLnk[2]" onclick="pgLnkClick('2');return false;">2</a>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class="center">
+							<a href="JavaScript:;" id="pageNoLowerLnk[3]" onclick="pgLnkClick('3');return false;">3</a>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class="center">
+							<a href="JavaScript:;" id="pageNoLowerLnk[4]" onclick="pgLnkClick('4');return false;">4</a>
+							</li>
+						
+					
+				
+					
+						
+						
+							<li class="center">
+							<a href="JavaScript:;" id="pageNoLowerLnk[5]" onclick="pgLnkClick('5');return false;">5</a>
+							</li>
+						
+					
+				
+				
+					
+						<li class="right">
+							<a href="JavaScript:;" id="nextLowerLnk" onclick="nxtPgLnkClick();return false;">次の50件</a>
+						</li>
+					
+					
+				
+			</ul>
+		</div>
+	</div>
+	
+	
+</div>
+
+
+
+
+
+
+	
+
+
+
+	<div id="contentsright">
+
+
+
+
+	
+		
+			<div class="boxContentsRightSide messagePR">
+				<h4>志望業種の企業からPR</h4>
+				
+					
+					<div class="inner">
+						<ul class="prWithInd">
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=789026&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[0]"><span class="ind">ソフトウエア</span>
+										<span class="txt">通信インフラを支えるエンジニアを目指しませんか？</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=785541&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[1]"><span class="ind">ソフトウエア</span>
+										<span class="txt">三菱総研★基盤構築のスペシャリスト集団</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=785578&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[2]"><span class="ind">ソフトウエア</span>
+										<span class="txt">世界一のビジネスポータルを共に作り上げよう！</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=787231&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[3]"><span class="ind">半導体・電子・電気機器</span>
+										<span class="txt">応募締切間近！NTTグループ唯一の製造メーカー！</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=786209&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[4]"><span class="ind">ソフトウエア</span>
+										<span class="txt">関西・四国電力グループ、富士通の総合IT情報企業</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=787263&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[5]"><span class="ind">重電・産業用電気機器</span>
+										<span class="txt">日本の産業・医療・最先端技術を支えています！</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=787277&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[6]"><span class="ind">家電・ＡＶ機器</span>
+										<span class="txt">拡声用音響システムのリーディングカンパニー</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=786267&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[7]"><span class="ind">ネット関連技術</span>
+										<span class="txt">Q有名サイトも手掛けている!?そのサイトとは…</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=787220&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[8]"><span class="ind">半導体・電子・電気機器</span>
+										<span class="txt">現代社会のインフラを支えるやりがいが、ここに！</span></a>
+								</li>
+							
+								<li>
+									<a href="/15/pc/common/displayBanner?bannerOptNo=846346&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank" id="bannerList[9]"><span class="ind">総合電機</span>
+										<span class="txt">HITACHI GROUP FORUM予約受付中</span></a>
+								</li>
+							
+						</ul>
+					</div>
+					
+					
+				
+			</div>
+		
+	
+
+
+
+
+
+
+<script type="text/javascript" src="/15/pc/js/searchlist.js"></script>
+
+	<div class="boxContentsRightSide recommend">
+		<h4>
+			<a href="/15/pc/user/displayActHistory/index?corpId=62443&_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU" target="_blank">(株)システムデザイン</a>
+			を志望している人へのオススメ企業
+		</h4>
+		
+		<div class="inner">
+			
+				<div class="pickup">
+					<h5>
+						
+							
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp102717/outline.html?func=message','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/102717-a1-4.jpg?__rd=702361096" alt="キリン(株)（キリンビール/キリンビバレッジ/メルシャン）"></a>
+							
+						
+					</h5>
+					<strong>
+						
+							
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp102717/outline.html?func=message','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">キリン(株)（キリンビール/キリンビバレッジ/メルシャン）</a>
+							
+						
+					</strong>
+					<p>～あたらしい飲料文化をお客様と共に創り、人と社会に、もっと元気と潤いをひろげていく～</p>
+				</div>
+			
+				<div class="pickup">
+					<h5>
+						
+							
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp64198/outline.html?func=message','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/64198-a1-4.jpg?__rd=1557913132" alt="(株)富士通システムズウェブテクノロジー"></a>
+							
+						
+					</h5>
+					<strong>
+						
+							
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp64198/outline.html?func=message','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)富士通システムズウェブテクノロジー</a>
+							
+						
+					</strong>
+					<p>富士通グループを経営のバックボーンに、プロフェッショナルな技術サービスを追求しています。</p>
+				</div>
+			
+				<div class="pickup">
+					<h5>
+						
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp87666/flex.html?func=message','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/87666-a1-4.jpg?__rd=82989256" alt="(株)ピーエスシー"></a>
+							
+							
+						
+					</h5>
+					<strong>
+						
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp87666/flex.html?func=message','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)ピーエスシー</a>
+							
+							
+						
+					</strong>
+					<p>流れの速いIT業界の中にあって、なぜピーエスシーは堅実に成長を続けることができるのか…</p>
+				</div>
+			
+			<div class="more">
+				<p>
+					<a href="/15/pc/search/rcmd_list.html?_vsm=Y2TpwiBf7BCjB9IWqgJlBytGPS6B4JKhgyvRBVvTE5IQDYK1l776PmzeoyCr6_HoBDjVv2LjzftcfXU1ZkVEfBu-I_FTDgMWLqTZYHh7uTuwKZWk0weKBPNA8eS1ke9xoNsmRjs5EIg0rz4kA331MC1fPqTisSjok95gNlRKfrJc5XYi1jj4Rw7W3hykv8whl44yrLUIP4VLVYs7su4U7Wx3SOPcJyUOUqUZM9vsvk2jjvx2vrAnS-lMqI6RS9TU"><span>あなたの志望にマッチするオススメ企業</span>をもっと見る</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+</div>
+</form>
+
+
+
+
+
+
+	
+	
+		
+	
+
+<script type="text/javascript" src="/15/pc/js/ui/userinsight.js"></script>
+
+
+
+
+<div id="gfooter">
+<div id="GlobalFooter" class="clearfix">
+<div id="FooterLogo">
+<a href="http://www.mynavi.jp/" target="_blank"><img src="/15/pc/images/cmn/logo.gif" width="70" height="61" alt="株式会社マイナビ" /></a>
+</div>
+
+<div id="FooterService">
+<div id="FooterServiceHead" class="clearfix">
+<div class="FooterTitle">マイナビグループの関連サイト</div>
+<p class="FooterHeadLink"><a href="http://www.mynavi.jp/service/" target="_blank"><img src="/15/pc/images/cmn/farrow.gif" width="13" height="10" alt=">">サービス一覧</a></p>
+</div>
+
+<div id="FooterServiceCont">
+<dl class="clearfix">
+<dt>求人情報</dt>
+<dd><a href="http://job.mynavi.jp/" target="_blank">学生の就活</a></dd>
+<dd><a href="http://global.mynavi.jp/" target="_blank">留学経験者の就活</a></dd>
+<dd><a href="http://nurse.mynavi.jp/" target="_blank">看護学生の就活</a></dd>
+<dd><a href="http://tenshoku.mynavi.jp/" target="_blank">転職情報</a></dd>
+<dd><a href="http://agent.mynavi.jp/" target="_blank">転職エージェント</a></dd>
+<dd class="last"><a href="http://baito.mynavi.jp/" target="_blank">アルバイト</a></dd>
+<dd><a href="http://part.mynavi.jp/" target="_blank">パート</a></dd>
+<dd class="last"><a href="http://haken.mynavi.jp/" target="_blank">派遣求人</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>進路情報</dt>
+<dd><a href="http://shingaku.mynavi.jp/" target="_blank">高校生の進路情報</a></dd>
+<dd class="last"><a href="http://jol.me/" target="_blank">10代のライフデザイン</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>情報サービス</dt>
+<dd><a href="http://news.mynavi.jp" target="_blank">総合・専門ニュース</a></dd>
+<dd><a href="http://student.mynavi.jp/" target="_blank">大学生活応援</a></dd>
+<dd><a href="http://woman.mynavi.jp/" target="_blank">働く女性応援</a></dd>
+<dd><a href="http://book.mynavi.jp/" target="_blank">雑誌・書籍・ソフト</a></dd>
+<dd><a href="http://www.japan-i.jp/" target="_blank">海外向け</a></dd>
+<dd class="last"><a href="http://chintai.mynavi.jp/" target="_blank">賃貸住宅情報</a></dd>
+<dd><a href="http://wedding.mynavi.jp/" target="_blank">ウエディング情報</a></dd>
+<dd><a href="http://cras-wedding.mynavi.jp/" target="_blank">上質ウェディング</a></dd>
+<dd class="last"><a href="http://www.sekaken.jp/" target="_blank">世界遺産検定</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>人材派遣・紹介</dt>
+<dd><a href="http://staff.mynavi.jp/" target="_blank">人材派遣</a></dd>
+<dd><a href="http://mynavi-agent.jp/" target="_blank">人材紹介</a></dd>
+<dd><a href="http://kango.mynavi.jp/" target="_blank">看護師の求人</a></dd>
+<dd><a href="http://pharma.mynavi.jp/" target="_blank">薬剤師の転職</a></dd>
+<dd><a href="http://creator.mynavi-agent.jp/" target="_blank">クリエイター求人</a></dd>
+<dd><a href="http://shinsotsu.mynavi-agent.jp/" target="_blank">新卒紹介</a></dd>
+<dd class="last"><a href="http://job20s.mynavi-agent.jp/" target="_blank">第二新卒</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>法人向け</dt>
+<dd><a href="http://saponet.mynavi.jp/" target="_blank">新卒採用支援</a></dd>
+<dd><a href="http://hrd.mynavi.jp/" target="_blank">研修サービス</a></dd>
+<dd><a href="http://career-s.mynavi.jp/" target="_blank">キャリア開発・再就職支援</a></dd>
+<dd><a href="http://msc.mynavi.jp/" target="_blank">発送代行</a></dd>
+<dd class="last"><a href="http://shinro-saponet.mynavi.jp/" target="_blank">高校進路指導支援</a></dd>
+</dl>
+</div>
+<!-- #FooterServiceCont end --></div>
+
+<div id="FooterCorp">
+<div id="FooterCorpInfo">
+<div id="FooterCorpId">
+<div id="FooterCorpName"><a href="http://www.mynavi.jp/" target="_blank"><img src="/15/pc/images/cmn/corp_name.gif" width="100" height="13" alt="株式会社マイナビ"></a></div>
+<p id="copyright">Copyright &copy; Mynavi Corporation</p>
+</div>
+<div id="FooterCorpLink">
+<ul>
+<li><a href="http://www.mynavi.jp/company/">会社概要</a></li>
+<li><a href="http://www.mynavi.jp/service/">サービス一覧</a></li>
+<li><a href="http://www.mynavi.jp/company/office.html">事業所案内</a></li>
+<li><a href="http://www.mynavi.jp/company/social.html">社会的な取り組み</a></li>
+<li><a href="http://www.mynavi.jp/recruit/">採用情報</a></li>
+<li><a href="http://www.mynavi.jp/group/">グループ会社</a></li>
+<li class="last"><a href="http://www.mynavi.jp/privacy/">個人情報保護方針</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="privacy"><a href="http://privacymark.jp/" target="_blank"><img src="/15/pc/images/cmn/privacy.gif" alt="プライバシーマーク" /></a></div>
+</div>
+</div>
+<!-- // ===== Footer End ===== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<head>
+    <meta http-equiv="PRAGMA" content="NO-CACHE">
+</head>
+
+</html>

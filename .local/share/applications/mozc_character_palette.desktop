@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=mozc moji palette
+Terminal=false
+Name=Mozc 文字パレット
+Exec=/usr/lib/mozc/mozc_tool --mode=character_palette
+Type=Application
+Icon=/usr/share/ibus-mozc/tool.png

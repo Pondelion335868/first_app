@@ -1,0 +1,20 @@
+
+public class Dice {
+/*
+	// イカサマサイコロ
+  	int[] values = new int[] {
+			3, 4, 2, 1, 5, 6
+	};
+	int current = 0;
+	int roll() {
+		current++;
+		if(current == 6) current = 0;
+		return values[current];
+	}
+*/
+	// ランダムなサイコロ
+	java.util.Random r = new java.util.Random();
+	public int roll() {
+		return r.nextInt(6)+1;
+	}
+}

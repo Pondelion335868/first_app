@@ -1,0 +1,81 @@
+
+
+
+                                var amzn_wdgt={"cols":2,"tag":"rcmdnk0c-22","width":"300","wishlist_id":"N9M4X3BSKHIH","inner_bkgd_color":"#F2F2F2","serviceVersion":"20070822","head_text_color":"#222222","marketPlace":"JP","show_image":true,"price_color":"#9C0000","rows":3,"templateId":"8004","title":"マイ・ウィッシュリスト","sort_type":"DateAdded","outer_bkgd_color":"#F2F2F2","show_review":false,"displayTemplate":"7","show_price":true,"border_color":"#F2F2F2","text_color":"#222222"}
+        amzn_wdgt.ID = "V20070822/JP/rcmdnk0c-22/8004/6c541ac0-db47-40ca-b8c4-6cd9b8c68c77";
+        amzn_wdgt.rt = "as_li_wdgt_ex";
+        if (typeof _amzn_utils_strs == "undefined") { _amzn_utils_strs = {}; }; _amzn_utils_strs.getStringForJP = function(key){
+ var obj = new Object();        obj.Book = '';
+        obj.Search = 'サーチ';
+        obj.SearchIndication = '';
+        obj.Loading = '読み込み中';
+        obj.Kindle = '';
+        obj.GetEditWidgetShort = 'ウィジェットの取得/編集';
+        obj.LoyaltyPoints = 'ポイント';
+        obj.AllCategories = '';
+        obj.SearchNavigationNext = '';
+        obj.Unbox = '';
+        obj.SearchResultsLastPage1 = '';
+        obj.SearchResultsLastPage2 = '';
+        obj.GetEditWidgetLong = 'このウィジェットを取得/編集';
+        obj.BestPrice = 'ロープライス';
+        obj.AmazonPrime = '';
+        obj.Music = '';
+        obj.MP3 = '';
+        obj.NoItemsWishlist = 'ウィッシュリストに商品がありません';
+        obj.Buy = '今すぐ買う';
+        obj.Download = '';
+        obj.closeString = '閉じる';
+        obj.inString = '';
+        obj.or = 'or';
+        obj.SortBy = '並べ替え';
+        obj.NoResultsFor = 'に該当するものはありませんでした。';
+        obj.SearchAmazon = '';
+        obj.Now = '';
+        obj.NoResultsPage = '';
+        obj.GetWidgetLong = 'このリンクを貼る';
+        obj.DVD = '';
+        obj.CustomerReviews = 'レビュー';
+        obj.ErrorMessage = 'サーバーに接続できません。　時間を置いて再度お試しください。';
+        obj.PrivacyPolicy = 'プライバシー規約';
+        obj.SearchSuggestions = '';
+        obj.Price = '価格';
+        obj.SearchNavigationPrevious = '';
+        obj.Searching = '検索中';
+        obj.WatchNow = '';
+        obj.BuyNew = ' 新品';
+        obj.Video = '';
+        obj.selectStore = 'アマゾンストアを選んでください';
+        obj.Amazon = 'Amazon';
+        obj.CampaignID = '759';
+        obj.AssocImpVIP = 'www.assoc-amazon.jp';
+        obj.PandaAssocImpVIP = 'ir-jp.amazon-adsystem.com';
+        obj.CompletionVIP = 'completion.amazon.co.jp/search/complete';
+        obj.issMktid = '6';
+        obj.AmazonCom = 'Amazon.co.jp';
+        obj.AmazonComLink = 'http://www.amazon.jp/';
+        obj.PrivacyPolicyLink = 'http://rcm-fe.amazon-adsystem.com/e/cm/privacy-policy.html?o=9';
+        obj.DefaultTag = 'widgetsamazon-22';
+        obj.WebsiteRefTag = 'assoc_wdgt_jp';
+        obj.WSUrl = 'http://ws.amazon.co.jp/widgets';
+        obj.PandaWSUrl = 'http://ws-fe.amazon-adsystem.com/widgets';
+        obj.WMSUrl = 'http://wms.assoc-amazon.jp';
+        obj.PandaWMSUrl = 'http://wms-fe.amazon-adsystem.com';
+        obj.WebsiteUrl = 'http://widgets.amazon.co.jp/';
+        obj.PrivacyPolicyLinkLength = '11';
+        obj.AmazonComLogoLength = '87';
+        obj.GetLinkButtonLengthDark = '87';
+        obj.GetLinkButtonLength = '94';
+        obj.GetLinkLength = '8';
+        obj.PrivacyAmazonComPermissableLength = '128';
+        obj.PrivacyGetLinkPermissableLength = '120';
+        obj.PrivacyGetLinkButtonPermissableLength = '125';
+        obj.PrivacyGetLinkButtonPermissableLengthDark = '115';
+        obj.LetterToPixelRatio = '6';
+if(obj[key]){ 
+return  obj[key]; }else { return 'Unknown string';
+    }
+}
+
+        document.write('<script charset="utf-8" type="text/javascript" src="http://wms.assoc-amazon.jp/20070822/JP/js/8004_7.js"> </script>');
+    

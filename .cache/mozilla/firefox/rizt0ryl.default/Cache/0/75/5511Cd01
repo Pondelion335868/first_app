@@ -1,0 +1,2025 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>パズルゲーム</title>
+
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="imagetoolbar" content="no" />
+
+<meta name="description" content="パズルです。" />
+<meta name="keywords" content="パズルゲーム,無料ゲーム,オンラインゲーム,おもしろゲーム,無料パズルゲーム" />
+
+<link href="/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/wow.ico" />
+
+<script src="/script/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="/script/popupwin.js" type="text/javascript"></script>
+<script src="/script/MM.js" type="text/javascript"></script>
+<script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/10632307/wowGame_Rectangle', [300, 250], 'div-gpt-ad-1365584080861-0').addService(googletag.pubads());
+googletag.defineSlot('/10632307/wowGame_ru_Rectangle', [300, 250], 'div-gpt-ad-1365584080861-1').addService(googletag.pubads());
+googletag.defineSlot('/10632307/wowGame_SuperBanner', [728, 90], 'div-gpt-ad-1365584080861-2').addService(googletag.pubads());
+googletag.enableServices();
+});
+</script>
+
+
+
+
+
+
+</head>
+
+
+<body onload="all_blur()">
+<!--// header-->
+
+ <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center"><table width="970" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF">
+              <tr align="center">
+                <td height="20" width="530" align="left"><font class="keyword" id="h1head"><h1>パズル・ボードの無料ゲームのワウゲーム</h1></font></td>
+                <td height="20" width="150" align="right" class="font_s"></td>
+                <td height="20" width="250" align="right" valign="top"><iframe name="ifa_login" id="ifa_login" align="right" width="240" height="25" scrolling="no" src="/include_toptext.asp?num=&board=" frameborder="0" ></iframe></td>
+			 </tr>
+            </table>
+			
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" valign="top">
+        <table width="970" border="0" cellspacing="0" cellpadding="0" style="margin-top:5px; margin-bottom:10px ">
+          <tr>
+		  <td valign="middle" align="left"><a href="/" title="無料ゲーム、フリーゲーム、フラッシュゲーム、脱出ゲーム"><img src="/images/logo_sub.gif" border="0" alt="無料ゲーム、フリーゲーム、フラッシュゲーム、脱出ゲーム"></a></td>
+	<td align="left">
+
+
+<!-- wowGame_SuperBanner -->
+<div id='div-gpt-ad-1365584080861-2' style='width:728px; height:90px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1365584080861-2'); });
+</script>
+</div>
+
+
+
+	</td>
+          </tr>
+        </table>
+                <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="center">
+
+<table width="970" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td width="692">
+	<table cellpadding="0" cellspacing="0" >
+	<form action="http://wowgame.jp/search.asp" id="cse-search-box">
+        <tr> 
+          <td width="95"><a href="/"><img src="/images/01_menu1.gif" border="0" onMouseOver="this.src='/images/01_menu1_1.gif'" onMouseOut="this.src='/images/01_menu1.gif'" alt="ゲームトップ"></a></td>
+          <td width="100"><a href="/minigame"><img src="/images/01_menu2_1.gif" border="0" onMouseOver="this.src='/images/01_menu2_1.gif'"  alt="ミニ無料ゲーム"></a></td>
+          <td width="134"><a href="/rankinggame"><img src="/images/01_menu3.gif" border="0" onMouseOver="this.src='/images/01_menu3_1.gif'" onMouseOut="this.src='/images/01_menu3.gif'" alt="ランキングゲーム"></a></td>
+          <td width="119"><a href="/sns/"><img src="/images/01_menu5.gif" border="0" onMouseOver="this.src='/images/01_menu5_1.gif'" onMouseOut="this.src='/images/01_menu5.gif'" alt="SNSゲーム"></a></td>         
+	  <td width="119"><a href="http://bg.wowgame.jp/"><img src="/images/01_menu4.gif" border="0" onMouseOver="this.src='/images/01_menu4_1.gif'" onMouseOut="this.src='/images/01_menu4.gif'" alt="ブラウザゲーム"></a></td>
+	  <td width="125"><a href="/onlinegame"><img src="/images/01_menu6.gif" border="0" onMouseOver="this.src='/images/01_menu6_1.gif'" onMouseOut="this.src='/images/01_menu6.gif'" alt="オンラインゲーム"></a></td>
+        </tr>
+      </table></td>
+    <td align="right" background="/images/01_menu_bg.gif" style="padding-right:10px;" valign="middle">
+
+
+
+	</td>
+    <td width="9" align="right" background="/images/01_menu_right.gif"></td>
+  </tr>
+  </form>
+</table>
+
+            </td>
+          </tr>
+        </table></td>
+  </tr>
+</table>
+
+
+<!-- ミニゲーム -->
+<table cellpadding="0" cellspacing="0" width="970" align="center" style="border-bottom:1px solid #B7DBF3;">
+<tr>
+<td bgcolor="#E7F0F6" height="25" align="left" style="padding-left:10px;">
+<a href="/puzzleboard/"><strong>パズル・ボード</strong></a>
+　|　<a href="/fun/">おもしろゲーム</a>
+　|　<a href="/sports/">スポーツ</a>
+　|　<a href="/girlsgame/">ガールズゲーム</a>
+　|　<a href="/men/">アクション・シューティング</a>
+</td>
+</tr>
+</table>
+<!-- ミニゲーム -->
+
+<div align="center">
+<table width="970" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:8px">
+  <tr>
+    <td align="left" style="padding:7px 0 0 20px">
+	
+		<!-- google/728/15 -------------------------------------->
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-1847813181958947";
+		/* 728x15, 作成済み 08/02/01 */
+		google_ad_slot = "5830167779";
+		google_ad_width = 728;
+		google_ad_height = 15;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+		<!-- //google/728/15 -------------------------------------->
+	
+
+	</td>
+  </tr>
+</table>
+</div>
+
+
+<script src="/script/link.js" type="text/javascript"></script>
+<script language="JavaScript">
+<!--
+
+var UserAgent = navigator.userAgent;
+var lcUserAgent = UserAgent.toLowerCase();
+
+if (lcUserAgent.indexOf("iphone") > -1 || lcUserAgent.indexOf("android") > -1 ) 
+{
+	window.location.href = 'http://s.wowgame.jp/';
+}
+
+
+function CmdPageGo(pg) {					//Command Page Move
+	document.wowgame.pg.value=pg;
+	document.wowgame.submit();
+}
+function tag_sizechange(tag_obj,gameID,size1,size2) {
+	tag_obj.value = '<div><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="' + size1 + '" height="' + size2 + '"><param name="movie" value="http://pub.wowgame.jp/game_files/' + gameID + '/' + gameID + '.swf" /><param name="quality" value="high" /><param name="FlashVars" value="blogtag=1"/><embed src="http://pub.wowgame.jp/game_files/' + gameID + '/' + gameID + '.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" FlashVars="blogtag=1" width="' + size1 + '" height="' + size2 + '"></embed></object><br><a href="http://www.wowgame.jp/" target="_blank">無料ゲームならワウゲーム</a></div>'
+}
+
+//-->
+</script>
+
+
+
+
+
+<!-- カテゴリ　タイトル -->
+<div class="title" align="left" style="padding-top:10px;margin:0 auto; width:970px;" valign="bottom"><font color="#D35A01" style="font-size:16px;line-height:18px;">《パズル・ボード》</font></div>
+<!-- カテゴリ　タイトル -->
+
+<!-- ゲーム一覧 -->
+<table width="970" align="center" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td valign="top">
+
+	<table>
+	<tr>
+	<td valign="top">
+	
+		<!--<div style="padding:5px; border:1px solid #DEDEDE; background-color:#FFFFFF;">-->
+		<div style="width:655px; background:url(/images/ico_puzzleboard.gif) no-repeat;overflow: hidden;border:1px solid #DEDEDE; background-color:#FFFFFF; ">
+		
+		<!-- google_ad_section_start -->
+			<table width="630" border="0" cellspacing="0" cellpadding="0" style="padding-bottom:7px;">
+			  <tr align="left">
+			  
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/puzzle">パズル</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/boardgame">ボードゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/sichuan">四川省</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/jigsawpuzzle">ジグソーパズル</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/Shanghaigame">上海ゲーム</a></td>
+				
+			  </tr>
+			   <tr align="left">
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/Othello">リバーシ</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/NumberPlace">ナンプレ</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/solitaire">ソリティア</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/trump">トランプゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/Casino">カジノ・スロット</a></td>
+				
+			  </tr>
+			   <tr align="left">
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/mahjong">麻雀ゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/chess">チェス</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/braintraining">脳トレ</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/Dismantle">解体ゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/pair">神経衰弱</a></td>
+				
+			  </tr>
+			   <tr align="left">
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/picturelogic">お絵かきロジック</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/logic">ロジックパズル</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/Marching">マッチ3ゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/ancientpuzzle">古代遺物パズル</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/same">セイムゲーム</a></td>
+				
+			  </tr>
+			   <tr align="left">
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/mystery">謎解きゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/calculation">算数ゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/tetris">テトリスゲーム系</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/hexa">ヘキサゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/go">囲碁・五目並べ</a></td>
+				
+			  </tr>
+			   <tr align="left">
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/diamondgame">ダイアモンドゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/maze">迷路ゲーム</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/slidepuzzle">スライドパズル</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/Minesweeper">マインスイーパ</a></td>
+				
+				<td style="padding-left:30px;padding-top:7px;"> <a href="/bubble_shooter">バブルシューター</a></td>
+				
+			  </tr>
+		  </table>
+		</div>
+	</td>
+
+	  <td width="320" align="right" valign="top">
+			<div><IFRAME src="/sub/banner_iframe.asp" name="frame" height="250" width="300" scrolling="no" frameborder="no"  marginwidth="0" marginheight="0" hspace="0" vspace="0" ></IFRAME></div>
+	  </td>
+
+	</tr>
+	</table>
+	<!-- google_ad_section_end -->
+	<!-- <div align="right" style="padding:5px; border-bottom:2px solid #409AEA; margin-top:5px;">explain=<img src="/images/ico_down.gif" align="absmiddle" style="margin-right:3px;"><strong><a href="/puzzleboard">人気順</a></strong> ｜ <a href="/puzzleboardnew">最新順</a> ｜ <a href="/puzzleboardimage">画像羅列</a></div> -->
+	<div style="padding:5px; border-bottom:2px solid #409AEA; margin-top:5px;">
+		<table width="930" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+		  	<td align="left"></td>
+		  	<td align="left"><strong><a href="/puzzleboard">人気順</a></strong> ｜ <a href="/puzzleboardnew">最新順</a> ｜ <a href="/puzzleboardimage">画像羅列</a></td>
+		  </tr>
+		</table>
+	</div>
+
+
+
+<table border="0" cellpadding="0" cellspacing="0" width="970">
+<form name="form1">
+	<!-- ゲーム一覧 -->
+
+            <tr>
+              <td colspan="3" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+
+            <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/181.html"><img src="/images/game_images/181/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/181.html"> <strong>セイムゲーム</strong></a><br>
+			二つ以上の隣合う同じ色のブロックを大量に消していくセイムゲーム。<br />どこから崩すかがカギ☆同じ色を多く繋いで、<br />一度に消すように組み立てる作業は、頭の運動に最適のパズル！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">1位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/174.html"><img src="/images/game_images/174/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/174.html"> <strong>パズル麻雀</strong></a><br>
+			同じ絵柄の消していく四川省 ゲーム。<br />タイムオーバーが近づくに連れて、焦る焦る・・・！<br />最後にペアがない(ToT)なんて事にならないように・・・。<br />☆上海ゲーム、パズルゲーム、無料麻雀ゲーム<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">2位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/2839.html"><img src="/images/game_images/2839/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/2839.html"> <strong>バブルシューター2</strong></a><br>
+			同じ色を3つ以上くっつけて消していく暇つぶしゲーム。<br />上を狙って一気に落とすのもアリ!<br />ボールが下のラインまで来るとゲームオーバー。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">3位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/4396.html"><img src="/images/game_images/4396/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/4396.html"> <strong>歓喜四川省</strong></a><br>
+			同じ絵柄をどんどん消していく四川省ゲームです。<br />各列の両端しか消せないので、頭で考えながら消していきましょう。<br />制限時間内に全てのコマを消せるように頑張りましょう！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">4位&nbsp;<span class="point">
+★★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/184.html"><img src="/images/game_images/184/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/184.html"> <strong>スワップヘキサ</strong></a><br>
+			縦横斜め、同じ絵柄を3個以上並べると消えるパズル。<br />隣同士しか交換できないので、意外に頭を使いますよ・・・！<br />おいしそうな食べ物を眺めて、お腹を空かせながらトライしてみましょう～<br />画面から食べ物が全て消えた時の快感がクセになる食べ物ゲーム！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">6位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1837.html"><img src="/images/game_images/1837/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1837.html"> <strong>バウンドボールズ</strong></a><br>
+			落ちてくるボールを同じボール３つ以上つないで消すマッチ3ゲーム<br />横の壁のバウンドも利用しましょう。<br />ボールが下まで落ちるとゲームオーバーになります。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">7位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/316.html"><img src="/images/game_images/316/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/316.html"> <strong>スワップマッチ</strong></a><br>
+			昆虫を3匹ならべてどんどん消すマッチ3ゲームパズル！<br />全種類ミッション数をクリアしてレベルアップ。<br />爆弾を消すと点数が引かれるので注意。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">8位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/6600.html"><img src="/images/game_images/6600/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/6600.html"> <strong>スノークィーン3</strong></a><br>
+			かけらを集めるマッチ3ゲーム。<br />3つ揃えてパネルを消し、お花のかけらを集めよう。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">9位&nbsp;<span class="point">
+★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1908.html"><img src="/images/game_images/1908/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1908.html"> <strong>ダブルソリティア2</strong></a><br>
+			2組のトランプでソリティア。<br />カードを同じマークでA～Kまで順番に上に置いていきます。<br />枚数が多いから大変☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">10位&nbsp;<span class="point">
+★★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/178.html"><img src="/images/game_images/178/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/178.html"> <strong>縦横ロジック</strong></a><br>
+			縦横にある数字のヒントを手がかりに、<br />爆弾のない空き枠をコツコツ探す数学・算数パズル。<br />数字と空き枠の睨めっこデス。世界一難しいゲーム<br />間違えると爆弾が爆発するから、尊重に正確にね<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">11位&nbsp;<span class="point">
+★★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/180.html"><img src="/images/game_images/180/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/180.html"> <strong>プラスプラス</strong></a><br>
+			合計がミッションの数字になるように足し算していく数学・算数計パズル。<br />簡単なだけにムキになるんです・・・脳トレにもいいかも。<br />算数が苦手だという、そこのアナタ！今からでもまだまだ遅くない☆<br />☆学習ゲーム、脳トレ無料ゲーム、キッズゲーム、算数ゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">13位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/6625.html"><img src="/images/game_images/6625/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/6625.html"> <strong>キャンディーマッチ</strong></a><br>
+			キャンディーを消すマッチ3ゲーム。<br />時間内に消せるかな?<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">14位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1993.html"><img src="/images/game_images/1993/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1993.html"> <strong>ピラミッドソリティア</strong></a><br>
+			合計13のペアを探して消していく、<br />トランプのソリティアゲーム。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">15位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/2026.html"><img src="/images/game_images/2026/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/2026.html"> <strong>スワップスター</strong></a><br>
+			同じ色の星を３つ以上つないで消していくマッチ3ゲーム<br />直線に並べなくてもつながればいいです。<br />左側の大きな星の色が全て変わればレベルアップ<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">19位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/6609.html"><img src="/images/game_images/6609/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/6609.html"> <strong>オリエント急行</strong></a><br>
+			鍵穴に鍵を入れるセイムゲーム。<br />宝石の消し方は替えられます。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">21位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/202.html"><img src="/images/game_images/202/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/202.html"> <strong>セイムクラッシュ</strong></a><br>
+			セイムゲームがバージョンアップしちゃいました☆<br />今度は下からどんどん増えてくるから、さぁ大変！！<br />下から追い詰められるようなスリル感に慌てながら・・・<br />でも、着実に正確にブロックを消していくパズル！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">23位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1895.html"><img src="/images/game_images/1895/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1895.html"> <strong>卵パズル</strong></a><br>
+			卵を４つ以上直線に並べて消すマッチ3ゲーム<br />席替えしたい卵を連続にクリックして移動します。<br />多く同時に消せば、連続消せば高いスコア！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">24位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1915.html"><img src="/images/game_images/1915/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1915.html"> <strong>宝石スワップ2</strong></a><br>
+			同じ宝石を横縦の直線で３つ以上並べて消すマッチ3ゲームパズル<br />制限時間以内に宝石をすべて消すとレベルアップ<br />宝石もほしいですね。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">27位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/4563.html"><img src="/images/game_images/4563/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/4563.html"> <strong>ミスティックインディアポップ</strong></a><br>
+			ゾウさんをマウスで動かして狙ってね！<br />同じ色のボールをぶつけるマッチ3ゲーム<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">28位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/17.html"><img src="/images/game_images/17/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/17.html"> <strong>カエルパズル</strong></a><br>
+			空から、どんどんカエルが降ってくるテトリス系パズルゲーム！<br />同じ色のカエルを縦横斜めに3つずつ並べてどんどん消しちゃいましょう！<br />急がないと積みあがって、あっという間にゲームオーバーに・・・！<br />テトリス好きにはたまらない面白いパズルですよ～♪<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">29位&nbsp;<span class="point">
+★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/506.html"><img src="/images/game_images/506/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/506.html"> <strong>麻雀ガーデン</strong></a><br>
+			麻雀牌を使った本格的無料ゲーム 麻雀!<br />重ねてあったり、麻雀碑が使えるタイミングが限られているので、<br />ペアがないと思ったらシャッフルしよう！<br />キレイに全てのペアを揃えられるかな？<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">31位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/211.html"><img src="/images/game_images/211/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/211.html"> <strong>マインスイーパ</strong></a><br>
+			隠された地雷を発見し、地雷以外のマスを全て開くドキドキパ<br />手がかりとなるのは、マスに示された数字のみ。<br />地雷を踏まないように慎重に進めて下さいね！<br />☆パズル、ボードゲーム、ロジックパズル☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">38位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1948.html"><img src="/images/game_images/1948/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1948.html"> <strong>麻雀マニア</strong></a><br>
+			一人でやる麻雀です。<br />同じ模様の麻雀牌を消していきます。<br />似ててよくみないと・・・<br />集中力と忍耐力が必要です。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">41位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/4552.html"><img src="/images/game_images/4552/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/4552.html"> <strong>壊せ！ダイアモンド</strong></a><br>
+			トンカチで消していくセイムゲーム。<br />次から次へと流れてくる階層をどんどん消そう。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">42位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1936.html"><img src="/images/game_images/1936/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1936.html"> <strong>クロンダイクソリティア</strong></a><br>
+			トランプのソリティアゲーム。<br />A～Kまで順番に揃えよう。<br />カードをめくるタイミングが重要。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">44位&nbsp;<span class="point">
+★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/255.html"><img src="/images/game_images/255/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/255.html"> <strong>プラスマイナス</strong></a><br>
+			プラスとマイナスを組み合わせてミッション数と一致させよう！<br />かなりの脳トレ＆意外とヤミツキになっちゃうパズルゲームですよ★<br />プロックをたくさん組み合わせて高得点をゲットしよう！<br />☆学習ゲーム、脳トレ、キッズゲーム、算数ゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">45位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/243.html"><img src="/images/game_images/243/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/243.html"> <strong>パズルサッカー王</strong></a><br>
+			同じ柄のボールを3個以上一列に並べるパズル★<br />これはまさに頭の運動！キッズゲーム<br />時間とも戦わなければならない<br />高得点を目指したくて一気にハマル人が激増中！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">47位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/5986.html"><img src="/images/game_images/5986/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/5986.html"> <strong>イタリア発見</strong></a><br>
+			3種のミニゲームが楽しめるマッチ3ゲーム。<br />アイテム探しや間違い探しもあるよ。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">48位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/4554.html"><img src="/images/game_images/4554/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/4554.html"> <strong>パターンリンク</strong></a><br>
+			同じ柄のタイルをペアで消していく二角取りの四川省ゲーム。<br />ゲームが進むとタイルが動くよ。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">52位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/140.html"><img src="/images/game_images/140/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/140.html"> <strong>アニマルパーク</strong></a><br>
+			隣同士の動物を交換して、3匹並べて消していこう☆<br />でもこのゲームはただ消すだけじゃない！！<br />最初に出るミッションもしっかり覚えながらのパズル・・・<br />記憶力まで必要だよ☆キッズゲーム<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">55位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/2661.html"><img src="/images/game_images/2661/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/2661.html"> <strong>アーケードライン</strong></a><br>
+			同じ色のボールを5つ以上並べて消していくパズルゲーム。<br />特殊ボールの効果をうまく組み合わせてスコアアップ！<br />大人からこどもまで楽しく遊べます。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">56位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/3947.html"><img src="/images/game_images/3947/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/3947.html"> <strong>ブロック崩壊</strong></a><br>
+			同じ色のブロックを消していくセイムゲームです。<br />一度にたくさん消せば消すほど高得点！<br />工夫してブロックを消して高得点を目指せ！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">61位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/4599.html"><img src="/images/game_images/4599/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/4599.html"> <strong>バブルシューター3</strong></a><br>
+			同じ色を3つ以上くっつけて消していく暇つぶしゲーム。<br />上を狙って一気に落とすのもアリ!<br />ボールが下のラインまで来るとゲームオーバー。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">62位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/175.html"><img src="/images/game_images/175/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/175.html"> <strong>神経衰弱</strong></a><br>
+			誰でも一度はハマったことがある神経衰弱記憶力アップゲーム！<br />トランプではなく、パソコンで気軽にできちゃうんです♪<br />勘と記憶力を試してみよう☆<br />同じカードだった時の快感！たまりませんよねぇ～<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">63位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/6618.html"><img src="/images/game_images/6618/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/6618.html"> <strong>コーヒー麻雀</strong></a><br>
+			コーヒー柄の上海ゲーム。<br />ペアで消していこう。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">65位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/65.html"><img src="/images/game_images/65/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/65.html"> <strong>リバーシ</strong></a><br>
+			言わずと知れた”オセロゲーム”のキャラクターバージョンが登場デス！<br />相手を自分のキャラクターで挟むと、自分の仲間になっちゃよ☆<br />パソコン相手にムキになれちゃう、暇つぶしにはもってこい！<br />ボードゲームの決定版！やってみよう。<br />☆ボードゲーム、オセロゲーム、対戦ゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">67位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/5474.html"><img src="/images/game_images/5474/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/5474.html"> <strong>スノークィーン2</strong></a><br>
+			お花を集めるマッチ3ゲーム。<br />3つ揃えてパネルを消し、お花のかけらを集めよう。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">71位&nbsp;<span class="point">
+★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/546.html"><img src="/images/game_images/546/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/546.html"> <strong>クリスマスパラダイス</strong></a><br>
+			クリスマスプレゼントのカードを消すセイムゲームです。<br />同じカードがつながっているところは消すことができます。<br />頭を使ってすべてのブロックを消しましょう！<br /><br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">77位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/263.html"><img src="/images/game_images/263/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/263.html"> <strong>ヘキサ</strong></a><br>
+			落ちてくるブロックを色ごと縦横斜めに並べるヘキサ☆<br />ブロックが積みあがってくるとイライラ度が増しちゃうので<br />なるべく早く適格に消していこう！<br />頭の体操をしてみましょう(^^)v<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">79位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/19.html"><img src="/images/game_images/19/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/19.html"> <strong>モンスターナンプレ</strong></a><br>
+			モンスターとナンバー、どちらも選べるナンプレゲーム。<br />1～9までの数字、またはモンスターを重複しないように配置する<br />数学・算数パズルだよ。頭を使ってつかって・・・(>_<)！<br />☆ナンプレ無料ゲーム、パズル☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">81位&nbsp;<span class="point">
+★★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/210.html"><img src="/images/game_images/210/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/210.html"> <strong>パイプカン</strong></a><br>
+			水道管を回転させて上手く繋げて、ワンちゃんに水をあげて下さい☆<br />これが意外と頭を使うパズルゲーム！<br />それにしてもワンちゃん、いい飲みっぷりデス(^^)v<br />☆迷路、誘導、世界一難しいゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">82位&nbsp;<span class="point">
+★★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/206.html"><img src="/images/game_images/206/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/206.html"> <strong>動物四川省</strong></a><br>
+			マージャンゲームよりパズルの数が少ない上に可愛い<br />・・とはいうものの、レベルが上がると動物くん達も<br />容赦なく難易度をアップさせるので、侮れないよ！<br />☆四川省 ゲーム、上海ゲーム、麻雀ゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">83位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/2769.html"><img src="/images/game_images/2769/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/2769.html"> <strong>ビル解体ゲーム3</strong></a><br>
+			工事現場でガレキを崩す解体ゲームです。<br />使うアイテムはステージによって様々。<br />それぞれのアイテムの操作のコツをつかんでステージをクリアしよう！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">83位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/413.html"><img src="/images/game_images/413/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/413.html"> <strong>ジャングルシューター</strong></a><br>
+			フルーツを３つ以上あてて消すバブルシューターゲーム<br />たくさん採ってペットを育てる育成要素もあり！<br />どんどんフルーツを消して、ペットを成長させよう。<br />途中で出てくるコウモリはフルーツを当てて退散させよう！<br />☆食べ物ゲーム、育成ゲーム、キッズゲーム、ペット☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">87位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/6628.html"><img src="/images/game_images/6628/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/6628.html"> <strong>エバーアフターハイ神経衰弱</strong></a><br>
+			女の子のカードの神経衰弱ゲーム。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">88位&nbsp;<span class="point">
+★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1955.html"><img src="/images/game_images/1955/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1955.html"> <strong>マーブルライン</strong></a><br>
+			同じ色の大理石を３つ以上にして消していくゲーム<br />待機中の違う色の大理石と交換可能<br />穴にボールが入ってしまうとゲームオーバー。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">91位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/266.html"><img src="/images/game_images/266/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/266.html"> <strong>幸せのクローバー</strong></a><br>
+			「4つ葉のクローバーを見つけると幸せになれる」というお話。<br />みなさんも、ご存知ですよね？(^^)v<br />眼力 トレーニングにもいいかも。<br />☆アイテム探しゲーム、おもしろゲーム、プチゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">92位&nbsp;<span class="point">
+★★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1947.html"><img src="/images/game_images/1947/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1947.html"> <strong>麻雀王</strong></a><br>
+			二つバージョンの麻雀ゲーム<br />Class（古典）、Simple（シンプル）２つの中で選びます。<br />同じ牌を2枚選んで消していきます。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">93位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1160.html"><img src="/images/game_images/1160/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1160.html"> <strong>ブロックマニア</strong></a><br>
+			どんどん落ちてくるブロックを同じ色に合わせて消すテトリス。<br />矢印で方向を変える時が一番悩み・・・<br />一気に消すこともいい戦略かも。<br />☆テトリスゲーム、パズル☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">97位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/452.html"><img src="/images/game_images/452/4.gif" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/452.html"> <strong>フリーセル</strong></a><br>
+			基本はソリティアと一緒のカードゲーム。<br />今までたくさんあったトランプの山がなく、４枚を自由に置けるだけ。<br />そのフリーの４枚を上手く使っていこう。<br />キッズにもオススメのトランプゲーム、ソリティア<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">102位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/3335.html"><img src="/images/game_images/3335/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/3335.html"> <strong>バブルタウン</strong></a><br>
+			同じキャラを3つ揃えて消していくバブルシューターゲーム。<br />寝ているキャラもいて可愛いよ☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">103位&nbsp;<span class="point">
+★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/508.html"><img src="/images/game_images/508/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/508.html"> <strong>熱血麻雀</strong></a><br>
+			同じ模様をペアで消していく無料上海ゲーム<br />シャッフル機能がないのでかなりの難問<br />君は全部消せるかな？<br />☆四川省、上海ゲーム、麻雀ゲーム<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">105位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/6611.html"><img src="/images/game_images/6611/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/6611.html"> <strong>ウィンターバブルズ</strong></a><br>
+			冬のバブルシューターゲーム。<br />くまさんもこっち見てる。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">108位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/2019.html"><img src="/images/game_images/2019/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/2019.html"> <strong>クモソリティア</strong></a><br>
+			13枚揃えて消していく、<br />トランプのソリティアゲーム。<br />トランプを再配布するタイミングが勝負。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">110位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/646.html"><img src="/images/game_images/646/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/646.html"> <strong>線路つなぎ</strong></a><br>
+			汽車の線路をつなげよう。<br />汽車が走りだすとハラハラドキドキするパズルゲーム<br />汽車ゲームで一休みしませんか？<br />☆パズル、キッズ、無料脳トレ、電車、誘導ゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">117位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/3344.html"><img src="/images/game_images/3344/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/3344.html"> <strong>ボムパズル</strong></a><br>
+			たくさんのアイコンを消すセイムゲームです。<br />同じ色のアイコンを3つ以上つなげてたくさん消し、<br />高得点を狙いましょう！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">120位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/708.html"><img src="/images/game_images/708/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/708.html"> <strong>オセロ3D</strong></a><br>
+			頭脳ゲームの代名詞といえばオセロゲームでしょ。<br />勝ちそうに見えても一発で逆転される場合もあります。<br />出来るだけ隅を取らないと勝ち目はないですよ。<br />☆3Dオセロゲーム、パズル、ボードゲーム、暇つぶしゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">125位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/5791.html"><img src="/images/game_images/5791/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/5791.html"> <strong>スネイプマッチャー</strong></a><br>
+			タイルを全て灰色にするマッチ3ゲーム。<br />同じ模様を3つ揃えて消すと、黒のタイルは灰色になるよ。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">129位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/230.html"><img src="/images/game_images/230/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/230.html"> <strong>持ち物整理</strong></a><br>
+			主役は、可愛いキャラクターのちびっこ魔女☆<br />空いているスペースに合う物をはめ込むおもしろゲームです。<br />形をよく見て、素早くレーンを埋めてね☆<br />☆おもしろゲーム、キッズゲーム、プチゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">130位&nbsp;<span class="point">
+★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/507.html"><img src="/images/game_images/507/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/507.html"> <strong>白黒麻雀</strong></a><br>
+			麻雀碑を消していく無料上海ゲーム<br />同じマークだけでなく、違う色の碑じゃないと消せません<br />更に頭を使う頭脳パズル<br />☆無料麻雀ゲーム、上海ゲーム、四川省ゲーム☆<br /><br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">136位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/2296.html"><img src="/images/game_images/2296/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/2296.html"> <strong>五目並べ</strong></a><br>
+			５個を一列に並べよう。<br />自分の持ち駒は白。<br />相手の駒をよく見て!<br />暇つぶしゲームとしては最高？！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">137位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/4336.html"><img src="/images/game_images/4336/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/4336.html"> <strong>交互ソリティア</strong></a><br>
+			赤と黒のトランプを交互で降順に並べていくソリティアゲームです。<br />頭を使ってトランプを並べて、全てのトランプをなくしましょう！<br />トランプ・ソリティア・パズル<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">139位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1057.html"><img src="/images/game_images/1057/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1057.html"> <strong>フィッシュダム</strong></a><br>
+			３つ以上の同じ柄を消しながら黄金ブロック消すパズルゲームです。<br />ゲットしたポイントでデコレーションアイテムもゲットできます。<br />出てくるアイテムを利用して周りを一気に消しましょう。<br />☆パズルゲーム、マッチングゲーム☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">145位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/76.html"><img src="/images/game_images/76/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/76.html"> <strong>海の秘密</strong></a><br>
+			海の中を虫眼鏡で覗いてみて！<br />そして囚われた仲間をクリックして助けよう☆<br />必死に目を凝らしてよ～く見て助け出してね♪<br />☆アイテム探しゲーム、おもしろゲーム、キッズゲーム。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">148位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/5736.html"><img src="/images/game_images/5736/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/5736.html"> <strong>バブルクリスマス</strong></a><br>
+			3つ以上つなげて消していくクリスマスゲーム。<br />バブルシューターのクリスマス版。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">149位&nbsp;<span class="point">
+★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/793.html"><img src="/images/game_images/793/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/793.html"> <strong>三目ヘキサ</strong></a><br>
+			列を移動して３つ揃える頭脳パズル<br />１つずつの移動が出来ないのでちょっとイライラ<br />冷静さが必要！<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">151位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/4514.html"><img src="/images/game_images/4514/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/4514.html"> <strong>マッチ3ボール</strong></a><br>
+			同じ色をそろえるマッチ3ゲーム。<br />制限時間にどれだけ消せるかな。<br />一気に消すと高得点!<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">153位&nbsp;<span class="point">
+★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/2812.html"><img src="/images/game_images/2812/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/2812.html"> <strong>ラブマージャン</strong></a><br>
+			カードを組み合わせて消すマージャンゲームです。<br />積み上げられているマージャンの絵が書かれたカードを、<br />クリックして消していきましょう。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">155位&nbsp;<span class="point">
+★★★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/1901.html"><img src="/images/game_images/1901/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/1901.html"> <strong>花火ヘキサ</strong></a><br>
+			同じ色が３つ以上直線で並べて消すゲーム<br />←・→キーでボールの落ちる位置などを決めます。<br />横・縦・ななめの直線で３つ以上並べれば消えます。<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">158位&nbsp;<span class="point">
+★★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+              <td width="125" valign="top" align="left" bgcolor="#FFFFFF" style="padding:1px; background-Color: #FFFFFF;"><a href="/game_html/373.html"><img src="/images/game_images/373/4.jpg" alt="" width="115" height="95" style="cursor:hand; border: solid 2px #FFFFFF;" onmouseover="this.style.border='solid 2px #409AEA';" onmouseout="this.style.border='solid 2px #FFFFFF';"></a></td>
+              <td align="left" valign="top" width="340">
+			<table border="0" cellpadding="0" cellspacing="0">
+			<tr><td valign="top" height="83">
+			<a href="/game_html/373.html"> <strong>ウービズの冒険</strong></a><br>
+			同じ色のウービズを３つ以上集めて消すおもしろゲーム。<br />上のウービズを消すと、下のウービズまでまとめて<br />落ちるのが爽快。<br />目を動かしたり震えたり、見ているだけでも楽しい☆<br>
+			</td></tr>
+			<tr><td>
+			<div class="font_s">159位&nbsp;<span class="point">
+★★
+			</span>
+			</div>
+			</td></tr>
+			</table>
+			</td>
+
+			
+		</tr>
+		
+		<tr>
+                <td colspan="4" align="left" width="100%" bgcolor="#FFFFFF">
+				<div style="width:100%; border-bottom:1px solid #ADCFEE;"><img src="/images/spacer.gif" height="13" /></div>
+			</td>
+          </tr>
+            <tr>
+              <td colspan="4" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+	        <tr>
+
+</form>
+            <tr>
+              <td colspan="3" height="13"><img src="/images/spacer.gif" /></td>
+            </tr>
+        </table>
+
+	<!--============================= paging ==============================================-->
+
+		<div id="paging" style="padding-bottom:10px; margin-top:0px;">
+	<span class="sel" style="height:30px">1</span> <a href="javascript:CmdPageGo(2);" class="numBox" >2</a> <a href="javascript:CmdPageGo(3);" class="numBox" >3</a> <a href="javascript:CmdPageGo(4);" class="numBox" >4</a> <a href="javascript:CmdPageGo(5);" class="numBox" >5</a> <a href="javascript:CmdPageGo(6);" class="numBox" >6</a> <a href="javascript:CmdPageGo(7);" class="numBox" >7</a> <a href="javascript:CmdPageGo(8);" class="numBox" >8</a> <a href="javascript:CmdPageGo(9);" class="numBox" >9</a> <a href="javascript:CmdPageGo(10);" class="numBox" >10</a> 
+					<a href="javascript:CmdPageGo(11);" class="numBox">次へ</a>
+	
+	</div>
+	<!--================================== end paging===================================-->
+
+
+		</td>
+      
+  </tr>
+<!-- //右側 -->
+</table>
+
+
+<form method="get" name="wowgame" action="index.asp" >
+	<input type="hidden" name="pg" value="">
+	<!-- <input type="hidden" name="grp" value="2">
+	<input type="hidden" name="omo" value="">
+	<input type="hidden" name="sort" value="1">
+	<input type="hidden" name="listmod" value=""> -->
+<form>
+
+<!--// footer-->
+<br /><br />
+<table width="970"  border="0" align="center" cellpadding="0" cellspacing="0">
+
+	<tr>
+		<td align="center" >
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-1847813181958947";
+			/* game_under_728×90 */
+			google_ad_slot = "0413828063";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+		<td>
+	</tr>
+
+	<tr>
+		<td align="center" >
+			<div class="footer_fonts" style="border-top:1px dotted #C0C0C0">
+				
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" >
+			<style type="text/css">
+<!--
+
+.topicpath{font-size:10px; color:#DBDBDB;margin-bottom:5px;}
+a.topicpath:link{color:#8CBED8;text-decoration:none;bold;font-size:10px;}
+a.topicpath:active {color:#8CBED8; text-decoration:none; font-size:10px;}
+a.topicpath:visited {color:#8CBED8; text-decoration:none; font-size:10px;}
+a.topicpath:hover{color:#8CBED8;text-decoration:underline;font-size:10px;}
+
+-->
+</style>
+
+<div class="topicpath">
+<a href="http://www.wowgame.jp/" class="topicpath" target="_blank">無料ゲーム</a> | 
+<a href="http://www.wowgame.tv/" class="topicpath" target="_blank">무료게임</a> | 
+<a href="http://www.kakkun.jp/" class="topicpath" target="_blank">キッズゲーム</a> | 
+<a href="http://www.escapeclub.jp/" class="topicpath" target="_blank">脱出ゲーム</a> | 
+<a href="http://www.wowgirls.jp/" class="topicpath" target="_blank">着せ替えゲーム</a> | 
+<a href="http://www.thegame.jp/" class="topicpath" target="_blank">オンラインゲーム</a> | 
+<a href="http://www.nonotore.jp/" class="topicpath" target="_blank">脳トレゲーム</a> | 
+<a href="http://www.wowkorea.jp/" class="topicpath" target="_blank">韓国ドラマ・韓流ドラマ</a> | 
+<a href="http://www.wowkpop.jp/" class="topicpath" target="_blank">KPOP</a> | 
+<a href="http://www.wowkorea.jp/profile/music/" class="topicpath" target="_blank">kpopプロフィール</a> | 
+<a href="http://www.wowsokb.jp/" class="topicpath" target="_blank">新大久保</a> |
+<a href="http://www.wowkankokugo.jp/" class="topicpath" target="_blank">韓国語</a> | 
+<a href="http://www.wowseoul.jp/" class="topicpath" target="_blank">韓国旅行</a> | 
+<a href="http://www.wowkorea.jp/profile/" class="topicpath" target="_blank">韓流プロフィール</a>
+</div>
+			<div style="margin-top:3px; margin-bottom:3px;">※ワウゲームをプレーするには最新バージョンの<a href="http://get.adobe.com/jp/flashplayer/" target="_blank">Flash Playerのダウンロード</a>をおすすめします。</div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center" style="padding-top:5px;">
+
+			<div style="text-align:center; padding:5px; border-bottom:1px solid #DBDBDB; border-top:1px solid #DBDBDB; background:#F1F1F1;"><a href="http://www.wowgame.jp/sub/company.asp" class="footer">会社紹介</a>　｜　<a href="http://www.wowgame.jp/sub/use_rule.asp" class="footer">利用規約</a>　｜　<a href="http://www.wowgame.jp/sub/private_policy.asp" class="footer">プライバシーポリシー</a>　｜　<a href="http://www.wowgame.jp/sub/game_rental.asp" class="footer">フラッシュゲームレンタル</a>　｜　<a href="http://www.wowgame.jp/sub/ad.asp" class="footer">広告掲載について</a>　｜　<a href="http://www.wowgame.jp/sub/link.asp" class="footer">リンクフリー</a>　｜　<a href="http://www.wowgame.jp/sub/contactus.asp" class="footer">お問い合わせ</a></div>
+			
+			<div style="text-align:center">Copyright(C) 2004- 2014AISE Inc. All Rights Reserved.　</div>
+		</td>
+		
+	</tr>
+</table>
+<!--// footer-->
+<p>&nbsp;</p>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-12790309-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+<!-- Advertiser 'GMO AD Partners, Inc.',  Include user in segment 'Pub | 
+wowGame | Audience' - DO NOT MODIFY THIS PIXEL IN ANY WAY -->
+
+<img src="http://ad.adresult.jp/pixel?id=1163986&id=684542&id=684538&t=2" width="1" height="1" />
+
+<!-- End of segment tag -->
+
+
+<!-- === start AD.Com === -->
+<SCRIPT LANGUAGE="JavaScript">var tcdacmd="dt";</SCRIPT>
+<SCRIPT SRC="http://an.tacoda.net/an/18395/slf.js" LANGUAGE="JavaScript"></SCRIPT>
+<!-- === end AD.Com === -->
+
+</body>
+</html>

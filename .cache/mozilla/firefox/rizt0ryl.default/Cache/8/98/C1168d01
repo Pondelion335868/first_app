@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head><title>
+	アンケート
+</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta http-equiv="imagetoolbar" content="no" /><meta name="content-language" content="ja" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta name="description" lang="ja" content="無料で遊べるゲームが盛りだくさん！かんたん登録で人気RPGもすぐに遊べる！可愛いアバターで日記を書いて友達たくさん作っちゃおう♪脳トレ、麻雀、上海、オンラインゲーム、ラグナロクオンライン！" /><meta name="keywords" lang="ja" content="無料,ゲーム,オンライン,遊園地,麻雀,RPG,友達,ネット,FLASH,アバター,コミュニティ" /><link rel="stylesheet" type="text/css" href="/entry/styles/common_ex.css" media="screen" />
+	<script type="text/javascript" language="javascript" src="/entry/scripts/common.js"></script>
+
+	<script type="text/javascript" src="../scripts/jquery.js"></script>
+	<script type="text/javascript" src="../scripts/prototype.js"></script>
+	<script type="text/javascript" src="../scripts/check.js"></script>
+	<script type="text/javascript" src="../scripts/check_entry.js"></script>
+	<script type="text/javascript" src="../scripts/freetext_linkage.js"></script>
+	<script type="text/javascript" src="../scripts/questioncondition_control.js"></script>
+
+	<noscript>
+	</noscript>
+
+<link href="pad.css" rel="stylesheet" type="text/css" media="screen" /><style type="text/css"></style></head>
+<body>
+	<form method="post" action="input.aspx?entid=30d64e86-13b2-4d94-a41a-f1816f38052e" id="sitemaster">
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['sitemaster'];
+if (!theForm) {
+    theForm = document.sitemaster;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<div id="main">
+
+<!-- ID head -->
+
+<!-- Main -->
+
+	<div id="contents">
+        
+
+<!--+++++ unit block +++++-->
+<div style="margin:0px 0px 0px 0px;" id="title">
+	<table cellspacing="0" cellpadding="0" class="nbr">
+		<tr>
+			<td height="20" />
+		</tr>
+		<tr>
+			<td class="tbr-bggreen"><strong>エントリー入力</strong></td>
+
+		</tr>
+	</table>
+</div>
+<!--+++++ //unit block +++++-->
+
+
+<!--+++++ unit block +++++-->
+<table cellspacing="0" cellpadding="0" width="712" border="0" id="formTable">
+	<tbody>
+        <tr>
+            <td >
+               <br />
+            </td>
+
+        </tr>
+        <tr>
+            <td >
+ただいま混雑によりフォームがつながりにくくなっています。<br />
+10分から20分ほどお時間をあけてから、あらためてアクセスをしてください。<br />
+<br />
+ご迷惑をおかけしておりますこと、お詫びいたします。<br />
+            </td>
+
+        </tr>
+        <tr>
+            <td >
+               <br />
+            </td>
+
+        </tr>
+
+</table>
+<!--+++++ //unit block +++++-->
+
+
+
+    </div>
+
+<!-- /Main -->
+
+<div class="clear_2">&nbsp;</div>
+
+<div id="footer">
+</div><!-- ID main -->
+
+	</form>
+</body>
+</html>

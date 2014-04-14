@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="ja" lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" itemscope="itemscope" itemtype="http://schema.org/">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。 | びーおーぷんどっとねっと</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0" />
+<meta name="keywords" content="Ruby,rbenv,ruby,バージョン管理" />
+
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<!--[if IE]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+<link rel="stylesheet" href="http://blog.be-open.net/wp-content/themes/beope130123/common.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://blog.be-open.net/wp-content/themes/beope130123/layout.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://blog.be-open.net/wp-content/themes/beope130123/design.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://blog.be-open.net/wp-content/themes/beope130123/mobile.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://blog.be-open.net/wp-content/themes/beope130123/mobile_layout.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://blog.be-open.net/wp-content/themes/beope130123/advanced.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://blog.be-open.net/wp-content/themes/beope130123/print.css" type="text/css" media="print" />
+
+<link rel="shortcut icon"  type="image/x-icon" href="http://blog.be-open.net/wp-content/themes/beope130123/favicon.ico" />
+<link rel="apple-touch-icon" href="http://blog.be-open.net/wp-content/themes/beope130123/images/home-icon.png" />
+<link rel="alternate" type="application/atom+xml" title="びーおーぷんどっとねっと Atom Feed" href="http://blog.be-open.net/feed/atom/" />
+<link rel="alternate" type="application/rss+xml" title="びーおーぷんどっとねっと RSS Feed" href="http://blog.be-open.net/feed/" />
+
+<script type="text/javascript" src="http://blog.be-open.net/wp-content/themes/beope130123/js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://blog.be-open.net/wp-content/themes/beope130123/js/utility.js" charset="utf-8"></script>
+
+<link rel="alternate" type="application/rss+xml" title="びーおーぷんどっとねっと &raquo; フィード" href="http://blog.be-open.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="びーおーぷんどっとねっと &raquo; コメントフィード" href="http://blog.be-open.net/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="びーおーぷんどっとねっと &raquo; Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。 のコメントのフィード" href="http://blog.be-open.net/ruby/ubuntu-rbenv-reinstall/feed/" />
+<link rel='stylesheet' id='tweetable-frontend-css'  href='http://blog.be-open.net/wp-content/plugins/tweetable/main_css.css?ver=3.8.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wordpress-popular-posts-css'  href='http://blog.be-open.net/wp-content/plugins/wordpress-popular-posts/style/wpp.css?ver=2.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css'  href='http://blog.be-open.net/wp-content/plugins/tablepress/css/default.min.css?ver=1.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://blog.be-open.net/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.be-open.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.be-open.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.8.2" />
+<link rel='shortlink' href='http://wp.me/p2phbH-hZ' />
+
+<!-- All in One SEO Pack 2.1.4 by Michael Torbert of Semper Fi Web Design[407,490] -->
+<meta name="description" content="Ubuntu で ruby のバージョン管理をするために rbenv をインストールしていたのですが、バージョンが変更出来なくなったので改めて入れなおしてみたら、原因がわかった" />
+
+<link rel="canonical" href="http://blog.be-open.net/ruby/ubuntu-rbenv-reinstall/" />
+<!-- /all in one seo pack -->
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><style type="text/css" id="syntaxhighlighteranchor"></style>
+
+<!--OGP-->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.be-open.net/ruby/ubuntu-rbenv-reinstall/" />
+<meta property="og:title" content="Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。 | びーおーぷんどっとねっと" />
+<meta property="og:description" content="Ubuntu で ruby のバージョン管理をするために rbenv をインストールしていたのですが、バージョンが変更出来なくなったので改めて入れなおしてみたら、原因がわかった" />
+<meta property="og:site_name" content="びーおーぷんどっとねっと" />
+<meta property="og:image" content="http://blog.be-open.net/wp-content/uploads/2013/01/logo.png" />
+<meta property="fb:app_id" content="402292353186003" />
+<meta property="og:locale" content="ja_JP" />
+<!--OGP-->
+<!--microdata-->
+<meta itemprop="name" content="Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。 | びーおーぷんどっとねっと" />
+<meta itemprop="description" content="Ubuntu で ruby のバージョン管理をするために rbenv をインストールしていたのですが、バージョンが変更出来なくなったので改めて入れなおしてみたら、原因がわかった" />
+<meta itemprop="image" content="http://blog.be-open.net/wp-content/uploads/2013/01/logo.png" />
+<!--microdata-->
+</head>
+
+<body id="home" class="single single-post postid-1115 single-format-standard col3r">
+
+<div id="fb-root"></div>
+<div id="container">
+
+
+<!--▼ヘッダー-->
+<div id="header">
+<div id="header-in">
+
+<div id="header-title">
+<p class="header-logo"><a href="http://blog.be-open.net"><img src="http://blog.be-open.net/wp-content/uploads/2012/07/title23.png" width="411" height="52" alt="びーおーぷんどっとねっと"></a></p>
+
+
+
+<h1>Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。</h1>
+</div>
+
+<div id="header-text">
+<p>Ubuntu で ruby のバージョン管理をするために rbenv をインストールしていたのですが、バージョンが変更出来なくなったので改めて入れなおしてみたら、原因がわかった</p>
+</div>
+
+</div>
+</div>
+<!--▲ヘッダー-->
+
+
+<!--▼グローバルナビ-->
+<div id="global-nav">
+<dl id="global-nav-in">
+<dt class="btn-gnav">メニュー</dt>
+<dd class="menu-wrap">
+<ul id="menu" class="menu">
+<li id="menu-item-3671" class="first menu-item menu-item-type-post_type menu-item-object-page menu-item-3671"><a href="http://blog.be-open.net/amazon-deals/">amazonのおすすめ情報</a></li>
+<li id="menu-item-1702" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1702"><a>プログラミング</a><ul class="sub-menu">	<li id="menu-item-1705" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1705"><a href="http://blog.be-open.net/category/ruby/">Ruby</a></li>
+<li id="menu-item-1706" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1706"><a href="http://blog.be-open.net/category/ruby_on_rails/">Ruby_on_Rails</a></li>
+<li id="menu-item-1704" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1704"><a href="http://blog.be-open.net/category/javascript/">JavaScript</a></li>
+<li id="menu-item-1703" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1703"><a href="http://blog.be-open.net/category/emacs/">Emacs</a></li>
+</ul></li>
+<li id="menu-item-1725" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1725"><a href="http://blog.be-open.net/category/newitem/">いいモノ欲しい物</a></li>
+<li id="menu-item-1726" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1726"><a href="http://blog.be-open.net/category/good-place-good-store/">いいトコ行きたいトコ</a></li>
+<li id="menu-item-1727" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1727"><a href="http://blog.be-open.net/category/idea/">アイデア</a><ul class="sub-menu">	<li id="menu-item-1729" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1729"><a href="http://blog.be-open.net/category/marketing/">マーケティング</a></li>
+</ul></li>
+<li id="menu-item-1728" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1728"><a href="http://blog.be-open.net/category/digital_camera/">デジタルカメラ</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<!--▲グローバルナビ-->
+
+
+<!--main-->
+<div id="main">
+<!--main-in-->
+<div id="main-in">
+
+<!--▼パン屑ナビ-->
+<div id="breadcrumbs">
+<ol>
+<li class="first" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.be-open.net" itemprop="url"><span itemprop="title">びーおーぷんどっとねっと TOP</span></a></li>
+<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.be-open.net/category/ruby/" title="Ruby の全投稿を表示" rel="category tag" itemprop="url"><span itemprop="title">Ruby</span></a></li>
+<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。</span></li>
+</ol>
+</div>
+<!--▲パン屑ナビ-->
+
+<!--▽メイン＆サブ-->
+<div id="main-and-sub">
+
+<!--▽メインコンテンツ-->
+<div id="main-contents">
+
+
+
+<div class="post">
+<h2 class="post-title">Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。</h2>
+<p class="post-meta"><span class="post-data">2012年11月11日</span> [<span class="post-cat"><a href="http://blog.be-open.net/category/ruby/" title="Ruby の投稿をすべて表示" rel="category tag">Ruby</a></span>]</p>
+<ul class="sb m20-b">
+<li class="sb-tweet"></li>
+<li class="sb-hatebu"></li>
+<li class="sb-gplus"></li>
+<li class="sb-fb-like"></li>
+</ul>
+<div class="contents clearfix">
+
+	<div class="article">
+	<!--本文-->
+	<p class="p20-t">Ubuntu で rbenv をつかって Ruby のバージョン管理をしています。rbenv でバージョンを切り替えることが出来なくてかなりイラッとしたのでメモ。</p>
+<p><span id="more-1115"></span></p>
+<p>もともとRuby 1.9.3-p286 を使用していたのですが。</p>
+<p class="p20-t"><span class="hatena-bookmark-title"><a href="http://www.ruby-lang.org/ja/news/2012/11/09/ruby19-hashdos-cve-2012-5371/">ruby 1.9 におけるハッシュ飽和攻撃による DoS 脆弱性 (CVE-2012-5371)</a></span> <span class="hatena-bookmark-users"><a href="http://b.hatena.ne.jp/entry/www.ruby-lang.org/ja/news/2012/11/09/ruby19-hashdos-cve-2012-5371/"><img src="http://b.hatena.ne.jp/entry/image/http://www.ruby-lang.org/ja/news/2012/11/09/ruby19-hashdos-cve-2012-5371/" alt="ruby 1.9 におけるハッシュ飽和攻撃による DoS 脆弱性 (CVE-2012-5371)" title="ruby 1.9 におけるハッシュ飽和攻撃による DoS 脆弱性 (CVE-2012-5371)"></a></span></p>
+<p class="p20-t">この記事を見て、1.9.3-P327 をインストールすることにしました。でとりあえずは ruby-build をアップデート。</p>
+<p><pre class="brush: bash; highlight: [11]; title: ; notranslate" title="">
+#ruby-build アップデート
+$ cd ~/ruby-build
+$ git pull
+$ sudo ./install.sh
+
+#インストールできるリスト表示
+$ rbenv insall -l
+(中略）
+  1.9.3-p194
+  1.9.3-p286
+  1.9.3-p327
+  1.9.3-preview1
+  1.9.3-rc1
+  2.0.0-dev
+  2.0.0-preview1
+（中略）
+
+#1.9.3-p327があったのでインストール
+$ rbenv install 1.9.3-p327
+（インストール完了）
+#Rubyのバージョンを変更する
+$ rbenv global 1.9.3-p327
+$ rbenv rehash
+
+$ ruby -v
+$ ruby 1.9.3p286 (2012-10-12 revision 37165) [i686-linux]
+
+$ ruby -v
+$ ruby 1.9.3p286 (2012-10-12 revision 37165) [i686-linux]
+
+</pre>
+</p>
+<p class="p20-t">ビックリしました。変わらないんです。<code>rbenv global</code>で変更できません。意味が分からん。</p>
+<p class="p20-t">でしばらく色々やってみたんですが、何ともならんし意味分からんので一念発起。 rbenv を入れ直すことに。</p>
+<p>実は以前にインストールの手順を書きましたが、Ubuntu のパッケージで rbenv をインストールしていたので、それを git から入れなおしたいとは思っていたんです。でも gem とか云々面倒だｋらな・・・。ということでスルーしておりましたが。やり直してみます。その過程で問題点も浮き彫りになるだろうと。</p>
+<p class="p20-t">まずはパッケージのアンインストール</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+$ sudo apt-get autoremove rbenv
+$ rm -rf ~/.rbenv
+$ rm -rf ~/ruby-build
+</pre>
+</p>
+<p class="p20-t">あとは<code>/usr/local/bin</code>とか覗いて適当にruby-build と rbenv 関係を削除した。</p>
+<p class="p20-t">一応、 rbenv が何かしら残っていないなか確認。</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+$ ruby -v
+$ ruby 1.8.7 (2011-06-30 patchlevel 352) [i686-linux]
+</pre>
+</p>
+<p class="p20-t">システムの Ruby になっているのでとりあえず問題ないだろうと。</p>
+<h3>rbenv インストール</h3>
+<p>基本的に<a href="https://github.com/sstephenson/rbenv">sstephenson/rbenv · GitHub</a>のまんま作業するだけ。変えているのは<code>bash_profile</code>を<code>bashrc</code>にしているだけ。</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+$ cd
+$ git clone git://github.com/sstephenson/rbenv.git .rbenv
+$ echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+$ echo 'eval &quot;$(rbenv init -)&quot;' &gt;&gt; ~/.bashrc
+$ exec $SHELL
+</pre>
+</p>
+<p class="p20-t">インストールが楽になる ruby-build もインストール。</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+</pre>
+</p>
+<p class="p20-t">これでインストール完了。</p>
+<p class="p20-t">それから<code>rbenv install 1.9.2-p320</code><code>rbenv install 1.9.3-p327</code>をインストール。<code>rbenv global 1.9.3-p327</code>すると今度は別のエラーがでる。</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+rbenv: version `1.9.3-p286' is not installed
+</pre>
+</p>
+<p class="p20-t">そりゃそうだろう。なにせ俺は<code>1.9.3-p286</code>なんてインストールしてないからな！！とかなんとかブツブツいいながら。とりあえず <code>~/.rbenv/version</code>を開いてみる。</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+1.9.3-p327
+</pre>
+</p>
+<p class="p20-t">この１行しか記載されていない。オカシイぞ。いまのエラーはどう考えても「兄貴のrubyは<code>version 1.9.3-p286</code>になってますけど、インストールしてませんぜ！！」って意味だろう。解せぬ。ということで一応手間ですが、<code>rbenv install 1.9.3-p286</code>もインストールしてみる。</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+$ rbenv versions
+  1.9.2-p320
+* 1.9.3-p286 (set by /home/username/.rbenv-version)
+  1.9.3-p327
+
+</pre>
+</p>
+<p class="p20-t">なんと home に<code>.rbenv-version</code>ファイルが作成されておりそれが読まれていたみたい。</p>
+<p><pre class="brush: bash; title: ; notranslate" title="">
+$ cd
+$ rm -rf .rbenv-version
+$ rbenv global 1.9.3-p327
+$ ruby -v
+$ ruby 1.9.3p327 (2012-11-10 revision 37606) [i686-linux]
+</pre>
+</p>
+<p class="p20-t">これで問題は解決。無事にバージョンを管理できるようになりました。しかし<code>.rbenv-version</code>はなんだったんだろう。Ubuntu のパッケージつかっているとhomeディレクトリに<code>.rbenv-version</code>が作られてしまうんですかね？</p>
+<p class="p20-t">もしUbuntu のパッケージでバージョン変更できない人がいたら、多分このファイルを手書きで書き換えればいけるんでは。とにかく、今後はややこしい事態にならないのでもうOK！！</p>
+	<!--/本文-->
+	</div>
+	<!--/article-->
+  <div class="contents m30-t">
+<div class="social"><ul>
+<li><a href="http://b.hatena.ne.jp/entry/http://blog.be-open.net/ruby/ubuntu-rbenv-reinstall/" class="hatena-bookmark-button" data-hatena-bookmark-title="Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。" data-hatena-bookmark-layout="vertical-balloon" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
+<!-- このタグを +1 ボタンを表示する場所に挿入してください -->
+<li><g:plusone size="tall"></g:plusone></li>
+<li><a data-count="vertical" href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+<li><div class="fb-like" data-href="http://blog.be-open.net/ruby/ubuntu-rbenv-reinstall/" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false"></div></li>
+
+
+</ul></div>
+<p><span class="small">スポンサードリンク</span><br />
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7156875181884288";
+/* beopenbottom2 */
+google_ad_slot = "5862493028";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</p>
+</div>
+		
+
+
+
+<div class='yarpp-related'>
+     <h3>こちらの記事もオススメです</h3>
+     <div class="related-post">
+	     <div class="related-entry"><a href="http://blog.be-open.net/ruby/ubuntu12-0-4-rbenv-ruby-build-1-9-3-p286/"rel="bookmark"title="Ubuntu12.0.4 で rbenv と ruby-build をつかって ruby 1.9.3-p286 をインストールした"><img width="100" height="100" src="http://blog.be-open.net/wp-content/themes/beope130123/images/noimage.gif" title="Ubuntu12.0.4 で rbenv と ruby-build をつかって ruby 1.9.3-p286 をインストールした" />Ubuntu12.0.4 で rbenv と ruby-build をつかって ruby 1.9.3-p286 をインストールした</a></div>
+            <div class="related-entry"><a href="http://blog.be-open.net/ruby/rbenv-ruby_2_0_0_p0-install/"rel="bookmark"title="rbenv で Ruby2.0.0-p0をインストールしてみた"><img width="150" height="109" src="http://blog.be-open.net/wp-content/uploads/2013/02/ruby20-150x109.png" class="attachment-thumbnail wp-post-image" alt="ruby20" />rbenv で Ruby2.0.0-p0をインストールしてみた</a></div>
+             <div class="related-entry"><a href="http://blog.be-open.net/emacs/ruby-electric-el-recover/"rel="bookmark"title="ruby-electric.elで括弧を閉じてくれなくなった時の対処法"><img width="128" height="128" src="http://blog.be-open.net/wp-content/uploads/2012/04/emacs1.png" class="attachment-thumbnail wp-post-image" alt="emacs" />ruby-electric.elで括弧を閉じてくれなくなった時の対処法</a></div>
+             <div class="related-entry"><a href="http://blog.be-open.net/emacs/ruby-electric-el-jidoutojikakko/"rel="bookmark"title="ruby-electric.elで括弧を閉じられてしまうのが煩わしくなってきた。"><img width="128" height="128" src="http://blog.be-open.net/wp-content/uploads/2012/04/emacs1.png" class="attachment-thumbnail wp-post-image" alt="emacs" />ruby-electric.elで括弧を閉じられてしまうのが煩わしくなってきた。</a></div>
+             <div class="related-entry"><a href="http://blog.be-open.net/ruby/ruby-keisan-tokatoka/"rel="bookmark"title="Rubyを計算するときの少数とか整数とか分数とか"><img width="128" height="128" src="http://blog.be-open.net/wp-content/uploads/2012/04/ruby.png" class="attachment-thumbnail wp-post-image" alt="ruby" />Rubyを計算するときの少数とか整数とか分数とか</a></div>
+             <div class="related-entry"><a href="http://blog.be-open.net/ruby/ruby-hello-world/"rel="bookmark"title="RubyでHello Worldをやってみる"><img width="128" height="128" src="http://blog.be-open.net/wp-content/uploads/2012/04/ruby.png" class="attachment-thumbnail wp-post-image" alt="ruby" />RubyでHello Worldをやってみる</a></div>
+              <div class="related-entry"><a href="http://blog.be-open.net/ubuntu-2/ubuntu-%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e6%96%87%e5%ad%97%e3%82%b3%e3%83%bc%e3%83%89%e3%81%ae%e7%a2%ba%e8%aa%8d-%e5%a4%89/"rel="bookmark"title="Ubuntu ファイルの文字コードの確認と文字コードの変更"><img width="100" height="100" src="http://blog.be-open.net/wp-content/themes/beope130123/images/noimage.gif" title="Ubuntu ファイルの文字コードの確認と文字コードの変更" />Ubuntu ファイルの文字コードの確認と文字コードの変更</a></div>
+             <div class="related-entry"><a href="http://blog.be-open.net/ruby/ruby-make-directory/"rel="bookmark"title="Rubyでディレクトリを作ってみた"><img width="100" height="100" src="http://blog.be-open.net/wp-content/themes/beope130123/images/noimage.gif" title="Rubyでディレクトリを作ってみた" />Rubyでディレクトリを作ってみた</a></div>
+             </div>
+</div>
+
+
+<h3>RSS購読のススメ</h3>
+<div class="contents">
+<p class="left"><a href="http://blog.be-open.net/feed"><img src="http://blog.be-open.net/wp-content/uploads/2012/12/1356218788_RSS_02.png" width="120" height="120" alt="RSS"></a></p>
+<p>定期的に読んでいただけるかたはRSS登録しておくと便利です。RSS登録はこちら！！</p>
+<p class="p20-t"><a href="http://blog.be-open.net/feed">びーおーぷんどっとねっとのRSS登録</a></p>
+<p class="p30-t">Twitterでも情報をつぶやいているので、フォローしてみるといいかもしれません。</p>
+<p><a href="https://twitter.com/beopner12" class="twitter-follow-button" data-show-count="false" data-lang="ja" data-size="large">@beopner12さんをフォロー</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+</div>
+
+<div class="contents">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FBe-open%2F260505274052913&amp;width=500&amp;height=290&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true&amp;appId=402292353186003" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:500px; height:290px;" allowTransparency="true"></iframe>
+
+<!-- Place this tag where you want the badge to render. -->
+<div class="g-plus" data-width="450" data-href="//plus.google.com/103013571394759843362" data-rel="publisher"></div>
+
+<!-- Place this tag after the last badge tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>    
+</div>
+
+
+	
+		<div class="post-tag">
+	<p>タグ：<a href="http://blog.be-open.net/tag/rbenv/" rel="tag">rbenv</a>, <a href="http://blog.be-open.net/tag/ruby-2/" rel="tag">ruby</a>, <a href="http://blog.be-open.net/tag/%e3%83%90%e3%83%bc%e3%82%b8%e3%83%a7%e3%83%b3%e7%ae%a1%e7%90%86/" rel="tag">バージョン管理</a></p>
+	</div>
+	
+</div>
+
+<ul class="sb m20-b">
+<li class="sb-tweet"></li>
+<li class="sb-hatebu"></li>
+<li class="sb-gplus"></li>
+<li class="sb-fb-like"></li>
+</ul>
+</div>
+<!--/post-->
+
+
+
+<!--comment-->
+<div class="contents">
+
+<!-- You can start editing here. -->
+
+
+			<!-- If comments are open, but there are no comments. -->
+
+	 
+
+<div id="respond">
+
+<h3>コメントを残す</h3>
+
+<div id="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="/ruby/ubuntu-rbenv-reinstall/#respond" style="display:none;">返信をキャンセルする。</a></small>
+</div>
+
+
+<form action="http://blog.be-open.net/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+<label for="author"><small>名前 (必須)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+<label for="email"><small>メールアドレス (非公開) (必須)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>ウェブサイト</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> 次のタグを使用できます: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="58" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="コメントを送信" />
+<input type='hidden' name='comment_post_ID' value='1115' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="18b93c543b" /></p>
+</form>
+
+</div>
+
+</div>
+<!--/comment-->
+
+
+
+
+</div>
+<!--△メインコンテンツ-->
+
+
+<!--▽サブコンテンツ-->
+<dl id="sub-contents" class="sub-column">
+<dt class="sub-contents-btn">サブコンテンツ</dt>
+<dd id="sub-contents-in">
+
+
+<div class="contents widget-conts widget_text"><h3>Profile</h3>			<div class="textwidget"><p class="p20-b">twitter<br />
+<a href="https://twitter.com/beopner12" class="twitter-follow-button" data-show-count="false" data-lang="ja">@beopner12さんをフォロー</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
+
+<p class="p20-b">google+<br />
+<!-- Place this code where you want the badge to render. -->
+<a href="//plus.google.com/103013571394759843362?prsrc=3" rel="publisher" style="text-decoration:none;display:inline-block;color:#333;text-align:center; font:13px/16px arial,sans-serif;white-space:nowrap;">
+<span style="display:inline-block;font-weight:bold;vertical-align:top;margin-right:5px; margin-top:8px;"> @beopener12</span><span style="display:inline-block;vertical-align:top;margin-right:15px; margin-top:8px;">on</span>
+<img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/></a>
+</p>
+<p class="p20-b">Facebook<br />
+<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FBe-open%2F260505274052913&amp;width=160&amp;height=62&amp;show_faces=false&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true&amp;appId=402292353186003" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:160px; height:62px;" allowTransparency="true"></iframe></p>
+
+</div>
+		</div><div class="contents widget-conts widget_text"><h3>サイト内検索</h3>			<div class="textwidget"><p>記事を検索したいときはここにキーワードを入れて検索ボタンをクリックすれば見つかるかも・・・<br /></p>
+
+<form action="http://www.google.co.jp" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-7156875181884288:8263156629" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="15" />
+    <input type="submit" name="sa" value="検索" />
+  </div>
+</form>
+
+<script type="text/javascript" src="http://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+
+<p>スポンサードリンク<br />
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7156875181884288";
+/* beopensideu1 */
+google_ad_slot = "3715205829";
+google_ad_width = 160;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p></div>
+		</div><div class="contents widget-conts widget_text"><h3>Kindle Fire HDX</h3>			<div class="textwidget"><iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=beopen-22&o=9&p=11&l=ur1&category=kindle&banner=147KSG9T03WJHA2TY8R2&f=ifr" width="120" height="600" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+</div>
+		</div><div class="contents widget-conts widget_execphp"><h3>同じカテゴリー　　の人気記事</h3>			<div class="execphpwidget"><!-- Wordpress Popular Posts Plugin v2.3.7 [SC] [weekly] [views] [custom] -->
+<ul class="wpp-list">
+<li> <a href="http://blog.be-open.net/ruby/ubuntu-rbenv-reinstall/" title="Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージョン変更できなくなったので・・。">Ubuntuに rbenv と ruby-build を再インストール。パッケージでバージ…</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/ruby-keisan-tokatoka/" title="Rubyを計算するときの少数とか整数とか分数とか">Rubyを計算するときの少数とか整数とか分数とか…</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/refe/" title="Rubyリファレンスマニュアルをrefe コマンドで参照する">Rubyリファレンスマニュアルをrefe コマンドで参照する…</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/ruby-hello-world/" title="RubyでHello Worldをやってみる">RubyでHello Worldをやってみる</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/ruby-make-directory/" title="Rubyでディレクトリを作ってみた">Rubyでディレクトリを作ってみた</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/ubuntu12-0-4-rbenv-ruby-build-1-9-3-p286/" title="Ubuntu12.0.4 で rbenv と ruby-build をつかって ruby 1.9.3-p286 をインストールした">Ubuntu12.0.4 で rbenv と ruby-build をつかって ruby …</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/hajimenoippo/" title="はじめの一歩">はじめの一歩</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/firstruby-fizzbuzz-m-x-align-regexp/" title="「初めてのRuby」の構文をEmacs M-x align-regexpで整列させる">「初めてのRuby」の構文をEmacs M-x align-regexpで整列させる…</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/ruby-study/" title="Rubyの学習にHackety Hack!というソフトがあるらしい。">Rubyの学習にHackety Hack!というソフトがあるらしい。…</a> </li>
+<li> <a href="http://blog.be-open.net/ruby/rbenv-ruby_2_0_0_p0-install/" title="rbenv で Ruby2.0.0-p0をインストールしてみた">rbenv で Ruby2.0.0-p0をインストールしてみた…</a> </li>
+</ul>
+<!-- End Wordpress Popular Posts Plugin v2.3.7 -->
+</div>
+		</div>		<div class="contents widget-conts widget_recent_entries">		<h3>最新の投稿</h3>		<ul>
+					<li>
+				<a href="http://blog.be-open.net/emacs/yasnippet%e3%81%a7%e3%83%88%e3%83%aa%e3%82%ac%e3%83%bc%e3%82%ad%e3%83%bc%e3%82%92%e5%a4%89%e6%9b%b4%e3%81%97%e3%81%9f%e3%81%84%e3%81%a8%e3%81%8d/">yasnippetでトリガーキーを変更したいとき</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/css-2/how-to-bootstrap/">Bootstrapを使い方で参考になるサイト</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/newitem/amazon-outlet-10off/">アマゾンのアウトレット、３月３１日まで「さらに」１０％OFF</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/read-books/%e3%83%ad%e3%82%b8%e3%82%ab%e3%83%ab%e3%82%b7%e3%83%b3%e3%82%ad%e3%83%b3%e3%82%b0%e5%85%a5%e9%96%80%e6%9b%b8/">ロジカルシンキングの入門一冊目に選びたいのはこの本</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/css-2/emacs-%e3%81%ab-sass-mode%e3%82%92%e3%81%84%e3%82%8c%e3%81%a6scss%e3%82%92%e4%bd%bf%e3%81%86%e6%ba%96%e5%82%99%e3%82%92%e3%81%99%e3%82%8b/">Emacs に Sass-modeをいれてscssを使う準備をする</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/emacs/emacs%e3%81%ae%e6%8b%ac%e5%bc%a7%e8%a3%9c%e5%ae%8c/">Emacsの括弧補完をElectricPairからautopairに変更してみたよ</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/emacs/php-mode%e9%85%8d%e5%88%97%e3%82%a4%e3%83%b3%e3%83%87%e3%83%b3%e3%83%88/">PHP-mode配列のインデントを修正する</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/php-2/ubuntu13-10-php5-the-latest-version-install/">Ubuntu13.10に最新バージョンのPHPをインストールする</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/newitem/taxup-before-after-ranking/">ソーシャルメディアで聞きました「増税前に欲しいもの」ランキングwww</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/ubuntu-2/ubuntu-apache-mod_rewrite/">UbuntuでApacheのmod_rewriteを有効にする</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/newitem/%e5%be%b3%e4%b8%b8%e6%9c%ackindle%e3%82%bb%e3%83%bc%e3%83%ab1400%e5%86%86/">徳丸本「体系的に学ぶ 安全なWebアプリケーションの作り方」のKindle本が58%OFFのセールになっとる！</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/nocategory/nexus7-2012-32g-14800-10000off/">AmazonでNexus7の旧モデルが1万4,800円で買えるセールやってる！</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/ubuntu-2/no-bash-its-dash/">自分の使っているシェルは当然 bash だと思っていたのだけれど</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/ubuntu-2/ubuntu-heads-up-display/">Ubuntuのaltを押すと出現する「コマンドを入力」を非表示にする</a>
+						</li>
+					<li>
+				<a href="http://blog.be-open.net/read-books/%e3%83%89%e3%83%bc%e3%83%94%e3%83%b3%e3%82%b0%e3%83%80%e3%83%a1%e3%83%bb%e7%b5%b6%e5%af%be/">スポーツ選手がなぜドーピングに手を染めてしまうのか</a>
+						</li>
+				</ul>
+		</div>
+
+</dd>
+</dl><!--△サブコンテンツ-->
+
+
+</div>
+<!--△メイン＆サブ-->
+
+
+<!--▼サイドバー-->
+<dl id="sidebar" class="sub-column">
+<dt class="sidebar-btn">サイドバー</dt>
+<dd id="sidebar-in">
+
+
+<div class="contents widget-conts widget_text"><h3>人気記事</h3>			<div class="textwidget"><script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
+<script language="javascript" type="text/javascript">
+Hatena.BookmarkWidget.url   = "http://blog.be-open.net";
+Hatena.BookmarkWidget.title = "POPULAR ENTRIES";
+Hatena.BookmarkWidget.sort  = "count";
+Hatena.BookmarkWidget.width = 0;
+Hatena.BookmarkWidget.num   = 15;
+Hatena.BookmarkWidget.theme = "notheme";
+Hatena.BookmarkWidget.load();
+</script></div>
+		</div><div class="contents widget-conts widget_categories"><h3>カテゴリー</h3>		<ul>
+	<li class="cat-item cat-item-128"><a href="http://blog.be-open.net/category/apple/" title="apple に含まれる投稿をすべて表示">apple</a> (5)
+</li>
+	<li class="cat-item cat-item-193"><a href="http://blog.be-open.net/category/css-2/" title="CSS に含まれる投稿をすべて表示">CSS</a> (2)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://blog.be-open.net/category/emacs/" title="「Emacs」の記事一覧です。">Emacs</a> (39)
+</li>
+	<li class="cat-item cat-item-162"><a href="http://blog.be-open.net/category/gimp/" title="gimp に含まれる投稿をすべて表示">gimp</a> (2)
+</li>
+	<li class="cat-item cat-item-62"><a href="http://blog.be-open.net/category/html/" title="html に含まれる投稿をすべて表示">html</a> (4)
+</li>
+	<li class="cat-item cat-item-96"><a href="http://blog.be-open.net/category/javascript/" title="JavaScript に含まれる投稿をすべて表示">JavaScript</a> (3)
+</li>
+	<li class="cat-item cat-item-517"><a href="http://blog.be-open.net/category/php-2/" title="PHP に含まれる投稿をすべて表示">PHP</a> (1)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blog.be-open.net/category/ruby/" title="Ruby に含まれる投稿をすべて表示">Ruby</a> (10)
+</li>
+	<li class="cat-item cat-item-33"><a href="http://blog.be-open.net/category/ruby_on_rails/" title="Ruby_on_Rails に含まれる投稿をすべて表示">Ruby_on_Rails</a> (15)
+</li>
+	<li class="cat-item cat-item-118"><a href="http://blog.be-open.net/category/ubuntu-2/" title="ubuntu に含まれる投稿をすべて表示">ubuntu</a> (17)
+</li>
+	<li class="cat-item cat-item-380"><a href="http://blog.be-open.net/category/web-service/" title="webサービス に含まれる投稿をすべて表示">webサービス</a> (12)
+</li>
+	<li class="cat-item cat-item-234"><a href="http://blog.be-open.net/category/web-browser/" title="Webブラウザ に含まれる投稿をすべて表示">Webブラウザ</a> (7)
+</li>
+	<li class="cat-item cat-item-116"><a href="http://blog.be-open.net/category/windows/" title="windows に含まれる投稿をすべて表示">windows</a> (14)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://blog.be-open.net/category/wordpress/" title="Wordpress に含まれる投稿をすべて表示">Wordpress</a> (21)
+</li>
+	<li class="cat-item cat-item-213"><a href="http://blog.be-open.net/category/good-place-good-store/" title="いいトコ行きたいトコ に含まれる投稿をすべて表示">いいトコ行きたいトコ</a> (8)
+</li>
+	<li class="cat-item cat-item-121"><a href="http://blog.be-open.net/category/newitem/" title="いいモノ欲しい物 に含まれる投稿をすべて表示">いいモノ欲しい物</a> (31)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://blog.be-open.net/category/nocategory/" title="とりあえず に含まれる投稿をすべて表示">とりあえず</a> (31)
+</li>
+	<li class="cat-item cat-item-83"><a href="http://blog.be-open.net/category/idea/" title="アイデア に含まれる投稿をすべて表示">アイデア</a> (19)
+</li>
+	<li class="cat-item cat-item-406"><a href="http://blog.be-open.net/category/%e3%82%a4%e3%83%bc%e3%83%a2%e3%83%90%e3%82%a4%e3%83%ab/" title="イーモバイル に含まれる投稿をすべて表示">イーモバイル</a> (3)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://blog.be-open.net/category/shell/" title="シェル に含まれる投稿をすべて表示">シェル</a> (4)
+</li>
+	<li class="cat-item cat-item-459"><a href="http://blog.be-open.net/category/sports/" title="スポーツ に含まれる投稿をすべて表示">スポーツ</a> (7)
+</li>
+	<li class="cat-item cat-item-110"><a href="http://blog.be-open.net/category/digital_camera/" title="デジタルカメラ に含まれる投稿をすべて表示">デジタルカメラ</a> (14)
+</li>
+	<li class="cat-item cat-item-64"><a href="http://blog.be-open.net/category/marketing/" title="マーケティング に含まれる投稿をすべて表示">マーケティング</a> (17)
+</li>
+	<li class="cat-item cat-item-75"><a href="http://blog.be-open.net/category/education/" title="教育 に含まれる投稿をすべて表示">教育</a> (12)
+</li>
+	<li class="cat-item cat-item-61"><a href="http://blog.be-open.net/category/read-books/" title="読んだ本 に含まれる投稿をすべて表示">読んだ本</a> (45)
+</li>
+		</ul>
+</div><div class="contents widget-conts widget_text">			<div class="textwidget"><p class="al-c"><a href="http://blog.be-open.net/newitem/hulu-registered-cancel/" alt="話題の hulu が無料視聴キャンペーン中につき登録！登録方法からキャンセル退会までまとめ"><img src="http://blog.be-open.net/wp-content/uploads/2013/05/hulu.png"  height="400" width="160" alt="hulu登録方法" /></a></p>
+<p class="link-next"><a href="http://blog.be-open.net/newitem/hulu-registered-cancel/" alt="話題の hulu が無料視聴キャンペーン中につき登録！登録方法からキャンセル退会までまとめ">huluの評判を聞いて実際に無料登録してみた話はこちら</a></p></div>
+		</div>
+</dd>
+</dl><!--▲サイドバー-->
+
+
+
+
+</div>
+<!--/main-in-->
+
+</div>
+<!--/main-->
+
+
+<!--▼フッター-->
+<div id="footer">
+<div id="footer-in">
+
+
+<!--アドレスエリア-->
+<div class="area01">
+<h3>Facebook</h3>
+<iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FBe-open%2F260505274052913&amp;width=370&amp;height=290&amp;show_faces=true&amp;colorscheme=dark&amp;stream=false&amp;border_color&amp;header=true&amp;appId=402292353186003" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:370px; height:290px;" allowTransparency="true"></iframe>
+<h3>google+</h3>
+<!-- Place this tag where you want the badge to render. -->
+<div class="g-plus" data-width="366" data-href="//plus.google.com/103013571394759843362" data-rel="publisher"></div>
+
+<!-- Place this tag after the last badge tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+<!--/アドレスエリア-->
+
+
+<!--フッターメニュー-->
+<div class="area02">
+<h3>メニュー</h3>
+<div class="footer-menu">
+
+<div class="menu"><ul><li class="page_item page-item-3665"><a href="http://blog.be-open.net/amazon-deals/">amazonのおすすめ情報</a></li><li class="page_item page-item-1720"><a href="http://blog.be-open.net/sitemaps/">サイトマップ</a></li></ul></div>
+
+<div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-1710" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1710"><a href="http://blog.be-open.net/category/emacs/">Emacs</a></li>
+<li id="menu-item-1711" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1711"><a href="http://blog.be-open.net/category/ruby_on_rails/">Ruby_on_Rails</a></li>
+<li id="menu-item-1712" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1712"><a href="http://blog.be-open.net/category/newitem/">いいモノ欲しい物</a></li>
+<li id="menu-item-1713" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1713"><a href="http://blog.be-open.net/category/nocategory/">とりあえず</a></li>
+<li id="menu-item-1714" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1714"><a href="http://blog.be-open.net/category/ruby/">Ruby</a></li>
+<li id="menu-item-1715" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1715"><a href="http://blog.be-open.net/category/windows/">windows</a></li>
+<li id="menu-item-1716" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1716"><a href="http://blog.be-open.net/category/read-books/">読んだ本</a></li>
+<li id="menu-item-1717" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1717"><a href="http://blog.be-open.net/category/digital_camera/">デジタルカメラ</a></li>
+<li id="menu-item-1718" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1718"><a href="http://blog.be-open.net/category/ubuntu-2/">ubuntu</a></li>
+<li id="menu-item-1719" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1719"><a href="http://blog.be-open.net/category/marketing/">マーケティング</a></li>
+</ul></div>
+</div>
+</div>
+<!--/フッターメニュー-->
+
+
+</div>
+
+</div>
+<!--▲フッター-->
+
+
+<!--▼トップメニュー-->
+<div id="top">
+<div id="top-in">
+
+<ul id="top-menu">
+<li><a href="http://blog.be-open.net/sitemaps/">サイトマップ</a></li>
+</ul>
+
+</div>
+</div>
+<!--▲トップメニュー-->
+
+
+<!--コピーライト-->
+<div class="copyright">
+<p><small>Copyright (C) 2014 びーおーぷんどっとねっと <span>All Rights Reserved.</span></small></p>
+</div>
+<!--/コピーライト-->
+
+
+</div>
+<!--▼ページの先頭へ戻る-->
+<p class="page-top"><a href="#container">このページの先頭へ</a></p>
+<!--▲ページの先頭へ戻る-->
+
+<script type="text/javascript" src="http://blog.be-open.net/wp-content/themes/beope130123/js/socialButton.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37234614-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type='text/javascript' src='http://blog.be-open.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://blog.be-open.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.83c'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://blog.be-open.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://blog.be-open.net/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeEmacs.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = 'ソースを表示';
+	SyntaxHighlighter.config.strings.help = 'SyntaxHighlighterについて';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = '指定のブラシが見つかりませんでした: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'HTMLスクリプトのオプションのためにブラシが構成されませんでした: ';
+	SyntaxHighlighter.defaults['class-name'] = 'p10-t p10-b';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = true;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201415.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'35576945',v:'ext',post:'1115'});
+var load_cmc = function(){linktracker_init(35576945,1115,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.554 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-04-11 15:12:46 -->
+
+<!-- super cache -->

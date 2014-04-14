@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=mozc word register dialog
+Terminal=false
+Name=Mozc 単語登録
+Exec=/usr/lib/mozc/mozc_tool --mode=word_register_dialog
+Type=Application
+Icon=/usr/share/ibus-mozc/dictionary.png

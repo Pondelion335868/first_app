@@ -1,0 +1,195 @@
+@charset "Shift_JIS";
+
+/*
+使用画面   :NAVI学生PC
+説明       :共通フッターで利用するCSS
+初版作成日 :2012/06/01
+初版作成者 :mycom(navi-dev)
+*/
+
+/*---------------------*/
+/*	clearfix 
+/*---------------------*/
+.clearfix:after { 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden; 
+} 
+.clearfix {display: inline-block;} 
+
+/* Hides from IE-mac \*/ 
+* html .clearfix {height: 1%;} 
+.clearfix {display: block;} 
+/* End hide from IE-mac */
+
+/*=====================*/
+/*	フッター 
+/*=====================*/
+#gfooter{
+	/*▼負荷対策用(通常時は削除)*/
+	clear:both !important;
+	padding-top:10px !important;
+	padding-bottom:20px !important;
+	border-top:1px solid #CCCCCC !important;
+	/*▲負荷対策用(通常時は削除)*/
+	margin-left:auto;
+	margin-right:auto;
+	width:850px;
+	padding-bottom:40px;
+	background:#FFFFFF;
+}
+#GlobalFooter {
+	background:#FFFFFF;
+	margin:15px auto 10px;
+	padding-top:8px;
+	font-size: 73%;
+	line-height: 1.5;
+	padding: 10px 0px;
+	border-top: solid 3px #2798e3;
+}
+
+#FooterLogo {
+	width: 100px;
+	float: left;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#FooterService {
+	width: 700px;
+	float: left;
+	margin-left: 10px;
+	display: inline; /* dobble margin bugfix for ie6 */
+}
+
+#FooterServiceHead {
+	margin-bottom: 8px;
+}
+
+#GlobalFooter .FooterTitle {
+	width: 500px;
+	float: left;
+	font-size: 117%;
+	font-weight: bold;
+	color: #333;
+}
+
+#GlobalFooter #FooterServiceHead p.FooterHeadLink {
+	text-align: right;
+}
+
+#GlobalFooter #FooterServiceHead p.FooterHeadLink a {
+	float: right;
+	padding-right: 20px;
+	color: #09F !important;
+}
+#GlobalFooter #FooterServiceHead p.FooterHeadLink img {
+	vertical-align: text-top;
+}
+#FooterServiceCont {
+}
+
+#FooterServiceCont dl {
+	padding: 1px 0 0;
+	background: url(../images/share/fline_blue.gif) repeat-y 100px;
+}
+
+#FooterServiceCont dl dt {
+	width: 100px;
+	float: left;
+	padding-bottom: 10px;
+	margin-right: 15px;
+	color: #2798e3;
+}
+
+#FooterServiceCont dl dd {
+	float: left;
+	margin: 0 10px 3px 0;
+	padding: 0 9px 0 0;
+	background: url(../images/share/fline_grey.gif) no-repeat right .3em;
+	white-space: nowrap;
+}
+
+#FooterServiceCont dl dd a:hover {
+	text-decoration: underline;
+}
+
+#FooterServiceCont dl dd.last {
+	background:none;
+}
+
+#FooterCorp {
+	border-right: 1px solid #999;
+	clear: both;
+}
+
+#FooterCorpInfo {
+	float: left;
+	width: 720px;
+	margin: 10px 0 0 0;
+	padding-top: 5px;
+	border-top: 1px solid #2798e3;
+	display: inline; /* dobble margin bugfix for ie6 */
+}
+
+#FooterCorpId {
+	margin-right:10px;
+	float: left;
+}
+
+#FooterCorpName {
+	width: 100px;
+/*	float: left;*/
+	margin-top: 2px;
+}
+
+#copyright {
+/*	width: 180px;
+	float: left;*/
+	margin: 3px 0 0 0;
+	font-size:81.6%;
+	color: #333;
+	line-height: 1.2;
+}
+
+#FooterCorpLink {
+	float: left;
+}
+
+#FooterCorpLink ul li {
+	float: left;
+	margin: 0px 10px 7px 0;
+	padding: 3px 9px 0px 0;
+	font-size: 93.3%;
+	line-height: 1.2;
+}
+
+#FooterCorpLink ul li.last {
+	white-space:nowrap;
+	border-right: none;
+	margin-right: 0;
+	padding-right: 0;
+}
+
+#privacy {
+	width: 75px;
+	float: left;
+	margin: -34px 0 0 10px;
+	display: inline; /* dobble margin bugfix for ie6 */
+}
+
+/*=====================*/
+/*	フォント
+/*=====================*/
+
+#GlobalFooter a {
+	color: #666666;
+	text-decoration: none;
+}
+
+#GlobalFooter a:hover {
+	color: #666666;
+	text-decoration: underline;
+}

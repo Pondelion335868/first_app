@@ -1,0 +1,427 @@
+var imglinksid = "1363425142";
+var imglinkcid = "a";
+var imglinkset = "4,3,2,1,12,234,200,000000,2,,0,0";
+
+var set = imglinkset.split(",");
+
+ var trgb = new Array(0,0,0);
+ var tcd = new Array("00","00","00");
+ var ccd = set[7];
+ ccd = ccd.toUpperCase();
+ if(ccd.length > 8) ccd = "#000000";
+ if(ccd.charAt(0) == "#"){
+ tcd[0] = ccd.substring(1,3);
+ tcd[1] = ccd.substring(3,5);
+ tcd[2] = ccd.substring(5,7);
+ } else {
+ tcd[0] = ccd.substring(0,2);
+ tcd[1] = ccd.substring(2,4);
+ tcd[2] = ccd.substring(4,6);
+ }
+ for(i=0 ; i<3 ;i++){
+ trgb[i] = 0;
+ }
+ for(i=0 ; i<3 ;i++){
+ if(tcd[i].substring(0,1)=="0") trgb[i]=0;
+ if(tcd[i].substring(0,1)=="1") trgb[i]=16;
+ if(tcd[i].substring(0,1)=="2") trgb[i]=16*2;
+ if(tcd[i].substring(0,1)=="3") trgb[i]=16*3;
+ if(tcd[i].substring(0,1)=="4") trgb[i]=16*4;
+ if(tcd[i].substring(0,1)=="5") trgb[i]=16*5;
+ if(tcd[i].substring(0,1)=="6") trgb[i]=16*6;
+ if(tcd[i].substring(0,1)=="7") trgb[i]=16*7;
+ if(tcd[i].substring(0,1)=="8") trgb[i]=16*8;
+ if(tcd[i].substring(0,1)=="9") trgb[i]=16*9;
+ if(tcd[i].substring(0,1)=="A") trgb[i]=16*10;
+ if(tcd[i].substring(0,1)=="B") trgb[i]=16*11;
+ if(tcd[i].substring(0,1)=="C") trgb[i]=16*12;
+ if(tcd[i].substring(0,1)=="D") trgb[i]=16*13;
+ if(tcd[i].substring(0,1)=="E") trgb[i]=16*14;
+ if(tcd[i].substring(0,1)=="F") trgb[i]=16*15;
+ 
+ if(tcd[i].substring(1,2)=="1") trgb[i]=trgb[i] + 1;
+ if(tcd[i].substring(1,2)=="2") trgb[i]=trgb[i] + 2;
+ if(tcd[i].substring(1,2)=="3") trgb[i]=trgb[i] + 3;
+ if(tcd[i].substring(1,2)=="4") trgb[i]=trgb[i] + 4;
+ if(tcd[i].substring(1,2)=="5") trgb[i]=trgb[i] + 5;
+ if(tcd[i].substring(1,2)=="6") trgb[i]=trgb[i] + 6;
+ if(tcd[i].substring(1,2)=="7") trgb[i]=trgb[i] + 7;
+ if(tcd[i].substring(1,2)=="8") trgb[i]=trgb[i] + 8;
+ if(tcd[i].substring(1,2)=="9") trgb[i]=trgb[i] + 9;
+ if(tcd[i].substring(1,2)=="A") trgb[i]=trgb[i] + 10;
+ if(tcd[i].substring(1,2)=="B") trgb[i]=trgb[i] + 11;
+ if(tcd[i].substring(1,2)=="C") trgb[i]=trgb[i] + 12;
+ if(tcd[i].substring(1,2)=="D") trgb[i]=trgb[i] + 13;
+ if(tcd[i].substring(1,2)=="E") trgb[i]=trgb[i] + 14;
+ if(tcd[i].substring(1,2)=="F") trgb[i]=trgb[i] + 15;
+ }
+var cl10 = trgb[0] + "," + trgb[1] + "," + trgb[2];
+
+var wtp = set[5] - 4;
+var htp = set[6] - 4;
+
+document.write(
+"<style type=text/css>" +
+"<!--" +
+".rk_3169 {" +
+"font-size: 10pt;" +
+"font-family: sans-serif !important;" +
+"COLOR: #FFFFFF;" +
+"position:relative;" +
+"display:block;" +
+"FLOAT: left;" +
+"WIDTH: " + wtp + "px;" +
+"HEIGHT: " + htp + "px;" +
+"BORDER: 2px solid #" + set[7] + ";" +
+"margin: " + set[8] + "px;" +
+"overflow:hidden;" +
+"-moz-background-size:cover;" +
+"background-size:cover;" +
+"background-position: 50% 50%;" +
+"}" +
+".ie_3169 {" +
+"position:absolute;" +
+"WIDTH: " + wtp + "px;" +
+"HEIGHT: " + htp + "px;" +
+"left:0;" +
+"overflow:hidden;" +
+"background:#FFFFFF;" +
+"}" +
+".rank_3169, .rt_3169, .com_3169 {" +
+"TEXT-ALIGN: center;" +
+"margin : 2px;" +
+"}" +
+".rt_3169, .com_3169 {" +
+"WIDTH: 58px;" +
+"position:absolute;" +
+"right:0;" +
+"}" +
+".ti_3169 {" +
+"WIDTH: 100%;" +
+"HEIGHT: 30px;" +
+"position:absolute;" +
+"left:0;" +
+"bottom:0;" +
+"PADDING: 2px;" +
+"line-height: 1.3;" +
+"filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#cc" + set[7] + ",EndColorStr=#dd" + set[7] + ");" +
+"background-color:rgba(" + cl10 + ",0.85)" +
+"}" +
+".rank_3169 {" +
+"position:absolute;" +
+"WIDTH: 24px;" +
+"filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#dd" + set[7] + ",EndColorStr=#dd" + set[7] + ");" +
+"background-color:rgba(" + cl10 + ",0.85)" +
+"}" +
+".rt_3169 {" +
+"filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#dd0066ff,EndColorStr=#dd0066ff);" +
+"background-color:rgba(0,102,255,0.9)" +
+"}" +
+".com_3169 {" +
+"filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ddff0066,EndColorStr=#ddff0066);" +
+"background-color:rgba(255,0,102,0.9)" +
+"}" +
+".stripes1_3169 {" +
+"-webkit-background-size: 34px 34px;" +
+"-moz-background-size: 34px 34px;" +
+"background-size: 34px 34px;" +
+"background-image: -webkit-gradient(linear, 0 0, 100% 100%," +
+"color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent)," +
+"color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15))," +
+"color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent)," +
+"to(transparent));" +
+"background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%," +
+"transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%," +
+"transparent 75%, transparent);" +
+"background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%," +
+"transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%," +
+"transparent 75%, transparent);" +
+"background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%," +
+"transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%," +
+"transparent 75%, transparent);" +
+"background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%," +
+"transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%," +
+"transparent 75%, transparent);" +
+"background-image: linear-gradient(-45deg, rgba(255, 255, 255, .15) 25%, transparent 25%," +
+"transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%," +
+"transparent 75%, transparent);" +
+"}" +
+".stripes2_3169 {" +
+"background-image:url(http://www.antennash.com/img/s1.png);" +
+"}" +
+".picnic_3169 {" +
+"background-image:-moz-linear-gradient(top, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.14) 30%, transparent 30%, transparent 33%,rgba(0,0,0,0.14) 33%, rgba(0,0,0,0.14) 40%, transparent 40%, transparent 80%,rgba(0,0,0,0.07) 80%, rgba(0,0,0,0.07) 96%, transparent 96%, transparent 100%),-moz-linear-gradient(left, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.14) 30%, transparent 30%, transparent 33%,rgba(0,0,0,0.14) 33%, rgba(0,0,0,0.14) 40%, transparent 40%, transparent 80%,rgba(0,0,0,0.07) 80%, rgba(0,0,0,0.07) 96%, transparent 96%, transparent 100%);" +
+"background-image:-webkit-gradient(linear, left top, left bottom,from(rgba(0,0,0,0.14)), color-stop(0.3,rgba(0,0,0,0.14)),color-stop(0.3,transparent), color-stop(0.33,transparent),color-stop(0.33,rgba(0,0,0,0.14)), color-stop(0.4,rgba(0,0,0,0.14)),color-stop(0.4,transparent), color-stop(0.8,transparent),color-stop(0.8,rgba(0,0,0,0.14)), color-stop(0.96,rgba(0,0,0,0.14)),color-stop(0.96,transparent), to(transparent)), -webkit-gradient(linear, left top, right top,from(rgba(0,0,0,0.14)), color-stop(0.3,rgba(0,0,0,0.14)),color-stop(0.3,transparent), color-stop(0.33,transparent),color-stop(0.33,rgba(0,0,0,0.14)), color-stop(0.4,rgba(0,0,0,0.14)),color-stop(0.4,transparent), color-stop(0.8,transparent),color-stop(0.8,rgba(0,0,0,0.14)), color-stop(0.96,rgba(0,0,0,0.14)),color-stop(0.96,transparent), to(transparent));" +
+"-moz-background-size: 30px 30px;" +
+"-webkit-background-size: 30px 30px;" +
+"background-size: 30px 30px;" +
+"}" +
+"-->" +
+"</style>"
+);
+
+//二次元配列に変換
+var str = "1397137807<>PCゲーム界に衝撃を与えた3大ゲームってなによ<>http://newpuru.doorblog.jp/archives/38177486.html?url=lmth.70586183%2Fsevihcra%2Fweiver-10yajeulb%2Fpj.roodevil.golb%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/91343912a.jpg<><><>,1397137807<>【パズドラ】三蔵法師のスキル&ステータスが判明(・∀・)！さらにアメノウズメ、レイランなどの究極進化が可能に！！<>http://newpuru.doorblog.jp/archives/38177486.html?url=lmth.2372-yrtne-golb%2Fmoc.zzupnim%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/47972710a.jpg<><><>,1397137806<>【悲報】深田恭子が誰だかわからないほど劣化してる件【画像あり】<>http://newpuru.doorblog.jp/archives/38157923.html?url=lmth.6463715%2Fsevihcra%2Fmoc.lennahc2nan%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/32192415a.jpg<><><>,1397137806<>【艦これ】4/9メンテ内容まとめ 龍驤改のグラ更新＆島風・ちとちよにボイス追加など<>http://newpuru.doorblog.jp/archives/38157923.html?url=lmth.39965473%2Fsevihcra%2F002eroknak%2Fpj.roodevil.golb%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/55657571a.jpg<><><>,1397137805<>【朗報】アルバイト時給の上昇が止まらない！外食産業は時給1、000円でも人員確保できず<>http://newpuru.doorblog.jp/archives/38138647.html?url=lmth.36005183%2Fsevihcra%2Ften.ooobak%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/70889505a.jpg<><><>,1397137804<>【パズドラ】究極イシスのリーダスキル強化が決定！！<>http://newpuru.doorblog.jp/archives/38118784.html?url=lmth.6052-yrtne-golb%2Fmoc.2cf.golb.ukosuzap%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/49583484a.jpg<><><>,1397137803<>女の子のよく言うセリフを上げていこうぜｗｗｗｗ<>http://newpuru.doorblog.jp/archives/38099953.html?url=lmth.93532%2Fselcitra%2Fpj.agamolb.hsemotamohc%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/47253608a.jpg<><><>,1397137803<>男「俺、彼女いるから」女「」<>http://newpuru.doorblog.jp/archives/38099953.html?url=lmth.92487025%2Fsevihcra%2Fpj.golbhc2.tnahpele%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/80012958a.jpg<><><>,1397137504<>本日は始業式！漏らしました！！<>http://2ch-c.net/?gt=20140410134409<>http://www.antennash.com/etc/imglink/img/1363425142/31620528a.jpg<><><>,1397137503<>女のひとりHで新しい性感帯を発見する方法が凄いｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140410131348&t=2<>http://www.antennash.com/etc/imglink/img/1363425142/41328516a.jpg<><><>,1397137442<>【炎上】『ストリートファイター４』の世界大会がなぜか日本でしか視聴できないことが判明して外人激おこ！→「日本て浅はかだね」<>http://newmofu.doorblog.jp/archives/37470384.html?url=lmth.70131025%2Fsevihcra%2Fmoc.511nij%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/93951403a.jpg<><><>,1397137441<>【愕然】 女子大生だけどミニスカ履いて電車に乗ったらｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://newmofu.doorblog.jp/archives/37470384.html?url=lmth.26738183%2Fsevihcra%2Ftol_a_atoraw%2Fpj.roodevil.golb%2F%2F%3Aptth<>http://www.antennash.com/etc/imglink/img/1363425142/50114819a.jpg<><><>,1397137441<>俺、スマホ失くす→拾った奴がメモリに入ってる女に片っ端から告白→嫁にビンタされる<>http://newmofu.doorblog.jp/archives/37470384.html?url=lmth.5776415%2Fsevihcra%2Ften.nadikegak%2F%2F%3Aptth&noadult=1<>http://www.antennash.com/etc/imglink/img/1363425142/20299221a.jpg<><><>,1397137209<>SDN芹那の腹筋なら進撃の巨人ミカサの実写イケるか？<>http://newpuru.doorblog.jp/archives/38177486.html?url=lmth.65506473%2Fsevihcra%2Ften.nijoykikegnihs%2F%2F%3Aptth&noadult=1<><><><>,1397137208<>【DQMSL】スキルいらないなら上級より中級がオススメ！【タマゴ狩り】<>http://newpuru.doorblog.jp/archives/38157923.html?url=lmth.9b%2528%253e%259b%2528%253e%25aa%2528%253e%25c8%2518%253e%25a9%254b%257e%25da%258b%254e%25a8%2528%253e%2588%2528%253e%25a9%254b%257e%25a8%258b%254e%2598%2528%253e%25aa%2518%253e%2548%2518%253e%25aa%2518%253e%2598%2528%253e%2548%2518%253e%25ba%2538%253e%25da%2528%253e%259b%2528%253e%2519%2508%253e%25lsmqd09%2508%253e%25%2Fmoc.ukos-lsmqd%2F%2F%3Aptth&noadult=1<>http://www.antennash.com/etc/imglink/img/1363425142/82884504a.jpg<><><>,1397137207<>【黒い過去】繁殖率が凄い時筍の根を持ち帰って 4軒隣の庭が8年後竹藪w<>http://newpuru.doorblog.jp/archives/38138647.html?url=lmth.42593473%2Fsevihcra%2Fmoc.oyjikegnihs%2F%2F%3Aptth&noadult=1<>http://www.antennash.com/etc/imglink/img/1363425142/38633246a.jpg<><><>,1397137206<>「可愛すぎる！」日本の火山が噴火した際の写真が可愛いと話題に 海外の反応<>http://newpuru.doorblog.jp/archives/38118784.html?url=lmth.634-yrtne-golb%2Fmoc.2cf.golb.ocsgom%2F%2F%3Aptth&noadult=1<>http://www.antennash.com/etc/imglink/img/1363425142/30294872a.jpg<><><>,1397137205<>【パズドラ】アンケ8は道中が「ダークレディ」ボスが「キンワル」で決定キタ――(●∀●)―― !!<>http://newpuru.doorblog.jp/archives/38099953.html?url=lmth.5761-yrtne-golb%2Fmoc.2cf.golb.uohukoszaroduzap%2F%2F%3Aptth&noadult=1<><><><>,1397131207<>【ラブライブ！】もしもラブライブ！とパズドラがコラボしたら・・・・<>http://lovelivepress.com/blog-entry-988.html<>http://www.antennash.com/etc/imglink/img/1363425142/49555512a.jpg<><><>,1397126884<>【朗報】最近ポルターガイストが酷いからファブリーズ撒いた結果ｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140410104208&t=2<>http://www.antennash.com/etc/imglink/img/1363425142/40974599a.jpg<><><>,";
+
+var scek = 21;
+var wakusuu = set[3] * set[4];
+if (scek < wakusuu) {
+var sceksa = wakusuu - scek;
+sceksa ++;
+for( var cnt=0 ; cnt < sceksa ; cnt++ ){
+str = str + "1<>記事収集中<>#<><><>,";
+}
+}
+
+var strAry = str.split(",");
+x=strAry.pop();
+var ary = new Array();
+for( var cnt=0 ; cnt<strAry.length ; cnt++ ){
+	strAry[cnt].replace(/【comma】/g, ",");  
+	ary[cnt] = strAry[cnt].split("<>");
+}
+
+//メ[ト
+if (set[1] == 1) {
+ary.sort(function(a, b) {
+	if(Number(a[4]) == Number(b[4])){
+		return (Number(a[4]) < Number(b[4])) ? 1 : -1;
+	}
+	return (Number(a[4]) < Number(b[4])) ? 1 : -1;
+});
+}else if (set[1] == 2) {
+ary.sort(function(a, b) {
+	if(Number(a[5]) == Number(b[5])){
+		return (Number(a[5]) < Number(b[5])) ? 1 : -1;
+	}
+	return (Number(a[5]) < Number(b[5])) ? 1 : -1;
+});
+if (set[0] == 3){set[0] = 99;}
+}else if (set[1] == 3) {
+var i = ary.length;
+  while (--i) {
+    var j = Math.floor(Math.random() * (i + 1));
+    if (i == j) continue;
+    var k = ary[i];
+    ary[i] = ary[j];
+    ary[j] = k;
+  }
+}
+
+//確認
+var hkiji = set[3] * set[4] ;
+if (hkiji < 30) {
+var kiji = hkiji;
+}else if (ary.length < hkiji) {
+var kiji = ary.length;
+} else {
+var kiji = 30;
+}
+
+//Cookieでユーザビリティ向上
+function GetCookie(name) {
+	var regexp = new RegExp('; ' + name + '(=([^;]*))?;');
+	var matchfg  = ('; ' + document.cookie + ';').match(regexp);
+	if (matchfg) {
+		return matchfg[2];
+	}
+	else {
+		return 0;
+	}
+}
+
+//link
+var randnum2 = Math.floor( Math.random() * kiji );
+if(hkiji != 1){if(randnum2 == 0){randnum2 = 1;}}
+if (0 != "0") {
+var imglinkcttp = GetCookie("imglink_1363425142");
+imglinkcttp ++;
+
+if(imglinkcttp > 8){
+var randnum3 = Math.floor( Math.random() * 100 );
+if(randnum3 < 25){
+ary[randnum2][1] = "";
+ary[randnum2][2] = "";
+ary[randnum2][3] = "";
+ary[randnum2][4] = "ad";
+ary[randnum2][5] = "ad";
+}
+}else{
+ary[randnum2][1] = "";
+ary[randnum2][2] = "";
+ary[randnum2][3] = "";
+ary[randnum2][4] = "ad";
+ary[randnum2][5] = "ad";
+}
+
+var date1,date2;
+date1 = new Date();
+date1.setTime(date1.getTime() + 3*60*1000);
+date2 = date1.toGMTString();
+document.cookie = "imglink_1363425142=" + imglinkcttp + "; path=/; expires=" + date2 + ";";
+}
+
+if (set[10] == "1") {
+var target = " target=_top";
+}else{
+var target = " target=_blank";
+}
+
+if (set[11] == "1") {
+var strco = " stripes1" + "_3169";
+}else if(set[11] == "2"){
+var strco = " stripes2" + "_3169";
+}else if(set[11] == "3"){
+var strco = " picnic" + "_3169";
+}else{
+var strco = "";
+}
+
+for( var cnt=0 ; cnt<kiji ; cnt++ ){
+cntno = cnt + 1;
+
+if(set[9].indexOf("antennash.com")!=-1){
+set[9] = "http://www.antennash.com/img/noimg.gif";
+}else if (set[9] == "") {
+set[9] = "http://www.antennash.com/img/noimg.gif";
+}
+
+if (ary[cnt][3] == "") {
+ary[cnt][3] = set[9];
+}
+document.write("<a href=" + ary[cnt][2] + target + ">" + "<div class=antennash_imglink><span class=rk_3169 style='BACKGROUND-image: url(" + ary[cnt][3] + ");'>");
+
+//IE
+var msie=navigator.appVersion.toLowerCase();
+msie=(msie.indexOf('msie')>-1)?parseInt(msie.replace(/.*msie[ ]/,'').match(/^[0-9]+/)):0;
+if((msie>8)||(msie==0)){}else{
+var img = new Image();
+img.src = ary[cnt][3];
+var gazouH = img.height;
+var gazouW = img.width;
+
+if (set[5] < set[6]) {
+document.write("<div class=ie_3169><img src='" + ary[cnt][3] + "' height='" + htp + "' border=0></div>");
+}else{
+document.write("<div class=ie_3169><img src='" + ary[cnt][3] + "' width='" + wtp + "' border=0></div>");
+}
+}
+
+if (ary[cnt][4] == "ad") {
+document.write("<DIV class='rank_3169" + strco + "' style=\"right:0;\">PR</DIV>");
+}else if (set[2] == 1) {
+document.write("<DIV class='rank_3169" + strco + "'>" + cntno +"</DIV>");
+}
+
+if (ary[cnt][4] == "ad") {
+if (0 == 800) {//超まとめ
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_Ck1uyMAIetxLjXYPrSBeeg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 802) {//PICK802
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_xXU7YDngvgfEkRx4ufI9zw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 902) {//graceinitiativejp
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_4oCuMzb0%2Fnw4velpMiE62A%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 101) {//アパレル1
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_Z4rqTfua515l3ewoCmY%2FIQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 105) {//アパレルUSG
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_3dAcrh6VyVD8fLKsV8NWmQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 107) {//育毛剤
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_oHrDc7V9yT%2FiGXhWbnShiw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 108) {//おたぽる
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_cli2sIl4p9OHEDMEIG44DA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 200) {//ビガーネット
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_V%2Bfd7Mir2TXao0F3FBnh%2Fg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 201) {//ベラジョン
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_V0brW37RFrf0YSUQjbjReg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 4) {//bannerbridge
+document.write("<div style='display:none'><img src='http://track.bannerbridge.net/adtprod.php?adID=843391&affID=0064718&siteID=128966' width='0' height='0' border='0'></div>");
+}else if (0 == 401) {//iPhone5s
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_FeulFNXjVGSoAY4lxxQ%2Fvw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/491859/' width='0' height='0' border='0'></div>");
+}else if (0 == 402) {//iPhone5s
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_5asiz5uYV4KCwN1DgpDmDg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/491862/' width='0' height='0' border='0'></div>");
+}else if (0 == 403) {//iPhone5s
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_sC7DkoDKaqhYsFizkOPB7Q%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/491863/' width='0' height='0' border='0'></div>");
+}else if (0 == 404) {//iPhone5s
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_8ddzTe8s8hooQTw9eHEvfA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/491864/' width='0' height='0' border='0'></div>");
+}else if (0 == 405) {//iPad
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_vwy1EJQwddoDyy2ZtEGY6Q%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492051/' width='0' height='0' border='0'></div>");
+}else if (0 == 406) {//iPad
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_WLvkuK%2BRDoMIkgzTHjtRiQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492052/' width='0' height='0' border='0'></div>");
+}else if (0 == 407) {//iPad
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_mWJEKmJk7fRCBXYEUi6faw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492053/' width='0' height='0' border='0'></div>");
+}else if (0 == 408) {//iPad
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_iJYrzumL070n71H9KMujJw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492055/' width='0' height='0' border='0'></div>");
+}else if (0 == 409) {//4s
+document.write("<div style='display:none'><img src='http://image.j-a-net.jp/1490672/534245/' width='0' height='0' border='0'></div>");
+}else if (0 == 10) {//アンテナシェア-casino.com
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_Dv%2FZ7n9ZSOWjKMcbHPZ3bg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 51) {//アンテナシェア-メンズファッション+1
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_imfGf1tiHlli7IDijXji3A%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 52) {//アンテナシェア-メンズファッション+2
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_ITrS0J0Lma5Q26UhMU98pw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 53) {//アンテナシェア-メンズファッション+3
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_h%2Fh7t2hZMFYxGBI17r7YcQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 54) {//アンテナシェア-メンズファッション+4
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_QdZoO5%2Fmk8Mbn97QS8x00Q%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 55) {//アンテナシェア-メンズファッション+5
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_wQNI8dVSN1hKa56FqTOPvA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 56) {//アンテナシェア-メンズファッション+6
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_nrc7zL7M9A4JKS3up77uAA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 57) {//アンテナシェア-メンズファッション+7
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_BBxXg4Ft5zJ1xMhDOPVCZQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 58) {//アンテナシェア-メンズファッション+8
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_lE5LCXXoFFlz3HVIiQqCKA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}
+
+}else if (set[0] == 1) {
+document.write("<DIV class=rt_3169>" + ary[cnt][4] + "RT</DIV>");
+}else if(set[0] == 2) {
+document.write("<DIV class=com_3169>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
+}else if(set[0] == 3) {
+document.write("<DIV class=rt_3169>" + ary[cnt][4] + "RT</DIV><br clear=left><DIV class=com_3169>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
+}else if(set[0] == 99) {
+document.write("<DIV class=com_3169>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV><br clear=left><DIV class=rt_3169>" + ary[cnt][4] + "RT</DIV>");
+}
+
+document.write("<DIV class='ti_3169" + strco + "'>" + ary[cnt][1] + "</DIV>");
+document.write("</span></div></a>");
+
+if ( cntno % set[4] == 0 ) {
+document.write("<br clear=left>");
+}
+
+}
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33333981-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();

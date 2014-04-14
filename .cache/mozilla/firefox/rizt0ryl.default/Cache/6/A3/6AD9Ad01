@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS" />
+<title>Step3・GUIのいろいろな書き方: Java初心者入門講座</title>
+<meta name="description" content="Step3・GUIのいろいろな書き方,プログラミング言語Javaのインストール、環境設定からはじめるので、初心者でも大丈夫です。やさしいサンプルプログラムから、eclipseを使った本格的なアプリケーション開発まで図を使って学べます。クラス、メソッド、配列、APIの使い方についても解説します。" />
+<meta name="keywords" content="java,sun,初心者,入門,講座,eclipse" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta property="og:title" content="Java初心者入門講座">
+<meta property="og:type"  content="website">
+<meta property="og:url"   content="http://sunjava.seesaa.net/">
+<meta property="og:image" content="http://blog.seesaa.jp/img/ogp_logo.png">
+<meta property="og:description" content="プログラミング言語Javaのインストール、環境設定からはじめるので、初心者でも大丈夫です。やさしいサンプルプログラムから、eclipseを使った本格的なアプリケーション開発まで図を使って学べます。クラス、メソッド、配列、APIの使い方についても解説します。">
+<meta property="og:site_name"   content="Java初心者入門講座">
+
+<link rel="alternate" media="handheld" type="text/html" href="http://sunjava.seesaa.net/category/3730426-1.html" />
+<link rel="stylesheet" href="http://sunjava.seesaa.net/styles-index.css" type="text/css" />
+<link rel="stylesheet" href="http://blog.seesaa.jp/css/user-common.css" type="text/css" />
+<link rel="alternate" href="http://sunjava.seesaa.net/index.rdf" type="application/rss+xml" title="RSS" />
+
+<meta name="google-site-verification" content="0y1YzyTUoXzKqnlmdpEjhwKmu9e_eks2jq9ySNDVXXI" />
+<META name="y_key" content="690127694b80b7de" />
+</head>
+<body><script type="text/javaScript">seesaa_site_id = 'sunjava'; seesaa_floating = false;</script>
+<span id="iphone-link" style="display:none; padding-top:3px;text-align:right;"><a href="javascript:document.cookie='force_pc=0; max-age=15768000; path=/'; document.cookie='force_sp=1; max-age=15768000; path=/'; document.location='/?from_pc'">スマートフォン専用ページを表示</a></span>
+<script type="text/javaScript"><!--
+if ((0 <= navigator.userAgent.indexOf('iPhone')) || (0 <= navigator.userAgent.indexOf('Android'))) { document.getElementById('iphone-link').style.display = 'block'; }
+//--></script>
+
+
+<div id="container">
+<script type="text/javascript" language="JavaScript" src="http://blog.seesaa.jp/contents/js/ad_plugin.js"></script>
+<div id="banner">
+<h1><a href="http://sunjava.seesaa.net/" accesskey="1">Java初心者入門講座</a></h1>
+
+
+<span class="msgt">プログラミング言語Javaのインストール、環境設定からはじめるので、初心者でも大丈夫です。やさしいサンプルプログラムから、eclipseを使った本格的なアプリケーション開発まで図を使って学べます。クラス、メソッド、配列、APIの使い方についても解説します。</span>
+
+
+
+
+</div>
+
+
+<div id="links-left">
+<div class="sidetitle">メニュー</div>
+<div class="side">
+
+
+<a href="http://sunjava.seesaa.net/category/3643077-1.html">■Javaとは？</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3643463-1.html">Javaプログラミングの面白さ</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3506092-1.html">■Java言語の開発環境の準備</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3474935-1.html">Step1・Java 開発・実行環境をダウンロード</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3496255-1.html">Step2・JDK と JRE をインストール</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3496847-1.html">Step3・Javaドキュメントのインストール</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3497611-1.html">Step4・Javaアプリケーションのデモ</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3498255-1.html">Step5・Java 環境変数のPathを設定</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3501859-1.html">Step6・作業用のフォルダを作成</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3502141-1.html">Step7・コマンドプロンプトの設定</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3502509-1.html">Step8・ファイルの拡張子を表示する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3502889-1.html">Step9・TeraPadをダウンロード</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3505994-1.html">■Javaプログラミング 初級</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3506861-1.html">Step1・はじめてのJavaプログラミング</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3517608-1.html">Step2・インデントの大切さについて</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3507124-1.html">Step3・はじめてのコンパイル</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3507463-1.html">Step4・はじめてのプログラム実行</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3507782-1.html">Step5・わざとエラーを出してみよう</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3513612-1.html">Step6・ディレクトリの移動</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3513768-1.html">Step7・コンパイルを行う場所について</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3515172-1.html">Step8・環境変数を設定した効果</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3524163-1.html">Step9・Hello.javaの解説</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3530558-1.html">Step10・Javaドキュメントで API 仕様を調べる</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3532393-1.html">Step11・API のソースコードを見てみよう。</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3642076-1.html">Step12・API、クラスライブラリの関係</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3545625-1.html">Step13・Javaプログラミングの基礎</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3546768-1.html">Step14・PersonTest.java の解説</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3547430-1.html">Step15・同じコードはメソッドにしてまとめる</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3552669-1.html">Step16・メソッドに戻り値を返させる</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3559168-1.html">Step17・配列の使い方</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3562755-1.html">Step18・for文の使い方</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3585852-1.html">Step19・フィールド変数の値を変える</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3595168-1.html">Step20・カプセル化する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3599579-1.html">Step21・セッターを使ってフィールドを設定</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3603630-1.html">Step22・セッターでデータをチェックする</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3618382-1.html">Step23・ゲッターでデータを取得する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3628714-1.html">Step24・パッケージでクラスをまとめる</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3631634-1.html">Step25・異なるパッケージ間の利用</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3631960-1.html">Step26・importでパッケージ名を省略</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3632772-1.html">Step27・サブフォルダは別パッケージ</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3635910-1.html">Step28・Javaコンパイラのオプション一覧</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3636706-1.html">Step29・コンパイラのオプションを使ってみる</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3645401-1.html">Step30・パッケージとアクセス修飾子の関係</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3646769-1.html">Step30・クラスの継承とポリモーフィズム</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3647612-1.html">■Javaデータベース操作 初級</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3648259-1.html">Step1・ODBCデータソースの登録</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3652866-1.html">Step2・データベースに接続</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3653699-1.html">Step3・レコードを検索 都道府県を表示</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3657452-1.html">Step4・レコードを追加 都道府県マスター</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3661913-1.html">Step5・追加プログラムを改良 その1</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3662612-1.html">Step6・メソッドと例外クラスの関係</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3663252-1.html">Step7・追加プログラムを改良 その2</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3670328-1.html">Step8・レコードを更新 都道府県マスター</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3671064-1.html">Step9・レコードを削除 都道府県マスター</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3681514-1.html">Step10・重複コードをクラスにまとめる</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3714338-1.html">■JavaでGUIプログラミング</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3722220-1.html">Step1・AWTでウィンドウを表示</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3729485-1.html">Step2・複数のウィンドウを表示する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3730426-1.html">Step3・GUIのいろいろな書き方</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3750726-1.html">Step4・画面のレイアウトとイベント処理</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3751446-1.html">Step5・GUIでデータベースに接続</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3756900-1.html">Step6・フォントや色を変更する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3767090-1.html">Step7・ダイアログボックスを表示する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3772262-1.html">Step8・メニューバーを表示する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3799959-1.html">Step9・AWTからSwingへの変更</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3801026-1.html">Step10・Swingでダイアログボックスを表示</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3803698-1.html">Step11・Swing版の都道府県マスター</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3805490-1.html">Step12・ダイアログをJOptionPaneクラスに変える</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3806283-1.html">Step13・Look&Feelで外観を変える</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3839176-1.html">Step14・リスト項目からデータを取り出す</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3860050-1.html">Step15・取得した値からSQL文を作成する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3866098-1.html">Step16・GUIからSQL文を実行する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3870155-1.html">Step17・try-catch-finally文を使う</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3871208-1.html">Step18・ショートカットキーを割り当てる</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3876581-1.html">Step19・実行可能なJARファイルの作成</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3888428-1.html">■Eclipse (エクリプス)とは？</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3887701-1.html">Step1・Eclipse をセットアップする</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3890178-1.html">Step2・Eclipse の環境を設定する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3891750-1.html">Step3・初めてのEclipseプログラミング</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3896413-1.html">Step4・EclipseからJavaのAPI仕様を調べる</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3899556-1.html">Step5・Eclipseにインポートする方法</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3901585-1.html">Step6・VisualEditorを使いGUIアプリを作成</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3910901-1.html">Step7・自動生成されたソースコードの解説</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3913333-1.html">Step8・VisualEditorでJLabelを配置する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3919250-1.html">Step9・VisualEditorでJListを配置する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3920147-1.html">Step10・VisualEditorでJButtonを配置する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3923572-1.html">Step11・VisualEditorでJMenuBarを配置する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3924650-1.html">Step12・Eclipse でファイルをコピーする</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3926446-1.html">Step13・Eclipseでソースコードを入力する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3929407-1.html">Step14・Eclipseでイベント処理</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3930618-1.html">Step15・メニューとボタンのイベント処理</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3930841-1.html">Step16・修正する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3931443-1.html">Step17・Eclipseで実行可能なJARファイルを作成</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3951299-1.html">Step18・フォーマットでコードを読みやすくする</a><br />
+
+<a href="http://sunjava.seesaa.net/category/3951743-1.html">Step19・ローカル・ヒストリーで比較や復元</a><br />
+
+<a href="http://sunjava.seesaa.net/category/4054609-1.html">■データベースをMySQLにする</a><br />
+
+<a href="http://sunjava.seesaa.net/category/4055151-1.html">Step1・JDBCドライバを入手する</a><br />
+
+<a href="http://sunjava.seesaa.net/category/4056586-1.html">Step2・MySQLに接続するプログラム</a><br />
+
+<a href="http://pgtop.net/category/4624255-1.html" target="_blank">■特集 今からでもプログラマーになる方法</a><br />
+</div>
+
+<div class="sidetitle">次に何を学んだらいいの？</div>
+<div class="side">
+
+・Web系のプログラミングを学びたい場合は <a href="http://php5.seesaa.net/" target="_blank">PHP初心者入門講座</a> を次のステップとしてご活用ください。<br />
+・PHPやJAVAではデータベースにMySQLを使用しているため、 <a href="http://mysqlweb.net/" target="_blank">MySQL初心者入門講座</a> を先に学ぶと習得が楽になります。もちろん必要になった段階でMySQLを学んでもOKです。<br />
+
+</div>
+
+<div class="sidetitle">関連する入門講座</div>
+<div class="side">
+
+<a href="http://pgtop.net/" target="_blank">プログラミング初心者入門講座 </a><br />
+<a href="http://ms-access.seesaa.net/" target="_blank">Microsoft Access初心者入門講座</a><br />
+<a href="http://access-sql.seesaa.net/" target="_blank">Access SQL初心者入門講座</a><br />
+<a href="http://mysqlweb.net/" target="_blank">MySQL初心者入門講座</a><br />
+<a href="http://java-script.seesaa.net/" target="_blank">JavaScript初心者入門講座</a><br />
+<a href="http://php5.seesaa.net/" target="_blank">PHP初心者入門講座</a><br />
+<a href="http://ajax.pgtop.net/" target="_blank">Ajax初心者入門講座 </a><br />
+<a href="http://ms-vb.seesaa.net/" target="_blank">Microsoft VisualBasic初心者入門講座</a><br />
+<a href="http://officehp.com/" target="_blank">OpenOffice.org 初心者入門講座</a><br />
+<a href="http://sl7.seesaa.net/" target="_blank">セカンドライフ初心者入門講座 </a><br />
+
+</div>
+
+
+
+
+
+</div>
+
+
+<div id="content">
+<div class="side">
+
+<p class="gad">スポンサードリンク</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 336x280, 作成済み 07/12/12 Java上 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-7524774569436609"
+     data-ad-slot="1460156368"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+
+
+<!-- Content -->
+
+
+
+
+
+
+
+
+
+
+<div class="blog">
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:Trackback="http://madskills.com/public/xml/rss/module/Trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://sunjava.seesaa.net/article/52436726.html"
+    trackback:ping="http://blog.seesaa.jp/tb/52436726"
+    dc:title="Java GUIプログラムのいろいろな書き方。"
+    dc:identifier="http://sunjava.seesaa.net/article/52436726.html"
+    dc:description="Javaのプログラムはプログラマーの裁量次第で、いろいろな書き方ができます。GUIのプログラムについてもいくつかパターンがありますので、今回はウィンドウの設定とインスタンスの生成を、違う書き方で書いた方法を紹介します。プログラムの実行結果はこれまでと同じです。 ・PrefFrame クラスのコンストラクタにウィンドウの設定を書く方法・PrefFrame クラスに main() メソッドを書く方法プログラムがシンプルなうちに書き方の違いをつかんでおきましょう。【1】新しく sa.."
+    dc:creator="Java入門"
+    dc:subject="Step3・GUIのいろいろな書き方"
+    dc:date="2007-08-23T14:03:26+09:00"
+/>
+</rdf:RDF>
+-->
+
+<div class="blogbody">
+<h3 class="title"><a href="http://sunjava.seesaa.net/article/52436726.html" class="title">Java GUIプログラムのいろいろな書き方。</a></h3>
+
+<div class="text"><strong>Java</strong>のプログラムはプログラマーの裁量次第で、いろいろな書き方ができます。GUIのプログラムについてもいくつかパターンがありますので、今回はウィンドウの設定とインスタンスの生成を、違う書き方で書いた方法を紹介します。プログラムの実行結果はこれまでと同じです。<br /> <br />・PrefFrame クラスのコンストラクタにウィンドウの設定を書く方法<br />・PrefFrame クラスに main() メソッドを書く方法<br /><br />プログラムがシンプルなうちに書き方の違いをつかんでおきましょう。<br /><br /><br />【1】新しく sample202 と sample203 フォルダを作ります。<br /><br /><a href="http://sunjava.up.n.seesaa.net/sunjava/image/java-439.gif?d=a0" target="_blank"><img src="http://sunjava.up.n.seesaa.net/sunjava/image/java-439-thumbnail2.gif?d=a0" alt="java-439.gif" width="150" height="135" border="0" /></a><br /><br /><br />【2】各フォルダの中に以下のようにファイルを作成します。<br /><br />＊「\」はWindowsではエンマークのことです。<br /><br />・sample202<br /><a href="http://sunjava.up.n.seesaa.net/sunjava/image/java-435.gif?d=a0" target="_blank"><img src="http://sunjava.up.n.seesaa.net/sunjava/image/java-435-thumbnail2.gif?d=a0" alt="java-435.gif" width="150" height="98" border="0" /></a><br /><br />保存先　C:\java\sample202<br />ファイル名　PrefTest.java<br /><div class="pg"><br />import java.awt.*;<br />import java.awt.event.*;<br /><br />class PrefFrame extends Frame {<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public PrefFrame(String title) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//フレームのタイトル<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTitle(title);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//ウィンドウを閉じる時<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addWindowListener(new WindowAdapter() {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void windowClosing(WindowEvent e) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.exit(0);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//フレームの設定<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLocation(300, 200);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(250, 350);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setBackground(Color.LIGHT_GRAY);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}<br /><br /><br />public class PrefTest {<br /><br />&nbsp;&nbsp;public static void main(String  args[]) {<br />&nbsp;&nbsp;&nbsp;&nbsp;PrefFrame frm = new PrefFrame("都道府県マスター");<br />&nbsp;&nbsp;&nbsp;&nbsp;frm.setVisible(true);<br />&nbsp;&nbsp;}<br /><br />}<br /></div><br /><br /><br />・sample203<br /><a href="http://sunjava.up.n.seesaa.net/sunjava/image/java-437.gif?d=a1" target="_blank"><img src="http://sunjava.up.n.seesaa.net/sunjava/image/java-437-thumbnail2.gif?d=a1" alt="java-437.gif" width="150" height="103" border="0" /></a><br /><br />保存先　C:\java\sample203<br />ファイル名　PrefFrame.java<br /><div class="pg"><br />import java.awt.*;<br />import java.awt.event.*;<br /><br />class PrefFrame extends Frame {<br /><br />&nbsp;&nbsp;public static void main(String  args[]) {<br />&nbsp;&nbsp;&nbsp;&nbsp;PrefFrame frm = new PrefFrame("都道府県マスター");<br />&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public PrefFrame(String title) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//フレームのタイトル<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setTitle(title);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//ウィンドウを閉じる時<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;addWindowListener(new WindowAdapter() {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public void windowClosing(WindowEvent e) {<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.exit(0);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//フレームの設定<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setLocation(300, 200);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setSize(250, 350);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setBackground(Color.LIGHT_GRAY);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setVisible(true);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}<br /></div><br /><br /><br />【3】以下の図を参考に、カレントディレクトリの移動、コンパイル、プログラムの実行を行い、２つを比べてみてください。少し方法が異なりますので注意してください。<br /><br />・sample202<br /><a href="http://sunjava.up.n.seesaa.net/sunjava/image/java-436.gif?d=a0" target="_blank"><img src="http://sunjava.up.n.seesaa.net/sunjava/image/java-436-thumbnail2.gif?d=a0" alt="java-436.gif" width="150" height="107" border="0" /></a><br /><br /><br />・sample203<br /><a href="http://sunjava.up.n.seesaa.net/sunjava/image/java-438.gif?d=a2" target="_blank"><img src="http://sunjava.up.n.seesaa.net/sunjava/image/java-438-thumbnail2.gif?d=a2" alt="java-438.gif" width="150" height="107" border="0" /></a><br /><br />＊sample203 ではPrefFrame クラスを実行している点に注目<br /><br /><br />【解説】<br /><br />(1)フォルダを分けた理由<br /><br />今回の例でわざわざフォルダを分けたのは、 PrefTest.java と PrefFrame.java の両方のソースファイルに	PrefFrame クラスが含まれているからです。ソースファイル名が違うので、同じフォルダ内に保存できますが、コンパイルする時に不都合があります。<br /><br />それぞれの PrefFrame クラスは内容が違いますが、同じフォルダ内でコンパイルすると、クラスファイルは同じになるため、一方が上書きされてしまいます。クラス名を別にすると同じフォルダ内にあっても問題ありません。<br /><br />しかしクラス名を変えると、ファイル名、コンストラクタ名、インスタンスの生成も変わりますので、別フォルダに分けました。<br /><br /><br />(2)インスタンス生成時にコンストラクタが呼び出され、各設定が行われています。<br /><br /><br />(3)sample203 の PrefFrame.java はmain() メソッドでクラス自身のインスタンスを生成しています。main() メソッドは static なので、インスタンスを生成していなくても使えます。<br /><br />&nbsp;&nbsp;public static void main(String  args[]) {<br />&nbsp;&nbsp;&nbsp;&nbsp;PrefFrame frm = new PrefFrame("都道府県マスター");<br />&nbsp;&nbsp;}<br /><br /><br />プログラムを1つにまとめるか分けるかは一長一短があります。ウィンドウの表示が複雑になってくるとプログラムが長くなりますので、分けたほうが見やすくなる場合もあります。<br /><br />以上のようにいろいろなプログラムの書き方があります。市販の本でも著者によって書き方が違いますので、読むとき戸惑わないように頭の片隅にでも覚えておいてください。<br /><br /><br />
+
+
+
+<div class="bookmark" data-url="http://sunjava.seesaa.net/article/52436726.html" data-subject="Java GUIプログラムのいろいろな書き方。"></div>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="balloonBox"></div>
+<script type="text/javascript" charset="utf-8" src="http://blog.seesaa.jp/js/bl-bookmarks.js?20130723"></script>
+<script type="text/javascript" charset="utf-8">
+var bookmark_services = "hthSP,twhSP,fbhSP,lihSP".split('-').join('').split(",");
+var seesaaBookmarks = new blBookmarks({bookmark_services:bookmark_services, blog_url:"http://blog.seesaa.jp"});
+seesaaBookmarks.exe();
+</script>
+
+<!-- /Content -->
+
+
+<div class="side">
+
+<p class="gad">スポンサードリンク</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 336x280, 作成済み 07/12/17 Java下 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-7524774569436609"
+     data-ad-slot="7955524543"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+<br /><br />
+<div class="ninja_onebutton">
+<script type="text/javascript">
+//<![CDATA[
+(function(d){
+if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_0def60b85ccaf406f4f222d844e151cc)=='undefined'){
+    document.write("<sc"+"ript type='text\/javascript' src='http:\/\/omt.shinobi.jp\/b\/0def60b85ccaf406f4f222d844e151cc'><\/sc"+"ript>");
+}else{
+    window.NINJA_CO_JP_ONETAG_BUTTON_0def60b85ccaf406f4f222d844e151cc.ONETAGButton_Load();}
+})(document);
+//]]>
+</script><span class="ninja_onebutton_hidden" style="display:none;"><% article.page_url %></span><span style="display:none;" class="ninja_onebutton_hidden"><% article.subject | html %></span>
+</div>
+<br /><br />
+
+
+<br />
+<p><a href="http://sunjava.seesaa.net/" target="_self">Java初心者入門講座TOPへ</a></p>
+
+
+
+
+
+</div>
+
+
+<div id="links">
+<div class="sidetitle">Java</div>
+<div class="side">
+
+Javaは一つの言語で、デスクトップで動くJavaアプリケーションも作れるし、Webアプリケーションも作ることができます。またデジタル家電や携帯電話などでもJavaが利用されています。<br />
+Javaはオブジェクト指向言語なので、プログラミング初心者には少し難しいところもありますが、習得するとかなり実力アップできます。
+<br />
+
+</div>
+
+<div class="side">
+
+<hr />
+<br />
+<p class="gad">スポンサード　リンク</p>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 160x600, 作成済み 07/12/17 Javaサイド -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-7524774569436609"
+     data-ad-slot="9203290392"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br />
+<br />
+
+</div>
+
+<div class="sidetitle">お問い合わせ</div>
+<div class="side">
+
+<a href="http://qa.pgtop.net/" target="_blank">よくある質問と回答</a><br />
+<a href="http://pgtop.up.seesaa.net/web/mail.html" target="_blank">質問はこちら</a><br />
+<a href="http://pgtop.up.seesaa.net/web/mail2.html" target="_blank">ご感想・ご要望</a><br />
+
+</div>
+
+
+
+<div class="sidetitle">RSS</div>
+<div class="side">
+<div class="syndicate">
+
+
+<a href="/index.rdf">RDF Site Summary</a><br />
+
+<a href="/index20.rdf">RSS 2.0</a><br />
+
+
+</div>
+</div>
+
+
+
+</div>
+
+
+<div id="footer">
+<hr />
+Copyright 2007-2013 mslab All rights reserved.<br />
+<br />
+<p>当サイトへのリンクはご自由にどうぞ。以下のタグをお使いください。<br />
+&lt;a href="http://sunjava.seesaa.net/" target="_blank"&gt;Java初心者入門講座&lt;/a&gt;</p>
+
+<br />
+<a href="http://pgtop.up.seesaa.net/web/pp.html" alt="プライバシーポリシー" target="_blank">プライバシーポリシー</a><br /><br />
+
+<br />
+<a href="http://www.blogmura.com/"><img src="http://www.blogmura.com/img/www100_33.gif" width="100" height="33" border="0" alt="ブログランキング・にほんブログ村へ" /></a>
+
+<div class="powered">
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><a href="http://blog.seesaa.jp/tag"><img src="http://blog.seesaa.jp/img/seesaablog.gif" width="138" height="22" border="0" alt="Powered by Seesaa" /></a></td>
+</tr> 
+<tr>
+<td><div style="background-color:#9C9C9C;text-align:center;font-size:10px;padding:3px;margin:0px;"><a href="http://blog.seesaa.jp/tag" style="color:#FFF;">Seesaa</a><a href="http://blog.seesaa.jp" style="color:#FFF;">ブログ</a></div></td>
+</tr>
+</table>
+</div>
+
+
+
+</div>
+
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-1762363-22";
+urchinTracker();
+</script>
+
+<!-- common footer -->
+
+<script type="text/javascript">
+var url = document.URL;
+document.write("<img src='http://d3mgo879eugsjh.cloudfront.net/t.gif?url=" + encodeURIComponent(url) + "' />");
+</script>
+<script type="text/javascript">
+var nend_params = {"media":3,"site":3,"spot":57750,"type":2,"oriented":1,"sp":0};
+</script>
+<script type="text/javascript" src="http://js1.nend.net/js/nendAdLoader.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=mozc property
+Terminal=false
+Name=Mozc プロパティ
+Exec=/usr/lib/mozc/mozc_tool --mode=config_dialog
+Type=Application
+Icon=/usr/share/ibus-mozc/properties.png

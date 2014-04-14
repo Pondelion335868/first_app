@@ -1,0 +1,203 @@
+/* From gnome-doc-utils */
+
+/*
+ * linktrail
+ */
+ul.linktrail {
+  display: block;
+  margin: 0.2em 0 0 0;
+  text-align: right;
+}
+li.linktrail { display: inline; margin: 0; padding: 0; }
+
+li.linktrail::before {
+  content: '  /  ';
+  color: #3f3f3f;
+}
+
+/*
+ * Sidebar
+ */
+div.sidebar {
+  float: right;
+  padding: 0; margin: 0; width: 12em;
+}
+div.sidenav {
+  padding: 0.5em 1em 0 1em;
+  background-color: #ffffff;
+  border: solid 1px #e0e0df;
+}
+div.sidenav div.autotoc {
+  background-color: #ffffff;
+  border: none; padding: 0; margin: 0;
+}
+div.sidenav div.autotoc div.autotoc { margin-top: 0.5em; }
+div.sidenav div.autotoc li { margin-bottom: 0.5em; }
+div.sidenav div.autotoc div.autotoc div.autotoc {
+  margin-left: 1em;
+  margin-top: 0;
+}
+div.sidenav div.autotoc div.autotoc div.autotoc li { margin-bottom: 0; }
+
+div.autotoc {
+  display: table;
+  margin-top: 1em;
+  margin-left: 1.72em;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #f0f9ff;
+  border: solid 1px #c0c9ff;
+}
+div.autotoc ul { margin: 0; padding: 0; }
+div.autotoc li { list-style-type: none; margin: 0; }
+div.autotoc div.autotoc-title { margin-bottom: 0.5em; }
+div.autotoc div.autotoc { border: none; padding: 0; margin-top: 0; margin-bottom: 0.5em; }
+div.autotoc div.autotoc div.autotoc { margin-bottom: 0; }
+
+/*
+ * Navibar
+ */
+div.body-sidebar {
+  margin-right: 13em;
+}
+
+div.navbar {
+  padding: 0.5em 1em 0.5em 1em;
+  /*max-width: 60em;*/
+  margin-right: 13em;
+  background-color: #ffffff;
+  border: solid 1px #e0e0df;
+}
+div.navbar-top { margin-bottom: 1em; }
+div.navbar-bottom { margin-top: 1em; clear: both; }
+div.navbar img { border: 0; vertical-align: -0.4em; }
+table.navbar { width: 100%; margin: 0; border: none; }
+table.navbar td { padding: 0; border: none; }
+td.navbar-next {
+  text-align: right;
+}
+a.navbar-prev::before {
+  
+  content: '◀  ';
+  color: #3f3f3f;
+}
+a.navbar-next::after {
+  
+  content: '  ▶';
+  color: #3f3f3f;
+}
+
+/*
+ * admonition
+ */
+div.caution-inner, div.important-inner, div.note-inner, div.tip-inner, div.warning-inner {
+  padding-left: 40px;	/* moddified */
+  background-position: left top;
+  background-repeat: no-repeat;
+  min-height: 48px;
+}
+div.important-inner { background-image: url("/docs/vine6/images/important.png"); }
+div.note-inner { background-image: url("/docs/vine6/images/note.png"); }
+div.warning-inner { background-image: url("/docs/vine6/images/warning.png"); }
+div.admonition span.title {
+	border-bottom: 1px dashed #ADADAD;
+	color: #333366;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+	/* Vine original */
+.important {
+        width: 90%;
+        margin: auto;
+	margin-top: 5px;
+        padding: 3px;
+        border: solid 3px #666699;
+        border-style: solid;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.warning {
+        width: 90%;
+        margin: auto;
+	margin-top: 5px;
+        padding: 3px;
+        border: solid 2px #AA6666;
+        border-style: solid;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.note {
+	text-indent: 0;
+        width: 90%;
+	margin: auto;
+	margin-top: 5px;
+        padding: 3px;
+        border: solid 1px #666699;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+
+/*
+ * table
+ */
+table { border-collapse: collapse; }
+table.table-pgwide { width: 100%; }
+td { vertical-align: top; }
+td { padding: 0.2em 0.83em 0.2em 0.83em; }
+th { padding: 0 0.83em 0 0.83em; }
+tr.tr-shade {
+  background-color: #e0e0e0;
+}
+td.td-colsep { border-right: solid 1px; }
+td.td-rowsep { border-bottom: solid 1px; }
+thead { border-top: solid 2px; border-bottom: solid 2px; }
+tfoot { border-top: solid 2px; border-bottom: solid 2px; }
+
+/*
+ * GUI Compornent (Vine original)
+ */
+.guimenu {
+	color: MenuText;
+	background-color: Menu;
+	border-style: outset;
+	border-width: 2px;
+}
+
+.guimenuitem {
+	color: MenuText;
+	background-color: Menu;
+	border-style: outset;
+	border-width: 2px;
+}
+
+.guibutton {
+	color: ButtonText;
+	background-color: ButtonFace;
+	border-style: outset;
+	border-color: ButtonShadow;
+	border-width: 2px;
+}
+
+.keycap {
+	margin: 3px 3px;  
+	padding: 1px 5px 1px 5px;
+	border-width: 1px 2px 2px 1px;  
+	border-style: solid;  
+	border-color: #999;  
+	background-color: #F5F5F5;  
+	font-family: monospace;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+.table  .keycap {
+       	border-style: none;
+}
+

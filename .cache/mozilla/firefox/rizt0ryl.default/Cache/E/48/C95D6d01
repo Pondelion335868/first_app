@@ -1,0 +1,2603 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+<title>UNIPROVE/CW</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<script src="/js/select_css.js" type="text/JavaScript" language="JavaScript"></script>
+<script src="/js/hub.js" type="text/JavaScript"></script>
+
+
+
+<SCRIPT type="text/JavaScript" language="JavaScript">
+<!--
+
+	/**
+	 * マーク 設定／解除押下時 選択チェック処理
+	 *	type 「マーク設定」(on),「マーク解除」(off)タイプ
+	 */
+	function check_markcheckbox_checked(type) {
+		var flg = false;
+		var indxStrt = 1;
+		var indxEnd = 10;
+		var anotherpagecheckstatus = 0;
+		if(anotherpagecheckstatus == 1) {
+			flg = true;
+		}
+		var i;
+		for(i=indxStrt; i<=indxEnd; i++) {
+			if(document.form.elements['checkbox' + i]) {
+				if(document.form.elements['checkbox' + i].checked == true) {
+					flg = true;
+					break;
+				}
+			}
+		}
+		if(flg) {
+			return noticemarkConfirm('/vespine/Notice', type);
+		} else {
+			alert("チェックボックスが選択されていません。");
+		}
+	}
+
+//-->
+</SCRIPT>
+
+
+</head>
+
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="PreloadImages('/images/hub_bg.gif','/images/smenu1_bg.gif','/images/smenu2_bg.gif','/images/smenu3_bg.gif','/images/smenu4_bg.gif','/images/smenu8_bg.gif','/images/contests_around_t.gif','/images/contents_around_side.gif','/images/contests_around_b.gif')">
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+<SCRIPT type="text/JavaScript" language="JavaScript">
+<!--
+	var vBtn_flg = false;
+
+	/**
+	 * メイン画面からポップアップ表示用。
+	 */
+	function mainwindowopen(url, req_name, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id + "&wintype=pop";
+
+		winobj = window.open(popURL,"BoxerVPane","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		winobj.focus();
+		vBtn_flg = false;
+		return false;
+	}
+
+	function mainwindowopenbbs(url, command) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&Command=" + command + "&wintype=pop";
+
+		winobj = window.open(popURL,"BoxerVPane","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		winobj.focus();
+		vBtn_flg = false;
+		return false;
+	}
+
+	function mainwindowopenfileplus(url, command, hdfolder) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&HD_FOLDER_LIST_REFRESH=" + hdfolder
+						+ "&Command=" + command + "&wintype=pop";
+
+		winobj = window.open(popURL,"BoxerVPane","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		winobj.focus();
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面からポップアップ表示用。
+	 */
+	function pop(url, req_name, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id + "&wintype=pop";
+
+		window.open(popURL,"pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面からポップアップ表示用。
+	 */
+	function popnotice(url, req_name, page_id, paramnoticetp) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&NOTICE_TP=" + paramnoticetp
+						+ "&PAGE_ID=" + page_id + "&wintype=pop";
+
+		window.open(popURL,"pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+	
+	/**
+	 * メイン画面からポップアップ表示用。
+	 */
+	function schedulepop(url, req_name, page_id, targetdate) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id + "&wintype=pop" + "&targetdate=" + targetdate;
+
+		window.open(popURL,"pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * ポータル共通からポップアップ表示用。
+	 */
+	function popsubstitutionlogin(url, req_name, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id + "&wintype=pop";
+
+		window.open(popURL,"pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * ポータル共通からポップアップ表示用。
+	 */
+	function popwhois(url, command) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&Command=" + command + "&wintype=pop";
+
+		window.open(popURL,"pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面遷移用。
+	 */
+	function jump(url, req_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * 環境設定画面遷移用。
+	 */
+	function nextpreferencesjump() {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = document.form.preferencesselect.value;
+
+		if(jumpURL=="-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示内容が選択されていません。");
+			return false;
+		}
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * 環境設定キャンセル遷移用。
+	 */
+	function pcanceljump(back_url) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = back_url;
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面ソート用。
+	 */
+	function sortjump(url, req_name, key) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.SORT_KEY.value = key;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面ページジャンプ用。
+	 */
+	function pagejump(url, req_name, pageno) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_NO.value = pageno;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面一括削除用。
+	 */
+	function deleteOnConfirm(url, req_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if (confirm("削除してよろしいですか？")) {
+			document.form.action = url + "?RSEQ=1396501662374";
+			document.form.method = "post";
+			document.form.REQUEST_NAME.value = req_name;
+			document.form.submit()
+		} else {
+			vBtn_flg = false;
+			window.close()
+		}
+		return false;
+	}
+
+	/**
+	 * メイン画面一括削除用。(ウィンドウ閉じないver)
+	 */
+	function noclosedeleteOnConfirm(url, req_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if (confirm("削除してよろしいですか？")) {
+			document.form.action = url + "?RSEQ=1396501662374";
+			document.form.method = "post";
+			document.form.REQUEST_NAME.value = req_name;
+			document.form.submit()
+		} else {
+			vBtn_flg = false;
+		}
+		return false;
+	}
+
+	/**
+	 * ポータル、共通からFILE+への遷移用。
+	 */
+	function jumpfileplus(url, command, hdfolder) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.Command.value = command;
+		document.form.HD_FOLDER_LIST_REFRESH.value = hdfolder;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * ポータル、共通からMAIL+への遷移用。
+	 */
+	function jumpmailplus(url, command) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.Command.value = command;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * ポータル共通からMAIL+のポップアップ表示用。
+	 */
+	function popmailplus(url, command, mailto) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1082956" + "&Command=" + command + "&MAILTO=" + mailto + "&wintype=pop";
+
+		window.open(popURL,"pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * ポータル、共通からBBS+への遷移用。
+	 */
+	function jumpbbs(url, command) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.Command.value = command;
+//		document.form.PFCommand.value = command;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function selectpop(url, req_name, item_no, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたお知らせ・個人伝言データの情報をポップアップ表示用。
+	 */
+	function noticeselectpop(url, req_name, item_no, page_id, paramnoticetp) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&NOTICE_TP=" + paramnoticetp
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function onthegopop(url, req_name, item_no, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "","scrollbars=yes, toolbar=yes, location=yes, directories=no, status=no, menubar=yes, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function bookmarkpop(url, req_name, item_no, page_id, toolbar) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "","scrollbars=yes, toolbar=yes, location=yes, directories=no, status=no, menubar=yes, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function selecswitchtpop(url, req_name, item_no, page_id, datatype, groupid) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&DATA_TYPE=" + datatype
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function selecswitchtbookmarkpop(url, req_name, item_no, page_id, datatype, groupid) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&DATA_TYPE=" + datatype
+						+ "&groupid=" + groupid
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function selectrecurpop(url, req_name, item_no, page_id, targetstartdate) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&targetstartdate=" + targetstartdate
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function selectrecurexceptionpop(url, req_name, item_no, page_id, targetstartdate, exceptiontype) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&targetstartdate=" + targetstartdate
+						+ "&exceptiontype=" + exceptiontype
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+
+
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用(グループ限定用)。
+	 */
+	function selectgrouppop(url, req_name, item_no, page_id, group_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&groupid=" + group_id
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用(グループ限定用)。
+	 */
+	function selectgrouppopmember(url, req_name, item_no, page_id, group_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&groupid=" + group_id
+						+ "&REQUEST_ITEM_NO=" + item_no
+						+ "&WID=" + item_no
+						+ "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をメインで表示用。
+	 */
+	function selectjump(url, req_name, item_id, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.REQUEST_ITEM_NO.value = item_id;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		return false;
+	}
+	
+	/**
+	 * メイン画面から選択されたデータの情報をメインで表示用。
+	 */
+	function exportjump(url, req_name, item_id, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.REQUEST_ITEM_NO.value = item_id;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		vBtn_flg = false;
+		return false;
+	}
+
+
+	/**
+	 * 共有グループプルダウンからのグループ間遷移用。
+	 */
+	function addressjump(url, req_name, item_id, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(item_id=="") {
+			vBtn_flg = false;
+			alert("表示アドレスが選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		if(document.form.groupid.value=="99999999999999") {
+			req_name = "CMD_SHOW_LIST";
+		}
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * スケジュール公開グループプルダウンからのグループ間遷移用。
+	 */
+	function schedulejump(url, req_name, item_id, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		var gid = document.form.groupid.value;
+		if(gid=="99999999999999") {
+			req_name = "CMD_SHOW_DAY_LIST";
+		}
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		//document.form.groupid.value = gid.substring(1,gid.length);
+		//document.form.grouptype.value = gid.substring(0,1);
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function scheduledetailpop(url, req_name, item_no, page_id, membername, targetdateparam) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&REQUEST_ITEM_NO=" + item_no
+						+ "&MEMBER_NAME=" + membername
+						+ "&targetdate=" + targetdateparam
+                        + "&wintype=pop";
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの公開スケジュール情報をポップアップ表示用。
+	 */
+	function schedulepublicdetailpop(url, req_name, item_no, page_id, membername, targetdateparam, groupid) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&REQUEST_ITEM_NO=" + item_no
+						+ "&MEMBER_NAME=" + membername
+						+ "&targetdate=" + targetdateparam
+						+ "&groupid=" + groupid
+                        + "&wintype=pop";
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面遷移用。
+	 */
+	function schedulemovejump(url, req_name, moving) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.move.value = moving;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * ヘッダ共通部からメイン画面遷移用。
+	 */
+	function headjump(url, req_name, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * ヘッダ共通部からメイン画面遷移用。(環境設定呼出専用)
+	 */
+	function pheadjump(url, req_name, page_id, key) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		document.form.main_key.value = key;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * スケジュール公開グループプルダウンからのグループ間遷移用。
+	 */
+	function schedulejump2(url, req_name, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(document.form.selectgroupid.value=="-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示スケジュールが選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		if(document.form.selectgroupid.value=="99999999999999") {
+			req_name = "CMD_SHOW_DAY_LIST";
+			page_id = "top";
+		}
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.groupid.value = document.form.selectgroupid.value;
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * スケジュール公開グループプルダウンからのグループ間遷移用。
+	 */
+	function schedulejump2formonth(url, req_name, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(document.form.selectgroupid.value=="-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示スケジュールが選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		if(document.form.selectgroupid.value=="99999999999999") {
+			req_name = "CMD_SHOW_MONTH_LIST";
+			page_id = "top";
+		}
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.groupid.value = document.form.selectgroupid.value;
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * スケジュール公開グループプルダウンからのグループ間遷移用。（週）
+	 */
+	function schedulejump2forweek(url, req_name, page_id, day) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(document.form.selectgroupid.value=="-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示スケジュールが選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		if(document.form.selectgroupid.value=="99999999999999") {
+			req_name = "CMD_SHOW_WEEK_LIST";
+			page_id = "scheduleweek";
+		}
+		document.form.anotherday.value = day;
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.groupid.value = document.form.selectgroupid.value;
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面絞込み遷移用。
+	 */
+	function searchjump(url, req_name, search_key) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.index.value = search_key;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面出講表・時間割ジャンプ用。
+	 */
+	function lecturejump(key) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = "/vespine/Top" + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = "CMD_LECTURE_JUMP";
+		document.form.dayofweek.value = key;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * スケジュール日程画面日付遷移用。
+	 */
+	function dayjump(url, req_name, day) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = day;
+		document.form.submit();
+		return false;
+	}
+	/**
+	 * グループスケジュール週間画面初回遷移、グループ選択、前週・翌週ボタン遷移用。
+	 */
+	function daygroupjump(url, req_name, day, selectgroupid) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(selectgroupid=="-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示スケジュールが選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		if(selectgroupid=="99999999999999") {
+			req_name = "CMD_SHOW_DAY_LIST";
+			page_id = "top";
+		}
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = day;
+		document.form.groupid.value = selectgroupid;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * グループスケジュール日程画面日付選択ＧＯボタン遷移用。
+	 */
+	function daygroupjump2(url, req_name, year, month, day, selectgroupid) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		if(selectgroupid=="99999999999999") {
+			req_name = "CMD_SHOW_DAY_LIST";
+			page_id = "top";
+		}
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = year + month + day;
+		document.form.groupid.value = selectgroupid;
+		document.form.submit();
+		return false;
+	}
+
+	function daygroupjump3(url, req_name, day, selectgroupid) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(selectgroupid=="-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示スケジュールが選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		if(selectgroupid=="99999999999999") {
+			req_name = "CMD_SHOW_WEEK_LIST";
+			page_id = "top";
+		}
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = day;
+		document.form.groupid.value = selectgroupid;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * グループスケジュール表示用。(PageID付き)
+	 */
+	function daygroupjump4(url, req_name, day, selectgroupid, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(selectgroupid=="-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示スケジュールが選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		if(selectgroupid=="99999999999999") {
+			req_name = "CMD_SHOW_DAY_LIST";
+			page_id = "top";
+		}
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = day;
+		document.form.PAGE_ID.value = page_id;
+		document.form.groupid.value = selectgroupid;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * 週間グループスケジュール表示用。(PageID付き)
+	 */
+	function daygroupjump5(url, req_name, day, selectgroupid, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(selectgroupid=="-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示スケジュールが選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		if(selectgroupid=="99999999999999") {
+			req_name = "CMD_SHOW_WEEK_LIST";
+			page_id = "top";
+		}
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = day;
+		document.form.PAGE_ID.value = page_id;
+		document.form.groupid.value = selectgroupid;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * グループスケジュール週間画面日付選択ＧＯボタン遷移用。
+	 */
+	function weekgroupforselectdatejump(url, req_name, year, month, week, selectgroupid) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		if(selectgroupid=="99999999999999") {
+			req_name = "CMD_SHOW_DAY_LIST";
+			page_id = "top";
+		}
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = year + month;
+		document.form.anotherweek.value = week;
+		document.form.groupid.value = selectgroupid;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * スケジュール日程画面日付遷移用。（プルダウン）
+	 */
+	function dayjump2(url, req_name, year, month, day) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = year + month + day;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * スケジュール週間画面日付遷移用。（プルダウン）
+	 */
+	function weekjump(url, req_name, year, month, week) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.anotherday.value = year + month;
+		document.form.anotherweek.value = week;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * グループプルダウンからのグループ間遷移用。
+	 */
+	function groupjump() {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var url;
+		var command;
+
+		if(document.form.select.value=="-NO_SELECT-") {
+			vBtn_flg = false;
+			alert("表示内容が選択されていません。");
+			return false;
+		}
+		var jumpURL = url;
+		if(document.form.select.value=="1") {
+			url = "/vespine/Division" + "?RSEQ=1396501662374";
+			command = "CMD_SHOW_MAIN_LIST";
+		} else if(document.form.select.value=="2") {
+			url = "/vespine/Division" + "?RSEQ=1396501662374";
+			command = "CMD_SHOW_MEMBER_LIST";
+		} else if(document.form.select.value=="3") {
+			url = "/vespine/Workgroup" + "?RSEQ=1396501662374";
+			command = "CMD_SHOW_LIST";
+		} else if(document.form.select.value=="4"){
+			url = "/vespine/Division" + "?RSEQ=1396501662374";
+			command = "CMD_SHOW_ORGANIZATION_TREE";
+		} else if(document.form.select.value=="5"){
+			url = "/vespine/Workgroup" + "?RSEQ=1396501662374";
+			command = "CMD_SHOW_PUBLIC_LIST";
+		} else if(document.form.select.value=="6"){
+			url = "/vespine/Workgroup" + "?RSEQ=1396501662374";
+			command = "CMD_SHOW_APPLICATION_LIST";
+		} else if(document.form.select.value=="7"){
+			url = "/vespine/Addressgroup" + "?RSEQ=1396501662374";
+			command = "CMD_SHOW_ADDRESSGROUP_LIST";
+		}
+		document.form.action = url;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = command;
+		document.form.PAGE_ID.value = "top";
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * ログアウト用（メインフレーム破壊）。
+	 */
+	function logout(url) {
+/*
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+*/
+		if( false ){
+			var jumpURL = url + "?RSEQ=1396501662374";
+			document.form.action = jumpURL;
+			document.form.method = "post";
+			document.form.REQUEST_NAME.value = "CMD_SHOW_TOP";
+			document.form.PAGE_ID.value = "Login";
+			document.form.target = '_top';
+			document.form.logout.value = 'on';
+			document.form.submit();
+			return false;
+		}else{
+			var jumpURL = url + "?RSEQ=1396501662374";
+			document.form.action = jumpURL;
+			document.form.method = "post";
+			document.form.target = '_top';
+			document.form.logout.value = 'on';
+			document.form.submit();
+			return false;
+		}
+	}
+
+	/**
+	 * ＳＳＯ用
+	 */
+	function popSSO(type,action,comacd,daycd,hourcd,courcecd) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		window.open("/vespine/SSO?SSO_TYPE="+type+"&SSO_ACTION="+action+"&COMA_CD="+comacd+"&DAY_CD="+daycd+"&HOUR_CD="+hourcd+"&COURSE_CD="+courcecd,"sso","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * ＯＮＴＨＥＧＯ用
+	 */
+	function onthego( url ) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		window.open(url,"onthego","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * アドレスリストからMAIL+のポップアップ表示用(ダミー)。
+	 */
+	function checkmailsend( sendflg, command,  page_id ) {
+		if (  sendflg!=null ){
+			if (sendflg.length>0) {
+				pop('/vespine/Address',command,page_id);
+			}
+		}
+	}
+
+	/**
+	 * ブックマーク　グループドロップダウン遷移用。
+	 */
+	function bookmarkgroupjump(url, req_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var tmpgroupid = document.form.groupid.value;
+		if(tmpgroupid==""){
+			vBtn_flg = false;
+			alert("グループが選択されていません。");
+			return false;
+		}else{
+			document.form.targetgroupid.value = document.form.groupid.value;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面遷移用。（アドレス　コピー専用）
+	 */
+	function copyjump(url, req_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(document.form.copygroup.value == ""){
+			vBtn_flg = false;
+			alert("コピー先が選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面遷移用。（アドレス　表示分類専用）
+	 */
+	function categoryjump(url, req_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(document.form.category.value == "-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示分類が選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面遷移用。（掲示板管理一覧専用）
+	 */
+	function noticejump(url, req_name, page_name, listtype) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if(listtype == "-NO_SELECT-"){
+			vBtn_flg = false;
+			alert("表示内容が選択されていません。");
+			return false;
+		}
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.listtypeparam.value = listtype;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_name;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * ブックマークのフォルダ押下専用。
+	 */
+	function bookmarkfolderjump(url, req_name, item_id, page_id , folder_type) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.REQUEST_ITEM_NO.value = item_id;
+		document.form.foldertype.value = folder_type;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。アイテムのINDEXを設定できる。
+	 */
+	function selectpopindex(url, req_name, item_index , item_no, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name 
+						+ "&PAGE_ID=" + page_id 
+						+ "&index=" + item_index 
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。アイテムのINDEXを設定できる。
+	 */
+	function selectnoticeindex(url, req_name, item_index , item_no, page_id, list_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name 
+						+ "&PAGE_ID=" + page_id 
+						+ "&index=" + item_index 
+						+ "&noticelistname=" + list_name 
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。アイテムのINDEXを設定できる。
+	 */
+	function selectmeetingindex(url, req_name, item_index , item_no, page_id, list_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name 
+						+ "&PAGE_ID=" + page_id 
+						+ "&index=" + item_index 
+						+ "&meetinglistname=" + list_name 
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * ミーティングINリスト押下専用。
+	 */
+	function meetinginlistjump(url, req_name, page_id , item_id, member_id, member_type, group_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396501662374";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.REQUEST_ITEM_NO.value = item_id;
+		document.form.memberid.value = member_id;
+		document.form.membertype.value = member_type;
+		document.form.groupid.value = group_id;
+		document.form.PAGE_ID.value = page_id;
+		document.form.submit();
+		return false;
+	}
+
+	/**
+	 * ポップアップ画面を開き、それに対してサブミットを行う。
+	 */
+	function submitToPop(url, req_name, page_id, tmp_target, width, height) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id + "&wintype=pop";
+
+		window.open("/vespine/jsp/dummy.html",
+					"pop",
+					"scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no, width=" + width + ", height=" + height);
+
+		document.form.target = "pop";
+		document.form.action = popURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.submit();
+		document.form.target = tmp_target
+
+		vBtn_flg = false;
+		return false;
+
+	}
+
+	/**
+	 * 代替ログイン判定用。
+	 */
+	function isSubstitutionlogin() {
+		if(false){
+			alert("代替ログインした学生のデータを変更する操作はできません");
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+	function noticeselectpopindex(url, req_name, item_index , item_no1, item_no2, item_no3, page_id, paramNoticeTp) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name 
+						+ "&PAGE_ID=" + page_id 
+						+ "&index=" + item_index 
+						+ "&REQUEST_ITEM_NO1=" + item_no1 
+						+ "&REQUEST_ITEM_NO2=" + item_no2 
+						+ "&REQUEST_ITEM_NO3=" + item_no3 
+						+ "&NOTICE_TP=" + paramNoticeTp 
+						+ "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	function selectnoticereply(url, req_name, notice_id, replyuser_id, membertp, membergroupid, page_id, paramNoticeTp) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396501662374"
+						+ "&REQUEST_NAME=" + req_name 
+						+ "&PAGE_ID=" + page_id 
+						+ "&NOTICE_ID=" + notice_id 
+						+ "&REPLYUSER_ID=" + replyuser_id 
+						+ "&MEMBER_TP=" + membertp 
+						+ "&MEMBER_GROUP_ID=" + membergroupid 
+						+ "&NOTICE_TP=" + paramNoticeTp 
+						+ "&wintype=pop";
+
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+	
+	/**
+	 * お知らせ・個人伝言（送信）画面一括削除用。
+	 */
+	function noticedeleteOnConfirm(url, req_name) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		if (confirm("削除してよろしいですか？")) {
+			document.form.action = url + "?RSEQ=1396501662374";
+			document.form.method = "post";
+			document.form.REQUEST_NAME.value = req_name;
+			document.form.submit()
+		} else {
+			vBtn_flg = false;
+		}
+		return false;
+	}
+
+	/**
+	 * マーク一括 設定／解除用。
+	 */
+	function noticemarkConfirm(url, type) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		var msg = "";
+		var req_name = "";
+		
+		if (type == "on") {
+			msg = "マーク設定してよろしいですか？";
+			req_name = "CMD_MARK_ON" ;
+		} else {
+			msg = "マーク解除してよろしいですか？";
+			req_name = "CMD_MARK_OFF" ;
+		}
+		vBtn_flg = true;
+		if (confirm(msg)) {
+			document.form.action = url + "?RSEQ=1396501662374";
+			document.form.method = "post";
+			document.form.REQUEST_NAME.value = req_name;
+			document.form.submit()
+		} else {
+			vBtn_flg = false;
+		}
+		return false;
+	}
+
+//-->
+</SCRIPT>
+
+<script src="/js/portal.js" type="text/JavaScript"></script>
+
+<!-- ヘッダ　start--> 
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+   <td width="100%" class="logon-bg2"><img src="/images/logo_popup_uniprocw2.gif" width="140" height="20" alt="UNIPROVE/CW" title="UNIPROVE/CW"></td>
+   <td class="logon-bg2"><img src="/images/spacer.gif" width="14" height="20"></td>
+
+   <td class="logon-bg2"><a href="#" onClick="return pheadjump('/vespine/Preferences','CMD_SHOW_NOTICE_SET','top','/Notice?REQUEST_NAME=CMD_SHOW_IN_LIST&PAGE_ID=top&NOTICE_TP=0')"><img src="/images/btn_preference.gif" width="71" height="20" alt="環境設定" title="環境設定" border="0"></a></td>
+
+   <td class="logon-bg2"><img src="/images/spacer.gif" width="14" height="20"></td>
+   <td><a href="javascript:void(0);" onclick="window.open('/help/help.html',null,'');"><img src="/images/btn_help.gif" width="59" height="20" alt="ヘルプ" title="ヘルプ" border="0"></a></td>
+   <td class="logon-bg2"><img src="/images/spacer.gif" width="14" height="20"></td>
+   <td><a href="#" onClick="refreshportaltop();window.close()"><img src="/images/btn_close.gif" width="59" height="20" alt="閉じる" title="閉じる" border="0"></a></td>
+   <td class="logon-bg2"><img src="/images/spacer.gif" width="14" height="20"></td>
+  </tr>
+  <tr>
+   <td><img src="/images/spacer.gif" width="1" height="15"></td>
+  </tr>
+ </table>
+<!-- ヘッダ　end-->
+
+
+	
+	<form name="form">
+
+		
+		
+
+
+
+<input type="hidden" name="REQUEST_NAME">
+<input type="hidden" name="REQUEST_ITEM_NO">
+<input type="hidden" name="SORT_KEY">
+<input type="hidden" name="PAGE_NO">
+<input type="hidden" name="PAGE_ID" VALUE="noticeinlist">
+<input type="hidden" name="divisionaccess" value="2">
+<input type="hidden" name="grouptype">
+<input type="hidden" name="Command">
+<input type="hidden" name="dayofweek">
+<input type="hidden" name="HD_FOLDER_LIST_REFRESH">
+<input type="hidden" name="logout">
+<input type="hidden" name="BACK_TYPE">
+<input type="hidden" name="main_key">
+<!--<input type="hidden" name="PFCommand">-->
+
+<input type="hidden" name="NOTICE_TP" value="0">
+		
+		
+		<table width="100%" border="0" cellspacing="15" cellpadding="0">
+			<tr>
+				<td align="left" valign="top">
+					<table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td><img src="/images/contents_corner_ul.gif" width="3" height="7"></td>
+							<td width="100%" class="main-bg1"><img src="/images/spacer.gif" width="1" height="1"></td>
+							<td><img src="/images/contents_corner_ur.gif" width="3" height="7"></td>
+						</tr>
+
+						<!--    サブタイトル    start    -->
+						<tr>
+							<td rowspan="4" class="main-bg2"><img src="/images/spacer.gif" width="3" height="1"></td>
+								
+								
+							<td class="main-bg8"><a href="#" onClick="return jump('/vespine/Notice','CMD_SHOW_IN_LIST','noticeinlist')"><img src="/images/title_oshirase.gif" alt="お知らせ" title="お知らせ" width="208" height="43" border="0"></a></td>
+								
+								
+								
+								
+								
+							<td rowspan="4" class="main-bg2"><img src="/images/spacer.gif" width="3" height="1"></td>
+						</tr>
+						<tr>
+							<td class="stitle-bg">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+											
+											
+										<td><img src="/images/stitle_icon_notice.gif" alt="お知らせ" title="お知らせ" width="32" height="29" border="0"></td>
+										<td valign="middle" nowrap class="stitle">お知らせ一覧</td>
+											
+											
+											
+										<td width="100%"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!--    サブタイトル    end    -->
+						<!--    ボタン領域      start  -->
+						<tr>
+							<td class="main-bg5">
+								<table width="100%" border="0" cellpadding="0" cellspacing="0">
+									<tr>
+										<td><img src="/images/spacer.gif" width="8" height="34"></td>
+
+
+										<td width="100%"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td valign="top"><a href="#" onClick="return popnotice('/vespine/Notice','CMD_SHOW_SEARCH','noticeinlist', '0')"><img src="/images/button1_search.gif" alt="検索" width="102" height="29" hspace="2" border="0" title="検索"></a></td>
+										
+										<td valign="top"><a href="#" onClick="if(isSubstitutionlogin()){return};return check_markcheckbox_checked('on')"><img src="/images/button1_marking.gif" alt="マーク設定" width="102" height="29" hspace="2" border="0" title="マーク設定"></a></td>
+										
+										<td valign="top"><a href="#" onClick="if(isSubstitutionlogin()){return};return check_markcheckbox_checked('off')"><img src="/images/button1_anti_marking.gif" alt="マーク解除" width="102" height="29" hspace="2" border="0" title="マーク解除"></a></td>
+
+
+
+										<td><img src="/images/spacer.gif" width="8" height="1"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<!--    ボタン領域      end   -->
+						
+						<!--    結果一覧領域    start -->
+						<tr>
+							<td>
+								
+								<table width="100%" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										
+										<td width="5%" align="center" nowrap onClick="location.href='#'" class="head-text">
+											<a href="#" onClick="return jump('/vespine/Notice','CMD_SELECT_ALL_INLIST')" class="head-text-link">ALL</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td width="8%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','7')" class="head-text-link">未読／既読</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td width="8%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','19')" class="head-text-link">カテゴリ</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td width="4%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','18')" class="head-text-link">マーク</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td colspan="2" width="29%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','3')" class="head-text-link">タイトル</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td width="13%" align="center" nowrap class="head-text">
+											配信先
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td width="13%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','13')" class="head-text-link">発信元</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td width="7%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','15')" class="head-text-link">掲載開始日</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td width="7%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','4')" class="head-text-link">掲載終了日</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td width="7%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','16')" class="head-text-link">対象日（開始）</a>
+										</td>
+										<td class="vline-head"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td width="7%" align="center" nowrap class="head-text">
+											<a href="#" onClick="return sortjump('/vespine/Notice','CMD_SORT_IN_LIST','17')" class="head-text-link">対象日（終了）</a>
+										</td>
+									</tr>
+									
+
+									<!-- ループのデータ部ブロック start -->
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox1" value="20140000436719" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436719','1','20080000000001','noticeinlist','0')" class="list-text-in-link">【参加者募集！】清掃ボランティアに参加し<br/>てみませんか？</a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											学生
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…ス事務局 ボランティア活動支援グループ
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.21
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox2" value="20140000437071" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','1','20140000437071','1','20090000000051','noticeinlist','0')" class="list-text-in-link">図書館ツアーに参加しよう！<br/></a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											学生 学部生 法学部<BR>学生 学部生 文学部<BR>学生 学部生 経済学部<BR>学生 学部生 商学部<BR>学生 学部生 社会学部<BR>学生 学部生 政策創造学部<BR>学生 学部生 外国語学部<BR>学生 学部生 システム理工学部<BR>学生 学部生 環境都市工学部<BR>学生 学部生 化学生命工学部
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											大学本部 学術情報事務局 図書館事務室
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.04
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox3" value="20140000437088" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','2','20140000437088','1','20080000000001','noticeinlist','0')" class="list-text-in-link">◇世界遺産や日本経済について考える◇生涯<br/>学習吹田市民大学 関西大学講座 開催のお…</a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											学生
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											大学本部 学長室 社会連携グループ
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.07.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.07.03
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox4" value="20140000437111" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','3','20140000437111','1','20080000000001','noticeinlist','0')" class="list-text-in-link">法科大学院全国統一適性試験の受験料を補助<br/>します！！</a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											学生
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											… 学部・大学院事務グループ 法文オフィス
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.12.31
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox5" value="20140000437116" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											教務情報	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','4','20140000437116','1','20080000000001','noticeinlist','0')" class="list-text-in-link">シラバス検索システム　復旧のおしらせ<br/></a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											学生
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											大学本部 学術情報事務局 システム開発課
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox6" value="20140000437126" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','5','20140000437126','1','20080000000001','noticeinlist','0')" class="list-text-in-link">【参加者求む!!】淀川清掃ボランティア!<br/></a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											学生
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…ス事務局 ボランティア活動支援グループ
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.03
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.05.12
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox7" value="20140000436751" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','6','20140000436751','1','20090000000002','noticeinlist','0')" class="list-text-in-link">【教職】平成26年度箕面市教員養成セミナー<br/>のお知らせ（箕面市教育委員会）</a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											学生 学部生<BR>学生 大学院生 法学研究科<BR>学生 大学院生 文学研究科<BR>学生 大学院生 経済学研究科<BR>学生 大学院生 商学研究科<BR>学生 大学院生 社会学研究科<BR>学生 大学院生 総合情報学研究科<BR>学生 大学院生 理工学研究科<BR>学生 大学院生 外国語教育学研究科<BR>学生 大学院生 心理学研究科<BR>学生 大学院生 工学研究科<BR>学生 大学院生 社会安全研究科<BR>学生 大学院生 東アジア文化研究科<BR>学生 大学院生 ガバナンス研究科<BR>学生 大学院生 人間健康研究科
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…学事局 教務事務グループ 教職支援チーム
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.02
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.05.17
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox8" value="20140000436810" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','7','20140000436810','1','20090000000067','noticeinlist','0')" class="list-text-in-link">【電気電子情報工学科対象】第二種電気工事<br/>士資格について</a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…生 システム理工学部 電気電子情報工学科
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…学事局 教務事務グループ 教職支援チーム
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.02
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2015.03.31
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox9" value="20140000436811" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','8','20140000436811','1','20090000000067','noticeinlist','0')" class="list-text-in-link">【電気電子情報工学科対象】第一級陸上特殊<br/>無線技士資格について</a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…生 システム理工学部 電気電子情報工学科
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…学事局 教務事務グループ 教職支援チーム
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.02
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2015.03.31
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+									
+									<tr>
+										<td colspan="22" class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+									</tr>
+									<tr>
+										
+										<td align="center" valign="middle">
+											<input type="checkbox" name="checkbox10" value="20140000436812" style="vertical-align: middle;">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+										
+
+	
+
+										
+										<td align="center" valign="middle">
+											<img src="/images/icon_mailclose.gif" alt="未読" width="14" height="14" title="未読">
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="20"></td>
+
+										
+										<td align="center" nowrap valign="middle" class="list-text-normal">
+											&nbsp;	
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+										
+										<td align="center" valign="middle">
+											&nbsp;
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" width="4%">
+											&nbsp;
+										</td>
+										
+										
+										<td valign="middle" nowrap class="list-text-normal">
+										<table class="list-text-in">
+										<td nowrap>
+											<a href="#" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','9','20140000436812','1','20090000000067','noticeinlist','0')" class="list-text-in-link">【電気電子情報工学科対象】第三級海上特殊<br/>無線技士資格について</a>
+										</td>
+										</table>
+										</td>
+										
+										
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+
+	
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…生 システム理工学部 電気電子情報工学科
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+	
+
+										
+										<td valign="middle" nowrap class="list-text-normal">
+											…学事局 教務事務グループ 教職支援チーム
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2014.04.02
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											2015.03.31
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+										<td class="bline-01"><img src="/images/spacer.gif" width="1" height="1"></td>
+										
+										<td align="center" valign="middle" nowrap class="list-text-normal">
+											
+										</td>
+									</tr>
+
+
+<!-- ループのデータ部ブロック end -->
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td><img src="/images/contents_corner_ll.gif" width="3" height="3"></td>
+							<td class="main-bg3"><img src="/images/spacer.gif" width="1" height="1"></td>
+							<td><img src="/images/contents_corner_lr.gif" width="3" height="3"></td>
+						</tr>
+						<!--    結果一覧領域    end   -->
+					</table>
+				</td>
+			</tr>
+			<!-- ページ遷移領域 start -->
+			<tr>
+				<td>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="1%" valign="middle" nowrap class="text-page">
+								1から10件目 / 148件 
+							</td>
+							<td width="99%" valign="middle" class="text-page">
+								 <b>1</b> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','2')" class="page-link">2</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','3')" class="page-link">3</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','4')" class="page-link">4</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','5')" class="page-link">5</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','6')" class="page-link">6</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','7')" class="page-link">7</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','8')" class="page-link">8</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','9')" class="page-link">9</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','10')" class="page-link">10</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','11')" class="page-link">11</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','12')" class="page-link">12</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','13')" class="page-link">13</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','14')" class="page-link">14</a> ｜ <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','15')" class="page-link">15</a>  <a href="#" onClick="return pagejump('/vespine/Notice','CMD_PAGEJUMP_IN_LIST','2')"><img src="/images/button_right_s.gif" width="11" height="11" border="0"></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<!-- ページ遷移領域  end   -->
+
+			<!--    Custom    start    -->
+			<tr>
+				<td align="right" nowrap class="custom"></td>
+			</tr>
+			<!--    Custom    end    -->
+
+		</table>
+		<!--    メインコンテンツ    end    -->
+
+
+
+	
+	
+<!-- 下★フッター　start-->
+<!-- 下★フッター　end-->
+
+
+	
+	
+
+
+	</form>
+</body>
+</html>

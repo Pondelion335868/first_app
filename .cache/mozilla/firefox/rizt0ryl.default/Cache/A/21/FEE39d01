@@ -1,0 +1,1411 @@
+@charset "euc-jp";
+
+/* 共通スタイル - common style - */
+body {
+	background-color: #FFF;
+}
+
+table{
+	border-collapse:collapse;
+	border:none;
+	border-spacing:0;
+	margin:0;
+	padding:0;
+}
+
+tr,th,td{
+	border-collapse:collapse;
+	vertical-align:top;
+	border:none;
+	border-spacing:0;
+	text-align:left;
+	padding:0;
+	margin:0;
+}
+
+ul,li {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+img,div,p {
+	margin:0;
+	padding:0;
+}
+
+h3 {
+	margin:0;
+	padding:0;
+}
+
+
+.clearfix{
+    zoom:1;/*for IE 5.5-7*/
+}
+
+ /* IE6 */
+ * html .clearfix {
+	display: inline-block;
+}
+
+/* IE7 */
+ *+html .clearfix {
+ 	display: inline-block;
+}
+.clearfix:after{/*for modern browser*/
+    content:".";
+    display: block;
+    height:0px;
+    clear:both;
+    line-height:0;
+    visibility:hidden;
+}
+
+.clearfixtest:after{/*for modern browser*/
+    content:".";
+    display: block;
+    height:0px;
+    clear:both;
+    line-height:0;
+    visibility:hidden;
+}
+
+
+
+/* 728*90 -A- rkt728A */
+
+.rkt728A {
+	width:718px;
+	border:1px solid #CCC;
+	color:#333;
+	background: url(http://amz-ad.a8.net/amazon/images/amazon_pw_txt01.gif) right center no-repeat;
+	padding:3px 4px;
+	height:82px;
+}
+
+
+.rkt728Atest dl {
+        margin:0;
+        padding:0;
+}
+
+.rkt728Atest dd{
+        float:left;
+        margin-right:18px;
+}
+
+.rkt728Atest .last{
+        float:left;
+        padding:0;
+        margin:0;
+}
+
+
+.rkt728A dl,.rkt728A dd,.rkt728A p{
+	margin:0;
+	padding:0;
+}
+.rkt728A h3{
+	font-size:12px;
+	line-height:14px;
+	color:#3399FF;
+	font-weight:bold;
+}
+
+.rkt728A h3 a{
+	color:#3399FF;
+}
+
+
+.rkt728A dd{
+	width:222px;
+	float:left;
+	margin-right:18px;
+}
+
+.rkt728A .last{
+	width:222px;
+	float:left;
+	padding:0;
+	margin:0;
+}
+
+
+.rkt728A .ban64 {
+	width:64px;
+	height:64px;
+	padding-right:10px;
+}
+
+
+.rkt728A td,img{
+	font-size:10px;
+	line-height:13px;
+	text-decoration:none;
+	border:none;
+}
+
+.rkt728A td.priceBox {
+	width:148px;
+	vertical-align:bottom;
+}
+
+.rkt728A .priceBox li.deli{
+	width:50px;
+	background-color:#CC0000;
+	padding:2px;
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+	float:left;
+}
+
+.rkt728A .priceBox li.price{
+	/* width:94px; */
+        /* font-size:14px; */
+        width:150px;
+	font-size:12px;
+	color:#CC0000;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	padding-top:4px;
+}
+
+
+
+/* 728*90 -B- rkt728B */
+.rkt728B{
+	width:717px;
+	height:79px;
+	color:#333;
+	background: url(http://amz-ad.a8.net/amazon/images/amazon_pw_txt01.gif) right center no-repeat;
+	border:1px solid #ccc;
+	padding:5px 4px 4px 5px;
+}
+
+.rkt728B h3{
+	font-size:12px;
+	margin:0 0 2px;
+	font-weight:bold;
+}
+
+.rkt728B li{
+	width:64px;
+	float:left;
+	margin-right:7px;
+}
+
+
+.rkt728B a{
+	color:#3399FF;
+}
+
+
+/* 234*60 -B- rkt234A */
+.rkt234A{
+	width:220px;
+	height:48px;
+	color:#333;
+	border:1px solid #ccc;
+	padding:5px 6px;
+}
+
+.rkt234A .rank{
+	width:44px;
+	background-color:#FFF;
+	padding:1px;
+	margin-top:4px;
+	font-size:12px;
+	color:#bd0000;
+	text-align:center;
+    border:1px solid #bd0000;
+}
+
+.rkt234A li.logo{
+	width:48px;
+	float:left;
+	margin:6px 7px 0 0;
+}
+
+.rkt234A li.rnkTxt{
+	width:165px;
+	float:right;
+}
+
+.rkt234A h3{
+	font-size:12px;
+	line-height:14px;
+	margin:0 0 3px;
+}
+
+.rkt234A h3.last{
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+
+.rkt234A h3 a, .rkt234 h3.last a{
+	font-weight:normal;
+	color:#3399FF;
+}
+
+
+/* 468*60 -A- rkt468A */
+.rkt468A{
+	width:456px;
+	height:48px;
+	color:#333;
+	border:1px solid #ccc;
+	padding:5px;
+}
+
+.rkt468A li.logo{
+	width:94px;
+	float:left;
+	text-align:center;
+	margin-right:8px;
+}
+
+.rkt468A li.rank{
+	width:72px;
+	background-color:#bd0000;
+	padding:2px;
+	margin-top:4px;
+	font-size:12px;
+	color:#FFF;
+	text-align:center;
+}
+
+
+.rkt468A .rnkTxt01{
+	width:170px;
+	float:left;
+	padding-right:8px;
+}
+
+.rkt468A .rnkTxt02{
+	width:170px;
+	float:right;
+}
+
+.rkt468A h3{
+	font-size:12px;
+	line-height:14px;
+	margin:0 0 3px 0;
+}
+
+.rkt468A h3.last{
+	font-size:12px;
+	line-height:14px;
+	margin:0;
+	padding:0;
+}
+
+
+.rkt468A a{
+	color:#3399FF;
+	font-weight:normal;
+}
+
+
+.rkt468A .rank{
+	font-size:12px;
+	color:#bd0000;
+	text-align:center;
+	background-color:#FFF;
+	padding:1px;
+	margin-top:4px;
+    border:1px solid #bd0000;
+}
+
+.rkt468A .etc{
+	font-size:12px;
+	line-height:14px;
+	text-align:right;
+	padding:0;
+	margin:0;
+}
+
+
+/* 200*200 -A- rkt200A */
+.rkt200A{
+	width:190px;
+	height:192px;
+	color:#333;
+	border:1px solid #ccc;
+	padding:3px 4px;
+}
+
+
+.rkt200A li.logo{
+	width:48px;
+	height:16px;
+	float:left;
+	padding-right:7px;
+}
+
+.rkt200A li.rank{
+	width:44px;
+	height:13px;
+	float:left;
+	font-size:12px;
+	line-height:13px;
+	color:#bd0000;
+	text-align:center;
+	background-color:#FFF;
+	padding-top:1px;
+    border:1px solid #bd0000;
+}
+
+.rkt200A .rnkTxt {
+	margin-top:2px;
+}
+
+.rkt200A .rnkTxt li.no{
+	width:29px;
+	font-size:12px;
+	line-height:14px;
+	font-weight:bold;
+	text-align:right;
+	float:left;
+	margin:0;
+	padding:0 5px 0 0;
+}
+
+.rkt200A .rnkTxt li.txt{
+	width:152px;
+	font-size:12px;
+	line-height:14px;
+	margin:0;
+	float:left;
+	padding:0 0 1px;
+}
+
+
+.rkt200A .rnkTxt h3 {
+	font-size:12px;
+	line-height:16px;
+	font-weight:normal;
+}
+
+.rkt200A a{
+	color:#3399FF;
+}
+
+
+/* 200*200 -B- rkt200B */
+.rkt200B{
+	width:190px;
+	height:190px;
+	color:#333;
+	border:1px solid #ccc;
+	padding:4px;
+}
+
+.rkt200B li.logo{
+	width:48px;
+	height:16px;
+	float:left;
+	padding-right:7px;
+}
+
+.rkt200B li.rank{
+	width:44px;
+	height:13px;
+	float:left;
+	font-size:12px;
+	line-height:13px;
+	color:#bd0000;
+	text-align:center;
+	background-color:#FFF;
+	padding-top:1px;
+    border:1px solid #bd0000;
+}
+
+.rkt200B .rnkTxt {
+	margin:5px 0 0 0;
+}
+
+.rkt200B li.no{
+	width:20px;
+	font-size:12px;
+	line-height:16px;
+	font-weight:bold;
+	text-align:right;
+	float:left;
+	margin:0;
+	padding:0 5px 0 0;
+}
+
+.rkt200B .rnkTxt li.txt01{
+	width:161px;
+	font-size:12px;
+	line-height:14px;
+	margin:0;
+	float:left;
+}
+
+.rkt200B .ban64{
+	width:64px;
+	height:64px;
+	/* float:left; */
+	padding:0 7px 5px 0;
+}
+
+.rkt200B .txt02{
+	width:115px;
+	float:right;
+	font-size:10px;
+	line-height:13px;
+}
+
+.rkt200B .etc{
+	font-size:12px;
+	line-height:14px;
+	text-align:right;
+	padding:0;
+	margin:0;
+}
+
+
+.rkt200B h3{
+	font-size:12px;
+	line-height:14px;
+	margin:0 0 2px;
+	padding:0;
+	font-weight:normal;
+}
+
+.rkt200B a{
+	color:#3399FF;
+}
+
+
+
+/* 可変用style */
+
+/* 300*000 -A- rkt300kA */
+
+.rkt300kA {
+	height:auto;
+	border:1px solid #CCC;
+	padding:0;
+	margin:0;
+	color:#333;
+}
+
+.rkt300kA dl{
+	margin:0;
+	padding:0;
+}
+
+.rkt300kA dd {
+	width:298px;
+	float:left;
+	margin:0;
+	padding:5px 0;
+}
+
+.rkt300kA .line dd {
+	width:298px;
+	float:left;
+	margin:0;
+	padding:5px 0;
+	background:url(http://amz-ad.a8.net/amazon/images/border300_x.gif) center bottom repeat-x;
+}
+
+.rkt300kA .rnkBox {
+	width:288px;
+	height:148px;
+	margin:0;
+	padding:0 5px;
+	background:url(http://amz-ad.a8.net/amazon/images/border_y.gif) right top repeat-y;
+}
+
+.rkt300kA .rnkBoxno {
+	width:288px;
+	height:148px;
+	margin:0;
+	padding:0 5px;
+}
+
+.rkt300kA h3{
+	font-size:14px;
+	line-height:16px;
+}
+
+.rkt300kA li.no {
+	width:40px;
+	font-size:14px;
+	line-height:16px;
+	font-weight:bold;
+	margin-right:3px;
+	padding:0;
+	float:left;
+}
+
+.rkt300kA a{
+	color:#3399FF;
+}
+
+.rkt300kA li.txt01 {
+	width:245px;
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+.rkt300kA table {
+	margin-top:3px;
+}
+
+.rkt300kA td,img{
+	font-size:12px;
+	line-height:18px;
+	text-decoration:none;
+	border:none;
+}
+
+.rkt300kA .ban128 {
+	width:128px;
+	height:128px;
+	padding-right:6px;
+}
+
+.rkt300kA td.priceBox {
+	width:154px;
+	vertical-align:bottom;
+}
+
+.rkt300kA .priceBox li.option{
+	width:50px;
+	margin-top:3px;
+	font-size:12px;
+	line-height:14px;
+	float:left;
+}
+
+
+.rkt300kA .priceBox p.point{
+	font-size:10px;
+	line-height:14px;
+	color:#CC0000;
+}
+
+.rkt300kA .priceBox p.deli{
+	width:50px;
+	background-color:#CC0000;
+	padding:2px;
+	font-size:12px;
+	line-height:14px;
+	color:#FFF;
+	text-align:center;
+}
+
+.rkt300kA .priceBox li.price{
+	/* width:89px; */
+	/* font-size:16px; */
+        width:150px;
+        font-size:12px;
+	line-height:16px;
+	color:#CC0000;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	padding-top:4px;
+}
+
+.rkt300kA .pwdBy p{
+	height:12px;
+	border-top:1px solid #CCC;
+	font-size:10px;
+	line-height:12px;
+	color:#CCC;
+	text-align:right;
+	padding:3px 0;
+	margin:0 5px;
+}
+
+
+
+/* widthが変わるタイプの例style　rkt300kAのwidthが違うだけ　*/
+
+.rkt300kB {
+	width:298px;
+	height:auto;
+	border:1px solid #CCC;
+	background:#FFF;
+	padding:0;
+	margin:0;
+	color:#333;
+}
+
+.rkt300kB dl{
+	width:298px;
+	margin:0;
+	padding:0;
+}
+
+.rkt300kB dd {
+	width:298px;
+	float:left;
+	margin:0;
+	padding:5px 0;
+}
+
+.rkt300kB .line dd {
+	width:298px;
+	float:left;
+	margin:0;
+	padding:5px 0;
+	background:url(http://amz-ad.a8.net/amazon/images/border300_x.gif) center bottom repeat-x #FFF;
+}
+
+.rkt300kB .rnkBox {
+	width:288px;
+	height:148px;
+	margin:0;
+	padding:0 5px;
+	background:url(http://amz-ad.a8.net/amazon/images/border_y.gif) right top repeat-y #FFF;
+}
+
+.rkt300kB .rnkBoxno {
+	width:288px;
+	height:148px;
+	margin:0;
+	padding:0 5px;
+}
+
+.rkt300kB h3{
+	font-size:14px;
+	line-height:16px;
+}
+
+.rkt300kB li.no {
+	width:40px;
+	font-size:14px;
+	line-height:16px;
+	font-weight:bold;
+	margin-right:3px;
+	padding:0;
+	float:left;
+}
+
+.rkt300kB a{
+	color:#3399FF;
+}
+
+.rkt300kA li.txt01 {
+	width:245px;
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+.rkt300kB table {
+	margin-top:3px;
+}
+
+.rkt300kB td,img{
+	font-size:12px;
+	line-height:18px;
+	text-decoration:none;
+	border:none;
+}
+
+.rkt300kB .ban128 {
+	width:128px;
+	height:128px;
+	padding-right:6px;
+}
+
+.rkt300kB td.priceBox {
+	width:154px;
+	vertical-align:bottom;
+}
+
+.rkt300kB .priceBox li.option{
+	width:50px;
+	margin-top:3px;
+	font-size:12px;
+	line-height:14px;
+	float:left;
+}
+
+
+.rkt300kB .priceBox p.point{
+	font-size:10px;
+	line-height:14px;
+	color:#CC0000;
+}
+
+.rkt300kB .priceBox p.deli{
+	width:50px;
+	background-color:#CC0000;
+	padding:2px;
+	font-size:12px;
+	line-height:14px;
+	color:#FFF;
+	text-align:center;
+}
+
+.rkt300kB .priceBox li.price{
+	width:89px;
+	font-size:16px;
+	line-height:16px;
+	color:#CC0000;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	padding-top:4px;
+}
+
+
+.rkt300kB .pwdBy p{
+	width:288px;
+	height:12px;
+	border-top:1px solid #CCC;
+	font-size:10px;
+	line-height:12px;
+	color:#CCC;
+	text-align:right;
+	padding:3px 0;
+	margin:0 5px;
+}
+
+
+
+
+/* 240*000 -A- rkt240kA */
+
+.rkt240kA {
+	height:auto;
+	border:1px solid #CCC;
+	padding:0;
+	margin:0;
+	color:#333;
+}
+
+.rkt240kA dl{
+	margin:0;
+	padding:0;
+}
+
+.rkt240kA dd {
+	width:238px;
+	float:left;
+	margin:0;
+	padding:5px 0;
+}
+
+.rkt240kA .line dd {
+	width:238px;
+	float:left;
+	margin:0;
+	padding:5px 0;
+	background:url(http://amz-ad.a8.net/amazon/images/border240_x.gif) center bottom repeat-x;
+}
+
+.rkt240kA .rnkBox {
+	width:228px;
+	height:88px;
+	margin:0;
+	padding:0 5px;
+	background:url(http://amz-ad.a8.net/amazon/images/border_y.gif) right top repeat-y;
+}
+
+.rkt240kA .rnkBoxno {
+	width:228px;
+	height:88px;
+	margin:0;
+	padding:0 5px;
+}
+
+.rkt240kA h3{
+	font-size:12px;
+	line-height:14px;
+}
+
+.rkt240kA li.no {
+	width:30px;
+	font-size:12px;
+	line-height:14px;
+	font-weight:bold;
+	margin-right:3px;
+	padding:0;
+	float:left;
+}
+
+.rkt240kA a{
+	color:#3399FF;
+}
+
+.rkt240kA li.txt01 {
+	width:195px;
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+.rkt240kA table {
+	margin-top:3px;
+}
+
+.rkt240kA td,img{
+	font-size:10px;
+	line-height:14px;
+	text-decoration:none;
+	border:none;
+}
+
+.rkt240kA .ban64 {
+	width:64px;
+	height:64px;
+	padding-right:6px;
+}
+
+.rkt240kA td.priceBox {
+	width:158px;
+	vertical-align:bottom;
+}
+
+.rkt240kA .priceBox li.option{
+	width:50px;
+	margin-top:3px;
+	font-size:12px;
+	line-height:14px;
+	float:left;
+}
+
+.rkt240kA .priceBox p.deli{
+	width:50px;
+	background-color:#CC0000;
+	padding:2px;
+	font-size:12px;
+	line-height:14px;
+	color:#FFF;
+	text-align:center;
+}
+
+.rkt240kA .priceBox li.price{
+	/* width:108px; */
+	/* font-size:16px; */
+        width:150px;
+        font-size:12px;
+	line-height:16px;
+	color:#CC0000;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	padding-top:4px;
+}
+
+.rkt240kA .pwdBy p{
+	height:12px;
+	border-top:1px solid #CCC;
+	font-size:10px;
+	line-height:12px;
+	color:#CCC;
+	text-align:right;
+	padding:3px 0;
+	margin:0 5px;
+}
+
+
+/* 240*000 -A- rkt240txtkA */
+.rkt240txtkA {
+	height:auto;
+	border:1px solid #CCC;
+	padding:0;
+	margin:0;
+	color:#333;
+}
+
+.rkt240txtkA dl{
+	margin:0;
+	padding:0;
+}
+
+.rkt240txtkA dd {
+	width:238px;
+	float:left;
+	margin:0;
+	padding:5px 0;
+}
+
+.rkt240txtkA .line dd {
+	width:238px;
+	float:left;
+	margin:0;
+	padding:5px 0;
+	background:url(http://amz-ad.a8.net/amazon/images/border240_x.gif) center bottom repeat-x;
+}
+
+.rkt240txtkA .rnkBox {
+	width:228px;
+	height:24px;
+	margin:0;
+	padding:0 5px;
+	background:url(http://amz-ad.a8.net/amazon/images/border_y.gif) right top repeat-y;
+}
+
+.rkt240txtkA .rnkBoxno {
+	width:228px;
+	height:24px;
+	margin:0;
+	padding:0 5px;
+}
+
+.rkt240txtkA h3{
+	font-size:14px;
+	line-height:16px;
+}
+
+.rkt240txtkA li.no {
+	width:45px;
+	font-size:14px;
+	line-height:16px;
+	font-weight:bold;
+	margin-right:3px;
+	padding:0;
+	float:left;
+}
+
+.rkt240txtkA a{
+	color:#3399FF;
+}
+
+.rkt240txtkA li.txt01 {
+	width:180px;
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+.rkt240txtkA .pwdBy p{
+	height:12px;
+	border-top:1px solid #CCC;
+	font-size:10px;
+	line-height:12px;
+	color:#CCC;
+	text-align:right;
+	padding:3px 0;
+	margin:0 5px;
+}
+
+
+/* 600*400 -A- rkt600kA */
+
+.rkt600kA{
+	width:598px;
+	height:398px;
+	border:1px solid #CCC;
+}
+
+.rkt600kA ul.logoBox{
+	width:582px;
+	height:16px;
+	padding:3px 5px 5px;
+	margin:0;
+}
+
+.rkt600kA li.logo{
+	width:48px;
+	height:16px;
+	float:left;
+	padding-right:7px;
+}
+.rkt600kA li.rank{
+	width:45px;
+	height:13px;
+	float:left;
+	font-size:12px;
+	line-height:13px;
+	color:#bd0000;
+	text-align:center;
+	background-color:#FFF;
+	padding-top:1px;
+    border-bottom:1px solid #bd0000;
+    border-top:1px solid #bd0000;
+    border-left:1px solid #bd0000;
+}
+
+.rkt600kA li.cate{
+	width:auto;
+	height:12px;
+	float:left;
+	border:1px solid #bd0000;
+	padding:1px 4px;
+	background-color:#FFF;
+	font-size:10px;
+	line-height:12px;
+	color:#bd0000;
+	text-align:left;
+}
+
+
+.rkt600kA .rnkBox{
+	width:588px;
+	height:64px;
+	margin:0 5px 6px;
+}
+
+.rkt600kA a{
+	color:#3399FF;
+}
+
+.rkt600kA h3 {
+	font-size:12px;
+	line-height:14px;
+	font-weight:bold;
+}
+
+.rkt600kA p.txt {
+	font-size:10px;
+	line-height:14px;
+	margin:2px 0;
+}
+
+.rkt600kA td,img{
+	font-size:12px;
+	line-height:14px;
+	text-decoration:none;
+	border:none;
+}
+
+.rkt600kA .ban64 {
+	width:64px;
+	height:64px;
+	padding-right:6px;
+}
+
+.rkt600kA td.priceBox {
+	width:518px;
+	vertical-align:bottom;
+}
+
+.rkt600kA .priceBox li.deli{
+	width:50px;
+	background-color:#CC0000;
+	padding:2px;
+	font-size:12px;
+	line-height:13px;
+	color:#FFF;
+	text-align:center;
+	float:left;
+}
+
+.rkt600kA .priceBox li.point{
+	width:70px;
+	padding:2px 5px 0 5px;
+	font-size:12px;
+	line-height:14px;
+	color:#CC0000;
+	float:left;
+}
+
+.rkt600kA .priceBox li.price{
+	width:384px;
+	/* font-size:16px; */
+        font-size:14px;
+	line-height:18px;
+	color:#CC0000;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	padding:0;
+}
+
+
+.rkt600kA ul.etc {
+	width:588px;
+	text-align:right;
+	margin:0;
+	padding:0;
+}
+
+.rkt600kA .etc li{
+	font-size:12px;
+	line-height:14px;
+	text-align:right;
+	float:right;
+	margin:0 0 0 10px;
+	padding:0;
+}
+
+/* 300*600 -A- rkt300A */
+.rkt300A {
+	width:288px;
+	height:588px;
+	border:1px solid #CCC;
+	margin:0;
+	padding:5px;
+}
+
+.rkt300A  li.logo{
+	width:48px;
+	height:16px;
+	float:left;
+	padding-right:7px;
+}
+
+.rkt300A  li.rank{
+	width:45px;
+	height:13px;
+	float:left;
+	font-size:12px;
+	line-height:13px;
+	color:#bd0000;
+	text-align:center;
+	background-color:#FFF;
+	padding-top:1px;
+    border-bottom:1px solid #bd0000;
+    border-top:1px solid #bd0000;
+    border-left:1px solid #bd0000;
+}
+
+.rkt300A li.cate{
+	width:auto;
+	height:12px;
+	float:left;
+	border:1px solid #bd0000;
+	padding:1px 4px;
+	background-color:#FFF;
+	font-size:10px;
+	line-height:12px;
+	color:#bd0000;
+	text-align:left;
+}
+
+.rkt300A .rnkBox {
+	width:288px;
+	margin:0;
+	padding:0;
+}
+
+.rkt300A h3{
+	font-size:14px;
+	line-height:16px;
+	margin-top:3px;
+}
+
+.rkt300A p.no {
+	font-size:14px;
+	line-height:16px;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+}
+
+.rkt300A h3.no02 {
+	font-size:12px;
+	line-height:14px;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+}
+
+.rkt300A h3.no03 {
+	font-size:12px;
+	line-height:14px;
+	font-weight:bold;
+	margin-top:11px;
+	padding:0;
+}
+
+.rkt300A a{
+	color:#3399FF;
+}
+
+.rkt300A p.txt01 {
+	font-size:12px;
+	line-height:16px;
+	margin-top:5px;
+}
+
+.rkt300A p.txt02 {
+	font-size:10px;
+	line-height:14px;
+	margin-top:1px;
+}
+
+
+.rkt300A table {
+	margin-top:12px;
+}
+
+.rkt300A td,img{
+	font-size:12px;
+	line-height:18px;
+	text-decoration:none;
+	border:none;
+        /* 追加 */
+        /* margin-left:30px; */
+}
+
+.rkt300A .ban128 {
+	width:128px;
+	height:128px;
+	padding-right:6px;
+}
+
+.rkt300A .ban64 {
+	width:64px;
+	height:64px;
+	padding-right:6px;
+}
+
+.rkt300A td.priceBox01 {
+	width:154px;
+	vertical-align:bottom;
+}
+
+.rkt300A .priceBox01 li.deli{
+	width:50px;
+	background-color:#CC0000;
+	padding:2px;
+	font-size:12px;
+	line-height:14px;
+	color:#FFF;
+	text-align:center;
+	float:left;
+}
+
+.rkt300A .priceBox01 li.price{
+	/* width:89px; */
+	/* font-size:16px; */
+        width:150px;
+        font-size:12px;
+	line-height:16px;
+	color:#CC0000;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	padding-top:4px;
+}
+
+.rkt300A td.priceBox02 {
+	width:218px;
+	padding-top:3px;
+	vertical-align:bottom;
+}
+
+.rkt300A .priceBox02 li.deli{
+	width:50px;
+	background-color:#CC0000;
+	padding:2px;
+	font-size:12px;
+	line-height:14px;
+	color:#FFF;
+	text-align:center;
+	float:left;
+}
+
+.rkt300A .priceBox02 li.price{
+	width:164px;
+	/* font-size:16px; */
+        font-size:12px;
+	line-height:16px;
+	color:#CC0000;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+	padding-top:4px;
+}
+
+.rkt300A td.priceBox03 {
+	width:288px;
+	margin:0;
+	padding:0;
+}
+
+.rkt300A .priceBox03 li.deli{
+	width:50px;
+	background-color:#CC0000;
+	margin-top:6px;
+	padding:2px;
+	font-size:12px;
+	line-height:14px;
+	color:#FFF;
+	text-align:center;
+	float:left;
+}
+
+.rkt300A .priceBox03 li.price{
+	width:234px;
+	/* font-size:16px; */
+        font-size:12px;
+	line-height:16px;
+	margin-top:6px;
+	color:#CC0000;
+	font-weight:bold;
+	text-align:right;
+	float:right;
+}
+
+.rkt300A .etc {
+	font-size:12px;
+	line-height:14px;
+	margin-top:5px;
+	text-align:right;
+}
+
+
+/* 120*600 -A- rkt120A */
+
+.rkt120A {
+	width:100px;
+	height:580px;
+	border:1px solid #CCC;
+	margin:0;
+	padding:9px;
+	color:#333;
+	text-align:center;
+}
+
+.rkt120A li.logo{
+	width:48px;
+	height:16px;
+	float:left;
+	padding-right:7px;
+}
+
+.rkt120A li.rank{
+	width:auto;
+	height:13px;
+	float:left;
+	font-size:12px;
+	line-height:13px;
+	color:#bd0000;
+	text-align:center;
+	background-color:#FFF;
+	padding:1px 1px 0;
+    border:1px solid #bd0000;
+}
+
+.rkt120A .ban64 {
+	width:100px;
+	margin-top:8px;
+    height:64px;
+}
+
+.rkt120A h3 {
+	font-size:12px;
+	line-height:14px;
+	font-weight:bold;
+	margin-top:7px;
+}
+
+.rkt120A a{
+	color:#3399FF;
+}
+
+.rkt120A .etc {
+	font-size:12px;
+	line-height:14px;
+	margin-top:7px;
+	text-align:right;
+}
+

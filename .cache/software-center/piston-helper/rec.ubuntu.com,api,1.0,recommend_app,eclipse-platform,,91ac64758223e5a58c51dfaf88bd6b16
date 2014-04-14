@@ -1,0 +1,284 @@
+status: 200
+content-length: 6544
+via: 1.1 sumac.canonical.com:3128 (squid/2.7.STABLE7)
+content-location: https://rec.ubuntu.com/api/1.0/recommend_app/eclipse-platform/
+x-cache: HIT from sumac.canonical.com
+age: 19
+expires: Fri, 04 Apr 2014 03:49:59 GMT
+server: Apache/2.2.22 (Ubuntu)
+last-modified: Fri, 04 Apr 2014 03:44:59 GMT
+etag: "827bf2b7bae9f58f71ef910aed588c13"
+strict-transport-security: max-age=2592000
+cache-control: max-age=300
+date: Fri, 04 Apr 2014 03:44:59 GMT
+content-type: application/json; charset=utf-8
+x-cache-lookup: HIT from sumac.canonical.com:3128
+
+{
+    "rid": "45508a6d5dbe7ba4148451cb8b5fe897", 
+    "data": [
+        {
+            "package_name": "openjdk-6-jre", 
+            "similarity": 0.2096
+        }, 
+        {
+            "package_name": "icedtea-netx-common", 
+            "similarity": 0.1985
+        }, 
+        {
+            "package_name": "openjdk-7-jre", 
+            "similarity": 0.187
+        }, 
+        {
+            "package_name": "mysql-server", 
+            "similarity": 0.1683
+        }, 
+        {
+            "package_name": "geany", 
+            "similarity": 0.168
+        }, 
+        {
+            "package_name": "filezilla", 
+            "similarity": 0.1612
+        }, 
+        {
+            "package_name": "netbeans", 
+            "similarity": 0.1547
+        }, 
+        {
+            "package_name": "qt4-designer", 
+            "similarity": 0.1492
+        }, 
+        {
+            "package_name": "gimp", 
+            "similarity": 0.1425
+        }, 
+        {
+            "package_name": "mono-runtime", 
+            "similarity": 0.1399
+        }, 
+        {
+            "package_name": "inkscape", 
+            "similarity": 0.1397
+        }, 
+        {
+            "package_name": "virtualbox-qt", 
+            "similarity": 0.1375
+        }, 
+        {
+            "package_name": "qt4-dev-tools", 
+            "similarity": 0.1369
+        }, 
+        {
+            "package_name": "bluefish", 
+            "similarity": 0.1349
+        }, 
+        {
+            "package_name": "blender", 
+            "similarity": 0.131
+        }, 
+        {
+            "package_name": "wireshark", 
+            "similarity": 0.129
+        }, 
+        {
+            "package_name": "nautilus-dropbox", 
+            "similarity": 0.127
+        }, 
+        {
+            "package_name": "gnome-shell", 
+            "similarity": 0.1238
+        }, 
+        {
+            "package_name": "compizconfig-settings-manager", 
+            "similarity": 0.1232
+        }, 
+        {
+            "package_name": "codeblocks", 
+            "similarity": 0.123
+        }, 
+        {
+            "package_name": "p7zip-full", 
+            "similarity": 0.1222
+        }, 
+        {
+            "package_name": "alacarte", 
+            "similarity": 0.1222
+        }, 
+        {
+            "package_name": "winetricks", 
+            "similarity": 0.1219
+        }, 
+        {
+            "package_name": "kdelibs5-data", 
+            "similarity": 0.1212
+        }, 
+        {
+            "package_name": "kde-runtime", 
+            "similarity": 0.1209
+        }, 
+        {
+            "package_name": "gparted", 
+            "similarity": 0.1203
+        }, 
+        {
+            "package_name": "qtcreator", 
+            "similarity": 0.1194
+        }, 
+        {
+            "package_name": "audacity", 
+            "similarity": 0.1189
+        }, 
+        {
+            "package_name": "synaptic", 
+            "similarity": 0.1166
+        }, 
+        {
+            "package_name": "wine1.4", 
+            "similarity": 0.1143
+        }, 
+        {
+            "package_name": "gnome-tweak-tool", 
+            "similarity": 0.1142
+        }, 
+        {
+            "package_name": "cheese", 
+            "similarity": 0.1138
+        }, 
+        {
+            "package_name": "vinagre", 
+            "similarity": 0.1134
+        }, 
+        {
+            "package_name": "chromium-browser", 
+            "similarity": 0.1134
+        }, 
+        {
+            "package_name": "vlc", 
+            "similarity": 0.1128
+        }, 
+        {
+            "package_name": "mysql-client", 
+            "similarity": 0.1121
+        }, 
+        {
+            "package_name": "gstreamer0.10-plugins-bad-multiverse", 
+            "similarity": 0.112
+        }, 
+        {
+            "package_name": "tomboy", 
+            "similarity": 0.1118
+        }, 
+        {
+            "package_name": "ubuntu-restricted-extras", 
+            "similarity": 0.1108
+        }, 
+        {
+            "package_name": "meld", 
+            "similarity": 0.1108
+        }, 
+        {
+            "package_name": "bzr", 
+            "similarity": 0.1106
+        }, 
+        {
+            "package_name": "emacs23", 
+            "similarity": 0.1102
+        }, 
+        {
+            "package_name": "imagemagick", 
+            "similarity": 0.108
+        }, 
+        {
+            "package_name": "libreoffice-base", 
+            "similarity": 0.1058
+        }, 
+        {
+            "package_name": "pidgin", 
+            "similarity": 0.105
+        }, 
+        {
+            "package_name": "icedtea-plugin", 
+            "similarity": 0.1049
+        }, 
+        {
+            "lift": 1.16182965809968, 
+            "package_name": "gstreamer0.10-plugins-bad", 
+            "similarity": 0.104
+        }, 
+        {
+            "package_name": "monodevelop", 
+            "similarity": 0.1035
+        }, 
+        {
+            "package_name": "evolution", 
+            "similarity": 0.1028
+        }, 
+        {
+            "lift": 1.15895482145689, 
+            "package_name": "gstreamer0.10-ffmpeg", 
+            "similarity": 0.1026
+        }, 
+        {
+            "lift": 1.14716176363202, 
+            "package_name": "gstreamer0.10-plugins-ugly"
+        }, 
+        {
+            "lift": 1.10242128407038, 
+            "package_name": "flashplugin-installer"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "teeworlds"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "vice"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "twitux"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "balazar"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "wicd-gtk"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "rapidsvn"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "cameramonitor"
+        }, 
+        {
+            "rating": 4.0, 
+            "package_name": "redis-server"
+        }, 
+        {
+            "rating": 3.5, 
+            "package_name": "umbrello"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "aqemu"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "overlay-scrollbar"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "sysinfo"
+        }, 
+        {
+            "rating": 3.0, 
+            "package_name": "cynthiune.app"
+        }
+    ], 
+    "app": "eclipse-platform"
+}

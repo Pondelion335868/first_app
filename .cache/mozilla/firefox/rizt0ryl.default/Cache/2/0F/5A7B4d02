@@ -1,0 +1,739 @@
+<!-- ======================================================================== -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+<!--   tag library -->
+
+
+
+
+
+
+
+
+<html>
+  <head>
+    <title>KANSAI UNIVERSITY Information System</title>
+    <!--   base setting   -->
+    <base href="https://portal.kansai-u.ac.jp/Portal/">
+
+    <!-- CSS file setting -->
+    <link href="https://portal.kansai-u.ac.jp/Portal/css/en/standard.css" type="text/css" rel="stylesheet">
+    <link href="https://portal.kansai-u.ac.jp/Portal/images/casual/yellow/default.css" type="text/css" rel="stylesheet">
+    <link href="https://portal.kansai-u.ac.jp/Portal/css/en/default.css" type="text/css" rel="stylesheet">
+
+    <script src="https://portal.kansai-u.ac.jp/Portal/js/fit_ifr.js" type="text/JavaScript"></script>
+
+    <!-- event handla script setting -->
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+
+    <script type="text/javascript">
+<!---
+    // ログイン画面フォーカス処理
+    function hptl_user_LoginFocus(){
+		try{
+			if(typeof document.forms["hptl_LoginScreen"] == "object"){
+				if((typeof document.forms["hptl_LoginScreen"].elements["com.cosminexus.admin.auth.name"] == "object")){
+					document.forms["hptl_LoginScreen"].elements["com.cosminexus.admin.auth.name"].focus();
+				}
+			}else if(typeof document.forms["hptl_Password"] == "object"){
+				if((typeof document.forms["hptl_Password"].elements["com.cosminexus.admin.auth.name"] == "object")){
+					document.forms["hptl_Password"].elements["com.cosminexus.admin.auth.name"].focus();
+				}
+			}
+		} catch(e){
+		}
+	}
+//--->
+    </script>
+
+    <!-- user original setting -->
+  </head>
+
+  <body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0" rightmargin="0" class="backscreen" onLoad="hptl_user_LoginFocus()">
+    <!--   top navigation setup -->
+    <table cellspacing="0" width="100%" border="0" cellpadding="0">
+      <tr>
+        <td>
+          <!-- display navigation (before & after login) -->
+          <div id="hptl_portal_top_menu_visible" style="visibility:hidden">
+            <!-- ======================================================================== -->
+<!--                                                                          -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            top_default.jsp                               -->
+<!--                                                                          -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                                                                          -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+<SCRIPT type="text/JavaScript">
+<!--
+function logout(){
+  if(confirm("ログアウトしますがよろしいですか？\n他に開いているウィンドウが有る場合、\n確実にログアウトする為には\nウィンドウを全て閉じてください。")==true){
+    window.opener=null;
+    var url = window.location.protocol+"//"+window.location.host+"/Portal/logout.jsp";
+    window.location.href = url;
+  }
+}
+//-->
+</SCRIPT>
+
+<div id="header">
+<table width="987px" height="39px" cellspacing="0" border="0" cellpadding="0" style="background-image: url('https://portal.kansai-u.ac.jp/Portal/images/kansai_header_upper.gif')">
+  <tr>
+    <div class="headerMenu">
+    <td width="534px">&nbsp;</td>
+    <td style="padding:0px 20px 0px 0px" width="226px" align="right"><p>2014年04月03日(木)<br>中島　正晴 　</p></td>
+    <ul class="buttonMenu">
+
+    <td width="59px"><a href="https://portal.kansai-u.ac.jp/Portal/portal/screen/Home/pane/-44Kv44Kk44OD44Kv44Od44O844K_44Or/layout_id/QuickPortalCal/tab_id/-44Kv44Kk44OD44Kv44Od44O844K_44Or"><img border="0" alt="更新" width="47px" src="https://portal.kansai-u.ac.jp/Portal/images/button_header_reload.gif"></a></td>
+    <td width="71px"><a href="/help/help.html" target="portlethelpwindow"><img border="0" alt="ヘルプ" width="59px" src="https://portal.kansai-u.ac.jp/Portal/images/button_header_help.gif"></a></td>
+    <td width="107px"><a href="#" onClick="logout(); return false;"><img border="0" alt="ログアウト" width="83px" src="https://portal.kansai-u.ac.jp/Portal/images/button_header_logout.gif"></a></td>
+    </ul>
+    </div>
+  </tr>
+</table>
+</div>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- left navigation & portlet display area setting -->
+    <table cellspacing="0" width="100%" cellpadding="0" border="0">
+      <tr>
+        <td valign="top" class="backscreen">
+          <!-- display portlet area -->
+          <!-- ======================================================================== -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!-- ======================================================================== -->
+
+
+
+<!-- since 06-00 PortalUtils:change encoding -->
+
+
+
+<!-- LayoutBean -->
+
+
+
+<!-- Setting Bean -->
+
+
+  <table width="987px" height="31px" cellspacing="0" border="0" cellpadding="0" style="background-image: url('https://portal.kansai-u.ac.jp/Portal/images/kansai_header_bottom.gif')">
+    <tr>
+
+      <td valign="bottom" align="right" height="30px">
+
+        <table border="0" cellspacing="0" cellpadding="0" height="26">
+          <tr>
+            <td width="8px" height="26">&nbsp;</td>
+
+
+						
+
+
+     
+            <td valign="middle" height="26px" nowrap><img border="0" alt="クイックポータル" src="https://portal.kansai-u.ac.jp/Portal/images/img_tab_quick_on.gif"></td>
+     
+
+
+            <td width="8px" height="26px">&nbsp;</td>
+
+
+						
+
+
+     
+            <td valign="middle" height="26px" nowrap><a href="https://portal.kansai-u.ac.jp/Portal/portal/pane/-5a2m55Sf44Od44O844K_44Or/layout_id/StudentPortal/tab_id/-5a2m55Sf44Od44O844K_44Or" class="jtaboff"><img border="0" alt="学生ポータル" src="https://portal.kansai-u.ac.jp/Portal/images/img_tab_student_off.gif"></a></td>
+     
+
+
+            <td width="8px" height="26px">&nbsp;</td>
+
+          </tr>
+        </table>
+      </td>
+	</tr>
+  </table>
+
+  <table width="100%" cellspacing="0" border="0" cellpadding="0">
+    <tr>
+      <td><table cellpadding="0" cellspacing="0" border="0">
+	<tr>
+		<td valign="top" width="150">
+<table align="center" cellspacing="0" width="100%" border="0" cellpadding="3">
+	<tr>
+		<td valign="top" width="100%">
+<!-- ======================================================================== -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+<!-- LayoutBean -->
+
+
+<!-- initialize Bean -->
+
+
+
+<table align="center" cellspacing="0" width="100%" border="0" cellpadding="0">
+  <tr>
+
+	
+
+  <!-- display help button -->
+    
+
+  <!-- display edit button -->
+    
+
+  <!--display minimize button -->
+    
+
+  <!--display maximize button -->
+    
+
+  <!--display close button -->
+    
+
+  </tr>
+  <tr>
+    <td width="100%" valign="top" colspan=
+3>
+	
+
+      <!-- output portlet contents -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" class="j00">
+            <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%">
+              <tr>
+                <td bgcolor="#FFFFFF"> 
+                  
+
+
+
+
+
+
+
+
+<iframe width="100%" frameborder="0" height="630px" src="/vespine/Top?REQUEST_NAME=CMD_SHOW_MENU_STUDENT&PAGE_ID=top&dummy=aaaa?REQUEST_NAME=CMD_SHOW_MENU_STUDENT&PAGE_ID=top&dummy=aaaa" name="iframeMenuStudent"></iframe>
+
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+		</td>
+	</tr>
+</table>
+		</td>
+		<td valign="top" width="837">
+<table align="center" cellspacing="0" width="100%" border="0" cellpadding="3">
+	<tr>
+		<td valign="top" width="100%">
+<!-- ======================================================================== -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+<!-- LayoutBean -->
+
+
+<!-- initialize Bean -->
+
+
+
+<table align="center" cellspacing="0" width="100%" border="0" cellpadding="0">
+  <tr>
+
+	
+
+  <!-- display help button -->
+    
+
+  <!-- display edit button -->
+    
+
+  <!--display minimize button -->
+    
+
+  <!--display maximize button -->
+    
+
+  <!--display close button -->
+    
+
+  </tr>
+  <tr>
+    <td width="100%" valign="top" colspan=
+3>
+	
+
+      <!-- output portlet contents -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" class="j00">
+            <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%">
+              <tr>
+                <td bgcolor="#FFFFFF"> 
+                  
+
+
+
+
+
+
+
+
+<iframe width="100%" frameborder="0" height="150px" src="/vespine/OtherSystemServlet?Command=TermPortletCommand&dummy=aaaa?Command=TermPortletCommand&dummy=aaaa"></iframe>
+
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%">
+<!-- ======================================================================== -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+<!-- LayoutBean -->
+
+
+<!-- initialize Bean -->
+
+
+
+<table align="center" cellspacing="0" width="100%" border="0" cellpadding="0">
+  <tr>
+
+	
+
+  <!-- display help button -->
+    
+
+  <!-- display edit button -->
+    
+
+  <!--display minimize button -->
+    
+
+  <!--display maximize button -->
+    
+
+  <!--display close button -->
+    
+
+  </tr>
+  <tr>
+    <td width="100%" valign="top" colspan=
+3>
+	
+
+      <!-- output portlet contents -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" class="j00">
+            <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%">
+              <tr>
+                <td bgcolor="#FFFFFF"> 
+                  
+
+
+
+
+
+
+
+
+<iframe width="100%" frameborder="0" height="170px" src="/vespine/TopNewInfoServlet?Command=QuiquTopNewInfoCommand&dummy=aaaa?Command=QuiquTopNewInfoCommand&dummy=aaaa"></iframe>
+
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%">
+<!-- ======================================================================== -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+<!-- LayoutBean -->
+
+
+<!-- initialize Bean -->
+
+
+
+<table align="center" cellspacing="0" width="100%" border="0" cellpadding="0">
+  <tr>
+
+	
+
+  <!-- display help button -->
+    
+
+  <!-- display edit button -->
+    
+
+  <!--display minimize button -->
+    
+
+  <!--display maximize button -->
+    
+
+  <!--display close button -->
+    
+
+  </tr>
+  <tr>
+    <td width="100%" valign="top" colspan=
+3>
+	
+
+      <!-- output portlet contents -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" class="j00">
+            <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%">
+              <tr>
+                <td bgcolor="#FFFFFF"> 
+                  
+
+
+
+
+
+
+
+
+<iframe width="100%" frameborder="0" height="70px" src="/vespine/OtherSystemServlet?Command=NewInfoViewCommand&dummy=aaaa?Command=NewInfoViewCommand&dummy=aaaa"></iframe>
+
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%">
+<!-- ======================================================================== -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+<!-- LayoutBean -->
+
+
+<!-- initialize Bean -->
+
+
+
+<table align="center" cellspacing="0" width="100%" border="0" cellpadding="0">
+  <tr>
+
+	
+
+  <!-- display help button -->
+    
+
+  <!-- display edit button -->
+    
+
+  <!--display minimize button -->
+    
+
+  <!--display maximize button -->
+    
+
+  <!--display close button -->
+    
+
+  </tr>
+  <tr>
+    <td width="100%" valign="top" colspan=
+3>
+	
+
+      <!-- output portlet contents -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" class="j00">
+            <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%">
+              <tr>
+                <td bgcolor="#FFFFFF"> 
+                  
+
+
+
+
+
+
+
+
+<iframe width="100%" frameborder="0" height="290px" src="/vespine/Top?REQUEST_NAME=CMD_SHOW_CALENDERPORTLET&PAGE_ID=top&dummy=aaaa?REQUEST_NAME=CMD_SHOW_CALENDERPORTLET&PAGE_ID=top&dummy=aaaa"></iframe>
+
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+		</td>
+	</tr>
+	<tr>
+		<td valign="top" width="100%">
+<!-- ======================================================================== -->
+<!--        U C O S M I N E X U S   P O R T A L   F R A M E W O R K           -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+<!-- LayoutBean -->
+
+
+<!-- initialize Bean -->
+
+
+
+<table align="center" cellspacing="0" width="100%" border="0" cellpadding="0">
+  <tr>
+
+	
+
+  <!-- display help button -->
+    
+
+  <!-- display edit button -->
+    
+
+  <!--display minimize button -->
+    
+
+  <!--display maximize button -->
+    
+
+  <!--display close button -->
+    
+
+  </tr>
+  <tr>
+    <td width="100%" valign="top" colspan=
+3>
+	
+
+      <!-- output portlet contents -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="100%">
+        <tr> 
+          <td valign="top" class="j00">
+            <table width="100%" border="0" cellspacing="1" cellpadding="0" height="100%">
+              <tr>
+                <td bgcolor="#FFFFFF"> 
+                  
+
+
+
+
+
+
+
+
+<iframe width="100%" frameborder="0" height="15px" src="/vespine/quiqunoticeportlet?dummy=aaaa?dummy=aaaa"></iframe>
+
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+
+		</td>
+	</tr>
+</table>
+		</td>
+	</tr>
+</table></td>
+    </tr>
+  </table>
+
+
+        </td>
+      </tr>
+    </table>
+
+    <!-- script display area. don't delete -->
+    <script>
+<!--
+function hptl_portal_scriptcall_onLogout() {
+}
+
+// -->
+</script>
+
+
+      <noscript>
+        <table cellspacing="0" width="100%" cellpadding="0" border="0">
+          <tr><td bgcolor="#ffff00">
+            Please use a browser that supports JavaScript.
+          </td></tr>
+        </table>
+      </noscript>
+    
+
+    <script>
+    <!--
+      document.getElementById("hptl_portal_top_menu_visible").style.visibility = "visible";
+    -->
+    </script>
+
+
+    <table cellspacing="0" width="100%" cellpadding="0" border="0">
+      <tr>
+        <td valign="bottom" class="backscreen">
+          <!--   bottom navigation setup -->
+          <!-- ======================================================================== -->
+<!--                                                                          -->
+<!--         U C O S M I N E X U S   P O R T A L   F R A M E W O R K          -->
+<!--                             bottom.jsp                                   -->
+<!--                                                                          -->
+<!--                            Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                             Copyright (C) 2008, Hitachi, Ltd.             -->
+<!--                                                                          -->
+<!-- ======================================================================== -->
+
+
+
+
+
+
+
+
+
+
+        </td>
+      </tr>
+    </table>
+
+    <!-- CSDC setting -->
+    <iframe id="hptl_behavior_frame" src="/Portal/html/userData.html" width="0" height="0" frameborder="no" scrolling="no" marginwidth="0" marginheight="0"></iframe><iframe id="hptl_csdc_serialize_temporary_frame" src="/Portal/html/blank.html" width="0" height="0" frameborder="no" scrolling="no" marginwidth="0" marginheight="0"></iframe>
+
+
+
+  </body>
+</html>

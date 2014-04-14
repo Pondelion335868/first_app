@@ -1,0 +1,258 @@
+@charset "UTF-8";
+body {
+    margin:0;
+    padding:0;
+}
+/* フォーム */
+input, textarea, select {
+    border:1px solid #ccc;
+    color:#444;
+    text-shadow:0 1px 1px #f6f6f6;
+    background-image:-moz-linear-gradient(top,#fefefe,#eee);
+    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fdfdfd),color-stop(1,#eee));
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+    text-decoration: none;
+  /*  display:block;*/
+    padding:6px;
+    margin:5px;
+}
+/* テキスト */
+input.input-text {
+    background-image:none;
+    padding:.4em;
+    line-height:1.4;
+    font-size:16px;
+    display:block;
+    width:90%;
+}
+/* テキストエリア */
+textarea.input-text {
+    height:50px;
+    -webkit-transition:height 200ms linear;
+    -moz-transition:height 200ms linear;
+    -o-transition:height 200ms linear;
+    transition:height 200ms linear
+}
+/* ヘッダーバー */
+.data-role-header {
+    display:block;
+    position:relative;
+    border:1px solid #2a2a2a;
+    background:#111;
+    color:#fff;
+    font-weight:bold;
+    text-shadow:0 -1px 1px #000;
+    background-image:-moz-linear-gradient(top,#3c3c3c,#111);
+    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#3c3c3c),color-stop(1,#111));
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.3);
+    -webkit-box-shadow:0 1px 0 rgba(255,255,255,.3);
+    box-shadow:0 1px 0 rgba(255,255,255,.3) position:relative;
+    padding:.5em 15px;
+    overflow:hidden;
+    display:block;
+    clear:both;
+    height:26px;
+    font-size:12px;
+}
+/* ヘッダー左ボタン */
+.data-role-header .btn-left {
+    position:absolute;
+    left:4px;
+    top:.7em;
+    padding:2px 0;
+}
+/* ヘッダー右ボタン */
+.data-role-header .btn-right {
+    position:absolute;
+    right:10px;
+    top:.8em;
+    padding:2px 0;
+}
+/* ヘッダーボタン */
+.data-role-header a.data-rote-button-header {
+    border:1px solid #222;
+    background:#333;
+    font-weight:bold;
+    color:#fff;
+    text-shadow:0 -1px 1px #000;
+    background-image:-moz-linear-gradient(top,#555,#333);
+    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#555),color-stop(1,#333));
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+    text-decoration: none;
+    padding:7px 10px;
+    margin:9px 5px;
+}
+/* ヘッダータイトル */
+.data-role-header h1 {
+    margin:2px;
+    padding:2px;
+    font-size:12px;
+    width:100%;
+    text-align:left;
+    padding-left: 54px;
+}
+/* フッターバー */
+.data-role-footer {
+    display:block;
+    position:relative;
+    border:1px solid #2a2a2a;
+    background:#111;
+    color:#fff;
+    font-weight:bold;
+    text-shadow:0 -1px 1px #000;
+    background-image:-moz-linear-gradient(top,#3c3c3c,#111);
+    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#3c3c3c),color-stop(1,#111));
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.3);
+    -webkit-box-shadow:0 1px 0 rgba(255,255,255,.3);
+    box-shadow:0 1px 0 rgba(255,255,255,.3)
+        position:relative;
+    padding:.5em 15px;
+    overflow:hidden;
+    display:block;
+    clear:both;
+    height:24px;
+    font-size:12px;
+}
+/* フッタータイトル */
+.data-role-footer h1 {
+    margin:2px;
+    padding:2px;
+    font-size:12px;
+    width:100%;
+    text-align:center;
+    padding:3px;
+}
+/* コンテンツ内ボタン */
+.data-role-button {
+    border:1px solid #ccc;
+    background:#eee;
+    font-weight:bold;
+    color:#444;
+    text-shadow:0 1px 1px #f6f6f6;
+    background-image:-moz-linear-gradient(top,#fefefe,#eee);
+    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fdfdfd),color-stop(1,#eee));
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+    text-decoration: none;
+    text-align: center;
+    padding:9px;
+    margin:5px;
+    display:block;
+}
+/* ナビゲーションバー */
+.data-role-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align:right;
+    width: 99%;
+    clear:both
+}
+/* ナビゲーションバー個別 */
+.data-role-navbar li {
+    width: 20%;
+    display:block;
+    font-size:12px;
+    color:#444;
+    text-shadow:0 1px 1px #f6f6f6;
+    background-image:-moz-linear-gradient(top,#fefefe,#eee);
+    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fdfdfd),color-stop(1,#eee));
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+/* ナビゲーションバー5分割 */
+.data-role-navbar ul.per5 li {
+    width: 20%;
+}
+/* ナビゲーションバー4分割 */
+.data-role-navbar ul.per4 li {
+    width: 25%;
+}
+/* ナビゲーションバー3分割 */
+.data-role-navbar ul.per3 li {
+    width: 33%;
+}
+/* ナビゲーションバー2分割 */
+.data-role-navbar ul.per2 li {
+    width: 50%;
+}
+/* ナビゲーションバーaタグ */
+.data-role-navbar li a {
+    color:#444;
+    width: 100%;
+    display: block;
+    border: 1px solid #cccccc;
+    text-decoration: none;
+    height: 38px;
+    padding: 10px 0 3px 0;
+}
+.data-role-navbar .data-role-clear {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+/* リスト表示 */
+ul.data-role-listview {
+    margin:0;
+    padding:0;
+}
+.data-role-listview li {
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+    margin:0;
+    padding:0;
+    background-color: #fff;
+}
+.data-role-listview li a {
+  /*  padding:5px 15px 5px 10px;*/
+    margin:0;
+    text-decoration: none;
+    text-shadow:0 1px 1px #f6f6f6;
+    color:#444;
+    /*
+      display: block;
+    background-color: #fff;
+    background-image:url(icon-right.png);
+    background-repeat:no-repeat;
+    background-position:right;
+    */
+}
+/* 検索ボックス */
+.input-type-search {
+    padding:6px 5px 6px 30px;
+    width:77%;
+    border:1px solid #ccc;
+    color:#444;
+    text-shadow:0 1px 1px #f6f6f6;
+    background-image:-moz-linear-gradient(top,#fefefe,#eee);
+    background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fdfdfd),color-stop(1,#eee));
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+    background-image:url(icon-search.png);
+    background-repeat:no-repeat;
+    background-position:5px;
+    font-size:16px;
+}
+/* ページマッパー */
+.data-role-page {
+    margin:0px;
+    padding:0px;
+    background-color:#eee;
+}
+/* コンテント本文 */
+.data-role-content {
+   /* padding:5px;*/
+    color: #333;
+    text-shadow: 0 1px 0 white;
+}

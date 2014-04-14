@@ -1,0 +1,1500 @@
+@charset "utf-8";
+/*-------------------------------------------------------
+ file name:Common.css//auth level:1//last updated: 2012/03/30
+ ------------------------------------------------------*/
+
+/*************************************
+  BASE
+*************************************/
+#header #R25_logo a,
+#header #yjlogo a,
+#header ul li a,
+#header #search form input#btn_submit,
+a.column,
+a.event,
+a.list,
+a.more,
+#no_wap #header h1 a,
+#no_wap #header h2 a,
+#no_wap #header #search form input#btn_submit,
+#header ul#hdnavi li a,
+#header ul#hdnavi li h1,
+#header ul#hdnavi li h1 a{
+background:url(http://i.yimg.jp/images/r25/images/2010/common.png) no-repeat;
+}
+
+/*gradation*/
+/*#menu,#OneColumn{background:#ffffff url(http://i.yimg.jp/images/r25/images/2009/gradation_bg01.gif) repeat-x;}*/
+
+/*red_arw*/
+#footer #sitemap li,#pullmenu .menu li,#ipop div span,#md_recome .section .backnum li{background:url(http://i.yimg.jp/images/r25/images/2010/arrow.gif) no-repeat;}
+
+/*black_arw*/
+.back p,#md_moremag .section ul.pick li dl.story dt,#md_recome .section ul.pick li dl.story dt,#md_faq p.listlnk{background:url(http://i.yimg.jp/images/r25/images/2009/arw_black.gif) no-repeat;}
+
+/*html TAGS
+--------------------------------------------*/
+html{height:100%;}
+body{color:#000;margin:0;text-align:center;height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,script{margin:0;padding:0;word-break:break-all;/* for IE */}
+table{border-collapse:collapse;border-spacing:0;text-align:left;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym {border:0;}
+hr{border:none;}
+img{vertical-align:bottom;}
+
+label{cursor:pointer;}
+
+/*Link
+--------------------------------------------*/
+a{color:#0265cb;text-decoration:none;}
+a:hover{color:#0066cc;text-decoration:underline;}
+a:visited{color:#6633cc;}
+a:active{color:#ff6600;}
+
+/*fonts
+--------------------------------------------*/
+body{font-size:13px;*font-size:82%;font-family:arial,helvetica,clean,sans-serif;}
+table{font-size:100%;}
+small{font-size:13px;*font-size:small;*font:x-small;}
+select, input, textarea {font-size:99% !important;}
+pre, code {font:13px monospace;*font-size:13px;}
+
+/*body
+--------------------------------------------*/
+body#index,body#cgm{background:#a10900 url(http://i.yimg.jp/images/r25/images/2009/bg_wine.png) repeat-y center 0;}
+body#commu{background:#f4a023 url(http://i.yimg.jp/images/r25/images/2009/bg_orange.png) repeat-y center 0;}
+body#lifemoney{background:#b18200 url(http://i.yimg.jp/images/r25/images/2009/bg_ocher.png) repeat-y center 0;}
+body#business{background:#006e8b url(http://i.yimg.jp/images/r25/images/2009/bg_indigo.png) repeat-y center 0;}
+body#society{background:#2b5804 url(http://i.yimg.jp/images/r25/images/2009/bg_green.png) repeat-y center 0;}
+body#science{background:#b00058 url(http://i.yimg.jp/images/r25/images/2009/bg_pink.png) repeat-y center 0;}
+body#trivia{background:#da2f33 url(http://i.yimg.jp/images/r25/images/2009/bg_red.png) repeat-y center 0;}
+body#culture{background:#002672 url(http://i.yimg.jp/images/r25/images/2009/bg_blue.png) repeat-y center 0;}
+body#sports{background:#793a00 url(http://i.yimg.jp/images/r25/images/2009/bg_brown.png) repeat-y center 0;}
+body#my{background:#a10900 url(http://i.yimg.jp/images/r25/images/2009/bg_wine.png) repeat-y center 0;}
+
+body#gourmet{background:#f8993a url(http://i.yimg.jp/images/r25/images/201011/bg_orange.png) repeat-y center 0;}
+body#house{background:#6eb92b url(http://i.yimg.jp/images/r25/images/201011/bg_mediumgreen.png) repeat-y center 0;}
+body#career{background:#004a98 url(http://i.yimg.jp/images/r25/images/201011/bg_mediumblue.png) repeat-y center 0;}
+
+/*lyout
+--------------------------------------------*/
+/* wapper
+----------------------*/
+#wapper{margin:0 auto;width:950px;text-align:left;overflow:hidden;/zoom:1;background-color:#fff;}
+
+/* 1column
+----------------------*/
+#OneColumn{clear:both;padding:45px 0;overflow:hidden;*zoom:1;}
+
+/* menu
+----------------------*/
+#menu{/*padding-top:6px;*/clear:both;overflow:hidden;/zoom:1;height:40px;}
+#menu #category_s{float:left;}
+#menu #category_s p{background:url(http://i.yimg.jp/images/r25/images/2010/Fushigi/common_all.png) no-repeat;text-indent:-9999px;overflow:hidden;height:40px;}
+#menu #dlmtr{background:#F5F5F5;font-size:86%;margin-top:9px;padding:3px 6px;width:638px;}
+
+
+body#commu #menu #category_s p{background-position: 0 -1064px;width: 197px;}
+body#lifemoney #menu #category_s p{background-position:0 -980px;width:155px;}
+body#business #menu #category_s p{background-position:-155px -980px;width:162px;}
+body#society #menu #category_s p{background-position:-317px -980px;width:145px;}
+body#science #menu #category_s p{background-position:-462px -980px;width:155px;}
+body#trivia #menu #category_s p{background-position:0 -1020px;width:110px;}
+body#culture #menu #category_s p{background-position:-110px -1020px;width:196px;}
+body#sports #menu #category_s p{background-position:-306px -1020px;width:183px;}
+body#my #menu #category_s p{background-position:-489px -1020px;width:119px;}
+
+/* タブ項目追加 2010/11
+----------------------------------*/
+body#gourmet #menu #category_s p,body#house #menu #category_s p,body#career #menu #category_s p
+{background:url(http://i.yimg.jp/images/r25/images/201011/common_all.png) no-repeat;}
+
+body#gourmet #menu #category_s p{background-position:0 0;width:168px;}
+body#house #menu #category_s p{background-position:-168px 0;width:90px;}
+body#career #menu #category_s p{background-position:-258px 0;width:109px;}
+
+
+
+/* contents
+----------------------*/
+#contents{background:#ffffff;margin-top:6px;clear:both;}
+
+#contents:after{content:" ";display:block;visibility:hidden;clear:both;height:0;font-size:0;line-height:0;}
+* html #contents{display:inline-block;height:1%;}
+#contents{display:block;}
+*:first-child+html #contents{zoom:1;}
+/**/
+
+/* main column
+----------------------*/
+#main{float:left;margin-right:-314px;width:100%;}
+#main #mn{margin-right:314px;/*overflow:hidden;*//zoom:1;}
+
+/* side column
+----------------------*/
+#side{clear:right;display:inline;float:right;margin-right:1px;width:300px;}
+
+/* header
+----------------------*/
+#header{position:relative;height:65px;clear:both;overflow:hidden;/zoom:1;}
+
+#header #R25_logo{position:absolute;top:3px;left:0;}
+#header #R25_logo a{display:block;background-position:-378px 0;width:217px;height:51px;text-indent:-9999px;overflow:hidden;}
+
+#header .yjmthloginarea{position:absolute;top:27px;left:246px;font-size:100%;line-height:110%;}
+#header .yjmthloginarea em,#header .yjmthloginarea strong{font-weight:bold;}
+#header .yjmthloginarea span{font-size:93%;}
+
+#header #yjlogo{position:absolute;top:4px;right:0;}
+#header #yjlogo a{display:block;background-position:-460px -80px;width:131px;height:24px;text-indent:-9999px;overflow:hidden;}
+
+#header ul{position:absolute;top:9px;right:145px;width:446px;height:13px;}
+#header ul li{float:left;margin-right:11px;}
+#header ul li a{display:block;text-indent:-9999px;overflow:hidden;height:13px;}
+#header ul li.what a{background-position:0 -80px;width:80px;}
+#header ul li.what a:hover{background-position:0 -96px;width:80px;}
+#header ul li.place a{background-position:-195px -80px;width:44px;}
+#header ul li.place a:hover{background-position:-195px -96px;width:44px;}
+#header ul li.plesent a{background-position:-250px -80px;width:72px;}
+#header ul li.plesent a:hover{background-position:-250px -96px;width:72px;}
+#header ul li.sitemap a{background-position:-330px -80px;width:60px;}
+#header ul li.sitemap a:hover{background-position:-330px -96px;width:60px;}
+#header ul li.keyword a{background-position:-400px -80px;width:52px;}
+#header ul li.keyword a:hover{background-position:-400px -96px;width:52px;}
+#header ul li.help a{background-position:-95px -80px;width:35px;}
+#header ul li.help a:hover{background-position:-95px -96px;width:35px;}
+#header ul li.rss a{background-position:0 -120px;width:37px;}
+#header ul li.rss a:hover{background-position:0 -137px;width:37px;}
+#header ul li.rss{float:right;margin:0;}
+
+#header #search{position:absolute;top:34px;right:0;width:217px;overflow:hidden;/zoom:1;}
+#header #search input.txt{color:#999999;padding:1px;width:167px;float:left;margin-right:5px;}
+#header #search form input#btn_submit{display:block;background-position:-450px -120px;width:37px;height:22px;text-indent:-9999px;overflow:hidden;float:right;border:none;cursor:pointer;}
+#header #search form input#btn_submit:hover{background-position:-450px -142px;}
+
+#header ul#hdnavi{border-right:1px dashed #ccc;position:absolute;top:34px;left:649px;margin:0;padding-right:12px;width:59px;height:22px;}
+#header ul#hdnavi li a,#header ul#hdnavi li h1{display:block;text-indent:-9999px;overflow:hidden;}
+#header ul#hdnavi li#g_cgm{margin-right:5px;}
+#header ul#hdnavi li#g_my{margin-right:0;}
+
+#header ul#hdnavi li#g_cgm a{background-position:0 -175px;width:77px;height:22px;}
+#header ul#hdnavi li#g_cgm h1{width:77px;height:22px;}
+#header ul#hdnavi li#g_cgm a:hover,#header ul#hdnavi li#g_cgm h1,#header ul#hdnavi li#g_cgm h1 a{background-position:-77px -175px;}
+
+#header ul#hdnavi li#g_my a{background-position:-154px -175px;width:59px;height:22px;}
+#header ul#hdnavi li#g_my h1{width:59px;height:22px;}
+#header ul#hdnavi li#g_my a:hover,#header ul#hdnavi li#g_my h1,#header ul#hdnavi li#g_my h1 a{background-position:-213px -175px;}
+
+.SpecialHeader{background:#fff url(http://i.yimg.jp/images/r25/g/tools/free_link/masthead_pc/masthead_pc-1355887721.png) no-repeat;}
+.SpecialHeader.r2525{background:#fff url(http://i.yimg.jp/images/r25/g/tools/free_link/masthead_pc/masthead_pc-1355887721.gif) no-repeat;}
+
+
+
+.SpecialHeader,{background-position:-950px 0 !important;}
+.SpecialHeader #R25_logo a{background:none !important;}
+#header.SpecialHeader2{background-image:none;}
+
+#header.SpecialHeader2.r2525 #R25_logo a{background:#fff url(http://i.yimg.jp/images/r25/g/tools/free_link/masthead2_pc/masthead2_pc-1364442520.gif) no-repeat;
+display: block;
+width: 217px;
+height: 51px;
+text-indent: -9999px;
+overflow: hidden;
+}
+
+
+/* global navi
+----------------------*/
+#gnavi ul{width:950px;height:40px;clear:both;overflow:hidden;/zoom:1;}
+#gnavi li{float:left;}
+#gnavi li a,#gnavi li h1 a{background:url(http://i.yimg.jp/images/r25/images/2009/gnavi.png) no-repeat;display:block;text-indent:-9999px;overflow:hidden;height:40px;}
+
+/*top*/
+#gnavi li#g_top a{background-position:0 0;width:117px;}
+#gnavi li#g_top a:hover,#gnavi li#g_top h1 a{background-position:0 -40px;width:117px;}
+/*lifemoney*/
+#gnavi li#g_lifemoney a{background-position:-117px 0;width:118px;}
+#gnavi li#g_lifemoney a:hover,#gnavi li#g_lifemoney h1 a{background-position:-117px -40px;width:118px;}
+/*business*/
+#gnavi li#g_business a{background-position:-235px 0;width:118px;}
+#gnavi li#g_business a:hover,#gnavi li#g_business h1 a{background-position:-235px -40px;width:118px;}
+/*society*/
+#gnavi li#g_society a{background-position:-353px 0;width:118px;}
+#gnavi li#g_society a:hover,#gnavi li#g_society h1 a{background-position:-353px -40px;width:118px;}
+/*science*/
+#gnavi li#g_science a{background-position:-471px 0;width:118px;}
+#gnavi li#g_science a:hover,#gnavi li#g_science h1 a{background-position:-471px -40px;width:118px;}
+/*trivia*/
+#gnavi li#g_trivia a{background-position:-589px 0;width:118px;}
+#gnavi li#g_trivia a:hover,#gnavi li#g_trivia h1 a{background-position:-589px -40px;width:118px;}
+/*culture*/
+#gnavi li#g_culture a{background-position:-707px 0;width:123px;}
+#gnavi li#g_culture a:hover,#gnavi li#g_culture h1 a{background-position:-707px -40px;width:123px;}
+/*sports*/
+#gnavi li#g_sports a{background-position:-830px 0;width:120px;}
+#gnavi li#g_sports a:hover,#gnavi li#g_sports h1 a{background-position:-830px -40px;width:120px;}
+
+
+/* global navi 2
+----------------------*/
+#gnavi2 ul{position:relative;width:950px;height:61px;background:url(http://i.yimg.jp/images/r25/images/201011/gnavi2.png) no-repeat;clear:both;overflow:hidden;/zoom:1;}
+#gnavi2 li{float:left;}
+#gnavi2 li a,#gnavi2 li h1 a{background:url(http://i.yimg.jp/images/r25/images/201011/gnavi2.png) no-repeat;display:block;text-indent:-9999px;overflow:hidden;}
+
+/*top*/
+#gnavi2 li#g_top a{background-position:0 0;width:117px;height:61px;}
+#gnavi2 li#g_top a:hover,#gnavi2 li#g_top h1 a{background-position:0 -61px;}
+/*lifemoney*/
+#gnavi2 li#g_lifemoney a{background-position:-117px 0;width:119px;height:31px;}
+#gnavi2 li#g_lifemoney a:hover,#gnavi2 li#g_lifemoney h1 a{background-position:-117px -61px;}
+/*business*/
+#gnavi2 li#g_business a{background-position:-236px 0;width:118px;height:31px;}
+#gnavi2 li#g_business a:hover,#gnavi2 li#g_business h1 a{background-position:-236px -61px;}
+/*society*/
+#gnavi2 li#g_society a{background-position:-354px 0;width:118px;height:31px;}
+#gnavi2 li#g_society a:hover,#gnavi2 li#g_society h1 a{background-position:-354px -61px;}
+/*science*/
+#gnavi2 li#g_science a{background-position:-472px 0;width:118px;height:31px;}
+#gnavi2 li#g_science a:hover,#gnavi2 li#g_science h1 a{background-position:-472px -61px;}
+/*trivia*/
+#gnavi2 li#g_trivia a{background-position:-590px 0;width:118px;height:31px;}
+#gnavi2 li#g_trivia a:hover,#gnavi2 li#g_trivia h1 a{background-position:-590px -61px;}
+/*culture*/
+#gnavi2 li#g_culture a{background-position:-708px 0;width:123px;height:31px;}
+#gnavi2 li#g_culture a:hover,#gnavi2 li#g_culture h1 a{background-position:-708px -61px;}
+/*sports*/
+#gnavi2 li#g_sports a{background-position:-831px 0;width:119px;height:31px;}
+#gnavi2 li#g_sports a:hover,#gnavi2 li#g_sports h1 a{background-position:-831px -61px;}
+
+/*gourmet*/
+#gnavi2 li#g_gourmet a{clear:left;background-position:-117px -122px;width:119px;height:30px;}
+#gnavi2 li#g_gourmet a:hover,#gnavi2 li#g_gourmet h1 a{background-position:-117px -152px;}
+/*house*/
+#gnavi2 li#g_house a{background-position:-236px -122px;width:118px;height:30px;}
+#gnavi2 li#g_house a:hover,#gnavi2 li#g_house h1 a{background-position:-236px -152px;}
+/*career*/
+#gnavi2 li#g_career a{background-position:-354px -122px;width:118px;height:30px;}
+#gnavi2 li#g_career a:hover,#gnavi2 li#g_career h1 a{background-position:-354px -152px;}
+
+
+/* add 20110415
+----------------------*/
+#gnavi2 li#g_bunner20110415 a{background:url(http://i.yimg.jp/images/r25/images/201011/gnavi_banner20110415.png) no-repeat;width:236px;height:30px;}
+#gnavi2 li#g_bunner20110415 a:hover,#gnavi2 li#g_bunner20110415 h1 a{background-position:0 -30px;}
+
+
+/* add 20111018
+----------------------*/
+#gnavi2 li#g_new{position:absolute;right:1px;bottom:1px;width:243px;height:29px;_bottom:0;}
+#gnavi2 li#g_new a{background:url(http://i.yimg.jp/images/r25/images/201011/gnavi2_new.png) no-repeat;width:243px;height:29px;}
+#gnavi2 li#g_new a:hover,#gnavi2 li#g_new h1 a{background-position:0 -29px;}
+#gnavi2 li#g_career{margin-left: 1px;}
+#gnavi2 li#g_2nd{position:absolute;right:243px;bottom:1px;width:470px;height:29px;_bottom:0;}
+#gnavi2 li#g_2nd a{background:url(http://i.yimg.jp/images/r25/images/201011/gnavi2_2nd.png) no-repeat;width:470px;height:29px;}
+
+/* add 20120104
+----------------------*/
+#gnavi2 li#g_suumo a{background:url(http://i.yimg.jp/images/r25/images/201011/gnavi2_suumo.png) no-repeat;width:118px;height:29px;}
+#gnavi2 li#g_suumo a:hover,#gnavi2 li#g_suumo h1 a{background-position:0 -29px;}
+#gnavi2 li#g_2nd_0104{position:absolute;right:243px;bottom:1px;width:352px;height:29px;_bottom:0;}
+#gnavi2 li#g_2nd_0104 a{background:url(http://i.yimg.jp/images/r25/images/201011/gnavi2_2nd_0104.png) no-repeat;width:352px;height:29px;}
+
+/* add 20120117
+----------------------*/
+#gnavi2 li#g_300gou{position:absolute;right:243px;bottom:1px;width:352px;height:29px;_bottom:0;}
+#gnavi2 li#g_300gou a{background:url(http://i.yimg.jp/images/r25/images/201011/gnavi2_300gou.png) no-repeat;width:352px;height:29px;}
+
+
+
+
+/* global navi 3
+----------------------*/
+#gnavi3 {position:relative;width:950px;height:65px;background:url(http://i.yimg.jp/images/r25/images/2012/gnavi3.png) no-repeat;}
+#gnavi3 li a,#gnavi3 li h1 a,#gnavi3 li span{background:url(http://i.yimg.jp/images/r25/images/2012/gnavi3.png) no-repeat;display:block;text-indent:-9999px;overflow:hidden;}
+#gnavi3 .main{position:relative;width:950px;height:70px;}
+#gnavi3 .main li{position:absolute;}
+
+#gnavi3 li#g_top{top:0;left:0;}
+#gnavi3 li#g_top a{background-position:0 0;width:137px;height:61px;}
+#gnavi3 li#g_top a:hover{background-position:0 -105px;}
+#gnavi3 li span{cursor:pointer;}
+#gnavi3 li span.cur{cursor:default;}
+#gnavi3 #p_special,#gnavi3 #p_serialize{display:none;}
+#gnavi3 li#g_column{top:0;left:137px;}
+#gnavi3 li#g_column span{background-position:-137px -70px;width:135px;height:35px;}
+#gnavi3 li#g_column span.cur,#gnavi3 li#g_column span.cur:hover{background-position:-137px -166px;}
+#gnavi3 li#g_column span:hover{background-position:-137px -105px;}
+#gnavi3 li#g_special,#gnavi3 li#g_serialize{display:none;}
+#gnavi3 li#g_special{top:0;left:272px;}
+#gnavi3 li#g_special span{background-position:-272px -70px;width:135px;height:35px;}
+#gnavi3 li#g_special span.cur,#gnavi3 li#g_special span.cur:hover{background-position:-272px -166px;}
+#gnavi3 li#g_special span:hover{background-position:-272px -105px;}
+#gnavi3 li#g_serialize{top:0;left:407px;}
+#gnavi3 li#g_serialize span{background-position:-407px -70px;width:136px;height:35px;}
+#gnavi3 li#g_serialize span.cur,#gnavi3 li#g_serialize span.cur:hover{background-position:-407px -166px;}
+#gnavi3 li#g_serialize span:hover{background-position:-407px -105px;}
+#gnavi3 li#g_free01{top:0;left:543px;}
+#gnavi3 li#g_free01 a{width:136px;height:35px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_free/gnavi_free-1354591786_2.png) no-repeat;}
+#gnavi3 li#g_free01 a:hover{background-image:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_free/gnavi_free-1354591786.png);}
+#gnavi3 li#g_free02{top:0;left:679px;}
+#gnavi3 li#g_free02 a{width:136px;height:35px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_free/gnavi_free-1354591877_2.png) no-repeat;}
+#gnavi3 li#g_free02 a:hover{background-image:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_free/gnavi_free-1354591877.png);}
+#gnavi3 li#g_new{top:0;left:815px;}
+#gnavi3 li#g_new a{background-position:-815px -70px;width:135px;height:35px;}
+#gnavi3 li#g_new a:hover{background-position:-815px -105px;}
+#gnavi3 li#g_new .cur,#gnavi3 li#g_new .cur:hover{background-position:-815px -166px;}
+
+
+
+#gnavi3 .sub{position:absolute;left:137px;bottom:4px;width:813px;height:26px;background:url(http://i.yimg.jp/images/r25/images/2012/gnavi3.png) no-repeat -137px -201px;overflow:hidden;/display:inline-block;}
+#gnavi3 .sub li{float:left;}
+#gnavi3 .sub li a{height:26px;}
+#gnavi3 li#g_commu a{width:103px;background-position:-955px -227px;}
+#gnavi3 li#g_commu a:hover,#gnavi3 li#g_commu a.cur{background-position:-955px -253px;}
+#gnavi3 li#g_lifemoney a{width:103px;background-position:-137px -227px;}
+#gnavi3 li#g_lifemoney a:hover,#gnavi3 li#g_lifemoney a.cur{background-position:-137px -253px;}
+#gnavi3 li#g_business a{width:101px;background-position:-240px -227px;}
+#gnavi3 li#g_business a:hover,#gnavi3 li#g_business a.cur{background-position:-240px -253px;}
+#gnavi3 li#g_society a{width:101px;background-position:-341px -227px;}
+#gnavi3 li#g_society a:hover,#gnavi3 li#g_society a.cur{background-position:-341px -253px;}
+#gnavi3 li#g_science a{width:101px;background-position:-442px -227px;}
+#gnavi3 li#g_science a:hover,#gnavi3 li#g_science a.cur{background-position:-442px -253px;}
+#gnavi3 li#g_trivia a{width:101px;background-position:-543px -227px;}
+#gnavi3 li#g_trivia a:hover,#gnavi3 li#g_trivia a.cur{background-position:-543px -253px;}
+#gnavi3 li#g_culture a{width:101px;background-position:-644px -227px;}
+#gnavi3 li#g_culture a:hover,#gnavi3 li#g_culture a.cur{background-position:-644px -253px;}
+#gnavi3 li#g_sports a{width:101px;background-position:-1066px -227px;}
+#gnavi3 li#g_sports a:hover,#gnavi3 li#g_sports a.cur{background-position:-1066px -253px;}
+#gnavi3 li#g_career a{width:102px;background-position:-846px -227px;}
+#gnavi3 li#g_career a:hover,#gnavi3 li#g_career a.cur{background-position:-846px -253px;}
+
+/*--20120402以降削除--*/
+#gnavi3 li#g_suumo a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi3_suumo.png) no-repeat;}
+#gnavi3 li#g_suumo a:hover,#gnavi3 li#g_suumo a.cur{background-position:0 -26px;}
+/*--/20120402以降削除--*/
+#gnavi3 li#g_feature a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi3_feature.png) no-repeat;}
+#gnavi3 li#g_feature a:hover,#gnavi3 li#g_feature a.cur{background-position:0 -26px;}
+
+#gnavi3 #g_feature01 a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi_sub_special-1354675239.png) no-repeat;display:block;}
+#gnavi3 #g_feature01 a:hover,#gnavi3 #g_feature01 a.cur{background-position:0 -26px;}
+#gnavi3 #g_feature02 a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi_sub_special-1354675260.png) no-repeat;display:block;}
+#gnavi3 #g_feature02 a:hover,#gnavi3 #g_feature02 a.cur{background-position:0 -26px;}
+#gnavi3 #g_feature03 a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi_sub_special-1354675273.png) no-repeat;display:block;}
+#gnavi3 #g_feature03 a:hover,#gnavi3 #g_feature03 a.cur{background-position:0 -26px;}
+#gnavi3 #g_feature04 a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi_sub_special-1354675284.png) no-repeat;display:block;}
+#gnavi3 #g_feature04 a:hover,#gnavi3 #g_feature04 a.cur{background-position:0 -26px;}
+#gnavi3 #g_feature05 a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi_sub_special-1354675298.png) no-repeat;display:block;}
+#gnavi3 #g_feature05 a:hover,#gnavi3 #g_feature05 a.cur{background-position:0 -26px;}
+#gnavi3 #g_feature06 a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi_sub_special-1354675312.png) no-repeat;display:block;}
+#gnavi3 #g_feature06 a:hover,#gnavi3 #g_feature06 a.cur{background-position:0 -26px;}
+#gnavi3 #g_feature07 a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi_sub_special-1354675328.png) no-repeat;display:block;}
+#gnavi3 #g_feature07 a:hover,#gnavi3 #g_feature07 a.cur{background-position:0 -26px;}
+#gnavi3 #g_feature08 a{width:103px;background:url(http://i.yimg.jp/images/r25/g/tools/free_link/gnavi_sub_special/gnavi_sub_special-1354675343.png) no-repeat;display:block;}
+#gnavi3 #g_feature08 a:hover,#gnavi3 #g_feature08 a.cur{background-position:0 -26px;}
+
+
+
+#gnavi3 li#g_newlife a{width:101px;background:url(http://i.yimg.jp/images/r25/images/2012/gnavi3_newlife.png) no-repeat;}
+#gnavi3 li#g_newlife a:hover,#gnavi3 li#g_newlife a.cur{background-position:0 -26px;}
+
+#gnavi3 li#g_interview a{width:103px;background-position:-137px -279px;}
+#gnavi3 li#g_interview a:hover,#gnavi3 li#g_interview a.cur{background-position:-137px -305px;}
+#gnavi3 li#g_kanojyo a{width:101px;background-position:-240px -279px;}
+#gnavi3 li#g_kanojyo a:hover,#gnavi3 li#g_kanojyo a.cur{background-position:-240px -305px;}
+#gnavi3 li#g_moteri a{width:101px;background-position:-341px -279px;}
+#gnavi3 li#g_moteri a:hover,#gnavi3 li#g_moteri a.cur{background-position:-341px -305px;}
+#gnavi3 li#g_goukon a{width:101px;background-position:-442px -279px;}
+#gnavi3 li#g_goukon a:hover,#gnavi3 li#g_goukon a.cur{background-position:-442px -305px;}
+#gnavi3 li#g_yasyoku a{width:101px;background-position:-543px -279px;}
+#gnavi3 li#g_yasyoku a:hover,#gnavi3 li#g_yasyoku a.cur{background-position:-543px -305px;}
+#gnavi3 li#g_conveni a{width:101px;background-position:-644px -279px;}
+#gnavi3 li#g_conveni a:hover,#gnavi3 li#g_conveni a.cur{background-position:-644px -305px;}
+#gnavi3 li#g_kadai a{width:101px;background-position:-745px -279px;}
+#gnavi3 li#g_kadai a:hover,#gnavi3 li#g_kadai a.cur{background-position:-745px -305px;}
+#gnavi3 li#g_event a{width:102px;background-position:-846px -279px;}
+#gnavi3 li#g_event a:hover,#gnavi3 li#g_event a.cur{background-position:-846px -305px;}
+
+
+
+/* recruitment
+----------------------*/
+#recruitment{background:url(http://i.yimg.jp/images/r25/images/2009/recruitment_bg_normal.gif) no-repeat 0 0;margin-top:30px;width:950px;height:201px;position:relative;}
+#recruitment p{position:absolute;top:23px;left:65px;padding:7px 0 0 8px;width:196px;height:138px;}
+
+/* footer
+----------------------*/
+#footer{margin-top:20px;margin-bottom:30px;clear:both;}
+
+#footer h5{background:url(http://i.yimg.jp/images/r25/images/2009/line_gray02.gif) repeat-x 0 100%;padding-bottom:7px;overflow:hidden;/zoom:1;}
+#footer h5 span{display:block;float:left;text-indent:-9999px;overflow:hidden;height:12px;}
+
+/*keyword link*/
+#footer #key{color:#7fb2e5;}
+#footer #key h5 span{background:url(http://i.yimg.jp/images/r25/images/2009/commu_footer.png) no-repeat 0 0;width:100px;}
+#footer #key p{padding:5px 13px;}
+#footer #key p span{margin-left:15px;white-space:nowrap;}
+
+/*official partner*/
+#footer #partner{margin-top:25px;}
+#footer #partner h5 span{background:url(http://i.yimg.jp/images/r25/images/2009/commu_footer.png) no-repeat -200px 0;width:160px;}
+#footer #partner table{margin:15px 0 20px 0;}
+#footer #partner td{padding:3px 10px;vertical-align:top;width:170px;}
+#footer #partner dt{text-align:center;vertical-align:middle;margin-bottom:5px;height:30px;}
+#footer #partner dd{text-align:center;}
+
+/*sitemap*/
+#footer #sitemap{background:url(http://i.yimg.jp/images/r25/images/2009/ft_sitemap_bg.gif) no-repeat 100% 100%;overflow:hidden;/zoom:1;}
+#footer #sitemap h5{border:none !important;clear:both;height:13px;margin-bottom:10px;text-indent:-9999px;overflow:hidden;padding:0;}
+#footer #sitemap td{width:212px;vertical-align:top;padding:0 10px;}
+
+#footer #sitemap td#won,#footer #sitemap td#clm,#footer #sitemap td#ser,#footer #sitemap td#link{background:url(http://i.yimg.jp/images/r25/images/2009/line_gray03.gif) repeat-y 100% 0;}
+#footer #sitemap td#won h5,#footer #sitemap td#clm h5,#footer #sitemap td#ser h5,#footer #sitemap td#link h5,#footer #sitemap td#mag h5{background:url(http://i.yimg.jp/images/r25/images/2009/commu_footer.png) no-repeat;}
+#footer #sitemap td#won h5{background-position:0 -15px;width:67px;}
+#footer #sitemap td#clm h5{background-position:-80px -15px;width:53px;}
+#footer #sitemap td#ser h5{background-position:-150px -15px;width:48px;}
+#footer #sitemap td#link h5{background-position:-220px -15px;width:109px;}
+#footer #sitemap td#mag h5{background-position:-350px -15px;width:133px;}
+
+#footer #sitemap li{background-position:0 5px;padding:0 0 3px 10px;}
+/*txtlink*/
+#footer #txtlink{margin-top:20px;text-align:center;overflow:hidden;/zoom:1;}
+#footer #txtlink address{color:#333333;font-size:93%;}
+
+/*************************************
+  AD
+*************************************/
+/* PR
+----------------------*/
+#PR p,#main .ad_PR li{background:url(http://i.yimg.jp/images/r25/images/2009/icon_pr.gif) no-repeat;}
+#PR{padding:5px 0;}
+#PR p{background-position:0 3px;*background-position:0 2px;font-size:100%;padding-left:20px;}
+
+/* LREC
+----------------------*/
+#contents #adLREC{position:relative;float:right;width:300px;margin-bottom:5px;}
+#contents #adLREC dt{color:#999999;font-size:93%;width:300px;height:18px;text-align:center;padding-top:2px;}
+#contents #adLREC dd{text-align:center;}
+
+/* PR module
+----------------------*/
+#main .splogo{float:right;width:99px;margin-left:10px;}
+#main .ad_PR{margin:10px auto 0 auto;}
+#main .ad_PR ul{margin:0 auto;width:450px;}
+#main .ad_PR li{background-position:0 0.2em;*background-position:0 0.1em;*margin-top:3px;font-size:100%;padding-left:20px;}
+
+/* IM
+----------------------*/
+.ad_IM{clear:both;margin:0 auto;padding:15px 0 5px 15px;}
+.ad_IM div div{border:none !important;}
+.ad_IM dt{font-size:14px !important;}
+.ad_IM p a{color:#4176CE !important;}
+.ad_IM p a span{text-decoration:none !important;}
+
+/* PR keyword
+----------------------*/
+.PR_key{clear:both;margin:10px auto;width:590px;}
+.PR_key a{text-decoration:underline !important;}
+
+/* Pirot Vision
+----------------------*/
+.ad_pv{clear:both;padding:5px 0;text-align:center;}
+
+/* sticchar
+----------------------*/
+.AdsBy{color:#999;font-size:89%;padding-top:3px;text-align:right;}
+
+/* SQB
+----------------------*/
+.adSPSQB{margin-top:10px;}
+.adSPSQB td td td b a{font-size:123%;}
+.adSPSQB td td td small b a{font-size:100%;}
+
+.adSPSQB td{*line-height:1.0;}
+
+/*************************************
+  notice
+*************************************/
+/* EMG
+----------------------*/
+#EMG{text-align:center;padding-top:0.3em;font-size:17px;}
+#EMG div{display:block;margin-bottom:15px;}
+#EMG div tr.yjEmgDate td b,#EMG div tr.yjEmg2Date td b,#EMG div tr.yjEmg3Date td b{font-size:108%;}
+#EMG div table{margin:0 auto;}
+
+/*EMG3*/
+#EMG strong,#EMG span{display:inline;font-weight:normal;}
+#EMG p.emgFrame{text-align:left;padding:0.3em 0.8em;border:2px solid #141452;margin:0;font-weight:normal;}
+/* Mac IE \*//*/
+#EMG div p.emgFrame{display:block;width:43em;margin:0 auto;}
+/* Mac IE */
+
+/* except Mac IE \*/
+#EMG div p.emgFrame{display:inline;line-height:2em;}
+/* except Mac */
+
+#EMG span{width:9999px;position:absolute;left:-9999px;}
+#EMG strong{font-weight:bold;color:#cc0000;}
+
+
+/* APOLOGY
+----------------------*/
+#APOLOGY{border:2px solid #FF0000;color:#FF0000;font-weight:bold;margin:10px auto;padding:20px 0;text-align:center;width:600px;}
+
+/*************************************
+  COMMON
+*************************************/
+/* rating
+--------------------------------------------*/
+p.star_LL_all,p.star_LL_half,p.star_LL_zero,p.star_L_all,p.star_L_half,p.star_L_zero,p.star_M_all,p.star_M_half,p.star_M_zero,p.star_S_all,p.star_S_half,p.star_S_zero{background:url(http://i.yimg.jp/images/r25/images/2009/rating_star.gif) no-repeat;display:block;text-indent:-9999px;overflow:hidden;float:left;margin-right:1px;}
+
+p.star_LL_all,p.star_LL_half,p.star_LL_zero{width:19px;height:18px;}
+p.star_LL_all{background-position:0 0;}
+p.star_LL_half{background-position:-20px 0;}
+p.star_LL_zero{background-position:-40px 0;}
+
+
+p.star_L_all,p.star_L_half,p.star_L_zero{width:15px;height:15px;}
+p.star_L_all{background-position:-70px 0;}
+p.star_L_half{background-position:-90px 0;}
+p.star_L_zero{background-position:-110px 0;}
+
+p.star_M_all,p.star_M_half,p.star_M_zero{width:13px;height:12px;}
+
+p.star_M_all{background-position:-130px 0;}
+p.star_M_half{background-position:-150px 0;}
+p.star_M_zero{background-position:-170px 0;}
+
+p.star_S_all,p.star_S_half,p.star_S_zero{width:11px;height:10px;}
+p.star_S_all{background-position:-190px 0;}
+p.star_S_half{background-position:-205px 0;}
+p.star_S_zero{background-position:-220px 0;}
+
+/* page
+--------------------------------------------*/
+#PageList{
+margin:15px auto 0 auto;
+}
+
+#PageList ul{
+overflow:hidden;
+/zoom:1;
+text-align:center;
+}
+
+#PageList li{
+display:inline;
+font-size:100%;
+padding:1px;
+text-align:center;
+}
+
+#PageList li a{
+border:solid 1px #cdcdcd;
+color:#333333 !important;
+text-decoration:none;
+padding:0.3em 0.55em 0.3em 0.55em;
+}
+
+#PageList li a:hover{
+border:solid 1px #cdcdcd;
+background:#f5f5f5;
+}
+
+#PageList li img{
+vertical-align:-12px;
+}
+
+#PageList li em{
+background:#f5f5f5;
+border:solid 1px #cdcdcd;
+color:#333333;
+padding:0.3em 0.55em 0.3em 0.55em;
+}
+
+#PageList li.prev a,
+#PageList li.next a,
+#PageList li.prev a:hover,
+#PageList li.next a:hover{
+padding:0;
+border:none;
+background:none;
+}
+
+#PageList li.prev{
+margin:0 20px 0 0;
+padding:0;
+}
+
+#PageList li.next{
+margin:0 0 0 20px;
+padding:0;
+}
+
+#PageList p.pagenum{clear:both;color:#999;margin-top:10px;text-align:center;}
+
+.pagenum{clear:both;margin:5px 0;text-align:right;}
+.pagenum em{font-weight:bold;}
+
+
+/* タブ項目追加 2010/11
+----------------------------------*/
+/* artcl_pagelist
+--------------------------------------------*/
+.artcl_pagelist{margin:10px auto 20px;}
+.artcl_pagelist ul{overflow:hidden;/zoom:1;text-align:center;}
+.artcl_pagelist li{display:inline;font-size:100%;padding:1px;text-align:center;}
+.artcl_pagelist li a{border:solid 1px #cdcdcd;color:#333333 !important;text-decoration:none;padding:0.3em 0.55em 0.3em 0.55em;}
+.artcl_pagelist li a:hover{border:solid 1px #cdcdcd;background:#f5f5f5;}
+.artcl_pagelist li img{vertical-align:-12px;}
+.artcl_pagelist li em{background:#f5f5f5;border:solid 1px #cdcdcd;color:#333333;padding:0.3em 0.55em 0.3em 0.55em;}
+.artcl_pagelist li.prev a,
+.artcl_pagelist li.next a,
+.artcl_pagelist li.prev a:hover,
+.artcl_pagelist li.next a:hover{padding:0;border:none;background:none;}
+.artcl_pagelist li.prev{margin:0 20px 0 0;padding:0;}
+.artcl_pagelist li.next{margin:0 0 0 20px;padding:0;}
+.artcl_pagelist p.pagenum{clear:both;color:#999;margin-top:10px;text-align:center;}
+
+/* リストページ用バナー
+----------------------------------*/
+.list_banner{margin-top:15px;}
+
+
+
+
+/* plugin
+--------------------------------------------*/
+.plugin{border:1px solid #cccccc;margin-top:15px;padding:5px;overflow:hidden;/zoom:1;}
+.plugin p{font-size:93%;}
+.plugin span{float:right;margin-left:5px;}
+
+/* error + no match
+--------------------------------------------*/
+.error,.nomatch{border:1px dashed #A10900;color:#A10900;font-weight:bold;padding:10px;text-align:center;width:570px;}
+.error{font-size:93%;margin:10px auto;}
+.nomatch{font-size:115%;margin:100px auto;}
+.nomatch strong{display:block;margin-top:15px;}
+#side .error,#side .nomatch{width:220px;}
+
+/* explanation
+--------------------------------------------*/
+.exp_clip{clear:both;padding: 10px 0px 20px 0px;/margin-bottom: 50px;}
+.exp_clip {clear:both; /padding: 10px 0px 20px 0px; }
+
+
+.exp_clip .lClm{float: left;width:280px;}
+.exp_clip .rClm{float: right;width: 295px;}
+
+.exp_clip p{margin-top:5px;margin-right:0px;float:right;}
+.exp_clip img{vertical-align:middle;margin-right:3px;}
+
+/* button
+--------------------------------------------*/
+/*backtop*/
+.back{
+clear:both;
+margin-top:15px;
+overflow:hidden;
+/zoom:1;
+}
+.back p{
+background-position:100% 0.1em;
+*background-position:100% 0;
+float:right;
+font-size:100%;
+padding-right:15px;
+}
+.back em{font-weight:normal;}
+
+a.column,a.event,a.list,a.more{display:block;text-indent:-9999px;overflow:hidden;}
+/*最新コラム一覧へ*/
+a.column{background-position:-100px -120px;width:87px;height:17px;}
+a.column:hover{background-position:-100px -137px;}
+/*特集一覧へ*/
+a.event{background-position:-350px -120px;width:65px;height:17px;}
+a.event:hover{background-position:-350px -137px;}
+/*一覧へ*/
+a.list{background-position:-250px -120px;width:45px;height:17px;}
+a.list:hover{background-position:-250px -137px;}
+/*もっと見る*/
+a.more{background-position:-500px -120px;width:63px;height:17px;}
+a.more:hover{background-position:-500px -137px;}
+
+a.witty,a.cntbt,input.vote,a.result,a.faq_aswr,a.faq_vote,a.faq_best,a.faq_list,input.decide{background:url(http://i.yimg.jp/images/r25/images/2010/btn_action.png) no-repeat;display:block;text-indent:-9999px;overflow:hidden;}
+/*面白かった？*/
+a.witty{background-position:-560px 0;width:116px;height:32px;}
+a.witty:hover{background-position:-560px -32px;}
+/*投稿する*/
+a.cntbt{background-position:-420px 0;width:116px;height:32px;}
+a.cntbt:hover{background-position:-420px -32px;}
+/*投票する*/
+input.vote{background-position:-170px 0;width:116px;display:block;height:32px;border:none;cursor:pointer;}
+input.vote:hover{background-position:-170px -32px;}
+/*結果を見る*/
+a.result{background-position:-300px 0;width:116px;height:32px;}
+a.result:hover{background-position:-300px -32px;}
+/*決定*/
+input.decide{background-position:0 -204px;width:177px;height:41px;border:none;cursor:pointer;}
+input.decide:hover{background-position:-177px -204px;}
+
+a.clip,span.clip,input.allclip,input.allremove,a.clipdel,input.clipdel,span.clipdel,input.allclipdel,span.allclipdel,a.tnsmit,input.alltnsmit,input.allcheck,a.hatena,a.livedoor,a.buzzurl,a.yahoo,a.help{background:url(http://i.yimg.jp/images/r25/images/2009/btn_set.png) no-repeat;display:block;text-indent:-9999px;overflow:hidden;}
+input.allclip,input.allclipdel,input.alltnsmit,input.allcheck,input.allremove,input.clipdel{border:none;cursor:pointer;*margin-top:0 !important;}
+
+/*クリップ*/
+a.clip{background-position:0 0;width:14px;height:14px;}
+a.clip:hover{background-position:0 -14px;}
+span.clip{background-position:0 0;display:inline-block;width:14px;height:14px;*text-indent:0;*height:0;*padding-top:14px;}
+/*一括クリップ*/
+input.allclip{background-position:-200px 0;width:75px;height:14px;}
+/*クリップ削除*/
+a.clipdel{background-position:-20px 0;width:15px;height:14px;}
+a.clipdel:hover{background-position:-20px -14px;}
+input.clipdel{background-position:-20px 0;width:15px;height:14px;display:inline-block;vertical-align:middle;*vertical-align:text-bottom;margin-left:2px;}
+input.clipdel:hover{background-position:-20px -14px;}
+span.clipdel{background-position:-20px 0;display:inline-block;width:15px;height:14px;*text-indent:0;*height:0;*padding-top:14px;}
+/*一括クリップ削除*/
+input.allclipdel{background-position:-200px -14px;width:63px;height:14px;}
+span.allclipdel{background-position:-200px -14px;display:inline-block;width:63px;height:14px;*text-indent:0;*height:0;*padding-top:14px;}
+/*送信*/
+a.tnsmit{background-position:-50px 0;width:15px;height:14px;}
+a.tnsmit:hover{background-position:-50px -14px;}
+/*一括送信*/
+input.alltnsmit{background-position:-300px 0;width:60px;height:14px;}
+/*すべて選択*/
+input.allcheck{background-position:-403px 0;width:55px;height:14px;}
+/*すべて解除*/
+input.allremove{background-position:-403px -14px;width:55px;height:14px;}
+/*はてなブックマーク*/
+a.hatena{background-position:-100px 0;width:16px;height:16px;margin-left: 5px;}
+/*livedoorクリップ*/
+a.livedoor{background-position:-120px 0;width:16px;height:16px;}
+/*Buzzurlブックマーク*/
+a.buzzurl{background-position:-140px 0;width:16px;height:16px;}
+/*Yahoo!ブックマーク*/
+a.yahoo{background-position:-160px 0;width:16px;height:16px;}
+/*ヘルプ*/
+a.help{background-position:-380px -13px;width:13px;height:15px;}
+
+.btnset{/*float:right;overflow:hidden;*//zoom:1;}
+.btnset p{float:left;margin-left:5px;}
+.btnset input{*margin-top:-4px;}
+.btnset p.rss{border-left:1px dashed #cccccc;border-right:1px dashed #cccccc;padding:2px 4px;}
+.btnset p.rss a{background:url(http://i.yimg.jp/images/r25/images/2009/btn_set.png) no-repeat -180px -2px;display:block;text-indent:-9999px;overflow:hidden;width:13px;height:13px;}
+
+/* icon
+--------------------------------------------*/
+.new,.within,.newissue,.life_inked,.biz_inked,.seiji_inked,.it_inked,.triv_inked,.cult_inked,.sports_inked,.life_RxR,.biz_RxR,.seiji_RxR,.it_RxR,.triv_RxR,.cult_RxR,.sports_RxR,.life_WxR,.biz_WxR,.seiji_WxR,.it_WxR,.triv_WxR,.cult_WxR,.sports_WxR,.life_net,.biz_net,.seiji_net,.it_net,.triv_net,.cult_net,.sports_net,.life_girls,.biz_eco,.it_science,.it_tv,.cult_chiva,.cult_prem,.life_wonder,.biz_wonder,.seiji_wonder,.it_wonder,.triv_wonder,.cult_wonder,.sports_wonder,.rxr_life,.rxr_seiji,.rxr_keizai,.rxr_zatsu,.rxr_sports,.rxr_enterm,.rxr_shakai,.rxr_it,.lxr_life,.lxr_seiji,.lxr_keizai,.lxr_zatsu,.lxr_sports,.lxr_enterm,.lxr_shakai,.lxr_game,.lxr_music,.lxr_movie,.lxr_event,.lxr_goods,.commu_WxR{background:url(http://i.yimg.jp/images/r25/images/2009/icon.png) no-repeat;text-indent:-9999px;overflow:hidden;}
+
+.new,.within,.newissue{display:inline-block;vertical-align:text-top;}
+head~/* */body .new,head~/* */body .within,head~/* */body .newissue{vertical-align:middle;}/*for IE8*/
+html:not(:target) .new,html:not(:target) .within,html:not(:target) .newissue{vertical-align:text-top;}
+
+/*NEW*/
+.new{background-position:-35px 0;width:41px;height:20px;}
+/*好評連載中*/
+.within{background-position:-80px 0;width:72px;height:22px;}
+/*最新号*/
+.newissue{background-position:-35px -570px;width:80px;height:22px;}
+
+.life_inked,.biz_inked,.seiji_inked,.it_inked,.triv_inked,.cult_inked,.sports_inked,.life_RxR,.biz_RxR,.seiji_RxR,.it_RxR,.triv_RxR,.cult_RxR,.sports_RxR,.life_WxR,.biz_WxR,.seiji_WxR,.it_WxR,.triv_WxR,.cult_WxR,.sports_WxR,.life_net,.biz_net,.seiji_net,.it_net,.triv_net,.cult_net,.sports_net,.life_girls,.biz_eco,.it_science,.it_tv,.cult_chiva,.cult_prem,.life_wonder,.biz_wonder,.seiji_wonder,.it_wonder,.triv_wonder,.cult_wonder,.sports_wonder,.commu_WxR{display:inline-block;vertical-align:middle;margin-right:2px;width:38px;height:21px;*height:0;*text-indent:0;*padding-top:21px;}
+
+/*つながる*/
+.life_inked{background-position:-35px -30px;}
+.biz_inked{background-position:-35px -155px;}
+.seiji_inked{background-position:-35px -280px;}
+.it_inked{background-position:-35px -380px;}
+.triv_inked{background-position:-80px -30px;}
+.cult_inked{background-position:-80px -130px;}
+.sports_inked{background-position:-80px -280px;}
+/*R×R*/
+.life_RxR{background-position:-35px -55px;}
+.biz_RxR{background-position:-35px -180px;}
+.seiji_RxR{background-position:-35px -305px;}
+.it_RxR{background-position:-35px -405px;}
+.triv_RxR{background-position:-80px -55px;}
+.cult_RxR{background-position:-80px -155px;}
+.sports_RxR{background-position:-80px -305px;}
+/*W×R*/
+.commu_WxR{background-position:-35px -600px;}
+.life_WxR{background-position:-35px -80px;}
+.biz_WxR{background-position:-35px -205px;}
+.seiji_WxR{background-position:-35px -330px;}
+.it_WxR{background-position:-35px -430px;}
+.triv_WxR{background-position:-80px -80px;}
+.cult_WxR{background-position:-80px -180px;}
+.sports_WxR{background-position:-80px -330px;}
+/*ネット*/
+.life_net{background-position:-35px -105px;}
+.biz_net{background-position:-35px -230px;}
+.seiji_net{background-position:-35px -355px;}
+.it_net{background-position:-35px -455px;}
+.triv_net{background-position:-80px -105px;}
+.cult_net{background-position:-80px -205px;}
+.sports_net{background-position:-80px -355px;}
+/*女子*/
+.life_girls{background-position:-35px -130px;}
+/*経済学*/
+.biz_eco{background-position:-35px -255px;}
+/*理科学*/
+.it_science{background-position:-35px -480px;}
+/*TV番組*/
+.it_tv{background-position:-35px -505px;}
+/*男気*/
+.cult_chiva{background-position:-80px -230px;}
+/*PremireR25*/
+.cult_prem{background-position:-80px -255px;}
+/*不思議*/
+.life_wonder{background-position:-80px -380px;}
+.biz_wonder{background-position:-80px -405px;}
+.seiji_wonder{background-position:-80px -530px;}
+.it_wonder{background-position:-80px -430px;}
+.triv_wonder{background-position:-80px -505px;}
+.cult_wonder{background-position:-80px -480px;}
+.sports_wonder{background-position:-80px -455px;}
+
+.rxr_life,.rxr_seiji,.rxr_keizai,.rxr_zatsu,.rxr_sports,.rxr_enterm,.rxr_shakai,.rxr_it,.lxr_life,.lxr_seiji,.lxr_keizai,.lxr_zatsu,.lxr_sports,.lxr_enterm,.lxr_shakai,.lxr_game,.lxr_music,.lxr_movie,.lxr_event,.lxr_goods{display:inline-block;vertical-align:middle;margin-right:2px;width:33px;height:26px;*height:0;*text-indent:0;*padding-top:26px;}
+
+/*ライフ*/
+.rxr_life{background-position:0 0;}
+.lxr_life{background-position:0 -240px;}
+/*政治*/
+.rxr_seiji{background-position:0 -30px;}
+.lxr_seiji{background-position:0 -270px;}
+/*経済*/
+.rxr_keizai{background-position:0 -60px;}
+.lxr_keizai{background-position:0 -300px;}
+/*雑学*/
+.rxr_zatsu{background-position:0 -90px;}
+.lxr_zatsu{background-position:0 -330px;}
+/*スポーツ*/
+.rxr_sports{background-position:0 -120px;}
+.lxr_sports{background-position:0 -360px;}
+/*エンタメ*/
+.rxr_enterm{background-position:0 -150px;}
+.lxr_enterm{background-position:0 -390px;}
+/*社会*/
+.rxr_shakai{background-position:0 -180px;}
+.lxr_shakai{background-position:0 -420px;}
+/*IT*/
+.rxr_it{background-position:0 -210px;}
+/*ゲーム*/
+.lxr_game{background-position:0 -450px;}
+/*音楽*/
+.lxr_music{background-position:0 -480px;}
+/*映画*/
+.lxr_movie{background-position:0 -510px;}
+/*イベント*/
+.lxr_event{background-position:0 -540px;}
+/*グッズ*/
+.lxr_goods{background-position:0 -570px;}
+
+
+/* タブ項目追加 2010/11
+----------------------------------*/
+.gourmet_WxR,.house_WxR,.career_WxR{background:url(http://i.yimg.jp/images/r25/images/201011/icon.png) no-repeat;text-indent:-9999px;overflow:hidden;}
+.gourmet_WxR,.house_WxR,.career_WxR{display:inline-block;vertical-align:middle;margin-right:2px;width:38px;height:21px;*height:0;*text-indent:0;*padding-top:21px;}
+
+/*W×R*/
+.gourmet_WxR{background-position:0 0;}
+.house_WxR{background-position:-38px 0;}
+.career_WxR{background-position:-76px 0;}
+
+
+
+
+
+/* title - 各カテゴリテーマ
+--------------------------------------------*/
+#themetitle h2{width:636px;height:200px;text-indent:-9999px;overflow:hidden;}
+#themetitle_sb{background:url(http://i.yimg.jp/images/r25/images/2009/theme_sb_bg.png) no-repeat;width:636px;height:80px;padding-bottom:8px;position:relative;}
+#themetitle_sb h2{position:absolute;top:30px;left:25px;font-size:20px;font-family:"HGS創英角ｺﾞｼｯｸUB";line-height:100% !important;}
+#themetitle_sb h2 a:hover{text-decoration:none !important;}
+#themetitle_sb p{position:absolute;top:21px;left:436px;width:40px;height:40px;}
+#themetitle_sb dl{position:absolute;top:21px;left:482px;}
+#themetitle_sb dt{background:url(http://i.yimg.jp/images/r25/images/2009/theme_sb_personality.png) no-repeat;text-indent:-9999px;overflow:hidden;width:93px;height:16px;}
+#themetitle_sb dd{margin-top:5px;}
+
+/* EMMA
+--------------------------------------------*/
+.EMMAbtn{float:right;clear:right;}
+
+/*************************************
+  JAVASCRIPT
+*************************************/
+/*pulldown menu*/
+#pullmenu{position:relative;}
+#pullmenu p a{display:block;text-indent:-9999px;overflow:hidden;height:27px;}
+#pullmenu .menu{padding-bottom:10px;display:none;position:absolute;top:27px;left:0;}
+#pullmenu .menu ul{padding:3px 7px 0 10px;}
+#pullmenu .menu li{background-position:0 8px;border-top:1px dashed #bbb;padding:3px 0 3px 7px; text-align:left;}
+#pullmenu .menu li.top{border:none !important;}
+
+/*pulldown menu_jsoff*/
+#pullmenu select{position:absolute;top:0;right:2px;}
+
+/*clip*/
+#ipop{
+background:url(http://i.yimg.jp/images/r25/images/2009/clip_bg.png) no-repeat 0 0;
+font-size:13px;
+padding:0;
+width:308px;
+height:162px;
+position:absolute;
+display:none;
+z-index:9999;
+}
+*html #ipop{background:url(http://i.yimg.jp/images/r25/images/2009/clip_bg_ie6.png) no-repeat 0 0 !important;}/*for IE6*/
+
+p#ipop_title{
+height:30px;
+cursor:move;
+text-indent:-9999px;
+overflow:hidden;
+}
+
+p#ipop_close,p#ipop_close:hover{background:url(http://i.yimg.jp/images/r25/images/2009/clip_btn_close.png) no-repeat;}
+
+p#ipop_close{
+background-position:0 0;
+cursor:pointer;
+float:right;
+margin:6px 14px 0 0;
+display:block;
+text-indent:-9999px;
+overflow:hidden;
+width:18px;
+height:18px;
+}
+*html p#ipop_close{margin:6px 8px 0 0;}/*for IE6*/
+p#ipop_close:hover{background-position:0 -18px;}
+
+#ipop div{margin:15px 27px 20px 20px;height:97px;position:relative;}
+#ipop .ok,#ipop .ng{background:url(http://i.yimg.jp/images/r25/images/2009/clip_bg_cnts.gif) no-repeat;}
+#ipop .ok{background-position:0 bottom;text-align:center;}
+#ipop .ng{background-position:0 0;text-align:left;}
+#ipop div span{position:absolute;bottom:0;right:0;background-position:0 6px;padding-left:8px;}
+
+/*clip_jsoff*/
+#clipoff,#clipoff dt,#clipoff dd a,#cliplogoff{background:url(http://i.yimg.jp/images/r25/images/2009/clip_off.png) no-repeat;}
+
+#clipoff{background-position:0 0;margin:10px auto;width:320px;height:34px;}
+#clipoff dl{position:relative;height:34px;}
+#clipoff dt{background-position:0 -40px;text-indent:-9999px;overflow:hidden;width:192px;height:11px;position:absolute;top:12px;left:14px;}
+#clipoff dd{position:absolute;top:3px;right:13px;}
+#clipoff dd a{background-position:0 -60px;display:block;text-indent:-9999px;overflow:hidden;width:96px;height:28px;}
+#clipoff dd a:hover{background-position:-96px -60px;}
+
+/*clip_notlogin*/
+#cliplogoff{background-position:0 0;margin:10px auto;overflow:hidden;/zoom:1;width:320px;height:34px;}
+#cliplogoff p{color:#A10900;display:table-cell;font-size:78%;font-weight:bold;height:34px;text-align:center;vertical-align:middle;width:320px;*padding-top:8px;}
+
+/*************************************
+  MODULE
+*************************************/
+
+#md_moremag .title,body#index #md_moremag .title,body#my #md_moremag .title,#md_recome .title,#md_faq .title{background:url(http://i.yimg.jp/images/r25/images/2010/title.png) no-repeat;}
+#md_moremag .section,#md_recome .section,#md_faq .section{background:url(http://i.yimg.jp/images/r25/images/2009/Index/section_bg.gif) repeat-x 0 0;}
+
+#md_moremag .section ul.pick li p.pic,#md_recome .section ul.pick li p.pic{background:url(http://i.yimg.jp/images/r25/images/2009/background_gray01.gif);}
+
+#md_moremag .section ul.pick li div,#md_recome .section ul.pick li div,.faq .list .info,.faq .dtl dl.best{background:url(http://i.yimg.jp/images/r25/images/2009/line_gray01.gif) repeat-x;}
+
+/* interest - 気になる
+--------------------------------------------*/
+#md_moremag{overflow:hidden;/zoom:1;margin-top:15px;}
+
+#md_moremag .title{background-position:0 -390px;height:40px;}
+#md_moremag h3{*cursor:default;text-indent:-9999px;overflow:hidden;width:263px;height:38px;}
+
+body#index #md_moremag .title,body#my #md_moremag .title{background-position:0 -330px;height:40px;}
+body#index #md_moremag h3,body#my #md_moremag h3{text-indent:-9999px;overflow:hidden;width:261px;height:38px;}
+
+#md_moremag .section ul.pick li{position:relative;padding-top:15px;overflow:hidden;/zoom:1;}
+
+#md_moremag .section ul.pick li p.pic{background-position:0 0;background-repeat:repeat;float:left;padding:1px;}
+#md_moremag .section ul.pick li p.pic img{border:1px solid #ffffff;}
+
+#md_moremag .section ul.pick li div,
+#md_moremag .section ul.pick li dl.story{margin-left:150px;}
+
+#md_moremag .section ul.pick li div{background-position:0 100%;background-repeat:repeat-x;padding-bottom:2px;overflow:hidden;/zoom:1;}
+#md_moremag .section ul.pick li div p.ttl{float:left;font-size:93%;}
+#md_moremag .section ul.pick li div p.day{float:right;font-size:93%;}
+#md_moremag .section ul.pick li dl.story{margin-top:10px;}
+
+#md_moremag .section ul.pick li dl.story dt{
+background-position:0 3px;
+font-size:131%;
+font-weight:bold;
+padding-left:18px;
+/zoom:1;
+}
+#md_moremag .section ul.pick li dl.story dd{margin-top:3px;}
+
+#md_moremag span.new{margin-left:3px;}
+#md_moremag .btnset{background:none !important;margin:10px 0 0 0 !important;padding:0 !important;}
+
+/* recommend - 編集部オススメ
+--------------------------------------------*/
+#md_recome{overflow:hidden;/zoom:1;margin-top:15px;}
+#md_recome .title{background-position:0 -210px;height:35px;overflow:hidden;/zoom:1;}
+#md_recome h3{float:left;text-indent:-9999px;overflow:hidden;width:176px;height:33px;}
+
+#md_recome .section ul.pick li{position:relative;padding-top:15px;overflow:hidden;/zoom:1;}
+
+#md_recome .section ul.pick li p.pic{background-position:0 0;background-repeat:repeat;float:left;padding:1px;}
+#md_recome .section ul.pick li p.pic img{border:1px solid #ffffff;width:136px;}
+
+#md_recome .section ul.pick li div,#md_recome .section ul.pick li dl.story{margin-left:150px;}
+#md_recome .section ul.pick li div,.faq .list .info{background-position:0 100%;padding-bottom:2px;overflow:hidden;/zoom:1;}
+#md_recome .section ul.pick li div p.ttl{float:left;font-size:93%;}
+#md_recome .section ul.pick li div p.day{float:right;font-size:93%;}
+
+#md_recome .section ul.pick li dl.story{margin-top:10px;}
+#md_recome .section ul.pick li dl.story dt{background-position:0 3px;font-size:131%;font-weight:bold;padding-left:18px;/zoom:1;}
+#md_recome .section ul.pick li dl.story dd{margin-top:3px;}
+
+#md_recome span.new{margin-left:3px;}
+
+#md_recome .section .backnum{clear:both;overflow:hidden;/zoom:1;}
+#md_recome .section .backnum ul{float:left;margin-top:15px;}
+#md_recome .section .backnum li{background-position:0 4px;padding:0 6px 0 8px;width:300px;}
+
+#md_recome .btnset{background:none !important;margin:10px 0 0 0 !important;padding:0 !important;}
+
+/* お知らせ
+--------------------------------------------*/
+.mdl_news{background:#efefef;border:1px solid #cccccc;margin-top:20px;padding:0 10px 10px 0;}
+.mdl_news dl{background:url(http://i.yimg.jp/images/r25/images/2009/news_bg.gif) no-repeat 0 0;margin:-10px 0 0 10px;padding:25px 0 0 47px;}
+.mdl_news dt{background:url(http://i.yimg.jp/images/r25/images/2009/news_title.gif) no-repeat 0 0;text-indent:-9999px;overflow:hidden;width:52px;height:11px;margin-bottom:6px;}
+.mdl_news dd{font-size:93%;color:#333333;padding-bottom:10px;}
+/*for IE6*/
+*html .mdl_news{zoom:1;}
+*html .mdl_news dl{position:relative;}
+
+/* QandA
+--------------------------------------------*/
+#md_faq{color:#333;margin-top:15px;overflow:hidden;/zoom:1;}
+#md_faq .title{background-position:0 -1042px;height:42px;}
+#md_faq .title h3{text-indent:-9999px;overflow:hidden;width:289px;height:42px;}
+#md_faq .section{margin-top:1px;padding-top:15px;}
+#md_faq p.listlnk{background-position:0 0.02em;clear:both;float:right;padding-left:18px;}
+
+.faq,.faq .bg01,.faq .bg02,.faq .bg03{background:url(http://i.yimg.jp/images/r25/images/2010/faq_frame_bg.png) no-repeat;overflow:hidden;/zoom:1;}
+.faq{background-position:0 0;margin-bottom:10px;}
+.faq .bg01{background-position:0 100%;margin-top:5px;}
+.faq .bg02{background-position:100% 0;margin:-5px 0 7px 5px;}
+.faq .bg03{background-position:100% 100%;margin:5px 0 -7px 0;}
+
+.faq .kaito,.faq .tohyo,.faq .kaiketsu,.faq .dtl dl.question dt,.faq .dtl dl.best dt,.allanswer p.hd_ttl,.faqhelp .lftbox p.logo a,.faqhelp .rhtbox dt span{background:url(http://i.yimg.jp/images/r25/images/2010/faq_icon.png);}
+
+/*一覧*/
+.faq .list{padding:10px 15px 17px 10px;}
+.faq .list .info{margin-left:77px;}
+.faq .list .info span{font-size:86%;}
+head~/* */body .faq .list .info span{font-size:78%;}
+html:not(:target) .faq .list .info span{font-size:86%;}/*Modern*/
+
+.faq .list .info p.date{float:left;margin-right:20px;}
+.faq .list .info p.resnum{float:left;}
+.faq .list .info p.resnum em{color:#ff3300;font-weight:bold;}
+.faq .list .info p.personal{float:right;}
+
+.faq .list dt,.faq .list dd{margin-left:77px;}
+
+.faq .list dd.kaito,.faq .list dd.tohyo,.faq .list dd.kaiketsu{background-repeat:no-repeat;float:left;text-indent:-9999px;overflow:hidden;margin-left:0 !important;width:66px;height:92px;}
+.faq .list dd.kaito{background-position:-780px 0;}
+.faq .list dd.tohyo{background-position:-1430px 0;}
+.faq .list dd.kaiketsu{background-position:-2080px 0;}
+
+.faq .list dt{font-size:116%;font-weight:bold;padding-top:10px;}
+.faq .list dd{font-size:93%;line-height:140%;padding-top:6px;}
+.faq .list dd.kiji{background:#fff7e8;font-size:116%;font-weight:bold;margin-top:10px !important;padding:4px;}
+.faq .list dd.kiji span{font-size:86%;font-weight:normal;}
+
+/*詳細*/
+.faq .dtl{font-size:115%;padding:30px 35px 37px 30px;}
+.faq .dtl table{font-size:86%;}
+.faq .dtl table.info{float:right;margin-top:10px;width:200px;}
+.faq .dtl table.info th,.faq .dtl table.info td{border-bottom:1px solid #ddd;padding:2px 0;vertical-align:top;}
+.faq .dtl table.info th{font-size:85%;text-align:right;width:1%; white-space:nowrap;}
+.faq .dtl table.info td em{color:#ff3300;font-weight:bold;}
+.faq .dtl table.info td a{font-weight:bold;}
+.faq .dtl table.best{margin-top:30px;}
+
+.faq .dtl dl.question dt{background-position:0 0;text-indent:-999px;overflow:hidden;width:240px;height:42px;}
+.faq .dtl dl.question dd,.faq .dtl dl.best dd{margin-top:10px !important;clear:both;overflow:hidden;/zoom:1;}
+.faq .dtl dl.question dd p.pic,.faq .dtl dl.best dd p.pic{float:left;margin:0 !important;}
+.faq .dtl dl.question dd p,.faq .dtl dl.best dd p{line-height:140%;margin-left:100px;}
+
+.faq .dtl dl.best{background-position:0 0;background-repeat:repeat-x;padding-top:20px;}
+.faq .dtl dl.best dt{background-position:0 -45px;text-indent:-999px;overflow:hidden;width:272px;height:47px;}
+
+.faq .dtl dd.btn{margin-top:15px;text-align:center;}
+.faq .dtl dd.btn a{display:inline-block;margin:0 5px;*height:0;*text-indent:0;*padding-top:36px;}
+
+/*button*/
+a.faq_aswr{background-position:0 -132px;width:196px;height:36px;}/*回答する*/
+a.faq_aswr:hover{background-position:0 -168px;}
+a.faq_vote{background-position:-200px -132px;width:196px;height:36px;}/*投票する*/
+a.faq_vote:hover{background-position:-200px -168px;}
+a.faq_best{background-position:-400px -132px;width:236px;height:36px;}/*ベストアンサー以外*/
+a.faq_best:hover{background-position:-400px -168px;}
+a.faq_list{background-position:-640px -132px;width:176px;height:36px;}/*回答一覧*/
+a.faq_list:hover{background-position:-640px -168px;}
+
+/*みんなの回答*/
+.allanswer{clear:both;margin-top:40px;}
+.allanswer p.hd_ttl{background-repeat:no-repeat;background-position:-575px -70px;clear:both;text-indent:-9999px;overflow:hidden;width:108px;height:18px;}
+.allanswer li{margin-top:15px;overflow:hidden;/zoom:1;}
+
+.allanswer p.aswrName{float:left;margin:0 !important;}
+.allanswer p.aswrName a{font-weight:bold;}
+.allanswer p.aswrDate{float:right;margin:0 !important;}
+.allanswer p.aswrName span,.allanswer p.aswrDate span{font-size:xx-small;*font-size:86%;}
+html:not(:target) .allanswer p.aswrName span,html:not(:target) .allanswer p.aswrDate span{font-size:86%;}/*Modern*/
+
+.allanswer li .lines{width:590px;}
+.allanswer li .lines .bg07{background:url(http://i.yimg.jp/images/r25/images/2010/waku_bg03.png) no-repeat 0 100%;padding:7px 11px 12px 11px;overflow:hidden;/zoom:1;}
+.allanswer li .aswrText{font-size:100%;margin-top:5px;}
+.allanswer li .aswrText p.pic{float:left;margin:0 !important;}
+.allanswer li .aswrText p.pic img{width:80px;}
+.allanswer li .aswrText p{margin:0 0 0 90px !important;}
+.allanswer li .aswrText p.rpt{font-size:93%;text-align:right;margin:0 !important;}
+
+/*知恵袋*/
+.faqhelp,.faqhelp div{overflow:hidden;/zoom:1;}
+.faqhelp{clear:both;background:#fafafa;border:1px solid #ccc;margin-top:20px;padding:20px;}
+.faqhelp .lftbox{float:left;width:240px;overflow:hidden;/zoom:1;}
+.faqhelp .lftbox p.logo{margin-bottom:10px;overflow:hidden;/zoom:1;}
+.faqhelp .lftbox p.logo a{background-repeat:no-repeat;background-position:-445px -68px;float:left;display:block;text-indent:-9999px;overflow:hidden;width:128px;height:24px;}
+.faqhelp .lftbox p.txtR{text-align:right;margin-top:10px;}
+
+.faqhelp .rhtbox{float:right;width:280px;}
+.faqhelp .rhtbox dl{clear:both;}
+
+.faqhelp .rhtbox dt{display:inline-block;/display:inline;/zoom:1;margin-right:5px;vertical-align:middle;width:62px;}
+.faqhelp .rhtbox dd{display:inline-block;/display:inline;/zoom:1;vertical-align:middle;width:205px;color:333;font-size:93%;line-height:130%;}
+
+.faqhelp .rhtbox dt span{display:block;text-indent:-9999px;overflow:hidden;width:62px;height:62px;}
+
+.faqhelp .rhtbox dl.kaito dt span{background-position:-573px 0;background-repeat:no-repeat;}
+.faqhelp .rhtbox dl.tohyo dt span{background-position:-636px 0;background-repeat:no-repeat;}
+.faqhelp .rhtbox dl.kaiketsu dt span{background-position:-699px 0;background-repeat:no-repeat;}
+.faqhelp .rhtbox dl.tohyo,.faqhelp .rhtbox dl.kaiketsu{margin-top:10px;}
+
+/* fukidashi
+--------------------------------------------*/
+.lines,.lines .bg01,.lines .bg02,.lines .bg03{background:url(http://i.yimg.jp/images/r25/images/2010/waku_bg.png);overflow:hidden;/zoom:1;}
+.lines .bg04,.lines .bg05,.lines .bg06,.lines .bg07{background:url(http://i.yimg.jp/images/r25/images/2010/waku_bg01.gif) no-repeat;}
+.lines{background-position:0 0;background-repeat:repeat-x;background-color:#fef8f9;}
+.lines .bg01{background-position:0 100%;background-repeat:repeat-x;}
+.lines .bg02{background-position:0 0;background-repeat:repeat-y;}
+.lines .bg03{background-position:100% 0;background-repeat:repeat-y;}
+.lines .bg04{background-position:0 0;}
+.lines .bg05{background-position:100% 0;}
+.lines .bg06{background-position:0 100%;}
+.lines .bg07{background-position:100% 100%;padding:5px;}
+
+/* Hayaoki
+--------------------------------------------*/
+#md_hyoki ul{overflow:hidden;/zoom:1;}
+#md_hyoki li{margin-top:10px;overflow:hidden;/zoom:1;}
+#md_hyoki li p.pic{float:left;}
+#md_hyoki li .cmmnt{color:#333;margin-left:85px;}
+#md_hyoki li .cmmnt p.userName{float:left;margin-right:15px;}
+#md_hyoki li .cmmnt p.userName a{font-weight:bold;}
+#md_hyoki li .cmmnt p.userName span,#md_hyoki li .cmmnt p.userDate span{font-size:xx-small;*font-size:86%;}
+html:not(:target) #md_hyoki li .cmmnt p.userName span,html:not(:target) #md_hyoki li .cmmnt p.userDate span{font-size:86%;}/*Modern*/
+
+#md_hyoki li .cmmnt p.userText{clear:both;font-size:116%;margin-top:3px;}
+#md_hyoki li .cmmnt p.userText span{color:#FF0000;font-size:86%;margin-left:10px;white-space:nowrap;}
+#md_hyoki li .cmmnt p.userText span a,#md_hyoki li .cmmnt p.userText span a:visited{color:#FF0000 !important;text-decoration:underline;}
+#md_hyoki li .lines .bg07{padding:12px 110px 12px 22px;}
+
+#md_hyoki #PageList li{margin-top:0;/zoom:0;}
+
+
+/* 追加修正 2011/04/27
+----------------------------------*/
+/*クレジット枠*/
+#article .section .creditBox{
+	margin: 15px 0 30px;
+	text-align: right;
+	color: #333333;
+}
+#article .section .creditBox p{
+	font-size: 85%;
+}
+/*ボーダータイトル*/
+#corner .borderTitle {
+	padding-bottom: 5px;
+	background: url("http://i.yimg.jp/images/r25/images/2009/line_gray01.gif") repeat-x bottom;
+	font-size: 130%;
+	font-weight: bold;
+}
+
+
+/* UI改修 2011/09/21
+----------------------------------*/
+#menu2{clear:both;margin:9px 0;}
+#dlmtr2{font-size:86%;}
+#dlmtr2 p{display:inline;background:#F5F5F5;padding:3px 6px;}
+.headline2 {background:url(http://i.yimg.jp/images/r25/images/2009/headline2_bg.png) no-repeat bottom;margin-bottom:-5px;padding-bottom:20px;width:636px;}
+.headline2 .wrap{background:url(http://i.yimg.jp/images/r25/images/2009/headline2_bg.png) no-repeat;padding:20px 20px 10px 20px;overflow: hidden;/display: inline-block;}
+.headline2 p {font-size:13px;}
+.headline2 p span{margin-right:5px;}
+.headline2 h2{float:left;width:520px;font-size: 123%;font-weight: bold;}
+.headline2 .date{float:right;width:75px;font-size:12px;text-align:right;}
+.splogo2{float:right;margin:0 0 -22px 10px;width:99px;}
+.social{padding-top:2px;margin-bottom:10px;/*overflow: hidden;*//display: inline-block;float: right;width: 590px;margin-top: 5px;}
+.social .btnset{/*width:255px;_width:263px;*/}
+.social p{margin-top:3px;float:right;}
+.social .EMMAbtn{margin-left:5px;}
+.social .date{float:left;width:100px;/*padding-top: 5px;*/font-size: 86%;}
+
+.rel_set{margin:15px 0 0 !important;background: url(http://i.yimg.jp/images/r25/images/2009/line_gray01.gif) repeat-x top;}
+#md_cal .rel_set{margin: 15px 25px 35px!important;}
+#article .section .support2 {clear: both;padding: 20px 20px 10px 20px;}
+#article .section .support2 dl {margin: 0 auto;}
+#article .section .support2 dt {background: url(http://i.yimg.jp/images/r25/images/2009/article_link.gif) no-repeat 0 0;width: 169px;height: 20px;overflow: hidden;text-indent: -9999px;}
+#article .section .support2 dd {background: url(http://i.yimg.jp/images/r25/images/2009/article_link.gif) no-repeat 0 -26px;margin: 5px 0 0 0;padding-left: 17px;}
+#article .section .support2 dd.txt{background:none;margin:10px 0 10px 0;padding-left:0;font-size: 116%;}
+#article .section .support2 dd a{border-bottom:none;color:#0265cb;text-decoration:none;}
+#article .section .support2 dd a:hover{text-decoration:underline;}
+#article .section .support2 p{margin-bottom:0;}
+.sug_set .section a{text-decoration:underline !important;}
+#article .section .review2{clear: both;}
+#article .section .review2 .innr{padding: 20px;}
+#article .section .review2 .img_ttl{display:block;background: url(http://i.yimg.jp/images/r25/images/2009/article_link.gif) no-repeat;width: 169px;height: 20px;margin-bottom:10px;overflow: hidden;text-indent: -9999px;}
+#article .section .review2 ttl{color: #333333;font-size: 123%;font-weight: bold;}
+#article .section .review2 .img_lft{float: left;width: 272px;margin: 0 !important;padding: 0 15px 10px 0;}
+#article .section .review2 ul{background: none repeat scroll 0 0 transparent !important;padding: 0 !important;}
+#article .section .review2 li{background: url(http://i.yimg.jp/images/r25/images/2009/linklist_gaibu.gif) no-repeat 0 2px;font-size: 93%;margin: 3px 0 0;padding-left: 16px;width: auto !important;}
+#article .section .review2 .ttl{margin-bottom:10px;font-weight: bold;font-size: 123%;color: #333333;}
+#article .section .review2 a{border:none!important;color: #0265CB;text-decoration: none;}
+#article .section .rev_set{margin-top:0;background:none;}
+.nmg_t10{margin-top:-10px;}
+
+/* UI改修 2012/02/16
+----------------------------------*/
+/*more_section*/
+#btn_more_section{display:none;margin-top:15px;}
+#btn_more_section span
+{display:block;width:636px;height:45px;background:url(http://i.yimg.jp/images/r25/images/2012/btn_more_section.png) no-repeat;cursor:pointer;overflow:hidden;text-indent:-9999px;}
+#btn_more_section span:hover{background-position:0 -45px;}
+#btn_more_section.close span{background-position:0 -90px;}
+#btn_more_section.close span:hover{background-position:0 -135px;}
+
+/*2013/01/22追加*/
+#btn_more_section_sub span.default,
+#btn_more_section_sub span.subMoreBtn,
+#btn_more_section_sub span:hover,
+#btn_more_section_sub.close span,
+#btn_more_section_sub.close span:hover
+{
+display: block!important;
+width: 280px!important;
+height: 24px!important;
+background: url(http://i.yimg.jp/images/r25/images/2012/btn_more_section_sub.png) no-repeat!important;
+cursor: pointer;
+overflow: hidden!important;
+text-indent: -9999px!important;
+margin: 10px;
+}
+
+#btn_more_section_sub span.subMoreBtn:hover,#btn_more_section_sub span.default:hover{background-position: 0 -24px;}
+#btn_more_section_sub.close span.subMoreBtnClose {background-position: 0 -48px;}
+#btn_more_section_sub.close span.subMoreBtnClose:hover {background-position: 0 -72px;}
+
+
+/*pick_small*/
+.pick_small{}
+.pick_small p.pic{width:82px !important;}
+.pick_small p.pic img{width:80px;}
+#md_column .section ul.pick_small li,#md_newtpcs .section ul.pick_small li{min-height:65px!important;height:auto!important;height:65px;}
+#md_column .section ul.pick_small li div, #md_column .section ul.pick_small li dl,
+#md_newtpcs .section ul.pick_small li div, #md_newtpcs .section ul.pick_small li dl,#md_newtpcs .section ul.pick_small li dl.story{margin-left:92px!important;}
+
+/*************************************
+  NO MATCH PAGE
+*************************************/
+#no_wap{width:806px;margin:100px auto 0 auto;}
+
+#no_wap #header{background:url(http://i.yimg.jp/images/r25/images/2009/no_head_bg.gif) no-repeat 440px bottom;position:relative;height:67px !important;}
+#no_wap #header h1 a,#no_wap #header h2 a{display:block;text-indent:-9999px;overflow:hidden;}
+#no_wap #header h1{position:absolute;top:4px;left:0;}
+#no_wap #header h1 a{background-position:-378px 0;width:217px;height:51px;}
+#no_wap #header h2{position:absolute;top:0;right:0;}
+#no_wap #header h2 a{background-position:-460px -80px;width:131px;height:24px;}
+
+#no_wap #header #search{position:absolute;top:29px;right:0;width:217px;overflow:hidden;/zoom:1;}
+#no_wap #header #search input.txt{padding:1px;width:167px;float:left;margin-right:5px;}
+#no_wap #header #search form input#btn_submit{display:block;background-position:-450px -120px;width:37px;height:22px;text-indent:-9999px;overflow:hidden;float:right;border:none;cursor:pointer;}
+#no_wap #header #search form input#btn_submit:hover{background-position:-450px -142px;}
+
+#no_wap #contents{background:url(http://i.yimg.jp/images/r25/images/2009/no_cnts_bg.png) no-repeat 0 0;margin:0;height:339px;text-align:left;position:relative;}
+#no_wap #contents h3{background:url(http://i.yimg.jp/images/r25/images/2009/no_cnts_ttl.gif) no-repeat;text-indent:-9999px;overflow:hidden;height:24px;position:absolute;top:38px;left:48px;}
+#no_wap #contents h3.er01{background-position:0 0;width:385px;}
+#no_wap #contents h3.er02{background-position:0 -30px;width:180px;}
+#no_wap #contents h3.er03{background-position:0 -60px;width:110px;}
+#no_wap #contents h3.er04{background-position:0 -90px;width:300px;}
+#no_wap #contents h3.er05{background-position:0 -120px;width:225px;}
+
+#no_wap #contents div{position:absolute;top:61px;left:48px;}
+#no_wap #contents p{margin-top:20px;}
+#no_wap #contents p#topbtn{margin-top:30px;}
+
+#no_wap #footer{margin:0 !important;text-align:center;}
+#no_wap #footer address{color:#333333;font-size:93%;}
+
+/*bottun*/
+#no_wap #contents p#topbtn a,#no_wap #contents p#topbtn a:hover,a.phtbtn,a.phtbtn:hover{background:url(http://i.yimg.jp/images/r25/images/2009/btn_common.png) no-repeat;display:block;text-indent:-9999px;overflow:hidden;}
+
+#no_wap #contents p#topbtn a{background-position:0 0;width:205px;height:40px;}
+#no_wap #contents p#topbtn a:hover{background-position:0 -40px;}
+
+a.phtbtn{background-position:-210px 0;width:180px;height:35px;}
+a.phtbtn:hover{background-position:-210px -35px;}
+
+/* facebook対応 2012/04/23
+----------------------------------*/
+#faceBook_box,.faceBook_comment{ margin-top:20px;margin-bottom:20px;text-align: center;}
+.social .btnset { width: 280px;float: right;}
+.social .btnset.fb_n{width: 255px !important;} 
+.social .btnset .EMMAbtn{ float:left;}
+/*
+.exp_clip .EMMAbtn{ clear:left;}
+.exp_clip .fb{ float:right; padding:5px 0 0 5px;}
+.exp_clip p{ margin-right:300px;}
+*/
+/* cp対応 2012/06/04
+----------------------------------*/
+.mg15t{margin-top:15px;}
+
+
+/*変更箇所*/
+/*1216,1305,1217,745,152
+656(exp_clip)
+*/
+
+/*#article{overflow:visible!important;}*/
+/*IE6-8用いいねボタンHACK*/
+
+/*.social .fb_ltr{ _width:400px!important; }*/
+
+/*social対応 20120712*/
+/*
+.social .fb_ltr,.exp_clip .fb_ltr{width:400px\9!important;} 
+.social .fb_ltr,.exp_clip .fb_ltr{*width:400px!important;} 
+.social .fb_ltr,.exp_clip .fb_ltr{_width:400px!important;} 
+*/
+
+#article,#article .section {overflow: visible;zoom: 1;clear: both;}
+.fb_iframe_widget{/*margin-top:-3px;*/}
+.twitter-share-button {width:120px!important;float: left;margin-left:10px;float: right;}
+.exp_clip .twIcon{margin-top:2px;width: 110px;}
+.exp_clip .hatenaIcon {
+margin-top: 4px;
+margin-right: 10px;
+}
+.fb-activity{margin-top:10px;}
+.fbInterview{margin-bottom:0px;}
+
+#md_interviewdetail .social,#md_interviewdetail .social .btnset,
+#md_girldetail .social,#md_girldetail .social .btnset,
+#md_cal .social,#md_cal .social .btnset{width:300px;}
+
+#md_interviewdetail .title,#md_mote .title{margin-bottom:15px;}
+
+#md_mote .title {background: none;padding: 0 21px;display: block;margin-bottom: 15px;}
+#md_cal .title {background: none;margin: 0 25px;margin-bottom: 0px;}
+#md_girldetail .article{margin: 20px 0 10px 0;padding-top: 35px;zoom:1;}
+
+#NewImg_AD_IM{margin-top:10px;margin-bottom:10px;}
+
+#ultraAd{margin-top:30px;}
+
+/*pilotVisionAd*/
+#pilotVisionAd{margin:10px 0 10px;}
+
+/*IE7 article対策*/
+*:first-child+html #article{
+  zoom:0;
+}
+
+
+/* スマホ誘導 */
+#smpGuide{
+background-image: url(http://i.yimg.jp/images/r25/images/special/smpGuideImg.png);
+background-position: 0 100%;
+padding-bottom: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+#smpGuide .inner{
+background-image: url(http://i.yimg.jp/images/r25/images/special/smpGuideImg.png);
+background-position: 0 0;
+border: none;
+padding: 10px 10px 0 10px;
+}
+
+#smpGuide .title{text-align:center;padding-bottom: 5px;background-image: none;overflow:hidden;zoom:1;}
+
+#smpGuide .link{text-align:center;}
+#smpGuide .link a{margin-left:3px;font-weight:bold;}
+
+/*kakao*/
+#kakaoBunner{margin-bottom:10px;}
+
+/*twitter*/
+.twitter-share-button {
+width: 110px!important;
+}
+
+.imgIM{margin-top:10px;}
+
+/*トップロゴ*/
+#header #R25_sp_logo {
+padding-top: 9px;
+}
+
+#R25_sp_logo a{
+background: url(http://i.yimg.jp/images/r25/g/tools/free_link/masthead_pc/masthead_pc-1355887721.png) no-repeat;
+width: 296px;
+height: 69px;
+display:block;
+text-indent:-9999px;
+}
+
+#adHoming{height:675px;}
+
+.bannerLink{margin:10px 0 10px;}
+
+#twitter-widget-2{width:590px!important;}
+
+/*バナー*/
+#sidelink_banner1 a img{height:60px;}
+#sidelink_banner1 a,#sidelink_banner2 a{margin-top:10px;margin-bottom:10px;display: block;}
+.sd_adRP{text-align:center;}
+
+/*gyaoエンベット*/
+.gyao_player{margin: 20px 0 30px;}
+
+/*FBモジュール対応*/
+.fb_iframe_widget iframe {
+position: static!important;
+}
+
+/*フリップボードバナー*/
+.flipboardAd{margin-top:10px;}
+
+/* topimpact */
+.ad_jck_body{ background:none !important;}

@@ -1,0 +1,326 @@
+html {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body{ margin:0;}
+	
+body,tr,td,div{font-family:MS PGothic; font-size:12px; color:#424242; line-height:16px;}
+
+
+.textarea{
+	scrollbar-face-color:#FFFFFF;
+	scrollbar-highlight-color:#82D5FF;
+	scrollbar-3dlight-color:#EAF8FF;
+	scrollbar-shadow-color:#82D5FF;
+	scrollbar-darkshadow-color:#EAF8FF;
+	scrollbar-track-color:#EAF8FF;
+	scrollbar-arrow-color:#82D5FF;
+}
+
+.textarea_link{
+	font-family:MS PGothic;
+	color:#666666;
+	TEXT-DECORATION: none;
+	margin-left:15px;
+	margin-top:3px;
+	valign:middle;
+	padding:3px;
+	border:1px solid;
+	width:70%;
+	font-size:9pt;
+	background-color:white;
+	border-color:#CCCCCC;
+}
+
+.input_link{
+	cursor:hand;
+}
+
+.blue {COLOR: #3666C8;}
+
+
+A:link {COLOR: #3666C8; TEXT-DECORATION: underline;}
+A:visited {COLOR: #3666C8; TEXT-DECORATION: underline;}
+A:active {COLOR: #3666C8; TEXT-DECORATION: underline;}
+A:hover {COLOR: #3666C8; TEXT-DECORATION: underline;}
+
+A.page:link    {color:#424242;text-decoration:none; padding:5px; margin:0px}
+A.page:visited {color:#424242;text-decoration:none; padding:5px; margin:0px}
+A.page:active  {color:#424242;text-decoration:none; padding:5px; margin:0px}
+A.page:hover  {color:#FFFFFF;text-decoration:none;background:#3666C8; padding:5px; margin:0px;}
+
+
+A.game_ts:link {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:11px; font-family:MS UI Gothic;}
+A.game_ts:visited {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:11px; font-family:MS UI Gothic;}
+A.game_ts:active {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:11px; font-family:MS UI Gothic;}
+A.game_ts:hover {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:11px; font-family:MS UI Gothic;}
+
+.font14 {COLOR: #424242; font-size:14px; line-height:16px; }
+A.font14:link {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:14px; line-height:16px;}
+A.font14:visited {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:14px; line-height:16px;}
+A.font14:active {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:14px; line-height:16px;}
+A.font14:hover {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:14px; line-height:16px;}
+
+.font14_w {COLOR: #FFFFFF; font-size:14px; line-height:16px; }
+A.font14_w:link {COLOR: #FFFFFF; TEXT-DECORATION: underline; font-size:14px; line-height:16px;}
+A.font14_w:visited {COLOR: #FFFFFF; TEXT-DECORATION: underline; font-size:14px; line-height:16px;}
+A.font14_w:active {COLOR: #FFFFFF; TEXT-DECORATION: underline; font-size:14px; line-height:16px;}
+A.font14_w:hover {COLOR: #FFFFFF; TEXT-DECORATION: underline; font-size:14px; line-height:16px;}
+
+
+.font14_n {COLOR: #424242; font-size:14px; line-height:16px; }
+A.font14_n:link {COLOR: #3666C8; TEXT-DECORATION: none; font-size:14px; line-height:16px;}
+A.font14_n:visited {COLOR: #3666C8; TEXT-DECORATION: none; font-size:14px; line-height:16px;}
+A.font14_n:active {COLOR: #3666C8; TEXT-DECORATION: none; font-size:14px; line-height:16px;}
+A.font14_n:hover {COLOR: #3666C8; TEXT-DECORATION: none; font-size:14px; line-height:16px;}
+
+
+.font14_bk {COLOR: #000000; font-size:14px; line-height:16px; font-family:MS PGothic;}
+
+.font16 {COLOR: #424242; font-size:16px; line-height:16px; }
+
+
+
+
+/* index_game_menu */
+A.menu:link {COLOR: #FFFFFF; TEXT-DECORATION: none; font-weight:bold }
+A.menu:visited {COLOR: #FFFFFF; TEXT-DECORATION: none; font-weight:bold}
+A.menu:active {COLOR: #FFFFFF; TEXT-DECORATION: none; font-weight:bold}
+A.menu:hover {COLOR: #FFF600; TEXT-DECORATION: underline; font-weight:bold}
+
+A.menu_ck:link {COLOR: #FFF600; TEXT-DECORATION: underline; font-weight:bold;}
+A.menu_ck:visited {COLOR: #FFF600; TEXT-DECORATION: underline; font-weight:bold;}
+A.menu_ck:active {COLOR: #FFF600; TEXT-DECORATION: underline; font-weight:bold;}
+A.menu_ck:hover {COLOR: #FFF600; TEXT-DECORATION: underline; font-weight:bold;}
+
+
+
+/* font_size 10px */
+A.s:link {font-size:12px; COLOR: #3666C8; TEXT-DECORATION: underline; }
+A.s:visited {font-size:12px; COLOR: #3666C8; TEXT-DECORATION: underline; }
+A.s:active {font-size:12px; COLOR: #3666C8; TEXT-DECORATION: underline; }
+A.s:hover {font-size:12px; COLOR: #3666C8; TEXT-DECORATION: underline;  }
+
+
+
+input{ color:#424242; font-size:12px}
+.input{ border:1px solid #BDBCBC; color:#424242}
+.title{font-size:12px; color:#FFFFFF; font-weight:bold; padding: 0 0 0 10px}
+.input_login{ border:1px solid #BDBCBC; width:120px;}
+.input_url{ border:1px solid #BDBCBC; width:230px; color:#424242}
+
+.point{color:#FF8713; font-size:12px}
+.point_s{color:#E00000; font-size:10px}
+.font_s{font-size:11px;}
+.font_date{font-size:11px;}
+border{ border:0}
+.rank{font-size:9px; font-family:tahoma,MS UI Gothic, MS PGothic; color:#979797;}
+.gray{font-size:12px; color:#666666;}
+
+
+/* gamelist */
+.list_align{padding: 3px 0 3px 0}/* game icon */
+.forms_menu{ border:1px solid #BDBCBC; font-size:12px; margin:0 0 3px 0; background-color:#3DACFF; color:#FFFFFF}/* select */
+
+
+
+A.footer:link {COLOR: #424242; TEXT-DECORATION: underline; }
+A.footer:visited {COLOR: #424242; TEXT-DECORATION: underline;}
+A.footer:active {COLOR: #424242; TEXT-DECORATION: underline;}
+A.footer:hover {COLOR: #424242; TEXT-DECORATION: underline;}
+
+A.footer_r:link {COLOR: #EB002D; TEXT-DECORATION: underline; }
+A.footer_r:visited {COLOR: #EB002D; TEXT-DECORATION: underline;}
+A.footer_r:active {COLOR: #EB002D; TEXT-DECORATION: underline;}
+A.footer_r:hover {COLOR: #EB002D; TEXT-DECORATION: underline;}
+
+A.sub:link {COLOR: #424242; TEXT-DECORATION: none; }
+A.sub:visited {COLOR: #424242; TEXT-DECORATION: none;}
+A.sub:active {COLOR: #424242; TEXT-DECORATION: none;}
+A.sub:hover {COLOR: #3666C8; TEXT-DECORATION: underline;}
+
+
+
+A.google:link {COLOR: #1E5FCA; TEXT-DECORATION: none;}
+A.google:visited {COLOR: #1E5FCA; TEXT-DECORATION: none;}
+A.google:active {COLOR: #1E5FCA; TEXT-DECORATION: none;}
+A.google:hover {COLOR: #1E5FCA; TEXT-DECORATION: underline;}
+
+
+
+
+
+.border{none, dotted,dashed,double, groove, ridge, inset, outset }
+
+hr{ width:880px; text-align:center; border:1px solid #2AA9FF}
+
+.dotline { background-image:url(/Images/dot_bg.gif); height:1px; }
+.dotline_sea { background-image:url(/Images/spacer_sea.gif); height:1px; }
+
+
+/* ad */
+.btn_red { background-image:url(/images/btn_red.gif); width:142px; height:22px; padding-top:2px; text-align:center; }
+.btn_red_s { background-image:url(/images/btn_red_s.gif); width:100px; height:22px; padding-top:2px; text-align:center; }
+
+.font12_w {COLOR: #FFFFFF; font-size:12px}
+A.font12_w:link {COLOR: #FFFFFF; TEXT-DECORATION: none; font-size:12px}
+A.font12_w:visited {COLOR: #FFFFFF; TEXT-DECORATION: none; font-size:12px}
+A.font12_w:active {COLOR: #FFFFFF; TEXT-DECORATION: none; font-size:12px}
+A.font12_w:hover {COLOR: #FFFFFF; TEXT-DECORATION: none; font-size:12px}
+
+A.black:link,visited,active,hover {COLOR: #424242; TEXT-DECORATION: underline; font-size:12px}
+
+
+.font16_w {COLOR: #FFFFFF; font-size:16px}
+
+
+/* channel */
+.channel_title { background-image:url(/images/channel/cn_title.gif); width:530px; height:21px; padding-top:4px; text-align:left; color:#FFFFFF; font-size:14px; font-weight:bold; padding-left:10px }
+.channel_title_n { padding:2px; text-align:left; color:#E3E3E3; font-size:14px; font-weight:bold; padding-left:10px; border-left:5px solid #E00000; background-color:#000000; }
+.channel_txt { color:#E3E3E3; font-size:12px}
+.channel_txt_s { color:#E3E3E3; font-size:10px}
+
+A.channel:link {COLOR: #FFFFFF; TEXT-DECORATION: underline;}
+A.channel:visited {COLOR: #FFFFFF; TEXT-DECORATION: underline;}
+A.channel:active {COLOR: #FFFFFF; TEXT-DECORATION: underline;}
+A.channel:hover {COLOR: #E00000; TEXT-DECORATION: underline;}
+
+.channel_cmy {COLOR: #FFFFFF; font-size:16px}
+A.channel_cmy:link {COLOR: #E00000; TEXT-DECORATION: underline; font-size:16px}
+A.channel_cmy:visited {COLOR: #E00000; TEXT-DECORATION: underline; font-size:16px}
+A.channel_cmy:active {COLOR: #E00000; TEXT-DECORATION: underline; font-size:16px}
+A.channel_cmy:hover {COLOR: #E00000; TEXT-DECORATION: underline; font-size:16px}
+
+.channel_menu { background-image:url(/images/channel/menu_bg.gif); width:930px; height:25px; padding-top:2px; text-align:left; color:#FFFFFF; font-size:12px; margin: 0 auto; border-bottom:3px solid #C80000 }
+.line{ width:100%; border:1px solid #2F2F2F; margin:0px}
+.line_n{ width:100%; border:1px solid #EEEEEE; margin:0px;}
+
+
+.channel_list_bar { background-image:url(/images/channel/cn_title.gif); width:530px; height:21px; padding-top:4px; text-align:left; color:#FFFFFF; font-size:14px; padding-left:10px }
+.channel_list_tit {COLOR: #FFFFFF; font-size:14px}
+A.channel_list_tit:link {COLOR: #FFFFFF; TEXT-DECORATION: underline; font-size:14px}
+A.channel_list_tit:visited {COLOR: #FFFFFF; TEXT-DECORATION: underline; font-size:14px}
+A.channel_list_tit:active {COLOR: #FFFFFF; TEXT-DECORATION: underline; font-size:14px}
+A.channel_list_tit:hover {COLOR: #FFFFFF; TEXT-DECORATION: underline; font-size:14px}
+
+.asbkt_bg { background-color:#222222; border:0px solid #000000; font-size:16px; color:#FFFFFF; line-height:20px; text-align:left; width:500px; padding-left:50px; padding-top:50px;}
+.asbkt_bg_n { background-color:#222222; border:0px solid #000000; font-size:16px; color:#FFFFFF; line-height:20px; text-align:left; width:100%; padding-top:20px;}
+.asbkt_tit {COLOR: #FFFFFF; font-size:16px; font-weight:bold}
+
+
+.idx_menu { background-image:url(/images/idx_menu_bg.gif); width:170px; padding-top:2px; color:#FFFFFF; margin:0; font-weight:bolder; padding-left:13px}
+.idx_menu_s { background-image:url(/images/idx_menu_bg_s.gif); width:146px; padding-top:2px; color:#FFFFFF; margin:0; font-weight:bolder; padding-left:13px}
+
+
+.keyword {font-size:10px; color:#939393; line-height:14px;}
+.keyword a:hover{font-size:10px; color:#939393;TEXT-DECORATION: none;}
+.keyword a:visited{font-size:10px; color:#939393;TEXT-DECORATION: none;}
+
+
+
+
+A.game_list:link {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:12px; font-weight:bold;}
+A.game_list:visited {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:12px; font-weight:bold;}
+A.game_list:active {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:12px; font-weight:bold;}
+A.game_list:hover {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:12px; font-weight:bold;}
+
+/* paging */
+#paging {clear:both; font-size:16px; margin:0px 0px 0px 0px; text-align:left;}
+#paging a {border:1px solid #CACACA;height:23px;text-decoration:none;}
+#paging a:hover {border:1px solid #0056AA; color:#FFFFFF; background-color:#0056AA}
+#paging .sel {border:1px solid #0056AA; color:#0056AA;font-weight:bold;height:23px;padding:4px 7px 4px 7px;}
+#paging .numBox {color:#000;padding:4px 7px 4px 7px; color:#0056AA; text-decoration:underline;}
+
+
+.menu_on{ background-image:url(/images/gm_menu1.gif); width:120px;margin:0; height:21px; margin:0 auto;}
+.menu_over{ background-image:url(/images/gm_menu1_1.gif); width:120px;margin:0; height:21px; margin:0 auto; padding-top:5px; font-weight:bold;}
+.gm_td{ border-bottom:1px solid #B6D9F1; border-left:1px solid #B6D9F1; border-right:1px solid #B6D9F1; padding:10px;}
+
+.menu_on_n{ background-image:url(/images/gm_menu1_n.gif); width:139px;margin:0; height:21px; margin:0 auto;}
+.menu_over_n{ background-image:url(/images/gm_menu1_1_n.gif); width:139px;margin:0; height:21px; margin:0 auto; padding-top:5px; font-weight:bold;}
+
+
+.menu_rk_on{ background-image:url(/images/gm_rk_menu1.gif); width:125px;margin:0; height:21px; margin:0 auto;}
+.menu_rk_over{ background-image:url(/images/gm_rk_menu1_1.gif); width:125px;margin:0; height:21px; margin:0 auto; padding-top:5px; font-weight:bold;}
+
+
+/* SEO */
+#header {width:100%; position:absolute; top:0; left:0;}
+#layout {width:100%; position:relative; left:0; top:800; padding:0; margin:0}
+
+
+A.test:link {COLOR: #0000FF; TEXT-DECORATION: underline; font-family:MS PGothic; }
+A.test:visited {COLOR: #0000FF; TEXT-DECORATION: underline; font-family:MS PGothic; }
+A.test:active {COLOR: #0000FF; TEXT-DECORATION: underline; font-family:MS PGothic; }
+A.test:hover {COLOR: #0000FF; TEXT-DECORATION: underline; font-family:MS PGothic; }
+
+
+/* index */
+A.font_s:link {COLOR: #3666C8; TEXT-DECORATION: none; font-size:9px}
+A.font_s:visited {COLOR: #3666C8; TEXT-DECORATION: none; font-size:9px}
+A.font_s:active {COLOR: #3666C8; TEXT-DECORATION: none; font-size:9px}
+A.font_s:hover {COLOR: #3666C8; TEXT-DECORATION: none; font-size:9px}
+
+/* channel */
+.cn_title {COLOR: #000000; font-size:16px; line-height:18px;}
+
+
+/* 2010 global */
+
+/* category menu */
+.gb_cgy_menu { background-image:url(/images/gb_cgy_menu.gif); width:147px; height:20px; font-weight:bold; padding-left:5px; color:#3666C8; padding-top:3px;}
+.gb_cgy_menu1 { background-image:url(/images/gb_cgy_menu1.gif); width:147px; height:20px; font-weight:bold; padding-left:25px; color:#3666C8; padding-top:3px; font-size:14px; margin-bottom:5px;}
+.gb_cgy_menu2 { background-image:url(/images/gb_cgy_menu2.gif); width:147px; height:20px; font-weight:bold; padding-left:25px; color:#3666C8; padding-top:3px; font-size:14px; margin-bottom:5px;}
+.gb_cgy_menu3 { background-image:url(/images/gb_cgy_menu3.gif); width:147px; height:20px; font-weight:bold; padding-left:25px; color:#3666C8; padding-top:3px; font-size:14px; margin-bottom:5px;}
+.gb_cgy_menu4 { background-image:url(/images/gb_cgy_menu4.gif); width:147px; height:20px; font-weight:bold; padding-left:25px; color:#3666C8; padding-top:3px; font-size:14px; margin-bottom:5px;}
+.gb_cgy_menu5 { background-image:url(/images/gb_cgy_menu5.gif); width:147px; height:20px; font-weight:bold; padding-left:25px; color:#3666C8; padding-top:3px; font-size:14px; margin-bottom:5px;}
+.gb_cgy_menu6 { background-image:url(/images/gb_cgy_menu6.gif); width:147px; height:20px; font-weight:bold; padding-left:25px; color:#3666C8; padding-top:3px; font-size:14px; margin-bottom:5px;}
+
+/* new game */
+.gb_newgame { background-image:url(/images/layaut_center.gif); width:426px; height:291px;}
+.gb_game_menu { background-image:url(/images/gb_game_menu.gif); width:159px; height:20px; font-weight:bold; padding-left:10px; color:#3666C8; padding-top:2px;}
+.gb_navi_n { background-image:url(/images/gb_navi_bg.gif); height:31px; padding-left:10px; color:#7399D9; margin:0 auto;}
+.gb_navi { background-image:url(/images/gb_navi_bg.gif); width:910px; height:31px; padding-left:10px; color:#7399D9; margin:0 auto;}
+
+.gb_game_menu_n { background-image:url(/images/gb_game_menu.gif); width:149px; height:18px; font-weight:bold; padding-left:10px; color:#3666C8; padding-top:2px; margin-bottom:5px;}
+.idx_menu_re { background-image:url(/images/re_idx_menu_bg.gif); width:116px; padding-top:3px; color:#FFFFFF; margin:0; font-weight:bolder; padding-left:13px}
+
+
+/*big-game*/
+.big_title {font-size:24px; font-weight:bold;}
+A.btn:hover {position:relative; top:1px;}
+
+.gb_navi_mini { height:25px; padding-left:10px; color:#B7DBF3; bgcolor:#E7F0F6}
+
+
+/* sns */
+A.sns_title:link,A.sns_title:visited,A.sns_title:active,A.sns_title:hover{COLOR: #424242; TEXT-DECORATION: underline; font-weight:bold; font-size:14px;}
+.sns_bg { background-image:url(/images/sns_bg.gif); width:647px; height:243px; padding:7px 0 0 7px;}
+.sns_menu {
+	position:absolute;
+	left:290px;
+	top:155px;
+	width:85px;
+}
+
+.sns_menu li{padding-bottom:4px; list-style-type:none;}
+
+.help {COLOR: #424242; TEXT-DECORATION: none; font-size:14px; font-family:MS PGothic;}
+A.help:link {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:14px; font-family:MS PGothic;}
+A.help:visited {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:14px; font-family:MS PGothic;}
+A.help:active {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:14px; font-family:MS PGothic;}
+A.help:hover {COLOR: #3666C8; TEXT-DECORATION: underline; font-size:14px; font-family:MS PGothic;}
+
+
+
+/* 20111222 footer_seo */
+.footer_fonts {font-size:10px; color:#939393; line-height:14px; margin-bottom:5px; margin-top:10px; padding-top:10px; }
+A.footer_fonts:hover{font-size:10px; color:#939393;TEXT-DECORATION:none;}
+A.footer_fonts:visited{font-size:10px; color:#939393;TEXT-DECORATION:none;}
+A.footer_fonts:active {COLOR:#939393; TEXT-DECORATION:none; font-size:10px;}
+A.footer_fonts:link {COLOR:#939393; TEXT-DECORATION:none; font-size:10px;}
+
+/* ===== header h1 ===== */
+h1 { font-size:20px; font-family:MS PGothic; color:#FFFFFF; padding:0 0 0 10; margin:0 0 0 0; }
+#h1head h1{font-size:10px; color:#939393; line-height:14px; font-weight:normal; background:#FFFFFF; border:#FFFFFF;background-color:transparent;}

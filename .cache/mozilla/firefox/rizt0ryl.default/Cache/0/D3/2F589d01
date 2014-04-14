@@ -1,0 +1,222 @@
+<HTML>
+<HEAD>
+<META name="robots" content="index,nofollow">
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="TEXT/HTML; CHARSET=SHIFT_JIS">
+<META HTTP-EQUIV="CONTENT-STYLE-TYPE" CONTENT="TEXT/CSS">
+<LINK REL="STYLESHEET" HREF="../style.css" TYPE="TEXT/CSS">
+<meta http-equiv="adalign" content="right"> 
+<meta http-equiv="adimage" content="200">
+<TITLE>第13章：メソッドを作成する Java入門 （基礎文法編） Accel Works</TITLE>
+</HEAD>
+<BODY MARGINWIDTH="0" MARGINHEIGHT="0" LEFTMARGIN="0" TOPMARGIN="0">
+<TABLE WIDTH="800" BORDER="0" CELLSPACING="0" CELLPADDING="0">
+<TR><TD>
+<!--TITLE-->
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD>
+			<IMG BORDER="0" SRC="../image/title.gif" width="800" height="48" alt="Accel Works">
+		</TD>
+	</TR>
+</TABLE>
+</TD></TR>
+<TR><TD>
+<!--履歴リンク-->
+<TABLE  BORDER="0" CELLSPACING="0" CELLPADDING="2">
+	<TR>
+		<TD WIDTH="800" CLASS="CONTENTS">
+			<B><a href="../index.html">Accel Works</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="../devtop.html">Developer</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;Java入門 （基礎文法編）</B>
+		</TD>
+	</TR>
+	<tr>
+		<td>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="topics"><img width=1 height=1 alt=""></td></tr>
+</table>
+		</td>
+	</tr>
+</TABLE>
+</TD></TR>
+<TR><TD>
+<TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0">
+	<TR>
+		<TD align="center">
+<script type="text/javascript" src="../myads.js"></script>
+		</TD>
+	</TR>
+	<TR>
+		<TD VALIGN="TOP" WIDTH="800">
+			<!--コンテンツー-->
+			
+<BR>
+<table width="100%" cellpadding="2"><tr><td>
+	<B><FONT color="#9999FF">■</FONT>Java入門 （基礎文法編） 第13章：メソッドを作成する</B>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tr><td class="topics"><img width=1 height=1 alt=""></td></tr>
+	</table>
+</td></tr></table>
+<table width="100%" border="0" cellpadding="10" cellspacing="0"><tr><td>
+<div align="right" class="body">
+	<a href="java12.html"><B>前へ</B></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="java14.html"><B>次へ</B></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="../devtop.html#java"><B>Developerへ</B></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="../index.html"><B>Accel Worksへ</B></a>
+</div>
+<BR>
+いままでは、基本的な文法を説明してきましたが、ここからはちょこっとだけJavaらしいことをやってみましょう。<BR>
+<BR>
+この章ではメソッドについて説明します。<BR>
+メソッドは関数と呼ばれることもありますが、ここではメソッドで統一します。<BR>
+<BR>
+メソッドの書式は次のようになります。<BR>
+<PRE>
+修飾子 戻り値 メソッド名(引数){
+	実行する処理
+}
+</PRE>
+まず修飾子についてですが、ここでは簡単に説明しておきます。<BR>
+修飾子とはメソッドを使用できる範囲を指定するものです。
+<ul>
+<li><B>public</B>と指定すると、そのメソッドはどこからでも使用できます。<BR>
+<li><B>protected</B>と指定すると、そのメソッドはそのクラスを継承したサブクラスからしか使用できません。<BR>
+クラスの継承については後の章で説明します。<BR>
+<li>修飾子を省略すると、そのメソッドは同じパッケージのクラスからしか使用できません。<BR>
+パッケージについては後の章で説明します。<BR>
+<li><B>private</B>と指定すると、そのメソッドはそのクラスの中からしか使用できません。<BR>
+</ul>
+修飾子については、ここで説明しきれない部分も多いですので、軽く聞き流してください。^^<BR>
+<BR>
+戻り値には、以前に紹介した基本データ型も利用できますし、Stringのようにあらかじめ用意されているクラスを使用することもできます。<BR>
+また、自分で作成したクラスを戻り値にすることもできます。<BR>
+戻り値が必要ない場合は<B>void</B>と指定します。<BR>
+<BR>
+では、実際に作ってみましょう。<BR>
+<PRE>
+class MethodTest{
+	public static void main(String[] args){
+
+		String name;
+		String maker;
+
+		<font color="green">//getNameメソッドを呼ぶ</font>
+		name = getName();
+		<font color="green">//getMakerメソッドを呼ぶ</font>
+		maker = getMaker();
+
+		<font color="green">//showMessageメソッドを呼ぶ</font>
+		showMessage(maker,name);
+
+	}
+
+	<font color="green">//名前を取得するメソッドです。</font>
+	public static String getName(){
+		String name = "スカイライン";
+
+		return name;
+	}
+
+	<font color="green">//メーカを取得するメソッドです。</font>
+	public static String getMaker(){
+		String maker = "日産";
+
+		return maker;
+	}
+
+	<font color="green">//メッセージを表示するメソッドです。</font>
+	public static void showMessage(String maker,String name){
+		System.out.println(maker + "の" + name);
+	}
+
+}
+</PRE>
+メソッドを3つ作ってみました。<BR>
+1つ目が<BR>
+public static String <B>getName()</B><BR>
+というメソッドです。<BR>
+publicですのでどこからでも使用できるメソッドです。<BR>
+戻り値はStringです。<BR>
+<BR>
+処理としては簡単で、String型のnameという変数を宣言して「スカイライン」という文字列を代入しています。<BR>
+で、その変数をそのまま戻り値として指定します。<BR>
+<BR>
+このメソッドを呼んでいるのがmainの中の<BR>
+name = getName();<BR>
+の部分ですね。<BR>
+<BR>
+2つ目のメソッドの<BR>
+public static String <B>getMaker()</B><BR>
+もやっていることは同じです。<BR>
+<BR>
+3つ目のメソッドは<BR>
+public static void <B>showMessage(String maker,String name)</B><BR>
+です。<BR>
+戻り値がvoidですので、戻り値はなしです。<BR>
+処理は引数でもらった値を表示しているだけです。<BR>
+<BR>
+ちなみに、それぞれのメソッドにstaticとありますが、これについては後の章で説明します。<BR>
+<BR>
+このように処理をメソッドにしてまとめておくと、mainの中はとてもシンプルになりますよね。<BR>
+<BR>
+<div align="right" class="body">
+	<a href="java12.html"><B>前へ</B></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="java14.html"><B>次へ</B></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="../devtop.html#java"><B>Developerへ</B></a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="../index.html"><B>Accel Worksへ</B></a>
+</div>
+		</td>
+	</tr>
+</table>
+
+		</TD>
+	</TR>
+	<TR>
+		<TD>
+<script type="text/javascript"><!--
+google_ad_client = "pub-1325602573398960";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text";
+//2007-04-30: Java
+google_ad_channel = "3981158864";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			<table width="800" border="0" cellpadding="0" cellspacing="0">
+			<tr><td class="topics"><img width=1 height=1 alt=""></td></tr>
+			</table>
+			<table width="800" cellpadding=10 cellspacing=0>
+				<tr>
+					<td class="body">
+			<BR>
+			この記事に対するご意見・ご要望は<a href="http://www65.tcup.com/6521/beey.html" target="_blank">掲示板</a>にお願いします。<BR>
+			<BR>
+			<IMG border="0" src="../image/aka.png" width=12 heigth=12>
+			<B>投稿記事募集中</B><BR>
+			Accel Worksでは投稿記事を募集しています。<BR>
+			皆さんの得意分野、経験、体験を生かして記事を書いてみませんか？<BR>
+			<a href="../other/contribute.html"><img src="../image/migi.png" border="0"><B>投稿記事募集</B></a><BR>
+			<BR>
+			<div align="center">
+			(C)CopyRight 2007 Accel Works All Rights Reserved<BR>
+			無断転載は禁止です。<BR>
+			</div>
+					</td>
+				</tr>
+			</table>
+		</TD>
+	</TR>
+</TABLE>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+

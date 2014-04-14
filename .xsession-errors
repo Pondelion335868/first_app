@@ -1,0 +1,3 @@
+run_im で起動される ibus 用のスクリプト。
+run_im で起動される auto 用のスクリプト。
+run_im で起動される default 用のスクリプト。

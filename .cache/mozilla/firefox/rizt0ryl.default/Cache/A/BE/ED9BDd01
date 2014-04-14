@@ -1,0 +1,391 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja" dir="ltr">
+<head>
+
+<title>カレンダーポートレット</title>
+<link rel="index" href="index.html" title="ホーム">
+<link rel="stylesheet" href="/css/set_default.css" type="text/css" media="screen,print">
+<link rel="stylesheet" href="/css/portal_print.css" type="text/css" media="print">
+
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<script src="/js/select_css.js" type="text/JavaScript" language="JavaScript"></script>
+<script src="/js/hub.js" type="text/JavaScript"></script>
+<script src="/js/windowresize.js" type="text/JavaScript"></script>
+<script src="/js/portal.js" type="text/JavaScript"></script>
+
+
+
+<SCRIPT type="text/JavaScript" language="JavaScript">
+<!--
+	var vBtn_flg = false;
+	
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function selectpop(url, req_name, item_no, page_id) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396502919034"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.top.name = "PortalTop";
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面からポップアップ表示用。
+	 */
+	function schedulepop(url, req_name, page_id, targetdate) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396502919034"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id + "&wintype=pop" + "&targetdate=" + targetdate;
+
+		window.top.name = "PortalTop";
+		window.open(popURL,"pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function selectrecurpop(url, req_name, item_no, page_id, targetstartdate) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396502919034"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&targetstartdate=" + targetstartdate
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.top.name = "PortalTop";
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+
+	/**
+	 * メイン画面から選択されたデータの情報をポップアップ表示用。
+	 */
+	function selectrecurexceptionpop(url, req_name, item_no, page_id, targetstartdate, exceptiontype) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396502919034"
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id
+						+ "&targetstartdate=" + targetstartdate
+						+ "&exceptiontype=" + exceptiontype
+						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
+
+		window.top.name = "PortalTop";
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		vBtn_flg = false;
+		return false;
+	}
+
+	function mainwindowopennotice(url, req_name, page_id, noticeTp) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396502919034"
+						+ "&NOTICE_TP=" + noticeTp
+						+ "&REQUEST_NAME=" + req_name
+						+ "&PAGE_ID=" + page_id + "&wintype=pop";
+
+		window.top.name = "PortalTop";
+		winobj = window.open(popURL,"BoxerVPane","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		winobj.resizeTo(944,708);
+		windowOpenToCloce("pop",944,708);
+		winobj.focus();
+		vBtn_flg = false;
+		return false;
+	}
+
+	function noticeselectpopindex(url, req_name, item_index, item_no1, item_no2, item_no3, page_id, noticeTp) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var popURL = url + "?RSEQ=1396502919034"
+						+ "&NOTICE_TP=" + noticeTp
+						+ "&REQUEST_NAME=" + req_name 
+						+ "&PAGE_ID=" + page_id 
+						+ "&index=" + item_index 
+						+ "&topsign=on" 
+						+ "&REQUEST_ITEM_NO1=" + item_no1 
+						+ "&REQUEST_ITEM_NO2=" + item_no2 
+						+ "&REQUEST_ITEM_NO3=" + item_no3 
+						+ "&wintype=pop";
+
+		window.top.name = "PortalTop";
+		window.open( popURL, "pop","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		windowOpenToCloce("BoxerVPane",800,720);
+		vBtn_flg = false;
+		return false;
+	}
+
+	/**
+	 * カレンダーポートレット画面日付遷移用。
+	 */
+	function calenderjump(url, req_name, page_id, day) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396502919034";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		document.form.targetdate.value = day;
+		document.form.submit();
+		return false;
+	}
+	/**
+	 * カレンダーポートレット画面日付遷移用。（プルダウン）
+	 */
+	function calenderjump2(url, req_name, page_id, year, month, day) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+		var jumpURL = url + "?RSEQ=1396502919034";
+		document.form.action = jumpURL;
+		document.form.method = "post";
+		document.form.REQUEST_NAME.value = req_name;
+		document.form.PAGE_ID.value = page_id;
+		if( month.length == '1' ){
+			month = '0' + month;
+		}
+		if( day.length == '1' ){
+			day = '0' + day;
+		}
+		document.form.targetdate.value = year + month + day;
+		document.form.submit();
+		return false;
+	}
+	
+	/**
+	 * カレンダーポートレット内の教務画面遷移用
+	 */
+	function mainwindowopensubjectpost(url, tmp_target, tmpjwarinend, tmpsemekikn,tmpjwaricd, tmpjwariseq, tmpjigenkn, tmpyobikn, tmpdaitai , tmpkyoincd) {
+		if( vBtn_flg == true ){
+			return false;
+		}
+		vBtn_flg = true;
+
+		window.open("","BoxerVPane","scrollbars=yes, toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, copyhistory=no")
+		var popURL = "/lucani/" + url;
+		window.document.form.action = popURL;
+		window.document.form.target = "BoxerVPane";
+		window.document.form.method = "POST";
+		window.document.form.JWARI_NENDO.value = tmpjwarinend;
+		window.document.form.SEMEKIKN.value = tmpsemekikn;
+		window.document.form.JWARICD.value = tmpjwaricd;
+		window.document.form.JWARI_SEQ.value = tmpjwariseq;
+		window.document.form.JIGENKN.value = tmpjigenkn;
+		window.document.form.YOBIKN.value = tmpyobikn;
+		window.document.form.DAITAI.value = tmpdaitai;
+		window.document.form.KYOINCD.value = tmpkyoincd;
+		window.document.form.submit();
+		document.form.target = tmp_target;
+
+		vBtn_flg = false;
+		return false;
+	}
+//-->
+</SCRIPT>
+
+</head>
+<body>
+
+
+
+<div class="portlet"><div class="inner">
+<div class="portletHeaderLV1">
+<h3><img src="/images/img_header_calender.gif" alt="カレンダー" width="208" height="22"></h3>
+</div>
+<div class="portletHeaderLV2">
+<h4>2014年4月</h4>
+<form name="form" method="post" action="" onSubmit="return false">
+<input type="hidden" name="USERID" value="20110000069165">
+<input type="hidden" name="ADMINFG" value="0">
+<input type="hidden" name="USERKN" value="sTuDeNt">
+<input type="hidden" name="JWARI_NENDO" value="">
+<input type="hidden" name="SEMEKIKN" value="">
+<input type="hidden" name="JWARICD" value="">
+<input type="hidden" name="JWARI_SEQ" value="">
+<input type="hidden" name="JIGENKN" value="">
+<input type="hidden" name="YOBIKN" value="">
+<input type="hidden" name="DAITAI" value="0">
+<input type="hidden" name="KYOINCD" value="">
+
+<!-- ↓commonkey -->
+
+
+
+
+<input type="hidden" name="REQUEST_NAME">
+<input type="hidden" name="REQUEST_ITEM_NO">
+<input type="hidden" name="SORT_KEY">
+<input type="hidden" name="PAGE_NO">
+<input type="hidden" name="PAGE_ID" VALUE="calendarportlet">
+<input type="hidden" name="divisionaccess" value="2">
+<input type="hidden" name="grouptype">
+<input type="hidden" name="Command">
+<input type="hidden" name="dayofweek">
+<input type="hidden" name="HD_FOLDER_LIST_REFRESH">
+<input type="hidden" name="logout">
+<input type="hidden" name="BACK_TYPE">
+<input type="hidden" name="main_key">
+<!--<input type="hidden" name="PFCommand">-->
+
+<!-- ↑commonkey end -->
+<input type="hidden" name="targetdate">
+<fieldset>
+<legend>カレンダー表示切り替え機能</legend>
+<select name="year" ><option value="2009" >2009</option><option value="2010" >2010</option><option value="2011" >2011</option><option value="2012" >2012</option><option value="2013" >2013</option><option value="2014" selected>2014</option><option value="2015" >2015</option><option value="2016" >2016</option><option value="2017" >2017</option><option value="2018" >2018</option><option value="2019" >2019</option></select>
+年
+<select name="month" ><option value="1" >01</option><option value="2" >02</option><option value="3" >03</option><option value="4" selected>04</option><option value="5" >05</option><option value="6" >06</option><option value="7" >07</option><option value="8" >08</option><option value="9" >09</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option></select>
+月
+<select name="day" ><option value="1" >01</option><option value="2" >02</option><option value="3" selected>03</option><option value="4" >04</option><option value="5" >05</option><option value="6" >06</option><option value="7" >07</option><option value="8" >08</option><option value="9" >09</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option></select>
+日
+<a href="#" onClick="return calenderjump2('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top',document.form.year.value, document.form.month.value, document.form.day.value )"><img src="/images/button_calender.gif" alt="GO" title="GO"></a>
+</fieldset>
+<ul>
+<li class="precendWeek"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140327')" >前週</a></li>
+<li class="precendDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140402')" >前日</a></li>
+<li class="currentDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140403')" >当日</a></li>
+<li class="followDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140404')" >翌日</a></li>
+<li class="followWeek"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140410')" >翌週</a></li>
+</ul>
+</div>
+<div class="calender">
+<table summary="カレンダー（1行目：学年暦、2行目：時間割、3行目：スケジュール、4行目：個人伝言/お知らせ）">
+<caption class="hide">カレンダー</caption>
+<thead>
+<tr>
+<th class="summary" scope="col">&nbsp;</th>
+<th class="near" scope="col">4/3（木）&nbsp;</th>
+<th class="near" scope="col">4/4（金）&nbsp;</th>
+<th class="near" scope="col"><font color='blue'>4/5（土）</font>&nbsp;</th>
+<th class="far" scope="col"><font color='red'>4/6（日）</font>&nbsp;</th>
+<th class="far" scope="col">4/7（月）&nbsp;</th>
+<th class="far" scope="col">4/8（火）&nbsp;</th>
+<th class="far" scope="col">4/9（水）&nbsp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th abbr="学年暦" class="summary" scope="row">学年暦</th>
+<td class="near">&nbsp;</td>
+<td class="near">&nbsp;</td>
+<td class="near">         春学期授業開始[学部]&nbsp;</td>
+<td class="far">&nbsp;</td>
+<td class="far">&nbsp;</td>
+<td class="far">&nbsp;</td>
+<td class="far">&nbsp;</td>
+</tr>
+
+
+
+
+<tr class="timetable">
+<th abbr="時間割" class="summary" scope="row">時間割</th>
+<td class="near">&nbsp;</td>
+<td class="near">&nbsp;</td>
+<td class="near">&nbsp;</td>
+<td class="far">&nbsp;</td>
+<td class="far">&nbsp;</td>
+<td class="far">&nbsp;</td>
+<td class="far">&nbsp;</td>
+</tr>
+
+
+
+
+<tr class="personal">
+<th abbr="個人スケジュール" class="summary" scope="row">個人スケジュール</th>
+<td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140403')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140404')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140405')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140406')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140407')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140408')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140409')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td>
+</tr>
+
+<tr class="personal">
+<th abbr="個人伝言/お知らせ" class="summary" scope="row">個人伝言/お知らせ</th>
+<td class="near"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000437088','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_start.gif" alt="開始日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">◇世界遺産や日本経済について考える…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436552','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">【本日開催】藤沼亜起客員教授講演会</a></li>&nbsp;</ul></td>
+<td class="near"><ul>&nbsp;</ul></td>
+<td class="near"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','2','20130000407730','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">授業支援ステーションの開室時間につ…</a></li>&nbsp;</ul></td>
+<td class="far"><ul>&nbsp;</ul></td>
+<td class="far"><ul>&nbsp;</ul></td>
+<td class="far"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','5','20140000436116','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">公認会計士試験受験…</a></li>&nbsp;</ul></td>
+<td class="far"><ul>&nbsp;</ul></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="other">
+<table summary="この週の個人伝言/お知らせ（1列目：この週の個人伝言、2列目：お知らせ）">
+<caption>この週の個人伝言/お知らせ</caption>
+<tr>
+<th abbr="この週の個人伝言/お知らせ" scope="row">この週の個人伝言/お知らせ</th>
+<td><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436923','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月02日～06月10日&nbsp;■「大阪再考（3）～身近な大阪の学び～」■　平成26年度　関西大学おおさか文化セ…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436926','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月02日～09月18日&nbsp;§ビジネススキルを高めたい方必見！§関西社会人大学院連合 専門セミナー開催のお…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000437017','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月02日～04月16日&nbsp;【新入生必見】「STEP！」～勉強の仕方を聞こう～を開催します！</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000435756','1','20090000000002','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～04月21日&nbsp;【新メンバー募集】　ピア・コミュニティ「ＫＵサポーターズ」のメンバー募集について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436617','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【！重要！】　脱法ドラッグ（脱法ハーブ、合法アロマリキッド等）について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436634','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【注意】キャンパス内やキャンパス周辺での飲酒について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436635','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【注意】SNS（ソーシャル・ネットワーキング・サービス）の利用について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436640','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【注意】本学学生としてのマナーとモラルについて</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436754','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～07月30日&nbsp;平成２６年度春学期　国際部オフィスアワーのお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436826','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～04月19日&nbsp;（再掲）【インターンシップ】全体ガイダンスを開催します</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436578','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月28日～03月31日&nbsp;【必見】自分で考えた企画をやってみたい人募集　KUSP新メンバー募集のお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000435780','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月27日～04月30日&nbsp;４月の大学学生相談室の開室スケジュールについて</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000433350','1','20090000000051','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月22日～04月18日&nbsp;【重要】平成２６年度履修登録について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000435031','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月14日～05月31日&nbsp;3月～5月のKUコンシェルジュ対応時間について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000432897','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read_important.gif" alt="メール：未読 重要" width="16" height="16">03月07日～03月07日&nbsp;CEAS/Sakaiシステムの対応ブラウザについて</a></li></ul></td>
+<td class="link"><ul>
+<li class="link"><a href="#" class="calendarportlet-text-link" onClick="return mainwindowopennotice('/vespine/Notice','CMD_SHOW_IN_LIST','top','1')"><img src="/images/icon_link.gif" alt="" width="16" height="16">個人伝言一覧表を表示</a></li>
+<li class="link"><a href="#" class="calendarportlet-text-link" onClick="return mainwindowopennotice('/vespine/Notice','CMD_SHOW_IN_LIST','top','0')"><img src="/images/icon_link.gif" alt="" width="16" height="16">お知らせ一覧表を表示</a></li>
+</ul></td>
+</tr>
+</table>
+</div>
+
+<dl class="legendSymbolModel">
+<dt>凡例：</dt>
+<dd><img src="/images/icon_cancel.gif" alt="休講" width="16" height="16">休講、<img src="/images/icon_extra.gif" alt="補講" width="16" height="16">補講、<img src="/images/icon_information.gif" alt="連絡" width="16" height="16">連絡、<img src="/images/icon_change.gif" alt="変更" width="16" height="16">変更、<img src="/images/icon_routine.gif" alt="定例の予定アイコン" width="16" height="16">定例の予定、<img src="/images/icon_full_time.gif" alt="終日の予定" width="26" height="16">終日の予定、<br>
+<img src="/images/icon_time_period_start.gif" alt="開始日" width="16" height="16">開始日、<img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16">終了日、<img src="/images/icon_mail_read.gif" alt="既読アイコン" width="16" height="16">既読、<img src="/images/icon_mail_new.gif" alt="未読アイコン" width="16" height="16">未読、<img src="/images/icon_important.gif" alt="重要アイコン" width="16" height="16">重要、<img src="/images/icon_mark.gif" alt="マークアイコン" width="16" height="16">マーク</dd>
+</dl>
+</div></div><!--/portlet-->
+</form>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/nakajima/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89/Epson-LP-M6000-eplaser-jp.ppd" added="2014-04-01T06:35:58Z" modified="2014-04-01T06:37:57Z" visited="2014-04-01T06:35:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2014-04-01T06:35:58Z" count="1"/>
+          <bookmark:application name="system-config-printer.py" exec="&apos;system-config-printer.py %u&apos;" modified="2014-04-01T06:37:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/tex/document.tex" added="2014-04-01T06:56:36Z" modified="2014-04-02T02:56:06Z" visited="2014-04-01T06:56:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-tex"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-02T02:56:06Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/tex/document.pdf" added="2014-04-01T06:57:54Z" modified="2014-04-02T02:56:16Z" visited="2014-04-01T06:57:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2014-04-01T06:57:54Z" count="1"/>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2014-04-02T02:56:16Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/nakajima/MYLINUXLIVE/%E4%BC%9A%E8%A8%88/%E6%94%AF%E6%89%95%E7%A2%BA%E8%AA%8D.ods" added="2014-04-02T04:45:49Z" modified="2014-04-02T04:45:56Z" visited="2014-04-02T04:45:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-02T04:45:49Z" count="1"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T04:45:56Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/%E6%94%AF%E6%89%95%E7%A2%BA%E8%AA%8D.ods" added="2014-04-02T04:47:39Z" modified="2014-04-11T03:52:25Z" visited="2014-04-02T04:47:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-11T03:52:01Z" count="11"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-11T03:52:25Z" count="43"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013_4%E6%9C%88%20.ods" added="2014-04-02T04:58:31Z" modified="2014-04-02T05:25:12Z" visited="2014-04-02T04:58:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T05:25:12Z" count="3"/>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-02T05:25:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2014_2%E6%9C%88.ods" added="2014-04-02T04:59:42Z" modified="2014-04-02T05:00:05Z" visited="2014-04-02T04:59:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T05:00:05Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2014_1%E6%9C%88.ods" added="2014-04-02T05:00:14Z" modified="2014-04-02T05:00:31Z" visited="2014-04-02T05:00:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T05:00:31Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013_12%E6%9C%88.ods" added="2014-04-02T05:00:33Z" modified="2014-04-02T05:00:51Z" visited="2014-04-02T05:00:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T05:00:51Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2014_4%E6%9C%88%20.ods" added="2014-04-02T05:27:09Z" modified="2014-04-11T03:54:09Z" visited="2014-04-02T05:27:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-10T05:57:45Z" count="6"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-11T03:54:09Z" count="37"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2014_3%E6%9C%88.ods" added="2014-04-02T05:39:08Z" modified="2014-04-09T05:36:47Z" visited="2014-04-02T05:39:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-09T05:36:47Z" count="11"/>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-03T02:50:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/missfont.log" added="2014-04-02T06:03:47Z" modified="2014-04-11T05:47:34Z" visited="2014-04-02T06:03:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-log"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-11T05:47:32Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-11T05:47:34Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_4%E6%9C%88%20.ods" added="2014-04-08T05:42:22Z" modified="2014-04-08T05:50:25Z" visited="2014-04-08T05:42:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-08T05:50:25Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2014_2%E6%9C%88.ods" added="2014-04-09T03:14:07Z" modified="2014-04-09T05:29:42Z" visited="2014-04-09T03:14:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-09T05:29:42Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/.gemrc" added="2014-04-09T03:32:05Z" modified="2014-04-14T03:17:19Z" visited="2014-04-09T03:32:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-14T03:17:19Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/Gemfile" added="2014-04-09T03:37:24Z" modified="2014-04-09T03:48:29Z" visited="2014-04-09T03:37:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:48:29Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/doc/README_FOR_APP" added="2014-04-09T03:42:35Z" modified="2014-04-09T03:42:35Z" visited="2014-04-09T03:42:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:42:35Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/README.rdoc" added="2014-04-09T03:43:40Z" modified="2014-04-09T03:43:40Z" visited="2014-04-09T03:43:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:43:40Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/Rakefile" added="2014-04-09T03:44:38Z" modified="2014-04-09T03:44:38Z" visited="2014-04-09T03:44:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:44:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/config.ru" added="2014-04-09T03:44:47Z" modified="2014-04-09T03:44:47Z" visited="2014-04-09T03:44:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:44:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%91%E5%B9%B46%E6%9C%8823%E6%97%A5%E8%AA%B2%E9%A1%8C%E7%99%BA%E8%A1%A8%E3%80%80%E5%BE%B3%E5%B1%B1%E7%BF%94%E5%A4%AA.odp" added="2014-04-09T07:02:43Z" modified="2014-04-09T07:02:45Z" visited="2014-04-09T07:02:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2014-04-09T07:02:43Z" count="1"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-09T07:02:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/nakajima/4E66-7DC0/%E3%81%93%E3%81%A5%E3%81%8B%E3%81%84%E5%B8%B3%EF%BC%882014%E5%B9%B4%EF%BC%89%20(%E3%82%B3%E3%83%94%E3%83%BC).xlsx" added="2014-04-10T05:39:22Z" modified="2014-04-10T05:56:31Z" visited="2014-04-10T05:39:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-10T05:39:22Z" count="1"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-10T05:56:31Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/nakajima/4E66-7DC0/%E5%B9%B3%E6%88%9025%E5%B9%B4%E5%BA%A6%EF%BC%88%E4%B8%89%E5%9B%9E%EF%BC%89/%E3%83%A1%E3%82%AB%E3%83%88%E3%83%AD%E3%83%8B%E3%82%AF%E3%82%B9%202010%E5%B9%B4%E8%A9%A6%E9%A8%93%E5%95%8F%E9%A1%8C%20(1).JPG" added="2014-04-10T05:56:52Z" modified="2014-04-10T05:56:53Z" visited="2014-04-10T05:56:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;eog %U&apos;" modified="2014-04-10T05:56:52Z" count="1"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2014-04-10T05:56:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/nakajima/4E66-7DC0/%E5%B9%B3%E6%88%9025%E5%B9%B4%E5%BA%A6%EF%BC%88%E4%B8%89%E5%9B%9E%EF%BC%89/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E9%81%8E%E5%8E%BB%E5%95%8F.docx" added="2014-04-10T05:57:02Z" modified="2014-04-10T05:57:04Z" visited="2014-04-10T05:57:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --writer %U&apos;" modified="2014-04-10T05:57:02Z" count="1"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-10T05:57:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/nakajima/4E66-7DC0/beginning" added="2014-04-10T06:56:52Z" modified="2014-04-10T06:56:52Z" visited="2014-04-10T06:56:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2014-04-10T06:56:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/first_app/Gemfile" added="2014-04-11T07:10:39Z" modified="2014-04-14T03:34:09Z" visited="2014-04-11T07:10:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-14T03:34:09Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/.gitignore" added="2014-04-14T05:55:09Z" modified="2014-04-14T05:55:09Z" visited="2014-04-14T05:55:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-14T05:55:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

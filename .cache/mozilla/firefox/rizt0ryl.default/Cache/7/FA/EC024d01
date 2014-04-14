@@ -1,0 +1,1102 @@
+@charset "Shift_JIS";
+
+/*
+使用画面   :NAVI学生PC
+説明       :[メッセージ]で共通利用するCSS
+初版作成日 :2012/06/01
+初版作成者 :mycom(navi-dev)
+*/
+
+/*CSSファイル読み込み-------------------------------------------------------------------------------*/
+@import "layout30-01.css";
+
+.boxSPMessageBanner{
+	display:none;
+}
+/*基本レイアウト------------------------------------------------------------------------------------*/
+#contentsarea{
+	clear:both;
+	width:850px;
+}
+#contentsleft{
+	float:left;
+	width:670px;
+	margin-top:10px;
+}
+#contentsright{
+	float:right;
+	width:170px;
+	margin-top:10px;
+}
+.boxRecomend{
+	margin-bottom:10px;
+}
+/*
+STU_MES_G_02100.html
+USR-MAID-1700.html
+*/
+#contentsarea02{
+	clear:both;
+	width:603px;
+	margin-left:10px;
+}
+#headarea:after,
+#headarea:after,
+#contentsarea:after,
+#contentsright:after,
+.jyushinarea:after,
+.kensaku:after,
+.box:after,
+.boxb:after,
+.box2:after,
+.box3:after,
+.box4:after,
+.box5:after,
+.box6:after,
+.shibou:after,
+.kensakubottom:after,
+.kensaku:after,
+.companyttl:after,
+.companybox:after{
+	content:"."; 
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+/*見出し・本文・リンク要素--------------------------------------------------------------------------*/
+a:link {
+	text-decoration:none;
+}
+a:visited {
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+p{
+	/*IE以外為の数値*/
+	font-size:12px;
+	/*親　継承注意！　*/
+	_font-size:75%;
+}
+*:first-child+html p{
+ font-size:75%;
+}
+.clr{
+  clear:both;
+  overflow:hidden;
+  width:1px;
+  height:1px;
+  margin:0 -1px -1px 0;
+  border:0;
+  padding:0;
+  font-size:0;
+  line-height:0;
+}
+.f10{
+	margin:0px;
+	font-size:9px;
+	line-height:1.2em;
+	_font-size:75%;
+}
+
+/*非表示属性--------------*/
+hr{
+	clear:both;
+	_clear:none;
+	_position:absolute;
+	_top:0;
+	overflow:hidden;
+	visibility:hidden;
+	width:0px;
+	height:0px;
+}
+.txthdn{
+	display:none;
+}
+
+/*右側TOPICS(PR)------------------------------------------------------------------------------------*/
+.rBox{
+	margin:0px 0px 10px 0px;
+}
+.rBox h3{
+	background: #FFF url('../images/bg_title_search_right_02.gif') no-repeat 0px 0;
+	font-size: 11px;
+	line-height: 1.4em;
+	overflow: hidden;
+	padding:5px 5px 5px 27px;
+	color:#FFFFFF;
+}
+.rBox ul{
+	list-style-type:none;
+	border:1px solid #CCCCCC;
+}
+.rBox ul li{
+	list-style-type:none;
+	line-height:1.4em;
+	font-size:12px;
+}
+.rBox ul li a{
+	display:block;
+	padding:5px 5px 3px 5px;
+	border-bottom:1px dotted #CCCCCC;
+}
+
+
+
+.imgphoto a{
+	padding:0 22px 0 0;
+	background-image:url(../images/icon_camera_message.gif);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+.sele{
+	text-align:left;
+	font-size:12px;
+	margin-left:15px;
+}
+/*メッセージ一覧------------------------------------------------------------------------------------*/
+.companyttl{
+	margin:0;
+	padding:10px 15px 5px 10px;
+	background:#F0F0F0;
+	border-left:#149D0A solid 5px;
+	_height:0px;
+}
+*:first-child+html .companyttl{
+	display:inline-block;
+}
+.companyname{
+	float:left;
+	width:450px;
+	font-weight:bold;
+	color:#323232;
+	/*IE以外為の数値*/
+	font-size:14px;
+	/*親　継承注意！　*/
+	_font-size:120%;
+}
+.companydate{
+	float:right;
+	border-left:solid 1px #999999;
+	text-align:center;
+	width:100px;
+	color:#333333;
+	/*IE以外為の数値*/
+	font-size:10px;
+	/*親　継承注意！　*/
+	_font-size:75%;
+}
+.companytext{
+	border:solid #CCCCCC 1px;
+	width:546px;
+	margin:5px 0 0 0;
+	padding:10px 20px 10px 15px;
+	color:#696969;
+}
+/*サブページ用--------------------------------------------------------------------------------------*/
+.subpagetablearea{
+	margin:0;
+	padding:0;
+	width:99.5% !important;
+	border-collapse:collapse;
+}
+.subpagetablearea table.t02{
+	margin:10px 0 0 0;
+}
+.subpagetablearea table td{
+	background:#FFFFFF;
+	line-height:1.6em;
+}
+.subpagetablearea table th.t02,
+.textarea p.bold,
+.subpagetablearea table th.t01{
+	padding:10px 8px;
+	padding-left:25px;
+	background:#f6f6f6 url("../images/icons/icon_plink_down.png") no-repeat 5px center;
+	text-align:left;
+	/*IE以外為の数値*/
+	font-size:12px;
+	/*親　継承注意！　*/
+	_font-size:75%;
+	font-weight:bold;
+	border:2px solid #CCCCCC;
+}
+.textarea p.bold{
+	margin-bottom:1em;
+}
+.subpagetablearea table td{
+	padding:10px 0px;
+	/*IE以外為の数値*/
+	font-size:12px;
+	/*親　継承注意！　*/
+	_font-size:75%;
+}
+.btnsCenter{
+	text-align:center;
+}
+.btnsCenter button{
+	_margin-right:10px;
+}
+.companyboxlist{
+	margin:10px 0;
+	border-top:1px solid #cccccc;
+	background-image:url(../images/list_bg.gif);
+	background-position:0 0;
+	background-repeat:repeat-y;	
+}
+.companybox{
+	clear:both;
+	padding:5px;
+	border:1px solid #cccccc;
+	border-top:none;
+	_height:0;
+}
+	/*IE7*/
+*:first-child+html .companybox{
+	display:inline-block;
+}
+.companylistL{
+	float:left;
+	width:200px;
+}
+.companylistR{
+	float:left;
+	width:300px;
+}
+.textarea{
+	margin:10px 0 0px 0;
+	padding:0;
+	width:99.5%;
+}
+.textarea p{
+	padding:12px;
+}
+.btnarea{
+	margin-top:30px;
+	text-align:center;
+	padding-left:180px;
+}
+.btnStop{
+	float:left;
+}
+
+/*センター寄せ--------------------------------------------------------------------------------------*/
+#boxMessageleaf{
+	clear:both;
+	width:670px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:5px;
+	font-size:12px;
+}
+#boxMessageleaf.withTab{
+	/*
+	border:0px solid #CCCCCC;
+	*/
+}
+/*
+STU_MES_G_02100
+STU_MES_G_02060
+*/
+#bodyMessageleaf{
+	background:none;
+	width:auto !important;
+	min-width:auto !important;
+	padding:0px !important;
+	margin:0px !important;
+}
+/*▼リファクタ追加分--------------------------------------------------------------------------------*/
+li.school1{
+	text-align:center;
+	display:block;
+	width:90px;
+	height:18px;
+}
+/*▲リファクタ追加分--------------------------------------------------------------------------------*/
+.mailname{
+	width:200px !important;
+}
+.DMText{
+	font-family:"メイリオ",monospace;
+}
+.type10{
+	width:100%;
+}
+
+/*-受信エリア---------------------------------------------------------------------------------------*/
+
+/*新STU_MES_G_02030*/
+
+#boxMessageleafHeader{
+	overflow:hidden;
+	border:5px solid #f0f0f0;
+	margin-bottom:10px;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner{
+	background:#F9F9F9;
+	padding:5px;
+	overflow:hidden;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .corpname{
+	overflow:hidden;
+	width:64%;
+	float:left;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .nonCorpname{
+	width:34%;
+	float:right;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .corpname h2{
+	display:inline;
+	font-size:15px !important;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .btn{
+	float:right;
+	padding-left:10px;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .barcode{
+	margin-bottom:0px;
+	float:right;
+	clear:both;
+	text-align:center;
+	white-space:nowrap;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .barcode dt{
+	margin-bottom:5px;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .date{
+	margin-bottom:5px;
+	border:1px solid #00abeb;
+	width:150px;
+	font-size:11px;
+	float:right;
+}
+*:first-child+html #boxMessageleafHeader #boxMessageleafHeaderInner .date{
+	width:162px;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .date dl{
+	overflow:hidden;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .date dt{
+	float:left;
+	width:50%;
+	text-align:center;
+	background:#00abeb;
+	color:#FFFFFF;
+	height:24px;
+	line-height:25px;
+}
+#boxMessageleafHeader #boxMessageleafHeaderInner .date dd{
+	float:left;
+	width:50%;
+	text-align:center;
+	height:24px;
+	line-height:25px;
+}
+
+#boxMessageleafHeaderLinks{
+	clear:both;
+	padding:5px 5px 5px 5px;
+	background:#EEEEEE;
+}
+#boxMessageleafHeaderLinks ul{
+	overflow:hidden;
+	width:100%;
+}
+#boxMessageleafHeaderLinks ul li{
+	float:left;
+}
+#boxMessageleafHeaderLinks ul li a{
+	display:block;
+	padding:2px 10px;
+	font-size:90%;
+	margin:0px;
+	background:#F9F9F9;
+	margin-right:2px;
+	border:1px solid #CCCCCC;
+	text-decoration:none;
+}
+#boxMessageleafHeaderLinks ul li a:hover{
+	background:#FFFFFF;
+	text-decoration:underline;
+}
+#boxMessageleafBody{
+	padding:0px 0px;
+	border:5px solid #f0f0f0;
+}
+#boxMessageleafBody #boxMessageleafBodyInner{
+}
+#boxMessageleafBody .title{
+	margin:0px 0px 0px 0px;
+
+}
+#boxMessageleafBody .title{
+	border-left:0px;
+	border-right:0px;
+}
+#boxMessageleafBody .title h3{
+	font-size:150%;
+	padding:10px 10px 10px 28px !important;
+	background:url("../images/mail-open.png") no-repeat 2px .55em;
+}
+/*緑のグラデーション-------------------------------------------------------------------------------*/
+#boxMessageleafBody .title{
+	background:#0182e5;
+	color:#FFFFFF;
+	border-bottom:0px;
+	text-decoration:none !important;
+}
+*:first-child+html #boxMessageleafBody .title h3{
+	background:#65b101 url("../images/mail-open.png") no-repeat 2px .55em;
+}
+#boxMessageleafBody #boxMessageleafBodyInner .premium{
+	margin-top10px;
+	margin-bottom:20px;
+}
+#boxMessageleafBody #boxMessageleafBodyInner .premium .inner{
+	text-align:center;
+}
+#boxMessageleafBody #boxMessageleafBodyInner .premium .inner object,
+#boxMessageleafBody #boxMessageleafBodyInner .premium .inner img{
+	display:block;
+	padding:5px;
+	background:#FFFFFF;
+	border:1px solid #CCCCCC;
+	margin-left:auto;
+	margin-right:auto;
+}
+#boxMessageleafBody #boxMessageleafBodyInner .premium .inner p{
+	width:530px;
+	padding-top:10px;
+	font-size:12px;
+	text-align:left;
+	padding-left:30px !important;
+	background:url("../images/balloon-quotation.gif") no-repeat 10px .8em;
+	font-weight:bold;
+	margin-left:auto;
+	margin-right:auto;
+}
+#boxMessageleafBody #boxMessageleafBodyInner .honbun p{
+	width:37em;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:1.7em;
+	font-size:13px;
+	padding-bottom:1em;
+	padding-top:1em;
+}
+#boxMessageleafBody #boxMessageleafBodyInner blockquote{
+	padding:25px 15px 5px 50px;
+	border:1px solid #CCCCCC;
+	background:#f9e4e3 url("../images/icons/icon_blockquote.png") no-repeat 5px 5px;
+	width:37em;
+	margin-left:auto;
+	margin-right:auto;
+	line-height:1.7em;
+	font-size:13px;
+	padding-bottom:1em;
+	padding-top:1em;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+}
+#boxMessageleafBody #boxMessageleafBodyInner blockquote span{
+	display:block;
+	font-weight:bold;
+	margin-bottom:7px;
+}
+#boxMessageleafBody #boxMessageleafBodyInner .honbun p a{
+	text-decoration:underline;
+}
+/*本文内のエントリーシートPDF*/
+.entrySheetPDF{
+	text-align:center;
+	margin-top:20px;
+}
+.entrySheetPDF p{
+	margin:1em;
+	white-space:nowrap;
+	text-align:left;
+	font-size:12px !important;
+}
+/*本文下の添付枠*/
+.tableareaOption{
+	margin:0px 0px 5px 0px;
+	padding:5px;
+}
+.tableareaOption.top{
+}
+.tableareaOption.bottom{
+	/*
+	padding-top:35px;
+	background:url("../images/arrow-skip-270_big.png") no-repeat center top;
+	*/
+}
+.tableareaOption div.inner{
+}
+.tableareaOption ul{
+	overflow:hidden;
+}
+.tableareaOption ul li{
+	overflow:hidden;
+	font-size:12px;
+	padding:8px 5px;
+}
+/*偶数行の色を設定*/
+.tableareaOption ul li.even{
+	background:#ebfaff;
+}
+/*奇数行の色を設定*/
+.tableareaOption ul li.odd{
+	background:#f3f3f3;
+}
+.tableareaOption ul li:last-child{
+	margin-bottom:0px;
+}
+.tableareaOption ul li span.link{
+	width:530px;
+	float:left;
+	display:block;
+	margin-top:2px;
+	font-weight:bold;
+	line-height:1.3em;
+}
+/*
+STU_MES_G_02100
+*/
+.tableareaOption ul li span.corplink,
+.tableareaOption ul li span.temp,
+.tableareaOption ul li span.sem,
+.tableareaOption ul li span.ent{
+	background:#666666;
+	color:#FFFFFF;
+	padding:0px 5px 0px 5px;
+	width:110px;
+	display:block;
+	float:left;
+	text-align:center;
+	font-size:10px !important;
+	line-height:20px;
+	margin-right:.5em;
+	font-weight:normal;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radious:3px;
+}
+.tableareaOption ul li span.sem,
+.tableareaOption ul li span.ent{
+	background:#0182e5;
+}
+.tableareaOption ul li a{
+	display:inline-block;
+	margin-top:1px;
+	max-width:500px;
+	font-weight:bold;
+}
+
+/*新テーブル----------------------------------------------------------------*/
+/*テーブル************************************************************************************/
+.boxMessageTablearea{
+}
+.boxMessageTablearea .error{
+	margin:10px 5px 10px 5px;
+	border:2px solid #ff0000;
+	padding:10px;
+	color:#ff0000;
+	background:#f9e4e3;
+	text-align:center;
+}
+.boxMessageTablearea table{
+	margin:0;
+	padding:0;
+	width:100%;
+	border-collapse:collapse;
+	background:#FFFFFF;
+}
+.boxMessageTablearea table tr{
+}
+.boxMessageTablearea table tr.head{
+}
+
+.boxMessageTablearea table th,
+.boxMessageTablearea table td{
+	border:2px solid #e5e5e5;
+}
+.boxMessageTablearea table th.th01,
+.boxMessageTablearea table th.th02,
+.boxMessageTablearea table th.th03{
+	font-size:12px;
+	padding:10px 5px 7px 7px;
+	font-weight:bold;
+	background:#fffae0;
+	text-align:left;
+}
+.boxMessageTablearea table td.td01,
+.boxMessageTablearea table td.td02,
+.boxMessageTablearea table td.td03{
+	padding:15px 5px 12px 7px;
+	vertical-align:top;
+}
+.boxMessageTablearea table td.td01,
+.boxMessageTablearea table td.td03{
+}
+/*各セルの横幅*/
+.boxMessageTablearea table th.th01{
+	width:5%;
+}
+.boxMessageTablearea table th.th02{
+	width:80%;
+}
+.boxMessageTablearea table th.th03{
+	width:15%;
+}
+/*共通************************************************************************************/
+.boxMessageTablearea tr td p{
+	margin:0px;
+	padding:0px
+}
+/*プレミアアイコン*/
+.boxMessageTablearea tr.TrPremiumRead td p.linkDMTitle,
+.boxMessageTablearea tr.TrPremiumNotRead td p.linkDMTitle{
+	text-indent:20px;
+	background:url("../images/picture.png") no-repeat 0px .0em;
+}
+
+/*DMタイトル*/
+.boxMessageTablearea tr td.td02 p.linkDMTitle{
+	margin:0px 0px 12px 0px;
+	padding:0px;
+}
+/*社名*/
+.boxMessageTablearea tr td.td02 p.linkCorpName{
+	margin:0px 0px 0px 0px;
+	padding:3px;
+	background:#F3F3F3 !important;
+}
+/*業種名*/
+.boxMessageTablearea tr td.td02 p.textGyoshu{
+	font-size:10px;
+	overflow:hidden;
+	padding:0px 3px 3px 3px;
+	color:#666666;
+	background:#F3F3F3 !important;
+}
+/*業種名*/
+.boxMessageTablearea tr td.td02 p.textGyoshu span{
+	padding:0px 15px 0px 0px;	
+	display:block;
+	float:left;
+	white-space:nowrap;
+}
+/*DMタイトルのリンク*/
+.boxMessageTablearea tr td.td02 p.linkDMTitle a{
+	font-size:110%;
+	line-height:1.3em;
+	text-decoration:underline;
+}
+/*DMタイトルのリンク(hover)*/
+.boxMessageTablearea tr td.td02  p.linkDMTitle a:hover{
+	color:#CC0000 !important;
+	text-decoration:underline !important;
+}
+/*日付*/
+.boxMessageTablearea tr td.td03 p.date{
+	font-size:11px;
+	margin-bottom:3px;
+}
+/*エントリー可能アイコン*/
+/*説明会日程ありアイコン*/
+.boxMessageTablearea tr td.td03 p.entryOK{
+	background:#00abeb;
+	color:#FFFFFF;
+	font-size:11px;
+	line-height:22px;
+	width:9.5em;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:5px;
+}
+/*選択した場合************************************************************************************/
+/*選択した場合*/
+.boxMessageTablearea tr.checked td.td01{
+	background:#178add;
+}
+/*既読************************************************************************************/
+/*既読の背景色*/
+tr.TrNormalRead td,tr.TrNormalRead td td.td01,
+tr.TrNormalRead td,tr.TrNormalRead td td.td02,
+tr.TrNormalRead td,tr.TrNormalRead td td.td03,
+tr.TrPremiumRead td,tr.TrPremiumRead td.td01,
+tr.TrPremiumRead td,tr.TrPremiumRead td.td02,
+tr.TrPremiumRead td,tr.TrPremiumRead td.td03{
+	background:#FFFFFF;
+}
+/*既読の社名*/
+tr.TrNormalRead td p.linkCorpName,
+tr.TrPremiumRead td p.linkCorpName{
+	color:#666666 !important;
+}
+/*既読のタイトルリンク*/
+tr.TrNormalRead td p.linkDMTitle a,
+tr.TrPremiumRead td p.linkDMTitle a{
+	color:#666666 !important;
+	text-decoration:none;
+	font-weight:normal !important;
+}
+/*既読のタイトルリンク(hover)*/
+tr.TrNormalRead td p.linkDMTitle a:hover,
+tr.TrPremiumRead td p.linkDMTitle a:hover{
+	color:#CC0000 !important;
+	text-decoration:underline !important;
+}
+/*既読の業種*/
+tr.TrNormalRead td p.textGyoshu span,
+tr.TrPremiumRead td p.textGyoshu span{
+	color:#666666 !important;
+}
+
+/*未読************************************************************************************/
+/*未読の背景色*/
+tr.TrNormalNotRead td {
+	background:#FFFFFF;
+}
+tr.TrPremiumNotRead td{
+	background:#FFFFFF;
+}
+
+/*未読文字色*/
+tr.TrNormalNotRead td a,
+tr.TrPremiumNotRead td a{
+	color:#0066cc !important;
+	font-weight:bold !important;
+}
+/*プレミアで未読の文字色*/
+tr.TrPremiumNotRead td p.linkDMTitle a{
+	color:#FF4400 !important;
+}
+tr.TrPremiumNotRead td p.linkDMTitle a:hover{
+	color:#CC0000 !important;
+	text-decoration:underline !important;
+}
+
+
+
+
+
+/*サブページ(フォルダの作成等)*/
+.boxMessageSub{
+	margin-bottom:20px;
+}
+.boxMessageSub h2{
+	font-size:13px;
+	padding:.5em;
+	margin-bottom:10px;
+	border-radius:3px;-webkit-border-radius:3px;-moz-border-radious:3px;
+}
+.boxMessageSub .inner{
+	
+}
+.boxMessageSub .inner .innerText{
+	padding:.5em;
+}
+.soutImg{
+	padding:0px 0px 280px 0px;
+	background:url("../images/scout_headerimage_messageList.gif") no-repeat center bottom;
+}
+.innerBtninner,
+.boxMessageSub .inner .innerBtn{
+	text-align:center;
+}
+.boxMessageSub .inner .folderSortWrapper{
+	margin-bottom:10px;
+}
+.boxMessageSub .inner table.folderSort{
+	font-size:12px;
+	border-collapse:collapse;
+	border-top:2px solid #f0f0f0;
+	border-right:2px solid #f0f0f0;
+}
+.boxMessageSub .inner table.folderSort th,
+.boxMessageSub .inner table.folderSort td{
+	padding:.5em;
+	border-bottom:2px solid #f0f0f0;
+	border-left:2px solid #f0f0f0;
+}
+.boxMessageSub .inner table.folderSort th{
+	font-weight:bold;
+}
+.boxMessageSub .inner table.folderSort td{
+	background:#FFFFFF;
+}
+.boxMessageSub .inner table.folderSort td.td01{
+	text-align:center;
+}
+/*
+メッセージ一覧の絞り込み
+STU_MES_G_01010
+STU_MES_G_01020
+STU_MES_G_01030
+STU_MES_G_01040
+STU_MES_G_01050
+*/
+.funcMessageLeaf,
+.funcMessageList{
+	clear:both;
+	overflow:hidden;
+}
+.funcMessageLeaf .garbage{
+	padding:10px 0px;
+}
+.funcMessageList.upper{
+	margin-bottom:5px;
+}
+.funcMessageList.bottom{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.funcMessageLeaf .inner,
+.funcMessageList .inner{
+	clear:both;
+	overflow:hidden;
+}
+.funcMessageLeaf .inner p.txt,
+.funcMessageList .inner p.txt{
+	padding:5px 0px;
+}
+.funcMessageLeaf select,
+.funcMessageList select{
+	font-size:11px;
+	float:left;
+	margin-top:2px;
+	margin-right:3px;
+}
+.funcMessageLeaf .btnExSmallCommon,
+.funcMessageList .btnExSmallCommon{
+	float:left;
+	margin-right:3px;
+}
+/*IE7*/
+*:first-child+html .funcMessageLeaf .btnExSmallCommon,
+*:first-child+html .funcMessageList .btnExSmallCommon{
+	top:-5px;
+	position:relative;
+}
+.funcMessageLeaf.bottom .inner.action{
+	padding:5px 0px;
+}
+.funcMessageLeaf.bottom .inner.action .contents{
+	font-size:12px;
+	padding:3px 0px;
+	text-align:left;
+}
+.funcMessageLeaf.bottom .inner.action .contents ol li{
+	font-size:12px;
+	padding:3px 0px;
+	text-align:left;
+}
+.funcMessageList .btnSmallCommonW15em.overflow span.count{
+	visibility: hidden;
+	overflow:hidden;
+}
+p.btntxt{
+	display:inline;
+	margin-right:5px;
+	font-size:11px;
+}
+
+/*
+ページネーション
+STU_MES_G_01010
+STU_MES_G_01020
+STU_MES_G_01030
+STU_MES_G_01040
+STU_MES_G_01050
+*/
+.pnationMessageList{
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.pnationMessageList .inner{
+}
+.pnationMessageList.upper{
+	position:relative;
+	top:30px;
+	margin-top:-23px;
+}
+.pnationMessageList.bottom{
+	position:relative;
+	top:-25px;
+	margin-bottom:-23px;
+}
+.pnationMessageList ul{
+	overflow:hidden;
+	float:right;
+}
+.pnationMessageList ul li{
+	float:left;
+	font-size:15px;
+	margin-right:7px;
+	padding-right:10px;
+	background:url("../images/splitLink.gif") no-repeat right .2em;
+}
+.pnationMessageList ul li.next{
+	background:none;
+	margin-right:0px;
+	padding-right:0px;
+}
+.pnationMessageList ul li a{
+	text-decoration:underline;
+}
+.pnationMessageList ul li.noLink span{
+	color:#999999;
+}
+.pnationMessageList ul li.num.noLink span{
+	font-weight:bold;
+	color:#000000;
+}
+.pnationMessageList ul li.back a,
+.pnationMessageList ul li.next a{
+	font-weight:bold;
+}
+/*
+ページネーション
+STU_MES_G_02010
+STU_MES_G_02020
+STU_MES_G_02030
+STU_MES_G_02040
+STU_MES_G_02050
+*/
+.pnationMessageLeaf{
+	margin-bottom:5px;
+	overflow:hidden;
+}
+.pnationMessageLeaf .inner{
+}
+.pnationMessageLeaf.upper{
+
+}
+.pnationMessageLeaf.bottom{
+
+}
+.pnationMessageLeaf ul{
+	overflow:hidden;
+	width:220px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.pnationMessageLeaf ul li{
+	float:left;
+	font-size:15px;
+	margin-right:15px;
+	padding-right:15px;
+	background:url("../images/splitLink.gif") no-repeat right .2em;
+}
+.pnationMessageLeaf ul li.next{
+	background:none;
+	margin-right:0px;
+	padding-right:0px;
+}
+.pnationMessageLeaf ul li a{
+	text-decoration:underline;
+}
+.pnationMessageLeaf ul li.backToList a,
+.pnationMessageLeaf ul li.back a,
+.pnationMessageLeaf ul li.next a{
+	font-weight:bold;
+}
+.pnationMessageLeaf ul li.backToList.noLink,
+.pnationMessageLeaf ul li.back.noLink,
+.pnationMessageLeaf ul li.next.noLink{
+	color:#999999;
+}
+/*受信箱やマイフォルダー*/
+.folders{
+	margin-bottom:5px;
+	padding:5px 5px 8px 5px;
+}
+.folders ul{
+	overflow:hidden;
+}
+.folders ul li{
+	float:left;
+	margin-right:20px !important;
+	padding-left:0px;
+	margin-right:0px;
+	white-space:nowrap;
+}
+.folders ul li a{
+	font-size:11px;
+	padding-left:20px;
+	padding-right:5px;
+}
+div.folders div.inner ul li.jyushin a{
+	background:url("../images/icons/icon_inbox_off.png") no-repeat 0px center;
+}
+div.folders div.inner ul li.gomi a{
+	background:url("../images/icons/icon_trash_off.png") no-repeat 0px center;
+}
+div.folders div.inner ul li.myFolder a{
+	background:url("../images/icons/icon_myfolder_off.png") no-repeat 0px center;
+}
+div.folders div.inner ul li.edit a{
+	background:url("../images/icons/icon_settings_off.png") no-repeat 0px center;
+}
+
+div.folders div.inner ul li.jyushin.now a{
+	background:url("../images/icons/icon_inbox.png") no-repeat 0px center;
+}
+div.folders div.inner ul li.gomi.now a{
+	background:url("../images/icons/icon_trash.png") no-repeat 0px center;
+}
+div.folders div.inner ul li.myFolder.now a{
+	background:url("../images/icons/icon_myfolder.png") no-repeat 0px center;
+}
+div.folders div.inner ul li.edit.now a{
+	background:url("../images/icons/icon_help.png") no-repeat 0px center;
+}
+div.folders div.inner ul li.help{
+	background:url("../images/icons/icon_sphelp.png") no-repeat 0px center;
+}
+.folders ul li.now a{
+	color:#000000;
+	background:#fcad23;
+}
+
+#boxFlexError{
+	padding:10px 30px;
+}
+#boxFlexError p{
+	line-height:1.6em;
+	color:#FF0000;
+	text-align:center;
+}
+#boxFlexError p a{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+#boxSpMessageCount{
+	text-align:center;
+}
+#boxSpMessageCount p{
+	display:inline-block;
+}
+#boxSpMessageCount{
+	margin-top:5px;
+}
+#boxSpMessageCount p.count span{
+	font-size:15px;
+	font-weight:bold;
+	color:#CC0000;
+}
+#boxSpMessageCount p.attention{
+	font-size:12px;
+	margin-top:5px;
+	line-height:1.4em;
+}
+
+#boxSpMessageCount p.attention a{
+	margin:0px 3px;
+	text-decoration:underline;
+}

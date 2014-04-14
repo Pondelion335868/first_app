@@ -1,0 +1,365 @@
+yjaxclookup_link(['<input type="hidden">\
+      <style type="text/css">\
+    \
+    #yahoo_ydn_adgallery_link_wrapper {\
+      position: relative;\
+      min-height: 27px;\
+      overflow: hidden;\
+      white-space: nowrap;\
+    }\
+    \
+    #yahoo_ydn_adgallery_link_wrapper a > span {\
+      display: inline-block;\
+      padding-left: 2px;\
+      padding-right: 2px;\
+      text-decoration:underline;\
+    }\
+    \
+    span.yahoo_ydn_adgallery_link_pr {\
+      font-family: "MS PGothic",sans-serif;\
+      display:inline-block;\
+      padding: 0;\
+      vertical-align:1px;\
+      color:#999;\
+      font-size:12px;\
+    }\
+    \
+    a.yahoo_ydn_adgallery_link {\
+      font-family: "MS PGothic",sans-serif;\
+      display:inline-block;\
+      position: relative;\
+      vertical-align:1px;\
+      margin-right:4px;\
+      font-size:13px;\
+    }\
+    \
+    *:first-child+html a.yahoo_ydn_adgallery_link {\
+      margin-right:8px;\
+    }\
+    \
+    img.yahoo_ydn_adgallery_link_img {\
+      display:inline-block;\
+      margin-top:-5px;\
+      margin-right:1px;\
+      vertical-align:middle;\
+      border:none;\
+    }\
+    \
+    *:first-child+html .yahoo_ydn_adgallery_link_img {\
+      margin-top:-2px;\
+    }\
+    \
+    \
+    .yahoo_ydn_adgallery_link_spin {\
+      animation-name: yahoo_ydn_adgallery_link_spin_rotate;\
+      -webkit-animation-name: yahoo_ydn_adgallery_link_spin_rotate;\
+      -moz-animation-name: yahoo_ydn_adgallery_link_spin_rotate;\
+      -o-animation-name: yahoo_ydn_adgallery_link_spin_rotate;\
+      -ms-animation-name: yahoo_ydn_adgallery_link_spin_rotate;\
+      \
+      animation-duration: 24s;\
+      -webkit-animation-duration: 24s;\
+      -moz-animation-duration: 24s;\
+      -o-animation-duration: 24s;\
+      -ms-animation-duration: 24s;\
+      \
+      animation-timing-function: ease-in-out;\
+      -webkit-animation-timing-function: ease-in-out;\
+      -moz-animation-timing-function: ease-in-out;\
+      -o-animation-timing-function: ease-in-out;\
+      -ms-animation-timing-function: ease-in-out;\
+      \
+      animation-iteration-count: infinite;\
+      -webkit-animation-iteration-count: infinite;\
+      -moz-animation-iteration-count: infinite;\
+      -o-animation-iteration-count: infinite;\
+      -ms-animation-iteration-count: infinite;\
+    }\
+    \
+    @keyframes yahoo_ydn_adgallery_link_spin_rotate {\
+      0% { transform: rotate(0deg); }\
+      25% { transform: rotate(3600deg); }\
+      100% { transform: rotate(3600deg); }\
+    }\
+    \
+    @-webkit-keyframes yahoo_ydn_adgallery_link_spin_rotate {\
+      from {\
+        -webkit-transform: rotate(0deg);\
+      }\
+      25% {\
+        -webkit-transform: rotate(3600deg);\
+      }\
+      to {\
+        -webkit-transform: rotate(3600deg);\
+      }\
+    }\
+    \
+    @-moz-keyframes yahoo_ydn_adgallery_link_spin_rotate {\
+      from {\
+        -moz-transform: rotate(0deg);\
+      }\
+      25% {\
+        -moz-transform: rotate(3600deg);\
+      }\
+      to {\
+        -moz-transform: rotate(3600deg);\
+      }\
+    }\
+    \
+    @-o-keyframes yahoo_ydn_adgallery_link_spin_rotate {\
+      from {\
+        -o-transform: rotate(0deg);\
+      }\
+      25% {\
+        -o-transform: rotate(3600deg);\
+      }\
+      to {\
+        -o-transform: rotate(3600deg);\
+      }\
+    }\
+    \
+    @-ms-keyframes yahoo_ydn_adgallery_link_spin_rotate {\
+      from {\
+        -ms-transform: rotate(0deg);\
+      }\
+      25% {\
+        -ms-transform: rotate(3600deg);\
+      }\
+      to {\
+        -ms-transform: rotate(3600deg);\
+      }\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay1 {\
+      animation-delay: 0.4s;\
+      -webkit-animation-delay: 0.4s;\
+      -moz-animation-delay: 0.4s;\
+      -o-animation-delay: 0.4s;\
+      -ms-animation-delay: 0.4s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay2 {\
+      animation-delay: 0.8s;\
+      -webkit-animation-delay: 0.8s;\
+      -moz-animation-delay: 0.8s;\
+      -o-animation-delay: 0.8s;\
+      -ms-animation-delay: 0.8s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay3 {\
+      animation-delay: 1.2s;\
+      -webkit-animation-delay: 1.2s;\
+      -moz-animation-delay: 1.2s;\
+      -o-animation-delay: 1.2s;\
+      -ms-animation-delay: 1.2s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay4 {\
+      animation-delay: 1.6s;\
+      -webkit-animation-delay: 1.6s;\
+      -moz-animation-delay: 1.6s;\
+      -o-animation-delay: 1.6s;\
+      -ms-animation-delay: 1.6s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay5 {\
+      animation-delay: 2s;\
+      -webkit-animation-delay: 2s;\
+      -moz-animation-delay: 2s;\
+      -o-animation-delay: 2s;\
+      -ms-animation-delay: 2s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay6 {\
+      animation-delay: 2.4s;\
+      -webkit-animation-delay: 2.4s;\
+      -moz-animation-delay: 2.4s;\
+      -o-animation-delay: 2.4s;\
+      -ms-animation-delay: 2.4s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay7 {\
+      animation-delay: 2.8s;\
+      -webkit-animation-delay: 2.8s;\
+      -moz-animation-delay: 2.8s;\
+      -o-animation-delay: 2.8s;\
+      -ms-animation-delay: 2.8s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay8 {\
+      animation-delay: 3.2s;\
+      -webkit-animation-delay: 3.2s;\
+      -moz-animation-delay: 3.2s;\
+      -o-animation-delay: 3.2s;\
+      -ms-animation-delay: 3.2s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay9 {\
+      animation-delay: 3.6s;\
+      -webkit-animation-delay: 3.6s;\
+      -moz-animation-delay: 3.6s;\
+      -o-animation-delay: 3.6s;\
+      -ms-animation-delay: 3.6s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_spin_delay10 {\
+      animation-delay: 4s;\
+      -webkit-animation-delay: 4s;\
+      -moz-animation-delay: 4s;\
+      -o-animation-delay: 4s;\
+      -ms-animation-delay: 4s;\
+    }\
+    \
+    \
+    .yahoo_ydn_adgallery_link_page_group {\
+      position: absolute;\
+      top: 0;\
+      left: 24px;\
+      width: 100%;\
+      padding: 6px 0 6px 4px;\
+      background-color:#F0F7FF;\
+      transition:0.5s;\
+      -webkit-transition:0.5s;\
+      -moz-transition:0.5s;\
+      -o-transition:0.5s;\
+      -ms-transition:0.5s;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_page_navi {\
+      position: absolute;\
+      top: 0px;\
+      width: 12px;\
+      height: 27px;\
+      line-height: 25px;\
+      margin: 0px;\
+      text-align: center;\
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\
+      font-size: 18px;\
+      background-color: #F7FAFD;\
+      color: #D8D8D8;\
+      z-index: 10;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_page_prev {\
+      left: 0px;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_page_next {\
+      left: 12px;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_page_navi_active {\
+      background-color: #DFE9F5;\
+      color: #BAC0C6;\
+      cursor: pointer;\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_page_navi_active:hover {\
+      background-color: rgba(200, 215, 255, 0.8);\
+    }\
+    \
+    .yahoo_ydn_adgallery_link_page_navi_unactive {\
+      background-color: #F7FAFD;\
+      color: #E6E7E8;\
+      cursor: default;\
+    }\
+    \
+    #yahoo_ydn_adgallery_link_wrapper label {\
+      display: none;\
+      margin: 0px;\
+      z-index: 20;\
+      height: 27px;\
+    }\
+    \
+    #yahoo_ydn_adgallery_link_page_next1:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev1"],\
+    #yahoo_ydn_adgallery_link_page_next1:checked ~ label[for="yahoo_ydn_adgallery_link_page_next1"],\
+    #yahoo_ydn_adgallery_link_page_prev2:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev2"],\
+    #yahoo_ydn_adgallery_link_page_prev2:checked ~ label[for="yahoo_ydn_adgallery_link_page_next2"],\
+    #yahoo_ydn_adgallery_link_page_next2:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev2"],\
+    #yahoo_ydn_adgallery_link_page_next2:checked ~ label[for="yahoo_ydn_adgallery_link_page_next2"],\
+    #yahoo_ydn_adgallery_link_page_prev3:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev3"],\
+    #yahoo_ydn_adgallery_link_page_prev3:checked ~ label[for="yahoo_ydn_adgallery_link_page_next3"],\
+    #yahoo_ydn_adgallery_link_page_next3:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev3"],\
+    #yahoo_ydn_adgallery_link_page_next3:checked ~ label[for="yahoo_ydn_adgallery_link_page_next3"],\
+    #yahoo_ydn_adgallery_link_page_prev4:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev4"],\
+    #yahoo_ydn_adgallery_link_page_prev4:checked ~ label[for="yahoo_ydn_adgallery_link_page_next4"] {\
+      display: none;\
+    }\
+    \
+    #yahoo_ydn_adgallery_link_page_next1:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev2"],\
+    #yahoo_ydn_adgallery_link_page_next1:checked ~ label[for="yahoo_ydn_adgallery_link_page_next2"],\
+    #yahoo_ydn_adgallery_link_page_prev2:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev1"],\
+    #yahoo_ydn_adgallery_link_page_prev2:checked ~ label[for="yahoo_ydn_adgallery_link_page_next1"],\
+    #yahoo_ydn_adgallery_link_page_next2:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev3"],\
+    #yahoo_ydn_adgallery_link_page_next2:checked ~ label[for="yahoo_ydn_adgallery_link_page_next3"],\
+    #yahoo_ydn_adgallery_link_page_prev3:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev2"],\
+    #yahoo_ydn_adgallery_link_page_prev3:checked ~ label[for="yahoo_ydn_adgallery_link_page_next2"],\
+    #yahoo_ydn_adgallery_link_page_next3:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev4"],\
+    #yahoo_ydn_adgallery_link_page_next3:checked ~ label[for="yahoo_ydn_adgallery_link_page_next4"],\
+    #yahoo_ydn_adgallery_link_page_prev4:checked ~ label[for="yahoo_ydn_adgallery_link_page_prev3"],\
+    #yahoo_ydn_adgallery_link_page_prev4:checked ~ label[for="yahoo_ydn_adgallery_link_page_next3"] {\
+      display: block;\
+    }\
+  </style>\
+      <!--[if lt IE 9]><style type="text/css">\
+    #yahoo_ydn_adgallery_link_page_group1 {\
+      left: 0px;\
+      z-index: 100;\
+      padding-left: 6px;\
+    }\
+  </style><![endif]--><div id="yahoo_ydn_adgallery_link_wrapper">\
+        <input id="yahoo_ydn_adgallery_link_page_next1" type="radio" name="yahoo_ydn_adgallery_link_slide" style="display:none;">\
+        <input id="yahoo_ydn_adgallery_link_page_prev2" type="radio" name="yahoo_ydn_adgallery_link_slide" style="display:none;" checked>\
+        <input id="yahoo_ydn_adgallery_link_page_next2" type="radio" name="yahoo_ydn_adgallery_link_slide" style="display:none;">\
+        <input id="yahoo_ydn_adgallery_link_page_prev3" type="radio" name="yahoo_ydn_adgallery_link_slide" style="display:none;">\
+        <input id="yahoo_ydn_adgallery_link_page_next3" type="radio" name="yahoo_ydn_adgallery_link_slide" style="display:none;">\
+        <input id="yahoo_ydn_adgallery_link_page_prev4" type="radio" name="yahoo_ydn_adgallery_link_slide" style="display:none;">\
+        <label id="yahoo_ydn_adgallery_link_page_prev_label1" for="yahoo_ydn_adgallery_link_page_prev1" class="yahoo_ydn_adgallery_link_page_navi yahoo_ydn_adgallery_link_page_prev yahoo_ydn_adgallery_link_page_navi_unactive" disabled>‹</label>\
+        <label id="yahoo_ydn_adgallery_link_page_next_label1" for="yahoo_ydn_adgallery_link_page_next1" class="yahoo_ydn_adgallery_link_page_navi yahoo_ydn_adgallery_link_page_next yahoo_ydn_adgallery_link_page_navi_active">›</label>\
+        <label id="yahoo_ydn_adgallery_link_page_prev_label2" for="yahoo_ydn_adgallery_link_page_prev2" class="yahoo_ydn_adgallery_link_page_navi yahoo_ydn_adgallery_link_page_prev yahoo_ydn_adgallery_link_page_navi_active">‹</label>\
+        <label id="yahoo_ydn_adgallery_link_page_prev_label3" for="yahoo_ydn_adgallery_link_page_prev3" class="yahoo_ydn_adgallery_link_page_navi yahoo_ydn_adgallery_link_page_prev yahoo_ydn_adgallery_link_page_navi_active">‹</label>\
+        <label id="yahoo_ydn_adgallery_link_page_prev_label4" for="yahoo_ydn_adgallery_link_page_prev4" class="yahoo_ydn_adgallery_link_page_navi yahoo_ydn_adgallery_link_page_prev yahoo_ydn_adgallery_link_page_navi_active">‹</label>\
+        <label id="yahoo_ydn_adgallery_link_page_next_label4" for="yahoo_ydn_adgallery_link_page_next4" class="yahoo_ydn_adgallery_link_page_navi yahoo_ydn_adgallery_link_page_next yahoo_ydn_adgallery_link_page_navi_unactive" disabled>›</label>\
+        <label id="yahoo_ydn_adgallery_link_page_next_label2" for="yahoo_ydn_adgallery_link_page_next2" class="yahoo_ydn_adgallery_link_page_navi yahoo_ydn_adgallery_link_page_next yahoo_ydn_adgallery_link_page_navi_unactive" disabled>›</label>\
+            <style type="text/css">\
+    #yahoo_ydn_adgallery_link_page_next1:checked ~ #yahoo_ydn_adgallery_link_page_group1 {\
+      transform:translateX(-100%);\
+      -webkit-transform:translateX(-100%);\
+      -moz-transform:translateX(-100%);\
+      -o-transform:translateX(-100%);\
+      -ms-transform:translateX(-100%);\
+    }\
+    \
+    #yahoo_ydn_adgallery_link_page_prev2:checked ~ #yahoo_ydn_adgallery_link_page_group1,\
+    #yahoo_ydn_adgallery_link_page_next1:checked ~ #yahoo_ydn_adgallery_link_page_group2 {\
+      transform:translateX(0%);\
+      -webkit-transform:translateX(0%);\
+      -moz-transform:translateX(0%);\
+      -o-transform:translateX(0%);\
+      -ms-transform:translateX(0%);\
+    }\
+    \
+    #yahoo_ydn_adgallery_link_page_prev2:checked ~ #yahoo_ydn_adgallery_link_page_group2 {\
+      transform:translateX(100%);\
+      -webkit-transform:translateX(100%);\
+      -moz-transform:translateX(100%);\
+      -o-transform:translateX(100%);\
+      -ms-transform:translateX(100%);\
+    }\
+  </style>\
+            <div id="yahoo_ydn_adgallery_link_page_group1" class="yahoo_ydn_adgallery_link_page_group">\
+              <span class="yahoo_ydn_adgallery_link_pr">&lt;AD&gt;</span>\
+              <a class="yahoo_ydn_adgallery_link" href="http://link.yads.yahoo.co.jp/rd?ep=qZAyIY78YDxA9GFKDUxDMsi3WPp3m7oJKTSUwDAXRt4El81NU3IsGCicqfcnrPiXGcLQgULYj5SKCoSfgng9_fLUbWWr5_Pzr0nCihxWGr149Pka6.f9LR8TdGP1Vs0prIQD5J3ZTIROuZYYFYJwctAFhsI4V6X.m6pgq6ldW_IZ5824s59CvfKziXDkMtkUJ9aqQSVUykYJnFgK9oU6RGPI..zWgWFlMS5DggT71UwgA9YhhdqcsPmd2F.mw_AGnrL1omXm_SwUBHI8KXU-&amp;dc=ze91FZlvj54Ddxn2iq3afmrGvaadvnc7i5Ssg4qmj5_S0kSs04psG17qaDlzwawFtV8jfxKtSpJfkGieerkLwTJ7UXCGubqIsrT5vKnzp_JXBkH18qdtd.0q4N5naiZ9afc3UNQmPvW26dzzR7soA7..JvwXVt.XPZm8a0IrBeYI.eWlCTioY0vjUd7jQzKBx6VDfASv9Qh.3SWF3Ysju1PLfs7sWGob96u.lTQggRd.JxeqO5AMaZfrW0vUNGIOtWP7hx2ScCs2iKIBIk62mFWGluSDqGy_69_pn6uCBkI6g0.Lk1O3hXPcHP3RVQNOdVX_Nhb1VRboAiNxGJdWivdTgZ5WIkJr4b9l4K_Na97IyKB.CVAUeeUXXQo4hDDKK3bKpR2DqLEXSnjWtgfKTvfHKuWkGo_awIzNip_Ojf.XdLfIVYvbeTIFx4VZliLp_lb9qaZtupbbLu4gxtXpXmFwgjdheT5hXwaL8UlquFKnMlrPb_RwhX1A2JAT_ZuQAiGepB5qTM8LMdV6qXYXnFObQ6dNQBzExtmQPpCceJ4uwLY2T2DYkg--" target="_blank"><img src="http://i.yimg.jp/images/adgallery/icon_weight/pc.png" class="yahoo_ydn_adgallery_link_img yahoo_ydn_adgallery_link_spin"><span>会計ソフト</span></a>\
+      <a class="yahoo_ydn_adgallery_link" href="http://link.yads.yahoo.co.jp/rd?ep=2CGAUub8YDz5XNwLUw03bJPUN5tCeNQO0kTWkdniF5rBpdgidGR0zLbJ5XkO0jbRgnPX5.zhdpAUf2o7ZnLcPZ_9GOxj2s6Mm4ZTVzAMIC39jvOYJAckB.gTr97PSSxJgMkJUd7g5454msXFtFkArpkFpTFFBZ2Mc9dT5THUtBucfwFbVar9KYS5Ne0ls_QG6vTrKXzuC_2UkV9hKJhR6By1V4NnI6HH061iLhxf0wCF4LITCsMzisbs_lG4e7x8omp5LqnV0BFgWQVEOZVsYP0-&amp;dc=SmOLogdvj56Engw8Sut.AJ71_PRjVaPwuChf.LH94TbiTzBVkbD.P.Gs3vTJwmBmItMOcLHxe.KtJ12XEmvnbVNjPW4w_guk9Zlb4m0IUfdJZyARiNmPkbaSWMzPFdBMa6MYqOUyR.XQpS.4n_s6PeWkcXcER4.2Dq7htAMPzyQtO54BZkZa9b7tEPAwCH4Rzep0KkQDWs2ju2a.BNY8SOXnGzUduSpOgtO_wxesNjTc_HGf5FDFzrKIQ_wGzd2FpWOCgBdKaBJfphJRVVIelY_2k6Evb8uuYD5VsjHsunapa7UboYL.T8_cUtEiGtw11Y4BmvM3LFpdgBUn1G9SgGe8bul8Pblxk0zdBi5OJZILYdix2mQMWvQN2I1KKLyaIXV30.NHb4A7wcQFLC6jtiq.SQuImmxRaivxLFD1OS42w4am26l318DfWwQr.IXEdgBpbIZdOcMyG6oZDwt7ebtYB8e_Rtc7Tc1tJ89iMIw7FAJpxwJakSlpd3N6FfPegumsouLJ9ybTbaFS4fV2vRhJfbIY45Ks3Bh7oxQmfT8qLZ9a373ALoVQXg--" target="_blank"><img src="http://i.yimg.jp/images/adgallery/icon_weight/business.png" class="yahoo_ydn_adgallery_link_img yahoo_ydn_adgallery_link_spin yahoo_ydn_adgallery_link_spin_delay1"><span>システム構築</span></a>\
+      <a class="yahoo_ydn_adgallery_link" href="http://link.yads.yahoo.co.jp/rd?ep=TXxJCJH8YDzdygH_ClIIX1J3r0rbjChhEPSOz2KZ9cwlHNkAJ2sKCm3Ki045oSfix_HS14WGTNVoT0XY7np6_XAu4Nhc1mkjCPhhB5ScOKWT0N7thYnB_1lp2mWUJmUX2A2vJdKccw6de6XWJfjWNHohJeZw9XYEyhubiV6FLg3iZdKHts.1RQj1PnHJf0WqNemgrFD7cI4F2wguGOE7VkHFl0UpY_QcYp5PeSKk_pLWsiC_n4QwdNd9o68kS_S1dnDW_6i_iDOZk8HMOhg-&amp;dc=MUNIazpvj573mRVNxeuytSifQqTjfMN_eO7.98Req_3_WylNJ70B15MeTSRiEAwHhRQPHbrRCfFRiK5urpOrGd2dbtAmVvWVC5RSTn56hgSOu.7bWykOl7NmigJ0Ou29n9GkwgluOYkz5Q9a42SxN3r6qgP7vvupAARaOvrc9rNFu6hR4H3zgL5CP7TqKfxeyC5JXZi1pc7XJHMQq4J3du8gPDbOw3KjQ_mF3d7u4z0wlXASCF_2kcHYE0wZmBL0Zxe4OMmZrOmDNzs8WEOAOTK.BM_xXQW1jSKuMw_XhBY2nxlF8.DTo4th8lsR456vtNW95zyQJ1GzBa.hlaWSgHARB2Z9PZS3kvYf17Ljo1Vd4xr9aDyKpgPLoNfS4Pi0C7YfpXqOMO69Rz.IP_1wPnl304FVRvabP1aV.YC4LoJ9OCGfQHIAlrQFeJdKIGNBsekbIMeYpyP1ZRgBOgD5IIbIv0ezyJKHKrClzjS0whfwoxZXMFaYaSBy3C1SrPY5i7sZHfMMJrR4R7HXZua0k9.G4exrP.x5p6QA.XeBFdauREoV6AYDIg--" target="_blank"><img src="http://i.yimg.jp/images/adgallery/icon_weight/house.png" class="yahoo_ydn_adgallery_link_img yahoo_ydn_adgallery_link_spin yahoo_ydn_adgallery_link_spin_delay2"><span>リフォーム</span></a>\
+      <a class="yahoo_ydn_adgallery_link" href="http://link.yads.yahoo.co.jp/rd?ep=6JziZ8j8YDwJApWhueef3Ifn8z3PxqekIj2hQ8YQSHp8U254ujtOPOWmhpufCKS2QFCvfh0qBluOU.xLDXtFO7mx3dDal_PDC1ZjiswwzFNuZLtHP6Zy.pk4_15nR0S9ETdjIKjV2NF0SFPUT4fWFHwixWC8PL.EtJxaepX2uTsosQz2z6PUfvMLYPI9Hggy4g9DjyytdnCG8a2f3srvOqfxFhuiD56ZlfqvbjzV1gfPifq0gtJfnrXlYnelGLVSNxdqNPIgC.bhv0nRk8CxN8FbAgs-&amp;dc=TqtWi3Rvj54HXCklevRtW_UZNcj8kpReSxGjKhBQ1KgQUKZ4VPtI0NeDgaOXg1uV3WM8.esu1Y8WD4lsizS3x3tyGjteGElpGPvy_tTkdlyF5JFWDh1jr8mi5E3FVc8Uz4UNFL_zK.MNZq0tvYoRzxSw8_YIhsvh94Lnx99uDttpt1H9aUzP5NrYGLb0fgLYypjpSnHmpMtO36IS3a5E80pPmmnENfmyDOHMIbauN0ZWFICx6EnPtED_DciUOpEo9MIGH08Ari3UQP2Z3wiw7JbkXWUQhS8wwo2mgpyXQUebHlTExl1EfQloVfSqJraGqQGaOWl_boHSK_odGHrBCf6pDHHKoswGXb_JY3FCKujT1sN99fKVPdrySiAC4lRFKk5Gup3ZVzVA6ja7PQFZycCeX0ppbTtbIzzj9mBKxVEXUvpeqc6JEMSF2hWwljImzYbz0DIUUo4vXR72eCMnETJ5wo8invkX0ixPRXcSfPw4pa2TWoTu.QEY_D4IHP2qgiDONzpzTYxIwhx6CJy5y6iT0dky7AXCan5K2GTUi97FmsV58FRHE6rMq.mdRw--" target="_blank"><img src="http://i.yimg.jp/images/adgallery/icon_weight/pc.png" class="yahoo_ydn_adgallery_link_img yahoo_ydn_adgallery_link_spin yahoo_ydn_adgallery_link_spin_delay3"><span>画像制作ソフト</span></a>\
+      <a class="yahoo_ydn_adgallery_link" href="http://link.yads.yahoo.co.jp/rd?ep=eartV2X8YDwYkFunUex.SiC_6fLZ3jHTraT4W_cb1nxZcQ99P9HxVX9HeVv0JQ824V7QvawB2Kk3my3fb9qak0LLgOqJo9jfSLK0DxdhfpbSplsJDA8F5.pX.aHcaCiHIIa2AWCl_IEe7gdp8oQV50oRZmqtA.zUod5jpmk4LzgNiM6w1ykOL4VIEWmG1XZ2rr_H_rvn9T6yZiXi76Bl7I0.fCrPzHb8HfVszgAjGRj1_ycwT47wUUwXt3VDpgRBqzLxvJk-&amp;dc=4n9I_Ztvj55UumVjZOaGkOEilVEk7EKoXFcadTsQpe7uTbiN1ySAroEjZZ8H7K7hBSNaty9gN0wcz60bwzTRdIhx3UGLIZGtferQn2m3FhWFHcWNOTopyAd4sY84C7rv1h7o1Ny6zzfLhnhIBG306q3AG.S6MltSu1eV1BFVMYvx8_fOa1mP4ls_h6H_KWrIarvapkGUO3OeVnRWLFglD9FhEtqGyUaOjoPn6MY23maBhLURmm8xIUnUkTWQXemaaRA1OH.cdKbJK8F18_zE0Bx5YKhVtNKLDGBNCa7UKeQTDKOPlpD2Lyon2GbYZGEUTGn3Z7OYi.nmbimKxx7g_1hvvb2ycGbL8iVTtLzPOuJBY0ntub6vRvKS7f28uSWx9u6a2M6R107vpW8C7h_wpE7f5aXpX3b5NoATplcaS7e0uTNEOa09aiSbGcBJ4jKtkUuliiB3C2QzqQ6WhuOh2skug9n2edzT1BqbwtmPAKKbLDnYG6QjJyOlIyqFs9fTRQvnMzW2PmHkCFIszzmEYF6ohczJLjsgunZG1wrExQ--" target="_blank"><img src="http://i.yimg.jp/images/adgallery/icon_weight/movie_2.png" class="yahoo_ydn_adgallery_link_img yahoo_ydn_adgallery_link_spin yahoo_ydn_adgallery_link_spin_delay4"><span>写真</span></a>\
+      <a class="yahoo_ydn_adgallery_link" href="http://link.yads.yahoo.co.jp/rd?ep=FN7p4mb8YDypC8_y6mtjUzd8IgjRl84unms6c4HKtQ_SwJPOiL.TnuY1PoWLLpokYoiCq7C8huS5KtFk1sR5TQtsAV.FLlRrv0zNnCfUIiUJE9dy8kq6c_qPWHTALgA8iZ0OmgIM6UUebH4aXscZGLOclEx70xKIQvt3gB5dTfpPOVvQt7Ys0KNOVPs5vfUvCKUZss5LnYBm9QOENMtfPHExdfEdjI7ZDRKNLMDr9eq7Mo4La.sMity_jNeKhqOrHxE2Xi5WjIcB0NL_DB7UjfWaZ8yF&amp;dc=6LI_ZMNvj54wdUTQOVKHqSUTlnTIRwbCUuFzhyef09lgTI4KhX42AJFB7lHfu1EPDRPbHyxqbPNwOAKJ1JB3uZJPuL28oEDD1IHRICedpAmqfV5RoVPqrVmeaJ81Sde09HkCamdAOyVvbtTw9_.Ui8aMsjxsK3VDlcIi3rbjrsgUGZeeAVaQxwdhctGqyLvXXorm6BIRkAAe6u0Yl3AYEncoHjv4dvHLpCuvkCYgM9Q.QgqZUOiYaRXV6Y1Dar1Sg15dwB9L_GAMPvZqNF_HTtFjnHEwAaJzaeZxMt4qyJ74CoqDl9s693G5w0XURAV6feklMnXe9ChMH97Ks6gUsj7oekvvhM_xL_MUWToJxOv9w5hxxsW2Go.ZBsaOlnOjKWLzi_HcIqmj81alVEFAEub5mgbDFHITsN7vLh78evqfcBtN.kvxAiuF018CzqITgn0uZuVGQ_fDw0Ixjvh6TBeaO2FJ6vZKQRZlOa2Yo9z5veikGTPcmZLH4PJThxR4.4zkfGKJWqq7lKI_3dOMrX1ArezEpFCe9nskDEfvY8mXKfPjF0QaA2LN0c15WWA-" target="_blank"><img src="http://i.yimg.jp/images/adgallery/icon_weight/pc.png" class="yahoo_ydn_adgallery_link_img yahoo_ydn_adgallery_link_spin yahoo_ydn_adgallery_link_spin_delay5"><span>モバイルアプリ</span></a>\
+      </div>\
+            <div id="yahoo_ydn_adgallery_link_page_group2" class="yahoo_ydn_adgallery_link_page_group">\
+              <span class="yahoo_ydn_adgallery_link_pr">&lt;AD&gt;</span>\
+              <a class="yahoo_ydn_adgallery_link" href="http://link.yads.yahoo.co.jp/rd?ep=4oVgXRH8YDx31stuvdzLip1bTTUQ0ubAPW4EfXEvzO330YgUlHzq5Qz7l951GVXrjQtwEM5iWEjQPV52MXX1Pz6VhIAmlDw4lwsp_3mggW7Zfp_tYaBJMVIBxen39EbGJfBkTDIfxl0ggjcEsGXX6lCyvEN8WDs7ZUNUaDzsOsnvMNDVA5CGGJ8pHeJkXo_7v1vBxhWdqtxHsgbiXOf1xKOpDz_IqBrr0TEg5xmfOqAGRNCIgKg.o7kppr.qNviIk0UHpgP3Q8CKq.0-&amp;dc=akp6mHJvj55AFnnyHydcpjFJqSAzWYsG9bysKvPq7JyZrWubiX6grGrOZXc_bi5UxN9_xmrY7InIddXpL1hmkjzgDhxmBy6bDZoCogsEi_YfwAP5Tw.WocNqcdK4pCvmNvYF0VgOiCZ.xalxd4aYwxu8fjNeHMYqVoLG00UDzw1oZ3KlHAEuuWBS8fdwx9V_7S6eANQCuk8y.Bmu7gm.xhNWWsnR7H3Uvc0l4MoMNQCE_Bd2WPmrVyq8jfuDU8pM2LxA1WPKozbb3eWJWev2.I9_w3qgN9Lxm1Wuw5ZAErFdjKCBPrOiybjToahVy5_1xozPManv0dE1BAjA4LO59Ms44Udi7.cmtjXZZMzr.wrGOtvJtM9akEXZfVJ8FlgmP_kCseqPJI5Qs15sTHocBmpbUElg2TA9Be.kx7eTUL71RH_aWx5Ec9DyVRlWEKRbr4XvIQVht0l.HEnDWJT4PuJWNJT5_8vre1881rjaTmyTO8r99a19wxOGM5OaODexZWaktYTMMpMKxb8rfIPY52ITvvUnu6ZsKgpvoI.BUwy9diupeA--" target="_blank"><img src="http://i.yimg.jp/images/adgallery/icon_weight/pc.png" class="yahoo_ydn_adgallery_link_img yahoo_ydn_adgallery_link_spin"><span>サーバー</span></a>\
+      <a class="yahoo_ydn_adgallery_link" href="http://link.yads.yahoo.co.jp/rd?ep=3YMtDvr8YDy0tI7DacXekQQ.x9id6Otjo54Enoi0epCRvpN0tGVHxdPUo6uf660ym5VUPTCRgKu7W41L8GvCkkTtAubsYHsoXdIWXXGJde51atOYS5_K3ObwBvO081mOi5bHal1yI5I8IH.qWT9Ns0r4AgIp98D06zmK6nkkNeRIbpE1qx6kBDjLa0gcA_ODEr7fig4sK9nvLuGFkBCJA8Cn8mAV9rF5woMaSl3EPF5jIJ2ud6sR6cpCeHZUgmU5xwuX2jt3vJUF.emfOwOFirlAOz4-&amp;dc=c5x0Nwhvj573OVYl4X_CuLn5i.E4DqZaUlVoRvhgk9Muu.OcEgSH1G4L2K_Jaet9D.gZJf8dLuuZIcDc7JJNOlABQDaqPyCY5I0gJyKsyPNVGBvmukGqRwGeAOkHHM72oALxwyQSKDUY3RzMwWkqvqe.GstB8j8bLr9nuJIR8SVyD.1utOc7oCf9OhyvaZ9sNnmLriSzY7rLXeeMySQma0jZTKFK3d.qUT9_QVEJbu9pQTKIBujzof6oyOH1jCLLDrpJV0Mc4vNRUUEzW3TVhzKrPpVu6a8xJVNsVtrhEAWASdtONiWxdfseDDn5DKo0Ry1mLaw4EfN8RyxmnN.JyRFN6bL6cViV112eeFq4AJDA9fXLG345dERwmYkRwCuporNag0W6GEOgI56akMLw4jAZmfb9yZ5s3AKsIk.s1nVy2Ms4CblqWGS0xu0ZO1q1kMvpVZ5SzdrWmrC24JaufuDYwm2sxzNIfu0d21LDV1rHN8xmdWQfovSYdMCQ92humZvQXnGY6aqCmEV4wXEOD0L3y0elwgTmoblBGnhzeSjEkNMuRNEqpbDDXAJn8Q--" target="_blank"><img src="http://i.yimg.jp/images/adgallery/icon_weight/pc.png" class="yahoo_ydn_adgallery_link_img yahoo_ydn_adgallery_link_spin yahoo_ydn_adgallery_link_spin_delay1"><span>ビジネスソフト</span></a>\
+      </div>\
+          </div>\
+      ']);

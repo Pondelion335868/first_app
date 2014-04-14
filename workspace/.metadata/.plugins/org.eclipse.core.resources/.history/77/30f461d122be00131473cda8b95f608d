@@ -1,0 +1,20 @@
+public class Point {
+	int x;
+	int y;
+}
+
+public class Line {
+	Point p0;
+	Point p1;
+}
+
+public class Triangle {
+	Point p0;
+	Point p1;
+	Point p2;
+}
+
+public class Circle {
+	Point p0;
+	int r;
+}

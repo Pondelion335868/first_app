@@ -1,0 +1,920 @@
+// //////////////////////////////////////////
+// //////////////////////////////////////////
+// ==========================================
+// ==========================================
+// 
+// mainslide.js
+//
+// --設定
+// --セッティング
+// --メインビジュアル設定
+// --
+//
+// ==========================================
+// ==========================================
+// //////////////////////////////////////////
+// //////////////////////////////////////////
+
+
+// ==========================================
+// ==========================================
+// 設定
+// ==========================================
+// ==========================================
+
+
+// ==========================================
+// ==========================================
+// 初期動作
+// ==========================================
+// ==========================================
+
+$(function(){
+	
+	// メインビジュアル初期設定
+	var mainVidual;
+	mainVidual = new mainVidualSet();
+	
+	mainVidual.init(
+	"http://www.kansai-u.ac.jp/ku130/index.html",
+	"http://www.kansai-u.ac.jp/extension/index.html",
+	"http://www.kansai-u.ac.jp/global/guide/research/",
+	"http://www.kansai-u.ac.jp/figure/",
+	"http://www.kansai-u.ac.jp/Fc_hw/graduate/index.html",
+	"http://www.kansai-u.ac.jp/ls/revision/index.html"
+	);
+	
+	// ------------------------------------------
+	// リサイズ時
+	// ------------------------------------------
+	
+	$(window).resize(function(e){
+		
+		// 各要素再設定
+		reSizeSet();
+		
+	});
+	
+	// ------------------------------------------
+	// 各要素再設定
+	// ------------------------------------------
+	
+	function reSizeSet(){
+	
+		if(__resobj.mode == "pc" || __resobj.ie8Flag){
+			
+			// PCの場合
+			
+			// メインビジュアルのリサイズ
+			mainVidual.naviRePos();
+			mainVidual.reSizePc();
+			
+		}else if(__resobj.mode == "tablet"){
+			
+			// タブレットの場合
+			
+			// メインビジュアルのリサイズ
+			mainVidual.naviRePos();
+			mainVidual.reSize();
+			
+		}else if(__resobj.mode == "smart_large"){
+			
+			// スマホ（大）の場合
+			
+			// メインビジュアルのリサイズ
+			mainVidual.naviRePos();
+			mainVidual.reSize();
+			
+		}else{
+			
+			// スマホの場合
+			
+			// メインビジュアルのリサイズ
+			mainVidual.naviRePos();
+			mainVidual.reSize();
+		}
+		
+	}
+	
+});
+
+
+// ==========================================
+// ==========================================
+// メインビジュアル設定
+// ==========================================
+// ==========================================
+
+function mainVidualSet(){
+	
+	// this参照
+	
+	var _this = this;
+	
+	var IMGPATH = "jsimg/";
+	var FILENAME = "kandaijs";
+	
+	var MARGINWIDTH = 10;
+	var MAXWIDTH = 980;
+	
+	var nowNum = 0; // 現在の表示ナンバー
+	
+	var bannerArray = []; // バナーの参照
+	var coverArray = []; //フェードで使用するカバーの参照格納
+	
+	var naviArray = []; // ナビの参照
+	
+	var ulElement;
+	var ulCoverElement;
+	
+	var slideWidth;// スライド距離
+	var slideHeight;// スライド高さ
+	
+	var thumbWrapper;
+	
+	var mainWrapper = $("#mainVidual");
+	
+	//メインセッティング
+	mainWrapper.css({
+		"visibility":"hidden"
+	});
+	
+	var slideSet = $("#mainVidual .slideSet");
+	var slideCoverSet = $("#mainVidual .slideCoverSet");
+	
+	// カバーセッティング
+	slideCoverSet.css({
+		"display":"none"
+	});
+	
+	var bannerNavi = $("#mainVidual .bannerNavi");
+	
+	var zaiNavi;//在ページ表示
+	
+	var startX = 0; //フリック関係変数
+	var diffX = 0;
+	var diffAllX = 0;
+	
+	var timer;//タイマー
+	var NEXTTIMER = 3500;
+	
+	var slideTime = 800; //スライドの時間設定
+	
+	var uaIe = false; //IE判定
+	
+	// ------------------------------------------
+	// 初期設定
+	// ------------------------------------------
+	
+	_this.init = function(){
+		
+		var count = 0;
+		var bannerMax = arguments.length; // バナーの最大枚数を格納
+		
+		var slideElement = "<ul>"; // スライドの記述を格納
+		var naviElement = "<div class='ulBase'></div><ul class='mainNavi'>"; // ナビの記述を格納
+		var thumbElement = "";
+		
+		for(var i= 0; i < arguments.length; i++){
+			
+			// ファイル名は1から始まるので
+			var imgNum = i + 1;
+			
+			// スライドの追加
+			if(arguments[i] == ""){
+				
+				// リンクなしの場合
+				slideElement += '<li><div class="slideBase"><img src="' + IMGPATH + FILENAME + imgNum + '.jpg" border="0" /></div></li>';
+			}else{
+				
+				// リンクありの場合
+				slideElement += '<li><div class="slideBase"><a href="'+ arguments[i] +'"><img src="' + IMGPATH + FILENAME + imgNum + '.jpg" border="0" /></a></div></li>';
+			}
+			
+			// ナビの追加
+			naviElement += '<li class="slideNavi navi' + imgNum +'"><a href="javascript:;"><span></span></a></li>';
+			
+			// ナビ用サムネイルの追加
+			thumbElement += '<li class="thumbNavi"><img src="' + IMGPATH + FILENAME + imgNum + '.jpg" border="0" /></li>'
+		}
+		
+		slideElement += '</ul>';
+		naviElement += '</ul><div class="blow"><div class="contents"><ul>' + thumbElement + '</ul></div></div>';
+		
+		// 指定したエレメントの内部に書き込み
+		bannerNavi.append(naviElement); // ナビ書き込み
+		slideSet.append(slideElement); // スライド書き込み
+		slideCoverSet.append(slideElement); // スライド書き込み（カバー用）
+		
+		// スライドのulタグ参照と初期設定
+		ulElement = slideSet.find("ul");
+		ulCoverElement = slideCoverSet.find("ul");
+		
+		bannerNavi.find(".ulBase").css("opacity",0);
+		
+		slideWidth = slideSet.width(); 
+		//slideHeight;
+		
+		//サムネイルラッパーの参照と初期設定
+		thumbWrapper = bannerNavi.find(".blow");
+		thumbWrapper.css({
+			"display":"none",
+			"opacity":0
+		});
+		thumbWrapper.find("li").css({
+			"opacity":0
+		});
+		
+		slideSet.each(function() {
+			
+			var thisslide = $(this);
+			
+			$(this).find("img").bind("load",function(){
+				
+				count++;
+				
+				if(count == bannerMax){
+					
+					// リサイズ設定
+					
+					if(__resobj.mode == "pc" || __resobj.ie8Flag){
+						_this.setting(thisslide);
+						_this.reSizePc();
+						
+					}else{
+						_this.setting(thisslide);
+						_this.reSize();
+						
+					}
+					
+				}
+			});
+			
+		});
+		
+	}
+	
+	
+	// ------------------------------------------
+	// セッティング
+	// ------------------------------------------
+	
+	_this.setting = function(Elem){
+		
+		mainWrapper.css({
+			"visibility":"visible"
+		});
+		
+		var btLeft = $(".navileft");// 左ナビ
+		var btRight = $(".naviright");// 右ナビ
+		
+		var count = 0;
+		var endCount = 0;
+		
+		var moveflag = false; // 現在の表示ナンバー
+		
+		var naviZai;
+		
+		// ナビ再配置
+		_this.naviRePos();
+		
+		//各バナーの配置
+		Elem.find("li").each(function() {
+			
+			// 各スライドの参照と数値を格納
+			bannerArray.push($(this));
+			
+			// ロールオーバー時
+			$(this).find("a").mouseover(function () {
+				
+				$(this).queue([]).animate({
+						opacity: 0.5
+				},
+				300,'easeOutQuart'
+				);
+				
+			});
+			
+			// ロールアウト時
+			$(this).find("a").mouseout(function () {
+				
+				$(this).queue([]).animate({
+						opacity: 1
+				},
+				300,'easeOutQuart'
+				);
+				
+			});
+			
+		});
+		
+		// 各バナーの配置（カバーセット）
+		slideCoverSet.find("li").each(function() {
+			
+			// 各スライドの参照と数値を格納
+			coverArray.push($(this));
+			
+		});
+		
+		//バナー位置初期設定
+		_this.slideSetting(nowNum,bannerArray);
+		
+		// フリックセッティング
+		// flickSet();
+		
+		// 左ナビセッティング
+		btLeft.click(function() {
+			
+			if(!moveflag){
+				
+				// 次の表示ナンバーと配置設定
+				NumberSet(false);
+				// スライドスタート
+				bannerfadeStart();
+			}
+			
+		});
+		
+		// 右ナビセッティング
+		btRight.click(function() {
+			
+			if(!moveflag){
+				
+				// 次の表示ナンバーと配置設定
+				NumberSet(true);
+				// スライドスタート
+				bannerfadeStart();
+			}
+			
+		});
+		
+		
+		// ナビセッティング
+		count = 0;
+		
+		naviSetting();
+		
+		//ナビの在表示
+		naviZaiSet();
+		
+		function naviSetting(){
+			
+			bannerNavi.find("li.slideNavi a").each(function() {
+				
+				//$(this).find("span").css("opacity",0);
+				
+				var argumentsNum = count;
+				
+				// ロールオーバー時
+				$(this).mouseover(function () {
+					
+					// PCの場合
+					if(__resobj.mode == "pc" || __resobj.ie8Flag){
+					
+						// ナビのサムネイル移動
+						moveThumb(argumentsNum);
+					
+					}
+					
+				});
+				
+				// ロールアウト時
+				$(this).mouseout(function () {
+					
+				});
+				
+				// クリック時
+				$(this).click(function () {
+			
+					if(!moveflag){
+						
+						nowNum = argumentsNum;
+						
+						// ナビの在表示
+						naviZaiSet();
+						
+						// スライドスタート
+						bannerfadeStart();
+					}
+					
+				});
+				
+				count++;
+			});
+			
+			count = 0;
+			
+			bannerNavi.find("li.thumbNavi").each(function() {
+				
+				var argumentsNum = count;
+				
+				// クリック時
+				$(this).click(function () {
+			
+					if(!moveflag){
+						
+						nowNum = argumentsNum;
+						
+						// ナビの在表示
+						naviZaiSet();
+						
+						// スライドスタート
+						bannerfadeStart();
+					}
+					
+				});
+				
+				count++;
+			});
+		}
+		
+		// ナビサムネイルセッティング
+		count = 0;
+		
+		navithumbSetting();
+		
+		function navithumbSetting(){
+			
+			// ロールオーバー時
+			bannerNavi.mouseover(function () {
+				
+				// PCの場合
+				if(__resobj.mode == "pc" || __resobj.ie8Flag){
+					
+					thumbWrapper.css("display","block");
+				
+					thumbWrapper.queue([]).animate({
+						opacity: 1
+					},
+					300,'easeOutQuart',
+						function(){
+							thumbWrapper.css("display","block");
+						}
+					);
+					thumbWrapper.find("li").queue([]).animate({
+						opacity: 1
+					},
+					300,'easeOutQuart'
+					);
+				
+				}				
+				
+			});
+			
+			// ロールアウト時
+			bannerNavi.mouseout(function () {
+				
+				// PCの場合
+				if(__resobj.mode == "pc" || __resobj.ie8Flag){
+				
+					thumbWrapper.queue([]).animate({
+						opacity: 0
+					},
+					300,'easeOutQuart',
+						function(){
+							thumbWrapper.css("display","none");
+						}
+					);
+					thumbWrapper.find("li").queue([]).animate({
+						opacity: 0
+					},
+					300,'easeOutQuart'
+					);
+					
+				}
+				
+			});
+			
+			thumbWrapper.find("ul").css("width",100 * bannerArray.length + "%");
+			
+		}
+		
+		
+		// ------------------------------------------
+		// タイマーセットしてスタート
+		
+		if(bannerArray.length > 1){
+			timer = setInterval(bannerfadeTimer,NEXTTIMER);
+		}
+		
+		
+		// サムネイル初期位置設定
+		moveThumb(nowNum);
+		
+		
+		// ------------------------------------------
+		// タイマーから呼び出す関数
+		
+		function bannerfadeTimer(){
+			
+			// 次の表示ナンバーと配置設定
+			NumberSet(true);
+			// スライドスタート
+			bannerfadeStart();
+			
+		}
+				
+		
+		// ------------------------------------------
+		// 位置の設定関数
+		
+		function bannerfadeStart(){
+			
+			// 再生中のフラグ
+			moveflag = true;
+			
+			//タイマーのクリア
+			if(timer){
+				clearInterval(timer);
+			}
+			
+			// カバーセッティング
+			slideCoverSet.css({
+				"display":"block"
+			});
+			
+			// カバー側設定
+			_this.slideSetting(nowNum,coverArray);		
+			
+			slideCoverSet.find("li").each(function() {				
+				
+				$(this).css({
+					"display":"none"
+				});
+				$(this).fadeIn(slideTime,'easeInOutQuart',bannerAnimeEnd);
+				
+			});
+			
+		}
+		
+		
+		// ------------------------------------------
+		// 各バナーのアニメが終了した時に呼び出す
+		
+		function bannerAnimeEnd(){
+			
+			endCount++;
+			
+			if(endCount >= bannerArray.length){
+				// フリック関係の値をリセット
+				// flickNumReset();
+				
+				endCount = 0;
+				
+				// カバーセッティング
+				slideCoverSet.css({
+					"display":"none"
+				});
+				
+				//バナー側の位置再設定
+				_this.slideSetting(nowNum,bannerArray);
+				
+				//再生終了
+				moveflag = false;
+				
+				//タイマーセット
+				timer = setInterval(bannerfadeTimer,NEXTTIMER);
+			}
+			
+		}
+		
+		
+		// ------------------------------------------
+		// ナンバーセッティング
+		
+		function NumberSet(moveplus){
+			
+			//順番に表示する場合のみ
+			if(moveplus){
+				nowNum++;
+			}else{
+				nowNum--;
+			}
+			
+			//表示ナンバーがバナーの数、もしくは0を超えた時
+			if(nowNum == bannerArray.length){
+				nowNum = 0;
+			}else if(nowNum < 0){
+				nowNum = bannerArray.length - 1;
+			}
+			
+			//ナビの在表示
+			naviZaiSet();
+		}
+		
+		
+		// ------------------------------------------
+		// ナビの在表示
+		
+		function naviZaiSet(){
+			if(naviZai){
+				naviZai.removeClass("selected");
+				//naviZai.find("span").css("opacity",0);
+			}
+			naviZai = naviArray[nowNum].find("a");
+			naviZai.addClass("selected");
+			//naviZai.find("span").css("opacity",1);
+		}
+		
+		
+		// ------------------------------------------
+		// ナビのサムネイル移動
+		
+		function moveThumb(thumbNumber){
+			
+			var moveStartPos = -thumbWrapper.find(".contents").width()/2 + 20;
+			var moveWidth = thumbWrapper.find(".contents").width();
+			
+			thumbWrapper.find("ul").queue([]).animate({
+				left: -moveWidth * thumbNumber + "px"
+			},
+			500,'easeOutQuart'
+			);
+			
+			thumbWrapper.queue([]).animate({
+				left: moveStartPos + naviArray[thumbNumber].position().left + "px"
+			},
+			500,'easeOutQuart'
+			);
+		}
+		
+		
+		// ------------------------------------------
+		// フリックセッティング
+		
+		function flickSet(){
+			
+			//IE6,7,8以外
+			if(!__resobj.ie8Flag){
+			
+				//フリックの対象要素
+				var flickElement = slideSet.find("ul")[0];
+				
+				flickElement.addEventListener("touchstart", touchHandler, false);
+				flickElement.addEventListener("touchmove", touchHandler, false);
+				flickElement.addEventListener("touchend", touchHandler, false);
+			
+			}
+			
+		}
+		
+		
+		// ------------------------------------------
+		// フリックイベント
+		
+		function touchHandler(e){
+			
+			//e.preventDefault();
+			var touch = e.touches[0];
+			
+			if(!moveflag){//再生中じゃなければ			
+				
+				if(e.type == "touchstart"){
+					
+					/*if(timer){
+						clearInterval(timer);
+					}*/
+					
+					startX = touch.pageX;
+				}
+				
+				if(e.type == "touchmove"){
+					
+					e.preventDefault();
+					
+					diffX = startX - touch.pageX;
+					
+					for(var i = 0; i < bannerArray.length; i++){
+						if(i == 0){
+							//alert(diffX);
+						}
+						var Pos = bannerArray[i].position().left - diffX;
+						bannerArray[i].css("left",Pos + "px");
+					}
+					
+					startX = touch.pageX;
+					
+					diffAllX += diffX;
+					
+				}
+				
+				if(e.type == "touchend"){
+					
+					if (diffAllX >= 50) {
+						
+						//次の表示ナンバーの設定
+						NumberSet(true);
+						//スライドスタート
+						bannerAnimeStart(true,true);
+						
+					}else if (diffAllX <= -50) {
+						
+						//次の表示ナンバーの設定
+						NumberSet(false);
+						//スライドスタート
+						bannerAnimeStart(false,true);
+						
+					}else{
+						
+						//スライドスタート
+						bannerAnimeStart(true,true);
+						
+					}
+					
+					flickNumReset();
+				
+				}
+			}
+		}
+		
+		// ------------------------------------------	
+		// フリック関係の値をリセット
+			
+		function flickNumReset(){
+			startX = 0;
+			diffX = 0;
+			diffAllX = 0;
+		}
+		
+	}
+	 
+	// ------------------------------------------
+	// 解除設定
+	// ------------------------------------------
+	
+	_this.unInit = function(){
+		
+	}
+	
+	// ------------------------------------------
+	// 各スライド位置設定
+	// ------------------------------------------
+	
+	_this.slideSetting = function(playNum,array){
+		
+		// メイン左隣の数字
+		var pastNum = playNum-1;
+		
+		if(pastNum < 0) pastNum = array.length - 1;
+		
+		// メイン右隣の数字
+		var nextNum = playNum+1;
+		
+		if(nextNum >= array.length) nextNum = 0;
+		
+		// 各スライドを配置
+		for(var i = 0; i < array.length; i++){
+			array[i].css("left",-MAXWIDTH + "px");
+		}
+		
+		// 表示予定のスライドを再配置
+		array[pastNum].css("left",_this.setPos(-1) + "px");
+		array[playNum].css("left",_this.setPos(0) + "px");
+		array[nextNum].css("left",_this.setPos(1) + "px");
+		
+	}
+	
+	
+	// ------------------------------------------
+	// 位置の設定関数
+	// ------------------------------------------
+	
+	_this.setPos = function(countNum){
+		
+		var Pos;
+		
+		Pos = slideWidth * countNum +
+					MARGINWIDTH * countNum +
+					__resobj.pageDifferent/2;
+		
+		return Pos;
+		
+	}
+	
+	
+	// ------------------------------------------
+	// リサイズ時（PCの場合）
+	// ------------------------------------------
+	
+	_this.reSizePc = function(){
+		
+		// 横幅再設定
+		slideWidth = MAXWIDTH;
+		ulElement.css("width",100 + "%");
+		ulCoverElement.css("width",100 + "%");
+		
+		for(var i = 0; i < bannerArray.length; i++){
+					
+			bannerArray[i].css({
+				"width":slideWidth + "px"
+				});
+			coverArray[i].css({
+				"width":slideWidth + "px"
+				});
+				
+		}
+		
+		// 各スライド位置再設定
+		_this.slideSetting(nowNum,bannerArray);
+		
+		// 縦幅再設定
+		slideHeight = bannerArray[0].find(".slideBase").outerHeight();
+		ulElement.css("height",slideHeight + "px");
+		ulCoverElement.css("height",slideHeight + "px");
+		
+	}
+	
+	
+	// ------------------------------------------
+	// リサイズ時（スマホ,タブレットの場合）
+	// ------------------------------------------
+	
+	_this.reSize = function(){
+		
+		// 横幅再設定
+		slideWidth = slideSet.width();
+		if(slideWidth > MAXWIDTH) slideWidth = MAXWIDTH;
+		
+		ulElement.css("width",slideWidth + "px");
+		ulCoverElement.css("width",slideWidth + "px");
+		
+		for(var i = 0; i < bannerArray.length; i++){
+					
+			bannerArray[i].css({
+				"width":slideWidth + "px"
+				});
+			coverArray[i].css({
+				"width":slideWidth + "px"
+				});
+		}
+		
+		// 各スライド位置再設定
+		_this.slideSetting(nowNum,bannerArray);
+		
+		// 縦幅再設定
+		slideHeight = bannerArray[0].find(".slideBase").outerHeight();
+		ulElement.css("height",slideHeight + "px");
+		ulCoverElement.css("height",slideHeight + "px");
+		
+	}
+	
+	
+	// ------------------------------------------
+	// ナビ再配置
+	// ------------------------------------------
+	
+	_this.naviRePos = function(){
+		
+		var naviMargin;
+		var naviStartPos;
+		
+		if(__resobj.mode == "pc"){
+			
+			// PCの場合
+			naviMargin = 8;
+			naviStartPos = 0;
+			
+		}else if(__resobj.mode == "tablet"){
+			
+			// タブレットの場合
+			naviMargin = 8;
+			naviStartPos = 0;
+			
+		}else if(__resobj.mode == "smart_large"){
+			
+			// タブレットの場合
+			naviMargin = 8;
+			naviStartPos = 0;
+			
+		}else{
+			
+			// スマホの場合
+			naviMargin = 8;
+			naviStartPos = 0;
+			
+		}
+		
+		var count = 0;
+		
+		bannerNavi.find("li.slideNavi").each(function() {
+			
+			// 各ボタンの参照を格納
+			naviArray.push($(this));
+			
+			// 位置設定
+			var Pos = ($(this).width() + naviMargin) * count + naviStartPos;
+			$(this).css("left",Pos + "px");
+			
+			count++;
+			
+		});
+		
+		//在ページ表示のセッティング
+		zaiNavi = naviArray[(naviArray.length) - 1];
+		bannerNavi.css("width",zaiNavi.position().left + zaiNavi.width() + naviStartPos + "px");
+		
+	}
+	
+	// ------------------------------------------
+	
+}

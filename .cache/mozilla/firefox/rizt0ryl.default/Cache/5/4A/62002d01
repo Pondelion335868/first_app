@@ -1,0 +1,668 @@
+if (MC === undefined) {
+
+	/**
+	 * @namespace mynaviに関する共通機能を管理する名前空間です。<br>
+	 */
+	var MC = {};
+
+	(function() {
+
+		/**
+		 * @class ウィンドウに関する共通機能を提供します。
+		 *
+		 * <pre>
+		 * ウィンドウオープンや親画面の存在確認などウィンドウに関する機能を管理します。
+		 * </pre>
+		 */
+		MC.window = {
+
+			/**
+			 * ウィンドウをオープンします
+			 *
+			 * @param {String} aUrl 表示するページのアドレス
+			 * @param {String} aName ウィンドウ名
+			 * @param {navi.window.style} aStyle ウィンドウスタイル
+			 * @retunrs {Window} オープンした画面のオブジェクト
+			 */
+			open : function(aUrl, aName, aStyle) {
+				var styleTemplate = "toolbar={0},location={1},"
+						+ "status={2},menubar={3},scrollbars={4},resizable={5}";
+
+				// -- 初期値の設定
+				// ウィンドウスタイル
+				if (aStyle == undefined || aStyle == "") {
+					aStyle = MC.window.style.createObject(window.screen.width, window.screen.height);
+				}
+				// ウィンドウ名
+				if (aName == undefined || aName == "") {
+					aName = "_blank";
+				}
+
+				var x = aStyle.top;
+				var y = aStyle.left;
+				var w = aStyle.width;
+				var h = aStyle.height;
+
+				if (w == 0) {
+					w = window.screen.width;
+				}
+				if (h == 0) {
+					h = window.screen.height;
+				}
+
+				var lStyle = "";
+				// top/left/width/heightが-1の場合は指定しない
+				if (x >= 0) {
+					lStyle = lStyle + "top=" + x + ",";
+				}
+				if (y >= 0) {
+					lStyle = lStyle + "left=" + y + ",";
+				}
+				if (w >= 0) {
+					lStyle = lStyle + "width=" + w + ",";
+				}
+				if (h >= 0) {
+					lStyle = lStyle + "height=" + h + ",";
+				}
+
+				lStyle = lStyle + String.format(styleTemplate, this._convertYesNo(aStyle.visibleToolbar), this
+						._convertYesNo(aStyle.visibleAddressbar), this._convertYesNo(aStyle.visibleStatusbar), this
+						._convertYesNo(aStyle.visibleMenubar), this._convertYesNo(aStyle.visibleScrollbars), this
+						._convertYesNo(aStyle.resizable));
+
+				var whandle = window.open(aUrl, aName, lStyle);
+				whandle.focus();
+
+				return whandle;
+
+			},
+
+			/**
+			 * @class 親ウィンドウに関する共通機能を提供します。
+			 */
+			opener : {
+
+				/**
+				 * サブウインドウから、親ウインドウの特定フォームをサブミットします.
+				 *
+				 * @param   {String}  openerFormId		   親ウインドウのフォームID.&lt;ns2:form&gt;タグのstyleIdで指定する.
+				 * @param   {String}  openerActionMethodName 実行するアクションメソッド名.
+				 * @return  {Boolean} サブミットが成功した場合true、それ以外の場合はfalse.
+				 */
+				submitForm : function(openerFormId, openerActionMethodName) {
+
+					if (window.opener == null || window.opener.closed) {
+						return false;
+					}
+
+					var parentForm = window.opener.document.getElementById(openerFormId);
+
+					if (parentForm == null) {
+						return false;
+					}
+
+					var hidden = window.opener.document.createElement("input");
+					hidden.type = "hidden";
+					hidden.value = "submit";
+					hidden.name = openerActionMethodName;
+
+					parentForm.appendChild(hidden);
+
+					parentForm.submit();
+					return true;
+				}
+			},
+
+			/**
+			 * Booleanからyes,noの文字列に変換します
+			 *
+			 * @private
+			 * @param {Boolean} Boolean値
+			 * @return {String} パラメータがtrueなら"yes",falseなら"no"を返します
+			 */
+			_convertYesNo : function(value) {
+				if (value == true) {
+					return "yes";
+				} else {
+					return "no";
+				}
+			},
+			/**
+			 * @class ウィンドウに関するスタイルを保持するクラスです。
+			 *
+			 * <pre>
+			 * 主にnavi.window.openのパラメータに使用します。
+			 * createObjectメソッドでのオブジェクト生成時または、生成後のインスタンスプロパティで各プロパティ値が設定可能です。
+			 * </pre>
+			 *
+			 * @example
+			 * //createObjectでプロパティ値を指定.ステータスバー、メニューバーを非表示で開く
+			 * var style = MC.window.style.createObject(600,400, true, true, false, false, true, true, 10, 20);
+			 * var win = MC.window.open("http://xxx.jp", "winname", style);
+			 * //インスタンスのプロパティで指定.メニューバーを非表示で開く.
+			 * var style = MC.window.style.createObject();
+			 * style.width = 600;
+			 * style.height = 400;
+			 * style.visibleMenubar = false;
+			 * var win = MC.window.open("http:/xxx.jp", "winname", style);
+			 */
+			style : {
+				width : 0,
+				height : 0,
+				visibleToolbar : true,
+				visibleAddressbar : true,
+				visibleStatusbar : true,
+				visibleMenubar : true,
+				visibleScrollbars : true,
+				resizable : true,
+				top : 0,
+				left : 0,
+				/**
+				 * スタイルオブジェクトを生成する
+				 *
+				 * @param {Number} aWidth 画面の幅(ピクセル) ※-1の場合、指定なし
+				 * @param {Number} aHeight 画面の高さ(ピクセル) ※-1の場合、指定なし
+				 * @param {Boolean} aVisibleToolbar ツールバーを表示するか(初期値=true)
+				 * @param {Boolean} aVisibleAddressbar アドレスバーを表示するか(初期値=true)
+				 * @param {Boolean} aVisibleStatusbar ステータスバーを表示するか(初期値=true)
+				 * @param {Boolean} aVisibleMenubar メニューバーを表示するか(初期値=true)
+				 * @param {Boolean} aVisibleScrollbars スクロールバーを表示するか(初期値=true)
+				 * @param {Boolean} aResizable リサイズ可能か(初期値=true)
+				 * @param {Number} aTop ウィンドウの位置(画面の上端からの距離) ※-1の場合、指定なし
+				 * @param {Number} aLeftウィンドウの位置(画面の左端からの距離) ※-1の場合、指定なし
+				 * @returns スタイルオブジェクト
+				 */
+				createObject : function(aWidth, aHeight, aVisibleToolbar, aVisibleAddressbar, aVisibleStatusbar,
+										aVisibleMenubar, aVisibleScrollbars, aResizable, aTop, aLeft) {
+
+					// 初期化する
+					this.width = 0;
+					this.height = 0;
+					this.visibleToolbar = true;
+					this.visibleAddressbar = true;
+					this.visibleStatusbar = true;
+					this.visibleMenubar = true;
+					this.visibleScrollbars = true;
+					this.resizable = true;
+					this.top = 0;
+					this.left = 0;
+
+					if (aWidth != undefined) {
+						this.width = aWidth;
+					}
+					if (aHeight != undefined) {
+						this.height = aHeight;
+					}
+					// パラメータの値を設定する
+					if (aVisibleToolbar != undefined && typeof aVisibleToolbar == "boolean") {
+						this.visibleToolbar = aVisibleToolbar;
+					}
+					if (aVisibleAddressbar != undefined && typeof aVisibleAddressbar == "boolean") {
+						this.visibleAddressbar = aVisibleAddressbar;
+					}
+					if (aVisibleStatusbar != undefined && typeof aVisibleStatusbar == "boolean") {
+						this.visibleStatusbar = aVisibleStatusbar;
+					}
+					if (aVisibleMenubar != undefined && typeof aVisibleMenubar == "boolean") {
+						this.visibleMenubar = aVisibleMenubar;
+					}
+					if (aVisibleScrollbars != undefined && typeof aVisibleScrollbars == "boolean") {
+						this.visibleScrollbars = aVisibleScrollbars;
+					}
+					if (aResizable != undefined && typeof aResizable == "boolean") {
+						this.resizable = aResizable;
+					}
+					if (aTop != undefined) {
+						this.top = aTop;
+					}
+					if (aLeft != undefined) {
+						this.left = aLeft;
+					}
+
+					return this;
+				}
+
+			}
+		};
+		/**
+		 * @class 日付操作に関する静的な共通機能を提供します。
+		 *
+		 * <pre>
+		 * 日付に年、月、日を加減算するなどの機能を管理します。
+		 * </pre>
+		 *
+		 * @example
+		 * // 2012年2月29日の日付を生成(月は0～11で指定します)
+		 * var d1 = new Date(2012, 1, 29);
+		 * // 1年後の日付を取得します
+		 * var d2 = MC.date.addYear(d, 1);	 // d2 = 2013/3/1
+		 * // 1ヶ月前の日付を取得します
+		 * var d3 = MC.date.addMonth(d, -1);   // d3 = 2012/1/29
+		 * // 4日後の日付を取得します
+		 * var d4 = MC.date.addDay(d, 4);	  // d4 = 2012/3/4
+		 * // 2012/1/31の2ヶ月前を取得します
+		 * var d5 = new Date(2012, 0, 31);
+		 * var d6 = MC.date.addMonth(d5, -2);	// d5 = 2011/11/30
+		 *
+		 */
+		MC.date = {
+			/**
+			 * 年を加算します<br>
+			 * <pre>
+			 * 指定された年数を加えた日付オブジェクトを返します
+			 * </pre>
+			 * @param {Date} aDate 対象日付
+			 * @param {Number} aYears 加算する年数
+			 * @return {Date} 加算後の日付オブジェクト
+			 */
+			addYear : function(aDate, aYears) {
+				var wDate = new Date(aDate.getFullYear() + aYears, aDate.getMonth(), aDate.getDate(), aDate.getHours(),
+						aDate.getMinutes(), aDate.getSeconds());
+				return wDate;
+			},
+			/**
+			 * 月を加算します<br>
+			 * <pre>
+			 * 指定された月数を加えた日付オブジェクトを返します
+			 * </pre>
+			 * @param {Date} aDate 対象日付
+			 * @param {Number} aMonths 加算する月数
+			 * @return {Date} 加算後の日付オブジェクト
+			 */
+			addMonth : function(aDate, aMonths) {
+				var wDate = new Date(aDate.getFullYear(), aDate.getMonth() + aMonths, aDate.getDate(),
+						aDate.getHours(), aDate.getMinutes(), aDate.getSeconds());
+				var cDate = new Date(aDate.getFullYear(), aDate.getMonth() + aMonths, 1, aDate.getHours(), aDate
+						.getMinutes(), aDate.getSeconds());
+
+				if (wDate.getMonth() != cDate.getMonth()) {
+					wDate.setDate(1);
+					wDate.setTime(wDate.getTime() - (24 * 60 * 60 * 1000));
+				}
+				return wDate;
+			},
+			/**
+			 * 日を加算します<br>
+			 * <pre>
+			 * 指定された日数を加えた日付オブジェクトを返します
+			 * </pre>
+			 * @param {Date} aDate 対象日付
+			 * @param {Number} aDays 加算する日数
+			 * @return {Date} 加算後の日付オブジェクト
+			 */
+			addDay : function(aDate, aDays) {
+				var wDate = new Date(aDate.getFullYear(), aDate.getMonth(), aDate.getDate() + aDays, aDate.getHours(),
+						aDate.getMinutes(), aDate.getSeconds());
+				return wDate;
+			}
+		};
+
+		/**
+		 * @class チェックボックスに関する共通機能を提供します。
+		 *
+		 * <pre>
+		 * チェック状態の変更などチェックボックスに関する機能を管理します。
+		 * </pre>
+		 */
+		MC.checkbox = {
+
+			/**
+			 * すべてにチェックを付けます
+			 * @param {String} aChkboxName チェックボックスのname
+			 * @example
+			 * ・HTML
+			 * <input type="checkbox" name="chkMember" value="a">メンバーA<br>
+			 * <input type="checkbox" name="chkMember" value="b">メンバーB<br>
+			 * <input type="checkbox" name="chkMember" value="c">メンバーC<br>
+			 * <input type="button" onclick="javascript:checkAllMember();" value="すべてON">
+			 * ・JS
+			 * function checkAllMember() {
+			 *	 MC.html.checkbox.checkAll("chkMember");
+			 * }
+			 */
+			checkedAll : function(aChkboxName) {
+				this.checkedForValue(aChkboxName, true);
+			},
+			/**
+			 * すべてのチェックを外します
+			 * @param {String} aChkboxName チェックボックスのname
+			 * @example
+			 * ・HTML
+			 * <input type="checkbox" name="chkMember" value="a">メンバーA<br>
+			 * <input type="checkbox" name="chkMember" value="b">メンバーB<br>
+			 * <input type="checkbox" name="chkMember" value="c">メンバーC<br>
+			 * <input type="button" onclick="javascript:clearAllMember();" value="すべてOFF">
+			 * ・JS
+			 * function clearAllMember() {
+			 *	 MC.html.checkbox.clearAll("chkMember");
+			 * }
+			 */
+			clearAll : function(aChkboxName) {
+				this.checkedForValue(aChkboxName, false);
+			},
+			/**
+			 * すべてのチェックを反転させます
+			 * <pre>現在のチェック状態を反転させます。ON→OFF、OFF→ONへ。</pre>
+			 * @param {String} aChkboxName チェックボックスのname
+			 * @example
+			 * ・HTML
+			 * <input type="checkbox" name="chkMember" value="a" checked="true">メンバーA<br>
+			 * <input type="checkbox" name="chkMember" value="b" checked="true">メンバーB<br>
+			 * <input type="checkbox" name="chkMember" value="c" checked="false">メンバーC<br>
+			 * <input type="button" onclick="javascript:reverseAllMember();" value="すべて反転">
+			 * ・JS
+			 * function reverseAllMember() {
+			 *	 MC.html.checkbox.reverseAll("chkMember");
+			 * }
+			 */
+			reverseAll : function(aChkboxName) {
+				var chkObjs = document.getElementsByName(aChkboxName);
+				if (chkObjs == null || chkObjs == undefined) {
+					return;
+				}
+				for ( var i = 0; i < chkObjs.length; i++) {
+					chkObjs[i].checked = !chkObjs[i].checked;
+				}
+			},
+			/**
+			 * 指定された値でチェック状態を変更します
+			 * <pre>指定された値がtrueならチェックON、falseならチェックOFFにします</pre>
+			 * @param {String} aChkboxName チェックボックスのname
+			 * @param {Boolean} aValue チェック状態(true:ON false:OFF)
+			 * @example
+			 * ・HTML
+			 * <input type="checkbox" name="chkMember" value="a" checked="true">メンバーA<br>
+			 * <input type="checkbox" name="chkMember" value="b" checked="true">メンバーB<br>
+			 * <input type="checkbox" name="chkMember" value="c" checked="false">メンバーC<br>
+			 * <input type="checkbox" id="chkAllMember" value="d" onclick="javascript:clickAllMember();">全メンバー<br>
+			 * ・JS
+			 * function clickAllMember() {
+			 *	 var chkValue = document.getElementById("chkAllMember").checked;
+			 *	 MC.html.checkbox.checkedForValue("chkMember", chkValue);
+			 * }
+			 */
+			checkedForValue : function(aChkboxName, aValue) {
+				var chkObjs = document.getElementsByName(aChkboxName);
+				if (chkObjs == null || chkObjs == undefined) {
+					return;
+				}
+				for ( var i = 0; i < chkObjs.length; i++) {
+					chkObjs[i].checked = aValue;
+				}
+			}
+		};
+
+		/**
+		 * @class フォームに関する共通機能を提供します.
+		 *
+		 * <pre>
+		 * 二重送信防止などフォームに関する機能を管理します.
+		 * </pre>
+		 */
+		MC.form = {
+			/**
+			 * 二重送信を防止します.
+			 * <pre>
+			 * input typeが"button", "image", "submit"でprevedouble属性がtrueのコントロールを非活性にします.
+			 * formのonsubmitイベント、buttonのonclickイベントでコールされます.
+			 * 中止ボタン押下対応としてタイマーで5秒後に活性化する.
+			 * </pre>
+			 * @param {Form} objForm submitするフォームオブジェクト
+			 */
+			preventDouble : function(objForm) {
+
+				// formからinputタグを全走査し、条件に一致するコントロールを非活性化する
+				var elm;
+				var elms = objForm.getElementsByTagName('input');
+				for ( var i = 0; i < elms.length; i++) {
+					elm = elms[i];
+					if ((elm.type == "submit" || elm.type == "image" || elm.type == "button" || elm.type == "reset") &&
+							!elm.disabled &&
+							(elm.getAttribute("preventdouble") != undefined && elm.getAttribute("preventdouble") == "true")) {
+						_setDisabledTimer(elm);
+						_setUnDisabledTimer(elm);
+					}
+				}
+
+				/**
+				 * 指定されたボタンを非活性にします.
+				 * タイマーで1ミリ秒後に設定します.
+				 * @param {element} aButton ボタンオブジェクト
+				 * @private
+				 */
+				function _setDisabledTimer(aButton) {
+					window.setTimeout(function() {
+						aButton.disabled = true;
+					}, 1);
+				}
+				/**
+				 * 指定されたボタンを活性化します.
+				 * タイマーで5秒後に設定します.
+				 * @param {element} aButton ボタンオブジェクト
+				 * @private
+				 */
+				function _setUnDisabledTimer(aButton) {
+					window.setTimeout(function() {
+						if (document.readyState == undefined || document.readyState == "complete") {
+							aButton.disabled = false;
+						} else {
+							_setUnDisabledTimer(aButton);
+						}
+					}, 5000);
+				}
+			},
+			/**
+			 * デフォルトボタンの制御を行います。テキストボックス等でEnterキーが押されたとき、
+			 * （ブラウザのデフォルトの挙動である）フォーム中最初に現れたボタンの代わりに、
+			 * aTargetIdで指定されたidを持つボタンをJavaScriptでクリックします。
+			 * ただし、
+			 * 　・textareaの中の場合は改行するのみ
+			 * 　・input type="submit/image/button/reset" の場合は、そのボタンをクリックしたことにする
+			 * という挙動になります。
+			 * @param {element} aEvent keypressイベントオブジェクト
+			 * @param {element} aTargetId デフォルト扱いにするボタンのid属性の値
+			 */
+			hookDefaultSubmit : function(aEvent, aTargetId) {
+				if (!MC.form._isHookTarget(aEvent)) {
+					return true;
+				}
+
+				var defaultButton = document.getElementById(aTargetId);
+
+				if (!defaultButton || typeof (defaultButton.click) == "undefined") {
+					return true;
+				}
+				defaultButton.click();
+				MC.util.stopPropagation(aEvent);
+				return false;
+			},
+			/**
+			 * Body全体でのデフォルトボタンの制御を行います。
+			 * Body上でEnterキーが押されたとき、
+			 * defaultButtonInBody属性がtrueであるformのonkeypressイベントを実行します。
+			 * 複数formある場合は、画面下部から最初に該当したformのonkeypressイベントを実行します。
+			 * @param {element} aEvent keypressイベントオブジェクト
+			 */
+			hookBodyDefaultSubmit : function(aEvent) {
+				if (!MC.form._isHookTarget(aEvent)) {
+					return true;
+				}
+				for (var i = document.forms.length - 1; i >= 0; i--) {
+					if (document.forms[i].getAttribute("defaultButtonInBody") != "false" &&
+							document.forms[i].onkeypress != null) {
+						document.forms[i].onkeypress(aEvent);
+						return false;
+					}
+				}
+			},
+			/**
+			 * イベントがフックする対象かどうか.
+			 * <pre>
+			 * [チェック内容]
+			 * ・Enterキーが押されたか.
+			 * ・テキストエリア、テキストボックスなど入力/送信系項目上でのEnterキー押下か.
+			 * </pre>
+			 * @param {element} aEvent イベントオブジェクト
+			 * @return {Boolean} true：フック対象 false：フック対象ではない
+			 * @private
+			 */
+			_isHookTarget : function(aEvent) {
+				if (MC.util.getEventKeyCode(aEvent) != 13) {
+					return false;
+				}
+
+				var src = null;
+				if (aEvent.srcElement) {
+					src = aEvent.srcElement;
+				} else if (aEvent.target) {
+					src = aEvent.target;
+				}
+
+				if (!src) {
+					return false;
+				}
+
+				var tagNameLower = src.tagName.toLowerCase();
+
+				if (tagNameLower == "textarea") {
+					return false;
+				}
+
+				if (tagNameLower == "input") {
+					if (!src.type) {
+						return false;
+					}
+
+					var srcTypeLower = src.type.toLowerCase();
+					if (srcTypeLower == "submit" || srcTypeLower == "image" || srcTypeLower == "button" ||
+							srcTypeLower == "reset") {
+						return false;
+					}
+				}
+
+				return true;
+			}
+		};
+
+		/**
+		 * @class 各種ユーティリティを提供します。
+		 *
+		 * <pre>
+		 * ユーティリティとなる機能を管理します。
+		 * </pre>
+		 */
+		MC.util = {
+
+			/**
+			 * オブジェクトが有効かどうか.
+			 * @param {Object} aObj オブジェクト
+			 * @return  {Boolean} オブジェクトが有効な場合true、それ以外(null or undefined)の場合はfalse.
+			 */
+			isValidObj : function(aObj) {
+				return (aObj == null || aObj == undefined);
+			},
+			/**
+			 * 文字列が有効かどうか.
+			 * @param {String} aStr 文字列
+			 * @return  {Boolean} 文字列が有効な場合true、それ以外((null or undefined or length==0)の場合はfalse.
+			 */
+			isValidStr : function(aStr) {
+				return (aStr == null || aStr == undefined || aStr.length == 0);
+			},
+			/**
+			 * Flashプラグインが有効かどうか.
+			 * @return {Boolean} Flashプラグインが有効な場合true、それ以外(null or undefined or ActiveXObject生成失敗)の場合はfalse.
+			 */
+			isFlashEnabled : function() {
+				// IE以外
+				if ( navigator.plugins['Shockwave Flash'] ) {
+					return true;
+				}
+				// IE
+				try {
+					new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+					return true;
+				} catch (e) {
+					return false;
+				}
+			},
+			/**
+			 * クロスブラウザ対応のstopPropagation関数.
+			 * イベントのバブリングを停止する.
+			 * @param {element} aEvent イベントオブジェクト
+			 */
+			stopPropagation : function(aEvent) {
+				if (aEvent.cancelBubble != undefined) {
+					aEvent.cancelBubble = true;
+				}
+				if (aEvent.stopPropagation != undefined) {
+					aEvent.stopPropagation();
+				}
+			},
+			/**
+			 * イベントMapオブジェクト.
+			 * attachEvent/addEventListenerで登録されたイベントを管理するMap.
+			 * key = イベントタイプ + ":" + 関数(処理)
+			 * value = "1"
+			 * @private
+			 */
+			_eventMap : new Object(),
+			/**
+			 * Bodyタグへのイベント登録.
+			 * クロスブラウザ対応.
+			 * @param {String} aEvType イベントタイプ.
+			 * @param {Object} aFnc 登録する関数(処理).
+			 * @param {String} aUseCapture イベント伝播をキャプチャリングでコントロールするか.
+			 * @param {String} aIsAdd 同じイベントタイプ、関数がすでに登録されている場合、 true：登録する. false：登録しない.
+			 * @param {Boolean} 登録したかどうか.
+			 */
+			addBodyEvent : function(aEvType, aFnc, aUseCapture, aIsAdd) {
+				if (window.addEventListener != undefined) {
+					//-- Firefox等
+					if (aIsAdd == false) {
+						// 同じイベントタイプに関数がすでに登録されている場合は登録しない
+						if (MC.util._eventMap[aEvType + ":" + String(aFnc)] != undefined) {
+							return false;
+						}
+					}
+					// イベント登録
+					window.addEventListener(aEvType, aFnc, aUseCapture);
+					// イベントMapへ登録(すでに登録されているかのチェック用)
+					MC.util._eventMap[aEvType + ":" + String(aFnc)] = "1";
+					return true;
+				} else if (document.body != null && document.body.attachEvent != undefined) {
+					//-- IE等
+					var onEvType = "on" + aEvType;
+					if (aIsAdd == false) {
+						// 同じイベントタイプに関数がすでに登録されている場合は登録しない
+						if (MC.util._eventMap[onEvType + ":" + String(aFnc)] != undefined) {
+							return false;
+						}
+					}
+					// イベント登録
+					var r = document.body.attachEvent(onEvType, aFnc);
+					// イベントMapへ登録(すでに登録されているかのチェック用)
+					MC.util._eventMap[onEvType + ":" + String(aFnc)] = "1";
+					return r;
+				}
+			},
+			/**
+			 * キーコードを取得する.
+			 * クロスブラウザ対応.
+			 * @param {element} aEvent イベントオブジェクト
+			 * @return キーコード.
+			 */
+			getEventKeyCode : function(aEvent) {
+				if (aEvent.keyCode != 0) {
+					// IE 等
+					return aEvent.keyCode;
+				} else {
+					// Firefox等
+					return aEvent.charCode;
+				}
+			}
+		};
+
+	})();
+
+}

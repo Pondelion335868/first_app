@@ -1,0 +1,14 @@
+logrotate state -- version 2
+"/home/nakajima/.cache/upstart/gnome-settings-daemon.log" 2014-4-14
+"/home/nakajima/.cache/upstart/dbus.log" 2014-4-14
+"/home/nakajima/.cache/upstart/window-stack-bridge.log" 2014-4-7
+"/home/nakajima/.cache/upstart/im-config.log" 2014-4-14
+"/home/nakajima/.cache/upstart/gnome-session.log" 2014-4-14
+"/home/nakajima/.cache/upstart/hud.log" 2014-4-14
+"/home/nakajima/.cache/upstart/update-notifier-crash-_var_crash__usr_bin_gnome-control-center.1000.crash.log" 2014-4-14
+"/home/nakajima/.cache/upstart/at-spi2-registryd.log" 2014-4-14
+"/home/nakajima/.cache/upstart/update-notifier-crash-_var_crash__usr_lib_x86_64-linux-gnu_indicator-application-service.1000.crash.log" 2014-4-11
+"/home/nakajima/.cache/upstart/unity-panel-service.log" 2014-4-14
+"/home/nakajima/.cache/upstart/upstart-file-bridge.log" 2014-4-14
+"/home/nakajima/.cache/upstart/unity7.log" 2014-4-14
+"/home/nakajima/.cache/upstart/update-notifier-release.log" 2014-4-14

@@ -1,0 +1,35 @@
+status: 200
+content-length: 964
+via: 1.1 sumac.canonical.com:3128 (squid/2.7.STABLE7)
+content-location: http://reviews.ubuntu.com/reviews/api/1.0/reviews/filter/ja/ubuntu/raring/any/eclipse-platform/page/1/helpful/
+x-cache: MISS from sumac.canonical.com
+x-cache-lookup: HIT from sumac.canonical.com:3128
+expires: Fri, 04 Apr 2014 03:50:22 GMT
+server: Apache/2.2.22 (Ubuntu)
+last-modified: Fri, 04 Apr 2014 03:45:22 GMT
+connection: close
+cache-control: max-age=300
+date: Fri, 04 Apr 2014 03:45:22 GMT
+content-type: application/json; charset=utf-8
+
+[
+    {
+        "origin": "ubuntu", 
+        "rating": 3, 
+        "hide": false, 
+        "app_name": "Eclipse", 
+        "language": "ja", 
+        "reviewer_username": "TdPPXz6", 
+        "usefulness_total": 1, 
+        "usefulness_favorable": 0, 
+        "review_text": "素のEclipseと何ら変わらないので\n設定が色々面倒臭い。\nそれ以前の問題として、OSが重すぎ。\n最早32bitの仮想マシンでは\nどーにもならないかも。\n安全性とかJavaが定位置に入るとか\nどうしてもというなら、\nフツーにインストールがオススメです。", 
+        "date_deleted": null, 
+        "summary": "フツーにインストールがオススメです。", 
+        "version": "3.8.1-1ubuntu1", 
+        "id": 72550, 
+        "date_created": "2013-05-16 11:08:35", 
+        "reviewer_displayname": "tinyXeno", 
+        "package_name": "eclipse-platform", 
+        "distroseries": "raring"
+    }
+]

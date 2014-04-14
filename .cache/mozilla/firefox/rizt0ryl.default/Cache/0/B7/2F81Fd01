@@ -1,0 +1,587 @@
+/********************************************************************************/
+/*	１．プログラム名：各種申請・手続き用JavaScriptファイル						*/
+/*	２．プログラムID：sijsd001.js												*/
+/*	３．作成者		：日本システムランド										*/
+/*	４．作成日		：2006/04/03												*/
+/********************************************************************************/
+
+/* ------------------------------------------------------------------------- */
+/*	共通																	 */
+/* ------------------------------------------------------------------------- */
+
+//
+function init() {
+	focus();
+}
+//
+function formSubmit() {
+	document.frm.submit();
+}
+// 文字列のバイト数を取得
+function getByteLen(str) {
+	var len = 0;
+	var escChar;
+	for (var i = 0; i < str.length; i++) {
+		escChar = escape(str.charAt(i));
+		if (escChar.match(/^%u[A-F0-9]{4}$/)
+				|| escChar.match(/^%[A-F0-9]{2}%[A-F0-9]{2}$/)) {
+			len = len + 2;
+		} else if (escChar.match(/^%0A$/)) {
+			len = len + 2;
+		} else if (escChar.match(/^%0D$/) && escape(str.charAt(i + 1)).match(/^%0A$/)) {
+			len = len + 2;
+			i++;
+		} else {
+			len = len + 1;
+		}
+	}
+	return len;
+}
+// 半角英数記号チェック
+function chkHalfChar(item, title) {
+	var sTemp;
+	var stVal = item.value;
+	for (var k = 0; k < stVal.length; k++) {
+		sTemp = escape(stVal.charAt(k));
+		if (sTemp.length >= 4) {
+			alert("「" + title + "」は半角の英数字・記号で入力してください。");
+			item.focus();
+			return false;
+		}
+	}
+	return true;
+}
+// 半角数字チェック
+function chkHalfNumbar(item, title) {
+	if (item.value != "" && !(item.value.match(/^\d+$/)
+								&& getByteLen(item.value) == item.value.length)) {
+		alert("「" + title + "」は半角の数字で入力してください。");
+		item.focus();
+		return false;
+	} else {
+		return true;
+	}
+}
+// 全角文字チェック
+function chkDoubleChar(item, title) {
+	if (item.value.length * 2 != getByteLen(item.value)) {
+		alert("「" + title + "」は全角文字で入力してください。");
+		item.focus();
+		return false;
+	} else {
+		return true;
+	}
+}
+// メールアドレスチェック
+function chkMailAddr(item, title) {
+	if (item.value != "" && !item.value.match(/.+@.+\..+/)) {
+		alert("「" + title + "」を正しく入力してください。");
+		item.focus();
+		return false;
+	} else {
+		// 半角英数記号チェック
+		if (chkHalfChar(item, title)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+}
+// 最大文字数チェック
+function inMaxLenCeck(item, maxlen, title) {
+	if (item.value.length > maxlen) {
+		alert("「" + title + "」は" + maxlen + "文字以内で入力してください。");
+		item.focus();
+		return false;
+	} else {
+		return true;
+	}
+}
+// 最大バイト数チェック
+function inMaxByteCeck(item, maxlen, title) {
+	if (item.value.length > maxlen || getByteLen(item.value) > maxlen) {
+		alert("「" + title + "」は半角換算" + maxlen + "文字以内で入力してください。");
+		item.focus();
+		return false;
+	} else {
+		return true;
+	}
+}
+
+/* ------------------------------------------------------------------------- */
+/*	各種申請処理・手続きメニュー画面										 */
+/* ------------------------------------------------------------------------- */
+// 過去申請一覧表示
+function show_past() {
+	document.show_rireki.submit();
+}
+// 異動届表示
+function show_ido() {
+	document.show_ido.submit();
+}
+// 汎用申請表示
+function show_hanyo(khn_key) {
+	document.show_hanyo.KHN_KEY.value = khn_key;
+	document.show_hanyo.submit();
+}
+// 汎用ダウンロード表示
+function show_download(khn_key) {
+	document.show_download.KHN_KEY.value = khn_key;
+	document.show_download.submit();
+}
+
+/* ------------------------------------------------------------------------- */
+/*	過去の申請募集一覧画面													 */
+/* ------------------------------------------------------------------------- */
+function show_preview(khn_key,entry_id) {
+	document.show_preview.KHN_KEY.value = khn_key;
+	document.show_preview.ENTRY_ID.value = entry_id;
+	document.show_preview.submit();
+}
+
+/* ------------------------------------------------------------------------- */
+/*	異動届 入力画面															 */
+/* ------------------------------------------------------------------------- */
+
+//
+function ChkDiv(dname, ctl) {
+	var o		= null;
+	var wctl	= ctl.checked;
+	var chk		= null;
+	var cnt1	= 0;
+	var cnt2	= 0;
+	var o2		= null;
+	if (supportDOM()) {
+		o = document.getElementById(dname);
+	} else if (document.all) {
+		o = document.all[dname];
+	}
+	if (o != null) {
+		if (wctl != false) {
+			o.style.display = 'block';
+		} else {
+			o.style.display = 'none';
+		}
+	}
+	// 本人項目が一件でもある場合は「本人」を表示する
+	var sel1 = document.frm.chk1;
+	for (var i = 0, n = sel1.length; i < n; i++) {
+		if (sel1[i].checked) {
+			cnt1++;
+		}
+	}
+	if (cnt1 > 0) {
+		o2 = document.getElementById("honnin");
+		o2.style.display = 'block';
+	} else {
+		o2 = document.getElementById('honnin');
+		o2.style.display = 'none';
+	}
+	// 保証人項目が一件でもある場合は「保証人」を表示する
+	var sel2 = document.frm.chk2;
+	for (var i = 0, n = sel2.length; i < n; i++) {
+		if (sel2[i].checked) {
+			cnt2++;
+		}
+	}
+	if (cnt2 > 0) {
+		o2 = document.getElementById("hosyounin");
+		o2.style.display = 'block';
+	} else {
+		o2 = document.getElementById('hosyounin');
+		o2.style.display = 'none';
+	}
+	// 入力が一件でもある場合はサブミットボタン表示
+	if (cnt1 + cnt2 > 0) {
+		o2 = document.getElementById('submit');
+		o2.style.display = 'block';
+		o2 = document.getElementById('close');
+		o2.style.display = 'none';
+	} else {
+		o2 = document.getElementById('submit');
+		o2.style.display = 'none';
+		o2 = document.getElementById('close');
+		o2.style.display = 'block';
+	}
+}
+//
+function supportDOM() {
+	if (window.opera) {
+		if (navigator.appVersion < "7") {
+			return false;
+		}
+	}
+	if (document.getElementById) {
+		return true;
+	} else {
+		return false;
+	}
+}
+//
+function initIdo() {
+	var chk1 = document.frm.chk1;
+	var chk2 = document.frm.chk2;
+	ChkDiv('Group1', chk1[0]);
+	ChkDiv('Group2', chk1[1]);
+	ChkDiv('Group3', chk1[2]);
+	ChkDiv('Group4', chk1[3]);
+	ChkDiv('Group5', chk1[4]);
+	ChkDiv('Group6', chk2[0]);
+	ChkDiv('Group7', chk2[1]);
+	ChkDiv('Group8', chk2[2]);
+	ChkDiv('Group9', chk2[3]);
+	focus();
+}
+//
+function formCheck() {
+	if (enquEssCheck()) {
+		return formSubmit();
+	} else {
+		return false;
+	}
+}
+// 入力チェック
+function enquEssCheck() {
+	var chkBoxArray =  new Array(9);
+	chkBoxArray[0] = document.frm.chk1[0].checked;
+	chkBoxArray[1] = document.frm.chk1[1].checked;
+	chkBoxArray[2] = document.frm.chk1[2].checked;
+	chkBoxArray[3] = document.frm.chk1[3].checked;
+	chkBoxArray[4] = document.frm.chk1[4].checked;
+	chkBoxArray[5] = document.frm.chk2[0].checked;
+	chkBoxArray[6] = document.frm.chk2[1].checked;
+	chkBoxArray[7] = document.frm.chk2[2].checked;
+	chkBoxArray[8] = document.frm.chk2[3].checked;
+	var d = document.frm;
+	var len = v_nameArray.length;
+	var isSelected = false;
+	var cnt = 0;
+	var inCnt = 0;
+	var v_next_val = new Array;
+	var v_cur_val = new Array;
+	var next_group_no = "";
+	var next_content_no = "";
+	var next_answer_no = "";
+	var num = 0;
+	for (var i = 0; i < len; i++) {
+		v_cur_val = v_nameArray[i].split("-");
+		num = parseInt(v_cur_val[1]) - 1;
+		if (chkBoxArray[num]) {
+			// ラジオボタン
+			if (v_typeArray[i] == "1") {
+				for (var j = 0; j < d.elements[v_nameArray[i]].length; j++) {
+					if (d.elements[v_nameArray[i]][j].checked) {
+						isSelected = true;
+						break;
+					}
+				}
+			// チェックボックス
+			} else if (v_typeArray[i] == "2") {
+				if (d.elements[v_nameArray[i]].checked) {
+					cnt++;
+				}
+			// プルダウン
+			} else if(v_typeArray[i] == "3") {
+				if (d.elements[v_nameArray[i]].value != "none") {
+					isSelected = true;
+				}
+			// テキスト
+			} else {
+				cnt++;
+				if (d.elements[v_nameArray[i]].value != "") {
+					inCnt++;
+				}
+				if (!inMaxLenCeck(d.elements[v_nameArray[i]], v_MaxLenArray[i], v_titleArray[i])) {
+					return false;
+				}
+				if (v_ChkKbnArray[i] == "1" && !chkHalfChar(d.elements[v_nameArray[i]], v_titleArray[i])) {
+					return false;
+				} else if (v_ChkKbnArray[i] == "2" && !chkHalfNumbar(d.elements[v_nameArray[i]], v_titleArray[i])) {
+					return false;
+				} else if (v_ChkKbnArray[i] == "3" && !chkDoubleChar(d.elements[v_nameArray[i]], v_titleArray[i])) {
+					return false;
+				} else if (v_ChkKbnArray[i] == "4" && !chkMailAddr(d.elements[v_nameArray[i]], v_titleArray[i])) {
+					return false;
+				}
+			}
+			// 同一コントロール内のチェック
+			if (i + 1 != len) {
+				v_next_val = v_nameArray[i+1].split("-");
+				next_group_no = v_next_val[1];
+				next_content_no = v_next_val[2];
+				next_answer_no = v_next_val[3];
+			} else {
+				next_group_no = "";
+				next_content_no = "";
+				next_answer_no = "";
+			}
+			if ((v_cur_val[1] != next_group_no) || (v_cur_val[2] != next_content_no) || (v_cur_val[3] != next_answer_no)) {
+				// ラジオボタン
+				if (v_typeArray[i] == "1") {
+					if (v_essensArray[i] == "1" && !isSelected) {
+						alert("「" + v_titleArray[i] + "」が選択されていません。");
+						return false;
+					}
+				// チェックボックス
+				} else if (v_typeArray[i] == "2") {
+					if (cnt == 0 && v_essensArray[i] == "1") {
+						alert("「" + v_titleArray[i] + "」が選択されていません。");
+						d.elements[v_nameArray[i]].focus();
+						return false;
+					}
+					if(cnt > v_CntArray[i] && v_CntArray[i] != 0) {
+						alert("「" + v_titleArray[i] + "」が選択許可件数を超えています。");
+						d.elements[v_nameArray[i]].focus();
+						return false;
+					}
+				// プルダウン
+				} else if (v_typeArray[i] == "3") {
+					if (v_essensArray[i] == "1" && !isSelected) {
+						alert("「" + v_titleArray[i] + "」が選択されていません。");
+						d.elements[v_nameArray[i]].focus();
+						return false;
+					}
+				// テキスト
+				} else if (v_essensArray[i] == "1" && inCnt != cnt) {
+					alert("「" + v_titleArray[i] + "」が入力されていません。");
+					d.elements[v_nameArray[i]].focus();
+					return false;
+				} else if (v_essensArray[i] == "2" && inCnt != 0 && inCnt != cnt) {
+					alert("「" + v_titleArray[i] + "」の入力内容を確認してください。");
+					d.elements[v_nameArray[i]].focus();
+					return false;
+				}
+				isSelected = false;
+				var cnt = 0;
+				var inCnt = 0;
+			}
+		}
+	}
+	if (!checkPostalCode("INP-1-1-1-1", "INP-1-1-1-2", d.chk1[0])) {
+		return false;
+	}
+	if (!checkPostalCode("INP-6-1-1-1", "INP-6-1-1-2", d.chk2[0])) {
+		return false;
+	}
+	return true;
+}
+// 郵便番号のチェック
+function checkPostalCode(upperName, lowerName, chkObj) {
+	var upperCount = document.frm.elements[upperName].value.length;
+	var lowerCount = document.frm.elements[lowerName].value.length;
+	if (chkObj.checked && !(upperCount == 3 && lowerCount == 4)) {
+		alert("郵便番号が正しく入力されていません。");
+		if (upperCount != 3) {
+			document.frm.elements[upperName].focus();
+		} else {
+			document.frm.elements[lowerName].focus();
+		}
+		return false;
+	} else {
+		return true;
+	}
+}
+
+/* ------------------------------------------------------------------------- */
+/*	汎用申請/アンケート 入力画面											 */
+/* ------------------------------------------------------------------------- */
+// 入力チェック
+function checkInputs() {
+	var form = document.frm;
+	var len = v_nameArray.length;
+	var isSelected = false;
+	var isYoko = false;
+	var isYokoChk = false;
+	var cnt = 0;
+	var inCnt = 0;
+	var v_next_val = new Array;
+	var v_cur_val = new Array;
+	var v_serch_val = new Array;
+	var next_group_no = "";
+	var next_content_no = "";
+	var next_answer_no = "";
+
+	for (var i = 0; i < len; i++) {
+
+		// 表形式(横)チェック用判定
+		isYoko = false;
+		isYokoChk = false;
+		v_cur_val = v_nameArray[i].split("-");
+		for (var ii = 0; ii < v_GrpYokoArray.length; ii++) {
+			// 該当グループか判定
+			if (v_cur_val[1] == v_GrpYokoArray[ii]) {
+				isYoko = true;
+				break;
+			}
+		}
+		// 該当グループの場合、現在の行に入力があるかどうかチェック
+		if (isYoko) {
+			// 全項目検索
+			for (var ii = 0; ii < v_nameArray.length; ii++) {
+				v_serch_val = v_nameArray[ii].split("-");
+				if (v_serch_val[0] == 'INP' && v_serch_val[1] == v_cur_val[1] && v_serch_val[3] == v_cur_val[3]) {
+					// 入力されているか
+					if(form.elements[v_nameArray[ii]].value != "") {
+						isYokoChk = true;
+						break;
+					}
+				}
+			}
+		}
+		// 表形式(横)でチェック不要行の場合はContinue
+		if (isYoko && isYokoChk == false) {
+			continue;
+		}
+
+		// ラジオボタン
+		if (v_typeArray[i] == "1") {
+			for (var j = 0; j < form.elements[v_nameArray[i]].length; j++) {
+				if(form.elements[v_nameArray[i]][j].checked) {
+					isSelected = true;
+					break;
+				}
+			}
+		// チェックボックス
+		} else if (v_typeArray[i] == "2") {
+			if (form.elements[v_nameArray[i]].checked) {
+				cnt++;
+			}
+		// プルダウン
+		} else if (v_typeArray[i] == "3") {
+			if (form.elements[v_nameArray[i]].value != "none") {
+				isSelected = true;
+			}
+		// テキスト
+		} else if (v_typeArray[i] == "4") {
+			cnt++;
+			if (form.elements[v_nameArray[i]].value != "") {
+				inCnt++;
+			}
+			if (!isChangedDefaltValue(form.elements[v_nameArray[i]], v_titleArray[i])) {
+				return false;
+			}
+			if (!inMaxByteCeck(form.elements[v_nameArray[i]], v_MaxLenArray[i], v_titleArray[i])) {
+				return false;
+			}
+			if (v_ChkKbnArray[i] == "1" && !chkHalfChar(form.elements[v_nameArray[i]], v_titleArray[i])) {
+				return false;
+			} else if (v_ChkKbnArray[i] == "2" && !chkHalfNumbar(form.elements[v_nameArray[i]], v_titleArray[i])) {
+				return false;
+			} else if (v_ChkKbnArray[i] == "3" && !chkDoubleChar(form.elements[v_nameArray[i]], v_titleArray[i])) {
+				return false;
+			} else if (v_ChkKbnArray[i] == "4" && !chkMailAddr(form.elements[v_nameArray[i]], v_titleArray[i])) {
+				return false;
+			}
+		// テキストエリア
+		} else if (v_typeArray[i] == "5") {
+			if (!isChangedDefaltValue(form.elements[v_nameArray[i]], v_titleArray[i])) {
+				return false;
+			}
+			if (!inMaxByteCeck(form.elements[v_nameArray[i]], v_MaxLenArray[i], v_titleArray[i])) {
+				return false;
+			}
+			if (v_essensArray[i] == "1" && (form.elements[v_nameArray[i]].value.length == 0)) {
+				alert("「" + v_titleArray[i] + "」が入力されていません。");
+				form.elements[v_nameArray[i]].focus();
+				return false;
+			}
+		}
+
+		// 同一コントロール内のチェック
+		if (i + 1 != len) {
+			v_next_val = v_nameArray[i+1].split("-");
+			next_group_no = v_next_val[1];
+			next_content_no = v_next_val[2];
+			next_answer_no = v_next_val[3];
+		} else {
+			next_group_no = "";
+			next_content_no = "";
+			next_answer_no = "";
+		}
+		v_cur_val = v_nameArray[i].split("-");
+		if ((v_cur_val[1] != next_group_no) || (v_cur_val[2] != next_content_no) || (v_cur_val[3] != next_answer_no)) {
+			// ラジオボタン
+			if (v_typeArray[i] == "1") {
+				if (v_essensArray[i] == "1" && !isSelected) {
+					alert("「" + v_titleArray[i] + "」が選択されていません。");
+					return false;
+				}
+			// チェックボックス
+			} else if (v_typeArray[i] == "2") {
+				if (cnt == 0 && v_essensArray[i] == "1") {
+					alert("「" + v_titleArray[i] + "」が選択されていません。");
+					form.elements[v_nameArray[i]].focus();
+					return false;
+				}
+				if (cnt > v_CntArray[i] && v_CntArray[i] != 0) {
+					alert("「" + v_titleArray[i] + "」が選択許可件数を超えています。");
+					form.elements[v_nameArray[i]].focus();
+					return false;
+				}
+			// プルダウン
+			} else if (v_typeArray[i] == "3") {
+				if (v_essensArray[i] == "1" && !isSelected) {
+					alert("「" + v_titleArray[i] + "」が選択されていません。");
+					form.elements[v_nameArray[i]].focus();
+					return false;
+				}
+			// テキスト
+			} else if (v_typeArray[i] == "4") {
+				if (v_essensArray[i] == "1" && (inCnt == 0 || inCnt != cnt)) {
+					alert("「" + v_titleArray[i] + "」が入力されていません。");
+					form.elements[v_nameArray[i]].focus();
+					return false;
+				} else if (v_essensArray[i] == "2" && inCnt != 0 && inCnt != cnt) {
+					alert("「" + v_titleArray[i] + "」の入力内容を確認してください。");
+					form.elements[v_nameArray[i]].focus();
+					return false;
+				}
+			// 定型項目(日付)
+			} else if (v_typeArray[i] == "6") {
+				var pre_name = v_nameArray[i].substring(0, v_nameArray[i].lastIndexOf("-") + 1);
+				var content_no = v_nameArray[i].substring(v_nameArray[i].lastIndexOf("-") + 1);
+				var yyyy = form.elements[pre_name + "1"].value;
+				var mm = form.elements[pre_name + "2"].value;
+				var dd;
+				if (content_no == "2") {
+					dd = 1;
+				} else if (content_no == "3") {
+					dd = form.elements[pre_name + "3"].value;
+				}
+				var date = new Date(yyyy, mm - 1, dd);
+				if (content_no == "2") {
+					if ((v_essensArray[i] == "1" && (yyyy.length == 0 || mm == 'none'))
+							|| ((yyyy.length != 0 || mm != 'none')
+									&& (date.getFullYear() != yyyy || date.getMonth() != mm - 1 || date.getDate() != dd))) {
+						alert("「" + v_titleArray[i] + "」を正しく入力してください。");
+						form.elements[v_nameArray[i]].focus();
+						return false;
+					}
+				} else if (content_no == "3") {
+					if ((v_essensArray[i] == "1" && (yyyy.length == 0 || mm == 'none' || dd == 'none'))
+							|| ((yyyy.length != 0 || mm != 'none' || dd != 'none')
+									&& (date.getFullYear() != yyyy || date.getMonth() != mm - 1 || date.getDate() != dd))) {
+						alert("「" + v_titleArray[i] + "」を正しく入力してください。");
+						form.elements[v_nameArray[i]].focus();
+						return false;
+					}
+				}
+			}
+			isSelected = false;
+			cnt = 0;
+			inCnt = 0;
+		}
+	}
+	return true;
+}
+// デフォルト値の変更チェック
+function isChangedDefaltValue(item, title) {
+	var defalutValue = document.frm.elements[ "def_" + item.name].value;
+	if (defalutValue != "" && defalutValue == item.value) {
+		alert("「" + title + "」が変更されていません。");
+		item.focus();
+		return false;
+	} else {
+		return true;
+	}
+}

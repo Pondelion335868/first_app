@@ -1,0 +1,657 @@
+body { background: #ffffff}
+form { margin: 0px}
+
+
+
+/*********   ログオン   *********/
+
+/*    ヘッダ    */
+td.popuphead-bg { background-image: url(../images/logo_popup_bg.gif)}
+
+/*    ヘッダ    */
+td.logon-bg2 { background-image: url(../images/bg_userinfo2.gif)}
+
+/*   テキスト   */
+.ssl { font-size: 12px; color: #333333}
+.textfield { width: 160px}
+a.password:link { font-size: 12px; color:#333333; text-decoration: none}
+a.password:visited { font-size: 12px; color:#333333; text-decoration: none}
+a.password:hover { font-size: 12px; color:#333333; text-decoration: underline}
+
+/*   背景   */
+td.logon-bg { background-image: url(../images/logon_bg.gif)}
+
+
+
+/*********   ヘッダ   *********/
+
+/*   ログインユーザ名    040612更新   */
+.name-bg-01 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #000000}
+
+/*   日付   */
+.date-bg-01 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #6c6c6c}
+.date-bg-02 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #cc4747}
+.date-bg-03 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #cc8947}
+.date-bg-04 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #949452}
+.date-bg-05 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #529494}
+.date-bg-06 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #525294}
+.date-bg-07 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #945294}
+.date-bg-08 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #cc6666}
+.date-bg-09 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #cc9966}
+.date-bg-10 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #999966}
+.date-bg-11 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #669999}
+.date-bg-12 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #666699}
+.date-bg-13 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #996699}
+.date-bg-14 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #a17373}
+.date-bg-15 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #a18a73}
+.date-bg-16 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #7e7e67}
+.date-bg-17 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #677e7e}
+.date-bg-18 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #67677e}
+.date-bg-19 { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #7e677e}
+
+/*   背景   */
+td.head-bg1 { background-image: url(../images/header_line.gif)}
+td.head-bg2 { background-image: url(../images/header_search_bg.gif)}
+
+/*   検索   */
+.search { width: 150px}
+
+
+
+/*********   フッタ   *********/
+
+/*   背景   */
+td.foot-bg { background-image: url(../images/footer_bg.gif)}
+
+
+
+/*********   メニュー   *********/
+
+/*   背景   */
+td.hub-bg1 { background-image: url(../images/hub_bg.gif)}
+td.hub-bg2 { background-image: url(../images/menu_bg.gif)}
+
+
+
+/*********   縦カレンダー   *********/
+
+/*   背景   */
+td.vcal-bg1 { background-image: url(../images/vcal_bg.gif)}
+td.vcal-bg2 { background-image: url(../images/vcal_month_bg.gif)}
+
+/*   月   */
+a.month:link { font-size: 12px; color:#cccccc; text-decoration: none}
+a.month:visited { font-size: 12px; color:#cccccc; text-decoration: none}
+a.month:hover { font-size: 12px; color:#cccccc; text-decoration: underline}
+
+/*   スケジュール有無   */
+td.vcal-schedule-on{ background-image: url(../images/vcal_schedule_bg_on.gif)}
+td.vcal-schedule-off{ background-image: url(../images/vcal_schedule_bg.gif)}
+
+/*   日   */
+td.vcal-day-bg{ background-image: url(../images/vcal_day_bg.gif)}
+td.vcal-today-bg{ background-image: url(../images/vcal_today_bg.gif)}
+a.vcal-day:link { font-size: 10px; color:#000000; text-decoration: none}
+a.vcal-day:visited { font-size: 10px; color:#000000; text-decoration: none}
+a.vcal-day:hover { font-size: 10px; color:#000000; text-decoration: underline}
+a.vcal-day-red:link { font-size: 10px; color:#cc0000; text-decoration: none}
+a.vcal-day-red:visited { font-size: 10px; color:#cc0000; text-decoration: none}
+a.vcal-day-red:hover { font-size: 10px; color:#cc0000; text-decoration: underline}
+
+
+
+/*********   サブメニュー   *********/
+
+/*   名称   */
+.text-smenu { font-size: 10px; padding-bottom: 2px}
+
+
+
+/*********   インフォクリップ   *********/
+
+/*   背景   */
+td.infoclip-bg1 { background-image: url(../images/hub_r.gif)}
+td.infoclip-bg2 { background-image: url(../images/infoclip_bg_t.gif)}
+td.infoclip-bg3 { background-image: url(../images/infoclip_bg_1.gif)}
+td.infoclip-bg4 { background-image: url(../images/infoclip_bg_b.gif)}
+
+/*   未処理件数   */
+td.clickablecell { background-image: url(../images/infoclip_text_bg.gif); cursor: pointer}
+a.infoclip:link { font-size: 10px; color:#000000; text-decoration: none; cursor: pointer; width: 100%}
+a.infoclip:visited { font-size: 10px; color:#000000; text-decoration: none; cursor: pointer; width: 100%}
+a.infoclip:hover { font-size: 10px; color:#000000; text-decoration: underline; cursor: pointer; width: 100%}
+a.infoclip-b:link { font-size: 10px; font-weight: bold; color:#000000; text-decoration: none; cursor: pointer; width: 100%}
+a.infoclip-b:visited { font-size: 10px; font-weight: bold; color:#000000; text-decoration: none; cursor: pointer; width: 100%}
+a.infoclip-b:hover { font-size: 10px; font-weight: bold; color:#000000; text-decoration: underline; cursor: pointer; width: 100%}
+
+
+
+/*********   メインコンテンツ   *********/
+
+/*   背景   */
+td.main-bg1 { background-image: url(../images/contests_around_t.gif)}
+td.main-bg2 { background-image: url(../images/contents_around_side.gif)}
+td.main-bg3 { background-image: url(../images/contests_around_b.gif)}
+td.main-bg4 { background-image: url(../images/title_bg.gif)}
+td.main-bg5 { background-image: url(../images/button_bg.gif)}
+td.main-bg6 { background-image: url(../images/dotted_line.gif)}
+td.main-bg7 { background-image: url(../images/line.gif)}
+td.main-bg8 { background-image: url(../images/title_bg_main.gif)}
+td.main-bg9 { background-image: url(../images/button_bg4.gif)}
+
+
+
+/*********   コンテンツヘッダ   *********/
+
+/*   背景   */
+td.cim-bg1 { background-image: url(../images/cim_tab_bg.gif)}
+td.file-bg0 { background-image: url(../images/file_tab_bg.gif)}
+td.button-bg1 { background-image: url(../images/button_bg.gif)}
+td.button-bg2 { background-image: url(../images/button_bg2.gif)}
+td.button-bg3 { background-image: url(../images/button_bg3.gif)}
+
+/*   TODOタイトル   */
+.todo-bg { background-color: #e0ddd7}
+
+
+
+/*********   パーソナルスペース   *********/
+
+/*   背景   */
+td.personal-bg1 { background-image: url(../images/photo_around_line.gif)}
+td.personal-bg2 { background-image: url(../images/photo_around_side.gif)}
+
+/*   タイトル   */
+.personal-text-title { font-size: 12px; color: #333333; padding-top: 6px; padding-left: 6px; padding-bottom: 2px}
+
+/*   リンク   */
+.personal-text-normal { font-size: 10px; color:#333333; text-decoration: none; padding-top: 2px; padding-left: 6px; padding-bottom: 7px; padding-right: 6px}
+a.personal-text-normal-link:link { font-size: 10px; color:#333333; text-decoration: none; padding-top: 2px; padding-left: 6px; padding-bottom: 7px; padding-right: 6px}
+a.personal-text-normal-link:visited { font-size: 10px; color:#333333; text-decoration: none; padding-top: 2px; padding-left: 6px; padding-bottom: 7px; padding-right: 6px}
+a.personal-text-normal-link:hover { font-size: 10px; color:#333333; text-decoration: underline; padding-top: 2px; padding-left: 6px; padding-bottom: 7px; padding-right: 6px}
+
+
+
+/*********   ON THE GO   *********/
+
+/*   マーク   */
+.mark { padding-left: 10px}
+
+
+
+/*********   テキスト   *********/
+
+/*   TOP    040612更新   */
+.top-text1 { font-size: 12px; color: #333333; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 10px}
+a.top-text1-link:link { font-size: 12px; color:#333333; text-decoration: none; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 10px}
+a.top-text1-link:visited { font-size: 12px; color:#333333; text-decoration: none; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 10px}
+a.top-text1-link:hover { font-size: 12px; color:#333333; text-decoration: underline; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 10px}
+.top-text2 { font-size: 12px; color: #333333; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px}
+a.top-text2-link:link { font-size: 12px; color:#333333; text-decoration: none; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px}
+a.top-text2-link:visited { font-size: 12px; color:#333333; text-decoration: none; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px}
+a.top-text2-link:hover { font-size: 12px; color:#333333; text-decoration: underline; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px}
+.top-text3 { font-size: 12px; color: #333333; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 8px}
+.top-text-b { font-size: 12px; color: #333333; font-weight: bold; padding-top: 4px; padding-right: 4px; padding-bottom: 4px}
+.top-text-r { font-size: 12px; color: #cc0000; padding-top: 4px; padding-right: 4px; padding-bottom: 4px}
+
+/*   カレンダーポートレット */
+a.calendarportlet-text-link:link { font-size: 12px; color:#333399; text-decoration: none}
+a.calendarportlet-text-link:visited { font-size: 12px; color:#333399; text-decoration: none}
+a.calendarportlet-text-link:hover { font-size: 12px; color:#333399; text-decoration: underline}
+
+/*   タイトルエリア    040612更新   */
+td.stitle-bg { background-image: url(../images/stitle_bg_main.gif)}
+.stitle { font-size: 12px; font-weight: bold; color: #6f5639}
+a.stitle-link:link { font-size: 12px; font-weight: bold; color:#6f5639; text-decoration: none}
+a.stitle-link:visited { font-size: 12px; font-weight: bold; color:#6f5639; text-decoration: none}
+a.stitle-link:hover { font-size: 12px; font-weight: bold; color:#6f5639; text-decoration: underline}
+.file-text { font-size: 10px; color: #333333; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px}
+.title-bg { background-color: #e0ddd7}
+.title { font-size: 12px; font-weight: bold; color: #333333; background-color: #e0ddd7}
+.title-1-bg { background-color: #e0ddd7}
+.title-1 { font-size: 12px; font-weight: bold; color: #333333; background-color: #e0ddd7}
+.title-bbs-bg { background-color: #d5d5d5}
+.title-bbs { font-size: 12px; font-weight: bold; color: #333333; background-color: #d5d5d5}
+.title-bbs-text { font-size: 12px; font-weight: bold; color: #333333; background-color: #d5d5d5}
+.title-text { font-size: 12px; color: #333333; background-color: #e0ddd7; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px}
+a.title-bbs-mail:link { font-size: 12px; font-weight: bold; color:#333333; background-color: #d5d5d5; text-decoration: none}
+a.title-bbs-mail:visited { font-size: 12px; font-weight: bold; color:#333333; background-color: #d5d5d5; text-decoration: none}
+a.title-bbs-mail:hover { font-size: 12px; font-weight: bold; color:#333333; background-color: #d5d5d5; text-decoration: underline}
+
+/*   改頁   */
+.text-page { font-size: 10px; color: #333333; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px}
+a.page-link:link { font-size: 10px; color:#333333; text-decoration: none}
+a.page-link:visited { font-size: 10px; color:#333333; text-decoration: none}
+a.page-link:hover { font-size: 10px; color:#333333; text-decoration: underline}
+a.page-link-b:link { font-size: 10px; color:#333333; font-weight: bold; text-decoration: none}
+a.page-link-b:visited { font-size: 10px; color:#333333; font-weight: bold; text-decoration: none}
+a.page-link-b:hover { font-size: 10px; color:#333333; font-weight: bold; text-decoration: underline}
+
+/*   ヘッダ    040714更新   */
+.head-text { font-size: 12px; color: #333333; background-color: #d5d5d5; padding-top: 5px; padding-right: 4px; padding-bottom: 5px; padding-left: 4px}
+.todo-head-text { font-size: 12px; color: #333333; background-color: #d5d5d5; padding-top: 5px; padding-right: 4px; padding-bottom: 5px; padding-left: 4px}
+a.head-text-link:link { font-size: 12px; color:#333333; text-decoration: underline}
+a.head-text-link:visited { font-size: 12px; color:#333333; text-decoration: underline}
+a.head-text-link:hover { font-size: 12px; color:#333333; text-decoration: underline}
+.head-text-normal { font-size: 12px; color: #333333; background-color: #d5d5d5; padding-top: 5px; padding-right: 4px; padding-bottom: 5px; padding-left: 4px}
+
+/*   ボタンエリア    040612更新   */
+.button-text { font-size: 12px; color: #333333; padding-top: 3px; padding-bottom: 3px}
+
+/*   スケジュール    040612更新   */
+.head-text-scedule { font-size: 12px; color: #333333; background-color: #d5d5d5; padding-right: 1px; padding-left: 1px}
+.head-text-week { font-size: 12px; color: #333333; background-color: #d5d5d5; padding-top: 5px; padding-right: 4px; padding-bottom: 5px; padding-left: 4px}
+a.head-text-week-link:link { font-size: 12px; color:#333333; background-color: #d5d5d5; text-decoration: none}
+a.head-text-week-link:visited { font-size: 12px; color:#333333; background-color: #d5d5d5; text-decoration: none}
+a.head-text-week-link:hover { font-size: 12px; color:#333333; background-color: #d5d5d5; text-decoration: underline}
+.head-text-month { font-size: 12px; color: #333333; background-color: #d5d5d5; padding-top: 5px; padding-right: 4px; padding-bottom: 5px; padding-left: 4px}
+a.head-text-month-link:link { font-size: 12px; color:#333333; background-color: #d5d5d5; text-decoration: none}
+a.head-text-month-link:visited { font-size: 12px; color:#333333; background-color: #d5d5d5; text-decoration: none}
+a.head-text-month-link:hover { font-size: 12px; color:#333333; background-color: #d5d5d5; text-decoration: underline}
+
+/*   週間スケジュール 日付    040612更新   */
+.schedule-date { font-size: 12px; color: #333333; background-color: #d5d5d5}
+
+/*   スケジュール 氏名    040612更新   */
+.schedule-name { font-size: 12px; color: #333333; padding-right: 10px; padding-left: 10px}
+
+/*   週間スケジュール 氏名 午前午後    040612更新   */
+/*.schedule-name2 { font-size: 12px; color: #333333; background-color: #efefec; padding-right: 10px; padding-left: 10px}*/
+.schedule-name2 { font-size: 12px; color: #666666; background-color: #efefec; padding-right: 9px; padding-left: 2px}
+
+/*   一般テキスト    040612更新   */
+.text-normal { font-size: 12px; color:#333333}
+a.text-normal-link:link { font-size: 12px; color:#333399; text-decoration: none}
+a.text-normal-link:visited { font-size: 12px; color:#333399; text-decoration: none}
+a.text-normal-link:hover { font-size: 12px; color:#333399; text-decoration: underline}
+
+/*   リストテキスト    040612更新   */
+.list-text-normal { font-size: 12px; color: #333333; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-normal-link-important-on:link { background-image:url('../images/important.gif'); background-repeat:no-repeat; background-position:0px center; font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 15px}
+a.list-text-normal-link-important-on:visited { background-image:url('../images/important.gif'); background-repeat:no-repeat; background-position:0px center; font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 15px}
+a.list-text-normal-link-important-on:hover { background-image:url('../images/important.gif'); background-repeat:no-repeat; background-position:0px center; font-size: 12px; color:#333399; text-decoration: underline; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 15px}
+a.list-text-normal-link-important-off:link { font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 15px}
+a.list-text-normal-link-important-off:visited { font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 15px}
+a.list-text-normal-link-important-off:hover { font-size: 12px; color:#333399; text-decoration: underline; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 15px}
+font.list-text-normal-link-important-on { background-image:url('../images/important.gif'); background-repeat:no-repeat; background-position:0px center; font-size: 12px; color:#333333; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 15px}
+font.list-text-normal-link-important-off { font-size: 12px; color:#333333; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 15px}
+a.list-text-normal-link:link { font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-normal-link:visited { font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-normal-link:hover { font-size: 12px; color:#333399; text-decoration: underline; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-link-u:link { font-size: 12px; color:#333399; text-decoration: underline; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-link-u:visited { font-size: 12px; color:#333399; text-decoration: underline; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-link-u:hover { font-size: 12px; color:#333399; text-decoration: underline; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+.list-text1 { font-size: 12px; color: #333333; padding-top: 4px; padding-bottom: 4px}
+a.list-text1-link:link { font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-bottom: 4px}
+a.list-text1-link:visited { font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-bottom: 4px}
+a.list-text1-link:hover { font-size: 12px; color:#333399; text-decoration: underline; padding-top: 4px; padding-bottom: 4px}
+.list-text-bold { font-size: 12px; font-weight: bold; color: #333333; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-bold-link:link { font-size: 12px; font-weight: bold; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-bold-link:visited { font-size: 12px; font-weight: bold; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-bold-link:hover { font-size: 12px; font-weight: bold; color:#333399; text-decoration: underline; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+
+table.list-text-in { font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px}
+a.list-text-in-link:link { font-size: 12px; color:#333399; text-decoration: none}
+a.list-text-in-link:visited { font-size: 12px; color:#333399; text-decoration: none}
+a.list-text-in-link:hover { font-size: 12px; color:#333399; text-decoration: underline}
+
+table.list-text-in-important { font-size: 12px; color:#333399; text-decoration: none; padding-top: 4px; padding-bottom: 4px; padding-left: 15px}
+a.list-text-in-link-important-on:link { font-size: 12px; color:#333399; text-decoration: none}
+a.list-text-in-link-important-on:visited { font-size: 12px; color:#333399; text-decoration: none}
+a.list-text-in-link-important-on:hover { font-size: 12px; color:#333399; text-decoration: underline}
+a.list-text-in-link-important-off:link { font-size: 12px; color:#333399; text-decoration: none}
+a.list-text-in-link-important-off:visited { font-size: 12px; color:#333399; text-decoration: none}
+a.list-text-in-link-important-off:hover { font-size: 12px; color:#333399; text-decoration: underline}
+font.list-text-in-link-important-on { background-image:url('../images/important.gif'); background-repeat:no-repeat; background-position:0px center; font-size: 12px; color:#333333; padding-top: 4px; padding-bottom: 4px; padding-left: 15px}
+font.list-text-in-link-important-off { font-size: 12px; color:#333333; text-decoration: none; padding-top: 4px; padding-bottom: 4px; padding-left: 15px}
+
+a.list-text-in-link-important-img:link { background-image:url('../images/important.gif'); background-repeat:no-repeat; background-position:0px center}
+a.list-text-in-link-important-img:visited { background-image:url('../images/important.gif'); background-repeat:no-repeat; background-position:0px center}
+a.list-text-in-link-important-img:hover { background-image:url('../images/important.gif'); background-repeat:no-repeat; background-position:0px center}
+
+td.img-on { padding-left: 10px}
+td.img-off { padding-left: 22px}
+
+/*   日付表示エリア    040612更新   */
+.schedule-dummy { background-color: #e0ddd7}
+.schedule-shift { font-size: 12px; color:#333333; background-color: #e0ddd7; padding-top: 3px; padding-bottom: 3px}
+a.schedule-shift-link:link { font-size: 12px; color:#333333; background-color: #e0ddd7; text-decoration: none}
+a.schedule-shift-link:visited { font-size: 12px; color:#333333; background-color: #e0ddd7; text-decoration: none}
+a.schedule-shift-link:hover { font-size: 12px; color:#333333; background-color: #e0ddd7; text-decoration: underline}
+.schedule-now { font-size: 12px; font-weight: bold; color: #333333; background-color: #e0ddd7; padding-top: 3px; padding-bottom: 3px}
+
+/*   TODOエリア    040612更新   */
+.todo-date { font-size: 12px; color: #333333; padding-top: 3px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px}
+
+/*   アドレス帳インデックス    040612更新   */
+.text-index { font-size: 12px; color: #333333; background-color: #e2e2e2; padding-top: 4px; padding-right: 5px; padding-bottom: 4px; padding-left: 4px; cursor: pointer}
+a.text-index-link:link { font-size: 12px; color:#333333; background-color: #e2e2e2; text-decoration: none}
+a.text-index-link:visited { font-size: 12px; color:#333333; background-color: #e2e2e2; text-decoration: none}
+a.text-index-link:hover { font-size: 12px; color:#333333; background-color: #e2e2e2; text-decoration: underline}
+.text-index-on { font-size: 12px; color: #333333; background-color: #d8c4c4; padding-top: 4px; padding-right: 5px; padding-bottom: 4px; padding-left: 4px; cursor: pointer}
+a.text-index-on-link:link { font-size: 12px; color:#333333; background-color: #d8c4c4; text-decoration: none}
+a.text-index-on-link:visited { font-size: 12px; color:#333333; background-color: #d8c4c4; text-decoration: none}
+a.text-index-on-link:hover { font-size: 12px; color:#333333; background-color: #d8c4c4; text-decoration: underline}
+
+
+
+/*********   ライン   *********/
+
+.vline-01 { background-color: #e4e4e4}
+.vline-02 { background-color: #dadada}
+.vline-03 { background-color: #f8f8f8}
+.vline-04 { background-color: #efefef}
+.bline-01 { background-color: #dadada}
+.bline-02 { background-color: #b4b4b4}
+.bline-03 { background-color: #dadada}
+.bline-05 { background-color: #efefec}
+.bline-sc { background-color: #dadada}
+.hline-01 { background-color: #787878}
+.hline-02 { background-color: #e4e4e4}
+.white-bg { background-color: #ffffff}
+
+
+
+/*********   セレクトメニュー   *********/
+
+/*   年月日   */
+.ymd { font-size: 12px;  padding-top: 2px}
+
+
+
+/*********   スケジュール クリッカブルエリア   *********/
+
+/*   有スケジュールエリア   */
+.schedule-on-open { background-color: #f0a98a; cursor: pointer}
+.schedule-on-closed { background-color: #b2b2b2; cursor: pointer}
+.schedule-on-zikannwari { background-color: #b1b163; cursor: pointer}
+.schedule-on-area { width: 100%; cursor: pointer}
+
+/*   テキスト    040612更新   */
+.schedule-text-through { font-size: 12px; color: #333333; background-color: #f7e6e6; padding-top: 3px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px}
+.schedule-text-past { font-size: 12px; color: #333333; padding-top: 3px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px}
+.schedule-text-now { font-size: 12px; color: #333333; background-color: #c6cded; padding-top: 3px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px}
+.schedule-text-on { font-size: 12px; color: #333333; background-color: #f8f2d7; padding-top: 3px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px}
+.schedule-text-future { font-size: 12px; color: #333333; background-color: #f4f2f5; padding-top: 3px; padding-left: 10px; padding-right: 10px; padding-bottom: 3px}
+a.text-schedule-link:link { font-size: 12px; color:#333333; text-decoration: none; width: 100%; cursor: pointer}
+a.text-schedule-link:visited { font-size: 12px; color:#333333; text-decoration: none; width: 100%; cursor: pointer}
+a.text-schedule-link:hover { font-size: 12px; color:#333333; text-decoration: underline; width: 100%; cursor: pointer}
+a.text-date-link:link { font-size: 16px; color:#333333; text-decoration: none; width: 100%; cursor: pointer}
+a.text-date-link:visited { font-size: 16px; color:#333333; text-decoration: none; width: 100%; cursor: pointer}
+a.text-date-link:hover { font-size: 16px; color:#333333; text-decoration: underline; width: 100%; cursor: pointer}
+a.text-sunday-link:link { font-size: 16px; color:#cc0000; text-decoration: none; width: 100%; cursor: pointer}
+a.text-sunday-link:visited { font-size: 16px; color:#cc0000; text-decoration: none; width: 100%; cursor: pointer}
+a.text-sunday-link:hover { font-size: 16px; color:#cc0000; text-decoration: underline; width: 100%; cursor: pointer}
+a.text-dateoff-link:link { font-size: 16px; color:#999999; text-decoration: none; width: 100%; cursor: pointer}
+a.text-dateoff-link:visited { font-size: 16px; color:#999999; text-decoration: none; width: 100%; cursor: pointer}
+a.text-dateoff-link:hover { font-size: 16px; color:#999999; text-decoration: underline; width: 100%; cursor: pointer}
+
+/*   背景   */
+.schedule-text-past-month { font-size: 12px; color: #333333; padding-top: 3px; padding-left: 2px; padding-right: 2px; padding-bottom: 3px; cursor: pointer}
+.schedule-text-now-month { font-size: 12px; color: #333333; background-color: #c6cded; padding-top: 3px; padding-left: 2px; padding-right: 2px; padding-bottom: 3px; cursor: pointer}
+.schedule-text-on-month { font-size: 12px; color: #333333; background-color: #f8f2d7; padding-top: 3px; padding-left: 2px; padding-right: 2px; padding-bottom: 3px; cursor: pointer}
+.schedule-text-future-month { font-size: 12px; color: #333333; background-color: #f4f2f5; padding-top: 3px; padding-left: 2px; padding-right: 2px; padding-bottom: 3px; cursor: pointer}
+
+
+
+/*********   BBS+   *********/
+
+/*   背景   */
+.bbs-bg1 { background-color: #f4f4f4}
+.bbs-bg2 { background-color: #9b9b9b}
+.bbs-bg3 { background-color: #eeeeee}
+
+/*   テキスト   040705修正   */
+.bbs-text-01 { font-size: 12px; color:#333333; background-color: #f4f4f4; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px}
+.bbs-button-01 { font-size: 12px; color:#333333; background-color: #f4f4f4; padding-left: 5px; padding-right: 5px; padding-bottom: 8px}
+a.bbs-text-01-link:link { font-size: 12px; color:#333399; background-color: #f4f4f4; text-decoration: none}
+a.bbs-text-01-link:visited { font-size: 12px; color:#333399; background-color: #f4f4f4; text-decoration: none}
+a.bbs-text-01-link:hover { font-size: 12px; color:#333399; background-color: #f4f4f4; text-decoration: underline}
+.bbs-text-02 { font-size: 12px; color:#333333; padding-left: 5px; padding-right: 5px; padding-top: 8px; padding-bottom: 8px}
+a.bbs-text-02-link:link { font-size: 12px; color:#333399; text-decoration: none}
+a.bbs-text-02-link:visited { font-size: 12px; color:#333399; text-decoration: none}
+a.bbs-text-02-link:hover { font-size: 12px; color:#333399; text-decoration: underline}
+.bbs-text-03 { font-size: 12px; color:#333333; line-height: 150%}
+.bbs-text-04 { font-size: 12px; color: #333333; background-color: #efefec; padding-left: 19px; padding-top: 8px; padding-right: 19px; padding-bottom: 8px}
+
+
+
+/*********   FILE+   *********/
+
+/*   テキスト    040612更新   */
+.file-text-01 { font-size: 12px; color: #333333}
+a.file-text-link:link { font-size: 12px; color:#333333; text-decoration: none}
+a.file-text-link:visited { font-size: 12px; color:#333333; text-decoration: none}
+a.file-text-link:hover { font-size: 12px; color:#333333; text-decoration: underline}
+
+/*   背景   */
+.file-bg1 { background-color: #999999}
+.file-bg2 { background-color: #ffffff}
+.file-bg3 { background-color: #727272}
+.file-bg4 { background-color: #ddad3b}
+.file-bg5 { background-color: #d74747}
+.file-bg6 { background-color: #f5f5f5}
+.file-bg7 { background-color: #787878}
+.file-bg8 { background-color: #f1f1f1}
+
+
+
+/*********   MAIL+   *********/
+
+/*   ヘッダ    040612更新   */
+.mail-head-text { font-size: 12px; color: #333333}
+.text-m1-b { font-size: 12px; font-weight: bold; color: #333333; background-color: #d5d5d5; padding-left: 17px; padding-top: 3px; padding-right: 17px; padding-bottom: 3px}
+.text-m2 { font-size: 12px; color: #333333; background-color: #efefec; padding-left: 17px; padding-top: 3px; padding-right: 17px; padding-bottom: 3px}
+
+/*   外枠   */
+.line-03 { background-color: #e2e2e2}
+
+/*   テキスト    040714更新   */
+.text-m3 { font-size: 12px; color: #333333; layout-grid-line: 9px}
+a.text-link-u:link { font-size: 12px; color:#333333; text-decoration: underline}
+a.text-link-u:visited { font-size: 12px; color:#333333; text-decoration: underline}
+a.text-link-u:hover { font-size: 12px; color:#333333; text-decoration: underline}
+a.mail-text-link:link { font-size: 12px; color:#333333; text-decoration: none}
+a.mail-text-link:visited { font-size: 12px; color:#333333; text-decoration: none}
+a.mail-text-link:hover { font-size: 12px; color:#333333; text-decoration: underline}
+a.mail-text-link-b:link { font-size: 12px; color:#333333; font-weight: bold; text-decoration: none}
+a.mail-text-link-b:visited { font-size: 12px; color:#333333; font-weight: bold; text-decoration: none}
+a.mail-text-link-b:hover { font-size: 12px; color:#333333; font-weight: bold; text-decoration: underline}
+.attach-file { font-size: 12px; color: #333333; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 35px}
+a.attach-file-link:link { font-size: 12px; color:#333399; text-decoration: none}
+a.attach-file-link:visited { font-size: 12px; color:#333399; text-decoration: none}
+a.attach-file-link:hover { font-size: 12px; color:#333399; text-decoration: underline}
+.p-text-9 { font-size: 12px; color: #333333; background-color: #efefec; padding-left: 17px; padding-top: 8px; padding-right: 17px; padding-bottom: 8px}
+a.p-text-9-link:link { font-size: 12px; color:#333333; background-color: #efefec; text-decoration: none}
+a.p-text-9-link:visited { font-size: 12px; color:#333333; background-color: #efefec; text-decoration: none}
+a.p-text-9-link:hover { font-size: 12px; color:#333333; background-color: #efefec; text-decoration: underline}
+.p-text-10 { font-size: 12px; color: #333333; padding-top: 8px; padding-bottom: 8px; padding-left: 15px}
+.width-550 { width: 550px}
+.text3 { font-size: 12px; color: #333333}
+.text-mail4 { font-size: 12px; color: #333333}
+.text-mail5 { font-size: 12px; color: #cc0000}
+
+
+/*********   組織図   *********/
+
+/*   テキスト    040612更新   */
+.text-tree { font-size: 12px; color:#333333; padding-top: 6px; padding-left: 4px}
+a.text-tree-link:link { font-size: 12px; color:#333333; text-decoration: underline}
+a.text-tree-link:visited { font-size: 12px; color:#333333; text-decoration: underline}
+a.text-tree-link:hover { font-size: 12px; color:#333333; text-decoration: underline}
+
+
+
+/*********   設定画面   *********/
+
+/*   説明テキスト    040612更新   */
+.p-text-e { font-size: 12px; color: #333333; background-color: #e0ddd7; padding-left: 17px; padding-top: 6px; padding-right: 17px; padding-bottom: 6px; line-height: 150%}
+
+/*   テキスト    040612更新   */
+.p-text-1-b { font-size: 12px; font-weight: bold; color: #333333; background-color: #d5d5d5; padding-left: 17px; padding-top: 6px; padding-right: 17px; padding-bottom: 6px; line-height: 150%}
+.p-text-1 { font-size: 12px; color: #333333; background-color: #d5d5d5; padding-left: 17px; padding-top: 6px; padding-right: 17px; padding-bottom: 6px}
+.p-text-3 { font-size: 12px; color: #333333; background-color: #efefec; padding-left: 17px; padding-top: 8px; padding-right: 17px; padding-bottom: 8px}
+.p-text-4 { font-size: 12px; color: #333333; padding-top: 3px; padding-bottom: 3px; padding-left: 15px}
+.p-text-4-c { font-size: 12px; color: #333333; padding-top: 3px; padding-bottom: 3px}
+.p-text-5-c { font-size: 10px; color: #333333; padding-top: 3px; padding-bottom: 3px}
+.p-text-alert { font-size: 12px; color: #333333; background-color: #bbcfe4; padding-left: 17px; padding-top: 8px; padding-right: 17px; padding-bottom: 8px}
+.pmsign { font-size: 12px; color: #333333}
+a.p-text-normal-link:link { font-size: 10px; color:#333333; text-decoration: none}
+a.p-text-normal-link:visited { font-size: 10px; color:#333333; text-decoration: none}
+a.p-text-normal-link:hover { font-size: 10px; color:#333333; text-decoration: underline}
+.width-30 { font-size: 12px; width: 30%; font-family: monospace}
+.width-60 { font-size: 12px; width: 60%; font-family: monospace}
+.width-90 { font-size: 12px; width: 90%; font-family: monospace}
+.width-100 { font-size: 12px; width: 100%; font-family: monospace}
+
+/*   背景   */
+td.popup-bg1 { background-image: url(../images/line_dot.gif)}
+
+
+
+/*********   カスタム   *********/
+
+/*   ヘッダ   */
+.date-bg-student { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #800080}
+.date-bg-professor { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #003366}
+.date-bg-stuff { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #333300}
+.date-bg-graduate { font-size: 14px; font-weight: bold; color: #ffffff; background-color: #800000}
+
+
+/*   カスタム名   */
+.custom { font-size: 14px; font-weight: bold; color: #333333}
+
+/*********   IT's Class    040612更新   *********/
+.text-916653b { font-size: 12px; font-weight: bold; color:#916653; padding-top: 4px; padding-bottom: 4px}
+.lecture-text { font-size: 12px; color:#333333; padding-top: 3px; padding-left: 15px; padding-bottom: 3px}
+.term { font-size: 12px; color:#333333; padding-top: 5px; padding-bottom: 5px; padding-right: 10px}
+.lecture-week { font-size: 14px; color:#666666; padding-top: 5px; padding-bottom: 5px; padding-left: 20px}
+.lecture-period { font-size: 12px; color:#333333; padding-top: 6px; padding-bottom: 6px}
+
+/*   背景   */
+td.custom-vline { background-image: url(../images/vline_lecture.gif)}
+td.custom-line { background-image: url(../images/line_lecture.gif)}
+
+/*   テキスト    040612更新   */
+.lecture-text { font-size: 12px; color: #333333; padding-top: 3px; padding-left: 15px; padding-bottom: 3px}
+.term { font-size: 12px; color: #333333; padding-top: 5px; padding-right: 10px; padding-bottom: 5px}
+.lecture-week { font-size: 14px; font-weight: bold; color: #666666; padding-top: 8px; padding-bottom: 8px; padding-left: 15px}
+.lecture-period { font-size: 12px; color: #333333; padding-top: 6px; padding-bottom: 6px}
+
+
+
+/*********   FACILITY+ クリッカブルエリア   *********/
+
+/*  ★★★★★★★　追加　★★★★★★★　*/
+
+/*table{ border:1px #00FFFF solid}*/
+
+/*********   左エリア   *********/
+td.area_l{
+	background-image:url("../images/menu_bg2.gif");
+	border-right:1px #666666 solid;
+	vertical-align:top;
+	width:140px}
+
+/*********   ロゴエリア   *********/
+table.logoarea{
+	border-bottom:1px #666666 solid;
+	width:140px;}
+	
+/*********   メニューエリア   *********/
+table.menuarea{
+	border-top:1px #EFEFEF solid;
+	width:140px}
+	
+table.top{margin:6px 5px 10px 5px}
+	
+table.categiry_name{margin:0px}
+	
+table.category{
+	margin:3px 6px 10px 5px;
+	border-top:1px #999999 solid;
+	border-left:1px #999999 solid;
+	border-right:1px #EFEFEF solid;
+	border-bottom:1px #EFEFEF solid;
+	width:127px}
+
+img.menu_top{
+	margin:0px;
+	border:1px #666666 solid;
+	width:125px;
+	height:22px}
+	
+img.menu{
+	margin:0px;
+	border:1px #666666 solid;
+	border-top:none;
+	width:125px;
+	height:22px}
+	
+/*********   ヘッダ   *********/
+table.header{
+	border-bottom:1px #666666 solid;
+	border-left:1px #EFEFEF solid;	
+	width:100%}
+
+tr.userinfo{
+	padding-top:1px;
+	background-image:url("../images/bg_userinfo.gif")}
+	
+tr.userinfo td table{
+	margin:3px 0px 3px 0px;
+	}
+
+tr.infoclip{
+	padding-bottom:1px;
+	background-image:url("../images/bg_infoclip.gif")}
+	
+tr.infoclip td table{
+	margin:0px 0px 3px 0px;
+	}
+	
+td.userdata{
+	border-top:1px #333333 solid;
+	border-left:1px #333333 solid;
+	border-right:1px #EFEFEF solid;
+	border-bottom:1px #EFEFEF solid;
+	width:100%;
+	font-size:14px;
+	vertical-align:middle;
+	text-align:left;
+	text-indent:0.5em}
+
+.usercolor-01 {color: #ffffff; background-color: #6c6c6c}
+.usercolor-02 {color: #ffffff; background-color: #cc4747}
+.usercolor-03 {color: #ffffff; background-color: #cc8947}
+.usercolor-04 {color: #ffffff; background-color: #949452}
+.usercolor-05 {color: #ffffff; background-color: #529494}
+.usercolor-06 {color: #ffffff; background-color: #525294}
+.usercolor-07 {color: #ffffff; background-color: #945294}
+.usercolor-08 {color: #ffffff; background-color: #cc6666}
+.usercolor-09 {color: #ffffff; background-color: #cc9966}
+.usercolor-10 {color: #ffffff; background-color: #999966}
+.usercolor-11 {color: #ffffff; background-color: #669999}
+.usercolor-12 {color: #ffffff; background-color: #666699}
+.usercolor-13 {color: #ffffff; background-color: #996699}
+.usercolor-14 {color: #ffffff; background-color: #a17373}
+.usercolor-15 {color: #ffffff; background-color: #a18a73}
+.usercolor-16 {color: #ffffff; background-color: #7e7e67}
+.usercolor-17 {color: #ffffff; background-color: #677e7e}
+.usercolor-18 {color: #ffffff; background-color: #67677e}
+.usercolor-19 {color: #ffffff; background-color: #7e677e}
+
+/*********   ログイン画面   *********/
+img.login_logo{
+	border-right:1px #666666 solid;
+	border-bottom:1px #666666 solid;
+	width:140px;
+	height:60px}
+
+td.head-bg3 {
+	background-image: url("../images/bg_userinfo.gif");
+	border-left:1px #EFEFEF solid;
+	border-bottom:1px #666666 solid}
+	
+td.head-bg4 {
+	border-left:1px #dddddd solid}

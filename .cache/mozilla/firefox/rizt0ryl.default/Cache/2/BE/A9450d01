@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html id="x-words-html">
+<head>
+<meta name="language" content="ja">
+<meta name="robots" content="noarchive">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="JavaScriptとは、Sun Microsystems社とNetscape Communications社が開発した、Webブラウザなどでの利用に適したスクリプト言語(簡易プログラミング言語)。Sun社のJava言語に似た記法を用いるこ...">
+<title>JavaScriptとは 【 JS 】 〔 ジャバスクリプト 〕 - 意味/解説/説明/定義 ： IT用語辞典</title>
+<link href="http://p.e-words.jp/style.css" type="text/css" rel="stylesheet">
+<script>
+var _gaq=_gaq||[];
+_gaq.push(['_setAccount','UA-3734099-1']);
+_gaq.push(['_trackPageview']);
+
+(function(){
+var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;
+ga.src='http://www.google-analytics.com/ga.js';
+var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s);
+})();
+</script>
+<script>
+var ua=""+window.navigator.userAgent,OIE=(ua.search(/MSIE [67]/g)!=-1),TAB=(ua.indexOf("iPad")!=-1||(ua.indexOf("Android")!=-1&&ua.indexOf("Mobile")==-1));
+var pi=0;function pt(s){pi++;return OIE?s:"<span id='pt-"+pi+"'></span><style>#pt-"+pi+":after{content:'"+s+"'}</style>"}function wpt(s){document.write(pt(s));}
+</script>
+
+<script src='http://partner.googleadservices.com/gampad/google_service.js'></script>
+<script>
+var ai="ca-pub-1175263777233757",e="e-Words_";
+GS_googleAddAdSenseService(ai);
+GS_googleEnableAllServices();
+</script>
+<script>
+GA_googleAddSlot(ai,e+"728x90_Developer");
+GA_googleAddSlot(ai,e+"LinkUnit");GA_googleAddSlot(ai,e+"300x250_Developer");
+GA_googleFetchAds();
+</script>
+
+</head>
+<body id="x-words-body">
+
+<div style="width:180px;height:90px;float:left">
+<a href="/?stall=true"></a>
+<form action="/" method="post"><input type="image" src="http://p.e-words.jp/e-title.png" alt="IT用語辞典 e-Words" class="link-button" style="width:150px;height:55px;margin-top:20px"></form>
+</div>
+
+<div id="bb" class="shadow">
+<script>GA_googleFillSlot("e-Words_728x90_Developer");</script>
+</div>
+
+<div id="clear"></div>
+
+<table width="908"><tr><td valign="top">
+
+
+<div id="pron">ジャバスクリプト</div>
+<div id="clear"></div>
+<h1><span class="ascii">JavaScript</span><span class="alias"> 【 <span class="ascii">JS</span> 】</span><span class="alias"> <nobr><span>ジャバスクリプト</span></nobr></span></h1>
+<div id="h1ubar"></div>
+<table width="788"><tr><td valign="top">
+<div id="linkunit">
+<script>GA_googleFillSlot("e-Words_LinkUnit");</script>
+</div>
+<p>Sun Microsystems社と<a href="Netscape20Communications.html" class="note n1">Netscape Communications</a>社が開発した、<a href="WebE38396E383A9E382A6E382B6.html" class="note n3">Webブラウザ</a>などでの利用に適した<a href="E382B9E382AFE383AAE38397E38388E8A880E8AA9E.html" class="note n4">スクリプト言語</a>(簡易<a href="E38397E383ADE382B0E383A9E3839FE383B3E382B0E8A880E8AA9E.html" class="note n5">プログラミング言語</a>)。Sun社の<a href="Java.html" class="note n6">Java言語</a>に似た記法を用いることが名称の由来だが、直接の互換性は無い。</p>
+<p>従来は印刷物のような<a href="E99D99E79A84.html" class="note n8">静的</a>な表現しかできなかったWebページに、動きや対話性を付加することを目的に開発され、主要な<a href="WebE38396E383A9E382A6E382B6.html" class="note n3">Webブラウザ</a>のほとんどに搭載されている。ブラウザ以外のソフトウェアにも簡易な制御プログラムの記述用言語として<a href="E3839DE383BCE38386E382A3E383B3E382B0.html" class="note n14">移植</a>されており、Microsoft社のWindowsやWebサーバソフト「<a href="IIS.html" class="note n18">IIS</a>」、Macromedia社の「<a href="Flash.html" class="note n19">Flash</a>」などに、JavaScriptあるいは類似の言語の処理系が内蔵されている。</p>
+<p>各社の実装に微妙な違いがあり、ブラウザによって使えない機能があったり同じプログラムでも挙動が異なったりする問題があったため、ヨーロッパの標準化団体ECMAがソフトウェアメーカーに呼びかけて、通称「<a href="ECMAScript.html" class="note n22">ECMAScript</a>」と呼ばれる標準を発行した。現在では、<a href="ECMAScript.html" class="note n22">ECMAScript</a>準拠の処理系をJavaScriptと呼び、独自の<a href="E382A8E382AFE382B9E38386E383B3E382B7E383A7E383B3.html" class="note n23">拡張</a>を施したJavaScriptには独自の名称を付ける(Microsoft社は「<a href="JScript.html" class="note n24">JScript</a>」、Macromedia社は「ActionScript」)習慣が定着しつつある。</p>
+<table width="100%" style="margin:20px 0"><tr><td valign="top">
+<script> 
+  google_ad_client =  'ca-pub-1175263777233757';
+  google_ad_channel =  '7922460982+2690701930+8869042881+7163552604+6703288313';
+  google_ad_width =  343;
+  google_ad_height =  250;
+  google_ad_type =  'text_html';
+  google_color_link =  '#0010E8';
+  google_color_text =  '#000000';
+  google_color_bg =  '#FFFFFF';
+  google_color_url =  '#40A040';
+  google_color_url =  '#40A040';
+  google_language =  'ja';
+</script>
+<script src="https://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+</td><td valign="top" align="right">
+<div class="shadow" id="rect">
+<div style="line-height:0;overflow:hidden">
+<script>GA_googleFillSlot("e-Words_300x250_Developer");</script>
+</div>
+</div>
+</td></tr></table>
+<div style="height:20px"></div>
+<div style="float:left">
+ <div style="font-size:12px">
+ <div id="pr"></div>
+ <form action="/" method="post"><input type="hidden" name="print" value="view"><input type="submit" value="印刷用ページ" class="link-button"></form>　/　
+ <form action="/" method="post"><input type="hidden" name="print" value="add"><input type="hidden" name="path" value="JavaScript.html"><input type="submit" value="この用語を追加" class="link-button"></form>　/　
+ <form action="/" method="post"><input type="hidden" name="print" value="reset"><input type="submit" value="白紙に戻す" class="link-button"></form>
+ </div>
+</div>
+<div style="float:right;color:#ccc">2014/04/06生成　<script>wpt("630");</script></div>
+<div id="clear"></div>
+<div align="center">
+<div id="hr"></div>
+<form action="../e.x" method="post">
+<input type="hidden" name="rq" value="sc">
+<table><tr>
+<td>
+<script>wpt("ご意見や追加希望はこちらへ ：");</script>&nbsp;<br>
+<table><tr><td><b><script>wpt("検索はページ右上です");</script></b>&nbsp;</td><td style="font-size:22px;line-height:22px"><b>&#8599;</b></td><tr></table>
+</td>
+<td style="line-height:0"><textarea name="cm" style="width:400px;height:45px"></textarea></td>
+<td>&nbsp;<input type="submit" value="投稿" id="sa" style="width:40px"></td>
+</tr></table>
+</form>
+<div id="hr"></div>
+</div>
+</td>
+<td valign="top" width="120" id="side">
+<div align="right" style="margin:0 -2px 2px 0">
+<a href="https://twitter.com/share" rel="nofollow" class="twitter-share-button" data-text=" " data-lang="ja" data-count="none"></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+<div id="lu" align="right" style="font-size:0.9em"><script>wpt("2005.6.21更新");</script></div>
+<ul style="margin-bottom:10px">
+<li class="h">分野
+<li class="f"><form action="../p/t-JavaScript.html" method="post"><input type="submit" value="JavaScript" class="link-button" style="width:90px;height:22px;padding:0;text-align:left"></form>
+<li class="f"><form action="../p/t-Programming.html" method="post"><input type="submit" value="プログラミング" class="link-button" style="width:90px;height:22px;padding:0;text-align:left"></form>
+<li class="f"><form action="../p/t-Web.html" method="post"><input type="submit" value="Web" class="link-button" style="width:90px;height:22px;padding:0;text-align:left"></form>
+<li class="f"><form action="../p/t-WebDevelop.html" method="post"><input type="submit" value="Web制作" class="link-button" style="width:90px;height:22px;padding:0;text-align:left"></form>
+<li class="f"><form action="../p/t-WebBrowser.html" method="post"><input type="submit" value="Webブラウザ" class="link-button" style="width:90px;height:22px;padding:0;text-align:left"></form>
+</ul>
+<ul style="margin-bottom:0">
+<li class="h">関連用語
+<li><a href="DOM.html" class="note n26">DOM</a>
+<li><a href="Ajax.html" class="note n27">Ajax</a>
+<li><a href="ECMAScript.html" class="note n22">ECMAScript</a>
+<li><a href="JScript.html" class="note n24">JScript</a>
+<li><a href="E382A2E382AFE38386E382A3E38396E382B9E382AFE383AAE38397E38388.html" class="note n28">アクティブスクリプト</a>
+<li><a href="E382A4E38399E383B3E38388E3838FE383B3E38389E383A9.html" class="note n29">イベントハンドラ</a>
+<li><a href="JSON.html" class="note n30">JSON</a>
+<li><a href="JSONP.html" class="note n31">JSONP</a>
+<li><a href="DHTML.html" class="note n32">Dynamic HTML</a>
+<li><a href="DHTML.html" class="note n32">ダイナミックHTML</a>
+<li><a href="WebE38396E383A9E382A6E382B6.html" class="note n3">Webブラウザ</a>
+<li><a href="WebE38396E383A9E382A6E382B6.html" class="note n3">ウェブブラウザ</a>
+<li><a href="E38397E383A9E382B0E382A4E383B3.html" class="note n33">プラグイン</a>
+<li><a href="Cookie.html" class="note n34">Cookie</a>
+<li><a href="Cookie.html" class="note n34">クッキー</a>
+<li><a href="JavaE382A2E38397E383ACE38383E38388.html" class="note n35">Javaアプレット</a>
+<li><a href="JavaE382A2E38397E383ACE38383E38388.html" class="note n35">アプレット</a>
+<li><a href="E382A2E38389E382AAE383B3.html" class="note n36">アドオン</a>
+<li><a href="MIMEE382BFE382A4E38397.html" class="note n37">MIMEタイプ</a>
+<li><a href="MIMEE382BFE382A4E38397.html" class="note n37">Content-Type</a>
+<li><a href="VBScript.html" class="note n38">VBScript</a>
+<li><a href="E383AAE38383E38381E382AFE383A9E382A4E382A2E383B3E38388.html" class="note n39">リッチクライアント</a>
+</ul>
+</td></tr></table>
+<script>
+if(ua.indexOf("MSIE")!=-1&&ua.search(/MSIE [89]/g)!=-1){
+document.getElementById("google_ads_div_e-Words_LinkUnit_ad_wrapper").style.marginTop="-25px";
+document.getElementById("google_ads_div_e-Words_728x90_Developer_ad_wrapper").style.marginTop="-5px";
+document.getElementById("google_ads_div_e-Words_300x250_Developer_ad_wrapper").style.marginTop="-5px";
+}
+</script>
+<style>a.n1:hover:after{content:'世界初のグラフィカルなWebブラウザ「Mosaic」を開発したMarc Andreesen氏を中心とするイリノイ大学NCSAのチームが、Silicon Grap..'}
+a.n2:hover:after{content:'新しいものを生み出すこと。また、対象に働きかけて発展・向上させたり、人間の役に立つ形に変えたりすること。ITの分野では基本的に前者の意味で用いられるが、IT以外..'}
+a.n3:hover:after{content:'Webページを閲覧するためのアプリケーションソフト。インターネットからHTMLファイルや画像ファイル、音楽ファイルなどをダウンロードし、レイアウトを解析して表示..'}
+a.n4:hover:after{content:'プログラミング言語の一種で、OSやアプリケーションソフトの動作や機能などをプログラムの形で記述できるもの。また、転じて、実行可能形式への変換作業などを省略・自動..'}
+a.n5:hover:after{content:'ソフトウェアの設計図に当たるソースコードを記述するための言語。プログラミング言語は人間に理解できるように英語などを元に作られているため、そのままではコンピュータ..'}
+a.n6:hover:after{content:'Sun Microsystems社が開発したプログラミング言語。C言語に似た表記法を採用しているが、既存の言語の欠点を踏まえて一から設計された言語であり、最初か..'}
+a.n7:hover:after{content:'ある要素を、同種の他の要素で置き換え可能なこと。また、その程度。ITの世界では、あるハードウェアやソフトウェア、システムについて、それと置き換えてもこれまで通り..'}
+a.n8:hover:after{content:'あらかじめ与えられた状態などが変化しないことや、状況を通じて一貫して内容が維持されること。対義語は「動的」「ダイナミック」(dynamic)。プログラミングの分..'}
+a.n9:hover:after{content:'WWWシステムを使ってインターネット上で公開されている文書。Webブラウザに一度に表示されるデータのまとまりで、テキストデータやHTMLによるレイアウト情報、文..'}
+a.n10:hover:after{content:'データや情報をまとまった形で閲覧するためのソフトウェア。単にブラウザと言った場合には、WWWの情報を閲覧するためのWebブラウザを意味する場合が多い。→ Web..'}
+a.n11:hover:after{content:'狭義にはコンピュータプログラムとほぼ同じ意味。コンピュータを動作させる手順・命令をコンピュータが理解できる形式で記述したもの。「SW」「S/W」などの略号で示さ..'}
+a.n12:hover:after{content:'制御(する)、操作(する)、支配(する)、管理(する)、規制(する)、抑制(する)、統制(する)、などの意味を持つ英単語。制御とは、対象を目的の状態にするために..'}
+a.n13:hover:after{content:'コンピュータが行うべき処理を順序立てて記述したもの。すべてのコンピュータはプログラムに従って動作している。現代のコンピュータではプログラムはデータとして表現され..'}
+a.n14:hover:after{content:'あるシステム向けに開発されたソフトウェアを別のシステムで動作するよう修整・再構築すること。通常、ソフトウェアは特定のハードウェアやOSで動作するよう設計されてお..'}
+a.n15:hover:after{content:'世界最大のソフトウェアメーカー。1975年にWilliam Henry Gates氏(いわゆるBill Gates氏)とPaul Allen氏によって設立された..'}
+a.n16:hover:after{content:'Microsoft社のOSのシリーズ名。バージョン1.0は1986年に発売され、1992年に発売されたWindows 3.1がPC/AT互換機用の標準OSとして..'}
+a.n17:hover:after{content:'インターネットやイントラネットで標準的に用いられるドキュメントシステム。欧州核物理学研究所(CERN)のTim Berners-Lee氏が所内の論文閲覧システム..'}
+a.n18:hover:after{content:'Microsoft社のWebサーバソフト。同社のWindows ServerシリーズなどのOS製品に同梱されているもので、企業の社内情報システムや公開Webサー..'}
+a.n19:hover:after{content:'Adobe Systems社による、音声や動画、ベクターグラフィックスのアニメーションを組み合わせてWebコンテンツを作成するソフト。また、それによって作成され..'}
+a.n20:hover:after{content:'Sun Microsystems社とNetscape Communications社が開発した、Webブラウザなどでの利用に適したスクリプト言語(簡易プログラミ..'}
+a.n21:hover:after{content:'ハードウエアやソフトウェアに新しい機能や仕様、部品などを組み込むこと。また、実際にその機能を組み込む際の手法も意味する。日本語でいうと「実装」。例えば、ソフトウ..'}
+a.n22:hover:after{content:'JavaScriptの標準規格。Netscape Communications社とMicrosoft社でJavaScriptの仕様が微妙に異なっていたため、両社..'}
+a.n23:hover:after{content:'拡張、拡大、延長、伸長、伸展、伸ばすこと、延期、内線電話、増築部分などの意味を持つ英単語。ソフトウェアの分野では、完成したソフトウェアに後から(あるいは外部から..'}
+a.n24:hover:after{content:'Microsoft社が開発したスクリプト言語(簡易プログラミング言語)の一つ。Netscape Communications社とSun Microsystems..'}
+a.n25:hover:after{content:'Macromedia社のWeb向けアニメーションツール「Macromedia Flash」に内蔵されている、コンテンツの再生制御などを行うためのスクリプト言語。..'}
+a.n26:hover:after{content:'1. Webページの内容(文章、画像、音声など)およびそれらの配置、スタイルをオブジェクトとして扱い、スクリプト言語を使って制御するための取り決め。DOMに従って..\A\A 2. 画像アップロード掲示板やファイル交換ネットワークなどで、自らはファイルを提供せず、専ら他の参加者のアップロードしたファイルをダウンロードするだけの参加者のこ..'}
+a.n27:hover:after{content:'Webブラウザに実装されているJavaScriptのHTTP通信機能を使って、Webページのリロードを伴わずにサーバとXML形式のデータのやり取りを行って処理を..'}
+a.n28:hover:after{content:'Microsoft社のWebブラウザ「Internet Explorer」に内蔵されているプログラム実行機能。JavaScript(JScript)やVBScr..'}
+a.n29:hover:after{content:'コンピュータプログラムで、予め定められた特定の事象(イベント)が発生した時に実行される処理のこと。対象となるイベントの種類や条件と、処理内容をセットで記述する。..'}
+a.n30:hover:after{content:'JavaScriptにおけるオブジェクトの表記法を応用したデータ形式。で表記されたデータは、JavaScript上ではコードとして実行するだけで読み込みが完了す..'}
+a.n31:hover:after{content:'JavaScriptにおけるオブジェクトの表記法を応用したデータ形式であるJSONに、関数呼び出しなどのコードを付加したもの。Webブラウザが表示しているWeb..'}
+a.n32:hover:after{content:'Webページに容易に対話性を持たせることができるHTMLの拡張仕様。HTML文書の中にJavaScriptやVBScriptでスクリプトを埋め込むことにより、プ..'}
+a.n33:hover:after{content:'差し込む、差込口などの意味を持つ英単語。ITの分野では、ソフトウェアに機能を追加する小さなプログラムのことを指す場合が多い。多くのソフトウェアには外部のプログラ..'}
+a.n34:hover:after{content:'Webサイトの提供者が、Webブラウザを通じて訪問者のコンピュータに一時的にデータを書き込んで保存させる仕組み。にはWebサイト(Webサーバ)側が指定したデー..'}
+a.n35:hover:after{content:'ネットワークを通じてWebブラウザにダウンロードされ、ブラウザのウィンドウに埋め込まれて実行されるJavaプログラムのこと。Javaアプレットを悪用してユーザの..'}
+a.n36:hover:after{content:'ソフトウェアに追加される拡張機能のこと。を追加するには、ソフトウェア本体がの導入を前提として設計されている必要がある。Webブラウザに搭載される「プラグイン」(..'}
+a.n37:hover:after{content:'電子メールに文字以外のデータを含める方式を定めたMIMEで、データ形式を識別するためのコードの体系。転じて、Webのデータ送受信を行うHTTPなどでもデータの種..'}
+a.n38:hover:after{content:'Microsoft社によって開発されたスクリプト言語(簡易プログラミング言語)。同社のWebブラウザであるInternet Explorer上で動作する。同社の..'}
+a.n39:hover:after{content:'企業情報システムのクライアント環境のうち、アプリケーションの実行環境のみを搭載したもの。伝統的なクライアントサーバシステムのクライアントに当たる「ファットクライ..'}
+</style>
+
+
+</td><td width="120" valign="top">
+
+<div class="nav">
+<div class="nav-header"><script>wpt("IT用語検索");</script></div>
+<form action="../" id="cse-search-box">
+<input type="hidden" name="cx" value="partner-pub-1175263777233757:xelkt7-c6j8">
+<input type="hidden" name="cof" value="FORID:10">
+<input type="hidden" name="ie" value="Shift_JIS">
+<input type="text" name="q" id="q"><br>
+<input type="submit" name="sa" value="一致したら表示" id="sa1"><input type="submit" name="sa" value="検索" id="sa2">
+</form>
+<script src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</div>
+
+<div class="nav">
+<div class="nav-header"><script>wpt("さくいん");</script></div>
+<table id="nav-index" width="120"><tr>
+<td colspan="4"><div><form action="../p/i-ns.html" method="post"><input type="submit" value="記号・数字" class="link-button" style="width:95px"></form></div></td>
+<script>
+var x=5;
+function w(f,c){document.write("<td><div>"+(c=="　"?c:"<form action=\"../p/i-"+f+".html\" method=\"post\"><input type=\"submit\" value=\""+c+"\" class=\"link-button\" style=\"width:23px\"></form>")+"</div></td>");}
+for(var i=97,c;i<123;i++){c=String.fromCharCode(i),w(c,c.toUpperCase());if(x++%5==0)document.write("</tr><tr>");}
+var k={a:"アイウエオ",k:"カキクケコ",s:"サシスセソ",t:"タチツテト",n:"ナニヌネノ",h:"ハヒフヘホ",m:"マミムメモ",y:"ヤ　ユ　ヨ",r:"ラリルレロ",w:"ワ　　　　"};
+for(var c in k)for(var i=0;i<5;i++){
+w("k"+c+"aiueo".charAt(i),k[c].charAt(i));
+if(x++%5==0)document.write("</tr><tr>");
+}
+</script>
+</tr></table>
+</div>
+
+<div class="nav">
+<div class="nav-header"><script>wpt("分野別辞典");</script></div>
+<table class="st" id="nav-tags"><script>
+var m=0,c=1;
+var t={"PC":"パソコン","Display":"ディスプレイ","Semicon":"半導体","Storage":"ストレージ","System":"情報システム","Development":"システム開発","Programming":"プログラミング","Software":"ソフトウェア","UI":"ユーザインターフェース","OS":"OS","Network":"ネットワーク","Internet":"インターネット","Web":"Web","Communication":"通信","Security":"セキュリティ"};
+for(var i in t)m++;m=Math.floor(m/2)+1;
+for(var i in t)
+document.write("<tr><td><div><form action=\"../p/t-"+i+".html\" method=\"post\"><input type=\"submit\" value=\""+t[i]+"\" class=\"link-button\" style=\"text-align:left;width:113px\"></form></div></td></tr>");
+</script></table>
+</div>
+
+</td></tr></table>
+
+<div align="center" style="padding-bottom:10px">
+<div id="hr"></div>
+&copy; <script>wpt("1997-"+(new Date()).getFullYear());</script> <a href="http://www.incept.co.jp/" rel="nofollow"><script>wpt("Incept Inc.");</script></a>
+
+</div>
+
+</body>
+</html>

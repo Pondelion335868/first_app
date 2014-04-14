@@ -1,0 +1,700 @@
+@charset "utf-8";/* CSS Document *//*------------------------------------------------------- file name:Side.css//auth level:1//last updated: 2010/08/11 ------------------------------------------------------*/
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+#sd_myR25 .title,#sd_report .title,#sd_nice .title,#sd_editorial .title,#sd_public .title,#sd_ranking .title,#sd_PRcare .title,#rec_report .title,#sd_tieupRep .title,#sd_girls .title,#sd_word5 .title,#sd_tieupSite .title h4,#sd_hayaoki .title{background:url(http://i.yimg.jp/images/r25/images/2010/side/title.png) no-repeat;overflow:hidden;/zoom:1;}
+
+#sd_report .title h4,#sd_nice .title h4,#sd_editorial .title h4,#sd_public .title h4,#sd_ranking .title h4,#sd_PRcare .title h4,#rec_report .title h4,#sd_girls .title h4,#sd_word5 .title h4{float:left;text-indent:-9999px;overflow:hidden;}
+
+#sd_nice .section p a.more,#sd_editorial .section p a.more{float:right;}
+
+#sd_myR25,#sd_myR25 .section,#sd_topFS,#addToTopFavorite,#sd_hayaoki,#sd_hayaoki .section{background:url(http://i.yimg.jp/images/r25/images/2010/side/bg_grd01.png) no-repeat;}
+
+#sd_myR25 .title div p.my,#sd_myR25 .section .bg p span,#sd_myR25 .R25kun p span,#sd_myR25 .section p.link,#sd_editorial .section li span.news,#sd_tieupRep .section li,#rec_report .section li,#sd_myR25 .mylink td,#sd_myR25 .hayaoki li{background:url(http://i.yimg.jp/images/r25/images/2010/arrow.gif) no-repeat;}
+
+#sd_report .section,#sd_editorial .section,#sd_ranking .section,#sd_PRcare .section,#sd_tieupRep .section,#sd_tieupSite .section,#rec_report .section,#sd_girls .section,#sd_word5 .section,#sd_report .section li{background:url(http://i.yimg.jp/images/r25/images/2009/gradation_bg01.gif) repeat-x 0 0;}
+
+#sd_ranking .section dt,#sd_ranking .section span,#sd_ranking .section .notice dd,#side .shrine p.ttl,#side .shrine li,#sd_word5 .section dt{background:url(http://i.yimg.jp/images/r25/images/2009/ranking.png) no-repeat;}
+
+
+/* 20131113 追加　*/
+#sd_ranking .section dt,#sd_ranking .section span,#sd_ranking .section .notice dd,#side .breakphoto p.ttl,#side .breakphoto li,#sd_word5 .section dt{background:url(http://i.yimg.jp/images/r25/images/2009/ranking.png) no-repeat;}
+/* 20131113 追加　*/
+
+
+#sd_girls .section dt span.name,#sd_replist .section li.on ul li.more a,#sd_myR25 .hayaoki p.list{background:transparent url(http://i.yimg.jp/images/r25/images/2009/arw_black.gif) no-repeat;}
+
+#sd_PRcare .section li,#sd_thisR25,#sd_tieupSite .title,.sd_adSQM li,.sd_adRP li{background:url(http://i.yimg.jp/images/r25/images/2009/line_gray02.gif) repeat-x;}
+
+/*************************************  MODULE*************************************//* My R25--------------------------------------------*/#sd_myR25{background-position:0 bottom;padding-bottom:10px;margin-top:5px;/zoom:1;}
+
+#sd_myR25 div{overflow:hidden;/zoom:1;}
+
+#sd_myR25 .title{background-position:0 -449px;height:30px;}
+
+#sd_myR25 .title h4{float:left;}
+
+#sd_myR25 .title h4,#sd_myR25 .title h4 a{display:block;text-indent:-9999px;overflow:hidden;width:80px;height:30px;}
+
+#sd_myR25 .title div{float:right;padding-top:8px;}
+
+#sd_myR25 .title div p{float:left;margin-right:8px;}
+
+#sd_myR25 .title div p.my{background-position:0 4px;padding-left:8px;}
+
+#sd_myR25 .title div p.guide{background:url(http://i.yimg.jp/images/r25/images/2009/icon_guide.gif) no-repeat;padding-left:15px;*height:16px;}
+
+#sd_myR25 .section{background-position:0 -5px;}
+
+/*プロフィール*/#sd_myR25 .prof{padding:15px 10px 5px 10px;}
+
+#sd_myR25 .prof p{text-align:left;font-size:100%;}
+
+body:first-of-type #sd_myR25 .prof p{font-size:93%;}
+
+/*for Safari4*/#sd_myR25 .prof p, x:-moz-broken, x:last-of-type{font-size:100% !important;}
+
+/*for FF3.5*/#sd_myR25 .prof p.pic{float:left;}
+
+#sd_myR25 .prof p.name,#sd_myR25 .lines{color:#333;margin-left:85px;}
+
+#sd_myR25 .lines a,#sd_myR25 .lines a:hover,#sd_myR25 .lines a:visited{color:#ff0000;font-weight:bold;}
+
+#sd_myR25 .prof p.name{padding:7px 0 0 6px;}
+
+#sd_myR25 .lines{margin-top:7px;}
+
+#sd_myR25 .lines .bg02{background:url(http://i.yimg.jp/images/r25/images/2010/waku_bg02.png) no-repeat 0 -287px;padding-left:6px;}
+
+#sd_myR25 .lines .bg07{padding:5px;}
+
+#sd_myR25 .prof p.moreprf,#sd_myR25 .mylink a.set,#sd_myR25 .hayaoki h4,#sd_myR25 .hayaoki h4 span,#sd_myR25 .hayaoki dl.rank,#sd_myR25 .hayaoki dl.rank dd p,#sd_myR25 .hayaoki dt,#sd_myR25 .cliplist h4,#sd_myR25 .cliplist h4 span{background:url(http://i.yimg.jp/images/r25/images/2010/side/my_allsplt.png);}
+
+#sd_myR25 .prof p.moreprf{background-repeat:no-repeat;background-position:-284px 0;float:right;font-size:93%;min-height:16px;margin-top:6px;padding:0 0 0 21px;}
+
+*html #sd_myR25 .prof p.moreprf{height:16px;}
+
+/*for IE6*/#sd_myR25 .mylink{background-color:#eff4f8;clear:both;margin:6px 10px 0 10px;padding:10px;}
+
+#sd_myR25 .mylink a.set{background-repeat:no-repeat;background-position:0 -39px;display:block;margin:0 auto;text-indent:-9999px;overflow:hidden;width:150px;height:22px;}
+
+#sd_myR25 .mylink a.set:hover{background-position:-150px -39px;}
+
+#sd_myR25 .mylink hr{background:url(http://i.yimg.jp/images/r25/images/2010/My/myR25_line.gif) repeat-x;*background:none;*border-top:1px solid #e0e9f1;*border-bottom:1px solid #fff;height:2px;margin:6px 0 12px 0;*margin:0 0 6px 0;}
+
+#sd_myR25 .mylink table{margin:0 0 0 5px;}
+
+#sd_myR25 .mylink td{background-position:0 6px;color:#666;padding:0 10px 0 7px;vertical-align:top;}
+
+#sd_myR25 .mylink td.gry{background-position:0 -146px !important;}
+
+#sd_myR25 .mylink td.slct{color:#a10900;font-weight:bold;}
+
+body:first-of-type #sd_myR25 .mylink td{font-size:93%;}
+
+/*for Safari4*/#sd_myR25 .mylink td, x:-moz-broken, x:last-of-type{font-size:100% !important;}
+
+/*for FF3.5*//*ハヤオキ*/#sd_myR25 .hayaoki,#sd_myR25 .cliplist{clear:both;margin:10px 10px 0 10px;}
+
+#sd_myR25 .hayaoki h4,#sd_myR25 .cliplist h4{background-repeat:repeat-x;background-position:0 -61px;padding-top:1px;height:24px;}
+
+#sd_myR25 .hayaoki h4 span,#sd_myR25 .cliplist h4 span{background-repeat:no-repeat;display:block;text-indent:-9999px;overflow:hidden;height:24px;}
+
+#sd_myR25 .hayaoki h4 span.st01{background-position:0 -86px;width:84px;}
+
+#sd_myR25 .hayaoki h4 span.st02{background-position:-150px -86px;width:142px;}
+
+#sd_myR25 .hayaoki dl{clear:both;overflow:hidden;/zoom:1;}
+
+#sd_myR25 .hayaoki dt,#sd_myR25 .hayaoki dd{float:left;}
+
+#sd_myR25 .hayaoki dt{background-repeat:no-repeat;text-indent:-9999px;overflow:hidden;}
+
+#sd_myR25 .hayaoki dd{margin-left:10px;}
+
+#sd_myR25 .hayaoki dl.senseki{padding:10px 0 5px 0;}
+
+#sd_myR25 .hayaoki dl.senseki dt{margin-top:7px;*margin-top:5px;}
+
+#sd_myR25 .hayaoki dl.senseki dt.ok{background-position:0 -110px;width:28px;height:13px;}
+
+#sd_myR25 .hayaoki dl.senseki dt.ng{background-position:-35px -110px;width:24px;height:13px;margin-left:15px;}
+
+#sd_myR25 .hayaoki dl.senseki dd span{color:#ff6666;font-size:20px;font-weight:bold;}
+
+#sd_myR25 .hayaoki dl.rank{background-repeat:no-repeat;background-position:0 0;margin:5px auto 0;padding:7px 0 8px 15px;width:265px;height:18px;}
+
+#sd_myR25 .hayaoki dl.rank dt{background:none;margin-top:5px;width:30px;height:11px;}
+
+#sd_myR25 .hayaoki dl.rank dd{margin-right:3px;margin-top:3px;}
+
+#sd_myR25 .hayaoki dl.rank dd p{display:inline-block;text-indent:0;overflow:hidden;height:0;padding-top:14px;}
+
+#sd_myR25 .hayaoki dl.rank dd p.level0{background-position:0 -147px;width:60px;}
+
+/*星なし*/#sd_myR25 .hayaoki dl.rank dd p.level1{background-position:0 -161px;width:45px;}
+
+/*仮入部*/#sd_myR25 .hayaoki dl.rank dd p.level2{background-position:0 -175px;width:61px;}
+
+/*新入部員*/#sd_myR25 .hayaoki dl.rank dd p.level3{background-position:0 -189px;width:61px;}
+
+/*枕ひろい*/#sd_myR25 .hayaoki dl.rank dd p.level4{background-position:0 -203px;width:54px;}
+
+/*2軍部員*/#sd_myR25 .hayaoki dl.rank dd p.level5{background-position:0 -217px;width:103px;}
+
+/*布団ウォーマー*/#sd_myR25 .hayaoki dl.rank dd p.level6{background-position:-85px -147px;width:69px;}
+
+/*レギュラー*/#sd_myR25 .hayaoki dl.rank dd p.level7{background-position:-85px -161px;width:88px;}
+
+/*ベテラン部員*/#sd_myR25 .hayaoki dl.rank dd p.level8{background-position:-70px -175px;width:103px;}
+
+/*目覚ましエース*/#sd_myR25 .hayaoki dl.rank dd p.level9{background-position:-85px -189px;width:91px;}
+
+/*ハヤオキ部長*/#sd_myR25 .hayaoki dl.rank dd p.level10{background-position:-85px -203px;width:30px;}
+
+/*顧問*/#sd_myR25 .hayaoki dl.rate{border-top:1px solid #ddd;padding:6px 0 10px 0;}
+
+#sd_myR25 .hayaoki dl.rate dt{margin-top:5px;*margin-top:3px;}
+
+#sd_myR25 .hayaoki dl.rate dt.st01{background-position:-60px -110px;width:33px;height:11px;}
+
+#sd_myR25 .hayaoki dl.rate dt.st02{background-position:-96px -110px;width:85px;height:11px;margin-left:15px;}
+
+#sd_myR25 .hayaoki dl.rate dt.st03{background-position:-184px -110px;width:64px;height:11px;}
+
+#sd_myR25 .hayaoki dl.rate dd{color:#333;font-size:86%;}
+
+#sd_myR25 .hayaoki dl.rate dd span{color:#ff6666;font-size:16px;font-weight:bold;}
+
+#sd_myR25 .hayaoki dl.com{border-top:1px solid #ddd;padding:10px 0;}
+
+#sd_myR25 .hayaoki dl.com dt{background-position:-250px -110px;width:45px;height:11px;}
+
+#sd_myR25 .hayaoki dl.com dd{float:none;clear:both;margin:0;padding-top:4px;*padding-top:0;}
+
+#sd_myR25 .hayaoki li{background-position:0 0.3em;margin-top:8px;padding-left:10px;}
+
+#sd_myR25 .hayaoki li.not{background:none;border:1px dotted #f198a6;color:#a10900;font-size:86%;text-align:center;padding:9px;}
+
+#sd_myR25 .hayaoki p.list{background-position:0 0;clear:both;float:right;font-size:93%;margin-top:10px;padding-left:18px;}
+
+/*記事クリップ*/#sd_myR25 .cliplist h4 span{background-position:0 -123px;width:130px;}
+
+#sd_myR25 .cliplist li{background:url(http://i.yimg.jp/images/r25/images/2009/icon_clip.gif) no-repeat 0 0;padding-left:18px;margin-top:5px;}
+
+#sd_myR25 .cliplist li.del{background:none !important;border:1px dotted #F198A6;color:#A10900;font-size:78%;*line-height:100%;/*for IE6,7*/text-align:center;padding:2px 0;}
+
+head~/* */body #sd_myR25 .cliplist li.del{font-size:70%;}
+
+/*for IE8*/html:not(:target) #sd_myR25 .cliplist li.del{font-size:78%;}
+
+/*for Modern*/#sd_myR25 .cliplist p.com{padding:10px 20px 0;text-align:left;}
+
+#sd_myR25 .cliplist p.link{background-position:0 6px;float:right;font-size:100%;padding-left:8px;margin-top:5px;}
+
+/*login*/#sd_myR25 .bg{padding:10px 20px 0;}
+
+#sd_myR25 .bg p{font-size:93%;text-align:center;}
+
+#sd_myR25 .bg p span,#sd_myR25 .R25kun p span{background-position:0 0.3em !important;padding-left:8px;}
+
+/*BCookieの文言*/#sd_myR25 .R25kun{border-top:1px dotted #f198a6;border-bottom:1px dotted #f198a6;margin:0 10px;padding:5px;text-align:center;}
+
+/* favorite--------------------------------------------*/#sd_topFS{background-position:0 100%;padding-bottom:10px;margin-top:10px;}
+
+#addToTopFavorite{background-position:0 0;border:none;padding:10px 10px 0 10px;}
+
+/* 世の中の不思議--------------------------------------------*/#sd_report{margin-top:10px;}
+
+#sd_report .title{background-position:0 0;height:37px;}
+
+#sd_report .title h4{width:105px;height:35px;}
+
+#sd_report .section{margin-top:1px;padding:7px 15px 5px 15px;}
+
+#sd_report .section li{background-position:0 6px;padding-left:8px;margin-top:5px;}
+
+/* 素朴な疑問--------------------------------------------*/#sd_question{margin-top:10px;}
+
+#sd_question dl,#sd_question dl dt{background:url(http://i.yimg.jp/images/r25/images/2009/side/question_bg.png) no-repeat;}
+
+#sd_question dl{background-position:0 0;width:290px;height:110px;position:relative;}
+
+#sd_question dl dt{background-position:0 -115px;text-indent:-9999px;overflow:hidden;width:80px;height:34px;position:absolute;top:20px;left:158px;}
+
+#sd_question dl dd{width:116px;height:32px;position:absolute;top:72px;left:152px;}
+
+/* ナイス投稿--------------------------------------------*/#sd_nice{margin-top:10px;}
+
+#sd_nice .title{background-position:0 -80px;height:16px;}
+
+#sd_nice .title h4{width:134px;height:16px;}
+
+#sd_nice .section{padding:10px 0 0 7px;}
+
+#sd_nice .section li{background:url(http://i.yimg.jp/images/r25/images/2009/side/nice_icon.gif) no-repeat 0 0;margin-top:3px;padding-left:20px;min-height:20px;}
+
+*html #sd_nice .section li{height:20px;}
+
+#sd_nice .section p{overflow:hidden;/zoom:1;}
+
+/* 編集部からのお知らせ--------------------------------------------*/#sd_editorial{margin-top:10px;}
+
+#sd_editorial .title{background-position:0 -100px;height:33px;}
+
+#sd_editorial .title h4{width:145px;height:33px;}
+
+#sd_editorial .section{margin-top:1px;padding:7px 0 0 10px;}
+
+#sd_editorial .section li{margin-top:5px;}
+
+#sd_editorial .section li span.date{display:block;color:#666666;font-size:86%;}
+
+#sd_editorial .section li span.news{background-position:0 6px;display:block;padding-left:8px;}
+
+#sd_editorial .section p{overflow:hidden;/zoom:1;}
+
+/* R25的世論調査--------------------------------------------*/#sd_public{margin-top:10px;}
+
+#sd_public .title{background-position:0 -140px;height:28px;}
+
+#sd_public .title h4{width:153px;height:26px;}
+
+#sd_public .section{margin-top:1px;}
+
+#sd_public .section p.topic{background:#E60000 url(http://i.yimg.jp/images/r25/images/2009/side/public_ttl_bg.gif) repeat-x 0 bottom;color:#ffffff;font-size:123%;font-weight:bold;text-align:center;padding:10px 0;}
+
+#sd_public .section li{padding:7px 10px;}
+
+#sd_public .section li.gry{background:#f5f5f5;}
+
+#sd_public .section li input{margin-right:5px;*margin-right:0;vertical-align:middle;}
+
+#sd_public .section .btn{margin:8px auto 0 auto;width:232px;overflow:hidden;/zoom:1;}
+
+#sd_public .section .btn p,#sd_public .section .btn input.vote{float:left;}
+
+/* TOP25--------------------------------------------*/#sd_ranking{margin-top:10px;}
+
+#sd_ranking .title{background-position:0 -170px;height:37px;}
+
+#sd_ranking .title h4{width:225px;height:35px;}
+
+#sd_ranking .section{margin-top:1px;padding-top:12px;}
+
+#sd_ranking .section li{overflow:hidden;/zoom:1;}
+
+#sd_ranking .section dl{margin-top:6px;*margin-top:8px;overflow:hidden;/zoom:1;}
+
+#sd_ranking .section dt,#sd_ranking .section dd{float:left;}
+
+#sd_ranking .section dd{width:236px;}
+
+#sd_ranking .section dt{background-position:0 0;text-indent:-9999px;overflow:hidden;width:45px;margin-top:4px;*margin-top:1px;}
+
+#sd_ranking .section dd.bef{width:12px !important;height:11px;margin-right:7px;margin-top:4px;*margin-top:1px;}
+
+#sd_ranking .section dl.no1 dd{padding-top:5px;}
+
+#sd_ranking .section dl.no1 dd.bef{padding-top:7px;margin-top:0;}
+
+#sd_ranking .section dl.no2 dd.bef,#sd_ranking .section dl.no3 dd.bef{padding-top:3px;margin-top:0;}
+
+#sd_ranking .section dl.no1{margin:0 !important;}
+
+#sd_ranking .section dl.no1 dt{background-position:0 0;height:24px;margin-top:0 !important;}
+
+#sd_ranking .section dl.no2{margin-top:4px;}
+
+#sd_ranking .section dl.no2 dt{background-position:0 -29px;height:18px;margin-top:0 !important;}
+
+#sd_ranking .section dl.no3{*margin-top:6px;}
+
+#sd_ranking .section dl.no3 dt{background-position:0 -53px;height:18px;margin-top:0;}
+
+#sd_ranking .section dl.no4 dt{background-position:0 -80px;height:11px;}
+
+#sd_ranking .section dl.no5 dt{background-position:0 -104px;height:11px;}
+
+#sd_ranking .section dl.no6 dt{background-position:0 -128px;height:11px;}
+
+#sd_ranking .section dl.no7 dt{background-position:0 -152px;height:11px;}
+
+#sd_ranking .section dl.no8 dt{background-position:0 -176px;height:11px;}
+
+#sd_ranking .section dl.no9 dt{background-position:0 -200px;height:11px;}
+
+#sd_ranking .section dl.no10 dt{background-position:0 -224px;height:11px;}
+
+#sd_ranking .section dl.no11 dt{background-position:0 -247px;height:11px;}
+
+#sd_ranking .section dl.no12 dt{background-position:0 -273px;height:11px;}
+
+#sd_ranking .section dl.no13 dt{background-position:0 -297px;height:11px;}
+
+#sd_ranking .section dl.no14 dt{background-position:0 -321px;height:11px;}
+
+#sd_ranking .section dl.no15 dt{background-position:0 -345px;height:11px;}
+
+#sd_ranking .section dl.no16 dt{background-position:0 -369px;height:11px;}
+
+#sd_ranking .section dl.no17 dt{background-position:0 -393px;height:11px;}
+
+#sd_ranking .section dl.no18 dt{background-position:0 -417px;height:11px;}
+
+#sd_ranking .section dl.no19 dt{background-position:0 -441px;height:11px;}
+
+#sd_ranking .section dl.no20 dt{background-position:0 -466px;height:11px;}
+
+#sd_ranking .section dl.no21 dt{background-position:0 -490px;height:11px;}
+
+#sd_ranking .section dl.no22 dt{background-position:0 -514px;height:11px;}
+
+#sd_ranking .section dl.no23 dt{background-position:0 -538px;height:11px;}
+
+#sd_ranking .section dl.no24 dt{background-position:0 -562px;height:11px;}
+
+#sd_ranking .section dl.no25 dt{background-position:0 -586px;height:11px;}
+
+#sd_ranking .section span{background-position:0 0;display:block;text-indent:-9999px;overflow:hidden;width:12px;height:11px;}
+
+#sd_ranking .section span.r_new{background-position:-60px 0;}
+
+#sd_ranking .section span.r_up{background-position:-60px -71px;}
+
+#sd_ranking .section span.r_down{background-position:-60px -24px;}
+
+#sd_ranking .section span.r_stay{background-position:-60px -45px;}
+
+#sd_ranking .section .notice{background:#FFFAE5;border-top:1px dashed #FFCC00;border-bottom:1px dashed #FFCC00;clear:both;margin-top:6px;padding:10px 5px 0 9px;}
+
+#sd_ranking .section .notice dl{margin:0;}
+
+#sd_ranking .section .notice dt{background-position:-60px -155px;width:33px;height:16px;}
+
+#sd_ranking .section .notice dd{background-position:-60px -260px;float:none !important;margin:0 0 5px 37px;padding-left:18px;*width:228px;*min-height:15px;}
+
+
+
+/* ブレイクフォト！-------------------------------------------- 20131113 追加　*/
+
+
+#side .breakphoto{clear:both; margin-top:0px; margin-bottom:10px;}
+#side .breakphoto p.ttl{background-position: 0 bottom; text-indent:-9999px; width:300px; height:31px;}
+#side .breakphoto .inner{clear:both; margin-top:5px;}
+#side .breakphoto .inner a {float:left; margin-right: 5px; margin-bottom: 5px;}
+#side .breakphoto .inner a.last{margin-right:0px;}
+
+
+/* 今日のイチオシ！--------------------------------------------*/
+
+#side .shrine{clear:both;margin-top:6px;margin-bottom: 10px;}
+#side .shrine p.ttl{background-position: 0 -629px; text-indent: -9999px; overflow: hidden; width: 300px; height: 31px;}
+#side .shrine ul{clear:both;padding:0 10px;}
+#side .shrine li{background-position:-60px -400px;padding-left:19px;margin-top:4px;padding-top: 1px;}
+
+
+
+
+/* 気になる！--------------------------------------------*/#sd_PRcare{margin-top:10px;}
+
+#sd_PRcare .title{background-position:0 -210px;height:39px;}
+
+#sd_PRcare .title h4{width:123px;height:37px;}
+
+#sd_PRcare .section{margin-top:1px;padding:4px 10px 0 10px;}
+
+#sd_PRcare .section li{background-position:0 100%;padding-bottom:8px;margin-top:8px;}
+
+#sd_PRcare .section li p.txt{font-size:93%;display:inline-block;/display:inline;/zoom:1;vertical-align:middle;width:215px;}
+
+#sd_PRcare .section li p.txt span{font-size:116%;}
+
+#sd_PRcare .section li p.pic{margin-right:7px;display:inline-block;*display:inline;*zoom:1;vertical-align:middle;width:50px;}
+
+/* 今週のR25--------------------------------------------*/#sd_thisR25{background-position:0 100%;padding:10px;overflow:hidden;/zoom:1;}
+
+#sd_thisR25 p.ph{float:right;border:2px solid #000000;}
+
+#sd_thisR25 div{margin-right:100px;overflow:hidden;/zoom:1;}
+
+body:first-of-type #sd_thisR25 div{width:180px;}
+
+/*for Safari4*/#sd_thisR25 div h4{background:url(http://i.yimg.jp/images/r25/images/2009/side/thisweek_ttl.gif) no-repeat 0 0;text-indent:-9999px;overflow:hidden;width:64px;height:13px;}
+
+#sd_thisR25 div dl{font-family:Arial Black;margin:3px 0;overflow:hidden;/zoom:1;}
+
+#sd_thisR25 div dt{float:left;margin-right:5px;font-size:36px;line-height:1em;}
+
+#sd_thisR25 div dd{float:left;}
+
+#sd_thisR25 div dd p.date{font-size:12px;}
+
+#sd_thisR25 div dd p.num{color:#333333;font-size:15px;}
+
+#sd_thisR25 div p.btn a{background:url(http://i.yimg.jp/images/r25/images/2009/btn_common.png) no-repeat -400px 0;display:block;text-indent:-9999px;overflow:hidden;width:160px;height:25px;}
+
+#sd_thisR25 div p.btn a:hover{background-position:-400px -25px;}
+
+#sd_thisR25 div ul{margin-top:5px;overflow:hidden;/zoom:1;}
+
+#sd_thisR25 div li{float:left;}
+
+#sd_thisR25 div li a{background:url(http://i.yimg.jp/images/r25/images/2009/btn_common.png) no-repeat;display:block;text-indent:-9999px;overflow:hidden;height:10px;}
+
+#sd_thisR25 div li.st01 a{background-position:-400px -55px;width:44px;}
+
+#sd_thisR25 div li.st01 a:hover{background-position:-400px -70px;}
+
+#sd_thisR25 div li.st02 a{background-position:-448px -55px;width:73px;}
+
+#sd_thisR25 div li.st02 a:hover{background-position:-448px -70px;}
+
+#sd_thisR25 div li.st03 a{background-position:-525px -55px;width:48px;}
+
+#sd_thisR25 div li.st03 a:hover{background-position:-525px -70px;}
+
+#sd_thisR25 div li.st01,#sd_thisR25 div li.st02{margin-right:4px;}
+
+/* モバイル--------------------------------------------*/#sd_mobile p.code,#sd_mobile p.mail{background:url(http://i.yimg.jp/images/r25/images/2009/side/mobile_img.gif) no-repeat;}
+
+#sd_mobile{margin-top:15px;text-align:center;}
+
+#sd_mobile p.code{background-position:0 0;text-indent:-9999px;overflow:hidden;width:181px;height:135px;margin:0 auto;}
+
+#sd_mobile p.mail{background-position:0 -141px;line-height:1.4em;padding-left:31px;display:inline-block;*display:inline;*padding-top:3px;}
+
+/* タイアップ--------------------------------------------*/#sd_tieupRep{margin-top:10px;}
+
+#sd_tieupRep .title{background-position:0 -300px;height:42px;}
+
+#sd_tieupRep .title h4{color:#333333;font-size:108%;padding:20px 50px 7px 5px;}
+
+#sd_tieupRep .section{margin-top:1px;padding:7px 15px 5px 15px;}
+
+#sd_tieupRep .section li{background-position:0 6px;padding-left:8px;margin-top:5px;}
+
+#sd_tieupSite{margin-top:10px;}
+
+#sd_tieupSite .title{background-position:0 100%;border-top:2px solid #999999;padding:1px 0;}
+
+#sd_tieupSite .title h4{background-position:0 -479px;color:#333333;font-size:108%;font-weight:bold;padding:8px 0 8px 35px;/*min-height: 16px;height: auto !important;height: 16px;*/}
+
+/* *html #sd_tieupSite .title h4{height:16px;}
+
+ for IE6*/#sd_tieupSite .section{margin-top:1px;padding:7px 10px 5px 10px;}
+
+#sd_tieupSite .section dl{margin-top:5px;font-size:93%;}
+
+#sd_tieupSite .section dt{background:url(http://i.yimg.jp/images/r25/images/2009/Index/keyword_linklist.gif) no-repeat scroll 0 -53px;padding-left:17px;}
+
+#sd_tieupSite .section dd{padding-left:17px;}
+
+#sd_tieupBan{margin-top:15px;text-align:center;}
+
+/* AD_IM--------------------------------------------*/#side .ad_IM{margin:10px auto 0px;padding:0;}
+
+/* AD_PRimg--------------------------------------------*/.sd_adPRimg{margin-top:10px;}
+
+.sd_adPRimg dt{color:#999999;font-size:93%;width:300px;height:18px;text-align:center;padding-top:2px;}
+
+.sd_adPRimg dd img{display:block;}
+
+/* AD_SQM--------------------------------------------*/.sd_adSQM{margin:10px auto 0px;border:1px solid #cdcdcd;}
+
+.sd_adSQM h4{background:#eee;font-weight:bold;text-align:center;padding:3px;}
+
+.sd_adSQM ul{padding:0 5px;}
+
+.sd_adSQM li{background-position:0 0;padding:6px 0 5px;}
+
+.sd_adSQM li.st01{background:none;}
+
+.sd_adSQM li td div{width:234px;word-wrap:break-word;word-break:break-all;overflow:hidden;}
+
+.sd_adSQM li td a{font-family:"ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3","ヒラギノ角ゴ ProN W3" !important;}
+
+/* AD_RP--------------------------------------------*/
+ .sd_adRP{margin:10px auto 0px;border:1px solid #cdcdcd;text-align:center;}
+ .sd_adRP h4{background:#eee;font-weight:bold;text-align:center;padding:3px;}
+ .sd_adRP ul{padding:0 5px;}
+ .sd_adRP li{background-position:0 0;padding:6px 0 5px;}
+ .sd_adRP li.st01{background:none;}
+ .sd_adRP li td div{width:234px;word-wrap:break-word;word-break:break-all;overflow:hidden;}
+ .sd_adRP li td a{font-family:"ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3","ヒラギノ角ゴ ProN W3" !important;}
+
+
+/* 編集部オススメの不思議--------------------------------------------*/#rec_report{margin-top:10px;}
+
+#rec_report .title{background-position:0 -260px;height:36px;}
+
+#rec_report .title h4{width:166px;height:34px;}
+
+#rec_report .section{margin-top:1px;padding:7px 15px 5px 15px;}
+
+#rec_report .section li{background-position:0 4px;padding-left:8px;margin-top:5px;}
+
+/* 今週の彼女--------------------------------------------*/#sd_girls{margin-top:10px;}
+
+#sd_girls .title{background-position:0 -342px;height:35px;}
+
+#sd_girls .title h4{width:81px;height:33px;}
+
+#sd_girls .section{margin-top:1px;}
+
+#sd_girls .section dl{padding-top:15px;overflow:hidden; /zoom:1;}
+
+#sd_girls .section dt{float:right;width:167px;margin:10px 0 3px 8px;font-size:116%;font-weight:bold;overflow:hidden;/zoom:1;}
+
+#sd_girls .section dt span.name{float:left;width:110px;padding-left:18px;background-position:0 1px;}
+
+#sd_girls .section dt span.btnset{float:right;overflow:hidden;/zoom:1;}
+
+#sd_girls .section dt span.btnset a{float:left;}
+
+#sd_girls .section dt span.btnset a.clip{margin-right:3px;}
+
+#sd_girls .section dd p.pic{float:left;width:125px;height:129px;}
+
+#sd_girls .section dd p.txt{margin-left:133px;}
+
+#sd_girls .section dd p.date{margin-top:1.5em;font-size:93%;text-align:right;}
+
+/* 気になるワードTOP5--------------------------------------------*/#sd_word5{margin-top:10px;}
+
+#sd_word5 .title{background-position:0 -378px;height:41px;}
+
+#sd_word5 .title h4{width:170px;height:39px;}
+
+#sd_word5 .section{margin-top:1px;padding-top:12px;}
+
+#sd_word5 .section dl{margin-top:6px;*margin-top:8px;overflow:hidden;/zoom:1;}
+
+#sd_word5 .section dt{float:left;background-position:0 0;text-indent:-9999px;overflow:hidden;width:45px;margin-top:4px;*margin-top:1px;}
+
+#sd_word5 .section dd{padding-left:45px;}
+
+#sd_word5 .section dl.no1 dd{padding-top:5px;}
+
+#sd_word5 .section dl.no1{margin:0 !important;}
+
+#sd_word5 .section dl.no1 dt{background-position:0 0;height:24px;margin-top:0 !important;}
+
+#sd_word5 .section dl.no2{margin-top:4px;}
+
+#sd_word5 .section dl.no2 dt{background-position:0 -29px;height:18px;margin-top:0 !important;}
+
+#sd_word5 .section dl.no3{*margin-top:6px;}
+
+#sd_word5 .section dl.no3 dt{background-position:0 -53px;height:18px;margin-top:0;}
+
+#sd_word5 .section dl.no4 dt{background-position:0 -80px;height:11px;}
+
+#sd_word5 .section dl.no5 dt{background-position:0 -104px;height:11px;}
+
+/* 各レポートのリスト--------------------------------------------*/#sd_replist .section li a,#sd_replist .section li.on span,#sd_replist .section li.on a,#sd_replist .section li a:hover,body#lifemoney #sd_replist .section li.on span,body#lifemoney #sd_replist .section li.on a,body#lifemoney #sd_replist .section li a:hover,body#business #sd_replist .section li.on span,body#business #sd_replist .section li.on a,body#business #sd_replist .section li a:hover,body#society #sd_replist .section li.on span,body#society #sd_replist .section li.on a,body#society #sd_replist .section li a:hover,body#science #sd_replist .section li.on span,body#science #sd_replist .section li.on a,body#science #sd_replist .section li a:hover,body#trivia #sd_replist .section li.on span,body#trivia #sd_replist .section li.on a,body#trivia #sd_replist .section li a:hover,body#culture #sd_replist .section li.on span,body#culture #sd_replist .section li.on a,body#culture #sd_replist .section li a:hover,body#sports #sd_replist .section li.on span,body#sports #sd_replist .section li.on a,body#sports #sd_replist .section li a:hover{background:url(http://i.yimg.jp/images/r25/images/2009/side/replist_bg.png) no-repeat;}
+
+#sd_replist{margin-top:10px;}
+
+#sd_replist .title{background:#ffffff;border-top:2px solid #999999;padding:1px 0;}
+
+#sd_replist h4{color:#ffffff;font-size:108%;font-family:"HGS創英角ｺﾞｼｯｸUB";padding:12px;}
+
+#sd_replist h4 a,#sd_replist h4 a:hover,#sd_replist h4 a:visited{color:#ffffff !important;}
+
+body#index #sd_replist h4,body#my #sd_replist h4{background:#a10900;}
+
+body#lifemoney #sd_replist h4{background:#b18200;}
+
+body#business #sd_replist h4{background:#006e8b;}
+
+body#society #sd_replist h4{background:#2b5804;}
+
+body#science #sd_replist h4{background:#b00058;}
+
+body#trivia #sd_replist h4{background:#da2f33;}
+
+body#culture #sd_replist h4{background:#002672;}
+
+body#sports #sd_replist h4{background:#793a00;}
+
+#sd_replist .section{background:url(http://i.yimg.jp/images/r25/images/2009/line_gray01.gif) repeat-x 0 100%;}
+
+#sd_replist .section li{width:300px;}
+
+#sd_replist .section li span,#sd_replist .section li a{display:block;width:252px;padding:10px 24px 12px 24px;background-position:0px 0px;}
+
+#sd_replist .section li.on{border-bottom:1px solid #FFFFFF;background:url(http://i.yimg.jp/images/r25/images/2009/side/bg_gd_default.gif) repeat left top;}
+
+body#lifemoney #sd_replist .section li.on{background:url(http://i.yimg.jp/images/r25/images/2009/side/bg_gd_life.gif) repeat left top;}
+
+/*ライフ・マネー*/body#business #sd_replist .section li.on{background:url(http://i.yimg.jp/images/r25/images/2009/side/bg_gd_business.gif) repeat left top;}
+
+/*ビジネス*/body#society #sd_replist .section li.on{background:url(http://i.yimg.jp/images/r25/images/2009/side/bg_gd_eco.gif) repeat left top;}
+
+/*政治*/body#science #sd_replist .section li.on{background:url(http://i.yimg.jp/images/r25/images/2009/side/bg_gd_it.gif) repeat left top;}
+
+/*IT*/body#trivia #sd_replist .section li.on{background:url(http://i.yimg.jp/images/r25/images/2009/side/bg_gd_relax.gif) repeat left top;}
+
+/*トリビア*/body#culture #sd_replist .section li.on{background:url(http://i.yimg.jp/images/r25/images/2009/side/bg_gd_culture.gif) repeat left top;}
+
+/*カルチャー*/body#sports #sd_replist .section li.on{background:url(http://i.yimg.jp/images/r25/images/2009/side/bg_gd_outdoor.gif) repeat left top;}
+
+/*スポーツ*/#sd_replist .section li a:hover{text-decoration:none;}
+
+#sd_replist .section li.on ul{margin:0 0 0 10px;width:290px;}
+
+#sd_replist .section li.on ul li{background:#ffffff url(http://i.yimg.jp/images/r25/images/2009/side/bg_dot_line1.gif) repeat-x 0 100% !important;width:290px;}
+
+#sd_replist .section li.on ul li a:hover{text-decoration:underline;background-position:17px 15px;}
+
+#sd_replist .section li.on ul li.btm{background:#ffffff !important;}
+
+#sd_replist .section li.on ul li.more{padding:4px 0 2px 0;background:transparent !important;}
+
+#sd_replist .section li.on ul li a,#sd_replist .section li.on ul li a:hover{width:252px;padding:10px 14px 12px 24px;background:url(http://i.yimg.jp/images/r25/images/2009/arw_black02.gif) no-repeat 15px 15px !important;}
+
+#sd_replist .section li.on ul li.more{overflow:hidden;/zoom:1;}
+
+#sd_replist .section li.on ul li.more a{float:right;width:auto;padding:3px 4px 3px 16px;background:url(http://i.yimg.jp/images/r25/images/2009/arw_black.gif) no-repeat 0 0.2em !important;color:#000000;}
+
+#sd_replist .section li.on span,#sd_replist .section li.on a,#sd_replist .section li a:hover{text-decoration:none;background-position:-300px 0px;}
+
+body#lifemoney #sd_replist .section li.on span,body#lifemoney #sd_replist .section li.on a,body#lifemoney #sd_replist .section li a:hover{background-position:-1800px 0px;}
+
+body#business #sd_replist .section li.on span,body#business #sd_replist .section li.on a,body#business #sd_replist .section li a:hover{background-position:-1200px 0px;}
+
+body#society #sd_replist .section li.on span,body#society #sd_replist .section li.on a,body#society #sd_replist .section li a:hover{background-position:-900px 0px;}
+
+body#science #sd_replist .section li.on span,body#science #sd_replist .section li.on a,body#science #sd_replist .section li a:hover{background-position:-600px 0px;}
+
+body#trivia #sd_replist .section li.on span,body#trivia #sd_replist .section li.on a,body#trivia #sd_replist .section li a:hover{background-position:-2400px 0px;}
+
+body#culture #sd_replist .section li.on span,body#culture #sd_replist .section li.on a,body#culture #sd_replist .section li a:hover{background-position:-1500px 0px;}
+
+body#sports #sd_replist .section li.on span,body#sports #sd_replist .section li.on a,body#sports #sd_replist .section li a:hover{background-position:-2100px 0px;}
+
+/* 他サービスへのリンク--------------------------------------------*/#sd_service{padding-top:5px;}
+
+#sd_service li{margin-top:5px;padding:5px;border:1px solid #cdcdcd;}
+
+#sd_service .pic{display:inline-block;/display:inline;/zoom:1;width: 60px;margin-right:3px;vertical-align: middle;}
+
+#sd_service .txt{display:inline-block;/display:inline;/zoom:1;width: 220px;vertical-align: middle;}
+
+#sd_xappy{margin-top:5px;}
+

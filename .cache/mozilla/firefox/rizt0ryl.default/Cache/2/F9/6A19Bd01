@@ -1,0 +1,1006 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja" id="masterChannel-ait"><head>
+<meta http-equiv="content-type" content="text/html;charset=shift_jis">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script>var swspv = '(none)';</script>
+<script src="/js/spv/movePC2SP.js"></script>
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+
+<meta name="itmid:series" content="">
+<meta name="build" content="2013年07月05日 18時00分">
+<meta name="keywords" content="GitHub,変更・構成管理,要求管理,バージョン管理,リリース管理,プロジェクトマネジメント,プロジェクト管理ツール,タスク管理,開発プロセス,運用管理,Test & Tools">
+<meta name="description" content="Gitの概要、成り立ちと歴史、なぜ必要なのか、集中型と分散型の違い、使ううえでの“基本”用語を解説し、GitHub、Gitolite、msysGitなど関連サービス／ツールを紹介します。">
+<meta name="extraid" content="	at-features	ao-testtools	kw-testandtools	">
+<meta name="writer" content="平屋真吾，<b>クラスメソッド株式会社</b>">
+<meta name="dispatch" content="国内">
+<meta name="adpath" content="root/ITmedia/ait/article/testtools">
+<meta name="rcid" content="">
+<meta name="rcid_filename" content="">
+
+<meta property="og:title" content="ガチで5分で分かる分散型バージョン管理システムGit (4/6)">
+<meta property="og:description" content="Gitの概要、成り立ちと歴史、なぜ必要なのか、集中型と分散型の違い、使ううえでの“基本”用語を解説し、GitHub、Gitolite、msysGitなど関連サービス／ツールを紹介します。">
+<title> ガチで5分で分かる分散型バージョン管理システムGit (4/6) - ＠IT</title>
+
+<meta property="og:site_name" content="＠IT">
+<meta property="og:url" content="http://www.atmarkit.co.jp/ait/articles/1307/05/news028_4.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="http://image.itmedia.co.jp/nac/images/logo/200_ait_bgw.gif">
+
+
+<!--EDIT START-->
+<!--EDIT END-->
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/base.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/ad.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/ait/article.css" type="text/css" media="all">
+
+
+<link rel="stylesheet" href="http://www.itmedia.co.jp/js/lib/prettify.css">
+<script src="/js/lib/prettify.js"></script>
+<script src="/js/lib/jquery-1.6.4.min.js"></script>
+<script>jQuery.noConflict();</script>
+<script src="//fc.itmedia.co.jp/fpcookie?site_id=itm_"></script>
+<script src="/js/scAccount.js"></script>
+<script src="/js/adRequest.js"></script>
+<script src="/js/scRequest.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/ad.js"></script>
+<script type="text/javascript" src="/js/article.js"></script>
+<script type="text/javascript" src="/js/ait/base.js"></script>
+<script type="text/javascript" src="/js/ait/ad.js"></script>
+<script type="text/javascript" src="/js/ait/article.js"></script>
+
+</head><body id="masterType-article">
+<script type="text/javascript">
+attachBodyClass();
+function masterChannel(){return 'ait';}
+function masterType(){return 'article';}
+function prFlag(){return '';}
+function spFlag(){return '';}
+(function(){
+if(getUrl()['domain'].match(/(preview|localhost)/)) document.write('<div id="PATHDEBUG">masterChannel = <strong>' + masterChannel() + '</strong> / masterType = <strong>' + masterType() + '</strong> / smartPhone = <strong>' + spFlag() + '</strong></div>');
+return true;
+})();
+</script>
+<!--ITWS-->
+
+	
+		<div id="ITWS"><script>adRequest({'position':'ITWS'});</script></div>
+	
+
+<!--/ITWS-->
+
+<!--ITWL-->
+
+	<script>adRequest({'position':'ITWL'});</script>
+
+<!--/ITWL-->
+
+<!--COIDP-->
+
+	
+		<div id="COIDP"><div class="COIDP-in">
+		<script>adRequest({'position':'COIDP1','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<div class="COIDP-Member">
+		<script>adRequest({'position':'COIDP2','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		<script>adRequest({'position':'COIDP3','path':'root/cds/id/ITmedia/' + masterChannel()});</script>
+		</div></div></div>
+		<script>
+		(function(){
+			var coidp = document.getElementById('COIDP');
+			if(coidp.innerHTML.match('st=noad.*pos=')){
+				coidp.style.display = 'none';
+				return false;
+			}
+			return true;
+		})();
+		</script>
+	
+
+<!--/COIDP-->
+
+<div id="masterBody"><div id="masterBodyOut"><div id="masterBodyIn">
+<div id="masterNavigation">
+
+<div id="globalNavigationGroup4">
+<div id="globalNavigation"><div class="gnavOut"><div class="gnavIn">
+<div class="gnavBtn gnavBtn15"><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/">自分研</a></div>
+<div class="gnavBtn gnavBtn1"><a href="http://www.atmarkit.co.jp/ait/subtop/testtools/">Test</a></div>
+<div class="gnavBtn gnavBtn2"><a href="http://www.atmarkit.co.jp/ait/subtop/systemdesign/">Design</a></div>
+<div class="gnavBtn gnavBtn3"><a href="http://www.atmarkit.co.jp/ait/subtop/security/">Security</a></div>
+<div class="gnavBtn gnavBtn4"><a href="http://www.atmarkit.co.jp/ait/subtop/network/">Network</a></div>
+<div class="gnavBtn gnavBtn5"><a href="http://www.atmarkit.co.jp/ait/subtop/linux/">Linux</a></div>
+<div class="gnavBtn gnavBtn6"><a href="http://www.atmarkit.co.jp/ait/subtop/db/">DB</a></div>
+<div class="gnavBtn gnavBtn7"><a href="http://www.atmarkit.co.jp/ait/subtop/java/">Java</a></div>
+<div class="gnavBtn gnavBtn8"><a href="http://www.atmarkit.co.jp/ait/subtop/coding/">Coding</a></div>
+<div class="gnavBtn gnavBtn9"><a href="http://www.atmarkit.co.jp/ait/subtop/smart/">Smart</a></div>
+<div class="gnavBtn gnavBtn10"><a href="http://www.atmarkit.co.jp/ait/subtop/ux/">HTML5</a></div>
+<div class="gnavBtn gnavBtn11"><a href="http://www.atmarkit.co.jp/ait/subtop/server/">Server＆Storage</a></div>
+<div class="gnavBtn gnavBtn12"><a href="http://www.atmarkit.co.jp/ait/subtop/sys/">System</a></div>
+<div class="gnavBtn gnavBtn13"><a href="http://www.atmarkit.co.jp/ait/subtop/dotnet/">.NET</a></div>
+<div class="gnavBtn gnavBtn14"><a href="http://www.atmarkit.co.jp/ait/subtop/win/">Windows</a></div>
+</div></div></div>
+</div>
+
+</div>
+
+<div id="masterBodyOuter"><!----><div id="masterBodyInner">
+<div id="masterHeader">
+	<div id="globalHeader">
+		<div id="headerBgArea"></div>
+		<div id="globalHeaderTop">
+		<div id="globalHeaderTopInner">
+
+			<div id="globalLogo">
+			
+				<div class="logoArea"><a href="http://www.atmarkit.co.jp/" title="＠IT - アットマーク・アイティ">＠IT - アットマーク・アイティ</a></div>
+			
+				<div id="globalTagline"><!--EDIT START-->アットマーク・アイティ - ITエキスパートのための問題解決メディア<!--EDIT END--></div>
+			</div>
+
+			<div id="globalSearch">
+				<div id="globalSearchBox">
+				    <!-- Google searchBox Begin -->
+						<div id="cse-search-form" style="width: 100%;">Loading</div>
+	<script src="//www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript">
+	  google.load('search', '1', {language : 'ja', style : google.loader.themes.V2_DEFAULT});
+	  google.setOnLoadCallback(function() {
+	    var customSearchOptions = {};
+	    var orderByOptions = {};
+	    orderByOptions['keys'] = [{label: '関連性', key: ''},{label: '日付', key: 'date'}];
+	    customSearchOptions['enableOrderBy'] = true;
+	    customSearchOptions['orderByOptions'] = orderByOptions;
+	    var imageSearchOptions = {};
+	    imageSearchOptions['layout'] = google.search.ImageSearch.LAYOUT_POPUP;
+	    customSearchOptions['enableImageSearch'] = true;
+	    customSearchOptions['imageSearchOptions'] = imageSearchOptions;
+	    customSearchOptions['adoptions'] = {'layout': 'noTop'};
+	    var customSearchControl = new google.search.CustomSearchControl(
+	      '000492183644671384608:zpcmlmr1swi', customSearchOptions);
+	    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+	    var options = new google.search.DrawOptions();
+	    options.enableSearchboxOnly("http://www.google.com/cse?cx=000492183644671384608:zpcmlmr1swi");
+	    customSearchControl.draw('cse-search-form', options);
+	  }, true);
+	</script>
+	<style type="text/css">
+	  input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
+	    border-color: #D9D9D9;
+	  }
+	  input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+	    border-color: #2F5BB7;
+	    background-color: #357AE8;
+	    background-image: none;
+	    filter: none;
+	  }
+	</style>
+	
+	<script type="text/javascript"><!--
+	window.onload = function(){
+		jQuery('.cmsBodyItmidSeriesButtonRegist').addClass('testbutton')
+		jQuery('.testbutton').click(function(){
+			designCnt('alertBtnTest201312');
+		});
+	};
+	//--></script>
+	<style type="text/css"><!--
+		#cmsBody .cmsBodyItmidSeriesButtonRegist a {
+		width:590px;
+		height:62px;
+		background:url(http://image.itmedia.co.jp/ait/images/rensai_alert_bg1309_2.gif) no-repeat 0 0;
+		}
+		#cmsBody .cmsBodyItmidSeriesButtonRegist a:hover {
+		opacity:0.65;
+		background:url(http://image.itmedia.co.jp/ait/images/rensai_alert_bg1309_2.gif) no-repeat 0 0;
+		}
+	--></style>
+	<!--endif-->
+
+					<!-- Google searchBox End -->
+				</div>
+				<div id="globalSubNavigation">
+					<ul>
+					<li class="globalSubNavigation"><a href="http://www.atmarkit.co.jp/ait/articles/1310/07/news003.html" title="ヘルプ">ヘルプ</a></li>
+					<li class="globalSubNavigation"><a href="http://el.jibun.atmarkit.co.jp/" title="コラム">コラム</a></li>
+					<li class="globalSubNavigation"><a href="http://www.atmarkit.co.jp/job/jt/" title="派遣探す">派遣探す</a></li>
+					<li class="globalSubNavigation"><a href="http://www.atmarkit.co.jp/job/jc/" title="転職探す">転職探す</a></li>
+					<li class="globalSubNavigation"><a href="http://jibun.atmarkit.co.jp/scenter/ittrain/" title="今日の1問">今日の1問</a></li>
+					<li class="globalSubNavigation"><a href="https://event.atmarkit.co.jp/" title="イベント">イベント</a></li>
+					<li class="globalSubNavigation"><a href="http://qa.atmarkit.co.jp/" title="Q&A">Q&A</a></li>
+					<li class="globalSubNavigation"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/matome.html" title="まとめ＠IT">まとめ＠IT</a></li>
+					<li class="globalSubNavigation"><a href="http://www.atmarkit.co.jp/ait/subtop/news/" title="ニュース">ニュース</a></li>
+					<li class="globalSubNavigation"><a href="http://news.itmedia.co.jp/atmarkit" title="短記事">短記事</a></li>
+					<li class="globalSubNavigation"><a href="http://www.itmedia.co.jp/info/rss/atmarkit.html" title="RSS">RSS</a></li>
+					</ul>
+				</div>
+				<div class="colBoxClear"></div>
+			</div>
+
+			<!--EDIT START-->
+			<div id="ITN"><script>adRequest({'position':'ITN'});</script></div>
+			<div class="colBoxClear"></div>
+			<!--EDIT END-->
+			<div class="colBoxClear"></div>
+		</div><!-- /#globalHeaderTopInner -->
+		</div><!-- /#globalHeaderTop -->
+
+		<!-- <div id="globalHeaderMiddle"></div> -->
+
+		<div id="globalHeaderBottom">
+		<div id="globalHeaderBottomInner">
+			<!--EDIT START-->
+			
+<div id="localNavigation"><div class="lnavOut"><div class="lnavIn">
+<div id="lnavMain"><div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/developer.html" title="開発" onClick="designCnt('lnavMain',this.href);">開発</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/operator.html" title="運用構築" onClick="designCnt('lnavMain',this.href);">運用構築</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/systemdesign/" title="設計" onClick="designCnt('lnavMain',this.href);">設計</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/" title="キャリア＆スキル" onClick="designCnt('lnavMain',this.href);">キャリア＆スキル</a></div>
+</div>
+<div id="lnavSub"><div class="lnavBtn lnavBtnTopic"><a href="#" title="注目のテーマ" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> 注目のテーマ</a></div>
+<div class="lnavBtn lnavBtnNew"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/sp_datafoundation.html" title="DB統合" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> DB統合</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/subtop/features/kwd/ecm.html" title="ECM" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> ECM</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/dataanalytics.html" title="データ分析" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> データ分析</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/practical_privatecloud.html" title="統合インフラ" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> 統合インフラ</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/cloudos_index.html" title="ハイブリッドクラウド" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> ハイブリッドクラウド</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/devops.html" title="DevOps" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> DevOps</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/dotnet/app/" title="業務アプリ" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> 業務アプリ</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/ux/design/" title="デザインハック" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> デザインハック</a></div>
+<div class="lnavBtn"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/iphone.html" title="iOSアプリ開発" onClick="designCnt('lnavSub',this.href);"><span class="raquo">&raquo;</span> iOSアプリ開発</a></div>
+</div>
+</div></div></div>
+<script type="text/javascript">
+localNavigationPD('lnavMain',{'開発':{
+	'data':[
+		{'name':'Insider.NET','url':'http://www.atmarkit.co.jp/ait/subtop/dotnet/'},
+		{'name':'HTML5+UX','url':'http://www.atmarkit.co.jp/ait/subtop/ux/'},
+		{'name':'Smart & Social','url':'http://www.atmarkit.co.jp/ait/subtop/smart/'},
+		{'name':'Coding Edge','url':'http://www.atmarkit.co.jp/ait/subtop/coding/'},
+		{'name':'Java Agile','url':'http://www.atmarkit.co.jp/ait/subtop/java/'},
+		{'name':'Test & Tools','url':'http://www.atmarkit.co.jp/ait/subtop/testtools/'},
+		{}],
+'':''},
+'運用構築':{
+	'data':[
+		{'name':'Windows Server Insider','url':'http://www.atmarkit.co.jp/ait/subtop/win/'},
+		{'name':'System Insider','url':'http://www.atmarkit.co.jp/ait/subtop/sys/'},
+		{'name':'Server & Storage','url':'http://www.atmarkit.co.jp/ait/subtop/server/'},
+		{'name':'Database Expert','url':'http://www.atmarkit.co.jp/ait/subtop/db/'},
+		{'name':'Linux ＆ OSS','url':'http://www.atmarkit.co.jp/ait/subtop/linux/'},
+		{'name':'IP Network','url':'http://www.atmarkit.co.jp/ait/subtop/network/'},
+		{'name':'Security & Trust','url':'http://www.atmarkit.co.jp/ait/subtop/security/'},
+		{}],
+'':''},
+'設計':{
+	'data':[
+		{'name':'System Design','url':'http://www.atmarkit.co.jp/ait/subtop/systemdesign/'},
+		{}],
+'':''},
+'キャリア＆スキル':{
+	'data':[
+		{'name':'自分戦略研究所','url':'http://www.atmarkit.co.jp/ait/subtop/jibun/'},
+		{}],
+'':''},
+'':[]});
+localNavigationPD('lnavSub',{'注目のテーマ':{ // 列挙1のタイトルと完全一致する文字列
+	'data':[
+		{'name':'DB統合','url':'http://www.atmarkit.co.jp/ait/subtop/features/kwd/sp_datafoundation.html'},
+		{'name':'ECM','url':'http://www.atmarkit.co.jp/ait/subtop/features/subtop/features/kwd/ecm.html'},
+		{'name':'IaaSトレンド','url':'http://www.atmarkit.co.jp/ait/subtop/features/kwd/iaastrend.html'},
+		{'name':'データ分析','url':'http://www.atmarkit.co.jp/ait/subtop/features/kwd/dataanalytics.html'},
+		{'name':'統合インフラ','url':'http://www.atmarkit.co.jp/ait/subtop/features/kwd/practical_privatecloud.html'},
+		{'name':'ハイブリッドクラウド','url':'http://www.atmarkit.co.jp/ait/subtop/features/kwd/cloudos_index.html'},
+		{'name':'DevOps','url':'http://www.atmarkit.co.jp/ait/subtop/features/kwd/devops.html'},
+		{'name':'タブレットアプリ開発','url':'http://www.atmarkit.co.jp/misc/ct.php?id=ms382801'},// 列挙1のタイトルと完全一致した箇所のプルダウン内に表示するメニュー
+		{'name':'業務アプリ','url':'http://www.atmarkit.co.jp/ait/subtop/dotnet/app/'}, 
+		{'name':'iOSアプリ開発','url':'http://www.atmarkit.co.jp/ait/subtop/features/kwd/iphone.html'},
+		{'name':'デザインハック','url':'http://www.atmarkit.co.jp/ait/subtop/ux/design/'}, 
+		{'name':'Cloud Quest','url':'http://www.atmarkit.co.jp/news/portal/cloud/'}, 
+		{'name':'Rails Hub','url':'http://www.atmarkit.co.jp/ait/subtop/coding/rails/'}, 
+	{}],
+'':''},
+'':[]});
+</script>
+
+			<!--EDIT END-->
+
+			
+				<div id="localPankuzu">
+				<div class="lpanOut"><div class="lpanIn">
+					
+<a href="http://www.atmarkit.co.jp/">＠IT</a> &gt;
+
+<!--ao-testtools--><a href="http://www.atmarkit.co.jp/ait/subtop/testtools/">Test &amp; Tools</a> &gt;
+
+
+<script type="text/javascript">
+var str = document.title.replace(/\<\!\-\-EDIT START\-\-\>/g,'').replace(/\<\!\-\-EDIT END\-\-\>/g,'').replace(' - ＠IT','');
+str = cutString(str,60);
+document.write(str);
+</script>
+
+				</div></div>
+				</div>
+			
+
+		</div>
+		</div>
+
+	</div><!-- /#globalHeader -->
+
+
+</div>
+<div id="masterContents"><div id="globalContents">
+<div id="masterMain">
+<!---->
+
+<div id="tmplNews" class="tmplArticle"><div id="tmplNewsIn" class="tmplArticleIn">
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsType"><div class="inner">特集</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsDate"><div class="inner" id="update"><span class="arrow">&raquo;</span> 2013年07月05日 18時00分 UPDATE</div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsTitle"><div class="inner"><h1><small></small><big>ガチで5分で分かる分散型バージョン管理システムGit (4/6)</big></h1></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsAbstract"><div class="inner"><h2></h2></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsByline"><div class="inner" id="byline"><b>[</b>平屋真吾，<b>クラスメソッド株式会社]</b></div></div>
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsBody"><div class="inner">
+<!--EDIT START-->
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- Facebook JavaScript SDK <Body> のすぐ後に配置 -->
+<link rel="stylesheet" href="http://www.itmedia.co.jp/css/socialbutton.css">
+<script src="/js/socialbutton.js"></script>
+
+
+	<!-- mn|ee|edn|ait|smartjapan|tt -->
+	<!-- UPPER/WHITE/2LINE/HATEBU -->
+	<script>
+	msbBtn({
+	'pos':'top',
+	'tag':'table',
+	'popup_pos':'upper',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'はてなブックマーク','id':'hatenabookmarkC'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'Pocket Button','id':'pocketbuttonC'},
+		{'name':'&nbsp;','title':'URLをメールで送信','id':'mail'},
+	{}],
+	[
+		{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+		{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+	{}],
+	[]]
+	});
+	</script>
+
+
+
+<div id="ITOT1"><script>adRequest({'position':'ITOT1'});</script></div>
+<div id="TABLETAD"><script>adRequest({'position':'TABLETAD'});</script></div>
+
+<!--EDIT END-->
+
+<div id="cmsMark"><!-- null for itmedia-->
+</div>
+<div class="ctrl">
+<span id="prev"><a href="news028_3.html">前のページへ</a></span>
+<span id="numb">
+<a href="news028.html">1</a>|<a href="news028_2.html">2</a>|<a href="news028_3.html">3</a>|<strong>4</strong>|<a href="news028_5.html">5</a>|<a href="news028_6.html">6</a></span>
+<span id="next"><a href="news028_5.html">次のページへ</a></span>
+</div><h3>3分―― Gitを使ううえでの“基本”用語</h3>
+<h4>リポジトリとコミット</h4>
+<p>　リポジトリは、ファイルやディレクトリの追加や変更を登録する場所です。登録するたびにファイルやディレクトリの状態が格納されます。ファイルやディレクトリをリポジトリに登録することをコミットといいます。</p>
+<p>　必要に応じてコミットしておくことで、どこが変更されたのか、誰が変更したのか、といった履歴を後から見たり、過去のある時点のファイルをリポジトリから取得したりすることが可能になります。</p>
+<h4>クローン</h4>
+<p>　リポジトリを<strong>複製</strong>することを、「クローン」と呼びます。</p>
+<p>　例えば、プロジェクトで使うファイルがリモートリポジトリに用意されている場合に、リモートリポジトリを複製して自分のPCにリポジトリを作り、作業を始めることができます。</p>
+<h4>プッシュ</h4>
+<p>　<strong>自分のリポジトリの内容を他のリポジトリに送信して取り込ませる操作</strong>のことを「プッシュ」といいます。</p>
+<p>　例えば、作業が一区切りした際に自分のリポジトリの内容をプロジェクトで共有しているリポジトリに取り込ませる際にプッシュという操作を行います。</p>
+<p> </p>
+<h4>プル</h4>
+<p>　<strong>他のリポジトリの更新された部分を自分のリポジトリに取り込む操作</strong>のことを「プル」といいます。</p>
+<p>　例えば、他の人がプロジェクトで共有しているリポジトリにプッシュした後に、その内容をリモートリポジトリから自分のローカルリポジトリに取り込む際にプルという操作を行います。</p>
+<div class="trBoxC"><div class="trBoxWidth" style="width:90%;">
+<div class="box cmsBox cmsBox cmsBoxBlue" id="blue">
+<h3>目次</h3>
+<p><strong>0分</strong>―― <A href="http://www.atmarkit.co.jp/ait/articles/1307/05/news028.html">分散型バージョン管理システム「Git」とは</A></p>
+<HR>
+<p><strong>1分</strong>―― <A href="http://www.atmarkit.co.jp/ait/articles/1307/05/news028_2.html">Gitの歴史</A></p>
+<HR>
+<p><strong>2分</strong>―― <A href="http://www.atmarkit.co.jp/ait/articles/1307/05/news028_3.html">なぜ必要か。集中型と分散型の違い</A></p>
+<HR>
+<p><strong>3分</strong>―― <A href="http://www.atmarkit.co.jp/ait/articles/1307/05/news028_4.html">Gitを使ううえでの“基本”用語</A></p>
+<HR>
+<p><strong>4分</strong>―― <A href="http://www.atmarkit.co.jp/ait/articles/1307/05/news028_5.html">Git関連サービス／ツール</A></p>
+<HR>
+<p><strong>5分</strong>―― <A href="http://www.atmarkit.co.jp/ait/articles/1307/05/news028_6.html">Gitの普及度／今後など</A></p>
+<br clear="all"><span></span></div>
+</div></div>
+<div id="notice"><a href="news028_5.html">4分―― Git関連サービス／ツール</a></div>
+<div class="ctrl">
+<span id="prev"><a href="news028_3.html">前のページへ</a></span>
+<span id="numb">
+<a href="news028.html">1</a>|<a href="news028_2.html">2</a>|<a href="news028_3.html">3</a>|<strong>4</strong>|<a href="news028_5.html">5</a>|<a href="news028_6.html">6</a></span>
+<span id="next"><a href="news028_5.html">次のページへ</a></span>
+</div>
+<div id="cmsCopyright"><p><span style="font-size:65%;font-family:Arial,Helvetica,sans-serif;line-height:135%;color:#555555;">
+Copyright&copy; 2014 ITmedia, Inc. All Rights Reserved.</span></p>
+</div>
+<!--EDIT START-->
+
+
+	<!-- mn|ee|edn|ait|smartjapan|tt -->
+	<!-- UPPER/WHITE/2LINE/HATEBU -->
+	<script>
+	msbBtn({
+	'pos':'btm',
+	'tag':'table',
+	'popup_pos':'under',
+	'base_color':'white',
+	'line':[
+	[
+		{'name':'印刷/PDF','title':'この記事を印刷する','id':'printbutton'},
+		{'name':'ツイート','id':'tweetbutton'},
+		{'name':'Like Button','id':'likebutton'},
+		{'name':'はてなブックマーク','id':'hatenabookmarkC'},
+		{'name':'Google +1 Button','id':'googleplusone'},
+		{'name':'ONETOPI','title':'ONETOPIに投稿する','id':'onetopibutton'},
+		{'name':'Pocket Button','id':'pocketbuttonC'},
+		{'name':'&nbsp;','title':'URLをメールで送信','id':'mail'},
+	{}],
+	[
+		{'name':'類似記事の掲載をメールで通知','id':'alertbutton'},
+		{'name':'連載「％」の新着をメールで通知','id':'alertseries'},
+	{}],
+	[]]
+	});
+	</script>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+{lang:'ja',parsetags:'explicit'}
+</script>
+<script type="text/javascript">gapi.plusone.go();</script>
+
+<div id="ITSB2"><script>adRequest({'position':'ITSB2'});</script></div>
+<div class="newziaBox newzia_article">
+<h4>TechTargetジャパン</h4>
+<script charset="utf-8" src="http://connect.newzia.jp/channels/182/script.js" type="text/javascript"></script>
+<script charset="utf-8" src="http://connect.newzia.jp/channels/181/script.js" type="text/javascript"></script>
+</div>
+<script charset="utf-8" src="http://connect.newzia.jp/channels/62/script.js" type="text/javascript"></script>
+<div id="ITSB"><script>adRequest({'position':'ITSB'});</script></div>
+<div id="ISALC"><script>adRequest({'position':'50ISALC'});</script></div>
+<div class="colBoxClear"></div>
+
+<div class="colBox colBoxCampaignBannar">
+<div class="colBoxOuter">
+<div class="colBoxInner">
+<div class="colBoxIndex">
+	<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/misc/ct.php?id=AT440400" title="メルマガ購読キャンペーン" onclick="designCnt('記事下','campaignLink');"><img src="http://image.itmedia.co.jp/ait/images/htmlgen/parts_article_campaignBannar_1_1396585192.gif" alt="メルマガ購読キャンペーン"></a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="colBoxClear"></div>
+<!-- FBコメント/twitterウィジェット枠 -->
+<div class="colBox colBoxArtBtmSns" id="artBtmSns">
+	<div class="colBoxOuter">
+	<div class="colBoxHead">
+		<h2 class="tab1 active"><span>コメント</span></h2>
+		<h2 class="tab2"><span>ツイート</span></h2>
+	</div>
+	<div class="colBoxInner">
+		<div class="colBoxIndex tab1 active" id="artBtmSnsFb">
+			<div class="fb-comments" data-href="" data-width="637"></div>
+			<script type="text/javascript"> setBtmFbTab(); </script>
+		</div>
+		<div class="colBoxIndex tab2" id="artBtmSnsTw">
+			<script type="text/javascript"> setBtmTwTab(); </script>
+		</div>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">setTabAction("artBtmSns");</script>
+<!-- FBコメント/twitterウィジェット枠 -->
+<!-- "/include/ait/index_article_newArticle.html" -->
+
+<script>
+ISLOGIN({
+	'isLoginURL':'http://status.atmarkit.co.jp/isLoginAIT.cgi',
+	'sc':'f00f2e7bca65e9f8409fdb3bcddfa031664224255d7bd2f6b3de8ff11ababe20',
+	'lc':'c0aa4a0be7ba28399b09a68835a21755f442e25f8e0971b1d1ea3a6c749f0385',
+	'bc':2,
+	'heading':'続きを読むには、<strong style="color:#F90;">会員登録（無料）</strong> が必須です',
+	'description':'この記事は、＠ITのメールマガジン「＠IT通信」をお申し込みになると無料で閲覧できます。アイティメディアIDを持っている方は次のページでIDとパスワードを入力してください。登録されていない方は新規登録ボタンをクリックしてください。',
+	'eVer':'26',
+	'eVerStr':'id_ait_article-mask'
+});
+</script>
+<!--EDIT END-->
+
+</div></div> 
+<!--EDIT START-->
+<!--EDIT END-->
+
+<div id="cmsPrcredit"><div class="inner"></div></div>
+<!--EDIT START-->
+
+<!--EDIT END-->
+</div></div>
+
+<script>endlinkAll();</script>
+
+<!---->
+</div>
+<div id="masterSub">
+	
+	<!--編集記事-->
+	<div class="colBox colBoxSnsBtn">
+	<div class="colBoxOuter">
+	<div class="colBoxInner">
+	<div class="colBoxIndex">
+		<div class="colBoxUlist"><ul>
+			<li class="globalSocialBtnMail"><a href="http://www.atmarkit.co.jp/ait/subtop/info/lp/ait_new.html" title="メルマガに登録する" target="_blank">メルマガに登録する</a></li>
+			<li class="globalSocialBtnRss"><a href="http://www.itmedia.co.jp/info/rss/atmarkit.html" title="＠IT RSS" target="_blank">＠IT RSS</a></li>
+			<li class="globalSocialBtnFacebook"><a href="http://ja-jp.facebook.com/atmarkit" title="＠IT Facebook" target="_blank">＠IT Facebook</a></li>
+			<li class="globalSocialBtnTwitter"><a href="http://twitter.com/#!/atmark_it" title="＠IT Twitter" target="_blank">＠IT Twitter</a></li>
+		</ul><div class="colBoxClear"></div></div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div id="colBoxSubChannelLogo"></div>
+	<script type="text/javascript">outputForumLogo();</script>
+	<div id="LOGOAD"><script>adRequest({'position':'10LOGOAD'});</script></div>
+	<div id="ITTI"><script>adRequest({'position':'5ITTI'});</script></div>
+	<div id="ITTN"><script>adRequest({'position':'2ITTN'});</script></div>
+	<div id="MSITTI">
+		<div class="colBox colBoxMSITTI"><div class="colBoxOuter"><div class="colBoxInner"><div class="colBoxIndex"><div class="colBoxUlist"><ul>
+			<script>adRequest({'position':'MSITTI'});</script>
+		</ul></div></div></div></div></div>
+	</div>
+	<div id="ITR"><script>adRequest({'position':'ITR'});</script></div><!-- レクタングル -->
+	<div id="ISALR"><script>adRequest({'position':'30ISALR'});</script></div><!-- チャンネルリンク -->
+	<div class="colBoxClear"></div>
+	<div class="colBox colBoxMargeArtList" id="margeRanking"></div>
+	<script type="text/javascript" src="/json/ait/index_matome.json"></script>
+	<script type="text/javascript" src="/json/ait/rss_reborn_margeRank_event.json"></script>
+	<script type="text/javascript" src="/json/ait/rss_reborn_margeRank_news.json"></script>
+	<script type="text/javascript"><!--
+		margeArtRanking();
+	//--></script>
+	<!-- ホワイトペーパー/ -->
+	<div class="colBox colBoxWP"><div class="colBoxOuter">
+	<div class="colBoxHead"><h2>ホワイトペーパー（TechTargetジャパン）</h2></div>
+	<div class="colBoxInner">
+	<script charset="utf-8" src="http://connect.newzia.jp/channels/179/script.js" type="text/javascript"></script>
+	<script charset="utf-8" src="http://connect.newzia.jp/channels/180/script.js" type="text/javascript"></script>
+	</div>
+	</div></div>
+	<!-- /ホワイトペーパー -->
+	
+<!-- htmlgen -->
+<div class="colBox colBoxThemeBannar">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>注目のテーマ</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/sp_datafoundation.html" onclick="designCnt('themeBannar');"><img src="http://image.itmedia.co.jp/ait/images/htmlgen/parts_reborn_themeBannar1_1_1396833381.jpg"></a></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/ait/subtop/features/subtop/features/kwd/ecm.html" onclick="designCnt('themeBannar');"><img src="http://image.itmedia.co.jp/ait/images/htmlgen/parts_reborn_themeBannar1_1_1391601335.jpg"></a></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/dataanalytics.html" onclick="designCnt('themeBannar');"><img src="http://image.itmedia.co.jp/ait/images/htmlgen/parts_reborn_themeBannar1_1_1386050127.jpg"></a></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/practical_privatecloud.html" onclick="designCnt('themeBannar');"><img src="http://image.itmedia.co.jp/ait/images/htmlgen/parts_reborn_themeBannar1_1_1383015390.jpg"></a></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/cloudos_index.html" onclick="designCnt('themeBannar');"><img src="http://image.itmedia.co.jp/ait/images/htmlgen/parts_reborn_themeBannar1_1_1382318270.jpg"></a></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/ait/subtop/features/kwd/devops.html" onclick="designCnt('themeBannar');"><img src="http://image.itmedia.co.jp/ait/images/htmlgen/parts_reborn_themeBannar4_1_1386058097.jpg"></a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- /htmlgen -->
+<!-- 注目のテーマ -->
+	
+<!-- htmlgen -->
+<!-- htmlgen -->
+<!-- 注目のテーマ PR -->
+	<div id="ITTO"><script>adRequest({'position':'5ITTO'});</script></div><!-- お勧め求人情報 -->
+	<div id="ITR"><script>adRequest({'position':'ITR2'});</script></div><!-- セカンドレクタングル -->
+	<div class="colBox colBoxArtRanking" id="forumRanking"></div><!-- フォーラムランキング -->
+	<script type="text/javascript">setForumRanking();</script><!-- フォーラムランキング -->
+	
+<div class="colBox colBoxTensyoku">
+<div class="colBoxOuter">
+<div class="colBoxHead"><h2>転職／派遣情報を探す</h2></div>
+<div class="colBoxInner">
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/job/jc/" title="エンジニアの求人情報、ただいま増加中"><IMG SRC="http://image.itmedia.co.jp/ait/images/htmlgen/top_dokusyacolumn_icon_1_1346326003.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="http://www.atmarkit.co.jp/job/jc/" title="エンジニアの求人情報、ただいま増加中">エンジニアの求人情報、ただいま増加中</a></h3></div>
+<div class="colBoxDescription"><p>【転職サーチ】SIer／Web企業／新規事業 スマホ開発で、あなたのキャリアを生かす</p></div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxIndex">
+<div class="colBoxIcon"><a href="http://www.atmarkit.co.jp/job/jt/aud/index.php?action_aud_Portal=true" title="派遣エンジニアにお役立ちの仕事情報"><IMG SRC="http://image.itmedia.co.jp/ait/images/htmlgen/top_dokusyacolumn_icon_2_1346326003.jpg"></a></div>
+<div class="colBoxTitle"><h3><a href="http://www.atmarkit.co.jp/job/jt/aud/index.php?action_aud_Portal=true" title="派遣エンジニアにお役立ちの仕事情報">派遣エンジニアにお役立ちの仕事情報</a></h3></div>
+<div class="colBoxDescription"><p>「派遣・フリーで働くメリット」とは？ 活躍する派遣エンジニアの本音</p></div>
+<div class="colBoxClear h10px"></div>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+</div>
+<!-- 転職／派遣情報を探す -->
+	
+</div>
+<div class="colBoxClear"></div>
+</div></div>
+<div id="mediaFooter">
+<div id="mediaFooterBgArea"></div>
+<div class="mediaFooterMediaList">
+
+<div class="colBoxIndex colBoxAit">
+<div class="colBoxTitle"><h3>@ITについて</h3></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.atmarkit.co.jp/aboutus/contact_us/contact_us.html" title="お問い合わせ">お問い合わせ</a></li>
+<li><a href="http://corp.itmedia.co.jp/corp/privacy.html" title="プライバシーポリシー">プライバシーポリシー</a></li>
+<li><a href="http://www.atmarkit.co.jp/aboutus/termofuse/termofuse.html" title="利用規約">利用規約</a></li>
+<li><a href="http://www.atmarkit.co.jp/aboutus/copyright/copyright.html" title="著作権・リンク・免責事項">著作権・リンク・免責事項</a></li>
+<li><a href="http://www.atmarkit.co.jp/info/sitemap/sitemap.html" title="サイトマップ">サイトマップ</a></li>
+<li><a href="http://corp.itmedia.co.jp/corp/ad/" title="広告案内">広告案内</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex colBoxRSS">
+<div class="colBoxTitle"><h3>RSSについて</h3></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://www.itmedia.co.jp/info/rss/atmarkit.html" title="＠ITのRSS一覧">＠ITのRSS一覧</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<div class="colBoxIndex colBoxID">
+<div class="colBoxTitle"><h3>アイティメディアIDについて</h3></div>
+<div class="colBoxUlist">
+<ul>
+<li><a href="http://id.itmedia.jp/info/campaign/all_id.html" title="アイティメディアIDとは">アイティメディアIDとは</a></li>
+</ul>
+</div>
+<div class="colBoxClear"></div>
+</div>
+<!-- メディアフッター -->
+<div class="colBoxIndex colBoxMailmagazine">
+<div class="colBoxTitle"><h3>メールマガジン登録</h3></div>
+<div class="colBoxDescription"><p>
+＠ITのメールマガジンは、 もちろん、すべて無料です。ぜひメールマガジンをご購読ください。
+</p>
+<div id="registerButton">
+<a href="http://www.atmarkit.co.jp/ait/subtop/info/lp/ait_new.html">申し込みページへ</a>
+</div>
+</div>
+</div>
+<div class="colBoxClear"></div>
+</div>
+</div>
+
+
+
+<div id="masterFooter">
+	<div id="globalFooter">
+		<div id="footerBgArea"></div>
+		<div id="globalFooterMediaList">
+			<div id="globalFooterMediaListIn">
+				<div class="mediaListGroup">
+					<div class="mediaList" id="mediaList01">
+						<h2>IT総合</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/">ITmedia 総合TOP</a></li>
+						<li><a href="http://www.itmedia.co.jp/news/">ITmedia ニュース</a></li>
+						<li><a href="http://news.itmedia.co.jp/">ITmedia News スマート</a></li>
+						<li><a href="http://www.itmedia.co.jp/keywords/">ITmedia Keywords</a></li>
+						<li><a href="http://1topi.jp/">ONETOPI</a></li>
+						<li><a href="http://www.itmedia.co.jp/qa/">質問！ITmedia</a></li>
+						<li><a href="http://zenback.itmedia.co.jp/">zenbackキーワーズ</a></li>
+						</ul>
+					</div><!-- /#mediaList01 -->
+					<div class="mediaList" id="mediaList02">
+						<h2>デジタル・ガジェット</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/mobile/">ITmedia Mobile</a></li>
+						<li><a href="http://www.itmedia.co.jp/pcuser/">ITmedia PC USER</a></li>
+						<li><a href="http://www.itmedia.co.jp/lifestyle/">ITmedia LifeStyle</a></li>
+						<li><a href="http://camera.itmedia.co.jp/">デジカメプラス</a></li>
+						<li><a href="http://ebook.itmedia.co.jp/">eBook USER</a></li>
+						<li><a href="http://review.itmedia.co.jp/">ITmedia REVIEW</a></li>
+						<li><a href="http://shopping.itmedia.co.jp/">ITmedia Shopping</a></li>
+						<li><a href="http://store.itmedia.co.jp">ITmedia Store</a></li>
+						<li><a href="http://rstore.itmedia.co.jp">ITmedia Store × 楽天市場</a></li>
+						<li><a href="http://ystore.itmedia.co.jp">ITmedia Store × Yahoo!ショッピング</a></li>
+						</ul>
+					</div><!-- /#mediaList02 -->
+					<div class="mediaList" id="mediaList03">
+						<h2>ビジネス</h2>
+						<ul>
+						<li><a href="http://bizmakoto.jp/">Business Media 誠</a></li>
+						<li><a href="http://bizmakoto.jp/bizid/">誠 Biz.ID</a></li>
+						<li><a href="http://bizmakoto.jp/style/">誠 Style</a></li>
+						<li><a href="http://blogs.bizmakoto.jp/">誠ブログ</a></li>
+						<li><a href="http://mag.executive.itmedia.co.jp/">ITmedia エグゼクティブ</a></li>
+						<li><a href="http://www.itmedia.co.jp/pcuser/subtop/pcuserpro/">ITmedia PC USER Pro</a></li>
+						</ul>
+					</div><!-- /#mediaList03 -->
+					<div class="mediaList" id="mediaList04">
+						<h2>カルチャー</h2>
+						<ul>
+						<li><a href="http://nlab.itmedia.co.jp/">ねとらぼ</a></li>
+						<li><a href="http://www.itmedia.co.jp/live/">ライブガイド</a></li>
+						</ul>
+					</div><!-- /#mediaList04 -->
+					<div class="mediaList" id="mediaList05">
+						<h2>アプリ</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_ios.html">ITmedia for iPhone/iPad</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/itmedia_android.html">ITmedia for Android</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi_headline.html">ONETOPI ヘッドライン</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/onetopi.html">ONETOPI App</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/liveguide.html">ライブガイド（β）</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/necolab.html">ねこらぼ</a></li>
+						<li><a href="http://www.itmedia.co.jp/info/itmapp/tweetopi.html">ついトピ！</a></li>
+						</ul>
+					</div><!-- /#mediaList05 -->
+				</div><!-- /.mediaListGroup -->
+				<div class="mediaListGroup">
+					<div class="mediaList" id="mediaList06">
+						<h2>企業IT</h2>
+						<ul>
+						<li><a href="http://www.itmedia.co.jp/enterprise/">ITmedia エンタープライズ</a></li>
+						<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dictionary/">情報システム用語事典</a></li>
+						<li><a href="http://blogs.itmedia.co.jp/">オルタナティブ・ブログ</a></li>
+						<li><a href="http://techtarget.itmedia.co.jp/">TechTargetジャパン</a></li>
+						<li><a href="http://wp.techtarget.itmedia.co.jp/">ホワイトペーパー</a></li>
+						<li><a href="http://marketing.itmedia.co.jp/">ITmedia マーケティング</a></li>
+						<li><a href="http://blog.marketing.itmedia.co.jp/">マーケター通信 </a></li>
+						<li><a href="http://chosa.itmedia.co.jp/">調査のチカラ</a></li>
+						<li><a href="http://techtarget.itmedia.co.jp/tt/cw/">Computer Weekly</a></li>
+						</ul>
+					</div><!-- /#mediaList06 -->
+						<div class="mediaList" id="mediaList07">
+							<h2>テクノロジー</h2>
+							<ul>
+							<li><a href="http://www.atmarkit.co.jp/">＠IT</a></li>
+							<li><a href="http://qa.atmarkit.co.jp/">QA＠IT</a></li>
+							<li><a href="https://event.atmarkit.co.jp/">イベントカレンダー＋ログ</a></li>
+							</ul>
+						</div><!-- /#mediaList07 -->
+						<div class="mediaList" id="mediaList08">
+							<h2>エンジニアリング</h2>
+							<ul>
+							<li><a href="http://monoist.atmarkit.co.jp/">MONOist</a></li>
+							<li><a href="http://eetimes.jp/">EE Times Japan</a></li>
+							<li><a href="http://ednjapan.com/">EDN Japan</a></li>
+							<li><a href="http://monoist.atmarkit.co.jp/mn/special/mo120701/">モノづくりライブラリ</a></li>
+							<li><a href="http://www.itmedia.co.jp/smartjapan/">スマートジャパン</a></li>
+							</ul>
+						</div><!-- /#mediaList08 -->
+						<div class="mediaList" id="mediaList09">
+							<h2>キャリア</h2>
+							<ul>
+							<li><a href="http://www.atmarkit.co.jp/ait/subtop/jibun/">＠IT自分戦略研究所</a></li>
+							<li><a href="http://el.jibun.atmarkit.co.jp/">エンジニアライフ</a></li>
+							<li><a href="http://www.itmedia.co.jp/enterprise/subtop/dilbert/">ディルバート</a></li>
+							</ul>
+						</div><!-- /#mediaList09 -->
+				</div><!-- /.mediaListGroup -->
+			</div>
+		</div><!-- /#globalFooterMediaList -->
+		<div id="globalFooterCorp">
+			<div id="globalFooterCorpIn">
+				<p id="globalFooterCorpLogo"><a href="http://corp.itmedia.co.jp/"><img src="http://image.itmedia.co.jp/images/logo/170_itmedia_bgw.gif"></a>ITmediaはアイティメディア株式会社の登録商標です。</p>
+				<p id="globalFooterCorpLink"><a href="http://corp.itmedia.co.jp/">運営会社</a> | <a href="http://corp.itmedia.co.jp/corp/pr/">プレスリリース</a> | <a href="http://corp.itmedia.co.jp/corp/ir/">IR情報</a> | <a href="http://corp.itmedia.co.jp/corp/recruit/">採用情報</a> | <a href="http://blog.corp.itmedia.co.jp/">お知らせブログ</a> | <a href="http://id.itmedia.jp/info/campaign/all_id.html">アイティメディアID</a> | <a href="http://www.itmedia.co.jp/info/rss/">RSS</a> | <a href="http://www.itmedia.co.jp/info/twitter/">Twitter</a> | <a href="http://www.itmedia.co.jp/info/fb/">Facebook</a> | <a href="http://www.itmedia.co.jp/info/mailmag/">メルマガ</a> | <a href="http://www.itmedia.co.jp/info/virtualevent/">バーチャルイベント</a> | <a href="http://www.itmedia.co.jp/info/ebook/">ITmediaのeBook</a></p>
+			</div>
+		</div><!-- /#globalFooterCorp -->
+	</div>
+</div>
+
+
+</div><!--/masterBodyInner-->
+</div><!--/masterBodyOuter-->
+</div><!--/masterBodyIn-->
+</div><!--/masterBodyOut-->
+</div><!--/masterBody-->
+<script src="/js/masterBodyEnd.js"></script><!-- window.onload -->
+<script src="/js/itmid/smartPhoneHeadLink.js"></script><!-- Smart Phone Large Button-->
+<!--BEACON-->
+
+    
+	    <div id="BEACON"><div id="N">
+			<!-- SiteCatalyst code version: H.2.
+Copyright 1997-2005 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="/include/sc/s_code.js"></script>
+<script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+function $() {
+  var elements = new Array();
+  for (var i = 0; i < arguments.length; i++) {
+    var element = arguments[i];
+    if (typeof element == 'string')
+      element = document.getElementById(element);
+    if (arguments.length == 1)
+      return element;
+    elements.push(element);
+  }
+  return elements;
+}
+
+// 旧 AIT とドメインパスを一致させる
+// meta adpath
+var adpath = getMetaContent({'keywords':'adpath','encode':'no'}).split('/');
+adpath[3] = adpath[3].replace('article','articles');
+if(adpath[4]) adpath[4] = adpath[4].replace(/^win$/,'windows').replace(/^sys$/,'system').replace(/^ux$/,'wcr');
+var dp = [];
+dp.push('root');
+dp.push('atmarkit');
+dp.push('atit');
+for(var i = 4; i < adpath.length; i++){
+	dp.push(adpath[i]);
+}
+dp.push('cont');
+dp.push(adpath[3]);
+
+var path = {};
+path['hier1'] = dp.join(',');
+path['hier2'] = dp.join(',').replace(dp[0] + ',','');
+path['hier3'] = dp.join(',').replace(dp[0] + ',','').replace(dp[1] + ',','');
+
+var channelname = '＠IT';
+
+s.pageName=document.URL.replace( /(\?|#).*$/, '' );
+s.server="www.atmarkit.co.jp"
+s.channel=channelname + ' ' + dp[3]
+s.pageType=""
+s.hier1=path['hier1']
+s.hier2=path['hier2']
+s.hier3=path['hier3']
+s.prop1=document.URL.replace( /(\?|#).*$/, '' );
+s.prop2=path['hier1']
+if ( $('update') == undefined )
+  s.prop3='';
+else
+  s.prop3=$('update').innerHTML.replace(/\d+分\s更新/,"");
+if ( $('byline') == undefined )
+  s.prop4=''
+else
+  s.prop4=$('byline').innerHTML.replace(/<b>|<\/b>/ig,'').replace(/\[|\]/g,'');
+/* s.prop5 : ad link name reserves */
+s.prop5=""
+s.prop6=dp[2]
+s.prop7=dp[2] + ',' + dp[3]
+s.prop8=document.title
+s.prop9=navigator.userAgent
+s.prop10=document.URL.replace( /(\?|#).*$/, '' );
+/* s.prop13 : document.URL reserves */
+/* E-commerce Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events="event3"
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3=""
+s.eVar4=""
+s.eVar5=""
+s.prop20=channelname
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.2. -->
+
+			<script>adRequest({'position':'N'});</script>
+		</div></div>
+    
+
+
+<script type="text/javascript">
+YBTlogRequest();
+function YBTlogRequest(){
+    var y_u = location.href;
+    var y_th = location.hostname.split(".");
+    var y_tl = location.pathname;
+    var y_th0 = y_th[0];
+    var y_p = '';
+    if (y_th0 === 'www') {
+        if (y_tl === '/'){
+            y_p = 'top';
+        }
+        else {
+            var y_tp = y_tl.split("/");
+            y_p = y_tp[1];
+        }
+    }
+    else {
+        y_p = y_th0;
+    }
+    var y_k = "ext_bt",
+        y_s = "itmedia",
+        y_r = Math.random(),
+        y_eu =  encodeURIComponent(y_u),
+        y_h = (location.protocol == "https:") ? "https:" : "http:",
+        y_b = y_h + "//ybx.yahoo.co.jp/clear.gif?bkey=" + y_k + "&site=" + y_s + "&pagetype=" + y_p + "&url=" + y_eu + "&r=" + y_r,
+        y_i = new Image();
+    y_i.src = y_b;
+    y_i.onload = y_i.onerror = function(){YBTLogVoid();};
+}
+function YBTLogVoid(){return;}
+</script>
+
+<!--/BEACON-->
+
+</body></html>
+

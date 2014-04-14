@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1">
+<title>関西大学</title>
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<meta name="keywords" content="関西大学,関西,関大,かんだい,Kansai University,大阪,大学,私立大学,教育,研究">
+<meta name="description" content="関西大学公式Webサイト。大学の概要、学部・大学院・併設校学校、図書館・博物館・研究所、教育研究活動、国際交流・留学、就職・進路など。">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="/common/img/parts/apple-touch-icon.png">
+
+<link rel="apple-touch-icon-precomposed" href="http://www.kansai-u.ac.jp/common/img/parts/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="関西大学最新情報RSS 2.0" href="new.xml">
+<link rel="alternate" type="application/rss+xml" title="関西大学重要情報RSS 2.0" href="important.xml">
+<link rel="alternate" type="application/rss+xml" title="関西大学トピックスRSS 2.0" href="topics.xml">
+
+<link href="common/css/common.css" rel="stylesheet" type="text/css">
+
+<link href="common/css/style_sp_s.css" rel="stylesheet" type="text/css" media="screen and (max-width:480px)">
+<link href="common/css/style_sp_l.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px) and (max-width:640px)">
+<link href="common/css/style_tablet.css" rel="stylesheet" type="text/css" media="screen and (min-width:641px) and (max-width:800px)">
+<link href="common/css/style_pc.css" rel="stylesheet" type="text/css" media="screen and	(min-width:801px)">
+<link href="common/css/style_pc.css" rel="stylesheet" type="text/css" media="print">
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" type="text/css" href="common/css/style_pc.css" />
+<![endif]-->
+
+<script type="text/javascript" src="common/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="common/js/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript" src="common/js/index.js"></script>
+<script type="text/javascript" src="common/js/mainslide.js"></script>
+
+<!--========= 共通要素：ここからコピー =========-->
+<script type="text/javascript" src="http://www.kansai-u.ac.jp/common_header/kouhou/js/swpimg.js"></script>
+<link href="http://www.kansai-u.ac.jp/common_header/kouhou/css/base.css" rel="stylesheet" type="text/css">
+<!--========= 共通要素：ここまでコピー =========-->
+
+<!--========= Googleアナリティクス/ =========-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42567147-1', 'kansai-u.ac.jp');
+  ga('send', 'pageview');
+
+</script>
+<!--========= /Googleアナリティクス =========-->
+
+</head>
+
+<body class="index">
+<div id="container"> 
+  
+  <!--========= 共通ヘッダー：ここからコピー =========-->
+  <div id="kandaicommon_header"> <img src="http://www.kansai-u.ac.jp/common_header/kouhou/img/title.gif" alt="KANSAI UNIVERSITY" width="121" height="25" class="kandaicommon_title">
+    <ul id="kandaicommon_navi">
+      <li class="kandaicommon_navi01"><a href="http://www.kansai-u.ac.jp/index.html" onMouseOver="swpimg('khb00')" onMouseOut="swpimg('khb00')"><img src="http://www.kansai-u.ac.jp/common_header/kouhou/img/head_navi01.gif" alt="関西大学ホーム" width="84" height="11" id="khb00"></a></li>
+      <li class="kandaicommon_navi02"><a href="http://www.kansai-u.ac.jp/global/top/admission.html" onMouseOver="swpimg('khb01')" onMouseOut="swpimg('khb01')"><img src="http://www.kansai-u.ac.jp/common_header/kouhou/img/head_navi02.gif" alt="入学試験情報" width="76" height="11" id="khb01"></a></li>
+      <li class="kandaicommon_navi03"><a href="https://www.kansai-u.ac.jp/global/top/faq.html" onMouseOver="swpimg('khb02')" onMouseOut="swpimg('khb02')"><img src="http://www.kansai-u.ac.jp/common_header/kouhou/img/head_navi03.gif" alt="お問い合わせ一覧" width="94" height="11" id="khb02"></a></li>
+      <li class="kandaicommon_navi04"><a href="http://www.kansai-u.ac.jp/global/guide/access.html" onMouseOver="swpimg('khb03')" onMouseOut="swpimg('khb03')"><img src="http://www.kansai-u.ac.jp/common_header/kouhou/img/head_navi04.gif" alt="交通アクセス" width="72" height="11" id="khb03"></a></li>
+      <li class="kandaicommon_navi05"><a href="http://www.kansai-u.ac.jp/global/guide/map.html" onMouseOver="swpimg('khb04')" onMouseOut="swpimg('khb04')"><img src="http://www.kansai-u.ac.jp/common_header/kouhou/img/head_navi05.gif" alt="キャンパスマップ" width="88" height="11" id="khb04"></a></li>
+    </ul>
+  </div>
+  <!--========= 共通ヘッダー：ここまでコピー =========--> 
+  
+  <!--==== ヘッダ ====-->
+  <div id="header">
+    <header>
+      <div id="headerSet" class="clearfix"> 
+        
+        <!-- ヘッダーナビ -->
+        <div id="headerNavi">
+          <ul class="clearfix">
+            <li class="hnaviMenu resMenu"> <a href="javascript:;">メニュー</a> </li>
+            <li class="hnavi1"> 
+              <!-- 検索窓 -->
+              <div id="formSet"> 
+                <script>
+                  (function() {
+                    var cx = '016955154843705952360:uw1ocbbq_qk';
+                    var gcse = document.createElement('script');
+                    gcse.type = 'text/javascript';
+                    gcse.async = true;
+                    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                        '//www.google.com/cse/cse.js?cx=' + cx;
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(gcse, s);
+                  })();
+                </script>
+                <gcse:searchbox-only></gcse:searchbox-only>
+              </div>
+              <!-- /検索窓 --> 
+            </li>
+            <li class="hnavi2 resMenu">
+              <div id="langSelectSet"> <a href="javascript:;" class="btlang">Language</a> 
+                <!-- 選択言語/ -->
+                <div id="langSelect">
+                  <ul>
+                    <li class="lang1"><a href="/English/index.html">English</a></li>
+                    <li class="lang2"><a href="/gb/index.html">?体中文</a></li>
+                    <li class="lang3"><a href="/b5/index.html">繁體中文</a></li>
+                    <li class="lang4"><a href="/korean/index.html">Korean</a></li>
+                  </ul>
+                </div>
+                <!-- /選択言語 --> 
+              </div>
+            </li>
+            <li class="hnavi3 social1"> <a href="http://www.facebook.com/kansai.u">Facebook</a> </li>
+            <li class="hnavi4 social2"> <a href="https://twitter.com/UnivKansai">Twitter</a> </li>
+            <li class="hnavi5"> <a href="/global/guide/access.html">交通アクセス</a> </li>
+          </ul>
+        </div>
+        <!-- /ヘッダーナビ --> 
+        
+        <!-- ヘッダーナビ（スマホ用） -->
+        <div id="spNavi">
+          <ul class="clearfix">
+            <li class="hnavi1 resMenu"> 
+              <!-- スマホ用：内面 ナビ格納 -->
+              <div id="spGlobal">
+                <div class="wrapper clearfix"> <span class="text">スマートフォンサイト用ナビゲーション</span> </div>
+              </div>
+              <!-- /スマホ用：内面 ナビ格納 --> 
+            </li>
+            <li class="hnavi2 resMenu"> 
+              <!-- 選択言語（スマホ） -->
+              <div id="splangSet">
+                <div id="splangNavi"> <span>Language</span> </div>
+              </div>
+              <!-- /選択言語（スマホ） --> 
+            </li>
+          </ul>
+        </div>
+        <!-- /ヘッダーナビ（スマホ用） --> 
+        
+        <!-- ロゴ -->
+        <div id="logoArea" class="clearfix">
+          <h1><a href="/index.html"><img src="common/img/parts/logo.png" alt="関西大学" width="192"></a></h1>
+        </div>
+        <!-- /ロゴ --> 
+        
+      </div>
+    </header>
+    <!-- 訪問者別ナビ -->
+    <nav>
+      <div id="targetNavi">
+        <ul class="clearfix">
+          <li class="navi1"><a href="/visitor/index.html"><span>関西大学で学びたい方へ</span></a></li>
+          <li class="navi2"><a href="/visitor/company.html"><span>企業・教育関係の方へ</span></a></li>
+          <li class="navi3"><a href="/visitor/guardian.html"><span>保護者の方へ</span></a></li>
+          <li class="navi4"><a href="/visitor/graduate.html"><span>卒業生の方へ</span></a></li>
+          <li class="navi5"><a href="/visitor/first.html"><span>初めてご覧になる方へ</span></a></li>
+          <li class="navi6 headNavi1"><a href="/visitor/student.html"><span>在学生の方へ</span></a></li>
+          <li class="navi7 headNavi2"><a href="/visitor/staff.html"><span>教職員の方へ</span></a></li>
+          <li class="navi8"><span>&nbsp;</span></li>
+          <li class="navi9"><span>&nbsp;</span></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /訪問者別ナビ --> 
+    
+    <!-- メインビジュアル -->
+    <div id="mainVidual">
+      <div class="slideSet"></div>
+      <div class="slideCoverSet"></div>
+      <div class="bannerNaviWrapper"><div class="bannerNavi"></div></div>
+      <div class="navileft"><a href="javascript:;">&lt;</a></div>
+      <div class="naviright"><a href="javascript:;">&gt;</a></div>
+      <div class="cover"></div>
+    </div>
+    <!-- /メインビジュアル -->
+    
+    <!-- 訪問者別ナビ（スマホ用：インデックス） -->
+    <div id="spTarget"> <span class="text">スマホ用訪問者別ナビ</span> </div>
+    <!-- /訪問者別ナビ（スマホ用：インデックス） --> 
+    
+    <!-- グローバルナビ -->
+    <nav>
+      <div id="globalNavi">
+        <ul class="clearfix">
+          <li class="navi1"><a href="/global/guide/index.html"><span>大学紹介</span></a></li>
+          <li class="navi2"><a href="/global/academics/index.html"><span>学部・院・別科・併設校</span></a></li>
+          <li class="navi3"><a href="/global/institution/index.html"><span>図書館・博物館</span></a></li>
+          <li class="navi4"><a href="/global/education/index.html"><span>教育・研究</span></a></li>
+          <li class="navi5"><a href="/global/contribution/index.html"><span>社会貢献</span></a></li>
+          <li class="navi6"><a href="/global/support/index.html"><span>学生生活</span></a></li>
+          <li class="navi7"><a href="/global/international/index.html"><span>国際交流・留学</span></a></li>
+          <li class="navi8"><a href="/global/career/index.html"><span>就職・キャリア</span></a></li>
+          <li class="navi9"><span>&nbsp;</span></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /グローバルナビ --> 
+    
+  </div>
+  <!--==== /ヘッダ ====--> 
+  
+  <!--==== コンテンツ ====-->
+  <div id="contentsWrapper">
+    <div id="contents" class="clearfix"> 
+      
+      <!-- メインコンテンツ -->
+      <div id="columnSet" class="clearfix">
+        <div id="column1">
+          <div class="wrapper"> 
+            
+            <!-- 新着情報 -->
+            <section>
+              <div class="newsSet"> 
+                
+                <!-- タイトル -->
+                <div class="titleSet titleNews clearfix">
+                  <h2>最新情報</h2>
+                  <ul>
+                    <li class="link1"><a href="javascript:;" class="calendarLink">イベントカレンダー</a></li>
+                    <li class="link2"><a href="mt/archives/new/index.html">一覧</a></li>
+                    <li class="link3"><a href="new.xml">RSS</a></li>
+                  </ul>
+                </div>
+                <!-- /タイトル -->
+                
+                <dl class="newsList clearfix">
+				
+                  <dt><span>04月01日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/04/431.html" class="link01">『関西大学通信』第431号を発行</a></p>
+                  </dd>
+                
+                  <dt><span>03月31日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/3_23.html" class="link01">「第3回大阪マラソン共同調査研究」の結果報告を発表</a></p>
+                  </dd>
+                
+                  <dt><span>03月31日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/26_2.html" class="link01">平成26年度入学式およびライブ配信について</a></p>
+                  </dd>
+                
+                  <dt><span>03月31日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/4_19.html" class="link01">世界フィギュアスケート選手権大会で、体育会アイススケート部の町田樹さんが2位</a></p>
+                  </dd>
+                
+                  <dt><span>03月28日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/post_889.html" class="link01">関西大学高等部が「スーパーグローバルハイスクール(SGH)」に指定</a></p>
+                  </dd>
+                
+                  <dt class="news_event"><span>03月28日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/post_874.html" class="link01">堺キャンパス　マインドフルネスヨーガ体験研究室を開催</a></p>
+                  </dd>
+                
+                  <dt><span>03月27日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/26_1.html" class="link01">平成26年度の資金運用方針、運用管理体制について</a></p>
+                  </dd>
+                
+                  <dt><span>03月27日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/2532626.html" class="link01">（財務情報公開）平成25年度第3次補正予算情報および平成26年度予算情報を公開</a></p>
+                  </dd>
+                
+                  <dt><span>03月26日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/post_887.html" class="link01">公式ポータルアプリ「モバイル関大」を公開</a></p>
+                  </dd>
+                
+                  <dt class="news_event"><span>03月26日</span></dt>
+                  <dd>
+                    <p><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/start_for_next1004127331.html" class="link01">年史資料展示室企画展　「Start for Next―関西大学第一高等学校・第一中学校創立100周年記念展」（4月1日～平成27年3月31日）を開催</a></p>
+                  </dd>
+                
+                </dl>
+              </div>
+            </section>
+            <!-- /新着情報 --> 
+            
+            <!-- 重要情報 -->
+            <section>
+              <div class="newsSet"> 
+                
+                <!-- タイトル -->
+                <div class="titleSet titleImportant clearfix">
+                  <h2>重要情報</h2>
+                  <ul>
+                    <li class="link1"><a href="mt/archives/important/index.html">一覧</a></li>
+                    <li class="link2"><a href="important.xml">RSS</a></li>
+                  </ul>
+                </div>
+                <!-- /タイトル -->
+                
+                <dl class="importantList clearfix">
+                
+                  <dt>03月03日</dt>
+                  <dd><a href="http://www.kansai-u.ac.jp/mt/archives/2014/03/post_865.html" class="link01">【在学生の方へ】大雪による被害に遭われたみなさまへのお見舞いと奨学金の募集について</a></dd>
+				
+                  <dt>02月28日</dt>
+                  <dd><a href="http://www.kansai-u.ac.jp/mt/archives/2014/02/post_863.html" class="link01">「災害救助法適用地域」で被災した入学試験受験生に対する経済支援特別措置について</a></dd>
+				
+                  <dt>10月08日</dt>
+                  <dd><a href="http://www.kansai-u.ac.jp/mt/archives/2013/10/post_178.html" class="link01">交通機関のストライキ・台風等に伴う授業の取り扱い</a></dd>
+				
+                  <dt>09月17日</dt>
+                  <dd><a href="http://www.kansai-u.ac.jp/mt/archives/2013/09/18_1.html" class="link01">【在学生の方へ】台風18号による大雨等に係る被害に遭われたみなさまへのお見舞いと奨学金の募集について</a></dd>
+				
+                  <dt>09月06日</dt>
+                  <dd><a href="http://www.kansai-u.ac.jp/mt/archives/2013/09/2582392.html" class="link01">【在学生の方へ】平成25年8月23日からの大雨および9月2日に発生した突風等による被害に遭われたみなさまへのお見舞いと奨学金の募集について</a></dd>
+				
+                </dl>
+              </div>
+            </section>
+            <!-- /重要情報 --> 
+            
+          </div>
+        </div>
+        <div id="column2">
+          <div class="wrapper"> 
+            
+            <!-- トピックス -->
+            <section>
+            
+            
+              <div class="topicsSet color_international">
+            
+                <div class="topicsWrapper"> 
+                  
+                  <!-- タイトル -->
+                  <div class="titleSet clearfix">
+                    <h2>トピックス</h2>
+                    <ul>
+                      <li class="link1"><a href="mt/archives/topics/index.html">一覧</a></li>
+                      <li class="link2"><a href="topics.xml">RSS</a></li>
+                    </ul>
+                  </div>
+                  <!-- /タイトル -->
+                  
+                  <div class="contentsSet">
+                    
+                    <div class="main clearfix">
+                      <div class="photo">
+                      	
+                      		
+                      			
+                      			<img src="http://www.kansai-u.ac.jp/mt/archives/img/assets_c/2014/04/140403_t_ceremony.s-thumb-200xauto-622.jpg" width="200" height="133" alt="" />
+					  		
+					  		
+                      	
+                      </div><!-- /.photo -->
+                      <a href="http://www.kansai-u.ac.jp/mt/archives/2014/04/26_5.html" class="link01">平成26年度春学期関西大学留学生別科入学式を挙行しました。</a>
+                    </div><!-- /.main.clearfix -->
+                    
+
+					
+                    <div class="text">
+                    	<a href="http://www.kansai-u.ac.jp/mt/archives/2014/04/26_4.html" class="link01">
+                		
+						
+						    平成26年度関西大学大学院入…
+						
+                    	</a>
+                    </div><!-- /.text -->
+					
+                    <div class="text">
+                    	<a href="http://www.kansai-u.ac.jp/mt/archives/2014/04/26_3.html" class="link01">
+                		
+						
+						    平成26年度関西大学入学式を…
+						
+                    	</a>
+                    </div><!-- /.text -->
+					
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- /トピックス --> 
+            
+            <!-- 研究者情報 -->
+            <section>
+              <div class="linkSet linkKenkyu"> 
+                <!-- タイトル -->
+                <div class="titleSet">
+                  <h2 class="link1">研究者情報</h2>
+                  <a href="javascript:;">開く</a> </div>
+                <!-- /タイトル -->
+                <ul>
+                  <li><a href="http://gakujo.kansai-u.ac.jp/search/" class="link03">学術情報システム</a></li>
+                  <li><a href="http://kuir.jm.kansai-u.ac.jp/dspace/" class="link03">学術リポジトリ</a></li>
+                </ul>
+              </div>
+            </section>
+            <!-- /研究者情報 --> 
+            
+            <!-- 学生・教職員専用 -->
+            <section>
+              <div class="linkSet linkSenyou"> 
+                <!-- タイトル -->
+                <div class="titleSet">
+                  <h2 class="link2">学生・教職員専用</h2>
+                  <a href="javascript:;">開く</a> </div>
+                <!-- /タイトル -->
+                <ul>
+                  <li><a href="https://portal.kansai-u.ac.jp/Portal/index.jsp" class="link03">インフォメーションシステム</a></li>
+                  <li><a href="https://ceas4.gp.kansai-u.ac.jp/Core1/faces/index2.jsp" class="link03">CEAS</a></li>
+                </ul>
+              </div>
+            </section>
+            <!-- /学生・教職員専用 --> 
+            
+            <!-- バナーセット -->
+            <aside>
+              <div id="subNavi">
+                <div class="bannerSet">
+                  <ul>
+                    <li><a href="global/guide/corporation.html"><img src="img/index/bt_sidebanner1.gif" width="245" height="49" alt="学校法人関西大学" class="imgover"></a></li>
+                    <li><a href="data/index.html"><img src="img/index/bt_sidebanner2.gif" width="245" height="49" alt="データで見る関西大学・留学生別科・併設校" class="imgover"></a></li>
+                    <li><a href="global/contribution/marathon.html"><img src="img/index/bt_sidebanner3.gif" width="245" height="70" alt="大阪マラソン2013応援ページ" class="imgover"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+            <!-- /バナーセット --> 
+            
+          </div>
+        </div>
+      </div>
+      <div id="column3">
+        <div class="wrapper">
+          <div class="featureSet clearfix">
+            <div class="featureBanner">
+              <p><a href="http://www.nyusi.kansai-u.ac.jp/"><img src="img/index/bt_featurebanner.jpg" width="256" height="175" alt="Kan-Dai web 学部入試情報" class="imgover"></a></p>
+            </div>
+            <div class="bannerSet">
+              <ul>
+                <li class="link1"><a href="http://www.kansai-u.ac.jp/Gr_sch/"><img src="img/index/bt_idxbanner1.gif" width="234" height="70" alt="関西大学大学院 大学院入試情報" class="imgover"><span class="idxbanner link03">関西大学大学院 大学院入試情報</span></a></li>
+                <li class="link2"><a href="http://www.kansai-u.ac.jp/gp/"><img src="img/index/bt_idxbanner2.gif" width="234" height="70" alt="関西大学の教育改革 大学教育改革支援事業" class="imgover"><span class="idxbanner link03">関西大学の教育改革 大学教育改革支援事業</span></a></li>
+                <li class="link3"><a href="global/education/research.html"><img src="img/index/bt_idxbanner3.gif" width="234" height="70" alt="研究活動と実績 関西大学の研究活動を紹介" class="imgover"><span class="idxbanner link01">研究活動と実績 関西大学の研究活動を紹介</span></a></li>
+                <li class="link4"><a href="http://www.kansai-u.ac.jp/renkei/"><img src="img/index/bt_idxbanner5.gif" width="234" height="70" alt="社会との連携 産学官連携・知的財産・地域連携" class="imgover"><span class="idxbanner link03">社会との連携 産学官連携・知的財産・地域連携</span></a></li>
+                <li class="link5"><a href="http://www.kansai-u.ac.jp/presiweb/index.html"><img src="img/index/bt_idxbanner6.gif" width="234" height="70" alt="関西大学学長室 学長が関西大学の未来を語る" class="imgover"><span class="idxbanner link03">関西大学学長室 学長が関西大学の未来を語る</span></a></li>
+                <li class="link6"><a href="http://www.kansai-u.ac.jp/ex/index.html"><img src="img/index/bt_idxbanner7.gif" width="234" height="70" alt="関大生の活躍 課外活動情報" class="imgover"><span class="idxbanner link03">関大生の活躍 課外活動情報</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="linkSet clearfix">
+            <div class="featureBanner">
+              <p><a href="http://www.facebook.com/kansai.u"><img src="img/index/bt_featurelink.gif" width="256" height="70" alt="関西大学 Facebookページ" class="imgover"></a></p>
+            </div>
+            <div class="bannerSet">
+              <ul>
+                <li class="link1"><a href="http://www.kansai-u.ac.jp/mt/archives/2013/06/post_474.html"><span class="idxbanner link01 clearfix"><img src="img/index/img_idxlink1.jpg" width="40" height="35" alt=""><span class="text">学校法人関西大学<br>
+長期行動計画</span></span></a></li>
+                <li class="link2"><a href="http://www.kansai-u.ac.jp/bokin/"><span class="idxbanner link03 clearfix"><img src="img/index/img_idxlink2.jpg" width="40" height="35" alt=""><span class="text">関西大学へのご支援について</span></span></a></li>
+                <li class="link3"><a href="http://www.kansai-u.ac.jp/mt/archives/2011/05/itunes_u_1.html"><span class="idxbanner link01 clearfix"><img src="img/index/img_idxlink4.jpg" width="40" height="35" alt=""><span class="text">関西大学iTunesR U<br>
+                動画コンテンツ</span></span></a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- /メインコンテンツ --> 
+      
+    </div>
+    <!-- サイドナビ（サブナビ）格納用 -->
+    <div id="subNaviBottom" class="non"> </div>
+    <!-- /サイドナビ（サブナビ）格納用 --> 
+    <!-- ページの先頭へ -->
+    <div id="pageBottom" class="pageTop"> <a href="#container">このページの先頭へ</a> </div>
+    <!-- /ページの先頭へ --> 
+    
+  </div>
+  <!--==== /コンテンツ ====--> 
+  
+  <!--==== フッター/ ====-->
+  <footer>
+    <div id="footer">
+      <div class="wrapper"> 
+        
+        <!-- フッターナビ/ -->
+        <div id="footerNavi">
+          <ul class="naviSet1 clearfix">
+            <li class="navi1"><a href="/global/footer/privacy.html" class="link01"><span>個人情報の取扱いについて</span></a></li>
+            <li class="navi2"><a href="/global/footer/site_policy.html" class="link01"><span>このサイトについて</span></a></li>
+            <li class="navi3"><a href="/global/footer/rss.html" class="link01"><span>RSSについて</span></a></li>
+            <li class="navi4"><a href="/global/footer/webguidelines.html" class="link01"><span>関西大学Web基準について</span></a></li>
+            <li class="navi5"><a href="/global/guide/sitemap.html" class="link07"><span>サイトマップ</span></a></li>
+            <li class="navi6"><a href="/global/guide/location.html" class="link01"><span>所在地一覧</span></a></li>
+            <li class="navi7"><a href="/global/footer/employment.html" class="link01"><span>採用情報</span></a></li>
+            <li class="navi8"><span>&nbsp;</span></li>
+          </ul>
+        </div>
+        <!-- /フッターナビ -->
+        
+        <div class="addressSet clearfix">
+          <address>
+          関西大学 〒564-8680 大阪府吹田市山手町3丁目3番35号 （06）6368-1121（大代表）
+          </address>
+          <p class="copyright">Copyright（C）2013 Kansai University. All Rights Reserved. </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--==== /フッター ====--> 
+  
+</div>
+
+<!--==== ページの先頭へ（スマホ表示）/ ====-->
+<div class="pageTopFlow"> <a href="#container">このページの先頭へ</a> </div>
+<!--==== /ページの先頭へ（スマホ表示） ====-->
+
+</body>
+</html>

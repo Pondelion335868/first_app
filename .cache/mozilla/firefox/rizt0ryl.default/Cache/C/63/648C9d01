@@ -1,0 +1,127 @@
+
+var bigban;
+var minban;
+var rancnt
+var maxcnt = 10;
+
+rancnt = Math.floor( Math.random() * maxcnt )+ 10; 
+
+switch (rancnt){
+case 0:
+	document.write("<script type=\"text/javascript\">");
+	document.write("google_ad_client = \"pub-1325602573398960\";");
+	document.write("/* 234x60, 作成済み 08/02/06 */");
+	document.write("google_ad_slot = \"6356221622\";");
+	document.write("google_ad_width = 234;");
+	document.write("google_ad_height = 60;");
+	document.write("</script>");
+	minban = "<script type=\"text/javascript\" src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\"></script>";
+	break;
+
+case 1:
+	minban = "<a href=\"http://www.green-japan.com/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/1061-1201577823-3.gif\" width=120 height=60 style=\'border:none;\'  alt=\"求人情報なら\"></a><img src=\"http://track.affiliate-b.com/imp/31061b/927071b/t15032z\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 2:
+	minban = "<a href=\"http://www.pharmacistjobsearch.com/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/984-1198556690-3.gif\" width=120 height=60 style=\'border:none;\'  alt=\"薬剤師 転職\"></a><img src=\"http://track.affiliate-b.com/imp/K984D/927071b/O13579P\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 3:
+	minban = "<a href=\"http://bijitomo.com/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/981-1198238754-3.gif\" width=120 height=60 style=\'border:none;\'  alt=\"転職\"></a><img src=\"http://track.affiliate-b.com/imp/P9813/927071b/413473t\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 4:
+	minban = "<a href=\"http://www.wwpjp.com/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/705-1196650201-3.gif\" width=120 height=60 style=\'border:none;\'  alt=\"ベトナム株\"></a><img src=\"http://track.affiliate-b.com/imp/0705o/927071b/B12198j\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 5:
+	minban = "<a href=\"http://www.fx-navi.net/archives/2007/06/parts/05_144214.php\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/736-1191917522-3.gif\" width=120 height=60 style=\'border:none;\'  alt=\"フォーランドオンライン\"></a><img src=\"http://track.affiliate-b.com/imp/8736g/927071b/B9915n\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 6:
+	minban = "<a href=\"http://www.askul.co.jp/f/before/toner/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/852-1197429776-3.gif\" width=120 height=60 style=\'border:none;\'  alt=\"トナー\"></a><img src=\"http://track.affiliate-b.com/imp/S852K/927071b/y12842K\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 7:
+	minban = "<a href=\"http://track.affiliate-b.com/visit.php?a=R757g-010618L&p=927071b\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/757-1193709380-3.gif\" width=120 height=60 style=\'border:none;\' alt=\"ビジネス英語\" ></a><img src=\"http://track.affiliate-b.com/lead/R757g/927071b/010618L\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 8:
+	minban = "<a href=\"http://www.jobdirect.jp/\" onClick=\"return Button2142()\"><img src=\"http://www.affiliate-b.com/upload_image/280-1175650110-3.gif\" width=120 height=60 style=\'border:none;\' alt=\"求人\" ></a><script language=\"JavaScript\">function Button2142(){para=\"?pa=927071b&ad=O280q-Q2142X\";site=\"http://track.affiliate-b.com/reqclick.php\";qu=site+para+\"&url=\"+escape(document.URL); window.open(qu, \'_blank\');return false;}</script><img src=\"http://track.affiliate-b.com/lead/O280q/927071b/Q2142X\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+default:
+	document.write("<script type=\"text/javascript\">");
+	document.write("google_ad_client = \"pub-1325602573398960\";");
+	document.write("/* 234x60, 作成済み 08/02/06 */");
+	document.write("google_ad_slot = \"6356221622\";");
+	document.write("google_ad_width = 234;");
+	document.write("google_ad_height = 60;");
+	document.write("</script>");
+	minban = "<script type=\"text/javascript\" src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\"></script>";
+	break;
+
+}
+
+rancnt = Math.floor( Math.random() * maxcnt )+ 10; 
+
+switch (rancnt){
+case 0:
+	document.write("<script type=\'text/javascript\'>");
+	document.write("google_ad_client = \'pub-1325602573398960\';");
+	document.write("/* 468x60, 作成済み 08/02/06 */");
+	document.write("google_ad_slot = \'1341309302\';");
+	document.write("google_ad_width = 468;");
+	document.write("google_ad_height = 60;");
+	document.write("</script>");
+	bigban = "<script type=\"text/javascript\" src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\"></script>"
+	break;
+
+case 1:
+	bigban = "<a href=\"http://www.green-japan.com/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/1061-1201577726-3.jpg\" width=468 height=60 style=\'border:none;\'  alt=\"求人情報\"></a><img src=\"http://track.affiliate-b.com/imp/31061b/927071b/i15026d\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 2:
+	bigban = "<a href=\"http://www.pharmacistjobsearch.com/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/984-1198556658-3.gif\" width=468 height=60 style=\'border:none;\'  alt=\"薬剤師 転職\"></a><img src=\"http://track.affiliate-b.com/imp/K984D/927071b/t13577b\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 3:
+	bigban = "<a href=\"http://www.fx-navi.net/archives/2007/06/parts/05_144214.php\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/736-1191917477-3.gif\" width=468 height=60 style=\'border:none;\'  alt=\"フォーランドオンライン\"></a><img src=\"http://track.affiliate-b.com/imp/8736g/927071b/V9912Z\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 4:
+	bigban = "<a href=\"http://www.wwpjp.com/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/705-1196650170-3.gif\" width=468 height=60 style=\'border:none;\'  alt=\"ベトナム株\"></a><img src=\"http://track.affiliate-b.com/imp/0705o/927071b/N12196z\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 5:
+	bigban = "<a href=\"http://bijitomo.com/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/981-1198236350-3.jpg\" width=468 height=60 style=\'border:none;\'  alt=\"転職\"></a><img src=\"http://track.affiliate-b.com/imp/P9813/927071b/L13422Y\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 6:
+	bigban = "<a href=\"http://www.jobdirect.jp/\" onClick=\"return Button2153()\"><img src=\"http://www.affiliate-b.com/upload_image/280-1175650947-3.gif\" width=468 height=60 style=\'border:none;\' alt=\"求人\" ></a><script language=\"JavaScript\">function Button2153(){para=\"?pa=927071b&ad=O280q-82153s\";site=\"http://track.affiliate-b.com/reqclick.php\";qu=site+para+\"&url=\"+escape(document.URL); window.open(qu, \'_blank\');return false;}</script><img src=\"http://track.affiliate-b.com/lead/O280q/927071b/82153s\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 7:
+	bigban = "<a href=\"http://track.affiliate-b.com/visit.php?a=R757g-B10616V&p=927071b\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/757-1193709343-3.gif\" width=468 height=60 style=\'border:none;\' alt=\"英会話\" ></a><img src=\"http://track.affiliate-b.com/lead/R757g/927071b/B10616V\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+case 8:
+	bigban = "<a href=\"http://www.askul.co.jp/f/interior/interior_00/\" target=\"_blank\"><img src=\"http://www.affiliate-b.com/upload_image/852-1197429712-3.gif\" width=468 height=60 style=\'border:none;\'  alt=\"オフィス　家具\"></a><img src=\"http://track.affiliate-b.com/imp/S852K/927071b/612839M\" width=1 height=1 style=\'border:none;\' >";
+	break;
+
+default:
+	document.write("<script type=\'text/javascript\'>");
+	document.write("google_ad_client = \'pub-1325602573398960\';");
+	document.write("/* 468x60, 作成済み 08/02/06 */");
+	document.write("google_ad_slot = \'1341309302\';");
+	document.write("google_ad_width = 468;");
+	document.write("google_ad_height = 60;");
+	document.write("</script>");
+	bigban = "<script type=\"text/javascript\" src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\"></script>"
+	break;
+}
+
+
+//document.write(minban);
+document.write("&nbsp;&nbsp;");
+document.write(bigban);

@@ -1,0 +1,1897 @@
+@charset "euc-jp";
+
+/*-------------------------------------------------------
+ file name:yftnCmn.css
+ auth level: 1
+ last updated:
+ ------------------------------------------------------*/
+
+/*************************************
+  TITLE
+  タイトル
+*************************************/
+
+/* yftn12a-tt02
+--------------------------------------------*/
+.yftn12a-tt02 img{vertical-align:bottom;}
+.yftn12a-tt02 h2{
+float:left;
+padding:10px 10px 0;
+}
+.yftn12a-tt02 div{
+float:left;
+position:relative;
+margin-top:-16px;
+}
+.yftn12a-tt02 ul{
+width:240px;
+height:39px;
+padding:30px 0 0 8px;
+}
+.yftn12a-tt02 ul:after{content:".";clear:both;display:block;height:0;font-size:0;visibility:hidden;}/* Clearfix */
+*html .yftn12a-tt02 ul{display:inline-block;}/* for IE6 */
+*:first-child+html .yftn12a-tt02 ul{display:inline-block;}/* for IE7 */
+
+.yftn12a-bg01 .bg-a .yftn12a-tt02 ul{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt02_bg01a.gif) no-repeat 0 0;}/* Green */
+.yftn12a-bg01 .bg-b .yftn12a-tt02 ul{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt02_bg01b.gif) no-repeat 0 0;}/* Pink */
+.yftn12a-bg01 .bg-c .yftn12a-tt02 ul{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt02_bg01c.gif) no-repeat 0 0;}/* Yellow */
+.yftn12a-bg01 .bg-d .yftn12a-tt02 ul{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt02_bg01d.gif) no-repeat 0 0;}/* Blue */
+
+.yftn12a-tt02 li{
+float:left;
+display:inline;
+margin-left:8px;
+}
+.yftn12a-tt02 p{
+position:absolute;
+left:-16px;
+top:-4px;
+width:62px;
+height:37px;
+padding-top:7px;
+text-align:center;
+font-weight:bold;
+font-size:14px;
+}
+.yftn12a-bg01 .bg-a .yftn12a-tt02 p{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt02_bg02a.gif) no-repeat 0 0;}/* Green */
+.yftn12a-bg01 .bg-b .yftn12a-tt02 p{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt02_bg02b.gif) no-repeat 0 0;}/* Pink */
+
+
+/* yftn12a-tt03
+--------------------------------------------*/
+.yftn12a-tt03 h2{
+min-height:40px;
+position:relative;
+}
+*html .yftn12a-tt03 h2{height:40px;}
+
+.yftn12a-tt03 img{
+position:absolute;
+left:0;
+bottom:0;
+}
+
+/* Purple */
+.yftn12a-tt03 .st01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt03_bg01a.gif) repeat-x 0 100%;}
+.yftn12a-tt03 .st01 h2{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt03_bg02a.gif) no-repeat 100% 100%;}
+
+
+/* yftn12a-tt04
+--------------------------------------------*/
+.yftn12a-tt04{
+background:#fff;
+}
+
+.yftn12a-tt04 div.t01{
+position:relative;
+padding-top:30px;
+}
+
+.yftn12a-tt04 div.t01 h3{
+position:absolute;
+top:-22px;
+}
+
+.yftn12a-tt04 div.t02{
+position:relative;
+padding-top:30px;
+}
+
+.yftn12a-tt04 div.t02 h3{
+position:absolute;
+top:-17px;
+}
+
+.yftn12a-tt04 div.t03{
+position:relative;
+padding-top:30px;
+}
+
+.yftn12a-tt04 div.t03 h3{
+position:absolute;
+top:-13px;
+}
+
+.yftn12a-tt04 div.t04{
+position:relative;
+padding-top:30px;
+}
+
+.yftn12a-tt04 div.t04 h3{
+position:absolute;
+top:-18px;
+}
+
+.yftn12a-tt04 div.content01{
+border-left:10px solid #7e50bc;
+border-right:10px solid #7e50bc;
+border-bottom:22px solid #7e50bc;
+}
+
+.yftn12a-tt04 div.content02{
+border-left:10px solid #886ab1;
+border-right:10px solid #886ab1;
+border-bottom:22px solid #886ab1;
+}
+
+.yftn12a-tt04 div.content03{
+border-left:10px solid #ae9cc5;
+border-right:10px solid #ae9cc5;
+border-bottom:10px solid #ae9cc5;
+}
+
+.yftn12a-tt04 div.content04{
+border-left:10px solid #b9abce;
+border-right:10px solid #b9abce;
+border-bottom:22px solid #b9abce;
+}
+
+.yftn12a-tt04 .bdr-lst{
+border-bottom-width:10px !important;
+}
+
+
+/* yftn12a-tt08
+--------------------------------------------*/
+.yftn12a-tt08 h3.st01{
+width:206px;
+float:left;
+}
+
+.yftn12a-tt08 h3.st02{
+width:417px;
+float:left;
+}
+
+.yftn12a-tt08 p.st01{
+margin-left:216px;
+}
+
+.yftn12a-tt08 p.st02{
+margin-left:427px;
+padding:8px 0 10px 20px;
+background:url(http://i.yimg.jp/images/sicons/premium16.gif) no-repeat 0 50%;
+}
+
+.yftn12a-tt08 p{
+font-size:93%;
+padding-top:5px;
+}
+
+.yftn12a-tt08 p span{
+font-size:100%;
+font-size:93%;
+}
+
+
+/* yftn12a-tt09
+--------------------------------------------*/
+.yftn12a-tt09{
+position:relative;
+}
+
+.yftn12a-tt09 h2{
+float:left;
+}
+
+.yftn12a-tt09 ul{
+width:277px;
+height:61px;
+position:absolute;
+top:-28px;
+right:0;
+}
+
+.yftn12a-tt09 ul li{
+width:82px;
+height:28px;
+display:block;
+float:left;
+font-weight:bold;
+text-align:center;
+padding:33px 10px 0 0;
+font-size:93%;
+}
+
+.yftn12a-tt09 ul li.st01{
+width:83px;
+height:28px;
+padding-top:33px;
+}
+
+.yftn12a-tt09 ul li a{
+font-weight:normal;
+}
+
+.yftn12a-tt09 ul.type01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt09_type01.gif) 0 0;}
+.yftn12a-tt09 ul.type02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt09_type02.gif) 0 0;}
+.yftn12a-tt09 ul.type03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt09_type03.gif) 0 0;}
+
+
+/*************************************
+  BACKGROUND
+  背景
+*************************************/
+
+/* yftn12a-bg01
+--------------------------------------------*/
+/* Green */
+.yftn12a-bg01 .bg-a{background:#d7f3c0 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg01a.gif) no-repeat 0 0;}
+.yftn12a-bg01 .bg-a .bg01-01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg02a.gif) no-repeat 100% 0;}
+.yftn12a-bg01 .bg-a .bg01-02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg03a.gif) no-repeat 0 100%;}
+.yftn12a-bg01 .bg-a .bg01-03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg04a.gif) no-repeat 100% 100%;}
+/* Pink */
+.yftn12a-bg01 .bg-b{background:#ffe0d8 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg01b.gif) no-repeat 0 0;}
+.yftn12a-bg01 .bg-b .bg01-01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg02b.gif) no-repeat 100% 0;}
+.yftn12a-bg01 .bg-b .bg01-02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg03b.gif) no-repeat 0 100%;}
+.yftn12a-bg01 .bg-b .bg01-03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg04b.gif) no-repeat 100% 100%;}
+/* Yellow */
+.yftn12a-bg01 .bg-c{background:#fffcb5 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg01c.gif) no-repeat 0 0;}
+.yftn12a-bg01 .bg-c .bg01-01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg02c.gif) no-repeat 100% 0;}
+.yftn12a-bg01 .bg-c .bg01-02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg03c.gif) no-repeat 0 100%;}
+.yftn12a-bg01 .bg-c .bg01-03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg04c.gif) no-repeat 100% 100%;}
+/* Blue */
+.yftn12a-bg01 .bg-d{background:#c9e9fb url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg01d.gif) no-repeat 0 0;}
+.yftn12a-bg01 .bg-d .bg01-01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg02d.gif) no-repeat 100% 0;}
+.yftn12a-bg01 .bg-d .bg01-02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg03d.gif) no-repeat 0 100%;}
+.yftn12a-bg01 .bg-d .bg01-03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg01_bg04d.gif) no-repeat 100% 100%;}
+
+
+/* yftn12a-bg04
+--------------------------------------------*/
+/* Pink */
+.yftn12a-bg04 div.a-01{
+background-color:#ffc4ca;
+}
+
+.yftn12a-bg04 div.a-01 div.a-02{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_ul_p.gif) no-repeat 0 0;
+}
+
+.yftn12a-bg04 div.a-01 div.a-02 div.a-03{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_ur_p.gif) no-repeat 100% 0;
+}
+
+.yftn12a-bg04 div.a-01 div.a-02 div.a-03 div.a-04{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_dr_p.gif) no-repeat 100% 100%;
+}
+
+.yftn12a-bg04 div.a-01 div.a-02 div.a-03 div.a-04 div.a-05{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_dl_p.gif) no-repeat 0 100%;
+width:100%;
+min-height:46px;
+padding:10px 0;
+}
+*html .yftn12a-bg04 div.a-01 div.a-02 div.a-03 div.a-04 div.a-05{height:46px;}
+
+/* Yellow */
+.yftn12a-bg04 div.b-01{
+background-color:#ffdd69;
+}
+
+.yftn12a-bg04 div.b-01 div.b-02{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_ul_y.gif) no-repeat 0 0;
+}
+
+.yftn12a-bg04 div.b-01 div.b-02 div.b-03{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_ur_y.gif) no-repeat 100% 0;
+}
+
+.yftn12a-bg04 div.b-01 div.b-02 div.b-03 div.b-04{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_dr_y.gif) no-repeat 100% 100%;
+}
+
+.yftn12a-bg04 div.b-01 div.b-02 div.b-03 div.b-04 div.b-05{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_dl_y.gif) no-repeat 0 100%;
+width:100%;
+min-height:46px;
+padding:10px 0;
+}
+*html .yftn12a-bg04 div.b-01 div.b-02 div.b-03 div.b-04 div.b-05{height:46px;}
+
+/* Blue */
+.yftn12a-bg04 div.c-01{
+background-color:#9aceeb;
+}
+
+.yftn12a-bg04 div.c-01 div.c-02{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_ul_b.gif) no-repeat 0 0;
+}
+
+.yftn12a-bg04 div.c-01 div.c-02 div.c-03{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_ur_b.gif) no-repeat 100% 0;
+}
+
+.yftn12a-bg04 div.c-01 div.c-02 div.c-03 div.c-04{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_dr_b.gif) no-repeat 100% 100%;
+}
+
+.yftn12a-bg04 div.c-01 div.c-02 div.c-03 div.c-04 div.c-05{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_dl_b.gif) no-repeat 0 100%;
+width:100%;
+min-height:46px;
+padding:10px 0;
+}
+*html .yftn12c-bg04 div.c-01 div.c-02 div.c-03 div.c-04 div.c-05{height:46px;}
+
+/* Pink（背景：白） */
+.yftn12a-bg04 div.d-01{
+background-color:#ffc4ca;
+}
+
+.yftn12a-bg04 div.d-01 div.d-02{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_ul_pw.gif) no-repeat 0 0;
+}
+
+.yftn12a-bg04 div.d-01 div.d-02 div.d-03{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_ur_pw.gif) no-repeat 100% 0;
+}
+
+.yftn12a-bg04 div.d-01 div.d-02 div.d-03 div.d-04{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_dr_pw.gif) no-repeat 100% 100%;
+}
+
+.yftn12a-bg04 div.d-01 div.d-02 div.d-03 div.d-04 div.d-05{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_bg04_dl_pw.gif) no-repeat 0 100%;
+width:100%;
+min-height:46px;
+padding:10px 0;
+}
+*html .yftn12a-bg04 div.d-01 div.d-02 div.d-03 div.d-04 div.d-05{height:46px;}
+
+
+/*************************************
+  MODULE
+  モジュール
+*************************************/
+
+
+
+
+/* yftn12a-md21
+--------------------------------------------*/
+.yftn12a-md21 dl{
+width:100%;
+}
+
+.yftn12a-md21 dt{
+padding:4px 20px 3px;
+font-weight:bold;
+}
+
+.yftn12a-md21 dd table{
+width:100%;
+}
+
+.yftn12a-md21 dd table td{
+width:50%;
+padding:2px 20px;
+vertical-align: top;
+}
+
+.yftn12a-md21 li{
+margin-left:10px;
+}
+
+
+/* yftn12a-md22
+--------------------------------------------*/
+.yftn12a-md22 table{
+width:100%;
+}
+
+.yftn12a-md22 table td{
+width:49%;
+padding:15px;
+vertical-align:top;
+}
+
+.yftn12a-md22 {position:relative;padding:10px;}
+
+.yftn12a-md22 div{position:relative;}
+
+
+.yftn12a-md22 td.renai1 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_1k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.renai1 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_1p.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.renai1 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_1k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.renai1 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_1p.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.renai1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_1k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.renai1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_1p.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.renai1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_1k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.renai1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_1p.gif) no-repeat 0 0;}
+.yftn12a-md22 td.renai1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.renai2 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_2k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.renai2 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_2p.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.renai2 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#eeeeee  url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_2k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.renai2 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_2p.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.renai2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_2k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.renai2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_2p.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.renai2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_2k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.renai2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_2p.gif) no-repeat 0 0;}
+.yftn12a-md22 td.renai2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.renai3 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_3k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.renai3 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_3p.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.renai3 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_3k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.renai3 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_3p.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.renai3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_3k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.renai3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_3p.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.renai3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_3k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.renai3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_3p.gif) no-repeat 0 0;}
+.yftn12a-md22 td.renai3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.renai4 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_4k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.renai4 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_4p.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.renai4 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_4k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.renai4 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_4p.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.renai4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_4k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.renai4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_4p.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.renai4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_4k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.renai4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_4p.gif) no-repeat 0 0;}
+.yftn12a-md22 td.renai4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.kinun1 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_1k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.kinun1 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_1y.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.kinun1 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_1k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.kinun1 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_1y.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.kinun1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_1k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.kinun1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_1y.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.kinun1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_1k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.kinun1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_1y.gif) no-repeat 0 0;}
+.yftn12a-md22 td.kinun1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.kinun2 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_2k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.kinun2 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_2y.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.kinun2 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#eeeeee  url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_2k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.kinun2 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_2y.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.kinun2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_2k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.kinun2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_2y.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.kinun2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_2k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.kinun2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_2y.gif) no-repeat 0 0;}
+.yftn12a-md22 td.kinun2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.kinun3 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_3k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.kinun3 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_3y.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.kinun3 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_3k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.kinun3 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_3y.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.kinun3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_3k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.kinun3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_3y.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.kinun3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_3k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.kinun3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_3y.gif) no-repeat 0 0;}
+.yftn12a-md22 td.kinun3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.kinun4 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_4k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.kinun4 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_4y.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.kinun4 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_4k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.kinun4 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_4y.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.kinun4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_4k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.kinun4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_4y.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.kinun4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_4k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.kinun4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_4y.gif) no-repeat 0 0;}
+.yftn12a-md22 td.kinun4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.sigoto1 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_1k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.sigoto1 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_1b.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.sigoto1 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_1k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.sigoto1 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_1b.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.sigoto1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_1k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.sigoto1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_1b.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.sigoto1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_1k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.sigoto1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_1b.gif) no-repeat 0 0;}
+.yftn12a-md22 td.sigoto1 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.sigoto2 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_2k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.sigoto2 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_2b.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.sigoto2 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#eeeeee  url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_2k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.sigoto2 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_2b.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.sigoto2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_2k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.sigoto2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_2b.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.sigoto2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_2k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.sigoto2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_2b.gif) no-repeat 0 0;}
+.yftn12a-md22 td.sigoto2 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.sigoto3 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_3k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.sigoto3 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_3b.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.sigoto3 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_3k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.sigoto3 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_3b.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.sigoto3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_3k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.sigoto3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_3b.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.sigoto3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_3k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.sigoto3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_3b.gif) no-repeat 0 0;}
+.yftn12a-md22 td.sigoto3 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 td.sigoto4 div.bg01{top:-13px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u2_4k.gif) repeat-x 0 0;}
+.yftn12a-md22 td.sigoto4 div.bg01 div.bg02{top:0px;left:6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u3_4b.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.sigoto4 div.bg01 div.bg02 div.bg03{top:20px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_right_4k.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.sigoto4 div.bg01 div.bg02 div.bg03 div.bg04{top:8px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d3_4b.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.sigoto4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d2_4k.gif) repeat-x 0 100%;}
+.yftn12a-md22 td.sigoto4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-6px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_d1_4b.gif) no-repeat 0 100%;}
+.yftn12a-md22 td.sigoto4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{top:-8px;left:0px;background:#eeeeee url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_left_4k.gif) repeat-y 0 0;}
+.yftn12a-md22 td.sigoto4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-20px;left:0px;background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_u1_4b.gif) no-repeat 0 0;}
+.yftn12a-md22 td.sigoto4 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0px;left:0px;}
+
+.yftn12a-md22 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09 div.bg10{top:18px;min-height:46px;}
+*html .yftn12a-md22 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09 div.bg10{height:46px;}
+
+
+.yftn12a-md22 p img{
+vertical-align:middle;
+margin-right:5px;
+}
+
+.yftn12a-md22 dl{
+color:#333;
+font-size:93%;
+}
+
+.yftn12a-md22 dd.st03 a:link,
+.yftn12a-md22 dd.st03 a:visited{
+color:#f36;
+}
+
+
+.yftn12a-md22 dl.st01{
+padding:10px 0 10px 76px;
+}
+
+.yftn12a-md22 dl.st01 dt{
+font-weight:bold;
+}
+
+
+.yftn12a-md22 dl.st01 dt span {
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0;
+}
+
+/*for IE6 */
+* html .yftn12a-md22 dl.st01 dt span {
+	display: inline;
+	zoom: 1;
+}
+
+/*for IE7 */
+*:first-child+html .yftn12a-md22 dl.st01 dt span {
+	display: inline;
+	zoom: 1;
+}
+
+
+.yftn12a-md22 dl.st01 dt table{
+padding:0;
+width:auto;
+height:auto;
+}
+
+.yftn12a-md22 dl.st01 dt table td{
+padding:0;
+width:auto;
+height:auto;
+}
+
+.yftn12a-md22 dl.st01 dd{
+padding-left:2em;
+font-size:110%;
+}
+
+.yftn12a-md22 dl.st01 dd.st03{ 
+font-weight:bold;
+}
+
+.yftn12a-md22 dl.st01 img{
+vertical-align:middle;
+padding:0 5px;
+}
+
+.yftn12a-md22 p.photo,
+.yftn12a-md22 div.photo{
+width:32px;
+padding:1px;
+background:#fff;
+border:1px solid #c6c6c6;
+float:left;
+}
+
+.yftn12a-md22 dd{
+margin:0 0 0 15px;
+}
+
+*html .yftn12a-md22 dd{margin:0 0 0 15px;}
+
+.yftn12a-md22 div.photo table{
+float:left;
+}
+
+.yftn12a-md22 div.photo table td{
+padding:0;
+vertical-align:middle;
+}
+
+.yftn12a-md22 p.photo img,
+.yftn12a-md22 div.photo img{
+margin-right:0;
+}
+
+.yftn12a-md22 dl.st02 dt{
+padding-left:17px;
+}
+
+.yftn12a-md22 dl.st02 dd.st04,
+.yftn12a-md22 dl.st02 dd.st05{
+margin:0 0 0 56px;
+padding-bottom:3px;
+}
+
+.yftn12a-md22 dl.st02 dd.st05{
+padding-left:20px;
+text-indent:-20px;
+}
+
+.yftn12a-md22 td.serifu1 dl dd div.bg11{background:#ffcabb url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_ly.gif) repeat-y 0 0;}
+.yftn12a-md22 td.serifu1 dl dd div.bg11 div.bg12{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_ry.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.serifu1 dl dd div.bg11 div.bg12 div.bg13{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_lt.gif) no-repeat 0 0;}
+.yftn12a-md22 td.serifu1 dl dd div.bg11 div.bg12 div.bg13 div.bg14{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_rt.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.serifu1 dl dd div.bg11 div.bg12 div.bg13 div.bg14 div.bg15{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_rb.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.serifu1 dl dd div.bg11 div.bg12 div.bg13 div.bg14 div.bg15 div.bg16{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_lb.gif) no-repeat 0 100%;padding:7px 10px 7px 16px;}
+
+.yftn12a-md22 td.serifu2 dl dd div.bg11{background:#d2d2d2 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_ly2.gif) repeat-y 0 0;}
+.yftn12a-md22 td.serifu2 dl dd div.bg11 div.bg12{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_ry2.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.serifu2 dl dd div.bg11 div.bg12 div.bg13{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_lt2.gif) no-repeat 0 0;}
+.yftn12a-md22 td.serifu2 dl dd div.bg11 div.bg12 div.bg13 div.bg14{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_rt2.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.serifu2 dl dd div.bg11 div.bg12 div.bg13 div.bg14 div.bg15{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_rb2.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.serifu2 dl dd div.bg11 div.bg12 div.bg13 div.bg14 div.bg15 div.bg16{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_lb2.gif) no-repeat 0 100%;padding:7px 10px 7px 16px;}
+
+.yftn12a-md22 td.serifu3 dl dd div.bg11{background:#fec01c url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_ly3.gif) repeat-y 0 0;}
+.yftn12a-md22 td.serifu3 dl dd div.bg11 div.bg12{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_ry3.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.serifu3 dl dd div.bg11 div.bg12 div.bg13{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_lt3.gif) no-repeat 0 0;}
+.yftn12a-md22 td.serifu3 dl dd div.bg11 div.bg12 div.bg13 div.bg14{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_rt3.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.serifu3 dl dd div.bg11 div.bg12 div.bg13 div.bg14 div.bg15{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_rb3.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.serifu3 dl dd div.bg11 div.bg12 div.bg13 div.bg14 div.bg15 div.bg16{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_lb3.gif) no-repeat 0 100%;padding:7px 10px 7px 16px;}
+
+.yftn12a-md22 td.serifu4 dl dd div.bg11{background:#d2d2d2 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_ly2.gif) repeat-y 0 0;}
+.yftn12a-md22 td.serifu4 dl dd div.bg11 div.bg12{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_ry2.gif) repeat-y 100% 0;}
+.yftn12a-md22 td.serifu4 dl dd div.bg11 div.bg12 div.bg13{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_lt2.gif) no-repeat 0 0;}
+.yftn12a-md22 td.serifu4 dl dd div.bg11 div.bg12 div.bg13 div.bg14{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_rt2.gif) no-repeat 100% 0;}
+.yftn12a-md22 td.serifu4 dl dd div.bg11 div.bg12 div.bg13 div.bg14 div.bg15{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_rb2.gif) no-repeat 100% 100%;}
+.yftn12a-md22 td.serifu4 dl dd div.bg11 div.bg12 div.bg13 div.bg14 div.bg15 div.bg16{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md22_serif_bg_lb2.gif) no-repeat 0 100%;padding:7px 10px 7px 16px;}
+
+/* yftn12a-md23
+--------------------------------------------*/
+.yftn12a-md23 h3{
+padding:10px 0pt 0pt 10px;
+}
+
+.yftn12a-md23 table.st04{
+font-size:93%;
+background:#ffe0d8;
+}
+
+.yftn12a-md23 td.st01 div.bg01{background:#ffc3b4;margin:10px;}
+.yftn12a-md23 td.st01 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md23_lu.gif) no-repeat 0px 0px;}
+.yftn12a-md23 td.st01 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md23_ru.gif) no-repeat 100% 0;}
+.yftn12a-md23 td.st01 div.bg01 div.bg02 div.bg03 div.bg04{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md23_rb.gif) no-repeat 100% 100%;}
+.yftn12a-md23 td.st01 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md23_lb.gif) no-repeat 0 100%;}
+
+.yftn12a-md23 td.st02 div.bg01{background:#d5d5d5 0 0;margin:10px;}
+.yftn12a-md23 td.st02 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md23_lu_02.gif) no-repeat 0 0px;}
+.yftn12a-md23 td.st02 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md23_ru_02.gif) no-repeat 100% 0;}
+.yftn12a-md23 td.st02 div.bg01 div.bg02 div.bg03 div.bg04{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md23_rb_02.gif) no-repeat 100% 100%;}
+.yftn12a-md23 td.st02 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md23_lb_02.gif) no-repeat 0 100%;}
+
+.yftn12a-md23 table table td{
+padding-left:10px;
+}
+
+.yftn12a-md23 table td table td.st05{
+padding-right:10px;
+}
+
+.yftn12a-md23 table td.st01 img,
+.yftn12a-md23 table td.st02 img{
+padding:10px 0 10px 0;
+}
+
+.yftn12a-md23 table td.st03 img{
+vertical-align:middle;
+}
+
+
+.yftn12a-md23 ul.st04{
+}
+
+/* yftn12a-md24
+--------------------------------------------*/
+.yftn12a-md24 div.bg01{background:#eee0ff;margin:3px;}
+.yftn12a-md24 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md24_lu.gif) no-repeat 0px 0px;}
+.yftn12a-md24 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md24_ru.gif) no-repeat 100% 0;}
+.yftn12a-md24 div.bg01 div.bg02 div.bg03 div.bg04{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md24_rd.gif) no-repeat 100% 100%;}
+.yftn12a-md24 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md24_ld.gif) no-repeat 0 100%;}
+
+.yftn12a-md24 table{
+width:100%;
+}
+
+.yftn12a-md24 table tr{
+margin:-8px;
+}
+
+.yftn12a-md24 table td{
+width:50%;
+font-weight:bold;
+font-size:93%;
+padding-right:5px;
+}
+*html .yftn12a-md24 table td{padding-right:0px;}
+
+
+.yftn12a-md24 table td p{
+text-indent:-135px;
+padding:5px 5px 5px 135px;
+line-height:80%;
+}
+
+.yftn12a-md24 table td img.st01{
+padding:0 6px 0 4px;
+vertical-align:middle;
+}
+
+
+.yftn12a-md24 table td img.col01{
+border:#ffffff 2px solid;
+margin-left:10px;
+vertical-align:middle;
+}
+
+.yftn12a-md24 table td img.col02{
+border:#999999 2px solid;
+margin-left:10px;
+vertical-align:middle;
+}
+
+
+.yftn12a-md24 table div{
+float:left;
+width:100%;
+}
+*html .yftn12a-md24 table div{float:none;width:auto;}
+
+/* yftn12a-md25
+--------------------------------------------*/
+.yftn12a-md25 dl{
+font-size:93%;
+}
+
+.yftn12a-md25 dl dt{
+font-weight:bold;
+}
+
+.yftn12a-md25 dl dd a{
+white-space:nowrap;
+}
+
+.yftn12a-md25 dl dd b{
+white-space:nowrap;
+font-weight:bold;
+}
+
+/* yftn12a-md26
+--------------------------------------------*/
+.yftn12a-md26{
+background:#eee9f3;
+padding:10px;
+}
+
+.yftn12a-md26 dl{
+margin-top:12px;
+}
+
+.yftn12a-md26 dl.st01{
+margin-top:0;
+}
+
+.yftn12a-md26 dl dd{
+margin-left:7px;
+}
+
+.yftn12a-md26 dl dd textarea{
+width:245px;
+height:100px;
+overflow:auto;
+}
+
+.yftn12a-md26 p.copy{
+width:56px;
+margin:8px auto 0;
+}
+
+.yftn12a-md26 .link{
+padding-top:10px;
+float:right;
+}
+
+.yftn12a-md26 #blogBtn,
+.yftn12a-md26 #htmlBtn{
+font-weight:bold;
+width:240px;
+margin:0 10px;
+}
+
+.yftn12a-md26 p.copy img {
+cursor:pointer;
+}
+
+/* yftn12a-md27
+--------------------------------------------*/
+.yftn12a-md27{
+background:#eee9f3;
+text-align:center;
+padding:10px;
+}
+
+.yftn12a-md27 dl dt{
+text-align:left;
+padding-bottom:15px;
+}
+
+.yftn12a-md27 dl dd{
+display:inline;
+}
+
+.yftn12a-md27 dl dd.st01{
+margin-left:20px;
+}
+
+.yftn12a-md27 dl dd img{
+border:1px solid #c3c3c3;
+}
+
+.yftn12a-md27 p{
+text-align:right;
+padding-top:10px;
+}
+
+
+/* yftn12a-md28
+--------------------------------------------*/
+.yftn12a-md28 dl{
+font-size:93%;
+}
+
+.yftn12a-md28 dd.st01{
+border:#ccc 1px solid;
+width:52px;
+height:52px;
+padding:1px;
+background-color:#ffffff;
+text-align:center;
+float:left;
+}
+*html .yftn12a-md28 dd.st01 img{display:block;}
+
+.yftn12a-md28 dd.nob{
+border:none;
+width:auto;
+height:auto;
+padding:0px;
+background-color:#ffffff;
+text-align:center;
+float:left;
+}
+*html .yftn12a-md28 dd.st02 img{display:block;}
+
+.yftn12a-md28 dt,
+.yftn12a-md28 dd.st00,
+.yftn12a-md28 dd.st02,
+.yftn12a-md28 dd.st03{
+margin-left:65px;
+padding:0 5px 3px 0;
+}
+
+.yftn12a-md28 dd.st00 table{
+float:right;
+text-align:right;
+}
+
+.yftn12a-md28 dd.st00 table.st01{
+margin-top:20px;
+}
+
+.yftn12a-md28 dd.st00 table td.st01{
+padding-right:5px;
+}
+
+.yftn12a-md28 dd.st03{
+padding-left:20px;
+text-indent:-20px;
+}
+
+.yftn12a-md28 p.link{
+clear:both;
+text-align:right;
+font-size:87%;
+}
+*html .yftn12a-md28 p.link{font-size:71%;}
+*+html .yftn12a-md28 p.link{font-size:71%;}
+
+
+/* yftn12a-md30
+--------------------------------------------*/
+.yftn12a-md30{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md30_x.gif) no-repeat 50% 27px;
+}
+
+.yftn12a-md30 div.ctnr{
+width:50%;
+}
+*html .yftn12a-md30 div.ctnr{
+width:49.9%;
+}
+*+html .yftn12a-md30 div.ctnr{
+width:49.9%;
+}
+
+.yftn12a-md30 div.ctnr div{
+padding:0 9px;
+}
+
+.yftn12a-md30 div.ctnr div dl{
+position:relative;
+height:100px;
+}
+
+.yftn12a-md30 div.ctnr div dt{
+position:absolute;
+top:-7px;
+left:-2px;
+}
+
+.yftn12a-md30 div.ctnr div dd{
+width:248px;
+padding:49px 0 25px 0;
+margin:0 auto;
+font-size:84%;
+}
+
+.yftn12a-md30 div.ctnr div dd.seiza01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza01.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza02.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza03.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza04{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza04.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza05{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza05.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza06{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza06.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza07{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza07.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza08{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza08.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza09{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza09.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza10{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza10.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza11{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza11.gif) no-repeat 100% 50%;}
+.yftn12a-md30 div.ctnr div dd.seiza12{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn_md30_seiza12.gif) no-repeat 100% 50%;}
+
+/* my */
+.yftn12a-md30 div.my{
+float:left;
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md30_bg01_01.gif) no-repeat;
+}
+
+.yftn12a-md30 div.my div{
+margin:0 38px 0 0;
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md30_bg01_02.gif) no-repeat 100% 0;
+}
+
+.yftn12a-md30 div.my div dl{
+background:#dfc6ff;
+}
+
+/* your */
+.yftn12a-md30 div.your{
+float:right;
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md30_bg02_02.gif) no-repeat 100% 0;
+}
+
+.yftn12a-md30 div.your div{
+margin:0 0 0 38px;
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md30_bg02_01.gif) no-repeat;
+}
+
+.yftn12a-md30 div.your div dl{
+background:#b69adb;
+}
+
+
+.yftn12a-md30 ul{
+clear:both;
+padding:30px 0 0px 0;
+text-align:center;
+line-height:200%;
+color:#ff0000;
+}
+
+.yftn12a-md30 p{
+clear:both;
+padding:20px 0 0 0;
+text-align:center;
+}
+
+
+/* yftn12a-md31
+--------------------------------------------*/
+.yftn12a-md31 table{
+margin:0 auto;
+}
+
+.yftn12a-md31 table td{
+vertical-align:middle;
+}
+
+.yftn12a-md31 table td.st01{
+text-align:right;
+}
+
+.yftn12a-md31 table td.st02{
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md31_bg_heart.gif) no-repeat 50% 50%;
+text-align:center;
+padding:0 20px;
+}
+
+.yftn12a-md31 table td.st03{
+text-align:left;
+}
+
+.yftn12a-md31 table td.st02 dl{
+color:#333;
+font-weight:bold;
+padding:20px 0;
+}
+
+.yftn12a-md31 table td.st02 dl dt{
+font-size:108%;
+}
+*html .yftn12a-md31 table td.st02 dl dt{font-size:100%;}
+*+html .yftn12a-md31 table td.st02 dl dt{font-size:100%;}
+
+.yftn12a-md31 table td.st02 dl dd{
+font-size:93%;
+}
+
+
+/* yftn12a-md32
+--------------------------------------------*/
+.yftn12a-md32 div.bg01{background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md32_bg_tx.gif) repeat-x 0 0;}
+.yftn12a-md32 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md32_bg_bx.gif) repeat-x 0 100%;}
+.yftn12a-md32 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md32_bg_ly.gif) repeat-y 0 0;}
+.yftn12a-md32 div.bg01 div.bg02 div.bg03 div.bg04{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md32_bg_ry.gif) repeat-y 100% 0;}
+.yftn12a-md32 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md32_bg_lt.gif) no-repeat 0 0;}
+.yftn12a-md32 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md32_bg_rt.gif) no-repeat 100% 0;}
+.yftn12a-md32 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md32_bg_lb.gif) no-repeat 0 100%;}
+.yftn12a-md32 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md32_bg_rb.gif) no-repeat 100% 100%;padding:10px;}
+
+.yftn12a-md32 p{
+color:#333;
+font-weight:bold;
+}
+
+.yftn12a-md32 p.b{
+margin-top:10px;
+}
+
+.yftn12a-md32 p img{
+vertical-align:middle;
+margin-right:5px;
+}
+
+.yftn12a-md32 dl{
+color:#333;
+font-size:93%;
+}
+
+.yftn12a-md32 dl dd.st01{
+padding:5px 0 0 45px;
+}
+
+.yftn12a-md32 dl dd.st02{
+padding:0 0 0 45px;
+}
+
+.yftn12a-md32 table{
+width:100%;
+}
+
+.yftn12a-md32 td{
+width:50%;
+}
+
+.yftn12a-md32 p.photo{
+width:32px;
+padding:1px;
+margin-top:5px;
+background:#fff;
+border:1px solid #c6c6c6;
+float:left;
+}
+
+.yftn12a-md32 p.photo img{
+margin-right:0;
+}
+
+
+/* yftn12a-md33
+--------------------------------------------*/
+.yftn12a-md33 div.bg01{background:#fff4f1 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_bg_tx.gif) repeat-x 0 0;}
+.yftn12a-md33 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_bg_bx.gif) repeat-x 0 100%;}
+.yftn12a-md33 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_bg_ly.gif) repeat-y 0 0;}
+.yftn12a-md33 div.bg01 div.bg02 div.bg03 div.bg04{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_bg_ry.gif) repeat-y 100% 0;}
+.yftn12a-md33 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_bg_lt.gif) no-repeat 0 0;}
+.yftn12a-md33 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_bg_rt.gif) no-repeat 100% 0;}
+.yftn12a-md33 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_bg_lb.gif) no-repeat 0 100%;}
+.yftn12a-md33 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_bg_rb.gif) no-repeat 100% 100%;padding:10px;}
+
+.yftn12a-md33 table{
+width:100%;
+}
+
+.yftn12a-md33 table td{
+width:50%;
+padding-top:12px;
+vertical-align:top;
+}
+
+.yftn12a-md33 p{
+color:#333;
+font-weight:bold;
+}
+
+.yftn12a-md33 p img{
+vertical-align:middle;
+margin-right:5px;
+}
+
+.yftn12a-md33 dl{
+color:#333;
+}
+
+.yftn12a-md33 dl dt{
+margin-left:45px;
+font-size:93%;
+}
+
+.yftn12a-md33 dl dd{
+margin:6px 0 0 45px;
+font-weight:normal;
+font-size:93%;
+padding-right:10px;
+}
+*html .yftn12a-md33 dl dd{margin:6px 0 0 32px;}
+
+
+.yftn12a-md33 dl dd div.bg01{background:#ffcabb url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_ly.gif) repeat-y 0 0;}
+.yftn12a-md33 dl dd div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_ry.gif) repeat-y 100% 0;}
+.yftn12a-md33 dl dd div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_lt.gif) no-repeat 0 0;}
+.yftn12a-md33 dl dd div.bg01 div.bg02 div.bg03 div.bg04{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_rt.gif) no-repeat 100% 0;}
+.yftn12a-md33 dl dd div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_rb.gif) no-repeat 100% 100%;}
+.yftn12a-md33 dl dd div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md33_serif_bg_lb.gif) no-repeat 0 100%;padding:7px 10px 7px 16px;}
+
+.yftn12a-md33 dl dd div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 p{
+font-weight:normal;
+}
+
+.yftn12a-md33 p.photo,
+.yftn12a-md33 div.photo{
+width:32px;
+padding:1px;
+margin:0;
+background:#fff;
+border:1px solid #c6c6c6;
+float:left;
+}
+
+.yftn12a-md33 div.photo table{
+float:left;
+}
+
+.yftn12a-md33 div.photo table td{
+padding:0;
+vertical-align:middle;
+}
+
+.yftn12a-md33 p.photo img,
+.yftn12a-md33 div.photo img{
+margin-right:0;
+}
+
+
+/* yftn12a-md34
+--------------------------------------------*/
+.yftn12a-md34 div.bg01{background:#ffe0d8 url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md34_bg01_lt.gif) no-repeat 0 0;}
+.yftn12a-md34 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md34_bg01_lb.gif) no-repeat 0 100%;}
+.yftn12a-md34 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md34_bg01_rt.gif) no-repeat 100% 0;}
+.yftn12a-md34 div.bg01 div.bg02 div.bg03 div.bg04{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md34_bg01_rb.gif) no-repeat 100% 100%;padding:9px;}
+
+
+.yftn12a-md34 table{
+width:100%;
+}
+
+.yftn12a-md34 table tr{
+background:url(http://i.yimg.jp/images/fortune/images/common/yftn_bdr_01.gif) repeat-x 0 100%;
+}
+
+.yftn12a-md34 table tr.last{
+background:none;
+}
+
+.yftn12a-md34 table td,
+.yftn12a-md34 table th{
+padding:0;
+}
+
+.yftn12a-md34 table th.ranking img{
+padding:7px 0 15px;
+}
+
+.yftn12a-md34 table th.pick-up-top{
+width:213px;
+text-align:center;
+vertical-align:bottom;
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md34_pickup_bg_t.gif) no-repeat 0 100%;
+}
+
+.yftn12a-md34 table th.pick-up-top div{
+background:url(http://i.yimg.jp/images/fortune/images/common/yftn_bdr_01.gif) repeat-x 0 100%;
+height:36px;
+}
+
+.yftn12a-md34 table th.pick-up-top div img{
+padding-top:10px;
+}
+
+.yftn12a-md34 table td.pick-up-bottom{
+padding-bottom:11px;
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md34_pickup_bg_b.gif) no-repeat 100% 0;
+}
+
+.yftn12a-md34 table td.pick-up{
+padding:7px 5px;
+background:#fff0ec url(http://i.yimg.jp/images/fortune/images/common/yftn_bdr_01.gif) repeat-x 0 100%;
+width:203px;
+}
+*html .yftn12a-md34 table td.pick-up{width:203px;}
+
+.yftn12a-md34 table td.pick-up table tr{
+background:none;
+}
+
+.yftn12a-md34 table td.pick-up table td{
+width:50%;
+vertical-align:middle;
+}
+
+.yftn12a-md34 table td.pick-up dl{
+font-size:93%;
+}
+
+.yftn12a-md34 table td.pick-up table dl dd{
+width:32px;
+height:32px;
+padding:1px;
+background:#fff;
+border:1px solid #c6c6c6;
+float:left;
+text-align:center;
+}
+
+.yftn12a-md34 table td.pick-up table dl dt{
+margin-left:38px;
+}
+*html .yftn12a-md34 table td.pick-up table dl dt{float:left;padding-left:2px;margin:0px;}
+
+.yftn12a-md34 table td.rank{
+width:64px;
+padding:15px 0;
+text-align:center;
+vertical-align:middle;
+}
+
+.yftn12a-md34 table td.seiza{
+width:124px;
+vertical-align:middle;
+}
+
+.yftn12a-md34 table td.seiza img{
+vertical-align:middle;
+}
+
+.yftn12a-md34 table td.seiza span{
+margin-left:10px;
+}
+
+.yftn12a-md34 table td.comment{
+font-weight:bold;
+font-size:93%;
+}
+
+.yftn12a-md34 table.st01 tr{
+background:none;
+}
+
+.yftn12a-md34 table.st01 th.ranking,
+.yftn12a-md34 table.st01 td.rank,
+.yftn12a-md34 table.st01 td.seiza,
+.yftn12a-md34 table.st01 td.comment{
+background:url(http://i.yimg.jp/images/fortune/images/common/yftn_bdr_01.gif) repeat-x 0 100%;
+}
+
+.yftn12a-md34 table.st01 th.pick-up-top div{
+background:none;
+}
+
+.yftn12a-md34 table.st01 td.pick-up{
+width:193px;
+padding:10px;
+background:none;
+background-color:#fff0ec;
+vertical-align:top;
+}
+
+.yftn12a-md34 table.st01 td.pick-up p{
+width:32px;
+padding:1px;
+margin-top:20px;
+background:#fff;
+border:1px solid #c6c6c6;
+float:left;
+}
+
+.yftn12a-md34 table.st01 td.pick-up dl{
+font-size:93%;
+margin:20px 0 0 42px;
+}
+
+.yftn12a-md34 table tr.c td.rank,
+.yftn12a-md34 table tr.c td.seiza,
+.yftn12a-md34 table tr.c td.comment{
+background:#ffcabb url(http://i.yimg.jp/images/fortune/images/common/yftn_bdr_01.gif) repeat-x 0 100%;
+}
+
+.yftn12a-md34 table tr.c td.pick-up{
+background:#fff0ec url(http://i.yimg.jp/images/fortune/images/common/yftn_bdr_01.gif) repeat-x 0 100%;
+}
+
+/* yftn12a-md35
+--------------------------------------------*/
+.yftn12a-md35 table{
+width:100%;
+}
+
+.yftn12a-md35 table td{
+padding:10px;
+vertical-align:top;
+}
+
+.yftn12a-md35 table td.top{
+text-align:right;
+padding:0;
+}
+
+.yftn12a-md35 table tr.st01{
+background:#fffbda;
+}
+
+.yftn12a-md35 table tr.st02{
+background:#f2eec7;
+}
+
+.yftn12a-md35 table tr.st01 td.st03{
+background:#fcf7cb;
+}
+
+.yftn12a-md35 table tr.st02 td.st03{
+background:#f4eca6;
+}
+
+.yftn12a-md35 table td.st01{
+width:100px;
+text-align:center;
+}
+
+.yftn12a-md35 table td.st02{
+font-weight:bold;
+font-size:93%;
+}
+
+/* ランキング背景
+--------------------------------------------
+.yftn12a-md35 table .seiza-bg01{background:url(../../images/temp/yftn_md35_bg01.gif) no-repeat 100% 70px;}
+.yftn12a-md35 table .seiza-bg02{background:url(../../images/temp/yftn_md35_bg02.gif) no-repeat 100% 70px;}
+.yftn12a-md35 table .seiza-bg03{background:url(../../images/temp/yftn_md35_bg03.gif) no-repeat 100% 70px;}
+---*/
+
+.yftn12a-md35 table td.st02 p.seiza{
+padding-bottom:3px;
+}
+
+.yftn12a-md35 table td.st02 p.seiza img{
+vertical-align:middle;
+}
+
+.yftn12a-md35 table td.st02 p.seiza span img{
+margin-left:5px;
+}
+
+.yftn12a-md35 table td.st03{
+width:287px;
+}
+
+.yftn12a-md35 .ft01{
+font-size:108%;
+}
+
+.yftn12a-md35 table td.st03 div.ranking01 div.bg01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r1_top.gif) no-repeat 0 0;padding-top:9px;}
+.yftn12a-md35 table td.st03 div.ranking01 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r1_bottom.gif) no-repeat 0 100%;padding-bottom:9px;}
+.yftn12a-md35 table td.st03 div.ranking01 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r1_repeat.gif) repeat-y 0 0;padding:6px 9px 6px 11px}
+
+.yftn12a-md35 table td.st03 div.ranking02 div.bg01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r2_top.gif) no-repeat 0 0;padding-top:11px;}
+.yftn12a-md35 table td.st03 div.ranking02 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r2_bottom.gif) no-repeat 0 100%;padding-bottom:8px;}
+.yftn12a-md35 table td.st03 div.ranking02 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r2_repeat.gif) repeat-y 0 0;padding:4px 9px 7px 11px}
+
+.yftn12a-md35 table td.st03 div.ranking03 div.bg01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r3_top.gif) no-repeat 0 0;padding-top:10px;}
+.yftn12a-md35 table td.st03 div.ranking03 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r3_bottom.gif) no-repeat 0 100%;padding-bottom:10px;}
+.yftn12a-md35 table td.st03 div.ranking03 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r3_repeat.gif) repeat-y 0 0;padding:5px 9px 5px 11px}
+
+.yftn12a-md35 table td.st03 div.ranking12 div.bg01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r12_top.gif) no-repeat 0 0;padding-top:9px;}
+.yftn12a-md35 table td.st03 div.ranking12 div.bg01 div.bg02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r12_bottom.gif) no-repeat 0 100%;padding-bottom:10px;}
+.yftn12a-md35 table td.st03 div.ranking12 div.bg01 div.bg02 div.bg03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r12_repeat.gif) repeat-y 0 0;padding:6px 9px 5px 11px}
+
+.yftn12a-md35 table td.st03 div.ranking01 div.after-second,
+.yftn12a-md35 table td.st03 div.ranking02 div.after-second,
+.yftn12a-md35 table td.st03 div.ranking03 div.after-second,
+.yftn12a-md35 table td.st03 div.ranking12 div.after-second{
+padding-top:15px;
+}
+
+.yftn12a-md35 table td.st03 div.ranking01 p.tt,
+.yftn12a-md35 table td.st03 div.ranking02 p.tt,
+.yftn12a-md35 table td.st03 div.ranking03 p.tt,
+.yftn12a-md35 table td.st03 div.ranking12 p.tt{
+font-weight:bold;
+font-size:93%;
+padding-bottom:10px;
+}
+
+.yftn12a-md35 table td.st03 div.ranking01 p.abt,
+.yftn12a-md35 table td.st03 div.ranking02 p.abt,
+.yftn12a-md35 table td.st03 div.ranking03 p.abt,
+.yftn12a-md35 table td.st03 div.ranking12 p.abt,
+.yftn12a-md35 table td.st03 div.abt{
+width:32px;
+padding:1px;
+background:#fff;
+border:1px solid #c6c6c6;
+float:left;
+}
+
+.yftn12a-md35 table td.st03 div.abt td{
+padding:0;
+vertical-align:middle;
+}
+
+.yftn12a-md35 table td.st03 div.ranking01 dl dt,
+.yftn12a-md35 table td.st03 div.ranking02 dl dt,
+.yftn12a-md35 table td.st03 div.ranking03 dl dt,
+.yftn12a-md35 table td.st03 div.ranking12 dl dt{
+margin-left:42px;
+font-size:93%;
+}
+
+.yftn12a-md35 table td.st03 div.ranking01 dl dd,
+.yftn12a-md35 table td.st03 div.ranking02 dl dd,
+.yftn12a-md35 table td.st03 div.ranking03 dl dd,
+.yftn12a-md35 table td.st03 div.ranking12 dl dd{
+margin:6px 0 0 36px;
+font-size:93%;
+}
+
+.yftn12a-md35 table td.st03 div.ranking01 dl dd.st01,
+.yftn12a-md35 table td.st03 div.ranking02 dl dd.st01,
+.yftn12a-md35 table td.st03 div.ranking03 dl dd.st01,
+.yftn12a-md35 table td.st03 div.ranking12 dl dd.st01{
+margin:6px 0 0 42px;
+text-indent:-18px;
+padding-left:18px;
+}
+
+.yftn12a-md35 table td.st03 div.ranking01 div.serif01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r1_serif_top.gif) no-repeat 0 0;padding-top:4px;}
+.yftn12a-md35 table td.st03 div.ranking01 div.serif01 div.serif02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r1_serif_bottom.gif) no-repeat 0 100%;padding-bottom:4px;}
+.yftn12a-md35 table td.st03 div.ranking01 div.serif01 div.serif02 div.serif03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r1_serif_repeat.gif) repeat-y 0 0;padding:0 8px 0 15px;}
+
+.yftn12a-md35 table td.st03 div.ranking02 div.serif01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r2_serif_top.gif) no-repeat 0 0;padding-top:4px;}
+.yftn12a-md35 table td.st03 div.ranking02 div.serif01 div.serif02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r2_serif_bottom.gif) no-repeat 0 100%;padding-bottom:4px;}
+.yftn12a-md35 table td.st03 div.ranking02 div.serif01 div.serif02 div.serif03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r2_serif_repeat.gif) repeat-y 0 0;padding:0 8px 0 15px;}
+
+.yftn12a-md35 table td.st03 div.ranking03 div.serif01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r3_serif_top.gif) no-repeat 0 0;padding-top:4px;}
+.yftn12a-md35 table td.st03 div.ranking03 div.serif01 div.serif02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r3_serif_bottom.gif) no-repeat 0 100%;padding-bottom:4px;}
+.yftn12a-md35 table td.st03 div.ranking03 div.serif01 div.serif02 div.serif03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r3_serif_repeat.gif) repeat-y 0 0;padding:0 8px 0 15px;}
+
+.yftn12a-md35 table td.st03 div.ranking12 div.serif01{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r12_serif_top.gif) no-repeat 0 0;padding-top:4px;}
+.yftn12a-md35 table td.st03 div.ranking12 div.serif01 div.serif02{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r12_serif_bottom.gif) no-repeat 0 100%;padding-bottom:4px;}
+.yftn12a-md35 table td.st03 div.ranking12 div.serif01 div.serif02 div.serif03{background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_md35_r12_serif_repeat.gif) repeat-y 0 0;padding:0 8px 0 15px;}
+
+.yftn12a-md35 table td.st03 table{
+width:100%;
+}
+
+.yftn12a-md35 table td.st03 table td dl dd td{
+padding:0px;
+vertical-align:middle;
+}
+
+.yftn12a-md35 table td.st03 table td dl dd{
+height:32px;
+width:32px;
+padding:1px;
+background:#fff;
+border:1px solid #c6c6c6;
+float:left;
+}
+
+.yftn12a-md35 table td.st03 table td dl dt{
+font-size:93%;
+margin-left:42px;
+width:75px;
+}
+
+.yftn12a-md35 table.st01 td.st03{
+vertical-align:top;
+}
+
+.yftn12a-md35 table.st01 td.st03 p{
+width:32px;
+padding:1px;
+background:#fff;
+border:1px solid #c6c6c6;
+float:left;
+margin-top:20px;
+}
+
+
+
+.yftn12a-md35 table.st01 td.st03 dl{
+margin-left:42px;
+font-size:93%;
+margin-top:20px;
+}
+
+
+/* yftn12a-md48
+--------------------------------------------*/
+.yftn12a-md48 dl dt{
+font-size:108%;
+font-weight:bold;
+}
+*html .yftn12a-md48 dl dt{font-size:100%;}
+*+html .yftn12a-md48 dl dt{font-size:100%;}
+
+.yftn12a-md48 dl dd{
+font-weight:normal;
+}
+
+
+/* yftn12a-md51
+--------------------------------------------*/
+.yftn12a-md51 p{
+width:220px;
+padding:0 10px 10px 0;
+text-align:center;
+float:left;
+}
+
+.yftn12a-md51 dl dt{
+font-weight:bold;
+}
+
+.yftn12a-md51 dl dd{
+padding-top:10px;
+}
+
+.yftn12a-md51 dl dt img{
+vertical-align:middle;
+}
+
+
+/* yftn12a-md52
+--------------------------------------------*/
+.yftn12a-md52 dl dd{
+padding-left:5px;
+}
+
+
+/* yftn12a-md53
+--------------------------------------------*/
+.yftn12a-md53 dl{
+padding:0 10px 0;
+font-size:93%;
+}
+
+.yftn12a-md53 dt{
+padding-top:3px;
+}
+
+.yftn12a-md53 dl{
+min-height:68px;
+}
+
+.yftn12a-md53 dl dt,
+.yftn12a-md53 dl dd{
+margin-left:60px;
+}
+
+.yftn12a-md53 dl dd.st01{
+float:left;
+padding:3px;
+margin-left:-10px;
+}
+
+.yftn12a-md53 dl dd.st01 img{
+border:#ccc 1px solid;
+vertical-align:top;
+}
+
+.yftn12a-md53 dl dd.st02 img{
+vertical-align:bottom;
+margin:0 3px;
+}
+
+
+/* yftn12a-md57
+--------------------------------------------*/
+.yftn12a-md57 p{
+color:#10103e;
+font-weight:bold;
+font-size:108%;
+padding:7px 10px;
+background:#d2c3e2;
+}
+
+.yftn12a-md57 dt{
+font-size:850px;
+padding-top:20px;
+}
+/* yftn12a-md58
+--------------------------------------------*/
+.yftn12a-md58 {
+text-align:center;
+}
+
+.yftn12a-md58 table{
+margin:0 auto;
+}
+
+.yftn12a-md58 p{
+margin:10px auto;
+display:block;
+text-align:center;
+font-weight:bold;
+font-size:120%;
+}
+
+.yftn12a-md58 ul{
+margin:0 auto;
+text-align:center;
+width:350px;
+position:relative;
+top:-10px;
+}
+
+.yftn12a-md58 ul:after {
+content: " ";
+display: block;
+visibility: hidden;
+clear: both;
+height: 0.1px;
+font-size: 0.1em;
+line-height: 0;
+}
+
+.yftn12a-md58 li.next{
+float:right;
+color:#999999;
+}
+
+.yftn12a-md58 li.back{
+float:left;
+color:#999999;
+}
+
+.yftn12a-md58 table th, .yftn12a-md58 table td{
+border:1px #999999 solid;
+text-align:center;
+}
+
+.yftn12a-md58 table th{
+background-color:#997dc8;
+font-weight:bold;
+padding:10px 20px;
+color:#FFFFFF;
+}
+
+.yftn12a-md58 table .on{
+background-color:#c8b3eb;
+padding:10px 20px;
+font-weight:bold;
+display: block;
+}
+
+.yftn12a-md58 table .off{
+background-color:#eeeeee;
+padding:10px 20px;
+display: block;
+color:#999999;
+}
+
+.yftn12a-md58 table td.sun{
+background-color:#ff9999;
+}
+
+.yftn12a-md58 td a{
+display: block;
+padding:10px 20px;
+}
+
+.yftn12a-md58 td a:hover{
+background-color:#66cccc;
+color:#FFFFFF;
+}
+
+
+/* yftn12a-md59
+--------------------------------------------*/
+.yftn12a-md59 dl {
+margin:10px 30px;
+}
+
+.yftn12a-md59 ul {
+margin:0 0 10px 60px;
+}
+
+.yftn12a-md59 li img {
+margin:10px 0 0 0;
+}
+
+.yftn12a-md59 dt {
+padding:16px 60px;
+font-weight:bold;
+}
+.yftn12a-md59 dt.bg01 {
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt04_b03.gif) no-repeat 0px 5px;
+}
+
+.yftn12a-md59 dt.bg02 {
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt04_b04.gif) no-repeat 0px 5px;
+}
+
+.yftn12a-md59 dt.bg03 {
+background:url(http://i.yimg.jp/images/fortune/images/12astro/yftn12a_tt04_b05.gif) no-repeat 0px 5px;
+}
+
+.yftn12a-md59 ul.bg04 {
+list-style-type:disc;
+}
+
+.yftn12a-md59 ul.bg04 li {
+margin:10px;
+}
+
+
+/* yftn12a-spBnr01
+--------------------------------------------*/
+.yftn12a-spBnr01 {
+border:1px solid #ccc;
+}
+
+.yftn12a-spBnr01 table{
+width:100%;
+}
+
+.yftn12a-spBnr01 .fst td {
+border-top:none;
+}
+
+.yftn12a-spBnr01 td{
+border-top:1px dotted #ccc;
+padding:4px;
+}
+
+
+
+/* socialButton
+--------------------------------------------*/
+.socialButton{
+	margin-top:20px;
+	text-align:right;
+}
+.socialButton dl{
+	float:right;
+}
+.socialButton dt,.socialButton dd{
+	float:left;
+}
+.socialButton dt{
+	margin-right:20px;
+	font-weight:bold;
+}
+.socialButton li{
+	float:left;
+}
+.socialButton .socialBtnFb{
+	margin-left:10px;
+}
+
+
+/* genie_message - add 2014/01/15
+--------------------------------------------*/
+/* yftnKrt-bg05
+--------------------------------------------*/
+.yftnKrt-bg05{padding:5px;}
+.yftnKrt-bg05 div.type01 div{position:relative;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09 div.bg10{position:static;}
+.yftnKrt-bg05 div.type01 div.bg01{top:-5px;left:-5px;background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_bg05_lt.gif) no-repeat 0 0;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02{top:0;left:5px;background:#ece1ef;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02 div.bg03{top:0;left:5px;background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_bg05_rt.gif) no-repeat 100% 0;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02 div.bg03 div.bg04{top:5px;left:0;background:#ece1ef;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:5px;left:0;background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_bg05_rb.gif) no-repeat 100% 100%;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-5px;background:#ece1ef;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{left:-5px;background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_bg05_lb.gif) no-repeat 0 100%;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-5px;left:0;background:#ece1ef;}
+.yftnKrt-bg05 div.type01 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0;left:5px;background:#ece1ef;}
+.yftnKrt-bg05 div.type02 div{position:relative;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09 div.bg10{position:static;}
+.yftnKrt-bg05 div.type02 div.bg01{top:-5px;left:-5px;background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_bg05_lt.gif) no-repeat 0 0;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02{top:0;left:5px;background:#ece1ef;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02 div.bg03{top:0;left:5px;background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_bg05_rt2.gif) no-repeat 100% 0;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02 div.bg03 div.bg04{top:5px;left:0;background:#ece1ef;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05{top:5px;left:0;background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_bg05_rb.gif) no-repeat 100% 100%;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06{top:0;left:-5px;background:#ece1ef;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07{left:-5px;background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_bg05_lb.gif) no-repeat 0 100%;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08{top:-5px;left:0;background:#ece1ef;}
+.yftnKrt-bg05 div.type02 div.bg01 div.bg02 div.bg03 div.bg04 div.bg05 div.bg06 div.bg07 div.bg08 div.bg09{top:0;left:5px;background:#ece1ef;}
+/* yftnKrt-tt07
+--------------------------------------------*/
+.yftnKrt-tt07{position:relative;}
+.yftnKrt-tt07 p.tt{color:#333;font-weight:bold;font-size:108%;padding:8px 10px;background:#e0ceeb;}
+.yftnKrt-tt07 p.clip{position:absolute;top:-15px;right:-5px;}
+/* yftnKrt-md43
+--------------------------------------------*/
+.yftnKrt-md43 dl{background-color:#ece1ef;display:inline;float:right;width:100%;margin:0 0 0 -95px;}
+.yftnKrt-md43 dl dt,.yftnKrt-md43 dl dd{margin:0 0 0 95px;}
+.yftnKrt-md43 dl dd.st01{padding: 5px 0pt 0pt 10px;}
+.yftnKrt-md43 dl dd.st01 img{vertical-align:bottom;margin:0 3px;}
+.yftnKrt-md43 dl dt{padding:5px 5px 3px 0;font-weight:bold;text-align:right;}
+.yftnKrt-md43 div.bga01{background:#fff;margin:0 10px 0 0;}
+.yftnKrt-md43 div.bga01 div.bga02{background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_md43_l.gif) repeat-y 0px 0px;}
+.yftnKrt-md43 div.bga01 div.bga02 div.bga03{background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_md43_r.gif) repeat-y 100% 0;}
+.yftnKrt-md43 div.bga01 div.bga02 div.bga03 div.bga04{background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_md43_lu.gif) no-repeat 0 0;}
+.yftnKrt-md43 div.bga01 div.bga02 div.bga03 div.bga04 div.bga05{background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_md43_ru.gif) no-repeat 100% 0;}
+.yftnKrt-md43 div.bga01 div.bga02 div.bga03 div.bga04 div.bga05 div.bga06{background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_md43_rb.gif) no-repeat 100% 100%;}
+.yftnKrt-md43 div.bga01 div.bga02 div.bga03 div.bga04 div.bga05 div.bga06 div.bga07{background:url(http://i.yimg.jp/images/fortune/images/karte/yftnKrt_md43_lb.gif) no-repeat 0 100%;}
+.yftnKrt-md43 dl dd p{font-size:108%;padding:10px 10px 10px 20px;}
+.yftnKrt-md43 p.st01{float:left;border:#cdcdcd solid 1px;margin:8px 5px 10px 10px;}
+*html .yftnKrt-md43 p.st01{margin:8px 0 10px 5px;}

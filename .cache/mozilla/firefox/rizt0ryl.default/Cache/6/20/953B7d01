@@ -1,0 +1,3855 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-31J">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" src="/15/pc/js/common.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15744888-2']);
+  _gaq.push(['_setDomainName', '.mynavi.jp']);
+  _gaq.push(['_trackPageview']);
+  var encryptedMemberId = "jtaz6Ln0flC6NKGwUxWcKg";  
+  if(encryptedMemberId != "") {
+	  _gaq.push(['_setCustomVar', 50, 'customer', encryptedMemberId, 2]);
+  }
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+try{
+  var smartPhoneDefaultCssPath = "/15/pc/css/smartphone.css";
+  var smartPhoneCssPath = smartPhoneDefaultCssPath.substr(0,smartPhoneDefaultCssPath.lastIndexOf("/")+1);
+  var staticpath = smartPhoneCssPath ;
+}catch(e){}
+</script>
+
+
+
+
+
+<script type="text/javascript" src="/15/pc/js/submit.js"></script>
+<script language="JavaScript" src="/15/pc/js/stuCommon.js"></script>
+<script type="text/javascript" src="/15/pc/js/scroll/scrollsmoothly.js"></script>
+<script type="text/javascript" src="/15/pc/js/accordion/accordion.js"></script>
+
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+
+<meta name="keywords" content="マイナビ,就職情報">
+<link rel="alternate" media="handheld" href="http://j.mynavi.jp">
+
+<meta name="robots" content="index,follow">
+<meta name="Description" content="マイナビ2015。株式会社マイナビが運営する新卒学生向け就活・就職情報サイト。企業検索や無料適職診断、就活Ｑ＆Ａなど。">
+<meta name="keywords" content="新卒,就職,就職活動,就活,内定,エントリー,人事,採用,面接,説明会,セミナー,採用情報,自己PR,志望理由,インターンシップ,仕事,会社,企業">
+<title>マイナビ2015 - マイページ</title>
+<script type="text/javascript" src="/15/pc/js/jquery.js"></script>
+
+	
+	
+		<link href="/15/pc/css/common.css" rel="stylesheet" type="text/css">
+		<link href="/15/pc/css/layout10.css" rel="stylesheet" type="text/css">
+	
+
+<link rel="SHORTCUT ICON" href="/15/pc/images/favicon.ico">
+<link rel="icon" href="/15/pc/images/favicon.ico">
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+
+function freeWordWithButton(value){
+	var form = document.getElementById('searchCorpListByGenCondForm');
+	form.elements["srchWord"].value = value;
+	
+	if (gGuideSentence == form.elements["srchWord"].value) {
+		form.elements["srchWord"].value = "";
+	}
+}
+
+
+function siteSrchWithButton(value){
+	var form = document.getElementById('searchCorpListByGenCondForm');
+	var siteSerchUtl = "/conts/2015/gsearch/search.php";
+	form.elements["srchWord"].value = value;
+	
+	if (gGuideSentence == form.elements["srchWord"].value) {
+		form.elements["srchWord"].value = "";
+	}
+	form.method="get";
+	form.action=siteSerchUtl;
+	form.elements["actionMode"].value = "setFwType";
+	form.elements["SC"].value = "ByGoogleAppliance";
+	form.elements["q"].value = form.elements["srchWord"].value;
+}
+
+
+function nickNameDelete(nickNum){
+	if (!confirm("該当の項目を削除してもよろしいですか？")) {
+		cancelSubmit();
+		return false;
+	}
+	if(wasNotSubmittedYet()){
+		var form = document.getElementById("nickNameFrm");
+		form.elements["selectedNo"].value = nickNum;
+		form.action = "/15/pc/toppage/displayTopPage/doDeleteMySrchCond/";
+		form.submit();
+		return true;
+	}
+	return false;
+}
+
+
+function cookieCheck() {
+	var flag = navigator.cookieEnabled;
+	var mycomContsPath = "http://job.mynavi.jp/conts/2015";
+
+	if (flag == false) {
+		flag = "<div style='margin:10px;padding:10px;border:1px solid #FF0000;color:red;font-size:90%;background:#fcf390;display:block;clear:both;line-height:130%;'><b>お使いのブラウザはCookieの設定が有効になっていないため、マイナビをご利用いただくことができません。以下の方法をお試しください。</b><br><span style='font-size:90%;color:#333333'>【Internet Explorer6.xでCookieの設定を有効にする】<br>↓ツール「インターネットオプション」をクリック<br>↓「プライバシー」タブをクリック<br>↓左側にあるスライダーを動かして[中]に変更する<br>↓「OK」をクリック<br>※上記の方法でもうまくいかない場合やInternet Explorer以外のブラウザをお使いの場合は、<a href='" + mycomContsPath + "/kaiin/spec.html#04' target='_blank'>ヘルプをご参照ください</a>。</span></div>";
+		document.getElementById("result").innerHTML = flag;
+	}
+}
+
+
+function jumpURL() {
+	var win;
+	var style = MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1);
+	var url = document.getElementById("areaNaviForm2").areaNaviValue.value;
+	var actionUrl = "/15/pc/toppage/displayTopPage/index";
+	if (url != '') {
+		win = MC.window.open(url,'', style);
+	} else {
+		win = MC.window.open(actionUrl,'', style);
+	}
+	win.focus();
+	event.returnValue = false;
+	return;
+}
+//-->
+</script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function jumpNocache(a) {
+	top.location.href = a.href + (a.search ? "&" : "?") + (new Date).getTime();
+	return false;
+}
+//-->
+</script>
+		
+		
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+				
+			
+		
+
+
+
+	
+	
+		
+	
+
+
+		<div id="top"></div>
+
+		<div id="headerMain" class="c01">
+			<div class="innerUpper">
+				<div id="innerHeader">
+					<div id="logo">
+						
+						
+						
+						
+							<h1><a href="/15/pc/toppage/displayTopPage/index?__rd=764003160" target="_top"><img src="/15/pc/images/share/common_header_main_logo.gif" height="37" width="200" border="0" id="commonHeaderMainLogo" alt="マイナビ2015"></a></h1>
+						
+					</div>
+					
+					
+				</div>
+				
+				
+				<script language="JavaScript" type="text/javascript">
+					<!--
+						function logoutDisp(){
+							if(wasNotSubmittedYet()){
+								document.getElementById("logoutForm").submit();
+								event.returnValue = false;
+								return true;
+							}
+							return false;
+						}
+					//-->
+				</script>
+				<script language="JavaScript" type="text/JavaScript">
+				_gaq.push(['_setCustomVar', 5, 'ログイン状態', 'ログイン済み', 2]);
+				</script>
+				
+				<div id="headerRight">
+					<div id="myname">
+						<div id="date">
+							<p class="date">
+								2014年4月9日
+							</p>
+						</div>
+						<form name="toppage_loginActionForm" id="logoutForm" method="post" action="/15/pc/toppage/login/doLogout" onsubmit="var closure = function() { return wasNotSubmittedYet(); };var ret = closure.call(this);if (ret == false) { return false; } else { MC.form.preventDouble(this); };" target="_top">
+						<div id="myPageHead">
+							<p class="myPageHeadName">
+								<strong class="nickName">中島正晴</strong>
+								<strong class="kaiinid">(pondelion)</strong>
+								<span>さんのマイページ</span>
+							</p>
+							<ul id="myPageHeadLinks">
+								<!--改行不可--><li class="myPageHeadLinksHenkou"><a href="https://job.mynavi.jp/15/pc/regist/registLogin/index" target="_top" id="memberDeleteLink">変更・退会</a></li><li class="myPageHeadLinksHelp"><a href="http://job.mynavi.jp/conts/2015/kaiin/toiawase.html" target="_top" id="helpLink" class="last">ヘルプ</a></li><li class="myPageHeadLinksLogout"><button type="submit" class="btnHeaderLogout" onclick="javascript:logoutDisp();"><span>ログアウト</span></button></li>
+							</ul>
+						</div>
+						</form>
+						
+					</div>
+
+				</div>
+				
+
+				
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				<div class="bnr">
+					<script language="JavaScript" type="text/javascript">
+					var NaviAccPro = location.protocol;
+					var impAserver = NaviAccPro+"//as.mv.impact-ad.jp";
+					var impAtarget = "/SITE=NAVI.TOP.KISUU/AREA=NAVI.TOP/AAMSZ=224X33/OENCJP=SJIS";
+					impArnd = Math.round(Math.random() * 100000000);
+					if (!impApid) var impApid = Math.round(Math.random() * 100000000);
+					document.write('<scr');
+					document.write('ipt type="text/javascript" language="JavaScript" src="' + impAserver + '/jserver/acc_random=' + impArnd + impAtarget + '/pageid=' + impApid + '">');
+					document.write('</scr');
+					document.write('ipt>');
+					</script>
+				</div>
+			
+			</div>
+			<div class="innerBottom">
+				<div id="globalNavMain">
+					<ul id="globalNav">
+					<!--改行不可--><li class="nav01"><a href="/15/pc/toppage/displayTopPage/index?__rd=1589809313" target="_top" id="topTab"><span>トップ</span></a></li><li class="nav02"><a href="/15/pc/corpinfo/displayCorpSearch/index?__rd=986510399" target="_top" id="corpSearchTab"><span>企業検索</span></a></li><li class="nav03"><a href="/15/pc/user/displayMessageList/index?screen=headMenu&__rd=1176248251" target="_top" id="mypageTab"><span>マイページ</span></a></li><li class="nav04"><a href="http://job.mynavi.jp/conts/2015/event/index.html" target="_top" id="eventTab" onclick="return jumpNocache(this);"><span>イベント</span></a></li><li class="nav05"><a href="http://job.mynavi.jp/conts/2015/tv/index.html" target="_top" id="tvTab" onclick="return jumpNocache(this);"><span>ＷＥＢセミナー</span></a></li><li class="nav06"><a href="http://job.mynavi.jp/conts/2015/sp/index.html" target="_top" id="featureTab" onclick="return jumpNocache(this);"><span>業界特集</span></a></li><li class="nav07"><a href="http://job.mynavi.jp/conts/2015/index_v.html" target="_top" id="helpTab" onclick="return jumpNocache(this);"><span>就活支援</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+
+	
+	
+		
+		
+			_gaq.push(['_setCustomVar', 6, '端末', 'PC版_UAがPC', 2]);
+		
+	
+
+</script>
+
+
+
+
+<div id="main">
+	<script type="text/javascript" src="/15/pc/js/trigger/jquery.pc.trigger.js"></script>
+	<script type="text/javascript" src="/15/pc/js/extend.js"></script>
+	<script type="text/javascript" src="/15/pc/js/topsearch.js"></script>
+	<script type="text/javascript" src="/15/pc/js/rollover/rollover.js"></script>
+	<script type="text/javascript" src="/15/pc/js/cookie/jquery.cookie.js"></script>
+
+	
+	<script language="JavaScript" type="text/JavaScript" src="http://job.mynavi.jp/js/announcement/2015/NS/top.js"></script>
+	
+	
+
+	
+	
+	
+
+	<div id="primary">
+
+		
+		
+		
+
+		
+		
+		<!-- ▼検索 start -->
+		<script type="text/javascript">
+		// ▼タブ切り替え
+		$(function() {
+		    $(".searchBox .heading li").click(function() {
+		        var num = $(".searchBox .heading li").index(this);
+		        $(".searchBox .tabIndex").addClass('disnon');
+		        $(".searchBox .tabIndex").eq(num).removeClass('disnon');
+		        $(".searchBox .heading li").removeClass('select');
+		        $(this).addClass('select');
+		        
+		        var form = document.getElementById('searchCorpListByGenCondForm');		        
+		        if(num == 1) {
+		        	form.onkeypress=function (event){return MC.form.hookDefaultSubmit(event,'activitySearchButton');};
+		        } else if(num == 2) {
+		        	form.onkeypress=function (event){return MC.form.hookDefaultSubmit(event,'categorySearchButton');};
+		        } else if(num == 3) {
+		        	form.onkeypress=function (event){return MC.form.hookDefaultSubmit(event,'schoolSearchButton');};
+		        } else if(num == 4) {
+		        	form.onkeypress=function (event){return MC.form.hookDefaultSubmit(event,'siteSearchButton');};	        	
+		        } else {
+		        	form.onkeypress=function (event){return MC.form.hookDefaultSubmit(event,'corpNameSerchButton');};
+		        }
+				return false;
+		    });
+		});
+		</script>
+		<div class="mainSecWrap" id="jobSearch02">
+			<div class="mainSec">
+				<div class="searchHeading">
+					<h2><img src="/15/pc/images/top/ttl_search.png" width="57" height="18" alt="検索"></h2>
+					<ul class="number">
+						
+							
+							
+								<li>全掲載企業 ：<em><span class="number">12719</span>社</em></li>
+								
+								
+								
+							
+						
+						<li class="no1">掲載企業数<em>No.1</em><span>*2014年3月時点</span></li>
+					</ul>
+				</div>
+				<div class="mainSecInner">
+					<div class="searchBox">
+						<form name="corpinfo_searchCorpListByGenCondActionForm" id="searchCorpListByGenCondForm" method="post" action="/15/pc/corpinfo/searchCorpListByGenCond/" onsubmit="MC.form.preventDouble(this);" onkeypress="return MC.form.hookDefaultSubmit(event,'corpNameSerchButton');"><div><input type="hidden" name="_vso" value="eTsZArIwV-YdJEGm-J0oqluZLkUC4_bQj27pxZj6tPLnqgOyM4NTsAqrt13-rDVMouCXhcWflJ8NE1JitbbDNg6sm0jBG0DjNtVREdXOJ2EnH4XKoeKqVjcResyKl3tXNPqkIUue5hY5cXy_hrM8dVcX_QVq_nMjfM1jBiJC6tc"></div><script type="text/javascript">MC.util.addBodyEvent("keypress", function(event) {MC.form.hookBodyDefaultSubmit(event);}, false, false);</script>
+						
+						<input type="hidden" name="SC" value="" id="SC">
+						<input type="hidden" name="q" value="" id="q">
+						<input type="hidden" name="access" value="p" id="access">
+						<input type="hidden" name="filter" value="0" id="filter">
+						<input type="hidden" name="entqr" value="0" id="entqr">
+						<input type="hidden" name="output" value="xml_no_dtd" id="output">
+						<input type="hidden" name="sort" value="date:D:L:d1" id="sort">
+						<input type="hidden" name="client" value="default_frontend" id="client">
+						<input type="hidden" name="num" value="30" id="num">
+						<input type="hidden" name="ud" value="1" id="ud">
+						<input type="hidden" name="oe" value="EUC-JP" id="oe">
+						<input type="hidden" name="ie" value="EUC-JP" id="ie">
+						<input type="hidden" name="proxystylesheet" value="default_frontend" id="proxystylesheet">
+						<input type="hidden" name="proxyreload" value="1" id="proxyreload">
+						<input type="hidden" name="site" value="collection_all_2015" id="site">
+						<input type="hidden" name="actionMode" value="" id="actionMode">
+						<input type="hidden" name="findBtn" value="corp_name_btn" id="findBtn">
+						<input type="hidden" name="srchWord" value="" id="srchWord">
+						<input type="hidden" name="srchWord2" value="" id="srchWord2">
+						<ul class="heading">
+							<li class="nav01 select"><a href="#">社名</a></li>
+							
+								<li class="nav02"><a href="#">事業内容</a></li>
+								<li class="nav03"><a href="#">職種</a></li>
+								<li class="nav04"><a href="#">採用実績校</a></li>
+								
+								<li class="nav05"><a href="#">サイト内検索</a></li>
+								
+							
+						</ul>
+						<div class="tabIndex" id="tabIndex1">
+							<dl class="searchForm">
+								<dt>
+									<input type="text" name="srchWordCorp"  class="srchWord" id="siteSearchTxt">
+									
+									<script type="text/javascript" src="https://popword-js.probo.biz/popword.js" charset="UTF-8"></script>
+									<script type="text/javascript">
+									//入力アシストの候補語表示
+									var p = new
+									popWord({'targetid':'siteSearchTxt','uid':'1242eddcf46279027c75b0bef24c90f7',
+									'maxitems':'30'});
+
+									//入力アシストのGA用イベント発行
+									p.popword_click = function(word){
+									_gaq.push(['_trackEvent', 'ClickCount', 'PCトップの検索窓入力アシスト', word]);
+									}
+
+									</script>
+									
+								</dt>
+								<dd>
+									<input type="image" name="doSearchCorpName" src="/15/pc/images/top/btn_search.png" onclick="this.form.action = '/15/pc/corpinfo/searchCorpListByGenCond/?SC=ByCorpName&q='+encodeURI(this.form.srchWordCorp.value);freeWordWithButton(this.form.srchWordCorp.value);" id="corpNameSerchButton" alt="検索">
+								</dd>
+							</dl>
+						</div>
+						
+							<div class="tabIndex disnon" id="tabIndex2">
+								<dl class="searchForm">
+									<dt>
+										<input type="text" name="srchWordActivity"  class="srchWord">
+									</dt>
+									<dd>
+										<input type="image" name="doSearchAboutIndustry" src="/15/pc/images/top/btn_search.png" onclick="this.form.action = '/15/pc/corpinfo/searchCorpListByGenCond/?SC=ByBusiness&q='+encodeURI(this.form.srchWordActivity.value);freeWordWithButton(this.form.srchWordActivity.value);" id="activitySearchButton" alt="検索">
+									</dd>
+								</dl>
+							</div>
+							<div class="tabIndex disnon" id="tabIndex3">
+								<dl class="searchForm">
+									<dt>
+										<input type="text" name="srchWordOccupation" class="srchWord">
+									</dt>
+									<dd>
+										<input type="image" name="doSearchAboutOccupation" src="/15/pc/images/top/btn_search.png" onclick="this.form.action = '/15/pc/corpinfo/searchCorpListByGenCond/?SC=ByOccupation&q='+encodeURI(this.form.srchWordOccupation.value);freeWordWithButton(this.form.srchWordOccupation.value);" id="categorySearchButton" alt="検索">
+									</dd>
+								</dl>
+							</div>
+							<div class="tabIndex disnon" id="tabIndex4">
+								<dl class="searchForm">
+									<dt>
+										<input type="text" name="srchWordSchool" class="srchWord">
+									</dt>
+									<dd>
+										<input type="image" name="doSearchUnivName" src="/15/pc/images/top/btn_search.png" onclick="this.form.action = '/15/pc/corpinfo/searchCorpListByGenCond/?SC=BySchoolName&q='+encodeURI(this.form.srchWordSchool.value);freeWordWithButton(this.form.srchWordSchool.value);" id="schoolSearchButton" alt="検索">
+									</dd>
+								</dl>
+							</div>
+							
+							<div class="tabIndex disnon" id="tabIndex5">
+								<dl class="searchForm">
+									<dt>
+										<input type="text" name="srchWorSite" class="srchWord">
+									</dt>
+									<dd>
+										<input type="image" name="srchWordSite" src="/15/pc/images/top/btn_search.png" onclick="siteSrchWithButton(this.form.srchWorSite.value);" id="siteSearchButton" alt="サイト検索">
+									</dd>
+								</dl>
+							</div>
+							
+						
+						</form>
+					</div>
+					<div class="popular">
+						<div class="popularInner">
+							<h3>人気の検索</h3>
+							<div class="keyword">
+								
+								<a href="/15/pc/search/query.html?OC:126/OP:1/func=PCTopKeyword">一般事務</a>
+								<a href="/15/pc/search/query.html?CA:1/func=PCTopKeyword">エントリー積極受付中</a>
+								<a href="/15/pc/search/query.html?CA:4/func=PCTopKeyword">締め切り間近</a>
+								
+								<a href="/15/pc/corpinfo/searchCorpListByGenCond/index/?cond=ID:38000,51000/LIDM:1/?func=PCTopKeyword">印刷</a>
+								<a href="/15/pc/corpinfo/searchCorpListByGenCond/index/?cond=ID:44000,28000/LIDM:1/?func=PCTopKeyword">アパレル</a>
+								<a href="/15/pc/corpinfo/searchCorpListByGenCond/index/?cond=ID:42000,39000/LIDM:1/?func=PCTopKeyword">インテリア</a>
+								<a href="/15/pc/corpinfo/searchCorpListByGenCond/index/?cond=ID:87150/LIDM:1/?func=PCTopKeyword">観光</a>
+								<a href="/15/pc/corpinfo/searchCorpListByGenCond/index/?cond=ID:95200/LIDM:1/?func=PCTopKeyword">広告</a>
+								<a href="/15/pc/corpinfo/displayCorpSearch/?func=PCTopKeyword&srchWord=%8A%77%8D%5A%96%40%90%6C&doSearchFreeWord=%8A%77%8D%5A%96%40%90%6C&actionMode=&findBtn=CN">学校法人</a>
+								<a href="/15/pc/corpinfo/displayCorpSearch/?func=PCTopKeyword&srchWord=%95%78%8E%6D%92%CA&doSearchFreeWord=%95%78%8E%6D%92%CA&actionMode=&findBtn=CN">富士通</a>
+								<a href="/15/pc/corpinfo/displayCorpSearch/?func=PCTopKeyword&srchWord=NTT&doSearchFreeWord=NTT&actionMode=&findBtn=CN">NTT</a>
+								<a href="/15/pc/corpinfo/displayCorpSearch/?func=PCTopKeyword&srchWord=%8E%4F%95%48&doSearchFreeWord=%8E%4F%95%48&actionMode=&findBtn=CN">三菱</a>
+								<a href="/15/pc/corpinfo/displayCorpSearch/?func=PCTopKeyword&srchWord=%93%FA%96%7B%97%58%90%AD&doSearchFreeWord=%93%FA%96%7B%97%58%90%AD&actionMode=&findBtn=CN">日本郵政</a>
+								
+								<a href="/conts/2015/keyword_rank/" class="more">･･･もっと見る</a>
+								
+							</div>
+						</div>
+					</div>
+					<div class="popular">
+						<div class="popularInner">
+							<h3>先輩/MY検索</h3>
+							<div class="keyword">
+
+								
+								
+								
+								
+
+								
+								
+									
+										
+											
+												<a href="/15/pc/search/query.html?SK:obog/OM:1" id="obogLink">関西大学の先輩情報</a>
+											
+											
+										
+									
+								
+								
+								
+
+								
+								
+								
+									
+									
+									
+										
+										
+										
+									
+									
+									
+								
+								
+								
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="popular">
+						<div class="popularInner">
+							<h3 class="quick">クイック検索</h3>
+							<form action="" method="post" name="submitMynaviQuickSearchForm">
+								<p class="select">
+								<!--	
+								本社所在地HR
+								主な勤務地OR
+								大業種IC
+								-->
+								<script type="text/javascript">
+								function submitMynaviQuickSearch(){
+
+									//大業種のチェック
+									if(submitMynaviQuickSearchForm.IC.value != ""){
+										IC = "IC:" + submitMynaviQuickSearchForm.IC.value + "/";
+									}else{
+										IC = "";
+									}
+
+									//都道府県のチェック
+									if(submitMynaviQuickSearchForm.HR.value != ""){
+										//"HR:"は勤務地
+										//"OR:"は本社所在地
+
+										HR = "OR:" + submitMynaviQuickSearchForm.HR.value + "/";
+
+									}else{
+										HR = "";
+									}
+
+									//フォームのアクション先を指定+送信
+									submitMynaviQuickSearchFormUrl = "/15/pc/search/query.html?LICM:1/" + IC + HR +"?func=PCTopQuickSearch";
+									submitMynaviQuickSearchForm.action = submitMynaviQuickSearchFormUrl;
+									submitMynaviQuickSearchForm.submit();
+
+								}
+								</script>
+									<select name="IC">
+										<option value="">業種を選択</option>
+										<option value="2,63,4,6,64,8,10,12,14,16,18,20,67">メーカー</option>
+										<option value="22">商社</option>
+										<option value="24,26">流通・小売</option>
+										<option value="28,30,32">金融</option>
+										<option value="34,36,38,44,46,48,50,51,65,66,51,52,54,58">サービス・インフラ</option>
+										<option value="40,42">ソフトウエア・通信</option>
+										<option value="56,68,69">広告・出版・マスコミ</option>
+										<option value="60,62">官公庁・公社・団体</option>
+									</select>
+									<span class="kakeru">×</span>
+									<select name="HR">
+										<option value="">エリアを選択</option>
+										<option value="1">北海道</option>
+										<option value="2,3,4,5,6,7">東北</option>
+										<option value="8,9,10,11,12,14,13">関東</option>
+										<option value="15,19,20">甲信越</option>
+										<option value="16,17,18">北陸</option>
+										<option value="21,22,23,24">東海・中部</option>
+										<option value="25,26,27,28,29,30">近畿</option>
+										<option value="31,32,33,34,35">中国</option>
+										<option value="36,37,38,39">四国</option>
+										<option value="40,41,42,43,44,45,46,47">九州・沖縄</option>
+										<option value="99">海外</option>
+									</select>
+									<input type="button" value="検索" onClick="_gaq.push(['_setCustomVar', 31, 'PCトップの業種*地域検索', '複合条件', 2]);_gaq.push(['_trackEvent', 'ClickCount','PCトップの業種*地域検索','複合条件']);submitMynaviQuickSearch();" class="btnMynaviQuickSearchForm">
+								</p>
+								<span class="other"><a href="/15/pc/corpinfo/displayCorpSearch/index">その他の検索</a></span>
+							</form>
+						</div>
+					</div>
+					
+					
+					
+					
+					<div class="popular personalized">
+						<div class="popularInner">
+							<div class="keyword">
+							<span>
+							
+							4月9日(水)更新
+							</span>
+							<a href="/15/pc/search/rcmd_list.html?func=PcTopSearchArea"><strong>あなたのエントリー傾向にマッチする</strong>オススメ企業はコチラ！</a>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+
+		
+		<div class="clWrap clWrap-2cl">
+			<div class="clBox">
+				<div class="mainSecWrap" id="topNews">
+					<div class="mainSec">
+						<div class="secHeading">
+							<h2 class="hdTxt01"><span>新着情報</span></h2>
+							<p class="detailLink"><a href="javascript:void(0);" id="helpNewInfoLink" class="noborder" onclick="MC.window.open('http://job.mynavi.jp/conts/2015/help/21-3.html', 'help', MC.window.style.createObject('600', '400', false, false, false, false, true, true, '10', '100'));">ヘルプ</a></p>
+						</div>
+						<div class="mainSecInner">
+							<div class="contentBox heightLine-group1">
+								<table border="0" cellspacing="0" cellpadding="0" class="newsTable01">
+									<tr class="odd">
+										<th scope="row">
+											新規オープン
+										</th>
+										<td>
+											
+												
+												
+													<a href="/15/pc/search/new_corps.html" target="_top" id="newOpenLink">32社</a> / 志望業種
+													
+														
+															<a href="/15/pc/search/m_new_corps.html" id="newOpenIndustryLink">2社</a>
+														
+														
+													
+												
+											
+										</td>
+									</tr>
+									
+										
+										<tr>
+											<th scope="row">
+												新規エントリー可
+											</th>
+											<td>
+												
+													
+													
+														<a href="/15/pc/search/start_entry.html" target="_top" id="newEntryLink">33社</a> / 志望業種
+														
+															
+																<a href="/15/pc/search/m_start_entry.html" id="newEntryIndustryLink">2社</a>
+															
+															
+														
+													
+												
+											</td>
+										</tr>
+										
+										<tr class="odd">
+											<th scope="row">新規の取材・特集</th>
+											<td>
+												
+													
+													
+														<a href="/15/pc/search/recent_enriched.html" target="_top" id="versionUpLink">14社</a> / 志望業種
+														
+															
+																<a href="/15/pc/search/m_recent_enriched.html" id="versionUpIndustryLink">4社</a>
+															
+															
+														
+													
+												
+											</td>
+										</tr>
+									
+								</table>
+								<dl class="newsSP">
+									
+									<dd>
+										<ul class="linkList">
+											<li class="ri">
+												<span>メーカー</span>
+												<a href="http://job.mynavi.jp/conts/2015/tok/weekly_m/">
+													土木建築設計の仕事特集
+													
+												</a>
+											</li>
+											<li class="bun">
+												<span>総合</span>
+												<a href="http://job.mynavi.jp/conts/2015/tok/weekly/index.html">
+													わが社の職場環境はここが自慢です！
+													
+												</a>
+											</li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clBox last">
+				<div class="mainSecWrap" id="topTopics">
+					<div class="mainSec">
+						<div class="secHeading">
+							<h2 class="hdTxt01"><span>TOPICS<span>（PR）</span></span></h2>
+						</div>
+						<div class="mainSecInner">
+							<div class="contentBox heightLine-group1">
+								<ul class="linkList">
+									
+										
+											
+												<li class="odd">
+											
+											
+												<a href="/15/pc/common/displayBanner/index?bannerOptNo=830594" target="_blank" id="textBannerLinkList.link[0]">■ロクシタン■本エントリー締切4/18</a>
+											</li>
+										
+											
+											
+												<li>
+											
+												<a href="/15/pc/common/displayBanner/index?bannerOptNo=830586" target="_blank" id="textBannerLinkList.link[1]">業界一位【眼鏡市場】　説明会開催中！</a>
+											</li>
+										
+											
+												<li class="odd">
+											
+											
+												<a href="/15/pc/common/displayBanner/index?bannerOptNo=830592" target="_blank" id="textBannerLinkList.link[2]">インフラ・住宅設備の専門商社説明会開始！</a>
+											</li>
+										
+											
+											
+												<li>
+											
+												<a href="/15/pc/common/displayBanner/index?bannerOptNo=830583" target="_blank" id="textBannerLinkList.link[3]">売上100億目前・上場目指す不動産説明会!</a>
+											</li>
+										
+											
+												<li class="odd">
+											
+											
+												<a href="/15/pc/common/displayBanner/index?bannerOptNo=830589" target="_blank" id="textBannerLinkList.link[4]">『正社員講師制』学習塾。説明会予約中。</a>
+											</li>
+										
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+		
+		<div class="mainSecWrap">
+			<div class="mainSec">
+				<iframe width="590" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bordercolor="white" src="/conts/2015/tok/chumoku/top_banner.html" title="今から選考に参加できる企業特集"></iframe>
+			</div>
+		</div>
+		
+
+
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+			
+			
+			
+			
+				
+				
+					
+					<div class="mainSecWrap" id="recommendCorp">
+						<div class="secHeading secHeadingPersonalize">
+							<h2 class="hdTxt01"><span>中島正晴さんへのオススメ企業</span></h2>
+							
+							
+								
+								<p class="detailLink"><a href="/15/pc/regist/regUpdIndustry/index" target="modIndustryWindow" id="recommendIndustryRegLink"><span>志望業種の変更</span></a></p>
+							
+						</div>
+						<div class="mainSecInner">
+							
+							
+								
+								
+									
+									
+										
+									
+								
+									
+									
+								
+								
+								
+									
+										<h3 class="hdTxt hdPersonalize01"><span>中島正晴さんの志望業種にマッチする企業</span></h3>
+									
+									
+								
+								<div class="inner">
+									<ul class="corpList01">
+										
+											<li class="corp">
+												<p class="pct">
+													<a href="/15/pc/search/corp68835/outline.html?func=PCTopRecomendInd" target="_blank" id="recommendPriorityDispInfoList.corpId"><img src="/master/img15/advance/68835-a1-4.jpg?__rd=1857407879" alt="(株)富士情報"></a>
+												</p>
+												<div class="txt">
+													<p class="ttl"><a href="/15/pc/search/corp68835/outline.html?func=PCTopRecomendInd" target="_blank" id="recommendPriorityDispCorpLink">(株)富士情報</a></p>
+													<p class="cat"><span>ソフトウエア・ゲーム・ネット関連</span></p>
+													<p class="info">「お客様との信頼」「仲間との信頼」そして「感謝する気持ち」を大事にする風土の企業です。</p>
+												</div>
+											</li>
+										
+											<li class="corp">
+												<p class="pct">
+													<a href="/15/pc/search/corp106948/outline.html?func=PCTopRecomendInd" target="_blank" id="recommendPriorityDispInfoList.corpId"><img src="/master/img15/advance/106948-a1-4.jpg?__rd=1677413543" alt="(株)タス【トヨタ自動車グループ】"></a>
+												</p>
+												<div class="txt">
+													<p class="ttl"><a href="/15/pc/search/corp106948/outline.html?func=PCTopRecomendInd" target="_blank" id="recommendPriorityDispCorpLink">(株)タス【トヨタ自動車グループ】</a></p>
+													<p class="cat"><span>ソフトウエア・ゲーム・ネット関連</span></p>
+													<p class="info">金融機関・不動産業向けインターネットサービスを提供しています。システム開発はもちろん、データサイエン．．．</p>
+												</div>
+											</li>
+										
+									</ul>
+								</div>
+							
+							
+							
+								
+								
+								
+								
+
+	<h3 class="hdTxt hdPersonalize01">
+		<span>
+			<a href="/15/pc/user/displayActHistory/index?corpId=62443" target="_blank">(株)システムデザイン</a>を志望している中島さんへのオススメ企業
+		</span>
+	</h3>
+	
+	<div class="inner">
+		<ul class="corpList02">
+			
+				<li class="corp">
+					<p class="pct">
+						
+							
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp38974/outline.html?func=toppage','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/38974-a1-4.jpg?__rd=1490532093" height="60" width="80" alt="(株)ユードム"></a>
+							
+						
+					</p>
+					<div class="txt">
+						
+						<p class="ttl">
+							
+								
+								
+									<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp38974/outline.html?func=toppage','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)ユードム</a>
+								
+							
+						</p>
+						<p class="cat">
+							<span>ソフトウエア・ゲーム・ネット関連</span>
+						</p>
+						<p class="cat">
+							<span>茨城県　東京都</span>
+						</p>
+					</div>
+				</li>
+			
+				<li class="corp">
+					<p class="pct">
+						
+							
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp61222/outline.html?func=toppage','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/61222-a1-4.jpg?__rd=65990605" height="60" width="80" alt="(株)ミロク情報サービス【東証一部上場】"></a>
+							
+						
+					</p>
+					<div class="txt">
+						
+						<p class="ttl">
+							
+								
+								
+									<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp61222/outline.html?func=toppage','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)ミロク情報サービス【東証一部上場】</a>
+								
+							
+						</p>
+						<p class="cat">
+							<span>ソフトウエア・ゲーム・ネット関連</span>
+						</p>
+						<p class="cat">
+							<span>東京都</span>
+						</p>
+					</div>
+				</li>
+			
+				<li class="corp">
+					<p class="pct">
+						
+							
+								<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp67421/flex.html?func=toppage','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/67421-a1-4.jpg?__rd=115308695" height="60" width="80" alt="ネクシィーズグループ"></a>
+							
+							
+						
+					</p>
+					<div class="txt">
+						
+						<p class="ttl">
+							
+								
+									<a href="javascript:void(0);" onclick="javascript:MC.window.open('/15/pc/search/corp67421/flex.html?func=toppage','relCor', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">ネクシィーズグループ</a>
+								
+								
+							
+						</p>
+						<p class="cat">
+							<span>通信</span>
+						</p>
+						<p class="cat">
+							<span>東京都</span>
+						</p>
+					</div>
+				</li>
+			
+		</ul>
+	</div>
+
+							
+							
+							
+								<div class="inner">
+									<p class="txtLink"><a href="/15/pc/search/rcmd_list.html?func=PcTopRecArea"><span>あなたのエントリー傾向にマッチする</span>オススメ企業一覧を見る</a></p>
+								</div>
+							
+						</div>
+					</div>
+				
+			
+		
+		
+
+		
+		
+			<div class="mainSecWrap searchBox" id="mySearch">
+				<div class="secHeading">
+					<h2 class="hdTxt01"><span>中島正晴さんの志望情報</span></h2>
+					<p class="detailLink1"><a href="javascript:void(0);" id="helpMySearchLink" onclick="MC.window.open('http://job.mynavi.jp/conts/2015/guide/01.html', 'help', MC.window.style.createObject('720', '400', false, false, false, false, true, true, '10', '100'));"><span>MY検索の使い方</span></a></p>
+				</div>
+				<div class="mainSecInner">
+
+					
+					<div class="mySearchSec ng" id="mySearch1">
+						<div class="secHeading">
+							<h3 class="hdTxt">
+								<span>
+									
+										
+										
+											
+											<script language="JavaScript" type="text/JavaScript">
+												_gaq.push(['_setCustomVar', 1, 'スカウト', '未登録', 1]);
+											</script>
+											<span class="condition NG">×</span>
+											
+										
+									
+									スカウト
+								</span>
+							</h3>
+							<p class="detailLink2"><a href="/15/pc/regist/updateDraft/index?actionMode=direct" target="scoutWindow" id="scoutLink"><span>登録・変更</span></a></p>
+						</div>
+						
+							
+							
+								
+									<div class="inner">
+										<p>
+											マイナビ2014では約10万人が利用しているスカウト。登録忘れ防止のためにも今すぐ登録を！
+											
+											
+											
+										</p>
+									</div>
+								
+							
+						
+					</div>
+					
+
+					
+					
+					
+					
+					
+
+					
+					<div class="mySearchSec ok" id="mySearch3">
+						<div class="secHeading">
+							<h3 class="hdTxt">
+								<span>
+									
+										
+											<span class="condition OK">○</span>
+										
+										
+									
+									志望業種
+								</span>
+							</h3>
+							<p class="detailLink2"><a href="javascript:void(0);" id="registIndustryMySearchLink" onclick="MC.window.open('/15/pc/regist/regUpdIndustry/index', 'modIndustryWindow', MC.window.style.createObject('null', 'null', false, false, false, false, true, true, 'null', 'null'));"><span>登録・変更</span></a></p>
+						</div>
+						
+							
+								
+									
+									<script language="JavaScript" type="text/JavaScript">
+									_gaq.push(['_setCustomVar', 2, '志望業種', '登録済み,12,20,40,42', 1]);
+									</script>
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+								
+							
+							
+						
+					</div>
+					
+
+					
+					<div class="mySearchSec ok" id="mySearch4">
+						<div class="secHeading">
+							<h3 class="hdTxt">
+								<span>
+									
+										
+											<span class="condition OK">○</span>
+										
+										
+									
+									希望勤務地
+								</span>
+							</h3>
+							<p class="detailLink2"><a href="javascript:void(0);" id="registLocationMySearchLink" onclick="MC.window.open('/15/pc/regist/updateWorkAddrRegion/index', 'memberLocationWindow', MC.window.style.createObject('null', 'null', false, false, false, false, true, true, 'null', 'null'));"><span>登録・変更</span></a></p>
+						</div>
+						
+							
+								
+								<script language="JavaScript" type="text/JavaScript">
+								_gaq.push(['_setCustomVar', 3, '希望勤務地', '登録済み,26,27,28', 1]);
+								</script>
+								
+								
+								
+								
+							
+							
+						
+						
+						
+						
+					</div>
+					
+
+					
+					
+					<div class="mySearchSec ng" id="mySearch5">
+						<div class="secHeading">
+							<h3 class="hdTxt">
+								<span>
+									
+										
+										
+											<span class="condition NG">×</span>
+										
+									
+									会社タイプ
+								</span>
+							</h3>
+							<p class="detailLink2">
+								<a href="javascript:void(0);" id="registMmemberCorpTypeBtn" onclick="MC.window.open('/15/pc/regist/updateCrpType/index', 'memberCorpTypeWindow', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, 'null', 'null'));"><span>登録・変更</span></a>
+							</p>
+						</div>
+						
+							
+							
+								
+								<script language="JavaScript" type="text/JavaScript">
+									_gaq.push(['_setCustomVar', 8, '会社タイプ', '未登録', 1]);
+								</script>
+								
+								<div class="inner">
+									<p>
+										登録するとメールやサイト内であなたに紹介する企業とのマッチング精度が向上します。
+										
+										
+										
+									</p>
+								</div>
+							
+						
+					</div>
+					
+					
+
+					
+					
+					<div class="mySearchSec ok" id="mySearch6">
+						<div class="secHeading">
+							<h3 class="hdTxt">
+								<span>
+									
+										
+											<span class="condition OK">○</span>
+										
+										
+									
+									志望職種
+								</span>
+							</h3>
+							<p class="detailLink2">
+								<a href="javascript:void(0);" id="registOccupationLink" onclick="MC.window.open('/15/pc/regist/updateOccupation/index', 'occupationWindow', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, 'null', 'null'));"><span>登録・変更</span></a>
+							</p>
+						</div>
+						
+							
+								<script language="JavaScript" type="text/JavaScript">
+								_gaq.push(['_setCustomVar', 7, '志望職種', '登録済み,316,320,340,390', 1]);
+								</script>
+								
+								
+								
+							
+							
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+		
+		
+
+		
+		
+		<div class="mainSecWrap" id="myHistory">
+			<div class="secHeading secHeadingPersonalize">
+				<h2 class="hdTxt01"><span>最近チェックした企業</span></h2>
+				<p class="detailLink"><a href="/15/pc/search/historyList/"><span>一覧</span></a></p>
+			</div>
+			<div class="mainSecInner">
+				<div class="mySearchSec" id="myHistory1">
+					<div class="inner">
+						<div id="carouselwrap">
+ 							
+
+<script type="text/javascript" src="/15/pc/js/carousel/carousel.js"></script>
+<div id="carousel">
+	<ul>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[0]" onclick="javascript:MC.window.open('/15/pc/search/corp71200/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/71200-a1-4.jpg?__rd=1971939659" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[0]" onclick="javascript:MC.window.open('/15/pc/search/corp71200/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)トラスト・テック</a>
+				</span>
+				<span class="CorpCatch">
+					トラスト・テックには、新卒のエンジニアを成功に導く「具体策」と「環境」があります！ 
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[1]" onclick="javascript:MC.window.open('/15/pc/search/corp96035/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/96035-a1-4.jpg?__rd=1216116067" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[1]" onclick="javascript:MC.window.open('/15/pc/search/corp96035/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">キーウェアソリューションズ(株)【東証二部上場】</a>
+				</span>
+				<span class="CorpCatch">
+					私たちの社会に安心と便利と夢を！あなたの活躍フィールドは、携帯／スマホ、ICカードからテレビ、病院、鉄道、宇宙まで！
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[2]" onclick="javascript:MC.window.open('/15/pc/search/corp61222/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/61222-a1-4.jpg?__rd=257712666" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[2]" onclick="javascript:MC.window.open('/15/pc/search/corp61222/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)ミロク情報サービス【東証一部上場】</a>
+				</span>
+				<span class="CorpCatch">
+					強固な経営基盤はできた。「会計・IT」という専門性に磨きをかけ、さぁ、次なるステージへ。
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[3]" onclick="javascript:MC.window.open('/15/pc/search/corp54405/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/54405-a1-4.jpg?__rd=1204091813" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[3]" onclick="javascript:MC.window.open('/15/pc/search/corp54405/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)エス・イー・シー・ハイテック［コムシスHDグループ］</a>
+				</span>
+				<span class="CorpCatch">
+					あなたの言葉・想いを相手に伝える仕事をしています。ソフトウェア開発、ネットワーク構築を通してあなたも大切な人の言葉や想いを伝える仕事をしてみませんか！
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[4]" onclick="javascript:MC.window.open('/15/pc/search/corp101882/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/101882-a1-4.jpg?__rd=313552886" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[4]" onclick="javascript:MC.window.open('/15/pc/search/corp101882/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)シャンテリー</a>
+				</span>
+				<span class="CorpCatch">
+					「安定成長」と「急成長」を同時に実現していくプロのエンジニア集団!
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[5]" onclick="javascript:MC.window.open('/15/pc/search/corp86112/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/86112-a1-4.jpg?__rd=979116215" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[5]" onclick="javascript:MC.window.open('/15/pc/search/corp86112/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">アルテリア・ネットワークス(株)(旧社名：(株)UCOM)</a>
+				</span>
+				<span class="CorpCatch">
+					光のネットワークで新しい価値を創造！
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[6]" onclick="javascript:MC.window.open('/15/pc/search/corp76813/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/76813-a1-4.jpg?__rd=119315534" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[6]" onclick="javascript:MC.window.open('/15/pc/search/corp76813/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)アルゴシステム</a>
+				</span>
+				<span class="CorpCatch">
+					ハードとソフトの両方に強みを持つ研究開発型企業として、新たなマーケットを見すえた新製品を次々と開発。革新性と堅実性を備えたソリューションメーカーです。
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[7]" onclick="javascript:MC.window.open('/15/pc/search/corp77431/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/77431-a1-4.jpg?__rd=4118920" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[7]" onclick="javascript:MC.window.open('/15/pc/search/corp77431/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)KYOSO【旧社名：(株)京装コンピューター】</a>
+				</span>
+				<span class="CorpCatch">
+					40年にわたる実績を糧に、ソリューション設計からシステム開発、構築、運用、保守までトータルにサービスを提供。無借金経営を続ける安定した経営基盤が自慢です。
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[8]" onclick="javascript:MC.window.open('/15/pc/search/corp91061/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/91061-a1-4.jpg?__rd=1692693559" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[8]" onclick="javascript:MC.window.open('/15/pc/search/corp91061/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">ナビオコンピュータ(株)</a>
+				</span>
+				<span class="CorpCatch">
+					あなたの「熱意」と「向上心」をぶつけるフィールドがここにあります！
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[9]" onclick="javascript:MC.window.open('/15/pc/search/corp80932/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/80932-a1-4.jpg?__rd=1951177887" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[9]" onclick="javascript:MC.window.open('/15/pc/search/corp80932/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)インテリジェントシステムズ</a>
+				</span>
+				<span class="CorpCatch">
+					任天堂との固い絆をベースに、ゲームの開発環境から創造する技術力で、世界を感動させるエンターテインメントを発信
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[10]" onclick="javascript:MC.window.open('/15/pc/search/corp39009/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/39009-a1-4.jpg?__rd=429824056" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[10]" onclick="javascript:MC.window.open('/15/pc/search/corp39009/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)科学情報システムズ（略称：SIS）</a>
+				</span>
+				<span class="CorpCatch">
+					【スマート社会への実現】に向けて、若手エンジニアを中心とした組織を編成！SISと一緒に世の中の便利を創りませんか？
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[11]" onclick="javascript:MC.window.open('/15/pc/search/corp94059/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/94059-a1-4.jpg?__rd=1240874995" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[11]" onclick="javascript:MC.window.open('/15/pc/search/corp94059/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">UTグループ[UTホールディングス(株)【JASDAQスタンダード上場】／UTリーディング(株)／UTコンストラクション・ネットワーク(株)／UTエイム(株)]</a>
+				</span>
+				<span class="CorpCatch">
+					Take Action．Change your Life．＜想いが行動を変え、行動が現実を変える。＞　日本全国を“イキイキ”させる総合エンジニアリング企業！ 
+				</span>
+			</li>
+		
+			<li>
+				<span class="corpImg">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[12]" onclick="javascript:MC.window.open('/15/pc/search/corp100333/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));"><img src="/master/img15/advance/100333-a1-4.jpg?__rd=1129856690" alt="PHOTO"></a>
+				</span>
+				<span class="corpName">
+					<a href="javascript:void(0);" id="crpBrowsingHistoryList[12]" onclick="javascript:MC.window.open('/15/pc/search/corp100333/outline.html?func=recentChecked','corpInfo', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)トイロジック</a>
+				</span>
+				<span class="CorpCatch">
+					先端テクノロジーと創造への情熱でオリジナルゲームを作ろう！
+				</span>
+			</li>
+		
+	</ul>
+</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+ 		</div>
+		
+		
+
+		
+		<div class="mainSecWrap" id="tokSec">
+			<div class="mainSec">
+				<div class="secHeading">
+					<h2 class="hdTxt01"><span>特集</span></h2>
+					<p class="detailLink"><a href="/conts/2015/tok/group/"><span>詳細はこちら</span></a></p>
+				</div>
+				<div class="mainSecInner">
+					<div id="tokContent">
+						<div class="contentsContent_wrap">
+							<div class="contentIndex01">
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/dentsu/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_05.png" height="51" width="51" border="0" alt="電通グループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/dentsu/" target="_blank">電通グループ</a></h3>
+									</div>
+								</div>
+
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/hakuhodo/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_06.png" height="51" width="51" border="0" alt="博報堂/博報堂DYメディアパートナーズ　グループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/hakuhodo/" target="_blank">博報堂/博報堂DYメディアパートナーズ　グループ</a></h3>
+									</div>
+								</div>
+										
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/mcg/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_01.png" height="51" width="51" border="0" alt="三菱商事グループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/mcg/" target="_blank">三菱商事グループ</a></h3>
+									</div>
+								</div>
+							</div>
+										
+							<div class="contentIndex01">
+
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/citizen/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_02.png" height="51" width="51" border="0" alt="シチズングループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/citizen/" target="_blank">シチズングループ</a></h3>
+									</div>
+								</div>
+
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/jreast/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_07.png" height="51" width="51" border="0" alt="ＪＲ東日本グループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/jreast/" target="_blank">ＪＲ東日本グループ</a></h3>
+									</div>
+								</div>
+
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/hitachi/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_08.png" height="51" width="51" border="0" alt="日立グループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/hitachi/" target="_blank">日立グループ</a></h3>
+									</div>
+								</div>
+
+							</div>
+							<div class="contentIndex01">
+
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/mec/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_09.png" height="51" width="51" border="0" alt="三菱地所グループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/mec/" target="_blank">三菱地所グループ</a></h3>
+									</div>
+								</div>
+
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/tokyu-land/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_10.png" height="51" width="51" border="0" alt="東急不動産グループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/tokyu-land/" target="_blank">東急不動産グループ</a></h3>
+									</div>
+								</div>
+
+								<div class="contentBox">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/tok/nomura-re/" target="_blank"><img src="/15/pc/images/top/tok/tok_icon_11.png" height="51" width="51" border="0" alt="野村不動産グループ"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.mynavi.jp/conts/2015/tok/nomura-re/" target="_blank">野村不動産グループ</a></h3>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<p class="keyword">
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=509">日本航空グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=501">パナソニックグループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=516">ハウス食品グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=510">三菱商事グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=504">神戸製鋼所グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=520">小田急グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=511">三井物産グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=503">三井不動産グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=513">大和ハウスグループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=514">東京ガスグループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=523">学研グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=506">川崎重工業グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=518">東急不動産グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=512">シチズングループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=515">京王グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=502">関西電力グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=519">三菱地所グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=522">鈴与グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=517">AGCグループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=507">東京海上日動火災保険グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=505">積水ハウスグループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=521">ＪＲ北海道グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=508">北陸電力グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=524">ＹＫＫグループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=525">富士通グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=526">ITホールディングスグループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=529">島津グループ</a>
+							<a href="http://job.mynavi.jp/15/pc/corpinfo/searchCorpListByGenCond/index?magCode=533">コマツグループ</a>
+						</p>
+						<div class="tokTopics">
+							<ul class="linkList">
+								<script type="text/javascript">
+								<!--
+								var dispText = new Array(
+								'<li><a href="http://job.mynavi.jp/conts/2015/tok/engineer/" target="_blank">エンジニアの仕事の場、エンジニアリングアウトソーシング業界特集はこちらです。</a></li>',
+								'<li><a href="http://job.mynavi.jp/conts/2015/tok/nuclear_energy/" target="_blank">日本と世界の未来につづく「技術」と「人」のリアルに出会う。原子力産業特集。</a></li>',
+								'<li><a href="http://job.mynavi.jp/conts/2015/tok/sekkakyo/" target="_blank">機電系も文系も活躍中！「石油化学業界特集」はこちらです。</a></li>'
+								);
+
+								for(i = 0; i < 1; i++) {
+									var n = parseInt(Math.random() * dispText.length);
+									document.write(dispText.slice(n,n+1)[0]);
+									dispText.splice(n,1);
+								}
+								// -->
+								</script>
+							</ul>
+						</div>
+					</div>
+					<p class="otherLink"><a href="/conts/2015/tok/group/">その他の特集を見る</a></p>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="clWrap clWrap-2cl">
+			<div class="clBox">
+				<div class="mainSecWrap" id="areaSec">
+					<div class="mainSec">
+						<div class="secHeading">
+							<h2 class="hdTxt01"><span>エリアナビ</span></h2>
+							<p class="detailLink"><a href="http://job.mynavi.jp/conts/2015/area/" id="areaNaviLink" class="noborder"><span>詳細はこちら</span></a></p>
+						</div>
+						<div class="mainSecInner">
+							<div class="inner">
+								<div class="contentBox heightLine-group1">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/area/"><img src="/15/pc/images/top/pct_areanavi.png" height="58" width="78" border="0" alt=""></a></p>
+									<div class="txt">
+										<p>地域に特化した企業情報、セミナー情報が満載！</p>
+										<form name="toppage_displayTopPageActionForm" id="areaNaviForm2" method="post" action="/15/pc/toppage/displayTopPage/" onsubmit="MC.form.preventDouble(this);" target="_blank">
+											<p class="searchForm">
+											
+												
+													<select name="areaNaviValue" id="areaNaviValue"><option value="/conts/2015/area/">各地域の情報を見る</option>
+														<option value="10-/conts/s/hokkaido/2015/">北海道</option>
+														<option value="20-/conts/s/tohoku/2015/">東北</option>
+														<option value="30-/conts/s/kitakanto/2015/">埼玉/群馬/栃木</option>
+														<option value="45-/conts/s/w-tokyo/2015/">東京23区外・山梨</option>
+														<option value="40-/conts/s/e-kanto/2015/">千葉/茨城</option>
+														<option value="50-/conts/s/kanagawa/2015/">神奈川</option>
+														<option value="35-/conts/s/niigata/2015/">新潟</option>
+														<option value="85-/conts/s/hokuriku/2015/">北陸</option>
+														<option value="70-/conts/s/nagano/2015/">信州</option>
+														<option value="80-/conts/s/tokai/2015/">東海</option>
+														<option value="60-/conts/s/shizuoka/2015/">静岡</option>
+														<option value="90-/conts/s/kyoto/2015/">京都/滋賀</option>
+														<option value="100-/conts/s/osaka/2015/">大阪/奈良/和歌山</option>
+														<option value="110-/conts/s/hyogo/2015/">兵庫</option>
+														<option value="120-/conts/s/chugoku/2015/">中国</option>
+														<option value="130-/conts/s/shikoku/2015/">四国</option>
+														<option value="140-/conts/s/kyushu/2015/">九州/沖縄/山口</option></select>
+													<input type="image" name="doGoAreaNavi" preventdouble="true" src="/15/pc/images/top/btn_select-go.png" id="doGoAreaNavi" alt="GO">
+												
+												
+											
+											</p>
+										</form>
+									</div>
+								</div>
+								<p class="otherLink"><a href="/conts/2015/area/">エリアナビへ</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clBox last">
+				<div class="mainSecWrap" id="sciSec">
+					<div class="mainSec">
+						<div class="secHeading">
+							<h2 class="hdTxt01"><span>理系ナビ</span></h2>
+							<p class="detailLink"><a href="http://job.mynavi.jp/conts/2015/sci/" class="noborder"><span>詳細はこちら</span></a></p>
+						</div>
+						<div class="mainSecInner">
+							<div class="inner">
+								<div class="contentBox heightLine-group1">
+									<p class="pct"><a href="http://job.mynavi.jp/conts/2015/sci/"><img src="/15/pc/images/top/pct_scinavi.png" height="58" width="78" border="0" alt=""></a></p>
+									<div class="txt">
+										<p>理系限定！学科系統別に積極採用企業などを紹介！</p>
+									</div>
+								</div>
+								<p class="otherLink"><a href="http://job.mynavi.jp/conts/2015/sci/">理系マイナビへ</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		
+			<div class="mainSecWrap otherInfo" id="ourQuestion">
+				<div class="mainSec">
+					<div class="secHeading">
+						<h2 class="hdTxt01"><span>みんなの疑問に企業が回答</span></h2>
+						<p class="detailLink"><a href="http://job.mynavi.jp/conts/2015/theme/"><span>詳細はこちら</span></a></p>
+					</div>
+					<div class="mainSecInner">
+						<div class="inner">
+							<div class="txt">
+								<dl class="list01">
+									<dt>今週のテーマは？（毎週金曜更新）</dt>
+									
+										
+										
+											
+												<dd>
+													
+														
+														<a href="/15/pc/scThemeR4jgO/theme.html" id="themeList.link[0]">採用担当者の心を動かすために大切なことって、何？</a>
+													
+														 / 
+														<a href="/15/pc/scThemeSdcYq/theme.html" id="themeList.link[1]">選考に進む上でチェックしておいてほしいことは？</a>
+													
+														 / 
+														<a href="/15/pc/scThemeE3Y60/theme.html" id="themeList.link[2]">先輩たちの入社理由を教えて</a>
+													
+												</dd>
+											
+										
+									
+								</dl>
+							</div>
+							<p class="pct"><a href="http://job.mynavi.jp/conts/2015/theme/" class="noborder"><img src="/15/pc/images/top/pct_top-question.jpg" height="84" width="154" alt="みんなの疑問に企業が回答"></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		
+
+		
+		
+		
+
+		
+		<script type="text/javascript">
+		$(function(){
+			var Tabs = $("ul#eventsTab li a");
+			var TabActive = "active";
+			var TabContents = $("div#eventContent");
+			$("div.eventContent_wrap" , TabContents).hide();
+
+			$(Tabs).click(function(e){
+				e.preventDefault();
+				$("div.eventContent_wrap" , TabContents).hide();
+				$($(this).attr("href")).fadeIn(300);
+				$(Tabs).removeClass(TabActive);
+				$(this).addClass(TabActive);
+				$.cookie("mynaviPcTopEvent", $(this).attr("href") , {expires: 365});
+			});
+
+			// クッキー読み込み
+			var CookieName = $.cookie("mynaviPcTopEvent");
+			if (CookieName != null) {
+				$(".contentBox").removeClass("hidden");
+				$(Tabs).removeClass(TabActive);
+				$("a[href="+CookieName+"]").addClass(TabActive);
+				$(CookieName).fadeIn(300);
+			} else {
+				$(".contentBox").removeClass("hidden");
+				$("#eventsTab li a:first").addClass(TabActive);
+				//$("div:first" , TabContents).fadeIn(300);
+				$("div:nth-child(2)" , TabContents).fadeIn(300);
+			}
+		});
+		</script>
+		<div class="mainSecWrap" id="eventSec">
+			<div class="mainSec">
+				<div class="secHeading">
+					<h2 class="hdTxt01"><span>イベント情報</span></h2>
+					<p class="detailLink"><a href="/conts/2015/event/" class="noborder"><span>詳細はこちら</span></a></p>
+				</div>
+				<div class="mainSecInner">
+					
+					<div id="eventContent">
+						
+						<!--▼就職イベント-->
+						<div class="eventContent_wrap_all" id="expo">
+							<div class="contentIndex01 single">
+								<div class="contentBox">
+									<p class="pct"><a href="/conts2/seminar2015/" target="_blank"><img src="/15/pc/images/top/event/event_icon_event.png" height="51" width="51" border="0" alt="マイナビ就職ベント"></a></p>
+									<div class="txt">
+										<h3>
+											<a href="/conts2/seminar2015/" target="_blank">マイナビ就職イベント</a>
+											<div class="icons">
+												<span class="icon grey">全対象</span>
+											</div>
+										</h3>
+										<p>
+											マイナビが運営する就職イベント情報のすべてを掲載しています。開催地や時期で絞り込みができます。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--▲就職イベント-->
+						
+						<p class="otherLink"><a href="/conts/2015/event/">その他のイベント情報を見る</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		
+		<script type="text/javascript">
+		$(function(){
+			var Tabs = $("ul#contentsTab li a");
+			var TabActive = "active";
+			var TabContents = $("div#contentsContent");
+			$("div.contentsContent_wrap" , TabContents).hide();
+
+			$(Tabs).click(function(e){
+				e.preventDefault();
+				$("div.contentsContent_wrap" , TabContents).hide();
+				$($(this).attr("href")).fadeIn(300);
+				$(Tabs).removeClass(TabActive);
+				$(this).addClass(TabActive);
+				$.cookie("mynaviPcTopContents", $(this).attr("href") , {expires: 365});
+			});
+
+			// クッキー読み込み
+			var CookieName = $.cookie("mynaviPcTopContents");
+			if (CookieName != null) {
+				$(".contentBox").removeClass("hidden");
+				$(Tabs).removeClass(TabActive);
+				$("a[href="+CookieName+"]").addClass(TabActive);
+				$(CookieName).fadeIn(300);
+			} else {
+				$(".contentBox").removeClass("hidden");
+				$("#contentsTab li a:first").addClass(TabActive);
+				$("div:first" , TabContents).fadeIn(300);
+			}
+		});
+		</script>
+		<div class="mainSecWrap" id="supportSec">
+			<div class="mainSec">
+				<div class="secHeading">
+					<h2 class="hdTxt01"><span>就活支援</span></h2>
+					<p class="detailLink"><a href="/conts/2015/" class="noborder"><span>詳細はこちら</span></a></p>
+				</div>
+				<div class="mainSecInner">
+					<ul id="contentsTab">
+						<li><a href="#jiko">自己分析</a></li>
+						<li><a href="#gyoukai">業界研究</a></li>
+						<li><a href="#es">ES対策</a></li>
+						<li><a href="#taisaku">筆記試験</a></li>
+						<li><a href="#mensetsu">面接</a></li>
+						<li><a href="#jyunbi">就活準備</a></li>
+						<li><a href="#ebook">E-BOOK</a></li>
+					</ul>
+					<div id="contentsContent">
+						<!--▼自己分析-->
+						<div class="contentsContent_wrap" id="jiko">
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/15/pc/forward/forwardMatch/index"><img src="/15/pc/images/top/shien/shien_icon_match.png" height="51" width="51" border="0" alt="適職診断MATCH"></a></p>
+									<div class="txt">
+										<h3><a href="/15/pc/forward/forwardMatch/index">適職診断MATCH</a></h3>
+										<p>100万人の先輩が使った自己分析定番ツール</p>
+									</div>
+								</div>
+								
+								<div class="contentBox hidden last">
+									<p class="pct"><a href="/conts/2015/worksheet/"><img src="/15/pc/images/top/shien/shien_icon_sheet.png" height="51" width="51" border="0" alt="ラクラク自己分析シート"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/worksheet/">ラクラク自己分析シート</a></h3>
+										<p>自己分析用のテンプレートシートのダウンロード</p>
+									</div>
+								</div>
+							</div>
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/conts/2015/shindan/"><img src="/15/pc/images/top/shien/shien_icon_chousho.png" height="51" width="51" border="0" alt="長所・短所診断"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/shindan/">長所・短所診断</a></h3>
+										<p>カンタン診断で自分の長所・短所がすぐにわかる！</p>
+									</div>
+								</div>
+								
+								<div class="contentBox hidden last">
+									<p class="pct"><a href="/conts/2015/scout/"><img src="/15/pc/images/top/shien/shien_icon_scount.png" height="51" width="51" border="0" alt="スカウトにチャレンジ"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/scout/">スカウトにチャレンジ</a></h3>
+										<p>自己PRを登録して企業からスカウトを受けよう！</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--▼自己分析-->
+						<!--▼業界研究-->
+						<div class="contentsContent_wrap" id="gyoukai">
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/conts/2015/zukan/"><img src="/15/pc/images/top/shien/shien_icon_zukan.png" height="51" width="51" border="0" alt="業界研究大図鑑☆HYPER"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/zukan/">業界研究大図鑑☆HYPER</a></h3>
+										<p>興味のあるモノから業界研究を深めよう！</p>
+									</div>
+								</div>
+								
+								<div class="contentBox hidden last">
+									<p class="pct"><a href="/conts/2015/keyword/"><img src="/15/pc/images/top/shien/shien_icon_kewword.png" height="51" width="51" border="0" alt="業界大百科キーワード100"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/keyword/">就活大百科キーワード1000</a></h3>
+										<p>シゴトに関する用語データベース！</p>
+									</div>
+								</div>
+							</div>
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/conts/2015/sp/"><img src="/15/pc/images/top/shien/shien_icon_tok.png" height="51" width="51" border="0" alt="業界特集"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/sp/">業界特集</a></h3>
+										<p>業界別に企業担当者のインタビューなどを掲載</p>
+									</div>
+								</div>
+								
+								<div class="contentBox hidden last">
+									<p class="pct"><a href="/conts/2015/obog/"><img src="/15/pc/images/top/shien/shien_icon_obog.png" height="51" width="51" border="0" alt="就活に差がつく OB・OG訪問のススメ"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/obog/">就活に差がつく OB・OG訪問のススメ</a></h3>
+										<p>「ここだけの話」もあるかも!?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--▲業界研究-->
+						<!--▼ES対策-->
+						<div class="contentsContent_wrap" id="es">
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/conts/2015/workbook/"><img src="/15/pc/images/top/shien/shien_icon_workbook.png" height="51" width="51" border="0" alt="エントリーシート作成ツール"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/workbook/" class="new">エントリーシート作成ツール</a></h3>
+										<p>穴埋めフォームに記入し、自己PRと志望動機のモトをラクラク作成！</p>
+									</div>
+								</div>
+								<div class="contentBox hidden last">
+									<p class="pct"><a href="/conts/2015/entry_sheet2015/"><img src="/15/pc/images/top/shien/shien_icon_entrysheet2015.png" height="51" width="51" border="0" alt="岡茂信のエントリーシート添削講座"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/entry_sheet2015/" class="new">岡茂信のエントリーシート添削講座</a></h3>
+										<p>全６テーマ、各30名、合計計180名のESを添削＆結果公開！</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--▲ES対策-->
+						<!--▼筆記試験対策-->
+						<div class="contentsContent_wrap" id="taisaku">
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/conts/2015/mame/" target="_blank"><img src="/15/pc/images/top/shien/shien_icon_mame.png" height="51" width="51" border="0" alt="筆記対策マメモシ"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/mame/" target="_blank">筆記対策マメモシ</a></h3>
+										<p>時事・一般常識が選択形式問題で学べる。手軽な筆記試験対策。</p>
+									</div>
+								</div>
+								
+							<div class="contentBox hidden last">
+								<p class="pct"><a href="/15/pc/forward/forwardMockTest/index"><img src="/15/pc/images/top/shien/shien_icon_spi.png" height="51" width="51" border="0" alt="SPI+一般常識・時事完全突破塾"></a></p>
+								<div class="txt">
+									<h3><a href="/15/pc/forward/forwardMockTest/index">SPI+一般常識・時事完全突破塾</a></h3>
+									<p>全600問の練習問題と年８回の全国一斉模試で筆記試験の準備！</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<!--▲筆記試験対策-->
+						<!--▼面接-->
+						<div class="contentsContent_wrap" id="mensetsu">
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/conts/2015/mogimen/"><img src="/15/pc/images/top/shien/shien_icon_mogimen.png" height="51" width="51" border="0" alt="リアル模擬面接シミュレーター　モギメン"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/mogimen/" class="new">リアル模擬面接シミュレーター　モギメン</a></h3>
+										<p>完全面接対策！　もう面接は怖くない!!</p>
+									</div>
+								</div>
+								<div class="contentBox hidden last">
+									<p class="pct"><a href="/conts/2015/gyaku_mogi/"><img src="/15/pc/images/top/shien/shien_icon_mogimen2.png" height="51" width="51" border="0" alt="面接官体験シミュレーター 逆モギメン"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/gyaku_mogi/" class="new">面接官体験シミュレーター 逆モギメン</a></h3>
+										<p>面接官はアナタ!!人事の立場になってみよう</p>
+									</div>
+								</div>
+							</div>
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/conts/2015/manner/"><img src="/15/pc/images/top/shien/shien_icon_manner.png" height="51" width="51" border="0" alt="恥をかかないための就活マナー"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/manner/">恥をかかないための就活マナー</a></h3>
+										<p>あなたのマナー、本当にそれで大丈夫!?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--▲面接-->
+						<!--▼就活準備-->
+						<div class="contentsContent_wrap" id="jyunbi">
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="/conts/2015/schedule/"><img src="/15/pc/images/top/shien/shien_icon_schedule.png" height="51" width="51" border="0" alt="徹底解説！就活スケジュール"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/schedule/">徹底解説！就活スケジュール</a></h3>
+										<p>スケジュールを知ることは就活の第一歩</p>
+									</div>
+								</div>
+								<div class="contentBox hidden last">
+									<p class="pct"><a href="/conts/2015/susume/"><img src="/15/pc/images/top/shien/shien_icon_susume.png" height="51" width="51" border="0" alt="まる分かり！就活の進め方"></a></p>
+									<div class="txt">
+										<h3><a href="/conts/2015/susume/">まる分かり！就活の進め方</a></h3>
+										<p>就活の進め方をステップごとにご紹介</p>
+									</div>
+								</div>
+							</div>
+							<div class="contentIndex01">
+								
+								<div class="contentBox hidden">
+									<p class="pct"><a href="http://job.my-tomo.jp/2015/" target="_blank"><img src="/15/pc/images/top/shien/shien_icon_imatomo.png" height="51" width="51" border="0" alt="マイナビ公式Facebookアプリ「マイトモ」"></a></p>
+									<div class="txt">
+										<h3><a href="http://job.my-tomo.jp/2015/" target="_blank">マイナビ公式Facebookアプリ</a></h3>
+										<p>「マイトモ」でシュウカツ友達を見つけよう</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--▲就活準備-->
+						<!--▼EBOOK-->
+						<div class="contentsContent_wrap" id="ebook">
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="http://jobebook.mynavi.jp/library/15/leading/pageview.html" target="_blank"><img src="/15/pc/images/top/shien/shien_icon_ebookleading.png" height="51" width="51" border="0" alt="日本のリーディングカンパニー"></a></p>
+									<div class="txt">
+										<h3><a href="http://jobebook.mynavi.jp/library/15/leading/pageview.html" target="_blank">日本のリーディングカンパニー</a></h3>
+										<p>業界＆企業研究のための就職情報誌</p>
+									</div>
+								</div>
+								<div class="contentBox hidden last">
+									<p class="pct"><a href="http://jobebook.mynavi.jp/library/15/start/pageview.html" target="_blank"><img src="/15/pc/images/top/shien/shien_icon_ebookstart.png" height="51" width="51" border="0" alt="就活スタート号"></a></p>
+									<div class="txt">
+										<h3><a href="http://jobebook.mynavi.jp/library/15/start/pageview.html" target="_blank">就活スタート号</a></h3>
+										<p>仕事とキャリアがわかる就職情報誌</p>
+									</div>
+								</div>
+							</div>
+							<div class="contentIndex01">
+								<div class="contentBox hidden">
+									<p class="pct"><a href="http://jobebook.mynavi.jp/library/15/job_career/pageview.html" target="_blank"><img src="/15/pc/images/top/shien/shien_icon_ebookcareer.png" height="51" width="51" border="0" alt="仕事とキャリアを考える本"></a></p>
+									<div class="txt">
+										<h3><a href="http://jobebook.mynavi.jp/library/15/job_career/pageview.html" target="_blank">仕事とキャリアを考える本</a></h3>
+										<p>『業種』と『職種』を研究できる本</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--▲EBOOK-->
+						<p class="otherLink"><a href="/conts/2015/">その他の就活支援コンテンツを見る</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+
+		
+		
+		<div class="mainBnr02">
+			<script language="JavaScript" type="text/javascript">
+			var NaviAccPro = location.protocol;
+			var impAserver = NaviAccPro+"//as.mv.impact-ad.jp";
+			var impAtarget = "/SITE=NAVI.TOP.KISUU/AREA=NAVI.LARGE/AAMSZ=510X60/OENCJP=SJIS";
+			impArnd = Math.round(Math.random() * 100000000);
+			if (!impApid) var impApid = Math.round(Math.random() * 100000000);
+			document.write('<scr');
+			document.write('ipt type="text/javascript" language="JavaScript" src="' + impAserver + '/jserver/acc_random=' + impArnd + impAtarget + '/pageid=' + impApid + '">');
+			document.write('</scr');
+			document.write('ipt>');
+			</script>
+		</div>
+		
+		
+
+	</div>
+
+
+
+
+
+
+
+	<div id="secondary">
+
+		
+		
+		
+		
+		
+
+		
+		
+		<div class="sideBnr01">
+			<ul>
+				
+				<li><a href="/15/pc/common/displayBanner/index?bannerOptNo=830492" target="_blank" id="memberBannerLinkList.link[0]"><img src="/common/img15/banner/member/87976_20140404.gif?__rd=1183062241" height="50" width="220" alt="(株)MDI【エムディアイ】"></a></li>
+				
+				<li><a href="/15/pc/common/displayBanner/index?bannerOptNo=830503" target="_blank" id="memberBannerLinkList.link[1]"><img src="/common/img15/banner/member/1939_20140404.gif?__rd=1591837915" height="50" width="220" alt="三井不動産リアルティ(株)"></a></li>
+				
+			</ul>
+		</div>
+		
+		
+
+		
+		
+			
+				
+				
+					
+						<div class="secBox" id="topicsSide">
+							<div class="secHeading">
+								<h2 class="hdTxt01"><span>志望業種からPR</span></h2>
+								<p class="detailLink"><a href="/15/pc/regist/regUpdIndustry/index" target="modIndustryWindow" id="bannerIndustryRegLink"><span>志望業種の変更</span></a></p>
+							</div>
+							<div class="secBoxInner">
+								<ul class="sideContentList topicsList01">
+									
+										<li class="content">
+											<p class="cat">その他電気・電子関連</p>
+											<p class="ttl"><a href="/15/pc/common/displayBanner/index?bannerOptNo=787269" target="_blank" id="topTextBannerList.link[0]">理系学生が主役のフィールドあります</a></p>
+										</li>
+									
+										<li class="content">
+											<p class="cat">情報処理</p>
+											<p class="ttl"><a href="/15/pc/common/displayBanner/index?bannerOptNo=785632" target="_blank" id="topTextBannerList.link[1]">国内最大級のIT企業で15職種募集中！</a></p>
+										</li>
+									
+										<li class="content">
+											<p class="cat">ソフトウエア</p>
+											<p class="ttl"><a href="/15/pc/common/displayBanner/index?bannerOptNo=785552" target="_blank" id="topTextBannerList.link[2]">福岡で働く！＜IT★文理不問＞</a></p>
+										</li>
+									
+								</ul>
+							</div>
+						</div>
+					
+				
+			
+		
+		
+
+		
+		<div class="secBox" id="login">
+			<h2 class="hdTxt01"><span class="mymenu">マイメニュー<a href="javascript:void(0);" id="helpMyMenuLink" class="help" onclick="MC.window.open('http://job.mynavi.jp/conts/2015/help/16.html', 'help', MC.window.style.createObject('600', '400', false, false, false, false, true, true, '10', '100'));">ヘルプ</a></span></h2>
+			<div class="secBoxInner">
+				<div id="mymenuInner">
+					<div class="mymenuInner">
+						<div class="inner" id="myMessage">
+							<h3><a href="/15/pc/user/displayMessageList/index?boxType=reply" target="_top" id="messageBoxLink"><img src="/15/pc/images/top/btn_message.png" height="21" width="220" alt="メッセージ"></a></h3>
+
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<th scope="row">
+											<a href="/15/pc/user/displayMessageList/index?boxType=reply" target="_top" id="replyBoxLink">お返事箱</a>
+										</th>
+										
+											
+												<td class="new">
+													新着
+												</td>
+												<td class="number">
+													
+														
+														なし
+													
+												</td>
+											
+											
+										
+									</tr>
+									<tr>
+										<th scope="row">
+											<a href="/15/pc/user/displayMessageList/index?boxType=info" target="_top" id="infoBoxLink">お知らせ箱</a>
+										</th>
+										
+											
+												<td class="new">
+													新着
+												</td>
+												<td class="number">
+													
+														
+														なし
+													
+												</td>
+											
+											
+										
+									</tr>
+									<tr>
+										<th scope="row">
+											<a href="/15/pc/user/displayMessageList/index?boxType=draft" target="_top" id="scoutBoxLink">スカウト</a>
+										</th>
+										
+											
+												
+													
+														<td class="new">
+															新着
+														</td>
+														<td class="number">
+															
+																
+																なし
+															
+														</td>
+													
+													
+												
+											
+											
+										
+									</tr>
+									
+									<tr>
+										<th scope="row">
+											<a href="/15/pc/user/displayMessageList/index?boxType=ed" target="_top" id="editorialBoxLink">編集部から</a>
+										</th>
+										
+											
+												<td class="new">
+													新着
+												</td>
+												<td class="number">
+													
+														
+														なし
+													
+												</td>
+											
+											
+										
+									</tr>
+									
+									
+										
+											
+										
+									
+								</table>
+		 					</div>
+		 					<div class="inner" id="myActivity">
+		 						<h3><a href="/15/pc/user/displayBookmarkList/index?selected=all&reqcd=&__rd=1198990706" target="_top" id="bookmarkLink"><img src="/15/pc/images/top/btn_activity.png" height="21" width="220" alt="活動履歴（ブックマーク）"></a></h3>
+								<table border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<th scope="row">
+											<a href="/15/pc/user/displayBookmarkList/index?selected=all" target="_top" id="registBookmarkLink">すべての企業</a>
+										</th>
+										
+											
+												<td class="number">
+													<em>1</em>社
+												</td>
+											
+											
+										
+									</tr>
+									
+										<tr>
+											<th scope="row">
+												<a href="/15/pc/user/displayBookmarkList/index?selected=entry" target="_top" id="unEntryLink">エントリー済み</a>
+											</th>
+											
+												
+													<td class="number">
+														<em>0</em>件
+													</td>
+												
+												
+											
+										</tr>
+										<tr>
+											<th scope="row">
+												<a href="/15/pc/user/displayBookmarkList/index?selected=no_entry" target="_top" id="unEntryLink">未エントリー</a>
+											</th>
+											
+												
+													<td class="number">
+														<em>1</em>件
+													</td>
+												
+												
+											
+										</tr>
+										<tr>
+											<th scope="row">
+												<a href="/15/pc/user/displayBookmarkList/index?selected=no_seminar" target="_top" id="unreserveSeminarLink">説明会未予約</a>
+											</th>
+											
+												
+													<td class="number">
+														<em>1</em>件
+													</td>
+												
+												
+											
+										</tr>
+									
+									<tr>
+										<th scope="row">
+											<a href="/15/pc/user/displaySchedule/index" target="_top" id="scheduleLink">スケジュール</a>
+										</th>
+										<td class="number">&nbsp;
+										</td>
+									</tr>
+								</table>
+							</div>
+						
+							<script language="JavaScript" type="text/JavaScript">
+							_gaq.push(['_setCustomVar', 26, 'ブックマーク_すべて', '1', 2]);
+							_gaq.push(['_setCustomVar', 27, 'ブックマーク_エントリー済', '0', 2]);
+							_gaq.push(['_setCustomVar', 28, 'ブックマーク_未エントリー', '1', 2]);
+							_gaq.push(['_setCustomVar', 29, 'ブックマーク_未予約', '1', 2]);
+							</script>
+						
+						
+					</div>
+				</div>
+
+				
+				
+				<script type="text/javascript">
+				$(function() {
+				    $("#seminarSearchTab li").click(function() {
+				        var num = $("#seminarSearchTab li").index(this);
+				        $(".seminarSearchContent_wrap").hide();
+				        $(".seminarSearchContent_wrap").eq(num).fadeIn(1000);
+				        $("#seminarSearchTab li").removeClass('select');
+				        $(this).addClass('select')
+				    });
+				});
+				</script>
+				<h3 class="hdTxt02"><span>セミナー・説明会検索</span></h3>
+				<div class="mainSec02" id="seminarSearch">
+					<div class="inner">
+
+						<ul id="seminarSearchTab">
+							
+								
+								<li class="select">2014年4月</li>
+								
+								
+							
+								
+								
+								<li>2014年5月</li>
+								
+							
+								
+								
+								<li>2014年6月</li>
+								
+							
+						</ul>
+
+						
+						
+						<div class="seminarSearchContent_wrap">
+							<table border="0" cellspacing="0" cellpadding="0" class="scheduleTable">
+								<tr>
+									<th class="week" scope="col">&nbsp;</th>
+									<th scope="col">日</th><th scope="col">月</th><th scope="col">火</th><th scope="col">水</th><th scope="col">木</th><th scope="col">金</th><th scope="col">土</th>
+								</tr>
+								
+								
+								<tr>
+									
+									
+										<td class="week">週で検索</td>
+									
+									
+									
+										
+										
+											
+										
+										
+										
+										
+											
+												<td class="holiday">&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+											
+												<td>1</td>
+											
+										
+									
+										
+										
+										
+										
+										
+											
+											
+												<td>2</td>
+											
+										
+									
+										
+										
+										
+										
+										
+											
+											
+												<td>3</td>
+											
+										
+									
+										
+										
+										
+										
+										
+											
+											
+												<td>4</td>
+											
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+											
+												<td class="sat">5</td>
+											
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140406P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+										
+											
+											
+												<td class="holiday">6</td>
+											
+										
+									
+										
+										
+										
+										
+										
+											
+											
+												<td>7</td>
+											
+										
+									
+										
+										
+										
+										
+										
+											
+											
+												<td>8</td>
+											
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140409.html" id="calendarInfoDispDtoList.weekList.dateList.date">9</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140410.html" id="calendarInfoDispDtoList.weekList.dateList.date">10</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140411.html" id="calendarInfoDispDtoList.weekList.dateList.date">11</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140412.html" id="calendarInfoDispDtoList.weekList.dateList.date">12</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140413P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140413.html" id="calendarInfoDispDtoList.weekList.dateList.date">13</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140414.html" id="calendarInfoDispDtoList.weekList.dateList.date">14</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140415.html" id="calendarInfoDispDtoList.weekList.dateList.date">15</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140416.html" id="calendarInfoDispDtoList.weekList.dateList.date">16</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140417.html" id="calendarInfoDispDtoList.weekList.dateList.date">17</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140418.html" id="calendarInfoDispDtoList.weekList.dateList.date">18</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140419.html" id="calendarInfoDispDtoList.weekList.dateList.date">19</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140420P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140420.html" id="calendarInfoDispDtoList.weekList.dateList.date">20</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140421.html" id="calendarInfoDispDtoList.weekList.dateList.date">21</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140422.html" id="calendarInfoDispDtoList.weekList.dateList.date">22</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140423.html" id="calendarInfoDispDtoList.weekList.dateList.date">23</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140424.html" id="calendarInfoDispDtoList.weekList.dateList.date">24</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140425.html" id="calendarInfoDispDtoList.weekList.dateList.date">25</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140426.html" id="calendarInfoDispDtoList.weekList.dateList.date">26</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140427P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140427.html" id="calendarInfoDispDtoList.weekList.dateList.date">27</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140428.html" id="calendarInfoDispDtoList.weekList.dateList.date">28</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140429.html" id="calendarInfoDispDtoList.weekList.dateList.date">29</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140430.html" id="calendarInfoDispDtoList.weekList.dateList.date">30</a></td>
+										
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+												<td class="sat">&nbsp;</td>
+											
+											
+										
+									
+									
+								</tr>
+								
+								
+							</table>
+							<ul class="linkList01"><li class="normal txt borderBoth"><a href="/15/pc/search/sem201404.html" id="calendarInfoDispDtoList.dateStringForLink">2014年4月の説明会すべてを表示</a></li></ul>
+						</div>
+						
+						<div class="seminarSearchContent_wrap disnon">
+							<table border="0" cellspacing="0" cellpadding="0" class="scheduleTable">
+								<tr>
+									<th class="week" scope="col">&nbsp;</th>
+									<th scope="col">日</th><th scope="col">月</th><th scope="col">火</th><th scope="col">水</th><th scope="col">木</th><th scope="col">金</th><th scope="col">土</th>
+								</tr>
+								
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140427P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+										
+											
+												<td class="holiday">&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140501.html" id="calendarInfoDispDtoList.weekList.dateList.date">1</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140502.html" id="calendarInfoDispDtoList.weekList.dateList.date">2</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140503.html" id="calendarInfoDispDtoList.weekList.dateList.date">3</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140504P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140504.html" id="calendarInfoDispDtoList.weekList.dateList.date">4</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140505.html" id="calendarInfoDispDtoList.weekList.dateList.date">5</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140506.html" id="calendarInfoDispDtoList.weekList.dateList.date">6</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140507.html" id="calendarInfoDispDtoList.weekList.dateList.date">7</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140508.html" id="calendarInfoDispDtoList.weekList.dateList.date">8</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140509.html" id="calendarInfoDispDtoList.weekList.dateList.date">9</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140510.html" id="calendarInfoDispDtoList.weekList.dateList.date">10</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140511P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140511.html" id="calendarInfoDispDtoList.weekList.dateList.date">11</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140512.html" id="calendarInfoDispDtoList.weekList.dateList.date">12</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140513.html" id="calendarInfoDispDtoList.weekList.dateList.date">13</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140514.html" id="calendarInfoDispDtoList.weekList.dateList.date">14</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140515.html" id="calendarInfoDispDtoList.weekList.dateList.date">15</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140516.html" id="calendarInfoDispDtoList.weekList.dateList.date">16</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140517.html" id="calendarInfoDispDtoList.weekList.dateList.date">17</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140518P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140518.html" id="calendarInfoDispDtoList.weekList.dateList.date">18</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140519.html" id="calendarInfoDispDtoList.weekList.dateList.date">19</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140520.html" id="calendarInfoDispDtoList.weekList.dateList.date">20</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140521.html" id="calendarInfoDispDtoList.weekList.dateList.date">21</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140522.html" id="calendarInfoDispDtoList.weekList.dateList.date">22</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140523.html" id="calendarInfoDispDtoList.weekList.dateList.date">23</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140524.html" id="calendarInfoDispDtoList.weekList.dateList.date">24</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140525P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140525.html" id="calendarInfoDispDtoList.weekList.dateList.date">25</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140526.html" id="calendarInfoDispDtoList.weekList.dateList.date">26</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140527.html" id="calendarInfoDispDtoList.weekList.dateList.date">27</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140528.html" id="calendarInfoDispDtoList.weekList.dateList.date">28</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140529.html" id="calendarInfoDispDtoList.weekList.dateList.date">29</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140530.html" id="calendarInfoDispDtoList.weekList.dateList.date">30</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140531.html" id="calendarInfoDispDtoList.weekList.dateList.date">31</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								
+							</table>
+							<ul class="linkList01"><li class="normal txt borderBoth"><a href="/15/pc/search/sem201405.html" id="calendarInfoDispDtoList.dateStringForLink">2014年5月の説明会すべてを表示</a></li></ul>
+						</div>
+						
+						<div class="seminarSearchContent_wrap disnon">
+							<table border="0" cellspacing="0" cellpadding="0" class="scheduleTable">
+								<tr>
+									<th class="week" scope="col">&nbsp;</th>
+									<th scope="col">日</th><th scope="col">月</th><th scope="col">火</th><th scope="col">水</th><th scope="col">木</th><th scope="col">金</th><th scope="col">土</th>
+								</tr>
+								
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140601P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140601.html" id="calendarInfoDispDtoList.weekList.dateList.date">1</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140602.html" id="calendarInfoDispDtoList.weekList.dateList.date">2</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140603.html" id="calendarInfoDispDtoList.weekList.dateList.date">3</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140604.html" id="calendarInfoDispDtoList.weekList.dateList.date">4</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140605.html" id="calendarInfoDispDtoList.weekList.dateList.date">5</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140606.html" id="calendarInfoDispDtoList.weekList.dateList.date">6</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140607.html" id="calendarInfoDispDtoList.weekList.dateList.date">7</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140608P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140608.html" id="calendarInfoDispDtoList.weekList.dateList.date">8</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140609.html" id="calendarInfoDispDtoList.weekList.dateList.date">9</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140610.html" id="calendarInfoDispDtoList.weekList.dateList.date">10</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140611.html" id="calendarInfoDispDtoList.weekList.dateList.date">11</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140612.html" id="calendarInfoDispDtoList.weekList.dateList.date">12</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140613.html" id="calendarInfoDispDtoList.weekList.dateList.date">13</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140614.html" id="calendarInfoDispDtoList.weekList.dateList.date">14</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140615P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140615.html" id="calendarInfoDispDtoList.weekList.dateList.date">15</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140616.html" id="calendarInfoDispDtoList.weekList.dateList.date">16</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140617.html" id="calendarInfoDispDtoList.weekList.dateList.date">17</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140618.html" id="calendarInfoDispDtoList.weekList.dateList.date">18</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140619.html" id="calendarInfoDispDtoList.weekList.dateList.date">19</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140620.html" id="calendarInfoDispDtoList.weekList.dateList.date">20</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140621.html" id="calendarInfoDispDtoList.weekList.dateList.date">21</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140622P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140622.html" id="calendarInfoDispDtoList.weekList.dateList.date">22</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140623.html" id="calendarInfoDispDtoList.weekList.dateList.date">23</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140624.html" id="calendarInfoDispDtoList.weekList.dateList.date">24</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140625.html" id="calendarInfoDispDtoList.weekList.dateList.date">25</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140626.html" id="calendarInfoDispDtoList.weekList.dateList.date">26</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140627.html" id="calendarInfoDispDtoList.weekList.dateList.date">27</a></td>
+										
+										
+									
+										
+										
+										
+											
+										
+										
+											<td class="sat"><a href="/15/pc/search/sem20140628.html" id="calendarInfoDispDtoList.weekList.dateList.date">28</a></td>
+										
+										
+									
+									
+								</tr>
+								
+								<tr>
+									
+										<td class="week"><a href="/15/pc/search/sem20140629P1W.html" id="calendarInfoDispDtoList.weekList.dateStringForLink">週で検索</a></td>
+									
+									
+									
+									
+										
+										
+											
+										
+										
+										
+											<td class="holiday"><a href="/15/pc/search/sem20140629.html" id="calendarInfoDispDtoList.weekList.dateList.date">29</a></td>
+										
+										
+									
+										
+										
+										
+										
+											<td><a href="/15/pc/search/sem20140630.html" id="calendarInfoDispDtoList.weekList.dateList.date">30</a></td>
+										
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+										
+										
+											
+												<td>&nbsp;</td>
+											
+											
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+												<td class="sat">&nbsp;</td>
+											
+											
+										
+									
+									
+								</tr>
+								
+								
+							</table>
+							<ul class="linkList01"><li class="normal txt borderBoth"><a href="/15/pc/search/sem201406.html" id="calendarInfoDispDtoList.dateStringForLink">2014年6月の説明会すべてを表示</a></li></ul>
+						</div>
+						
+						
+
+						<ul class="linkList01">
+							<li class="normal txt"><a href="/15/pc/search/seminar.html?tab=seminar">その他のセミナー・説明会検索</a></li>
+						</ul>
+
+					</div>
+				</div>
+				
+				
+
+				
+				<div class="loginCont" id="match">
+					<div class="inner">
+						<h3><a href="/15/pc/forward/forwardMatch/index">適職診断MATCH</a></h3>
+						
+						
+							<p class="status">[受験状態：
+								
+									
+									
+											<a href="/15/pc/forward/forwardMatch/index"><em>未受検</em></a>
+									
+								
+							]</p>
+						
+						
+						
+						
+						
+							<p>※受検状態は翌日に反映されます</p>
+						
+					</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+		
+
+		
+		
+		<div class="siteInfo">
+			<h2>サービス一時休止のお知らせ</h2>
+			<div class="siteInfoInner siteInfoInner2">
+				<p>
+					以下の日程でシステムメンテナンスを予定しております。メンテナンス中はマイナビのすべてのサービスがご利用いただけません。あらかじめご了承ください。<br>
+					<span style="text-align:center;display:block;font-weight:bold;margin-top:5px;color:#FF0000;font-size:12px;">4/13(日)7:30～9:00</span>
+				</p>
+			</div>
+		</div>
+		
+		
+
+		
+		
+			
+		
+		
+
+		
+		<div class="subSites">
+			<div class="subSitesInner">
+				<p class="first"><a href="http://job.mynavi.jp/conts/2015/sci/" class="ri"><span>理系ナビ</span></a></p>
+				<p class="second"><a href="http://job.mynavi.jp/conts/2015/tok/yak/" class="yaku" target="_blank"><span>薬学生ナビ</span></a></p>
+			</div>
+		</div>
+		
+
+		
+		
+			
+			<div class="secBox accessRank">
+				<h2 class="hdTxt01"><span>業界別アクセスランキング</span></h2>
+				<div class="secBoxInner">
+					<div class="heading">
+						<p class="update">※前日PV集計です</p>
+						<h3>通信</h3>
+					</div>
+					
+						<table border="0" cellspacing="0" cellpadding="0" class="rankTable">
+							
+								
+									
+										<tr class="rank1">
+											<th scope="row">
+												第1位
+											</th>
+											<td>
+												<a href="javascript:void(0);" id="pvRankingCorpList.CorpName[0]" onclick="javascript:MC.window.open('/15/pc/search/corp67421/outline.html?func=top','Rank', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">ネクシィーズグループ</a>
+											</td>
+										</tr>
+									
+									
+								
+							
+								
+									
+									
+										<tr >
+											<th scope="row">
+												第2位
+											</th>
+											<td>
+												<a href="javascript:void(0);" id="pvRankingCorpList.CorpName[1]" onclick="javascript:MC.window.open('/15/pc/search/corp64714/outline.html?func=top','Rank', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)JA-LPガス情報センター【JAグループ】</a>
+											</td>
+										</tr>
+									
+								
+							
+								
+									
+									
+										<tr >
+											<th scope="row">
+												第3位
+											</th>
+											<td>
+												<a href="javascript:void(0);" id="pvRankingCorpList.CorpName[2]" onclick="javascript:MC.window.open('/15/pc/search/corp1071/outline.html?func=top','Rank', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)ミライト</a>
+											</td>
+										</tr>
+									
+								
+							
+								
+									
+									
+										<tr >
+											<th scope="row">
+												第4位
+											</th>
+											<td>
+												<a href="javascript:void(0);" id="pvRankingCorpList.CorpName[3]" onclick="javascript:MC.window.open('/15/pc/search/corp104527/outline.html?func=top','Rank', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">(株)ノーバス</a>
+											</td>
+										</tr>
+									
+								
+							
+								
+									
+									
+										<tr >
+											<th scope="row">
+												第5位
+											</th>
+											<td>
+												<a href="javascript:void(0);" id="pvRankingCorpList.CorpName[4]" onclick="javascript:MC.window.open('/15/pc/search/corp68901/outline.html?func=top','Rank', MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1));">ソフトバンク・テクノロジー(株)【東証一部上場】</a>
+											</td>
+										</tr>
+									
+								
+							
+						</table>
+					
+					<p class="otherRank"><a href="http://job.mynavi.jp/conts/2015/pv_rank/" id="otherPvRanking">その他のランキングはこちら</a></p>
+				</div>
+			</div>
+			
+		
+		
+		
+		
+		
+
+		
+		<div class="secBox" id="news">
+			<h2 class="hdTxt01"><span>キャンペーン / 編集部ニュース</span></h2>
+			<div class="secBoxInner">
+				<ul class="sideContentList">
+					
+					
+					
+					
+					
+					
+					
+					<li class="content">
+						<div class="txt">
+							<h3><a href="http://v6.advg.jp/adpv6/r/3wB_9GK" target="_blank">就活スタイル</a></h3>
+							<p>先輩のアンケートを中心に就活に必要なアイテムを紹介！</p>
+						</div>
+						<p class="pct"><a href="http://v6.advg.jp/adpv6/r/3wB_9GK" target="_blank"><img src="/15/pc/images/top/osusume_icon_style.png" width="58" height="58" alt="就活スタイル" border="0"></a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		
+		<div id="mynaviInfo">
+			<div class="inner">
+				<ul class="linkList">
+					<li><a href="http://www.mynavi.jp/privacy/index.html" target="_blank">個人情報保護方針</a></li>
+					<li><a href="http://www.mynavi.jp/" target="_blank">会社案内</a></li>
+				</ul>
+			</div>
+			<dl class="contact">
+				<dt>採用ご担当者の方</dt>
+				<dd>
+					<ul class="linkList">
+						<li><a href="https://enq.mynavi.jp/job/index.php?p=20110104132013" target="_blank">掲載についてのお問い合わせ</a></li>
+					</ul>
+				</dd>
+				<dt>学生の方</dt>
+				<dd>
+					<ul class="linkList">
+						<li><a href="/conts/2015/sitemap/">サイトマップ</a></li>
+						<li><a href="http://job.mynavi.jp/conts/2015/kaiin/form/?type=message">サイトへのご意見ご要望</a></li>
+						<li><a href="http://job.mynavi.jp/conts/2015/kaiin/form/?type=shinsa">掲載内容や採用の対応について</a></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+		
+
+		
+		
+		<div class="subSites">
+			<div class="subSitesInner">
+				<p class="first"><a href="https://twitter.com/mynavi_2015" class="twitter" target="_blank"><span>twitter</span></a></p>
+				<p class="second"><a href="https://www.facebook.com/mynavi2015" class="facebook" target="_blank"><span>facebook</span></a></p>
+			</div>
+		</div>
+		
+
+	</div>
+
+	
+	
+	
+
+</div>
+
+
+
+
+
+
+	
+	
+		
+	
+
+<script type="text/javascript" src="/15/pc/js/ui/userinsight.js"></script>
+
+
+
+
+<div id="gfooter">
+<div id="GlobalFooter" class="clearfix">
+<div id="FooterLogo">
+<a href="http://www.mynavi.jp/" target="_blank"><img src="/15/pc/images/cmn/logo.gif" width="70" height="61" alt="株式会社マイナビ" /></a>
+</div>
+
+<div id="FooterService">
+<div id="FooterServiceHead" class="clearfix">
+<div class="FooterTitle">マイナビグループの関連サイト</div>
+<p class="FooterHeadLink"><a href="http://www.mynavi.jp/service/" target="_blank"><img src="/15/pc/images/cmn/farrow.gif" width="13" height="10" alt=">">サービス一覧</a></p>
+</div>
+
+<div id="FooterServiceCont">
+<dl class="clearfix">
+<dt>求人情報</dt>
+<dd><a href="http://job.mynavi.jp/" target="_blank">学生の就活</a></dd>
+<dd><a href="http://global.mynavi.jp/" target="_blank">留学経験者の就活</a></dd>
+<dd><a href="http://nurse.mynavi.jp/" target="_blank">看護学生の就活</a></dd>
+<dd><a href="http://tenshoku.mynavi.jp/" target="_blank">転職情報</a></dd>
+<dd><a href="http://agent.mynavi.jp/" target="_blank">転職エージェント</a></dd>
+<dd class="last"><a href="http://baito.mynavi.jp/" target="_blank">アルバイト</a></dd>
+<dd><a href="http://part.mynavi.jp/" target="_blank">パート</a></dd>
+<dd class="last"><a href="http://haken.mynavi.jp/" target="_blank">派遣求人</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>進路情報</dt>
+<dd><a href="http://shingaku.mynavi.jp/" target="_blank">高校生の進路情報</a></dd>
+<dd class="last"><a href="http://jol.me/" target="_blank">10代のライフデザイン</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>情報サービス</dt>
+<dd><a href="http://news.mynavi.jp" target="_blank">総合・専門ニュース</a></dd>
+<dd><a href="http://student.mynavi.jp/" target="_blank">大学生活応援</a></dd>
+<dd><a href="http://woman.mynavi.jp/" target="_blank">働く女性応援</a></dd>
+<dd><a href="http://book.mynavi.jp/" target="_blank">雑誌・書籍・ソフト</a></dd>
+<dd><a href="http://www.japan-i.jp/" target="_blank">海外向け</a></dd>
+<dd class="last"><a href="http://chintai.mynavi.jp/" target="_blank">賃貸住宅情報</a></dd>
+<dd><a href="http://wedding.mynavi.jp/" target="_blank">ウエディング情報</a></dd>
+<dd><a href="http://cras-wedding.mynavi.jp/" target="_blank">上質ウェディング</a></dd>
+<dd class="last"><a href="http://www.sekaken.jp/" target="_blank">世界遺産検定</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>人材派遣・紹介</dt>
+<dd><a href="http://staff.mynavi.jp/" target="_blank">人材派遣</a></dd>
+<dd><a href="http://mynavi-agent.jp/" target="_blank">人材紹介</a></dd>
+<dd><a href="http://kango.mynavi.jp/" target="_blank">看護師の求人</a></dd>
+<dd><a href="http://pharma.mynavi.jp/" target="_blank">薬剤師の転職</a></dd>
+<dd><a href="http://creator.mynavi-agent.jp/" target="_blank">クリエイター求人</a></dd>
+<dd><a href="http://shinsotsu.mynavi-agent.jp/" target="_blank">新卒紹介</a></dd>
+<dd class="last"><a href="http://job20s.mynavi-agent.jp/" target="_blank">第二新卒</a></dd>
+</dl>
+<dl class="clearfix">
+<dt>法人向け</dt>
+<dd><a href="http://saponet.mynavi.jp/" target="_blank">新卒採用支援</a></dd>
+<dd><a href="http://hrd.mynavi.jp/" target="_blank">研修サービス</a></dd>
+<dd><a href="http://career-s.mynavi.jp/" target="_blank">キャリア開発・再就職支援</a></dd>
+<dd><a href="http://msc.mynavi.jp/" target="_blank">発送代行</a></dd>
+<dd class="last"><a href="http://shinro-saponet.mynavi.jp/" target="_blank">高校進路指導支援</a></dd>
+</dl>
+</div>
+<!-- #FooterServiceCont end --></div>
+
+<div id="FooterCorp">
+<div id="FooterCorpInfo">
+<div id="FooterCorpId">
+<div id="FooterCorpName"><a href="http://www.mynavi.jp/" target="_blank"><img src="/15/pc/images/cmn/corp_name.gif" width="100" height="13" alt="株式会社マイナビ"></a></div>
+<p id="copyright">Copyright &copy; Mynavi Corporation</p>
+</div>
+<div id="FooterCorpLink">
+<ul>
+<li><a href="http://www.mynavi.jp/company/">会社概要</a></li>
+<li><a href="http://www.mynavi.jp/service/">サービス一覧</a></li>
+<li><a href="http://www.mynavi.jp/company/office.html">事業所案内</a></li>
+<li><a href="http://www.mynavi.jp/company/social.html">社会的な取り組み</a></li>
+<li><a href="http://www.mynavi.jp/recruit/">採用情報</a></li>
+<li><a href="http://www.mynavi.jp/group/">グループ会社</a></li>
+<li class="last"><a href="http://www.mynavi.jp/privacy/">個人情報保護方針</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="privacy"><a href="http://privacymark.jp/" target="_blank"><img src="/15/pc/images/cmn/privacy.gif" alt="プライバシーマーク" /></a></div>
+</div>
+</div>
+<!-- // ===== Footer End ===== -->
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/javascript" src="//o.advg.jp/ojs?aid=5128&pid=10" charset="UTF-8">
+</script>
+<noscript>
+<iframe src="//o.advg.jp/oif?aid=5128&pid=10" width="1" height="1">
+</iframe>
+</noscript>
+
+
+<script type="text/javascript">
+_gaq.push(['_setCustomVar', 6, '端末', 'PC版_UAがPC', 2]);
+_gaq.push(['_trackEvent', 'PageLoad','PC版_トップページ_会員',location.pathname]);
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

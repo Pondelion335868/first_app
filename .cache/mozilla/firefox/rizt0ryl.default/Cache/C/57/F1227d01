@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>おすすめリンク</title>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="description" content="おすすめリンク" />
+<meta name="robots" content="noindex,nofollow,noarchive" />
+
+<style type="text/css">
+body,div,p{
+margin: 0;
+padding: 0;
+}
+
+body{
+font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+#osusumeblock{
+width:322px;height:747px;
+}
+
+div.linkblock_at,
+div.linkblock_aw,
+div.linkblock_do,
+div.linkblock_jd,
+div.linkblock_pb,
+div.linkblock_op,
+div.linkblock_rl,
+div.linkblock_el,
+div.linkblock_pw{
+background-repeat:no-repeat;
+background-position:0px 0px;
+margin-bottom:3px;
+height:80px;
+}
+
+div.linkblock_at{
+background-image:url("./img/at.png");
+}
+
+div.linkblock_aw{
+background-image:url("./img/aw.png");
+}
+
+div.linkblock_do{
+background-image:url("./img/do.png");
+}
+
+div.linkblock_jd{
+background-image:url("./img/jd.png");
+}
+
+div.linkblock_pb{
+background-image:url("./img/pb.png");
+}
+
+div.linkblock_op{
+background-image:url("./img/op.png");
+}
+
+div.linkblock_rl{
+background-image:url("./img/rl.png");
+}
+
+div.linkblock_pw{
+background-image:url("./img/pw.png");
+}
+
+div.linkblock_el{
+background-image:url("./img/el.png");
+}
+
+p.title{
+font-size:18px;font-weight:bold;padding: 0 0 0 86px;
+}
+
+p.detail{
+font-size:12px;padding: 0 0 0 86px;margin:0 0 8px 0px;
+}
+
+a:link{color:#375e8d;background:transparent;}
+a:visited{color:#375e8d;background:transparent;}
+a:hover, a:active{color:#375e8d;background:transparent;}
+</style>
+
+</head>
+<body>
+
+<div id="osusumeblock">
+
+	<div class="linkblock_at">
+		<p class="title"><a href="http://www.ajaxtower.jp/gmail/" target="_parent" rel="nofollow">Gmailの使い方</a></li>
+		<p class="detail">http://www.ajaxtower.jp/gmail/</li>
+	</div>
+
+	<div class="linkblock_el">
+		<p class="title"><a href="http://www.e-letter.jp/sns/twitter/" target="_parent" rel="nofollow">Twitterの使い方</a></li>
+		<p class="detail">http://www.e-letter.jp/sns/twitter/</li>
+	</div>
+
+	<div class="linkblock_pb">
+		<p class="title"><a href="http://www.phpbook.jp/tutorial/" target="_parent" rel="nofollow">PHP入門</a></li>
+		<p class="detail">http://www.phpbook.jp/tutorial/</li>
+	</div>
+
+	<div class="linkblock_aw">
+		<p class="title"><a href="http://www.adminweb.jp/wordpress/" target="_parent" rel="nofollow">WordPressの使い方</a></li>
+		<p class="detail">http://www.adminweb.jp/wordpress/</li>
+	</div>
+
+	<div class="linkblock_at">
+		<p class="title"><a href="http://www.ajaxtower.jp/js/" target="_parent" rel="nofollow">JavaScript入門</a></li>
+		<p class="detail">http://www.ajaxtower.jp/js/</li>
+	</div>
+
+	<div class="linkblock_do">
+		<p class="title"><a href="http://www.dbonline.jp/mysql/" target="_parent" rel="nofollow">MySQLの使い方</a></li>
+		<p class="detail">http://www.dbonline.jp/mysql/</li>
+	</div>
+
+	<div class="linkblock_jd">
+		<p class="title"><a href="http://www.javadrive.jp/android/" target="_parent" rel="nofollow">Android入門</a></li>
+		<p class="detail">http://www.javadrive.jp/android/</li>
+	</div>
+
+	<div class="linkblock_aw">
+		<p class="title"><a href="http://www.adminweb.jp/blogger/" target="_parent" rel="nofollow">Bloggerの使い方</a></li>
+		<p class="detail">http://www.adminweb.jp/blogger/</li>
+	</div>
+
+	<div class="linkblock_rl">
+		<p class="title"><a href="http://www.rubylife.jp/rails/" target="_parent" rel="nofollow">Ruby on Rails入門</a></li>
+		<p class="detail">http://www.rubylife.jp/rails/</li>
+	</div>
+
+	<div class="linkblock_op">
+		<p class="title"><a href="http://www.officepro.jp/excelgraph/" target="_parent" rel="nofollow">Excelグラフの使い方</a></li>
+		<p class="detail">http://www.officepro.jp/excelgraph/</li>
+	</div>
+
+	<div class="linkblock_pw">
+		<p class="title"><a href="http://www.pythonweb.jp/tutorial/" target="_parent" rel="nofollow">Python入門</a></li>
+		<p class="detail">http://www.pythonweb.jp/tutorial/</li>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,642 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Pragma" content="no-cache">
+<title>単位修得・科目履修状況</title>
+</head>
+<body text="black" bgcolor="white">
+<center>
+<font size="+2"><b>【　単位修得・科目履修状況　】</b></font>
+<br><br>
+<table border="0" width="100%">
+<tr bgcolor="#35aeff">
+<th align="center"><font color="white">メッセージ</font></th>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left">次年度特別研究１・２受講できる者</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left">今学期ＧＰＡ＝3.18　通算ＧＰＡ＝2.96</td>
+</tr>
+</table>
+<br>
+<form action="./riplsto370" method="post" target="sotuyoken">
+<table width="100%" border="0">
+<tr>
+<td align="left">
+<b>　</b>
+</td>
+<td align="right">
+<input type="submit" value="卒業要件">
+</td>
+</tr>
+<tr>
+<td>
+		 <br><div style="text-align:left;"><br>秀(100～90点)　優(89～80点)　良(79～70点)　可(69～60点)　★（不受験）　＊(履修中)
+<br>
+今期の履修科目を太字で表示し、成績に【　】を付しています。<br></div>
+</td>
+</tr>
+</table>
+<table border="0" width="100%">
+<tr bgcolor="#35aeff">
+<th align="center" width="60%"><font color="white">授業科目</font></th>
+<th align="center" width="10%"><font color="white">単位</font></th>
+<th align="center" width="10%"><font color="white">成績</font></th>
+<th align="center" width="10%"><font color="white">配当年次</font></th>
+<th align="center" width="10%"><font color="white">修得年度</font></th>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">■■■■■■　全学共通科目　■■■■■■</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">【Ａ群（自己形成科目群）】</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔人間性（人格の陶冶）〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">自己と他者</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔社会性（成熟した社会人）〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">日本国憲法</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔国際性（地域・国際社会の一員）〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">科学と技術</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">【Ａ群（自己形成科目群）指定科目】</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">〔社会性（成熟した社会人）〕</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">基礎からの情報処理</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">〔国際性（地域・国際社会の一員）〕</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">数学を学ぶ（微分積分１）</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">数学を学ぶ（微分積分２）</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">数学を学ぶ（確率統計）</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">数学を学ぶ（ベクトル解析）</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">物理を学ぶ（力学１）</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">可</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">物理を学ぶ（力学２）</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">可</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">化学を学ぶ（基礎化学）</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">1～4</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">【Ｂ群（エンパワメント科目群）】</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔健康・スポーツ・人間支援科目〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">基礎体育学１</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">基礎体育学２</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">■■■■■■　外国語科目　■■■■■■■</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">【第１選択外国語】</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">英語１ａ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">英語１ｂ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">英語２ａ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">英語２ｂ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">英語３ａ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">英語３ｂ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">英語４ａ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">英語４ｂ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">可</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">【第２選択外国語】</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">中国語１ａ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">中国語１ｂ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">中国語２ａ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">中国語２ｂ</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">■■■■■■　専門教育科目　■■■■■■</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">【必修科目】</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔各コース共通〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">電気回路１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">電気回路２</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">基礎プログラミング</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">電磁気学１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">電気電子情報工学実験１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">電磁気学２</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">電気電子情報工学実験２</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">電気電子情報工学実験３</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">〔応用情報工学コース〕</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><b>応用情報工学実験</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【秀】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">【選択必修科目】</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔各コース共通〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">線形代数１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">線形代数２</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">コンピュータシステム序論</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">数学解析１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">電気回路３</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">情報理論</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">アナログ電子回路１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">計測とセンシング</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">電子物性基礎</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">可</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">通信方式１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">オペレーティング・システム</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">数学解析２</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">情報通信ネットワーク１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">コンピュータアーキテクチャ１</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">ディジタル論理回路</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">基礎制御工学</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><b>信号処理論</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【秀】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔情報通信工学コース〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><b>通信方式２</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【良】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">情報通信ネットワーク２</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><b>光情報通信工学</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【優】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><b>マルチメディア通信</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【優】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">〔応用情報工学コース〕</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">データ構造とアルゴリズム</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">画像情報処理</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><b>データベース工学</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【秀】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">音声・音響情報処理</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><b>パターン認識</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【秀】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">【選択科目】</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔各コース共通〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">情報リテラシー実習</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">工業製図とＣＡＤ</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">優</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">2011</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">応用プログラミング実習</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">知的財産権法</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">可</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">プログラミングプロジェクト実習</font></td>
+<td align="center"><font color="#666666">1</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">情報社会と情報倫理</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">2012</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><b>システム最適化</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【優】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left" colspan="5">〔情報通信工学コース〕</td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">情報セキュリティ</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><b>ワイヤレス・モバイル通信</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【可】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left" colspan="5">〔応用情報工学コース〕</td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><font color="#666666">コンピュータアーキテクチャ２</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">秀</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><font color="#666666">コンピュータグラフィックス</font></td>
+<td align="center"><font color="#666666">2</font></td>
+<td align="center"><font color="#666666">良</font></td>
+<td align="center"><font color="#666666">3</font></td>
+<td align="center"><font color="#666666">2013</font></td>
+</tr>
+<tr bgcolor="#e3f4ff">
+<td align="left"><b>知的情報工学</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【優】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+<tr bgcolor="#a4dbff">
+<td align="left"><b>コンパイラ</b></td>
+<td align="center"><b>2</b></td>
+<td align="center"><b>【秀】</b></td>
+<td align="center"><b>3</b></td>
+<td align="center"><b>2013</b></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>

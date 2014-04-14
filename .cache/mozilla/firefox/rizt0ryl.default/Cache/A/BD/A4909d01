@@ -1,0 +1,492 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta http-equiv="AM-Template" content="standard/html/top.html">
+<meta http-equiv="AM-Action" content="top//">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="ja">
+<meta name="format-detection" content="telephone=no">
+
+<title>Active! mail</title>
+
+
+<script type="text/javascript">
+<!--
+var applicationData={url:{index:"/am_bin/amlogin",bin:"https://webmail.kansai-u.ac.jp/am_bin/",js:"https://webmail.kansai-u.ac.jp/am_viz/common/js/",image:"https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/",color:"https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/color/def_green/",resource:"https://webmail.kansai-u.ac.jp/am_viz/ja/"},sys:{ENABLE_RMAIL_CHECKSTATE_KEEP:"off",ENABLE_RMAIL_AUTOVIEW_SELECTED:"off",ENABLE_SEND_HTML_MAIL:"off",ENABLE_HEADER_REPLY:"off",ENABLE_MDN_SEND:"off",ENABLE_DISPLAYUNSEEN:"on",ENABLE_CHECKUNSEEN:"on",ENABLE_DETAIL_SEARCH:"on",ENABLE_FOLDER_CONTROL:"on",ENABLE_UPDATE_MAILFOLDER:"on",ENABLE_AH_SPAMFILTER:"off",ENABLE_TOOL_SPAM:"on",IMAP_INFERIOR:"on",DISP_JUNKMAIL:"on",ENABLE_MAIL_PREV_FORCE:"off",ENABLE_CONFIRM_ADDRESS:"off",CONFIRM_ALLCHECK_ACTION:"on",ENABLE_SUGGESTADDR:"on",ENABLE_AUTO_UPDATERECENT:"off",EXTRA_POP_DISPLAY_MESSAGE:"on",ENABLE_MAILSEND_TIMEOUT:"off",ENABLE_ATTACH_TIMEOUT:"off",ENABLE_AUTO_UPDATEUNSEEN:"off",ENABLE_AUTO_OPENFOLDER:"off",ENABLE_UPDATEUNSEEN:"on",ENABLE_UNSEENUPDATE_INBOXSELECT:"off",ENABLE_DISPLAY_UNSEENTOTAL:"off",ENABLE_UNSEEN_DIFFCONTROL:"off",BROWSER_TITLE:"Active! mail",SMAIL_WINDOW_SIZE_KEEP:"off",NLIMIT_ATTACH_TOTAL_SIZE:"-1",UDC_SMAIL_ATTACH:"off",UDC_RMAIL_ATTACH:"on",ENABLE_MAILSEND_CC_BCC:"off",ENABLE_MAIN_CLOSE_CONFIRM:"off",ENABLE_SMAIL_CLOSE_CONFIRM:"off",ENTER_MODE_HTML_MAIL:"on"},usr:{ENABLE_KEYBOARD_SHORTCUT:"off",DISPLAY_UNSEEN:"on",FIRST_DAY_OF_WEEK:"0",USER_TIMEZONE:"+0900 (JST)",AUTOSCROLL:"on",CHECKUNSEEN:"on",LOADSTATUS:"on",EXPORT_FORMAT:"xml_excel2003",PAGE_AFTER_LOGIN:"mailhome",UPDATE_MAILFOLDER:"",LOGOUTEMPTYTRASH:"off",SPAMFILTER_SAMS:"off",SPAM_RATE_SAMS:"90",PAGESIZE:"10",MAILLIST_DATETIME_FORMAT:"date_or_time",DISPLAY_ATTACH_IMAGE:"on",DISPLAY_ATTACH_TEXT:"on",DISPLAY_INLINE_HTML:"off",MDN_RECEIVE_TYPE:"on_confirm",LIST_COLUMNS:"subject,receipt,date,size",MAILACTION_BUTTON_ITEMS:"reload,reply,replyAll,forward",MAILACTION_MENU_ITEMS:"move,copy,move_shared,copy_shared,furiwake,spam,hr,unseen,seen,flag,unflag,hr,trash,delmail,cleartrash,hr,pop",MAILACTION_BUTTON_TYPE:"full",CONFIRM_DRAG_DROP:"off",RMAIL_LAYOUT_STATUS:"2x1c20x1c0x1c80x1c50x1c0x1c50",ADDR_LAYOUT_STATUS:"",FILE_LAYOUT_STATUS:"",RESTORE_RMAIL_LAYOUT:"on",ADDR_LIST_PAGESIZE:"10",DEFAULT_MAIL_SEND_TYPE:"plain",SAVE_SENT_MAIL:"on",HEADER_REPLY:"",QUOTATION_SIGN:"\x3e",FORWARD_TYPE:"inline",TEXT_WRAPPING:"on",SEND_SETTING:"open",SPAMFILTER:"off",SPAM_THRESHOLD_RATE:"90.0",SPAM_CHECK_FORMAT:"off",SPAM_EXCEPT_ADDRBOOK:"off",MOBILE_TEXTCOLS_AUTO:"on",MOBILE_TEXTCOLS:"22",MOBILE_PAGESIZE_AUTO:"on",MOBILE_PAGESIZE:"15",MOBILE_RMAIL_TRIMREPEAT:"off",MOBILE_RMAIL_HALFWIDTH:"off",MOBILE_MAILFOLDER:"default",MOBILE_REPLY_CONTEXT:"include",MOBILE_MAILDELETE:"trashbox",MOBILE_EMAIL_ALIAS:"",MOBILE_FROM:"",MOBILE_REPLYTO:"",MOBILE_ORGANIZATION:"",MOBILE_SIGNATURE:"",ENABLE_USER_SUGGESTADDR:"on",USR_SMAIL_WINDOW_SIZE_KEEP:"",RECENT_NOTE_TYPE:"slide",MAIN_CLOSE_CONFIRM:"off",SMAIL_CLOSE_CONFIRM:"off",ENTER_MODE:"p",MAILHEADER_DETAIL:"close"},session:{ID:"29162_6786652",LANG:"ja",COLOR:"def_green",BGCOLOR:"#ffcff8",BDCOLOR:"#b14b71",COUNTRY:"jp",EMAIL:"k335868@kansai-u.ac.jp"},calendar:{MONTH_SHORT:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],MONTH_LONG:["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],WDAY_SHORT:["日","月","火","水","木","金","土"],WDAY_LONG:["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"],YEARMONTH:"%Y年%m月",MONTHDAY:"%m月%d日",MONTHDAY_SHORT:"%m/%d",MONTHDAY_WDAY:"%m月%d日 (%a)",MONTHDAY_WDAY_SHORT:"%m/%d (%a)",DATE:"%Y年%m月%d日",DATE_SHORT:"%y/%m/%d",DATE_LONG:"%Y年%m月%d日",DATE_WDAY:"%Y年%m月%d日(%a)",DATE_SHORT_WDAY:"%y/%m/%d (%a)",DATE_SHORT:"%y/%m/%d",TIME_SHORT:"%02H:%02M",TIME_SEC_SHORT:"%02H:%02M:%02S",DATE_OR_TIME:"%v",DATE_OR_TIME_SEC:"%D",DATETIME_OR_TIME_SEC:"%V",DATETIME:"%Y年%m月%d日 %H時%M分",DATETIME_WDAY:"%Y年%m月%d日(%a) %02H:%02M",DATETIME_WDAY_SEC:"%Y年%m月%d日(%a) %02H:%02M:%02S",GMT_OFFSET:32400,TIMEZONE_NAME:"JST",TIMEZONE_DESCRIPTION:"日本標準時"},gen:{BUILDID:"6.5401006787",PERSONAL_INBOX:"7e33429f656f1e6e9d79b29c3f82c57e",PERSONAL_SENT:"7f8c0283f16925caed8e632086b81b9c",PERSONAL_TRASH:"a7e253cd8dd95da3e20daf45519a8dc2",PERSONAL_DRAFTS:"db3af42ba64b595db6ab3ea999fe0bb1",PERSONAL_JUNKMAIL:"200e93c9616e4bd8b0ddcb893707d7b3",FILTER_MAILFOLDER_FULLNAME:/[\/\.\|\\\"]/,FILTER_MAILFOLDER_NODENAME:/[\[\]\.\|\\\"\{\}\^\'\?\$\(\)\#\*%!`;<>]/,FILTER_FILENAME:/[\\\/:;\*\?\"<>\|]/,FILTER_FILEFOLDER_FULLNAME:/[\/\.\|\\\"]/,FILTER_FILEFOLDER_NODENAME:/[\.\|\\\"]/}};
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+var amtop={};var amConfig={modules:"Vpop",options:{},data:applicationData};
+//-->
+</script>
+
+
+<script type="text/javascript" src="https://webmail.kansai-u.ac.jp/am_viz/common/js/prototype.js?6.5401006787"></script>
+<script type="text/javascript" src="https://webmail.kansai-u.ac.jp/am_viz/common/js/activemail.js?6.5401006787"></script>
+
+<script type="text/javascript">
+<!--
+amvpop.changeButtonTemplates({ok:'<button class="popup_imgbtn" id="#{id}" onclick="#{onclick}" value="#{message}"><img src="'+amdata.url.image+'/btn/btn_apply.gif">#{message}</button>',close:'<button class="popup_imgbtn" id="#{id}" onclick="#{onclick}" value="#{message}"><img src="'+amdata.url.image+'btn/btn_cancel.gif">#{message}</button>',yes:'<button class="popup_imgbtn" id="#{id}" onclick="#{onclick}" value="#{message}"><img src="'+amdata.url.image+'btn/btn_apply.gif">#{message}</button>',no:'<button class="popup_imgbtn" id="#{id}" onclick="#{onclick}" value="#{message}"><img src="'+amdata.url.image+'btn/btn_cancel.gif">#{message}</button>',cancel:'<button class="popup_imgbtn" id="#{id}" onclick="#{onclick}" value="#{message}"><img src="'+amdata.url.image+'btn/btn_cancel.gif">#{message}</button>'});
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+amapp.require("Pulldown");amapp.require("XCommon");
+//-->
+</script>
+
+  <script type="text/javascript" src="https://webmail.kansai-u.ac.jp/am_viz/common/standard/top/top.js?6.5401006787"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://webmail.kansai-u.ac.jp/am_viz/common/standard/gene_ff150.css?6.5401006787">
+
+  <link rel="stylesheet" type="text/css" href="https://webmail.kansai-u.ac.jp/am_viz/common/standard/popup.css?6.5401006787" />
+
+  <link rel="stylesheet" href="https://webmail.kansai-u.ac.jp/am_viz/common/standard/color/def_green.css?6.5401006787" type="text/css" />
+
+  <link rel="stylesheet" href="https://webmail.kansai-u.ac.jp/am_viz/common/standard/pulldown.css?6.5401006787" type="text/css" />
+  <link rel="stylesheet" href="https://webmail.kansai-u.ac.jp/am_viz/common/standard/menu.css?6.5401006787" type="text/css" />
+
+
+
+<script type="text/javascript">
+<!--
+amtop.ready=false;amtop.window=window;amtop.document=document;amtop.contents=null;amtop.cache={};amtop.pulldownRmail=null;amtop.pulldownAddr=null;amtop.pulldownSchedule=null;amtop.pulldownFile=null;amtop.pulldownTool=null;amtop.scrollNews=null;amtop.loadStatus=null;amtop.folderUnseen=null;amtop.recentNote=null;amtop.infoUpdater=null;amtop.recentUpdater=null;amtop.userDate=null;amtop.tabController=null;amtop.mainWindowControl=null;amtop.initialStopRecentCancel=true;amtop.initialStopRecentCancelable=false;var defaultDispContent='';if(defaultDispContent==''||defaultDispContent=='smail')defaultDispContent='mailhome';if(defaultDispContent=='')defaultDispContent='home';function start()
+{var main=$("main");var header=$("header10_am");var content=$("content10_am");var footer=$("footer10_am");var iframe=$("contentIframe");var minWidth=880;var minHeight=440;var adjustSizes=function(){main.setBorderBoxWidth(Math.max(amapp.getViewWidth(),minWidth));main.setBorderBoxHeight(Math.max(amapp.getViewHeight(),minHeight));if(is.gecko){main.setBorderBoxWidth(Math.max(amapp.getViewWidth(),minWidth));main.setBorderBoxHeight(Math.max(amapp.getViewHeight(),minHeight));}
+var width=main.getContentBoxWidth();header.setBorderBoxWidth(width);content.setBorderBoxWidth(width);footer.setBorderBoxWidth(width);content.setBorderBoxHeight(main.getContentBoxHeight()
+-header.getBorderBoxHeight()-footer.getBorderBoxHeight());iframe.setBorderBoxWidth(content.getContentBoxWidth());iframe.setBorderBoxHeight(content.getContentBoxHeight());};main.show();[main,header,content,footer,iframe].invoke("prepareBoxMethods");adjustSizes();Event.observe(window,"resize",adjustSizes);initLogoutButton();initUserDate();initCaches();initPulldownMenus();initInfoUpdater();initMainWindowControl();amtop.tabController=new am.TabController(tabIndexes);amtop.tabController.unlock();amtop.ready=true;amtop.changeContents.defer(defaultDispContent);}
+function initLogoutButton()
+{Event.observe("header_button_logout","click",amtop.logout);}
+function initUserDate()
+{var options={clock:"user_date_clock",clockFormat:amdata.calendar.DATETIME_WDAY,gmtOffset:amdata.calendar.GMT_OFFSET,timezone:amdata.usr.USER_TIMEZONE.substr(0,5),tzName:amdata.calendar.TIMEZONE_DESCRIPTION};amtop.userDate=new am.UserDate(options);}
+function initCaches()
+{amtop.cache.mailFolder=new am.MailFolderCache();amtop.cache.mailFolderPulldown=new am.MailFolderPulldownCache(amtop.cache.mailFolder,32);amtop.cache.sharedFolderPulldown=new am.SharedFolderPulldownCache(amtop.cache.mailFolder,32);amtop.cache.saddrFolder=new am.SaddrFolderCache();}
+function initPulldownMenus()
+{var option={lazy:true,scrolling:true,tooltips:true,cancelClick:true,identifier:"amtop-popup-menu"};amtop.pulldownRmail=new am.PulldownMenu("pulldown_rmail",option);amtop.pulldownRmail.disable();option.tooltips=false;amtop.pulldownAddr=new am.PulldownMenu("pulldown_addr",option);amtop.pulldownTool=new am.PulldownMenu("pulldown_tool",option);}
+function initScrollNews()
+{var options={buttonPrev:"footer_scroll_button_prev",buttonPrevDisabled:"footer_scroll_button_prev_disabled",buttonNext:"footer_scroll_button_next",buttonNextDisabled:"footer_scroll_button_next_disabled",buttonStart:"footer_scroll_button_start",buttonStartDisabled:"footer_scroll_button_start_disabled",buttonStop:"footer_scroll_button_stop",buttonStopDisabled:"footer_scroll_button_stop_disabled",bindingArea:"footer_scroll_contents",maxPage:"footer_scroll_max_page",currentPage:"footer_scroll_current_page",pagerArea:"footer_scroll_pager",frequency:10000,increment:20,mode:am.ScrollNews.prototype.ARC,contentClassName:"unread_mail"};var autoscroll=Object.evalAmBoolean(amdata.usr.AUTOSCROLL);amtop.scrollNews=new am.ScrollNews("footer_scroll_contents",autoscroll,options);}
+function initLoadStatus()
+{if(Object.evalAmBoolean("any","on")){var images=new Array(10);for(var i=0;i<10;i++){images[i]="load"+(i+1)+".gif";}
+var labels=new Array(3);labels[0]="サーバ負荷：低い";labels[1]="サーバ負荷：普通";labels[2]="サーバ負荷：高い";amtop.loadStatus=new am.LoadStatus("footer_load_status",images,labels);}else{$("footer_load_status_container").hide();}}
+function initFolderUnseen(){amtop.folderUnseen=new am.FolderUnseen();}
+function initRecentNote(){amtop.recentNote=new am.RecentNote({slide:{recentTitle:"新着メールがあります。",defaultTitle:"Active! mail",tab:$("rmail"),style:[{bg:"",fnt:""},{bg:"#FF8000",fnt:"#FFFFFF"}]},popup:{},alrt:{msg:"新着メールがあります。"}});}
+function initInfoUpdater()
+{initScrollNews();initLoadStatus();initFolderUnseen();initRecentNote();var options={frequency:5*1000*60,scrollNews:amtop.scrollNews,loadStatus:amtop.loadStatus,folderUnseen:amtop.folderUnseen,recentNote:null};amtop.infoUpdater=new am.InfoUpdater("info_updater_contents",options);var options={frequency:5*1000*60,scrollNews:null,loadStatus:null,folderUnseen:null,recentNote:amtop.recentNote};amtop.recentUpdater=new am.RecentUpdater("info_updater_contents",options);amtop.recentUpdater.start(true);}
+function initMainWindowControl()
+{}
+var initialLoad=true;function onLoadMainContent()
+{if(initialLoad){initialLoad=false;return;}
+if(!enableChangeContents){enableChangeContents=true;}
+amvpop.closeAllWindows();amvpop.stopObserving();var frame=window.mainContent;amtop.contents=frame;am.PulldownMenu.watchFrame(frame);if(amtop.cache.mailFolder&&!_readyMailFolderCache){setTimeout(amtop.updateMailFolderCache,300);}
+if(amtop.cache.fileFolder&&!_readyFileFolderCache){setTimeout(amtop.updateFileFolderCache,300);}
+if(frame&&frame.am&&frame.am.XUtil){amvpop.observe("amvpop:shadowon",frame.am.XUtil.stopGlobalEvent);amvpop.observe("amvpop:shadowoff",frame.am.XUtil.restoreGlobalEvent);}
+Event.fire(frame.document,"am:loaded");}
+function onClickMailFolderPulldown(el,id)
+{var node=amtop.cache.mailFolder.getNodeById(id);var hash=amtop.XMLUtil.getUserData(node,"HASH");amtop.changeContents("rmail","mbid="+hash);}
+function onClickFileFolderPulldown(el,id)
+{var node=amtop.cache.fileFolder.getNodeById(id);var folder_index=amtop.XMLUtil.getUserData(node,"INDEX");amtop.changeContents("file","folder_index="+folder_index);}
+amtop.getElementById=$;amtop.reload=function()
+{self.location.replace(self.location.href);};amtop.logout=function()
+{Event.stopObserving("header_button_logout","click",amtop.logout);var param={id:amdata.session.ID,page_size:amcache.PAGESIZE||amdata.usr.PAGESIZE,addr_page_size:amcache.ADDR_LIST_PAGESIZE||amdata.usr.ADDR_LIST_PAGESIZE,rmail_layout:amcache.RMAIL_LAYOUT_STATUS||amdata.usr.RMAIL_LAYOUT_STATUS,addr_layout:amcache.ADDR_LAYOUT_STATUS||amdata.usr.ADDR_LAYOUT_STATUS,file_layout:amcache.FILE_LAYOUT_STATUS||amdata.usr.FILE_LAYOUT_STATUS,_width:amtop.smailWindowSetting.width,_height:amtop.smailWindowSetting.height,autoscroll:(amtop.scrollNews.isOnAutoScroll())?"on":"off"};self.location.href=amdata.url.bin+"amlogin/logout?"+$H(param).toQueryString();};var _readyInfoUpdater=false;var _readyMailFolderCache=false;var _readyMailFolderPulldown=false;var _readySaddrFolderCache=false;amtop.waitMailFolderCache=function(onComp)
+{if(!_readyMailFolderCache){setTimeout(function(){amtop.waitMailFolderCache(onComp);},250);}else{if(onComp){try{onComp();}catch(e){}}}};amtop.waitMailFolderPulldown=function(onComp)
+{if(!_readyMailFolderPulldown){setTimeout(function(){amtop.waitMailFolderPulldown(onComp);},250);}else{if(onComp){try{onComp();}catch(e){}}}};amtop.replaceMailFolderCache=function(xml)
+{if(!amtop.cache.mailFolder.isNowLoading()){amtop.cache.mailFolder.set(xml);_readyMailFolderPulldown=false;setTimeout(amtop.updateMailFolderPulldown,300);}};amtop.updateMailFolderCache_infoUpdateForce=function(){if(!amtop.cache.mailFolder.isNowLoading()){_readyMailFolderCache=false;_readyMailFolderPulldown=false;amtop.cache.mailFolder.update(amtop.updateMailFolderPulldown_infoUpdateForce);}};amtop.updateMailFolderCache=function()
+{if(!amtop.cache.mailFolder.isNowLoading()){_readyMailFolderCache=false;_readyMailFolderPulldown=false;amtop.cache.mailFolder.update(amtop.updateMailFolderPulldown);}};amtop.clearMailFolderCache=function(){if(_readyMailFolderCache&&!amtop.cache.mailFolder.isNowLoading()){_readyMailFolderCache=false;_readyMailFolderPulldown=false;amtop.pulldownRmail.disable();}};amtop.updateMailFolderPulldown_infoUpdateForce=function(){amtop.infoUpdater.update(true);var template;try{template=amtop.cache.mailFolderPulldown.get("onClickMailFolderPulldown");}catch(e){template="";}
+$("pulldown_rmail_contents").innerHTML=template;amtop.pulldownRmail.rebuild();if(template==""){amtop.pulldownRmail.disable();}else{_readyMailFolderPulldown=true;}};amtop.updateMailFolderPulldown=function()
+{_readyMailFolderCache=true;if(amtop.infoUpdater&&!_readyInfoUpdater){if("off"!="on"){amtop.infoUpdater.onceComplete=amtop.infoUpdater.infoLoad.bind(amtop.infoUpdater);amtop.infoUpdater.update(true);amtop.infoUpdater.start(false);}else if("on"!="on"){amtop.infoUpdater.update(true);amtop.infoUpdater.start(false);}else{amtop.infoUpdater.start(true);}
+_readyInfoUpdater=true;}
+var template;try{template=amtop.cache.mailFolderPulldown.get("onClickMailFolderPulldown");}catch(e){template="";}
+$("pulldown_rmail_contents").innerHTML=template;amtop.pulldownRmail.rebuild();if(template==""){amtop.pulldownRmail.disable();}else{_readyMailFolderPulldown=true;}};amtop.waitSaddrFolderCache=function(onComp)
+{if(!_readySaddrFolderCache){setTimeout(function(){amtop.waitSaddrFolderCache(onComp);},250);}else{if(onComp){try{onComp();}catch(e){}}}};amtop.updateSaddrFolderCache=function()
+{if(amtop.cache.saddrFolder.empty()&&!amtop.cache.saddrFolder.isNowLoading()){_readySaddrFolderCache=false;amtop.cache.saddrFolder.update(function(){_readySaddrFolderCache=true;});}};var tabIndexes=["","home","rmail","smail","addr","tool"];var contentURIs={home:["home",amdata.url.bin+"ammain/home"],mailhome:["home",amdata.url.bin+"ammain/home"],rmail:["rmail",amdata.url.bin+"ammain/rmail"],smail:["smail",""],addr:["addr",amdata.url.bin+"amaddr/addr_top"],addr_personal:["addr",amdata.url.bin+"amaddr/addr_top?location=personal"],addr_shared:["addr",amdata.url.bin+"amaddr/addr_top?location=shared"],addr_group:["addr",amdata.url.bin+"amaddr/addr_top?location=group"],tool:["tool",amdata.url.bin+"amoption/tool_top"],tool_general:["tool",amdata.url.bin+"amoption/general"],tool_mail:["tool",amdata.url.bin+"amoption/mail"],tool_mobile:["tool",amdata.url.bin+"amoption/mobile"],tool_smart:["tool",amdata.url.bin+"amoption/smart"],tool_password:["tool",amdata.url.bin+"amoption/password"],tool_folder:["tool",amdata.url.bin+"amoption/folder"],tool_profile:["tool",amdata.url.bin+"amoption/profile"],tool_pop:["tool",amdata.url.bin+"amoption/pop"],tool_signature:["tool",amdata.url.bin+"amoption/signature"],tool_filter:["tool",amdata.url.bin+"amoption/filter"],tool_forward:["tool",amdata.url.bin+"amoption/forward"],tool_ahspam:["tool",amdata.url.bin+"amoption/ahspam"],tool_spam_rate:["tool",amdata.url.bin+"amoption/spam_rate"],tool_spam:["tool",amdata.url.bin+"amoption/spam"],tool_article_template:["tool",amdata.url.bin+"amoption/article_template"],tool_mail_template:["tool",amdata.url.bin+"amoption/mail_template"]};var enableChangeContents=true;if(defaultDispContent!="rmail"){amtop.initialStopRecentCancel=false;}
+amtop.changeContents=function(name,param)
+{if(amtop.ready==true&&amtop.tabController.ready){if(enableChangeContents){enableChangeContents=false;var tab,uri,query;if(!name)name="home";tab=contentURIs[name][0];uri=contentURIs[name][1];query=((param)?(param+"&"):"")+"id="+amdata.session.ID;uri+=((uri.indexOf("?")<0)?"?":"&")+query;if(tab=="smail"){amtop.tabController.select(tab);amtop.compose();setTimeout(function(){amtop.tabController.select(amtop.tabController.last);enableChangeContents=true;},1000);}else{amtop.tabController.select(tab);window.mainContent.location.href=uri;}}}};amtop.openRecent=function(winobj,win_name,param){var window_name;if(win_name){window_name=win_name;}else{window_name="am_info_"+((new Date()).getTime()).toString();}
+if(winobj&&!winobj.closed){winobj.stopObserve();winobj.close();}
+var style=$H({width:320,height:110,directories:"no",location:"no",menubar:"no",resizable:"yes",scrollbars:"yes",status:"no",toolbar:"no"});var win=window.open("https://webmail.kansai-u.ac.jp/am_viz/common/standard/blank.html",window_name,style.map(function(pair){return pair.join("=");}));var f=document.forms["hiddenAjaxRequestForm"];amtop.setAjaxRequestForm(document,f,amdata.url.bin+"ammain","rmail_recent",param);f.target=window_name;f.method="post";if(is.safari3up){window.setTimeout(function(){try{f.submit();}catch(e){}},250);}else{try{f.submit();}catch(e){}}
+return{window_name:window_name,winobj:win};}
+amtop.smailWindowSetting={width:800,height:600,directories:"no",location:"no",menubar:"no",resizable:"yes",scrollbars:"yes",status:"no",toolbar:"no"};amtop.openSmail=function(action,param)
+{var window_name="am_smail_"+((new Date()).getTime()).toString();var style=Object.toHashString(amtop.smailWindowSetting);window.open("https://webmail.kansai-u.ac.jp/am_viz/common/standard/blank.html",window_name,style);var method="post";if(!param){param={};method="get";}
+param.subact=action;param.embedded="on";param.winid=amtop.generateId();var f=document.forms["hiddenAjaxRequestForm"];amtop.setAjaxRequestForm(document,f,amdata.url.bin+"ammain","smail_create",param);f.target=window_name;f.method=method;if(is.safari3up){window.setTimeout(function(){try{f.submit();}catch(e){}},250);}else{try{f.submit();}catch(e){}}};amtop.compose=function(recipient)
+{amtop.openSmail("create_normal",(recipient)?{to:recipient}:null);};amtop.composeFull=function(to,cc,bcc,subject,content,priority)
+{amtop.openSmail("create_normal",{to:to||"",cc:cc||"",bcc:bcc||"",subject:subject||"",content:content||"",priority:priority||""});};amtop.download=function(uri,action,param,filename,onFailure)
+{var f=document.forms["hiddenAjaxRequestForm"];amtop.setAjaxRequestForm(document,f,uri,action,param,filename);f.target="hiddenAjaxRequestFrame";f.method="post";amtop.onFailureAjaxDownload=(onFailure||null);f.submit();};amtop.openSystemInfo=function(){var window_name="am_system_info_"+((new Date()).getTime()).toString();var style="width=510, directories=no, location=no, menubar=no, resizable=yes, scrollbars=yes, status=no, toolbar=no, height=420";window.open("https://webmail.kansai-u.ac.jp/am_viz/common/standard/blank.html",window_name,style);param={};param.subact="top_system_info";param.embedded="on";var f=document.forms["hiddenAjaxRequestForm"];amtop.setAjaxRequestForm(document,f,amdata.url.bin+"ammain","top_system_info",param);f.target=window_name;f.method="get";if(is.safari3up){window.setTimeout(function(){f.submit();},250);}else{f.submit();}}
+amtop.setAjaxRequestForm=function(doc,f,uri,action,param,filename)
+{while(f.hasChildNodes()){f.removeChild(f.lastChild);}
+if(action&&filename){filename=filename.encodeFileName();var n,ext='';if((n=filename.lastIndexOf('.'))!=-1){ext=filename.substring(n);filename=filename.substring(0,n);}
+var act=uri+"/"+action+"/"+filename;var IE_URI_MAX=2000;if(is.ie&&IE_URI_MAX<act.length+ext.length){for(n=0;0<act.length;n++){act=act.substring(0,IE_URI_MAX-ext.length-n);try{act.decodeURI();}catch(e){continue;}
+break;}}
+f.action=act+ext;}else{f.action=uri;}
+var _makeElement=function(name,value){var e=doc.createElement("input");e.setAttribute("type","hidden");e.setAttribute("name",name);e.setAttribute("value",(value)?value:"");return e;};f.appendChild(_makeElement("id",amdata.session.ID));if(action){f.appendChild(_makeElement("actid",action));}
+if(param){for(var key in param){f.appendChild(_makeElement(key,param[key]));}}};amtop.upload=function(f,uri,action,param,onComplete)
+{amtop.onCompleteAjaxUpload=(onComplete||null);f.method="post";f.target="hiddenAjaxRequestFrame";f.action=uri+"/"+action;var _setValue=function(key,value){if(f[key]){f[key].value=value;}else{var e=document.createElement("input");e.setAttribute("type","hidden");e.setAttribute("name",key);e.setAttribute("value",(value)?value:"");f.appendChild(e);}};_setValue("id",amdata.session.ID);_setValue("actid",action);if(param){for(var key in param){_setValue(key,param[key]);}}
+try{f.submit();}catch(e){return false;}
+return true;};amtop.SmailHukugen={empty:true,to:'',cc:'',bcc:'',subject:'',content:''};amtop.isOnDetailSearch=function(){if(amtop.contents&&amtop.contents.mailSearch){return amtop.contents.mailSearch.isOnDetailSearch();}else{return false;}};amtop.generateId=function(){return String(Math.floor(Math.random()*100000))+String((new Date()).getTime());};
+//-->
+</script>
+<style type="text/css">
+<!--
+iframe.hidden_iframe {
+  /* "display : none;" cannot be used, because trouble occurs in the safari */
+  visibility : hidden;
+  width : 0;
+  height : 0;
+}
+-->
+</style>
+
+</head>
+
+<body>
+<div id="main" style="display: none;">
+
+  
+  <div class="header" id="header10_am">
+
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <col class="tab_margin">
+
+        <col class="tab_home">
+
+        <col class="tab_margin">
+        <col class="tab_inbox">
+        <col class="tab_margin">
+        <col class="tab_smail">
+
+        <col class="tab_margin">
+        <col class="tab_addr">
+
+
+
+        <col class="tab_margin">
+        <col class="tab_tool">
+        <col width="*">
+      <tr id="main_menu">
+
+        <td class="tab_margin">&nbsp;</td>
+
+        
+
+        <td class="tab_menu">
+          <div class="top_menu" id="header10-10_am">
+              <table id="home" class="unselected_tab" onclick="amtop.changeContents('home')" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                      <h2 class="am6 menu_home">メールホーム</h2>
+                  </td>
+                </tr>
+              </table>
+          </div>
+        </td>
+
+        <td class="tab_margin">&nbsp;</td>
+
+        <td class="tab_menu">
+          <div class="top_menu" id="header10-10_am">
+              <table id="rmail" class="unselected_tab" onclick="amtop.changeContents('rmail')" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                      <h2 id="rmail_tab" class="am6 menu_inbox">メール受信</h2>
+                  </td>
+                  <td>
+                        <ul id="pulldown_rmail" style="display : none;" class="amtop-horiz-menu">
+                          <li id="pulldown_rmail_root">
+                            <a><img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/header_darrow.gif" alt=""></a>
+                            <ul id="pulldown_rmail_contents"></ul>
+                          </li>
+                        </ul>
+                  </td>
+                </tr>
+              </table>
+          </div>
+        </td>
+
+        <td class="tab_margin">&nbsp;</td>
+
+        <td class="tab_menu">
+          <div class="top_menu" id="header10-10_am">
+            <table id="smail" class="unselected_tab" border="0" onclick="amtop.changeContents('smail')" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                      <h2 class="am6 menu_compose">メール作成</h2>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+
+
+        <td class="tab_margin">&nbsp;</td>
+        <td class="tab_menu">
+          <div class="top_menu" id="header10-10_am">
+            <table id = "addr" class="unselected_tab" onclick="amtop.changeContents('addr')" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                      <h2 class="am6 menu_contact">アドレス帳</h2>
+                  </td>
+                  <td>
+                        <ul id="pulldown_addr" style="display : none;" class="amtop-horiz-menu">
+                          <li id="pulldown_addr_root">
+                            <a><img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/header_darrow.gif" alt=""></a>
+                            <ul id="pulldown_addr_contents">
+                              <li id="pulldown_addr_personal">
+                                <a href="javascript: amtop.changeContents('addr_personal');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/address_personal.gif" alt="">
+                                  個人アドレス
+                                </a>
+                              </li>
+
+                              <li></li>
+                              <li id="pulldown_addr_group">
+                                <a href="javascript: amtop.changeContents('addr_group');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/address_group.gif" alt="">
+                                  グループ
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+
+
+
+
+
+
+        <td class="tab_margin">&nbsp;</td>
+
+        <td class="tab_menu">
+          <div class="top_menu" id="header10-10_am">
+            <table id="tool" class="unselected_tab" onclick="amtop.changeContents('tool')" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>
+                  <h2 class="am6 menu_tool">ツール</h2>
+                </td>
+                <td>
+                        <ul id="pulldown_tool" style="display : none;" class="amtop-horiz-menu">
+                          <li id="pulldown_tool_root">
+                            <a><img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/header_darrow.gif" alt=""></a>
+                            <ul id="pulldown_tool_contents">
+                              <li id="pulldown_tool_general">
+                                <a href="javascript: amtop.changeContents('tool_general');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_general.gif" alt="">
+                                  一般設定
+                                </a>
+                              </li>
+                              <li id="pulldown_tool_mail">
+                                <a href="javascript: amtop.changeContents('tool_mail');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_mail.gif" alt="">
+                                  メール設定
+                                </a>
+                              </li>
+
+                              <li id="pulldown_tool_mobile">
+                                <a href="javascript: amtop.changeContents('tool_mobile');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_mobile.gif" alt="">
+                                  モバイル設定
+                                </a>
+                              </li>
+
+
+    
+                              <li id="pulldown_tool_smart">
+                                <a href="javascript: amtop.changeContents('tool_smart');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_smartphone.gif" alt="">
+                                  スマートフォン設定
+                                </a>
+                              </li>
+    
+
+
+                              <li id="pulldown_tool_folder">
+                                <a href="javascript: amtop.changeContents('tool_folder');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_folder.gif" alt="">
+                                  フォルダ管理
+                                </a>
+                              </li>
+                              <li id="pulldown_tool_profile">
+                                <a href="javascript: amtop.changeContents('tool_profile');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_profile.gif" alt="">
+                                  プロフィール管理
+                                </a>
+                              </li>
+
+                              <li id="pulldown_tool_signature">
+                                <a href="javascript: amtop.changeContents('tool_signature');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_signature.gif" alt="">
+                                  署名管理
+                                </a>
+                              </li>
+                              <li id="pulldown_tool_filter">
+                                <a href="javascript: amtop.changeContents('tool_filter');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_filter.gif" alt="">
+                                  フィルタリング
+                                </a>
+                              </li>
+
+                              <li id="pulldown_tool_forward">
+                                <a href="javascript: amtop.changeContents('tool_forward');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_forward.gif" alt="">
+                                  転送
+                                </a>
+                              </li>
+
+
+
+
+                              <li id="pulldown_tool_spam">
+                                <a href="javascript: amtop.changeContents('tool_spam');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_junkmail.gif" alt="">
+                                  迷惑メールフィルタ
+                                </a>
+                              </li>
+
+
+                              <li id="pulldown_tool_article_template">
+                                <a href="javascript: amtop.changeContents('tool_article_template');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_articletemplate.gif" alt="">
+                                  定型文
+                                </a>
+                              </li>
+                              <li id="pulldown_tool_mail_template">
+                                <a href="javascript: amtop.changeContents('tool_mail_template');">
+                                  <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/toolmenu/toolmenu_mailtemplate.gif" alt="">
+                                  メールテンプレート
+                                </a>
+                              </li>
+
+                            </ul>
+                          </li>
+                        </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+        
+
+        <td id="submenu_hline">
+          <div class="top_submenu" id="header10-20_am">
+
+
+            
+            <a href="javascript:void(0)" onclick="amtop.openSystemInfo(); return false;"><img class="help" src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/info.gif" alt="システム情報ビューア" title="システム情報ビューア"></a>
+
+
+            
+            <a href="https://webmail.kansai-u.ac.jp/am_bin/amhelp/help?id=29162_6786652" target="_blank"><img class="help" src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/help.gif" alt="ヘルプ" title="ヘルプ"></a>
+
+            
+            <button type="button" value="ログアウト" id="header_button_logout">
+              <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/logout.gif" alt="">
+              ログアウト
+            </button>
+
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  
+  <div class="content" id="content10_am">
+    <iframe id="contentIframe" name="mainContent"
+      frameBorder="0" class="main_content"
+      src="https://webmail.kansai-u.ac.jp/am_viz/common/standard/blank.html"
+      onload="onLoadMainContent();" scrolling="no">
+    </iframe>
+  </div>
+
+
+  
+  <div class="footer" id="footer10_am">
+
+<table>
+<tr>
+<td>
+    
+    <div class="footer_info shadow" id="footer10-20_am">
+      <div id="footer_scroll_contents" class="footer_scroll_contents"></div>
+      <div class="footer_scroll_controls">
+        <span id="footer_scroll_pager">
+          [
+            <span id="footer_scroll_current_page"></span>
+          /
+            <span id="footer_scroll_max_page"></span>
+          ]
+        </span>
+        <span id="footer_scroll_button_prev">
+          <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/infowin_prev.gif" alt="前へ" title="前へ" border="0" width="15" height="15">
+        </span>
+        <span id="footer_scroll_button_next">
+          <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/infowin_next.gif" alt="次へ" title="次へ" border="0" width="15" height="15">
+        </span>
+        <span id="footer_scroll_button_start">
+          <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/infowin_start.gif" alt="自動更新" title="自動更新" border="0" width="15" height="15">
+        </span>
+        <span id="footer_scroll_button_stop">
+          <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/infowin_stop.gif" alt="一時停止" title="一時停止" border="0" width="15" height="15">
+        </span>
+
+        <span id="footer_scroll_button_prev_disabled" class="footer_scroll_disabled">
+          <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/infowin_prev_disable.gif" alt="" border="0" width="15" height="15">
+        </span>
+        <span id="footer_scroll_button_next_disabled" class="footer_scroll_disabled">
+          <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/infowin_next_disable.gif" alt="" border="0" width="15" height="15">
+        </span>
+        <span id="footer_scroll_button_start_disabled" class="footer_scroll_disabled">
+          <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/infowin_start_disable.gif" alt="" border="0" width="15" height="15">
+        </span>
+        <span id="footer_scroll_button_stop_disabled" class="footer_scroll_disabled">
+          <img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/infowin_stop_disable.gif" alt="" border="0" width="15" height="15">
+        </span>
+      </div>
+    </div>
+
+</td>
+<td class="server" id="footer_load_status_container">
+
+    
+    <div id="footer10-10_am">
+      <div id="footer_load_status"></div>
+    </div>
+
+</td>
+<td class="clock font_color">
+    <div id="footer10-30_am">
+      
+      <span id="user_date_clock"></span>
+    </div>
+</td>
+<td class="logo">
+    <div id="footer10-40_am">
+      
+  
+      <span><img src="https://webmail.kansai-u.ac.jp/am_viz/common/img/standard/am_logo.gif" alt="Active! mail" title="Active! mail" width="95" height="32"></span>
+  
+    </div>
+</td>
+</tr>
+</table>
+  </div>
+
+  
+  <div id="info_updater_contents" style="display: none;"></div>
+
+  
+  <iframe name="hiddenAjaxRequestFrame" class="hidden_iframe"
+      src="https://webmail.kansai-u.ac.jp/am_viz/common/standard/blank.html">
+  </iframe>
+  
+  <form name="hiddenAjaxRequestForm" style="display: none;">
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+jQuery(function($) {
+    var homing = $('#adHoming');
+    if (homing.size() == 0) {
+        return;
+    }
+	
+    var main = $('#main');
+    var side = $('#side');
+    var pos;
+    var sideLeft = side.offset().left;
+    var sideMargin = {
+        top: side.css('margin-top') ? side.css('margin-top') : 0,
+        right: side.css('margin-right') ? side.css('margin-right') : 0,
+        bottom: side.css('margin-bottom') ? side.css('margin-bottom') : 0,
+        left: side.css('margin-left') ? side.css('margin-left') : 0
+    };
+    var homingTop = homing.offset().top;
+    var didScroll = false;
+    var didResize = false;
+
+    var scrollAdjustProc = function() {
+        var mainHeight = main.outerHeight();
+        var mainBottom = main.offset().top + mainHeight;
+        var sideHeight = side.outerHeight();
+        var homingHeight = homing.outerHeight();
+        var windowTop = $(window).scrollTop();
+        var windowLeft = $(window).scrollLeft();
+        var windowHeight = $(window).height();
+        if ((mainHeight > sideHeight) && (windowTop > homingTop)) {
+            pos = (windowTop + homingHeight) < mainBottom ? 'fixed' : 'absolute';
+        } else {
+            pos = 'static';
+        }
+        switch (pos) {
+        case 'static':
+            side.css({
+                position: pos,
+                marginTop: sideMargin.top,
+                marginRight: sideMargin.right,
+                marginBottom: sideMargin.bottom,
+                marginLeft: sideMargin.left
+            });
+            break;
+        case 'fixed':
+            side.css({
+                position: pos,
+                top: '',
+                bottom: windowHeight - homingHeight,
+                left: sideLeft - windowLeft,
+                margin: 0
+            });                                                                                                                                                                              break;
+        case 'absolute':
+            side.css({
+                position: pos,
+                top: mainBottom - sideHeight,
+                bottom: '',
+                left: sideLeft,
+                margin: 0
+            });
+            break;
+        }
+    };
+
+    var resizeAdjustProc = function() {
+        side.css({
+            position:'static',
+            marginTop: sideMargin.top,
+            marginRight: sideMargin.right,
+            marginBottom: sideMargin.bottom,
+            marginLeft: sideMargin.left
+        });
+        sideLeft = side.offset().left;
+        var windowLeft = $(window).scrollLeft();
+
+        switch (pos) {
+        case 'fixed':
+            side.css({
+                position: pos,
+                left: sideLeft - windowLeft,
+                margin: 0
+            });
+            break;
+        case 'absolute':
+            side.css({
+                position: pos,
+                left: sideLeft,
+                margin: 0
+            });
+            break;
+        }
+    };
+
+    var scrollAdjust = function() {
+        didScroll = true;
+    };
+
+    var resizeAdjust = function() {
+        didResize = true;
+    };
+
+    setInterval(function() {
+        if (didScroll) {
+            didScroll = false;
+            scrollAdjustProc();
+        }
+        if (didResize) {                                                                                                                                                                     didResize = false;
+            resizeAdjustProc();
+        }
+    }, 10);
+
+    $(window).bind('load', scrollAdjust);
+    $(window).bind('scroll', scrollAdjust);
+    $(window).bind('resize', resizeAdjust);
+});

@@ -1,0 +1,5882 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-31J">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" src="/15/pc/js/common.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15744888-2']);
+  _gaq.push(['_setDomainName', '.mynavi.jp']);
+  _gaq.push(['_trackPageview']);
+  var encryptedMemberId = "jtaz6Ln0flC6NKGwUxWcKg";  
+  if(encryptedMemberId != "") {
+	  _gaq.push(['_setCustomVar', 50, 'customer', encryptedMemberId, 2]);
+  }
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+try{
+  var smartPhoneDefaultCssPath = "/15/pc/css/smartphone.css";
+  var smartPhoneCssPath = smartPhoneDefaultCssPath.substr(0,smartPhoneDefaultCssPath.lastIndexOf("/")+1);
+  var staticpath = smartPhoneCssPath ;
+}catch(e){}
+</script>
+
+
+
+
+
+<script type="text/javascript" src="/15/pc/js/submit.js"></script>
+<script language="JavaScript" src="/15/pc/js/stuCommon.js"></script>
+<script type="text/javascript" src="/15/pc/js/scroll/scrollsmoothly.js"></script>
+<script type="text/javascript" src="/15/pc/js/accordion/accordion.js"></script>
+
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+
+<meta name="keywords" content="マイナビ,就職情報">
+<link rel="alternate" media="handheld" href="http://j.mynavi.jp">
+
+
+<script type="text/javascript" src="/15/pc/js/jquery.js"></script>
+<script type="text/javascript" src="/15/pc/js/scroll/scrollsmoothly.js"></script>
+<script type="text/javascript" src="/15/pc/js/trigger/jquery.pc.trigger.js"></script>
+<script type="text/javascript" src="/15/pc/js/corpinfo.js"></script>
+
+
+
+
+
+	
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	
+	
+
+
+
+<title>(株)ベストコミュニケーションズ - マイナビ2015</title>
+
+<script type="text/javascript">
+var clientwidth = "device-width";
+</script>
+
+
+	
+	
+		<link rel="stylesheet" type="text/css" href="/15/pc/css/subpage.css" >
+	
+
+
+
+</head>
+<body onload="init()">
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="wrapper">
+	<div id="headerWrap">
+		
+
+
+
+<div id="top"></div>
+
+<script type="text/javascript" src="/15/pc/js/jquery.cookie.js"></script>
+
+<script>
+<!--
+function newCorp(aCorpId,aTarget){
+
+	var errorFlg = 0;
+	var posit = 0;
+	if (aTarget == "back") {
+		posit = -1;
+	} else if (aTarget == "next") {
+		posit = 1;
+	}
+
+	
+	if(!window.opener || noAccess(window)) {
+		errorFlg = 1;
+	} else {
+		
+		if(wasNotSubmittedYet()){
+			var formObj = window.opener.document.getElementById("searchCorpListByGenCondForm");
+
+			
+
+			if(formObj) {
+				
+				var srchFlgObj = formObj.searchFlg;
+				
+				if(srchFlgObj) {
+					if(formObj.searchFlg.value == 1) {
+						
+						var cur = formObj.cursor.value;
+						
+						var corpPosit = eval(cur)+ eval(posit);
+						
+						var corp = formObj.searchIdAllList.value;
+						
+						var corpArray = corp.split(",");
+						
+						var nextURL = "";
+						nextURL = "corp" + corpArray[corpPosit] + "/outline.html";
+						
+						var urlstr = window.self.location.pathname;
+						
+						var len = urlstr.search('corp');
+						var newUrl = urlstr.substr(0,len);
+						
+						nextURL = newUrl + nextURL;
+						
+						formObj.cursor.value = eval(corpPosit);
+						
+						window.top.location.href = nextURL;
+					} else {
+						errorFlg = 1;
+					}
+				} else {
+					errorFlg = 1;
+				}
+			} else {
+				errorFlg = 1;
+			}
+		}
+	}
+	if(errorFlg == 1) {
+		alert('検索結果一覧の検索条件が変更されたか、閉じられたため、企業情報画面を表示できません。')
+	}
+}
+-->
+</script>
+
+<script>
+<!--
+function ComCorpOutLine(){
+	document.corpinfo_displayOutlineActionForm.submit();
+}
+function ComCorpEmployment(){
+	document.corpinfo_displayEmploymentActionForm.submit();
+}
+function ComCorpObog(aJobNo){
+	document.corpinfo_displayObogListForm.elements["obogNo"].value = aJobNo;
+	document.DisplayObogForm.submit();
+}
+function ComCorpFlex(aFlexId){
+	document.corpinfo_displayFlexActionForm.elements["flexId"].value = aFlexId;
+	document.DisplayFlexForm.submit();
+}
+function ComCorpPremium(){
+	document.corpinfo_displayPremiumActionForm.submit();
+}
+-->
+</script>
+
+
+<script>
+<!--
+ 
+
+var gCorpCookie = "mynavi2015_crp_head_foot_link";
+
+var gCorpCookieExp = "120";
+
+var gCookiePath = "/15/pc";
+
+
+var gStyleClosed = "opened";
+
+var gStyleOpened = "";
+
+
+function onLoad(){
+
+	if(false){
+		
+		optDispSet("first");
+	}
+
+}
+
+
+function getOptHeadFootCookie(){
+	
+	var result = $.cookie(gCorpCookie);
+	if (result == null) {
+		result = "";
+	}
+	return result;
+}
+
+
+function chkNormalCookie(chkSize, optCookie) {
+	
+	var cookieArray = optCookie.split(",");
+	
+	if (cookieArray.length != chkSize) {
+		
+		return false;
+	}
+	
+	var reg = new RegExp("^1$|^0$");
+	for ( var i = 0; i < cookieArray.length; i++ ) {
+		var cookieSingle = cookieArray[i];
+		
+		if(!reg.test(cookieSingle)){
+			
+			return false;
+		}
+	}
+
+	return true;
+}
+
+
+function optDispSet(optBtnID){
+
+	
+	var optCookie = getOptHeadFootCookie();
+
+	
+	var optHeadFootCookie = new Array();
+
+	
+	if (optCookie == null || !chkNormalCookie(10, optCookie)){
+		
+		optHeadFootCookie = ['1','1','0','0','0','1','1','0','0','0'];
+
+	} else {
+		
+		optHeadFootCookie = optCookie.split(",");
+
+	}
+	
+	
+	var optHeadObj;
+	
+	
+	if(optBtnID == "first") {
+		
+		optHeadObj = document.getElementById("upperEntryBtn");
+		optHeadFootCookie[0] = openCategory(optHeadObj, optHeadFootCookie[0], true, "upperEntryCtg");
+		
+		optHeadObj = document.getElementById("upperSeminarBtn");
+		optHeadFootCookie[1] = openCategory(optHeadObj, optHeadFootCookie[1], true, "upperEntrySeminer");
+
+		optHeadObj = document.getElementById("upperHpBtn");
+		optHeadFootCookie[2] = openCategory(optHeadObj, optHeadFootCookie[2], true, "upperEntryHp");
+
+		optHeadObj = document.getElementById("upperContsBtn");
+		optHeadFootCookie[3] = openCategory(optHeadObj, optHeadFootCookie[3], true, "upperEntryConts");
+
+		optHeadObj = document.getElementById("upperSpecialBtn");
+		optHeadFootCookie[4] = openCategory(optHeadObj, optHeadFootCookie[4], true, "upperEntrySpecial");
+
+		optHeadObj = document.getElementById("lowerEntryBtn");
+		optHeadFootCookie[5] = openCategory(optHeadObj, optHeadFootCookie[5], true, "lowerEntryCtg");
+
+		optHeadObj = document.getElementById("lowerSeminarBtn");
+		optHeadFootCookie[6] = openCategory(optHeadObj, optHeadFootCookie[6], true, "lowerEntrySeminer");
+
+		optHeadObj = document.getElementById("lowerHpBtn");
+		optHeadFootCookie[7] = openCategory(optHeadObj, optHeadFootCookie[7], true, "lowerEntryHp");
+
+		optHeadObj = document.getElementById("lowerContsBtn");
+		optHeadFootCookie[8] = openCategory(optHeadObj, optHeadFootCookie[8], true, "lowerEntryConts");
+
+		optHeadObj = document.getElementById("lowerSpecialBtn");
+		optHeadFootCookie[9] = openCategory(optHeadObj, optHeadFootCookie[9], true, "lowerEntrySpecial");
+
+	} else {
+		
+		
+		if (optBtnID == "upperEntryBtn"){
+			optHeadObj = document.getElementById("upperEntryBtn");
+			optHeadFootCookie[0] = openCategory(optHeadObj, optHeadFootCookie[0], false, "upperEntryCtg");
+		}
+		
+		else if (optBtnID == "upperSeminarBtn"){
+			optHeadObj = document.getElementById("upperSeminarBtn");
+			optHeadFootCookie[1] = openCategory(optHeadObj, optHeadFootCookie[1], false, "upperEntrySeminer");
+		}
+		
+		else if (optBtnID == "upperHpBtn"){
+			optHeadObj = document.getElementById("upperHpBtn");
+			optHeadFootCookie[2] = openCategory(optHeadObj, optHeadFootCookie[2], false, "upperEntryHp");
+		}
+		
+		else if (optBtnID == "upperContsBtn"){
+			optHeadObj = document.getElementById("upperContsBtn");
+			optHeadFootCookie[3] = openCategory(optHeadObj, optHeadFootCookie[3], false, "upperEntryConts");
+		}
+		
+		else if (optBtnID == "upperSpecialBtn"){
+			optHeadObj = document.getElementById("upperSpecialBtn");
+			optHeadFootCookie[4] = openCategory(optHeadObj, optHeadFootCookie[4], false, "upperEntrySpecial");
+		}
+		
+		else if (optBtnID == "lowerEntryBtn"){
+			optHeadObj = document.getElementById("lowerEntryBtn");
+			optHeadFootCookie[5] = openCategory(optHeadObj, optHeadFootCookie[5], false, "lowerEntryCtg");
+		}
+		
+		else if (optBtnID == "lowerSeminarBtn"){
+			optHeadObj = document.getElementById("lowerSeminarBtn");
+			optHeadFootCookie[6] = openCategory(optHeadObj, optHeadFootCookie[6], false, "lowerEntrySeminer");
+		}
+		
+		else if (optBtnID == "lowerHpBtn"){
+			optHeadObj = document.getElementById("lowerHpBtn");
+			optHeadFootCookie[7] = openCategory(optHeadObj, optHeadFootCookie[7], false, "lowerEntryHp");
+		}
+		
+		else if (optBtnID == "lowerContsBtn"){
+			optHeadObj = document.getElementById("lowerContsBtn");
+			optHeadFootCookie[8] = openCategory(optHeadObj, optHeadFootCookie[8], false, "lowerEntryConts");
+		}
+		
+		else if (optBtnID == "lowerSpecialBtn"){
+			optHeadObj = document.getElementById("lowerSpecialBtn");
+			optHeadFootCookie[9] = openCategory(optHeadObj, optHeadFootCookie[9], false, "lowerEntrySpecial");
+		}
+	}
+
+	
+	optCookieSet(gCorpCookieExp, optHeadFootCookie.toString());
+}
+
+
+function optCookieSet(cookieSaveDate, optHeadFootCookie){
+	var expNum = Number(cookieSaveDate);
+	$.cookie(gCorpCookie, optHeadFootCookie, { expires: expNum, path: gCookiePath });
+}
+
+
+
+function openCategory(obj, optCookie, firstFlg, id){
+	
+	if (obj == null) {
+		return optCookie;
+	}
+
+	
+	
+	if(firstFlg == true) {
+		if(obj.className == gStyleOpened && optCookie == "0"){
+			slideCategory(id);
+		}
+	}
+	
+	else {
+		if((obj.className == gStyleClosed && optCookie == "0") || 
+			(obj.className == gStyleOpened && optCookie == "1")){
+			
+			slideCategory(id);
+		}
+	}
+
+	
+	if(obj.className == gStyleClosed){
+		
+		return "0";
+		
+	}
+	
+	else {
+		return "1";
+		
+	}
+	
+}
+
+-->
+</script>
+
+<script type="text/javascript">
+
+if (typeof window.addEventListener != "undefined") {
+    
+    window.addEventListener('load', onLoad, false);
+} else if (typeof window.attachEvent != "undefined") {
+    
+    window.attachEvent('onload', onLoad);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+		
+		
+			
+				
+			
+			
+			
+			
+			 
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+
+			
+			<div class="subpagePnation corp upper">
+				<div class="inner">
+					<ul class="leftRight">
+						
+							
+								<li id="back" style="visibility:hidden" class="left"><a href="javascript:newCorp(108740, 'back')">前の企業</a></li>
+							
+						
+						
+							
+							
+								<li class="center">&nbsp;</li>
+							
+						
+						
+							
+								<li id="next" style="visibility:hidden" class="right"><a href="javascript:newCorp(108740, 'next')">次の企業</a></li>
+							
+						
+					</ul>
+				</div>
+			</div>
+			
+
+			<div id="headerCorp">
+				
+					<p class="update" id="updateDate">最終更新日：2014/4/10</p>
+				
+				<h1><img src="/15/pc/images/company/title_site.gif" alt="マイナビ2015">
+				</h1>
+			</div>
+
+			<div id="companyHead"  >
+				<div class="heading1">
+					<div class="typeId">
+						
+							<dl>
+								<dt>マイナビコード</dt>
+								
+									
+									<dd>108740</dd>
+									
+								
+							</dl>
+							<ul>
+								
+								
+									
+									<li><span>正社員</span></li>
+									
+									
+									<li><span>既卒可</span></li>
+								
+							</ul>
+						
+						<p>
+						
+						</p>
+					</div>
+				</div>
+				<div class="heading2">
+					<h2>(株)ベストコミュニケーションズ
+					
+					</h2>
+					
+					
+						<div class="category">
+							
+							<ul>
+								
+									<li>
+									
+										
+										
+											<a href="/15/pc/search/ind50300.html" id="industryLink0">商社（コンピュータ・通信機器・ゲーム製品）</a>
+										
+									
+									</li>
+								
+									<li>
+									
+										
+										
+											<a href="/15/pc/search/ind74000.html" id="industryLink1">生命保険</a>
+										
+									
+									</li>
+								
+									<li>
+									
+										
+										
+											<a href="/15/pc/search/ind96420.html" id="industryLink2">ビジネスサービス</a>
+										
+									
+									</li>
+								
+									<li>
+									
+										
+										
+											<a href="/15/pc/search/ind89500.html" id="industryLink3">シンクタンク・マーケティング・調査</a>
+										
+									
+									</li>
+								
+									<li>
+									
+										
+										
+											<a href="/15/pc/search/ind85010.html" id="industryLink4">情報処理</a>
+										
+									
+									</li>
+								
+							</ul>
+							
+						</div>
+						<div class="place">
+							
+								<dl>
+									<dt>本社所在地</dt><dd>
+									
+										
+										大阪府
+									
+									</dd>
+								</dl>
+							
+							
+							
+								<dl>
+									<dt>資本金</dt><dd>1,000万円</dd>
+								</dl>
+							
+							
+							
+								<dl>
+									<dt>売上高</dt><dd>4億円（2013年3月）</dd>
+								</dl>
+							
+							
+							
+								<dl>
+									<dt>従業員</dt><dd>130名（2014年3月現在）</dd>
+								</dl>
+							
+						</div>
+					
+				</div>
+			</div>
+	
+	
+
+
+	
+	
+	
+	
+		
+			
+				
+					
+						
+					
+				
+				
+					
+						
+					
+				
+			
+			
+			
+				
+			
+			
+		
+		
+			
+		
+	
+	
+	
+		<div class="basicInfoWrapper">
+			<table class="basicInfo" border="0" cellspacing="0" cellpadding="0" id="headerOptionLink">
+				
+				
+	
+	
+					
+						
+						
+							
+	
+	
+
+						<tr class="entry" id ="upperEntryCtg" >
+							
+								
+								
+									<th id ="upperEntryBtn" ><span>エントリー</span></th>
+								
+							
+							<td>
+							<ul>
+							
+								
+									
+									
+									
+										
+										
+										<li>
+										
+									
+										
+											
+												<a href="/15/pc/user/registEntry/index/?actionMode=entry&corpId=108740&optNo=1Ct8QA" target="_blank" id="entryLink0">エントリーボックス</a>
+											
+											
+										
+										</li>
+									
+								
+
+								
+							
+							</ul>
+							</td>
+						</tr>
+
+
+	
+							
+						
+						
+	
+						
+						
+							
+	
+	
+
+						<tr class="seminar" id ="upperEntrySeminer">
+							
+								
+								
+									<th id ="upperSeminarBtn"><span>セミナー／説明会</span></th>
+								
+							
+							<td>
+							<ul>
+							
+								
+									
+									
+										
+										
+										<li>
+										
+									
+										
+										
+											
+												<a href="/15/pc/corpinfo/displaySeminar/index/?optNo=zBeohC&corpId=108740" id="seminarLink0">【大阪】ベストコミュニケーションズ　説明会開催！</a>
+											
+											
+										
+										</li>
+									
+									
+									
+								
+								
+							
+								
+									
+									
+										
+										
+										<li>
+										
+									
+										
+										
+											
+												<a href="/15/pc/corpinfo/displaySeminar/index/?optNo=n16U1C&corpId=108740" id="seminarLink1">【東京】ベストコミュニケーションズ　説明会開催！</a>
+											
+											
+										
+										</li>
+									
+									
+									
+								
+								
+							
+								
+									
+									
+										
+										
+										<li>
+										
+									
+										
+										
+											
+												<a href="/15/pc/corpinfo/displaySeminar/index/?optNo=4-q5zC&corpId=108740" id="seminarLink2">【福岡】ベストコミュニケーションズ　説明会開催！</a>
+											
+											
+										
+										</li>
+									
+									
+									
+								
+								
+							
+							</ul>
+							</td>
+						</tr>
+
+	
+							
+						
+						
+					
+	
+					
+	
+					
+					
+						
+						
+					
+					
+	
+					
+					
+					
+	
+					
+					
+					
+	
+				
+	
+				
+				
+				
+					
+				
+				
+			</table>
+		</div>
+	
+
+
+	
+	
+
+		
+		
+			
+				
+					
+						
+							
+								
+									<div class="navBookmark top">
+										<a href="/15/pc/user/registBookmark/index/?opttype=bookmark&corpId=108740" id="headerBookmarkBtnLink" class="btnSmallStrongW6em" onclick="wasNotSubmittedYet();">ブックマーク</a>
+									</div>
+								
+							
+						
+					
+					
+				
+			
+			
+			
+		
+
+		
+		
+		
+			
+		
+		<div class="globalNav corp top">
+			<ul>
+				
+				
+					<li class="now outline">
+						<span>会社概要</span>
+					</li>
+				
+				
+				
+				
+					
+					
+					
+						<li class="employment">
+							
+								
+									<a href="/15/pc/search/corp108740/employment.html" id="headerEmploymentTabLink">採用データ</a>
+								
+								
+							
+						</li>
+					
+				
+	
+				
+				
+	
+				
+				
+	
+				
+				
+					
+					
+					
+					
+						
+						
+							
+						
+					
+				
+	
+				
+				
+				
+					
+					
+						
+					
+				
+	
+				
+				
+				
+	
+				
+				
+					
+					
+				
+				
+					
+						
+					
+				
+			</ul>
+		</div>
+	
+	
+
+
+
+
+	<form name="corpinfo_displayOutlineActionForm" method="post" action="/15/pc/corpinfo/displayOutline/index" onsubmit="MC.form.preventDouble(this);">
+		<input type="hidden" name="disp" value="normal" id="disp">
+		<input type="hidden" name="corpId" value="108740" id="corpId">
+		
+	</form>
+
+	
+		<form name="corpinfo_displayEmploymentActionForm" method="post" action="/15/pc/corpinfo/displayEmployment/index" onsubmit="MC.form.preventDouble(this);">
+			<input type="hidden" name="disp" value="normal" id="disp">
+			<input type="hidden" name="corpId" value="108740" id="corpId">
+			
+		</form>
+	
+
+	<form name="corpinfo_displayObogListActionForm" method="post" action="/15/pc/corpinfo/displayObogList/index" onsubmit="MC.form.preventDouble(this);">
+		<input type="hidden" name="disp" value="normal" id="disp">
+		<input type="hidden" name="corpId" value="108740" id="corpId">
+		<input type="hidden" name="obogNo" value="" id="obogNo">
+		
+	</form>
+
+	
+		<form name="corpinfo_displayFlexActionForm" method="post" action="/15/pc/corpinfo/displayFlex/index" onsubmit="MC.form.preventDouble(this);">
+			<input type="hidden" name="disp" value="normal" id="disp">
+			<input type="hidden" name="corpId" value="108740" id="corpId">
+			<input type="hidden" name="flexId" value="" id="flexId">
+			
+		</form>
+	
+
+	<form name="corpinfo_displayPremiumActionForm" method="post" action="/15/pc/corpinfo/displayPremium/index" onsubmit="MC.form.preventDouble(this);">
+		<input type="hidden" name="disp" value="normal" id="disp">
+		<input type="hidden" name="corpId" value="108740" id="corpId">
+		<input type="hidden" name="optNo" value="" id="optNo">
+		
+	</form>
+
+	<form name="corpinfo_displayPremiumListActionForm" method="post" action="/15/pc/corpinfo/displayPremiumList/index" onsubmit="MC.form.preventDouble(this);">
+		<input type="hidden" name="disp" value="normal" id="disp">
+		<input type="hidden" name="corpId" value="108740" id="corpId">
+		
+	</form>
+
+	
+
+		<form name="corpinfo_displayThemeListActionForm" method="post" action="/15/pc/corpinfo/displayThemeList/index" onsubmit="MC.form.preventDouble(this);">
+			<input type="hidden" name="disp" value="normal" id="disp">
+			<input type="hidden" name="corpId" value="108740" id="corpId">
+			
+		</form>
+
+		<form name="corpinfo_displayThemeActionForm" method="post" action="/15/pc/corpinfo/displayTheme/index" onsubmit="MC.form.preventDouble(this);">
+			<input type="hidden" name="disp" value="normal" id="disp">
+			<input type="hidden" name="corpId" value="108740" id="corpId">
+			<input type="hidden" name="answer" value="0" id="answer">
+			
+		</form>
+	
+
+
+
+	</div>
+
+
+
+
+
+<script type="text/javascript">
+var hikisuu = location.search;
+if(hikisuu == ""){
+	hikisuu = "none";
+}
+_gaq.push(['_trackEvent', 'PageLoad','会社概要の引数別',hikisuu]);
+</script>
+
+
+
+<script type="text/javascript">
+_gaq.push(['_trackEvent', 'PageLoad','会社概要の企業ID別','108740']);
+</script>
+
+
+	<div class="companyInfo">
+		
+		
+
+		
+
+		
+		
+			<h2 class="companyLead">「世界で一番、営業力のある会社になろう」――魅力的なメンバーたちと共に、お客様とお客様を繋ぐ最良のコミュニケーション媒体会社となる！</h2>
+			
+		
+		
+
+		
+		
+			
+				<div class="companyMessage premium">
+					<p class="date">
+						更新日：2014/03/28
+					</p>
+					<h3>2015年度採用がスタートしました！（株式会社ベストコミュニケーションズ）</h3>
+					<div class="messageArea">
+						<p>
+						当社の採用ページをご覧下さいまして、ありがとうございます！<br>株式会社ベストコミュニケーションズの採用担当です。<br><br>いよいよ、2015年度新卒採用がスタートしました。<br>少人数のチーム制で、法人営業を行うのが当社のスタイルです。<br><br>少しでも興味を持っていただいた方、ぜひエントリーをお願いします。<br>説明会日程が確定次第、ご連絡させていただきます。<br><br>多くの学生の皆さんにお会いできることを楽しみにしています。
+						</p>
+					</div>
+					
+						<p class="pct">
+							<img src="/master/img15/advance/108740-a1-7.jpg?__rd=1956813036" height="60" width="80" alt="PHOTO">
+						</p>
+					
+				</div>
+			
+		
+		
+
+		
+		
+		
+		
+		
+
+		
+			
+			
+			
+		
+
+		
+			
+			
+				
+				
+					
+						
+						
+					
+				
+				
+			
+			
+				
+					
+					
+				
+			
+		
+		
+
+				
+					<div class="companySec">
+
+						
+						
+							
+							
+							
+							
+							
+								
+									
+								
+							
+							
+								
+									
+								
+							
+							<h3 class="dtHead2">会社紹介記事</h3>
+							<script>
+							<!--
+							$(document).ready(function(){
+								var targetTag1 = $("div.companySec table.dataTable div.pct2c dl");
+								var targetTag2 = $("div.companySec table.dataTable div.pct2c dl dt img");
+								var n = targetTag1.length;
+								if(n<2){
+									targetTag1.css({"float":"none","margin-left":"auto","margin-right":"auto"});
+									targetTag2.css({"margin-left":"auto","margin-right":"auto"});
+									
+								}
+							});
+							//-->
+							</script>
+							<div class="inner">
+								
+									
+									<table class="dataTable last" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td colspan="2">
+												<div class="pct2c">
+													
+													
+														<dl class="box1">
+															<dt><img src="/master/img15/advance/108740-a1-1.jpg?__rd=783613577" alt="PHOTO"></dt>
+															
+																<dd class="sameSize">仕事を楽しんで取り組む、魅力的なメンバーが揃っています！　新人メンバーでも上層部に積極的に意見を言える環境で、むしろ発言を歓迎する雰囲気があります。</dd>
+															
+														</dl>
+													
+													
+														
+														<dl class="box2">
+															<dt><img src="/master/img15/advance/108740-a1-2.jpg?__rd=259857214" alt="PHOTO"></dt>
+															
+																<dd class="sameSize">社内では飲み会やイベントの機会も多く、社長と飲みに行く機会も。仕事面だけでなく、お互いの人柄なども分かるから、メンバー同士の意思疎通もスムーズ。</dd>
+															
+														</dl>
+													
+												</div>
+											</td>
+										</tr>
+									</table>
+									
+								
+								
+								
+								
+								
+									
+										
+									
+								
+								
+									
+								
+								
+									<h4 class="dtHead">トップインタビュー　――代表取締役社長からのメッセージ</h4>
+								
+								
+									<table class="dataTable last" border="0" cellspacing="0" cellpadding="0">
+										<tbody>
+										<tr>
+											
+												<td class="heading">
+													
+													<img src="/master/img15/advance/108740-a1-8.jpg?__rd=1288585825" alt="PHOTO"><br><span class="sameSize">
+													
+												
+													「自分の天職は何かは、なかなか分からないものかもしれません。でも、何でも一生懸命やってみることが大切。そこから見えてくるものがあるかもしれませんから」（渡世）
+												</span>
+												</td>
+											
+											<td>
+												<p class="sameSize">
+												
+													
+													■「営業力」に優れたメンバーが揃っています。<br>2008年の設立以来、120％超の成長を続ける当社は、法人のお客様に対して通信関連サービスのご提案を行っている会社です。通信分野の営業は、基本的に景気に左右されません。なぜなら当社の提案を受け入れることが、お客様企業のコストダウンに繋がるから。お客様にとって「メリットしかない」ということが、この通信商材の強みですね。当社は「営業力」がとても強い会社です。もともと私自身も上場企業の部長職として、営業には自信がありました。その経験則をまとめたマニュアルなどが充実しているのはもちろん、個々の営業能力が高いので人伝いにノウハウが共有されるケースも多いですね。「営業力」は社会で働くにあたって、どの場面でも必要になりますから、それが身につくというのは大きいですよ。<br><br>■独立志向、または幹部を目指す人に来てほしい。<br>「将来は独立する！」「幹部になる!!」というぐらいの気持ちで入社してほしいですね。学生の皆さんには、いつも「営業というのは、ものすごく大変な仕事だよ」と伝えています。お客様からお断りを頂くケースも多いですし、相当な覚悟がないと続けていけない。でも「絶対にやりきるんだ、頑張るんだ！」という意識を持って、私たちの仲間に加わっていただきたいですね。当社は実力主義・成果主義なので、頑張れば頑張っただけ昇給や抜擢人事が行われます。将来的に独立や経営幹部を目指す人であれば、いいシミュレーションができます。部下を持つタイミングも早いし、PL・BSを見るのも早くなりますので、経営能力が身につきますよ。<br><br>■「世界で一番の、営業会社になろう！」<br>今年4月から、個人向けの「保険事業」にも本格参入。5年以内に200人体制の会社になることが、まず身近な目標。そして「保険業界」という新しいフィールドで10年以内に営業会社でNo.1を目指します。そして目標達成し、従業員全員で海外旅行（ラスベガス）にいこう！と決めています。また将来的には今の幹部陣も含め、頑張っている人が起業したり独立を目指すときに、会社として応援できる体制にしたいと考えています。今扱っている「通信」や「保険」の商材は、その手段にしか過ぎません。私たちは本気で世界一の営業会社を目指しています。そして、それに相応しい人材集団になるためとメンバーも進化中です。<br><br>（代表取締役社長　渡世 将太郎）
+												
+												
+												</p>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								
+							</div>
+						
+					</div>
+				
+				
+
+				
+				
+					<div class="companySec">
+						<div class="inner">
+							
+							<ul class="companyDetail">
+								
+								
+									
+									
+									
+										
+										
+											<li class="bookmark">
+												<a href="/15/pc/user/registBookmark/index?opttype=bookmark&corpId=108740" id="doBookmark" class="btnLargeCommonW12em"><span>ブックマーク</span></a>
+											</li>
+										
+									
+								
+								
+									
+									
+										<li class="nav01">
+											<a href="/15/pc/corp108740/list.html" target="_blank" id="doEntry" class="btnLargeActiveW11em"><span>エントリー</span></a>
+										</li>
+									
+									
+									
+										<li class="nav02">
+											<a href="/15/pc/corp108740/sem.html" id="doSeminar" class="btnLargeActiveW11em" onclick="return wasNotSubmittedYet();"><span>セミナー情報</span></a>
+										</li>
+									
+								
+							</ul>
+							
+							
+						</div>
+					</div>
+				
+
+				
+				
+					
+				
+				
+					
+				
+				
+
+				
+					<div class="companySec">
+						<h3 class="dtHead">会社データ</h3>
+						<div class="inner">
+							
+							
+							
+								
+									
+										
+										
+									
+									
+									
+									
+									
+										
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+									
+										
+										
+									
+									
+									
+									
+									
+								
+							
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+									
+									
+										
+										
+									
+									
+									
+									
+								
+							
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+									
+									
+									
+										
+										
+									
+									
+									
+								
+							
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+										
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+									
+									
+									
+									
+										
+										
+									
+									
+								
+							
+							
+							<table class="dataTable" border="0" cellspacing="0" cellpadding="0">
+								<tbody>
+									
+										
+											
+												
+												
+											
+											
+											
+											
+											
+												
+													
+													
+														
+														
+														
+															<tr>
+																<td class="heading">プロフィール
+																	
+																	
+																</td>
+																<td class="sameSize">
+															
+															
+																<p>私たちベストコミュニケーションズは2008年5月に創業。<br><br>現在、日々多様化するお客様のニーズに対し、提供されているサービスも合わせて日々進化していき、実に多様化しています。一方で、細やかなニーズにお応えするため、サービスは専門化していき、お客様に伝わりづらい・解りづらいといった新たな問題が発生しています。<br><br>一方で、サービスを提供する企業においては、専門化したサービスが細かい説明・比較を要し、 お客様に最適なご提案を必要とする為、販売員養成には相当な時間と労力が必要になるという問題を避けることができなくなっています。<br><br>「どのサービスを選択すれば良いか分からない」<br>「 同じようなサービスが多く、比較が困難である」<br>といった問題を抱えていらっしゃるお客様に対して、<br>ベストなソリューションをご提案し、<br>サービス提供企業との架け橋になることを事業目的としています。<br><br>双方のニーズにきめ細かく答え、満足して頂く事で<br>広く社会に貢献していきたいと考えています。<br><br>【事業目的】<br>「お客様とお客様をつなぐ最良なコミュニケーション媒介会社となる」という経営理念の基、すべての取引先においてオンリーワンの実績を出すことを目的とし、独自のデータベースによる営業効率の高いオフィスソリューション事業を地域的に展開していく。<br></p>
+															
+															
+															
+																</td>
+															</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+												
+												
+											
+											
+											
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+												
+												
+											
+											
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+												
+												
+											
+											
+												
+											
+												
+													
+													
+														
+														
+														
+															<tr>
+																<td class="heading">事業内容
+																	
+																	
+																		
+																			
+																			<br><span class="sameSize"><img src="/master/img15/advance/108740-01ol.jpg?__rd=136092321" alt="PHOTO"></span><br>互いのノウハウを共有しながら、日々の営業活動に活かしています。自ら目標を定めて、その目標達成への過程こそが、営業としての醍醐味。
+																		
+																	
+																</td>
+																<td class="sameSize">
+															
+															
+															
+															
+																・ディストリビューション事業<br>・テレマーケティング事業
+															
+																</td>
+															</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+									
+
+									
+									
+
+									
+									
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+									
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+									
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+									
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+										
+									
+
+									
+									
+										
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+													
+														
+														
+															
+															
+																<tr>
+																	<th scope="row">本社郵便番号</th>
+																	<td class="sameSize">541-0059</td>
+																</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+													
+														
+														
+															
+															
+																<tr>
+																	<th scope="row">本社所在地</th>
+																	<td class="sameSize">大阪府大阪市中央区博労町1-7-7 中央博労町ビル3F</td>
+																</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													
+														
+														
+															
+															
+																<tr>
+																	<th scope="row">本社電話番号</th>
+																	<td class="sameSize">06-7711-0500</td>
+																</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													
+														
+														
+															
+															
+																<tr>
+																	<th scope="row">設立</th>
+																	<td class="sameSize">2008（平成20）年5月22日</td>
+																</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													
+														
+														
+															
+															
+																<tr>
+																	<th scope="row">資本金</th>
+																	<td class="sameSize">1,000万円</td>
+																</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													
+														
+														
+															
+															
+																<tr>
+																	<th scope="row">従業員</th>
+																	<td class="sameSize">130名（2014年3月現在）</td>
+																</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												
+											
+
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+													
+														
+														
+															
+															
+																<tr>
+																	<th scope="row">売上高</th>
+																	<td class="sameSize">4億円（2013年3月）</td>
+																</tr>
+														
+													
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+												
+											
+										
+									
+
+									
+									
+
+										
+										
+												<tr>
+													<th scope="row">事業所</th>
+													<td class="sameSize">【福岡営業所】<br>〒810-0001<br>福岡県福岡市中央区天神3-4-7　天神旭ビル8F<br>TEL 092-688-9107<br><br>【東京営業所】<br>〒110-0005<br>東京都台東区上野5-26-11　十仁ビル7F<br>TEL　03-6860-0095</td>
+												</tr>
+									
+
+										
+										
+												<tr>
+													<th scope="row">主な取引先</th>
+													<td class="sameSize">ソフトバンク(株)<br>ソフトバンクテレコム(株)<br>ソフトバンクテレコムパートナーズ(株)<br>オリックス生命保険（株）</td>
+												</tr>
+									
+
+										
+										
+												<tr>
+													<th scope="row">関連会社</th>
+													<td class="sameSize">BCパートナーズ(株)<br>(株)ECサポート</td>
+												</tr>
+									
+
+										
+										
+												<tr>
+													<th scope="row">平均年齢</th>
+													<td class="sameSize">25歳</td>
+												</tr>
+									
+
+										
+										
+												<tr>
+													<th scope="row">代表取締役社長</th>
+													<td class="sameSize">渡世 将太郎</td>
+												</tr>
+									
+
+									
+									
+									</tbody>
+								</table>
+							</div>
+						</div>
+					
+				
+				<div class="companySec">
+					
+					
+						<div class="companyData">
+							<h3>採用データ</h3>
+							<div class="txt">
+								<p>
+									<a href="/15/pc/search/corp108740/employment.html" id="saiyouLink">採用データはこちら</a>
+								</p>
+							</div>
+						</div>
+					
+					
+					
+						
+							
+								
+							
+						
+												
+
+					
+					
+						
+						
+							
+						
+						
+					
+					
+					
+					
+					
+					
+				</div>
+				
+				
+				
+					<div class="companySec">
+						<h3 class="dtHead">問い合わせ先</h3>
+						<div class="inner">
+							<table class="dataTable last" border="0" cellspacing="0" cellpadding="0">
+
+								
+
+									
+										
+										
+									
+									
+									
+									
+
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+											
+											
+											
+												
+												
+												
+													<tr>
+														<th scope="row">問い合わせ先</th>
+														<td class="sameSize">株式会社ベストコミュニケーションズ　<br><br>〒541-0059<br>大阪市中央区博労町1-7-7　中央博労町ビル3F<br>電話／06-7711-0500　　採用担当</td>
+													</tr>
+												
+											
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+								
+
+									
+									
+										
+										
+									
+									
+									
+
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+											
+											
+											
+												
+												
+												
+													<tr>
+														<th scope="row">URL</th>
+														<td class="sameSize">http://www.bestcommunications.co.jp/</td>
+													</tr>
+												
+											
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+								
+
+									
+									
+									
+										
+										
+									
+									
+
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+											
+											
+											
+												
+												
+												
+													<tr>
+														<th scope="row">E-mail</th>
+														<td class="sameSize">bc-info-jinji@bestcommunications.co.jp</td>
+													</tr>
+												
+											
+										
+									
+										
+										
+									
+										
+										
+									
+								
+
+									
+									
+									
+									
+										
+										
+									
+
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+									
+										
+										
+											
+											
+											
+												
+												
+												
+													<tr>
+														<th scope="row">交通機関</th>
+														<td class="sameSize">・地下鉄中央線、堺筋線「堺筋本町」駅7番出口より徒歩6分<br>・地下鉄長堀鶴見緑地線「長堀橋」駅1番出口より徒歩6分</td>
+													</tr>
+												
+											
+										
+									
+										
+										
+									
+								
+								
+													<tr>
+														<th scope="row">QRコード</th>
+														<td class="sameSize">
+															<dl class="qrcode">
+																<dt><img src="/common/img15/qrcode/qr108740.gif?__rd=508172772" height="135" width="135" alt="QRコード"></dt>
+																<dd><br>
+																	http://job.mynavi.jp/15/pc/search/corp108740/outline.html<br>
+																	
+																	
+																		外出先やちょっとした空き時間に、スマートフォンでマイナビを見てみよう！
+																	
+																</dd>
+															</dl>
+														</td>
+													</tr>
+								
+							</table>
+						</div>
+					</div>
+				
+				
+
+				</div>
+
+
+		
+		<div id="footerWrap">
+			
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+				
+					
+				
+			
+			
+				
+					
+				
+			
+		
+		
+		
+			
+		
+		
+		
+			
+		
+	
+
+
+
+	<div class="basicInfoWrapper">
+		<table class="basicInfo" border="0" cellspacing="0" cellpadding="0" id="footerOptionLink">
+			
+			
+	
+				
+				
+					
+					
+						
+	
+	
+
+						<tr class="entry" id ="lowerEntryCtg" >
+							
+								
+								
+									<th id ="lowerEntryBtn" ><span>エントリー</span></th>
+								
+							
+							<td>
+							<ul>
+							
+								
+									
+									
+									
+										
+										
+										<li>
+										
+									
+										
+											
+												<a href="/15/pc/user/registEntry/index/?actionMode=entry&corpId=108740&optNo=1Ct8QA" target="_blank" id="entryLink0">エントリーボックス</a>
+											
+											
+										
+										</li>
+									
+								
+
+								
+							
+							</ul>
+							</td>
+						</tr>
+
+
+	
+						
+					
+					
+	
+					
+					
+						
+	
+	
+
+						<tr class="seminar" id ="lowerEntrySeminer">
+							
+								
+								
+									<th id ="lowerSeminarBtn"><span>セミナー／説明会</span></th>
+								
+							
+							<td>
+							<ul>
+							
+								
+									
+									
+										
+										
+										<li>
+										
+									
+										
+										
+											
+												<a href="/15/pc/corpinfo/displaySeminar/index/?optNo=zBeohC&corpId=108740" id="seminarLink0">【大阪】ベストコミュニケーションズ　説明会開催！</a>
+											
+											
+										
+										</li>
+									
+									
+									
+								
+								
+							
+								
+									
+									
+										
+										
+										<li>
+										
+									
+										
+										
+											
+												<a href="/15/pc/corpinfo/displaySeminar/index/?optNo=n16U1C&corpId=108740" id="seminarLink1">【東京】ベストコミュニケーションズ　説明会開催！</a>
+											
+											
+										
+										</li>
+									
+									
+									
+								
+								
+							
+								
+									
+									
+										
+										
+										<li>
+										
+									
+										
+										
+											
+												<a href="/15/pc/corpinfo/displaySeminar/index/?optNo=4-q5zC&corpId=108740" id="seminarLink2">【福岡】ベストコミュニケーションズ　説明会開催！</a>
+											
+											
+										
+										</li>
+									
+									
+									
+								
+								
+							
+							</ul>
+							</td>
+						</tr>
+
+	
+						
+					
+					
+			
+			
+			
+	
+			
+			
+				
+				
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+	
+			
+			
+			
+				
+			
+			
+			
+		</table>
+	</div>
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+	<div class="globalNav corp bottom">
+		<ul>
+			
+			
+				
+					<li class="now outline">
+						<span>会社概要</span>
+					</li>
+				
+				
+			
+
+			
+			
+				
+				
+				
+					<li class="employment">
+						
+							
+								<a href="/15/pc/search/corp108740/employment.html" id="footerEmploymentTabLink">採用データ</a>
+							
+							
+						
+					</li>
+				
+			
+
+			
+			
+
+			
+			
+
+			
+				
+					
+					
+					
+					
+						
+						
+							
+						
+					
+				
+
+			
+			
+				
+				
+				
+					
+				
+			
+
+			
+			
+				
+				
+			
+
+			
+			
+				
+				
+			
+
+			
+			
+				
+					
+				
+			
+
+		</ul>
+	</div>
+
+	
+	
+		
+			
+				
+					
+						
+							
+								<div class="navBookmark bottom">
+									<a href="/15/pc/user/registBookmark/index/?opttype=bookmark&corpId=108740" id="footerBookmarkBtnLink" class="btnSmallStrongW6em" onclick="wasNotSubmittedYet();"><span>ブックマーク</span></a>
+								</div>
+							
+						
+					
+				
+				
+			
+		
+		
+		
+	
+
+
+
+
+<script type="text/javascript" src="/15/pc/js/ui/userinsight.js"></script>
+
+			
+
+
+	<div class="recomend">
+		<dl>
+			<dt><em>(株)ベストコミュニケーションズ</em> を志望している他のマイナビ会員は、このような企業も志望しています。</dt>
+			<dd>
+				<ul class="linkList box1">
+
+
+<script type="text/javascript">
+
+//変数rに0か1の値が入る
+var r=parseInt(Math.random()*2,10);
+
+//1なら表示
+if(r==1){
+	if (!window._rcmdjp) document.write(unescape("%3Cscript src='" + document.location.protocol + "//d.rcmd.jp/job.mynavi.jp/item/recommend.js' type='text/javascript' charset='UTF-8'%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript">
+try{
+  _rcmdjp._setItemData({
+	
+	
+	office1: '大阪府',
+	
+	
+	
+	
+	
+	type1: '商社（コンピュータ・通信機器・ゲーム製品）',
+	
+	
+	
+	type1: '生命保険',
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    url: '/15/pc/search/corp108740/outline.html',
+    name: '(株)ベストコミュニケーションズ'
+  });
+  _rcmdjp._displayPickup({
+    label: 'pickup-1',
+    template: 'recommend'
+  });
+  _rcmdjp._trackRecommend({});
+} catch(err) {}
+</script>
+
+
+					
+						<li>
+							
+								
+									<a href="/15/pc/search/corp100359/flex.html?func=corpinfo">ＫＩＳＣＯ(株)</a>
+								
+								
+							
+						</li>
+					
+						<li>
+							
+								
+								
+									<a href="/15/pc/search/corp69184/outline.html?func=corpinfo">(株)オンテックス</a>
+								
+							
+						</li>
+					
+						<li>
+							
+								
+									<a href="/15/pc/search/corp80701/flex.html?func=corpinfo">(株)バウコミュニケーションズ</a>
+								
+								
+							
+						</li>
+					
+						<li>
+							
+								
+								
+									<a href="/15/pc/search/corp98656/outline.html?func=corpinfo">(株)エクストリンク</a>
+								
+							
+						</li>
+					
+						<li>
+							
+								
+									<a href="/15/pc/search/corp9328/flex.html?func=corpinfo">(株)たけでん</a>
+								
+								
+							
+						</li>
+					
+				
+					
+						<li>
+							
+								
+								
+									<a href="/15/pc/search/corp85672/outline.html?func=corpinfo">(株)プリントパック</a>
+								
+							
+						</li>
+					
+						<li>
+							
+								
+								
+									<a href="/15/pc/search/corp86628/outline.html?func=corpinfo">イチネングループ 【東証一部上場】</a>
+								
+							
+						</li>
+					
+						<li>
+							
+								
+								
+									<a href="/15/pc/search/corp72341/outline.html?func=corpinfo">杉本商事(株)【東証一部上場】</a>
+								
+							
+						</li>
+					
+						<li>
+							
+								
+								
+									<a href="/15/pc/search/corp85596/outline.html?func=corpinfo">日本文教出版(株)</a>
+								
+							
+						</li>
+					
+						<li>
+							
+								
+								
+									<a href="/15/pc/search/corp58833/outline.html?func=corpinfo">大阪府信用農業協同組合連合会【JAバンク大阪信連】</a>
+								
+							
+						</li>
+					
+				</ul>
+			</dd>
+		</dl>
+	</div>
+
+
+
+
+			
+			
+				
+				
+				<div id="boxRelatedLinks" class="recomend">
+								<dl>
+						 
+						<dt><em>(株)ベストコミュニケーションズ</em> と本社所在地と業種が同じ企業を検索できます。</dt>
+									<dd>
+										<ul class="linkList long">
+							
+								
+								
+									<li><a href="/15/pc/search/query.html?ID:50300/HR:27" id="mDetailIndCtgList.link[0]"><span class="area">大阪府</span>にある<span class="ind">商社（コンピュータ・通信機器・ゲーム製品）</span>の企業一覧</a></li>
+								
+									<li><a href="/15/pc/search/query.html?ID:74000/HR:27" id="mDetailIndCtgList.link[1]"><span class="area">大阪府</span>にある<span class="ind">生命保険</span>の企業一覧</a></li>
+								
+									<li><a href="/15/pc/search/query.html?ID:85010/HR:27" id="mDetailIndCtgList.link[2]"><span class="area">大阪府</span>にある<span class="ind">情報処理</span>の企業一覧</a></li>
+								
+									<li><a href="/15/pc/search/query.html?ID:89500/HR:27" id="mDetailIndCtgList.link[3]"><span class="area">大阪府</span>にある<span class="ind">シンクタンク・マーケティング・調査</span>の企業一覧</a></li>
+								
+									<li><a href="/15/pc/search/query.html?ID:96420/HR:27" id="mDetailIndCtgList.link[4]"><span class="area">大阪府</span>にある<span class="ind">ビジネスサービス</span>の企業一覧</a></li>
+								
+								
+								
+							
+										</ul>
+									</dd>
+								</dl>
+							</div>
+						
+				
+			
+
+
+			
+			<div class="subpagePnation pagetop bottom">
+				<div class="inner">
+					<ul>
+					<li class="top">
+						<a href="#top">ページトップへ</a>
+					</li>
+					</ul>
+				</div>
+			</div>
+
+		
+
+				
+				<div class="subpagePnation corp bottom">
+					<div class="inner">
+						<ul class="leftRight">
+						
+							
+								<li id="back2" style="visibility:hidden" class="left"><a href="javascript:newCorp(108740, 'back')">前の企業</a></li>
+							
+						
+						
+							
+							
+								<li class="center">&nbsp;</li>
+							
+						
+						
+							
+								<li id="next2" style="visibility:hidden" class="right"><a href="javascript:newCorp(108740, 'next')">次の企業</a></li>
+							
+						
+						</ul>
+					</div>
+				</div>
+				
+
+
+			<div id="footer">
+				<address>
+					<img src="/15/pc/images/share/txt_mycom.gif" height="28" width="294" alt="マイナビ">
+				</address>
+			</div>
+			
+		</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

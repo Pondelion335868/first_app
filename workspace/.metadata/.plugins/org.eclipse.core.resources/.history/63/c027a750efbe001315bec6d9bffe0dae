@@ -1,0 +1,28 @@
+
+import java.awt.*;
+import java.awt.event.*;
+
+class PrefFrame extends Frame {
+	
+	public static void main(String[] args) {
+		PrefFrame frm = new PrefFrame("都道府県マスター");
+	}
+	
+	public PrefFrame(String title) {
+		//フレームのタイトル
+		setTitle(title);
+		
+		//ウィンドウを閉じる時
+		addWindowListener(new WindowAdapter(){
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});
+		
+		//フレームの設定
+		setLocation(300, 200);
+		setSize(250, 350);
+		setBackground(Color.LIGHT_GRAY);
+		setVisible(true);
+	}
+}

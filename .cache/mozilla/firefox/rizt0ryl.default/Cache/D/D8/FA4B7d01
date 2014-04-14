@@ -1,0 +1,1558 @@
+/**
+ * @fileOverview 共通クラスを定義するJSファイルです。
+ * @name stuCommon.js
+ */
+
+var undefined; // 値が undefined かどうかを判定するためのダミー変数
+
+/**
+ * <h2>処理概要</h2>
+ * パラメータの値が有効かどうかを判定します。
+ * @param {Object} aObj チェックする値
+ * @returns {Boolean} 有効な場合は true、無効な場合は false
+ */
+function checkInvalidObj(aObj) {
+	if ((aObj == null) || (aObj == undefined)) {
+		return true;
+	}
+	return false;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * パラメータの値が有効かどうかを判定します。
+ * @param {String} aStr チェックする値
+ * @returns {Boolean} 有効な場合は true、無効な場合は false
+ */
+function checkInvalidStr(aStr) {
+	if ((aStr == null) || (aStr == undefined) || (aStr.length == 0)) {
+		return true;
+	}
+	return false;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * パラメータの文字列が整数として有効かどうかを判定します。
+ * @param {String} aStr チェックする文字列
+ * @returns {Boolean} 有効な場合は true、無効な場合は false
+ */
+function checkIntStr(aStr) {
+	if (checkInvalidStr(aStr)) {
+		return false;
+	}
+
+	for (var i = 0; i < aStr.length; i++) {
+		var lCh = aStr.charAt(i);
+
+		if ("0123456789".indexOf(lCh) == -1) {
+			return false;
+		}
+
+		if ((lCh == "-") && (i != 0)) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * テキスト部品の入力文字列 (数値) に対して以下の整形を行う関数。
+ * ・小数点(ピリオド)以外の数字以外の文字を削除する。
+ * ・先頭のゼロ埋めを取り除く(整数部が0である場合を除く)
+ * ・小数部の桁数を指定桁数に合わせる。
+ * </pre>
+ * @param {Object} aTextItem 数値文字列を格納しているテキスト部品。
+ * @param {Number} aDecimalPlaces 小数部の桁数。整数のみの場合は 0 を指定。
+ * @returns null
+ */
+function convertTextToNumber(aTextItem, aDecimalPlaces) {
+	var lText = aTextItem.value;
+	var lResult = "";
+
+	// 負の数かを判定 (ここから)
+	var lIsMinus = false;
+	if (lText.charAt(0) == "-") {
+		lIsMinus = true;
+		lText = lText.substring(1);
+	}
+	// 負の数かを判定 (ここまで)
+
+	// 整数・小数部に分解 (ここから)
+	var lDecimal = "";
+	var lInteger = "";
+	var lPointIndex = lText.indexOf(".");
+
+	if (lPointIndex != -1) {
+		lInteger = lText.substring(0, lPointIndex);
+		lDecimal = lText.substring(lPointIndex + 1);
+	} else {
+		lInteger = lText;
+		lDecimal = "";
+	}
+	// 整数・小数部に分解 (ここまで)
+
+	// 数字以外を取り除く (ここから)
+	for (var i = 0; i < lInteger.length; i++) {
+		var lCh = lInteger.charAt(i);
+
+		if ("0123456789".indexOf(lCh) != -1) {
+			lResult += lCh;
+		}
+	}
+	// 数字以外を取り除く (ここまで)
+
+	// 頭の "0" を取り除く (ここから)
+	lInteger = lResult;
+	lResult = "";
+	for (var i = 0; i < lInteger.length; i++) {
+		var lCh = lInteger.charAt(i);
+
+		if (lCh != "0") {
+			lResult = lInteger.substring(i);
+			break;
+		}
+	}
+	// 頭の "0" を取り除く (ここまで)
+
+	if (lResult.length == 0) { // 整数部が無い場合
+		lResult = "0"; // 整数部を 0 とする
+	}
+
+	if (aDecimalPlaces > 0) { // 小数部の桁数が指定されている
+		lResult += "."; // 小数点を付加
+
+		// 小数部を追加 (ここから)
+		var lCount = 0;
+		for (var i = 0; lCount < aDecimalPlaces; i++) {
+			var lCh;
+
+			if (i >= lDecimal.length) { // 指定桁数に足りない
+				lCh = "0"; // "0" を付加
+			} else {
+				lCh = lDecimal.charAt(i);
+
+				if ("0123456789".indexOf(lCh) == -1) { // 数字以外
+					continue; // 無視
+				}
+			}
+
+			lResult += lCh;
+			lCount++;
+		}
+		// 小数部を追加 (ここまで)
+	}
+
+	if (lIsMinus) { // 負の数の場合
+		lResult = "-" + lResult; // 先頭に "-" を付加
+	}
+
+	aTextItem.value = lResult; // テキスト部品に結果を出力
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * テキスト部品の入力文字列 (数値) に対して以下の整形を行う関数。
+ * ・整数部の 3 桁毎にカンマを挿入する。
+ * ・小数部の桁数を指定桁数に合わせる。
+ * </pre>
+ * @param {Object} aTextItem 数値文字列を格納しているテキスト部品。
+ * @param {Number} aDecimalPlaces 小数部の桁数。整数のみの場合は 0 を指定。
+ * @returns null
+ */
+function convertNumberToText(aTextItem, aDecimalPlaces) {
+	var lText = aTextItem.value;
+	var lResult = "";
+
+	// 負の数かを判定 (ここから)
+	var lIsMinus = false;
+	if (lText.charAt(0) == "-") {
+		lIsMinus = true;
+		lText = lText.substring(1);
+	}
+	// 負の数かを判定 (ここまで)
+
+	// 整数・小数部に分解 (ここから)
+	var lDecimal = "";
+	var lInteger = "";
+	var lPointIndex = lText.indexOf(".");
+
+	if (lPointIndex != -1) {
+		lInteger = lText.substring(0, lPointIndex);
+		lDecimal = lText.substring(lPointIndex + 1);
+	} else {
+		lInteger = lText;
+		lDecimal = "";
+	}
+	// 整数・小数部に分解 (ここまで)
+
+	// 頭の "0" を取り除く (ここから)
+	lResult = "";
+	for (var i = 0; i < lInteger.length; i++) {
+		var lCh = lInteger.charAt(i);
+
+		if (lCh != "0") {
+			lResult = lInteger.substring(i);
+			break;
+		}
+	}
+	lInteger = lResult;
+	lResult = "";
+	// 頭の "0" を取り除く (ここまで)
+
+	if (lInteger.length <= 3) { // 整数部が 3 桁以内
+		lResult = lInteger; // そのまま整数部の値とする
+	} else { // 整数が 3 桁より大きい
+		// 整数部の 3 桁毎にカンマを挿入 (ここから)
+		var lCount = 0;
+		for (var i = 0; i < lInteger.length; i++) {
+			var lCh = lInteger.charAt(lInteger.length - i - 1); // 一の桁から順に見る
+
+			if ("0123456789".indexOf(lCh) == -1) { // 数字以外
+				continue; // 無視
+			}
+
+			if (((lCount % 3) == 0) && (lCount != 0)) { // 3 桁目
+				lResult = "," + lResult; // カンマを挿入
+			}
+
+			lResult = lCh + lResult;
+			lCount++;
+		}
+		// 整数部の 3 桁毎にカンマを挿入 (ここまで)
+	}
+
+	if (lResult.length == 0) { // 整数部が無い場合
+		lResult = "0"; // 整数部を 0 とする
+	}
+
+	if (aDecimalPlaces > 0) { // 小数部の桁数が指定されている
+		lResult += "."; // 小数点を付加
+
+		// 小数部を追加 (ここから)
+		var lCount = 0;
+		for (var i = 0; lCount < aDecimalPlaces; i++) {
+			var lCh;
+
+			if (i >= lDecimal.length) { // 指定桁数に足りない
+				lCh = "0"; // "0" を付加
+			} else {
+				lCh = lDecimal.charAt(i);
+
+				if ("0123456789".indexOf(lCh) == -1) { // 数字以外
+					continue; // 無視
+				}
+			}
+
+			lResult += lCh;
+			lCount++;
+		}
+		// 小数部を追加 (ここまで)
+	}
+
+	if (lIsMinus) { // 負の数の場合
+		lResult = "-" + lResult; // 先頭に "-" を付加
+	}
+
+	aTextItem.value = lResult; // テキスト部品に結果を出力
+}
+
+var gEraNames = ["明治","大正","昭和","平成"]; // 元号
+var gEraStartDate = [[1868,1,1],[1912,7,30],[1926,12,25],[1989,1,8]]; // 元号の開始日付
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * テキスト部品の入力文字列 (西暦) を以下の和暦に変換する関数。
+ * ・日付が「YYYY」形式の場合は、「元号Y年度」形式に変換する。
+ * ・日付が「YYYYMM」形式の場合は、「元号Y年M月」形式に変換する。
+ * ・日付が「YYYYMMDD」形式の場合は、「元号Y年M月D日」形式に変換する。
+ * </pre>
+ * @param {Object} aTextItem 日付文字列を格納しているテキスト部品。
+ * @returns null
+ */
+function convertDateToText(aTextItem) {
+	var lText = aTextItem.value;
+	var lCh = lText.charAt(0);
+
+	if ("0123456789".indexOf(lCh) == -1) { // 数字以外で始まる
+		return; // 終了
+	}
+
+	// 西暦年の取得 (ここから)
+	var lYearLength = 4;
+	var lYearStr;
+	if (lText.length >= lYearLength) {
+		lYearStr = lText.substr(0, lYearLength);
+
+		// 年の入力値の先頭の "0" を削除する (JavaScript で文字列を数値に変
+		// 換する場合、"0" で始まる文字列は 8 進数とみなすため)
+		for (i = 0; i < lYearStr.length; i++) {
+			if (lYearStr.charAt(i) != "0") {
+				lYearStr = lYearStr.substring(i);
+				break;
+			}
+		}
+	}
+
+	var lYear = parseInt(lYearStr);
+
+	if (isNaN(lYear)) {
+		return;
+	}
+
+	if (lYearLength == 2) {
+		if (lYear < 70) {
+			lYear += 2000;
+		} else if (lYear < 100) {
+			lYear += 1900;
+		}
+	}
+	// 西暦年の取得 (ここまで)
+
+	// 月の取得 (ここから)
+	var lMonth = -1;
+	if (lText.length >= lYearLength + 2) {
+		var lMonthStr = lText.substr(lYearLength, 2);
+
+		// 月の入力値の先頭の "0" を削除する (JavaScript で文字列を数値に変
+		// 換する場合、"0" で始まる文字列は 8 進数とみなすため)
+		for (var i = 0; i < lMonthStr.length; i++) {
+			if (lMonthStr.charAt(i) != "0") {
+				lMonthStr = lMonthStr.substring(i);
+				break;
+			}
+		}
+
+		lMonth = parseInt(lMonthStr);
+		if (isNaN(lMonth) || (lMonth > 12) || (lMonth < 1)) {
+			// 月の値が無効な場合
+			return;
+		}
+	}
+	// 月の取得 (ここまで)
+
+	// 日の取得 (ここから)
+	var lDay = -1;
+	if (lText.length >= lYearLength + 4) {
+		var lDayStr = lText.substr(lYearLength + 2, 2);
+
+		// 日の入力値の先頭の "0" を削除する (JavaScript で文字列を数値に変
+		// 換する場合、"0" で始まる文字列は 8 進数とみなすため)
+		for (var i = 0; i < lDayStr.length; i++) {
+			if (lDayStr.charAt(i) != "0") {
+				lDayStr = lDayStr.substring(i);
+				break;
+			}
+		}
+
+		lDay = parseInt(lDayStr);
+		if (isNaN(lDay) || (lDay > 31) || (lDay < 1)) {
+			// 日の値が無効な場合
+			return;
+		}
+	}
+	// 日の取得 (ここまで)
+
+	// 西暦年を年号に変換 (ここから)
+	var lEraName;
+	var lEraYear = -1;
+	for (var i = gEraStartDate.length - 1; i >= 0; i--) {
+		var lStartYear = gEraStartDate[i][0];
+		var lStartMonth = gEraStartDate[i][1];
+		var lStartDay = gEraStartDate[i][2];
+
+		if ((lStartYear < lYear)
+			|| ((lStartYear == lYear)
+				&& ((lStartMonth < lMonth)
+					|| ((lStartMonth == lMonth) && (lStartDay <= lDay))))) {
+			lEraName = gEraNames[i];
+			lEraYear = lYear - lStartYear + 1;
+			break;
+		}
+	}
+	// 西暦年を年号に変換 (ここまで)
+
+	if (lEraYear == -1) { // 範囲外
+		return; // 終了
+	}
+
+	// 和暦の作成 (ここから)
+	var lResult = lEraName + lEraYear + "年";
+	if (lMonth == -1) { // 年のみ
+		lResult += "度";
+	} else { // 年・月または年・月・日
+		if (lMonth < 10) { // 月が 1 桁の場合は "0" を付加
+			lMonth = "0" + lMonth;
+		}
+		lResult += lMonth + "月";
+
+		if (lDay != -1) { // 年・月・日
+			if (lDay < 10) { // 日が 1 桁の場合は "0" を付加
+			lDay = "0" + lDay;
+			}
+			lResult += lDay + "日";
+		}
+	}
+	// 和暦の作成 (ここまで)
+
+	aTextItem.value = lResult; // テキスト部品に結果を出力
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * テキスト部品の入力文字列 (和暦) を以下の西暦に変換する関数。
+ * ・日付が「元号Y年度」形式の場合は、「YYYY」形式に変換する。
+ * ・日付が「元号Y年M月」形式の場合は、「YYYYMM」形式に変換する。
+ * ・日付が「元号Y年M月D日」形式の場合は、「YYYYMMDD」形式に変換する。
+ * </pre>
+ * @param {Object} aTextItem 日付文字列を格納しているテキスト部品。
+ * @returns
+ */
+function convertTextToDate(aTextItem) {
+	var lText = aTextItem.value;
+
+	// 年号の取得 (ここから)
+	var lEraYear = -1;
+	for (var i = gEraNames.length - 1; i >= 0; i--) {
+		if (gEraNames[i].length > lText.length) {
+			return;
+		}
+
+		if (gEraNames[i] == lText.substring(0, gEraNames[i].length)) {
+			lEraYear = gEraStartDate[i][0];
+			lText = lText.substring(gEraNames[i].length);
+			break;
+		}
+	}
+
+	var lIndex = lText.indexOf("年");
+	if (lIndex == -1) {
+		return;
+	}
+
+	var lYearStr = lText.substring(0, lIndex);
+	lText = lText.substring(lIndex + "年".length);
+
+	// 年の入力値の先頭の "0" を削除する (JavaScript で文字列を数値に変
+	// 換する場合、"0" で始まる文字列は 8 進数とみなすため)
+	for (i = 0; i < lYearStr.length; i++) {
+		if (lYearStr.charAt(i) != "0") {
+			lYearStr = lYearStr.substring(i);
+			break;
+		}
+	}
+	// 年号の取得 (ここまで)
+
+	// 年号を西暦年に変換 (ここから)
+	var lYear = parseInt(lYearStr);
+
+	if (isNaN(lYear)) {
+		return;
+	}
+
+	lYear += lEraYear - 1;
+	// 年号を西暦年に変換 (ここまで)
+
+	aTextItem.value = lYear; // テキスト部品に年を出力
+
+	if (lText.charAt(0) == "度") {
+		return;
+	}
+
+	var lIndex = lText.indexOf("月");
+	if (lIndex == -1) {
+		return;
+	}
+
+	// 月の取得 (ここから)
+	var lMonthStr = lText.substring(0, lIndex);
+	lText = lText.substring(lIndex + "月".length);
+
+	// 月の入力値の先頭の "0" を削除する (JavaScript で文字列を数値に変
+	// 換する場合、"0" で始まる文字列は 8 進数とみなすため)
+	for (i = 0; i < lMonthStr.length; i++) {
+		if (lMonthStr.charAt(i) != "0") {
+			lMonthStr = lMonthStr.substring(i);
+			break;
+		}
+	}
+
+	var lMonth = parseInt(lMonthStr);
+
+	if (isNaN(lMonth) || (lMonth > 12) || (lMonth < 1)) {
+		return;
+	}
+
+	if (lMonth < 10) { // 月が1桁の場合
+		lMonth = "0" + lMonth; // "0"を付加
+	}
+	// 月の取得 (ここまで)
+
+	aTextItem.value += lMonth; // テキスト部品に月を出力
+
+	if (lText.length == 0) {
+		return;
+	}
+
+	// 日の取得 (ここから)
+	var lIndex = lText.indexOf("日");
+	if (lIndex == -1) {
+		return;
+	}
+
+	var lDayStr = lText.substring(0, lIndex);
+	lText = lText.substring(lIndex + "日".length);
+
+	// 日の入力値の先頭の "0" を削除する (JavaScript で文字列を数値に変
+	// 換する場合、"0" で始まる文字列は 8 進数とみなすため)
+	for (i = 0; i < lDayStr.length; i++) {
+		if (lDayStr.charAt(i) != "0") {
+			lDayStr = lDayStr.substring(i);
+			break;
+		}
+	}
+
+	var lDay = parseInt(lDayStr);
+
+	if (isNaN(lDay) || (lDay > 31) || (lDay < 1)) {
+		return;
+	}
+
+	if (lDay < 10) {
+		lDay = "0" + lDay;
+	}
+	// 日の取得 (ここまで)
+
+	aTextItem.value += lDay; // テキスト部品に月を出力
+}
+
+var gCalendarWin = null; // 表示中のカレンダーウィンドウ
+var gCalendarOwnerDocument;	// openCalendar()関数の呼び出し元のドキュメント
+var gCalendarYearItem;		// openCalendar()関数のパラメータのyearItem
+var gCalendarMonthItem;		// openCalendar()関数のパラメータのmonthItem
+var gCalendarDayItem; 		// openCalendar()関数のパラメータのdayItem
+var gAddZeroFlag;		// openCalendar()関数のパラメータのaddZero
+var gCalendarDateItem;		// openCalendar2()関数のパラメータのdateItem
+var gCalendarPunc;			// openCalendar2()関数のパラメータのpunc
+var gCalendarYearLength;		// openCalendar()、openCalendar2()関数のパラメータのyearLength
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 日付入力用のカレンダーを表示する JavaScript 関数。
+ * 表示されたカレンダー上の任意の日付をクリックすると、
+ * パラメータの各テキスト項目にその日付がコピーされます。
+ * カレンダーの初期表示は、パラメータのdateItemのテキスト部品に有効な数字が入力されている場合は
+ * その年月のカレンダー、それ以外の場合は当月のカレンダーとなります。
+ * 本関数により既にカレンダーを表示している場合に、再度本関数を呼び出した場合は、
+ * 表示中のカレンダーは閉じます。(カレンダーの複数表示はできません)
+ * </pre>
+ * @param {Object} aDateItem カレンダーの選択結果の「年月日」をコピーするテキスト部品。
+ * @param {String} aPunc dateItemの年月日の区切り文字。区切り文字を使用しない場合はnull。
+ * @param {Number} aYearLength 年の桁数 (2 または 4)。
+ * @returns null
+ */
+function openCalendar1(aDateItem, aPunc, aYearLength) {
+	initCalendar();
+
+	// パラメータのチェック (ここから)
+	if (checkInvalidObj(aDateItem)) {
+		alert("openCalendar2()のdateItem引数に無効なオブジェクトが指定されています。");
+		return;
+	}
+	// パラメータのチェック (ここまで)
+
+	// パラメータを保持 (ここから)
+	gCalendarDateItem = aDateItem;
+	if (aPunc == null) {
+		gCalendarPunc = "";
+	} else {
+		gCalendarPunc = aPunc;
+	}
+	if (aYearLength == 2) {
+		gCalendarYearLength = 2;
+	} else {
+		gCalendarYearLength = 4;
+	}
+	gCalendarOwnerDocument = window.document;
+	// パラメータを保持 (ここまで)
+
+	var lNow = new Date();
+	var lCalendarDateStr = aDateItem.value;
+	var lCalendarYearStr = lNow.getYear();
+	if (lCalendarDateStr.length >= gCalendarYearLength) {
+		lCalendarYearStr = lCalendarDateStr.substr(0, gCalendarYearLength);
+	}
+	var lCalendarMonthStr = lNow.getMonth() + 1;
+	if (lCalendarDateStr.length >= gCalendarYearLength + gCalendarPunc.length + 2) {
+		lCalendarMonthStr = lCalendarDateStr.substr(gCalendarYearLength + gCalendarPunc.length, 2);
+	}
+	var lCalendarDayStr = lNow.getDate();
+
+	openCalendar(lCalendarYearStr, lCalendarMonthStr, lCalendarDayStr);
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 日付入力用のカレンダーを表示する JavaScript 関数。
+ * 表示されたカレンダー上の任意の日付をクリックすると、
+ * パラメータで指定した各テキスト部品にその日付がコピーされます。
+ * カレンダーの初期表示は、パラメータのyearItem・monthItemのテキスト部品に有効な数字が
+ * 入力されている場合はその年月のカレンダー、それ以外の場合は当月のカレンダーとなります。
+ * 本関数により既にカレンダーを表示している場合に、再度本関数を呼び出した場合は、
+ * 表示中のカレンダーは閉じます。(カレンダーの複数表示はできません)
+ * </pre>
+ * @param {Object} aYearItem カレンダーの選択結果の「年」(4桁)をコピーするテキスト部品。
+ * @param {Object} aMonthItem カレンダーの選択結果の「月」をコピーするテキスト部品。
+ * @param {Object} aDayItem カレンダーの選択結果の「日」をコピーするテキスト部品。
+ * @param {Boolean} aAddZero 「月」「日」の選択結果が 1 桁 (1 ～ 9) の場合、先頭に "0" を付加する (true) 、または、付加しない (false) を指定
+ * @param {Number} aYearLength 年の桁数 (2 または 4)。
+ * @returns null
+ */
+function openCalendar3(aYearItem, aMonthItem, aDayItem, aAddZero, aYearLength) {
+	initCalendar();
+
+	// パラメータのチェック (ここから)
+	if (checkInvalidObj(aYearItem)) {
+		alert("openCalendarWindow()のyearItem引数に無効なオブジェクトが指定されています。");
+		return;
+	}
+
+	if (checkInvalidObj(aMonthItem)) {
+		alert("openCalendarWindow()のmonthItem引数に無効なオブジェクトが指定されています。");
+		return;
+	}
+
+	if (checkInvalidObj(aDayItem)) {
+		alert("openCalendarWindow()のdayItem引数に無効なオブジェクトが指定されています。");
+		return;
+	}
+	// パラメータのチェック (ここまで)
+
+	// パラメータを保持 (ここから)
+	gCalendarYearItem = aYearItem;
+	gCalendarMonthItem = aMonthItem;
+	gCalendarDayItem = aDayItem;
+	if (aYearLength == 2) {
+		gCalendarYearLength = 2;
+	} else {
+		gCalendarYearLength = 4;
+	}
+	if (!aAddZero) {
+		gAddZeroFlag = false;
+	} else {
+		gAddZeroFlag = true;
+	}
+	gCalendarOwnerDocument = window.document;
+	// パラメータを保持 (ここまで)
+
+	openCalendar(gCalendarYearItem.value, gCalendarMonthItem.value, gCalendarDayItem.value);
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 表示中のカレンダーウィンドウを閉じ、関連するグローバル変数を初期化する。
+ * </pre>
+ * @returns null
+ */
+function initCalendar() {
+	if (gCalendarWin != null) {
+		if (!gCalendarWin.closed) {
+			// カレンダーを既に表示している場合は閉じる
+			gCalendarWin.close();
+		}
+
+		gCalendarWin = null;
+		gCalendarOwnerDocument = null;
+		gCalendarYearItem = null;
+		gCalendarMonthItem = null;
+		gCalendarDayItem = null;
+		gCalendarDateItem = null;
+		gCalendarPunc = "";
+	}
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * カレンダーの表示を行う。
+ * </pre>
+ * @param {String} aCalendarYearStr パラメータ年 文字列
+ * @param {String} aCalendarMonthStr パラメータ月 文字列
+ * @param {String} aCalendarDayStr パラメータ日 文字列
+ * @returns null
+ */
+function openCalendar(aCalendarYearStr, aCalendarMonthStr, aCalendarDayStr) {
+	// ウィンドウ位置・サイズの計算 (ここから)
+	var lW = 180;
+	var lH = 240;
+	if (navigator.appName.indexOf("Netscape") != -1) {
+		lW += 10;
+		lH += 0;
+	}
+	var lX = (window.screen.width - lW) / 2;
+	var lY = (window.screen.height - lH) / 2;
+	// ウィンドウ位置・サイズの計算 (ここまで)
+
+	// カレンダーの初期表示年月の決定 (ここから)
+	var now = new Date();
+
+	// 年の入力値の先頭の "0" を削除する (JavaScript で文字列を数値に変
+	// 換する場合、"0" で始まる文字列は 8 進数とみなすため)
+	for (i = 0; i < aCalendarYearStr.length; i++) {
+		if (aCalendarYearStr.charAt(i) != "0") {
+			aCalendarYearStr = aCalendarYearStr.substring(i);
+			break;
+		}
+	}
+	var lCalendarYear = parseInt(aCalendarYearStr);
+	if (isNaN(lCalendarYear)) {
+		// 年の値が無効な場合は現在の年とする
+		lCalendarYear = now.getYear();
+	}
+	if (gCalendarYearLength == 2) {
+		if (lCalendarYear < 70) {
+			lCalendarYear += 2000;
+		} else {
+			lCalendarYear += 1900;
+		}
+	}
+
+	// 月の入力値の先頭の "0" を削除する (JavaScript で文字列を数値に変
+	// 換する場合、"0" で始まる文字列は 8 進数とみなすため)
+	for (i = 0; i < aCalendarMonthStr.length; i++) {
+		if (aCalendarMonthStr.charAt(i) != "0") {
+			aCalendarMonthStr = aCalendarMonthStr.substring(i);
+			break;
+		}
+	}
+	var lCalendarMonth = parseInt(aCalendarMonthStr);
+	if (isNaN(lCalendarMonth) || (lCalendarMonth > 12) || (lCalendarMonth < 1)) {
+		// 月の値が無効な場合は現在の月とする
+		lCalendarMonth = now.getMonth() + 1;
+	}
+	// カレンダーの初期表示年月の決定 (ここまで)
+
+	// カレンダーの表示 (ここから)
+	var lParam = "locationbar=false,menubar=false,personalbar=false,toolbar=false,dependent=no,left=" + lX + ",top=" + lY + ",width=" + lW + ",height=" + lH;
+
+	gCalendarWin = window.open("", "CalendarWindow", lParam); // ウィンドウの作成
+
+	drawCalendar("日付の指定", lCalendarYear, lCalendarMonth);
+
+	gCalendarWin.focus();	// カレンダーを最前面に移動
+	// カレンダーの表示 (ここまで)
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * カレンダーウィンドウを作成する関数。
+ * </pre
+ * @param {String} aTitle カレンダーのタイトル
+ * @param {Nuber} aYear カレンダーの初期表示の年
+ * @param {Nuber} aMonth カレンダーの初期表示の月
+ * @returns null
+ */
+function drawCalendar(aTitle, aYear, aMonth) {
+	var lFirstDate = new Date(aYear, aMonth - 1, 1); // 月の第１日のDateオブジェクト
+	var lFirstDayOfWeek = lFirstDate.getDay(); // 月の第１日の曜日
+
+	var lNow = new Date();
+
+	var lThisYear = lNow.getYear();
+	var lThisMonth = lNow.getMonth() + 1;
+	if (lThisYear < 1900) {
+		lThisYear += 1900;
+	}
+	var lThisDay = lNow.getDate();
+
+	var lPrevYear = aYear;
+	var lPrevMonth = aMonth - 1;
+	if (lPrevMonth < 1) {
+		lPrevMonth = 12;
+		lPrevYear--;
+	}
+
+	var lNextYear = aYear;
+	var lNextMonth = aMonth + 1;
+	if (lNextMonth > 12) {
+		lNextMonth = 1;
+		lNextYear++;
+	}
+
+	gCalendarWin.document.open();
+	gCalendarWin.document.write("<HTML>\n");
+	gCalendarWin.document.write("<HEAD>\n");
+	gCalendarWin.document.write("<META HTTP-EQUIV=\"Content-Type\" content=\"text/html; charaset=Windows-31J\">\n");
+	gCalendarWin.document.write("<title>" + aTitle + "</title>\n");
+	gCalendarWin.document.write("<STYLE TYPE=\"text/css\">\n");
+	gCalendarWin.document.write(" BODY { background-color:#EEFFEF; font-size:14px; }\n");
+	gCalendarWin.document.write(" TD { font-size:14px; font-family:monospace; }\n");
+	gCalendarWin.document.write(" TH { font-size:14px; font-family:monospace; }\n");
+	gCalendarWin.document.write(" A { text-decoration:none; color:#000000; font-size:14px; font-family:monospace }\n");
+	gCalendarWin.document.write("</STYLE>\n");
+	gCalendarWin.document.write("<SCRIPT>\n");
+	gCalendarWin.document.write("function prevMonth() {\n");
+	gCalendarWin.document.write("	window.opener.drawCalendar(\"" + aTitle + "\"," + lPrevYear + "," + lPrevMonth + ")\n");
+	gCalendarWin.document.write("}\n");
+	gCalendarWin.document.write("function nextMonth() {\n");
+	gCalendarWin.document.write("	window.opener.drawCalendar(\"" + aTitle + "\"," + lNextYear + "," + lNextMonth + ")\n");
+	gCalendarWin.document.write("}\n");
+	gCalendarWin.document.write("function thisMonth() {\n");
+	gCalendarWin.document.write("	window.opener.drawCalendar(\"" + aTitle + "\"," + lThisYear + "," + lThisMonth + ")\n");
+	gCalendarWin.document.write("}\n");
+	gCalendarWin.document.write("function selectDate(year,month,day) {\n");
+	gCalendarWin.document.write("	window.opener.setDate(year,month,day);\n");
+	gCalendarWin.document.write("	window.close();\n");
+	gCalendarWin.document.write("}\n");
+	gCalendarWin.document.write("</SCRIPT>\n");
+	gCalendarWin.document.write("</HEAD>\n");
+	gCalendarWin.document.write("<BODY>\n");
+	gCalendarWin.document.write("<TABLE BORDER=\"1\">\n");
+	gCalendarWin.document.write(" <TR>\n");
+	gCalendarWin.document.write("	<TH COLSPAN=\"7\" ALIGN=\"CENTER\">" + aYear + "年" + aMonth + "月</TH>\n");
+	gCalendarWin.document.write(" </TR>\n");
+	gCalendarWin.document.write(" <TR>\n");
+	gCalendarWin.document.write("	<TD COLSPAN=\"7\" ALIGN=\"CENTER\" VALIGN=\"CENTER\">\n");
+	gCalendarWin.document.write("	<A HREF=\"\" onClick=\"javascript:prevMonth();\"><FONT COLOR=\"blue\">前月</FONT></A>\n");
+	gCalendarWin.document.write("	<A HREF=\"\" onClick=\"javascript:thisMonth();\"><FONT COLOR=\"blue\">今月</FONT></A>\n");
+	gCalendarWin.document.write("	<A HREF=\"\" onClick=\"javascript:nextMonth();\"><FONT COLOR=\"blue\">翌月</FONT></A>\n");
+	gCalendarWin.document.write("	</TD>\n");
+	gCalendarWin.document.write(" </TR>\n");
+	gCalendarWin.document.write(" <TR>\n");
+	gCalendarWin.document.write("	<TH ALIGN=\"CENTER\" VALIGN=\"CENTER\"><FONT COLOR=\"red\">日</FONT></TH>\n");
+	gCalendarWin.document.write("	<TH ALIGN=\"CENTER\" VALIGN=\"CENTER\">月</TH>\n");
+	gCalendarWin.document.write("	<TH ALIGN=\"CENTER\" VALIGN=\"CENTER\">火</TH>\n");
+	gCalendarWin.document.write("	<TH ALIGN=\"CENTER\" VALIGN=\"CENTER\">水</TH>\n");
+	gCalendarWin.document.write("	<TH ALIGN=\"CENTER\" VALIGN=\"CENTER\">木</TH>\n");
+	gCalendarWin.document.write("	<TH ALIGN=\"CENTER\" VALIGN=\"CENTER\">金</TH>\n");
+	gCalendarWin.document.write("	<TH ALIGN=\"CENTER\" VALIGN=\"CENTER\"><FONT COLOR=\"blue\">土</FONT></TH>\n");
+	gCalendarWin.document.write(" </TR>\n");
+
+	gCalendarWin.document.write(" <TR ALIGN=\"RIGHT\">\n");
+
+	var i;
+	for (i = 0; i < lFirstDayOfWeek; i++) {
+		gCalendarWin.document.write("	<TD><BR></TD>\n");
+	}
+
+	var lTime = lFirstDate.getTime();
+	var lOneDayTime = 24 * 60 * 60 * 1000;
+	var lNextDate;
+	var lColorStr;
+	var lDayStr;
+	var lFinished = false;
+	var lDayCount = 1;
+
+	for (; i < 7; i++) {
+		if (i == 0) {
+			lColorStr = "red";
+		} else if (i == 6) {
+			lColorStr = "blue";
+		} else {
+			lColorStr = "black";
+		}
+
+		if (lDayCount < 10) {
+			lDayStr = "&nbsp;" + lDayCount;
+		} else {
+			lDayStr = lDayCount;
+		}
+
+		gCalendarWin.document.write("	<TD ALIGN=\"RIGHT\" VALIGN=\"CENTER\"><A HREF=\"\" onClick=\"javascript:selectDate(" + aYear + "," + aMonth + "," + lDayCount + ");return false;\"><FONT COLOR=\"" + lColorStr + "\">" + lDayStr + "</FONT></A></TD>\n");
+
+		lDayCount++;
+		lTime += lOneDayTime;
+		lNextDate = new Date(lTime);
+	}
+	gCalendarWin.document.write(" </TR>\n");
+
+	for (i = 0; i < 5; i++) {
+		gCalendarWin.document.write(" <TR ALIGN=\"RIGHT\">\n");
+		for (var j = 0; j < 7; j++) {
+			if (lFinished) {
+				gCalendarWin.document.write("	<TD><BR></TD>\n");
+			} else {
+				if (j == 0) {
+					lColorStr = "red";
+				} else if (j == 6) {
+					lColorStr = "blue";
+				} else {
+					lColorStr = "black";
+				}
+
+				if (lDayCount < 10) {
+					lDayStr = "&nbsp;" + lDayCount;
+				} else {
+					lDayStr = lDayCount;
+				}
+
+				if ((aYear == lThisYear) && (aMonth == lThisMonth)
+					&& (lDayCount == lThisDay)) {
+					gCalendarWin.document.write("	<TD ALIGN=\"RIGHT\" VALIGN=\"CENTER\" BGCOLOR=\"#2EFECD\"><A HREF=\"\" onClick=\"javascript:selectDate(" + aYear + "," + aMonth + "," + lDayCount + ");return false;\"><FONT COLOR=\"" + lColorStr + "\">" + lDayStr + "</FONT></A></TD>\n");
+				} else {
+					gCalendarWin.document.write("	<TD ALIGN=\"RIGHT\" VALIGN=\"CENTER\"><A HREF=\"\" onClick=\"javascript:selectDate(" + aYear + "," + aMonth + "," + lDayCount + ");return false;\"><FONT COLOR=\"" + lColorStr + "\">" + lDayStr + "</FONT></A></TD>\n");
+				}
+			}
+
+			lDayCount++;
+			lTime += lOneDayTime;
+			lNextDate = new Date(lTime);
+
+			if (lNextDate.getMonth() != (aMonth - 1)) {
+				lFinished = true;
+			}
+		}
+
+		gCalendarWin.document.write(" </TR>\n");
+
+		if (lFinished) {
+			break;
+		}
+	}
+
+	gCalendarWin.document.write("</TABLE>\n");
+
+	gCalendarWin.document.write("</BODY>\n");
+	gCalendarWin.document.write("</html>");
+	gCalendarWin.document.close();
+	gCalendarWin.focus();
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * カレンダーで選択した日付を openCalendar() 関数のパラメータのテキスト項目に設定する関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数はカレンダーの日付選択時に実行されます。
+ * </pre>
+ * @param {Number} aYear カレンダーで選択した日付の年
+ * @param {Number} aMonth カレンダーで選択した日付の月
+ * @param {Number} aDay カレンダーで選択した日付の日
+ * @returns
+ */
+function setDate(aYear, aMonth, aDay) {
+	if (gCalendarOwnerDocument != window.document) {
+		alert("カレンダーの呼び出し元のページがリロードされたため、日付を設定できません。\nカレンダーを再度表示して、日付を選択してください。");
+		return;
+	}
+
+	if (gCalendarYearLength == 2) {
+		aYear = "" + aYear;
+		aYear = aYear.substr(2, 2);
+		aYear = parseInt(aYear);
+	}
+
+	if (gAddZeroFlag || (gCalendarDateItem != null)) { // openCalendar()で "0" 付加が指定されている
+		// 月・日が 1 桁の場合は、先頭に "0" を付加 (ここから)
+		if (aYear < 10) {
+			aYear = "0" + aYear;
+		}
+
+		if (aMonth < 10) {
+			aMonth = "0" + aMonth;
+		}
+
+		if (aDay < 10) {
+			aDay = "0" + aDay;
+		}
+		// 月・日が 1 桁の場合は、先頭に "0" を付加 (ここまで)
+	}
+
+	// openCalendar()のパラメータのテキスト項目に年・月・日をコピー (ここから)
+	if (typeof setCalendarDate == "function") {
+		setCalendarDate(aYear, aMonth, aDay);
+	} else if (gCalendarDateItem != null) {
+		gCalendarDateItem.value = aYear + gCalendarPunc + aMonth + gCalendarPunc + aDay;
+	} else {
+		gCalendarYearItem.value = aYear;
+		gCalendarMonthItem.value = aMonth;
+		gCalendarDayItem.value = aDay;
+	}
+	// openCalendar()のパラメータのテキスト項目に年・月・日をコピー (ここまで)
+}
+
+var gSearchWin = null; // オープンした検索画面
+var gSearchOwnerDocument; // openSearchWindow関数の呼び出し元のドキュメント
+var gSearchPunc;		 // 検索結果の値の区切り文字
+var gSearchResultItems;	 // 検索結果を格納するフォーム部品の配列
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 検索画面を開く関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {String} aActionName 検索画面で使用するAction名を指定します。
+ * @param {Object} aParams 検索画面呼び出し時に渡すフォームのパラメータを指定します。
+ * 配列の格納形式は["パラメータ1の名前","パラメータ1の値","パラメータ2の名前","パラメータ2の値",・・・]です。
+ * パラメータが不要な場合はnullを指定します。
+ * ※日本語を使用すると文字化けを起こします。
+ * @param {Object} aResultItems 検索結果を格納するフォーム部品の配列を指定します。
+ * 配列の格納形式は[フォーム部品1,フォーム部品2,・・・]です。
+ * @param {String} aPunc 検索結果の値を複数のフォーム部品に出力する際の値の区切り文字を指定します。
+ * 検索結果の分割を行わない場合はnullを指定します。
+ * @param {Number} aW 検索画面の幅を指定します。
+ * @param {Number} aH 検索画面の高さを指定します。
+ * @returns null
+ */
+function openSearchWindow(aActionName, aParams, aResultItems, aPunc, aW, aH) {
+	if (gSearchWin != null) {
+		if (!gSearchWin.closed) {
+			// 検索画面を既に表示している場合は閉じる
+			gSearchWin.close();
+		}
+
+		gSearchWin = null;
+		gSearchResultItems = null;
+		gSearchOwnerDocument = null;
+	}
+
+	// パラメータのチェック (ここから)
+	if (checkInvalidStr(aActionName)) {
+		alert("openSearchWindow()のactionName引数に無効な文字列が指定されています。");
+		return;
+	}
+/*
+ * for (var i = 0; i < resultItems.length; i++) { if (checkInvalidObj(resultItems[i])) {
+ * alert("openSearchWindow()のresultItems引数に無効なオブジェクトが指定されています。"); } return; }
+ */
+	// パラメータのチェック (ここまで)
+
+	// パラメータを保持 (ここから)
+	gSearchResultItems = aResultItems;
+	gSearchOwnerDocument = window.document;
+	gSearchPunc = aPunc;
+	// パラメータを保持 (ここまで)
+
+	// 検索ウィンドウの表示位置の計算 (ここから)
+	var lX = (window.screen.width - aW) / 2;
+	var lY = (window.screen.height - aH) / 2;
+	// 検索ウィンドウの表示位置の計算 (ここまで)
+
+	// 検索ウィンドウの表示 (ここから)
+	var lAttr = "locationbar=false,menubar=false,personalbar=false,toolbar=false,dependent=no,left=" + lX + ",top=" + lY + ",width=" + aW + ",height=" + aH;
+
+	gSearchWin = window.open("", "SearchWindow", lAttr);
+
+	writeAutoLoaderPage(gSearchWin, aActionName, aParams); // ダミーページの作成
+
+	gSearchWin.document.SearchForm.submit(); // ダミーページのsubmit()を実行(検索ウィンドウを表示)
+
+	gSearchWin.focus();	// 検索ウィンドウを最前面に移動
+	// 検索ウィンドウの表示 (ここまで)
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 汎用ダイアログのメインページ に UJI タグの情報をパラメータとして渡すためのダミーページを作成する関数です。
+ * 本関数により作成したダミーページのフォームの submit 関数を実行することにより、検索結果が表示されます。
+ * </pre>
+ * @param {Object} aWin ダミーページ
+ * @param {String} aActionName 検索画面で使用するAction名を指定します。
+ * @param {Object} aParams 検索画面呼び出し時に渡すフォームのパラメータを指定します。
+ * 配列の格納形式は["パラメータ1の名前","パラメータ1の値","パラメータ2の名前","パラメータ2の値",・・・]です。
+ * パラメータが不要な場合はnullを指定します。
+ * ※日本語を使用すると文字化けを起こします。
+ * @returns null
+ */
+function writeAutoLoaderPage(aWin, aActionName, aParams) {
+	// ページ内容の作成 (ここから)
+	var lStr = "";
+
+	lStr += "<HTML>\n";
+	lStr += "<HEAD>\n";
+	lStr += "<title></title>\n";
+	lStr += "<META http-equiv=\"Content-Type\" content=\"text/html; charset=windows-31j\">\n";
+	lStr += "</HEAD>\n";
+	lStr += "\n";
+
+	lStr += "<BODY>\n";
+	lStr += "<FORM NAME=\"SearchForm\" ACTION=\"" + aActionName + "\" METHOD=\"post\">\n";
+
+	// hiddenパラメータの作成 (ここから)
+	if (aParams != null) {
+		for (var i = 0; i < (aParams.length - 1); i += 2) {
+			lStr += "<INPUT TYPE=\"hidden\" NAME=\"" + aParams[i] + "\" VALUE=\"" + aParams[i + 1] + "\">\n";
+		}
+	}
+	// hiddenパラメータの作成 (ここまで)
+
+	lStr += "</FORM>\n";
+	lStr += "</BODY>\n";
+	lStr += "\n";
+	lStr += "</html>";
+	// ページ内容の作成 (ここまで)
+
+	// ページの出力 (ここから)
+	aWin.document.open();
+	aWin.document.write(lStr);
+	aWin.document.close();
+	// ページの出力 (ここまで)
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 検索結果を openSearchWindow() 関数のパラメータのテキスト項目に設定する関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {Sring} aText 検索結果の値
+ * @returns null
+ */
+function setSearchResult(aText) {
+	if (gSearchOwnerDocument != window.document) {
+		alert("検索画面の呼び出し元のページがリロードされたため、検索結果を設定できません。\n検索画面を再度表示して選択してください。");
+		return;
+	}
+
+	// openSearchWindow()のresultItemsに検索結果を出力 (ここから)
+	for (var i = 0; i < gSearchResultItems.length; i++) {
+		if ((gSearchPunc == null) || gSearchPunc == "") { // 検索結果を分割しない場合
+			gSearchResultItems[i].value = aText;
+			break;
+		}
+
+		var lIndex = aText.indexOf(gSearchPunc);
+		if (lIndex == -1) { // 分割した検索結果の最後の要素
+			gSearchResultItems[i].value = aText;
+			break;
+		} else { // 分割した検索結果の途中の要素
+			gSearchResultItems[i].value = aText.substring(0, lIndex);
+			aText = aText.substring(lIndex + 1);
+		}
+	}
+	// openSearchWindow()のresultItemsに検索結果を出力 (ここまで)
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * YYYY/MM/DD形式の日付入力パラメタをYYYYMMDD形式に変換する JavaScript 関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {String} aInputDate YYYY/MM/DD形式の日付文字列
+ * @returns {String} YYYYMMDD形式の日付文字列
+ */
+function removeSlashDate(aInputDate)
+{
+	var lStr = aInputDate;
+	var lStrparts = lStr.split("/");
+	var lArrayMonth = lStrparts[1];
+	var lArrayDay = lStrparts[2];
+
+	if(lStrparts[1].length == 1){
+		lStrparts[1] = "0".concat(lStrparts[1]);
+	}
+	if(lStrparts[2].length == 1){
+		lStrparts[2] = "0".concat(lStrparts[2]);
+	}
+	var lOutputDate = lStrparts[0] + lStrparts[1] + lStrparts[2];
+
+	return lOutputDate;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * YYYYMMDD形式の日付入力パラメタをYYYY/MM/DD形式に変換する JavaScript 関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {String} aInputDate YYYYMMDD形式の日付文字列
+ * @returns {String} YYYY/MM/DD形式の日付文字列
+ */
+function addSlashDate(aInputDate)
+{
+	var lStr = new String(aInputDate);
+
+	var lStrYear = lStr.substring(0,4);
+	var lStrMonth = lStr.substring(4,6);
+	var lStrDay = lStr.substring(6,8);
+
+	var lOutputDate = lStrYear + "/" + lStrMonth + "/" + lStrDay;
+
+	return lOutputDate;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 開始年月日から終了年月日までの日にちの差を返す JavaScript 関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {String} aFromDate YYYYMMDD形式の日付文字列
+ * @param {String} aToDate YYYYMMDD形式の日付文字列
+ * @returns {Number} 日にちの差
+ */
+function differentDay(aFromDate, aToDate)
+{
+	var lSetFromDate = new Date(parseInt(aFromDate.substring(0,4),10),parseInt(aFromDate.substring(4,6),10) - 1 ,parseInt(aFromDate.substring(6,8),10));
+	var lSetToDate = new Date(parseInt(aToDate.substring(0,4),10),parseInt(aToDate.substring(4,6),10) - 1 ,parseInt(aToDate.substring(6,8),10));
+
+	var lFromTime = lSetFromDate.getTime();
+	var lToTime = lSetToDate.getTime();
+
+	var lDifferentNum = (lToTime - lFromTime) / (24 * 60 * 60 * 1000);
+
+	return lDifferentNum;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 開始年月日から終了年月日までの日にちの差が1ヶ月以上かを確認する JavaScript 関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {String} aFromDate YYYYMMDD形式の日付文字列
+ * @param {String} aToDate YYYYMMDD形式の日付文字列
+ * @returns {Boolean} 開始年月日から終了年月日までの日にちの差が1ヶ月以上ならtrue
+ */
+function judgmentMonth(aFromDate, aToDate)
+{
+	var lBoolean = false;
+	var lSetTargetDate = new Date(parseInt(aToDate.substring(0,4),10),parseInt(aToDate.substring(4,6),10) - 1 ,parseInt(aToDate.substring(6,8),10));
+	var lSetFromDate = new Date(parseInt(aFromDate.substring(0,4),10),parseInt(aFromDate.substring(4,6),10),parseInt(aFromDate.substring(6,8),10));
+
+	if( lSetFromDate <= lSetTargetDate)
+	{
+		lBoolean = true;
+	}
+
+	return lBoolean;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 日数の入力域にフォーカスしたとき「/」を外す JavaScript 関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {Object} aTarget 対象の入力項目
+ * @returns {Boolean} true
+ */
+function doFocusCalendar(aTarget)
+{
+	if(aTarget.value.length != 10)
+	{
+		return true;
+	}
+	aTarget.value = removeSlashDate(aTarget.value);
+	aTarget.select();
+	return true;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 日数の入力域からフォーカスが外れたとき「/」をつける JavaScript 関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {Object} aTarget 対象の入力項目
+ * @returns {Boolean} true
+ */
+function doBlurCalendar(aTarget)
+{
+	var lReg = new RegExp("[0-9]{8}");
+	if(aTarget.value.length == 0)
+	{
+		return true;
+	}
+	if(lReg.test(aTarget.value) && aTarget.value.length == 8)
+	{
+		aTarget.value = addSlashDate(aTarget.value);
+		return true;
+	}
+	else
+	{
+		alert("YYYYMMDD形式で入力してください。");
+		return true;
+	}
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 現在フォーカスがある要素のタイプを返す JavaScript 関数です。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 本関数は ./DefaultSearchBody.jsp の項目選択時のアクションとして実行されます。
+ * </pre>
+ * @param {String} aFrm 対象Formの名称
+ * @returns {String} フォーカスがある要素のタイプ
+ */
+function checkElementType(aFrm)
+{
+	var lNum = getActiveElementNum(aFrm);
+	var lType;
+	if(lNum < 0)
+	{
+		lType = "button";
+	}
+	else
+	{
+		lType = aFrm.elements[lNum].type;
+	}
+	return lType
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * ウィンドウをオープンします(ヘルプ)
+ * </pre>
+ * @param {String} aUrl 表示するページのアドレス
+ * @returns null
+ */
+function openWindowHelp(aUrl)
+{
+	var lName = "help";
+	var lStyle = {
+			top : 0,
+			left : 0,
+			width : 600,
+			height : 400,
+			visibleToolbar : false,
+			visibleAddressbar : false,
+			visibleStatusbar : false,
+			visibleMenubar : false,
+			visibleScrollbars : true,
+			resizable : true
+			};
+	MC.window.open(aUrl, lName, lStyle)
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * ウィンドウをオープンします(志望業種変更)
+ * </pre>
+ * @param {String} aUrl 表示するページのアドレス
+ * @returns null
+ */
+function openWindowIndustry(aUrl)
+{
+	var lName = "modIndustryWindow";
+	var style = MC.window.style.createObject('null', 'null', true, true, true, true, true, true, -1, -1);
+	MC.window.open(aUrl, lName, style)
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 引数1に渡された名前を含むIDを持つチェックボックスのチェックを操作する。
+ * 引数2に渡されたチェックボックス要素のチェックが付いていれば、全てにチェックを付ける。
+ * 引数2に渡されたチェックボックス要素のチェックが付いてなければ、全てのチェックを外す。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 特に無し
+ * </pre>
+ * @param {String} aTargetGroupName 操作対象チェックボックスのIDに含む名称(部分一致)
+ * @param {Object} aClickedCheckBox トリガーとなるチェックボックスの要素
+ * @returns {Boolean} false
+ */
+function checkChange(aTargetGroupName, aClickedCheckBox) {
+	var lElements = document.getElementsByTagName("input");
+	if (lElements != null && lElements != undefined) {
+		for (var i=0; i<lElements.length; i++) {
+			if (lElements[i].type == "checkbox" && lElements[i].id.lastIndexOf(aTargetGroupName, 0) == 0) {
+				lElements[i].checked = aClickedCheckBox.checked;
+			}
+		}
+	}
+	return false;
+}
+
+/**
+ * <h2>処理概要</h2>
+ */
+function openSubwin(wurl,wname,wproperty,wwidth,wheight,wtop,wleft){
+	pref= "no";
+	if(wwidth == "width" || wwidth == null){
+		wwidth = 500;
+	}
+	else{
+		wwidth = parseInt(wwidth)
+	}
+	if(wheight == "height" || wheight == null){
+		wheight = 500;
+	}
+	else{
+		wheight = parseInt(wheight)
+	}
+
+	var wtb = (wproperty.charAt(0) == '1' ? 'yes' : 'no');
+	var wlb = (wproperty.charAt(1) == '1' ? 'yes' : 'no');
+	var wdir = (wproperty.charAt(2) == '1' ? 'yes' : 'no');
+	var wstb = (wproperty.charAt(3) == '1' ? 'yes' : 'no');
+	var wmb = (wproperty.charAt(4) == '1' ? 'yes' : 'no');
+	var wscb = (wproperty.charAt(5) == '1' ? 'yes' : 'no');
+	var wres = (wproperty.charAt(6) == '1' ? 'yes' : 'no');
+
+	// 表示領域オフセット
+
+	var pf = navigator.platform.charAt(0);
+	var an = navigator.appName.charAt(0);
+	var ua = navigator.userAgent;
+
+	if(pf == "M"){
+
+		if(an == "N"){
+
+			if(wtb =="yes" || wlb == "yes"){
+
+				if(ua.indexOf("Gecko",0) > -1 && ua.indexOf("Safari",0) <= -1){
+					wheight += 79;
+				}
+				if(wlb == "yes" && ua.indexOf("Safari",0) > -1){
+					wheight += 72;
+				}
+				if(wscb != "no" && ua.indexOf("Safari",0) > -1){
+					wwidth += 15;
+					wheight += 15;
+				}
+
+			}
+
+			if(wstb == "yes"){
+
+				if(ua.indexOf("Safari",0) > -1){
+					wheight += 15;
+				}
+				if(ua.indexOf("Gecko",0) > -1 && ua.indexOf("Safari",0) <= -1){
+					wheight += 18;
+				}
+
+			}
+
+			if(wscb == "yes"){
+
+				if(ua.indexOf("Gecko",0) > -1 && ua.indexOf("Safari",0) <= -1){
+					wwidth += 18;
+					wheight += 18;
+				}
+				else{
+
+					if(wstb != "yes" && ua.indexOf("[",0) <= -1){
+						wwidth += 15;
+						wheight += 15;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+	else{
+
+		if(wmb == "yes"){
+
+			if(ua.indexOf("MSIE",0) > -1){
+
+				if(wtb == "yes" && wlb == "yes" && wdir == "yes" && wstb == "yes"){
+					wheight += 123;
+				}
+				else{
+					wheight -= 20;
+				}
+
+			}
+
+		}
+		if(wscb == "yes"){
+			wwidth += 15;
+			wheight += 15;
+		}
+
+	}
+
+	// 表示位置（デフォルトは中央）
+	var sw = screen.availWidth / 2;
+	var sh = screen.availHeight / 2;
+	var ww = wwidth / 2;
+	var wh = wheight / 2;
+
+	if(wtop == "top" || wtop == null){
+		wtop = parseInt(sh - wh);
+	}
+
+	if(wleft == "left" || wleft == null){
+		wleft = parseInt(sw - ww);
+	}
+
+	var wopt = "width=" + wwidth;
+	wopt += ",height=" + wheight;
+	wopt += ",top=" + wtop;
+	wopt += ",left=" + wleft;
+	wopt += ",toolbar=" +  wtb;
+	wopt += ",location=" + wlb;
+	wopt += ",directories=" + wdir;
+	wopt += ",status=" + wstb;
+	wopt += ",menubar=" + wmb;
+	wopt += ",scrollbars=" + wscb;
+	wopt += ",resizable=" + wres;
+
+	ow = window.open(wurl,wname,wopt);
+	ow.focus();
+	return;
+}
+
+/**
+ * <h2>処理概要</h2>
+ * <pre>
+ * 引数1に渡されたIDを持つcheckboxのON･OFFを判定する。
+ * 引数2に渡されたIDを持つ範囲を表示非表示操作する。
+ * </pre>
+ * <h2>事前条件</h2>
+ * <pre>
+ * 特に無し
+ * </pre>
+ * @param {id} id 操作対象のID
+ */
+function showForeignInfoOptions(id, targetId) {
+    var lElements = document.getElementById(id);
+    if(lElements.checked){
+        document.getElementById(targetId).style.display = "block";
+    }else{
+        document.getElementById(targetId).style.display = "none";
+    }
+}

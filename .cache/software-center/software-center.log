@@ -1,0 +1,15 @@
+2014-04-04 12:44:47,598 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2014-04-04 12:44:48,863 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.Geoclue.Error.notAvailable: Geoclue master client has no usable Address providers'
+2014-04-04 12:44:49,145 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2014-04-04 12:44:49,168 - softwarecenter.plugin - INFO - activating plugin '<module 'webapps_activation' from '/usr/share/software-center/softwarecenter/plugins/webapps_activation.pyc'>'
+2014-04-04 12:44:49,196 - softwarecenter.fixme - WARNING - logs to the root logger: '('/usr/lib/python2.7/dist-packages/gi/importer.py', 51, 'find_module')'
+2014-04-04 12:44:49,196 - root - ERROR - Could not find any typelib for LaunchpadIntegration
+2014-04-04 12:44:49,298 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2014-04-04 12:44:52,987 - softwarecenter.fixme - WARNING - logs to the root logger: '('/usr/share/software-center/softwarecenter/utils.py', 271, 'get_title_from_html')'
+2014-04-04 12:44:52,987 - root - WARNING - failed to parse: '<div style="background-color: #161513; width:1680px; height:200px;">
+ <div style="background: url('/site_media/exhibits/2013/09/AAMFP_Leaderboard_700x200_1.jpg') top left no-repeat; width:700px; height:200px;"></div>
+</div>' ('ascii' codec can't encode character u'\xa0' in position 70: ordinal not in range(128))
+2014-04-04 12:44:53,003 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'amnesia-amfp'' not available
+2014-04-04 12:44:59,985 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2014-04-04 12:49:12,155 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2014-04-04 12:49:23,064 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()

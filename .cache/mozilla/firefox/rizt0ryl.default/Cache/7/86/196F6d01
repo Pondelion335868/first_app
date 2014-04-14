@@ -1,0 +1,630 @@
+@charset "utf-8";
+
+/* **************************************************
+
+Name: module.css
+
+Description: Setting of content module
+
+Create: 8888.88.88
+Update: 8888.88.88
+
+***************************************************** */
+
+
+
+/* content===========================================
+
+01: corpMenu style
+02: newsBox style
+03: portlet style
+04: calender style
+05: toDo & rss style
+06: task style
+07: meeting style
+08: information style
+09: conferenceRoom style
+10: webMail style
+11: lostProperty style
+12: history style
+
+===================================================== */
+
+
+
+
+/* 01: corpMenu style
+----------------------------------------------------- */
+
+ul.corpMenu {
+	margin: 0 0 0px;
+	padding: 5px;
+	border: 1px double #8a8a8a;
+	background-color: #f1f1f1;
+	text-align: right;
+}
+/* Win IE6 & IE7 */
+* html body ul.corpMenu { padding: 7px 5px 5px; }
+*:first-child+html ul.corpMenu { padding: 7px 5px 5px; }
+
+ul.corpMenu li {
+	display: inline;
+	margin: 0 5px 5px 0;
+	padding: 0 0 0 15px;
+	background: url("../images/icon_list_mark.gif") no-repeat 0 0;
+	font-size: 83%;
+	white-space: nowrap;
+}
+div.newsBox ul li a { line-height: 1.25; }
+
+ul.corpMenu:after{
+	display: block;
+	clear: both;
+	height: 0;
+}
+ul.corpMenu { display: inline-block; }
+/* Hides from IE-mac \*/
+* html ul.corpMenu { height: 1%; }
+ul.corpMenu { display: block; } 
+/* End hide from IE-mac */
+
+
+
+
+/* 02: newsBox style
+----------------------------------------------------- */
+
+div.newsBox {
+	margin: 0 0 0px;
+	padding: 5px 8px;
+	border: 3px double #5d5245;
+	background: url("../images/bg_news_box.gif") repeat 3px 3px;
+}
+div.newsBox h3 { margin: 0 0 5px; }
+
+div.newsBox ul { font-size: 83%; }
+
+div.newsBox ul li {
+	display: block;
+	margin: 0 0 1px;
+}div.newsBox ul li a {
+	display: block;
+	line-height: 1.25;
+	cursor: pointer;
+}
+div.newsBox ul li a span.subject {
+	display: inline-block;
+	float: left;
+}
+div.newsBox ul li a span.message {
+	display: inline-block;
+	float: right;
+	white-space: nowrap;
+}
+div.newsBox ul li span.message2 {
+	display: inline-block;
+	float: left;
+	white-space: nowrap;
+	color: #ff0000;
+	padding: 11px 0px 0px 3px;
+	font-size: 90%;
+}
+/* Win IE6 & IE7 */
+* html body div.newsBox div.column1Personal ul li a span.message,
+* html body div.newsBox div.column2Personal ul li a span.message { padding: 2px 0 0; }
+*:first-child+html div.newsBox div.column1Personal ul li a span.message,
+*:first-child+html div.newsBox div.column2Personal ul li a span.message { padding: 2px 0 0; }
+
+div.newsBox div.column1Receive,
+div.newsBox div.column1Personal,
+div.newsBox div.column1Approval {
+	float: left;
+	width: 261px;
+	height: 128px;
+	margin: 0 0 0 11px;
+	padding: 0 0 6px;
+}
+div.newsBox div.column1Receive { background: url("../images/bg_news_column1_bottom_personal.gif") no-repeat 0 100%; }
+div.newsBox div.column1Personal {
+	padding: 0 0 8px;
+	background: url("../images/bg_news_column1_bottom_personal.gif") no-repeat 0 100%;
+}
+/* Win IE6 & IE7 */
+* html body div.newsBox div.column1Personal { padding: 0 0 6px; }
+*:first-child+html div.newsBox div.column1Personal { padding: 0 0 6px; }
+/* Mac Safari */
+html[xmlns*=""] body:last-child div.newsBox div.column1Personal { padding: 0 0 6px; }
+
+div.newsBox div.column1Approval { background: url("../images/bg_news_column1_bottom_approval.gif") no-repeat 0 100%; }
+
+div.newsBox div.firstItem { margin: 0; }
+
+div.newsBox div.column1Receive h4,
+div.newsBox div.column1Personal h4,
+div.newsBox div.column1Approval h4 {
+	padding: 6px 0 0 6px;
+	background: url("../images/bg_news_column1_top.gif") no-repeat 0 0;
+}
+div.newsBox div.column1Receive h4 img,
+div.newsBox div.column1Personal h4 img,
+div.newsBox div.column1Approval h4 img 
+div.newsBox div.column2Personal h4 img { float: left; }
+
+div.newsBox div.column1Receive ul.Left {
+	float: left;
+	width: 112px;
+	padding: 0 0 0 6px;
+}
+div.newsBox div.column1Receive ul.Left li a { padding: 1px 3px 2px 0; }
+
+div.newsBox div.column1Receive ul.Right {
+	float: right;
+	width: 136px;
+	padding: 0 6px 0 0;
+}
+div.newsBox div.column1Receive ul.Right li a { padding: 1px 0 2px 3px; }
+
+div#contentArea div.newsBox ul.Left li.highlight { margin: 0 3px 0 0; }
+div#contentArea div.newsBox ul.Right li.highlight { margin: 0 0 5px 3px; }
+
+div#contentArea div.newsBox ul.Left li.highlight a,
+div#contentArea div.newsBox ul.Right li.highlight a {
+	padding: 2px 1px;
+	background-color: #ffeba4;
+}
+
+div.newsBox div.column2Personal {
+	float: right;
+	width: 535px;
+	height: 128px;
+	padding: 0 0 6px;
+	background: url("../images/bg_news_column2_bottom.gif") no-repeat 0 100%;
+}
+div.newsBox div.column2Personal h4 {
+	padding: 6px 0 0 6px;
+	background: url("../images/bg_news_column2_top.gif") no-repeat 0 0;
+}
+ul li img { margin: 0 1px 0 0; vertical-align: middle; }
+
+div.newsBox div.column2Personal ul.Left {
+	float: left;
+	width: 255px;
+	padding: 0 6px;
+}
+div.newsBox div.column2Personal ul.Right {
+	float: right;
+	width: 255px;
+	padding: 0 6px;
+}
+div.newsBox div.column1Personal ul li,
+div.newsBox div.column2Personal ul li { padding: 0 0 1px; vertical-align: middle; }
+
+div.newsBox div.column1Personal ul li img,
+div.newsBox div.column2Personal ul li img { margin: 0 3px 0 0; }
+
+div.newsBox div.column1Personal ul {
+	float: left;
+	width: 243px;
+	padding: 0 6px;
+}
+div.newsBox div.column1Approval ul.Left {
+	float: left;
+	width: 124px;
+	padding: 0 0 0 6px;
+}
+div.newsBox div.column1Approval ul.Right {
+	float: right;
+	width: 124px;
+	padding: 0 6px 0 0;
+}
+div.newsBox div.column1Approval ul.Left li a { padding: 1px 3px 2px 0; }
+div.newsBox div.column1Approval ul.Right li a { padding: 1px 0 2px 3px; }
+
+/* Win IE6 & IE7 */
+* html body div.newsBox div.column1Approval ul li a span.message { padding: 0; }
+*:first-child+html div.newsBox div.column1Approval ul li a span.message { padding: 0; }
+
+div.newsBox:after,
+div.newsBox ul li a:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+}
+div.newsBox,
+div.newsBox ul li a { display: inline-block; }
+/* Hides from IE-mac \*/
+* html div.newsBox,
+* html div.newsBox ul li a { height: 1%; }
+div.newsBox,
+div.newsBox ul li a { display: block; } 
+/* End hide from IE-mac */
+
+
+
+
+/* 03: portlet style
+----------------------------------------------------- */
+
+div.columnSet div.columnHalf {
+	float: left;
+	margin: 0 0 0 7px;
+	width: 410px;
+}
+div.columnSet div.firstItem { margin: 0; }
+
+div.portlet {
+	margin: 0 0 0px;
+	padding: 7px 0 0;
+	background: url("../images/bg_portlet_top.gif") no-repeat 0 0 #ffffff;
+}
+div.columnSet div.columnHalf div.portlet {
+	margin: 0 0 7px;
+	background: url("../images/bg_portlet_top_half.gif") no-repeat 0 0 #ffffff;
+}
+div.portlet div.inner {
+	border: 3px double #5d5245;
+	border-top: none;
+	background-color: #ffffff;
+}
+div.portlet div.inner div.scrollArea {
+	height: 155px;
+	overflow: auto;
+}
+div.portlet div.inner div.scrollArea table { width: 804px; }
+div.portlet div.inner div.scrollArea table th,
+div.portlet div.inner div.scrollArea table td { padding: 4px 3px; }
+
+div.columnSet div.columnHalf div.portlet div.inner div.scrollArea table { width: 387px; }
+
+div.portlet div.portletHeaderLV1 {
+	margin: 0 0 1px;
+	height: 22px;
+	background: url("../images/bg_portlet_header_type1.gif") repeat-x 0 0;
+	border-bottom: 1px solid #000000;
+}
+div.portlet div.portletHeaderLV3 {
+	margin: 0 0 0px;
+	height: 22px;
+	background: url("../images/bg_portlet_header_type1.gif") repeat-x 0 0;
+	border-bottom: 0px solid #000000;
+}
+/* Win IE6 & IE7 */
+* html body div.portlet div.portletHeaderLV1 { margin: 0; }
+*:first-child+html div.portlet div.portletHeaderLV1 { margin: 0; }
+
+div.portlet div.portletHeaderLV1 h3 { float: left; width: 208px; height: 22px; }
+div.portlet div.portletHeaderLV3 h3 { float: left; width: 208px; height: 22px; }
+div.portlet div.portletHeaderLV3 h4 { float: left; width: 500px; height: 22px; padding: 0px 0px 0px 25px; font-size: 95%; line-height: 1.50; }
+
+div.portlet div.portletHeaderLV1 ul { float: right; width: 82px; height: 22px; }
+div.portlet div.portletHeaderLV1 ul li img { float: right; margin: 1px 10px 0 0; }
+
+div.portlet div.portletHeaderLV2 {
+	padding: 5px 0 5px 8px;
+	background: url("../images/bg_portlet_header_type2.gif") repeat 0 0;
+	border-bottom: 1px solid #787878;
+}
+div.portlet div.portletHeaderLV2 h4 {
+	float: left;
+	width: 250px;
+	padding: 0 0 0 6px;
+	border-left: 3px solid #666666;
+	font-size: 100%;
+	line-height: 1.25;
+}
+div.portlet div.portletHeaderLV2 fieldset {
+	float: left;
+	width: 240px;
+	padding: 0 15px 0 0;
+	background: url("../images/bg_portlet_separater.gif") no-repeat 100% 50%;
+	font-size: 70%;
+	text-align: right;
+}
+
+div.portlet div.portletHeaderLV2 fieldset select,
+div.portlet div.portletHeaderLV2 fieldset input {
+	display: inline;
+	margin: 0 2px;
+	padding: 0 0 1px;
+	vertical-align: baseline;
+}
+div.portlet div.portletHeaderLV2 fieldset input { vertical-align: bottom; }
+
+div.portlet div.portletHeaderLV2 ul {
+	float: left;
+	width: 290px;
+	padding: 3px 0 0 5px;
+	font-size: 83%;
+}
+div.portlet div.portletHeaderLV2 ul li {
+	float: left;
+	margin: 0 7px;
+	padding: 0 0 0 15px;
+	line-height: 1.25;
+}
+div.portlet div.portletHeaderLV2 ul li.precendWeek { background: url("../images/icon_preceding_week.gif") no-repeat 0 1px; }
+div.portlet div.portletHeaderLV2 ul li.precendDay { background: url("../images/icon_preceding_day.gif") no-repeat 0 1px; }
+div.portlet div.portletHeaderLV2 ul li.currentDay { background: url("../images/icon_current_day.gif") no-repeat 0 1px; }
+div.portlet div.portletHeaderLV2 ul li.followDay {
+	padding: 0 15px 0 0;
+	background: url("../images/icon_following_day.gif") no-repeat 100% 1px;
+}
+div.portlet div.portletHeaderLV2 ul li.followWeek {
+	padding: 0 15px 0 0;
+	background: url("../images/icon_following_week.gif") no-repeat 100% 1px;
+}
+
+div.portlet table tr.stripe td { background-color: #eeeeee; }
+
+div.columnSet:after,
+div.portlet div.portletHeaderLV1:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+}
+div.columnSet,
+div.portlet div.portletHeaderLV1 { display: inline-block; }
+/* Hides from IE-mac \*/
+* html div.columnSet,
+* html div.portlet div.portletHeaderLV1 { height: 1%; }
+div.columnSet,
+div.portlet div.portletHeaderLV1 { display: block; } 
+/* End hide from IE-mac */
+
+
+
+
+/* 04: calender style
+----------------------------------------------------- */
+
+div.calender { margin: 0 0 3px 1px; }
+/* Win IE6 & IE7 */
+* html body div.calender { margin: 0 0 3px; }
+*:first-child+html div.calender { margin: 0 0 3px; }
+
+div.calender table th.hols { color: #890000; }
+div.calender table th.summary { width: 81px; }
+div.calender table tr th.near,
+div.calender table tr td.near { width: 133px; }
+div.calender table tr th.far,
+div.calender table tr td.far { width: 80px; }
+div.calender table tr th a { line-height: 1.25; }
+div.calender table tr td img {
+	margin: 0 1px;
+	vertical-align: middle;
+}
+div.calender table td span.hols {
+	padding: 2px;
+	background-color: #ffd7e9;
+}
+
+div.calender table tr.timetable td { padding: 0; }
+
+div.calender table tr.timetable td dl {
+	width: 131px;
+	margin: 1px 0 1px 1px;
+	padding: 4px 0;
+	border-bottom: 1px dotted #666666;
+}
+
+div.calender table tr.timetable td dl.type1 { background: url("../images/bg_timetable_type1.gif") repeat-y 0 0; }
+div.calender table tr.timetable td dl.type2 { background: url("../images/bg_timetable_type2.gif") repeat-y 0 0; }
+
+div.calender table tr.timetable td dl dt {
+	float:left;
+	width: 10px;
+	padding: 1px 2px;
+	color: #5f3316;
+	font-weight: bold;
+	line-height: 1.25;
+	vertical-align: middle;
+}
+div.calender table tr.timetable td dl dd {
+	display: block;
+	float: right;
+	width: 117px;
+	padding: 1px 0;
+	line-height: 1.25;
+	text-align: left;
+	vertical-align: middle;
+}
+div.calender table tr.timetable td.far dl { width: 80px }
+
+div.calender table tr.timetable td.far dl dd { width: 66px; }
+
+div.calender table tr.personal td { padding: 0; }
+
+div.calender table tr.personal td p {
+	padding: 2px;
+	margin: 0 0 2px;
+	border-bottom: 1px dotted #d5d5d5;
+}
+
+div.calender table tr.personal td p { width: 128px; }
+div.calender table tr.personal td.far p { width: 82px; }
+
+div.calender table tr.personal td ul { width: 128px; }
+div.calender table tr.personal td.far ul { width: 82px; }
+
+div.calender table tr.personal td ul { padding: 2px; }
+
+div.calender table tr.personal td ul li { line-height: 1.25; }
+
+div.other { margin: 0 0 0 1px; }
+/* Win IE6 & IE7 */
+* html body div.other { margin: 0; }
+*:first-child+html div.other { margin: 0; }
+
+div.other table { border: 1px solid #d5d5d5; }
+
+div.other table tr th { width: 60px; padding: 4px 2px; border: none; }
+/* Win IE6 & IE7 */
+* html body div.other table tr th { width: 59px; }
+*:first-child+html div.other table tr th { width: 59px; }
+
+div.other table tr td ul li {
+	padding: 0 0 1px 2px;
+	line-height: 1.25;
+}
+div.other table tr td ul li img { margin: 0 2px 0 0; vertical-align: middle; }
+
+div.other table tr td { border: none; }
+div.other table tr td.link { width: 160px; vertical-align: bottom; }
+
+dl.legendSymbolModel dt,
+dl.legendSymbolModel dd {
+	float: left;
+	padding: 3px;
+	font-size: 83%;
+	line-height: 1.25;
+}
+dl.legendSymbolModel dt { padding: 4px 3px; }
+dl.legendSymbolModel dd img {
+	margin: 0 2px;
+	vertical-align: middle;
+}
+
+table tr.timetable td dl:after,
+div.portlet div.portletHeaderLV2:after,
+dl.legendSymbolModel:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+}
+table tr.timetable td dl,
+div.portlet div.portletHeaderLV2,
+dl.legendSymbolModel { display: inline-block; }
+/* Hides from IE-mac \*/
+* html table tr.timetable td dl,
+* html div.portlet div.portletHeaderLV2,
+* html dl.legendModel { height: 1%; }
+table tr.timetable td dl,
+div.portlet div.portletHeaderLV2,
+dl.legendSymbolModel { display: block; } 
+/* End hide from IE-mac */
+
+
+
+
+/* 05: toDo & rss style
+----------------------------------------------------- */
+
+table#toDo th.widthStyle1 { width: 4%; }
+table#toDo th.widthStyle2 { width: 66%; }
+table#toDo th.widthStyle3 { width: 30%; }
+
+table#toDo td.imageIcon { text-align: center; }
+
+table#rss th.widthStyle1 { width: 73%; }
+table#rss th.widthStyle2 { width: 27%; }
+
+
+
+
+/* 06: task style
+----------------------------------------------------- */
+
+table#task th.widthStyle1 { width: 45%; }
+table#task th.widthStyle2 { width: 7%; }
+table#task th.widthStyle3 { width: 20%; }
+table#task th.widthStyle4 { width: 27%; }
+
+
+
+
+/* 07: meeting style
+----------------------------------------------------- */
+
+table#meeting th.widthStyle1 { width: 44%; }
+table#meeting th.widthStyle2 { width: 27%; }
+table#meeting th.widthStyle3 { width: 29%; }
+
+
+
+
+/* 08: information style
+----------------------------------------------------- */
+
+table#information th.widthStyle1 { width: 52%; }
+table#information th.widthStyle2 { width: 31%; }
+table#information th.widthStyle3 { width: 17%; }
+
+
+
+
+/* 09: conference room style
+----------------------------------------------------- */
+
+table#conferenceRoom th.widthStyle1 { width: 43%; }
+table#conferenceRoom th.widthStyle2 { width: 19%; }
+table#conferenceRoom th.widthStyle3 { width: 17%; }
+table#conferenceRoom th.widthStyle4 { width: 21%; }
+
+
+
+
+/* 10: web mail style
+----------------------------------------------------- */
+
+table#webMail th.widthStyle1 { width: 58%; }
+table#webMail th.widthStyle2 { width: 21%; }
+table#webMail th.widthStyle3 { width: 21%; }
+
+
+
+
+/* 11: lost property style
+----------------------------------------------------- */
+
+table#lostProperty th.widthStyle1 { width: 9%; }
+table#lostProperty th.widthStyle2 { width: 52%; }
+table#lostProperty th.widthStyle3 { width: 18%; }
+table#lostProperty th.widthStyle4 { width: 8%; }
+table#lostProperty th.widthStyle5 { width: 23%; }
+
+table#lostProperty td img { vertical-align: middle; }
+
+
+
+
+/* 12: history style
+----------------------------------------------------- */
+
+table#history th.widthStyle1 { width: 4%; }
+table#history th.widthStyle2 { width: 55%; }
+table#history th.widthStyle3 { width: 7%; }
+table#history th.widthStyle4 { width: 13%; }
+table#history th.widthStyle5 { width: 21%; }
+
+table#history td.imageIcon { text-align: center; }
+
+
+
+
+/* 13: common style
+----------------------------------------------------- */
+
+table#toDo th, table#toDo td,
+table#rss th, table#rss td,
+table#task th, table#task td,
+table#meeting th, table#meeting td,
+table#information th, table#information td,
+table#conferenceRoom th, table#conferenceRoom td,
+table#webMail th, table#webMail td,
+table#lostProperty th, table#lostProperty td,
+table#history th, table#history td { vertical-align: middle; }
+
+table th.widthStyle1,
+table th.widthStyle2,
+table th.widthStyle3,
+table th.widthStyle4,
+table th.widthStyle5 { white-space: nowrap; }
+
+
+

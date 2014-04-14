@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="http://send.microad.jp/js/ad_link.js"></script>
+<style type=text/css>
+
+.ad{
+	border-style:solid;
+	border-top-width:1px;
+	border-bottom-width:1px;
+	border-right-width:1px;
+	border-left-width:1px;
+	cursor:pointer;
+	background:#FFFFFF;
+	border-color:#CCCCCC;
+}
+
+.ad_contents{
+	padding-top:2px;
+	padding-right:2px;
+	padding-left:2px;
+}
+
+.ad_title{
+	line-height:110%;
+	text-decoration:underline;
+	font-weight:bold;
+	font-size:13px;
+	color:#0000CC;
+}
+
+.ad_text{
+	line-height:110%;
+	text-decoration:none;
+	font-size:13px;
+	padding-top:2px;
+	color:#000000;
+}
+
+.ad_url{
+	line-height:110%;
+	text-decoration:none;
+	font-size:13px;
+	padding-top:2px;
+	color:#008000;
+}
+
+</style>
+</head>
+<body>
+<table width="160" height="600" border="0" cellspacing="0" cellpadding="0" class="ad">
+	<tr valign="middle">
+		<td><div class="ad_contents" onmouseover="dispbar('www.rakuten.co.jp')" onmouseout="clearbar()" onclick="redirect('http://send.microad.jp/cc.cgi?BZgBEwZgaAPIV57val7QUkQINIUs.l8oLUWmkrDzdVWlTfCKHr9W7fW21VbZd138H0ewqwe0bUr8PjQeFlB53nr41YnUDbL8YcsR6NiSN3ixopBmU8ZFDQ')">
+			<div class="ad_title">ジュエリー・アクセサリー大特集</div>
+			<div class="ad_text">今売れているのはコレ！楽天ならジュエリー・アクセサリーもSALE価格で</div>
+			<div class="ad_url">www.rakuten.co.jp</div>
+		</div></td>
+	</tr>
+	<tr valign="middle">
+		<td><div class="ad_contents" onmouseover="dispbar('www.rakuten.co.jp')" onmouseout="clearbar()" onclick="redirect('http://send.microad.jp/cc.cgi?7W9kBa.yIEr93FdaDmbw2YiJSo26Cmc5Txonp8LcGW121T5LM8gzzg1I9yE0iHaL.1jcy.H1gAzLhkVVNZ4684zHtZs61syQsdvsyQsdvZqVd5WA5nYRvs')">
+			<div class="ad_title">ジュエリー・アクセサリー大特集</div>
+			<div class="ad_text">今売れているのはコレ！楽天ならジュエリー・アクセサリーもSALE価格で</div>
+			<div class="ad_url">www.rakuten.co.jp</div>
+		</div></td>
+	</tr>
+	<tr valign="middle">
+		<td><div class="ad_contents" onmouseover="dispbar('www.rakuten.co.jp')" onmouseout="clearbar()" onclick="redirect('http://send.microad.jp/cc.cgi?PYvIbLxVKmH4w8cMCJCJCJCLDgXwg4iC9DnKQklY0YMUWjJsSFwFyDrVJjY24z6bOIpKOfGnHN.wBmGNIpINdBPNslTORRczDqlRczDqln5EomL9RzV4bx')">
+			<div class="ad_title">ショッピングなら楽天市場</div>
+			<div class="ad_text">日本最大級の総合通販サイト楽天市場 欲しいものがきっとおトクに見つかる！</div>
+			<div class="ad_url">www.rakuten.co.jp</div>
+		</div></td>
+	</tr>
+	<tr valign="middle">
+		<td><div class="ad_contents" onmouseover="dispbar('www.rakuten.co.jp')" onmouseout="clearbar()" onclick="redirect('http://send.microad.jp/cc.cgi?RvPYvizs4C17j3Ia4XJhoC4ZKPJpIhpaVwPYXT8RrbTsIcaGZdiy0Rytvcpfa8S5fWwiA98BOlWp3ANlui.1k.BGUzvucV12tzmfGm9U27dMzCrKrhFluy')">
+			<div class="ad_title">レディースファッション大特集</div>
+			<div class="ad_text">今売れているのはコレ！楽天ならレディースファッションもSALE価格で</div>
+			<div class="ad_url">www.rakuten.co.jp</div>
+		</div></td>
+	</tr>
+	<tr valign="middle">
+		<td><div class="ad_contents" onmouseover="dispbar('www.rakuten.co.jp')" onmouseout="clearbar()" onclick="redirect('http://send.microad.jp/cc.cgi?gZBWEbEgvVPk4bPN2etmlVmWPz1nlUPAx.NfHY5.K9Yc0aOioDVbY9iysvIcfS.3TyWIcM6TyqTIlxS6MgNDKzdjSRf5pREGYEzbj1DZe3Rq4dj8PlqdqQ')">
+			<div class="ad_title">腕時計大特集</div>
+			<div class="ad_text">今売れているのはコレ！楽天なら腕時計もSALE価格で</div>
+			<div class="ad_url">www.rakuten.co.jp</div>
+		</div></td>
+	</tr>
+</table>
+</body>
+</html>

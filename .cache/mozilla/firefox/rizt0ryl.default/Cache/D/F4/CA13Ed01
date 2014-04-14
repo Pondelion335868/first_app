@@ -1,0 +1,962 @@
+@charset "UTF-8";
+
+/* --------------------------------------
+elements
+---------------------------------------*/
+* {
+  -moz-box-sizing : border-box;
+  box-sizing : border-box;
+  margin : 0;
+  padding : 0;
+}
+html {
+  height : 100%;
+  width : 100%;
+}
+body {
+  margin : auto;
+  width : 100%;
+  height : 100%;
+  background-color : #eeeeee;
+  font-size : small;
+}
+
+h2.am6 {
+  background-position : left center;
+  background-repeat : no-repeat;
+}
+
+a {
+  cursor : pointer;
+}
+button {
+  padding : 2px 2px 0 2px;
+  vertical-align : middle;
+  font-size : 12px;
+  cursor : pointer;
+}
+input {
+  margin-left : 3px;
+  margin-right : 4px;
+  vertical-align : middle;
+}
+option {
+  padding : 0 1px;
+}
+select {
+  margin-left : 3px;
+  margin-right : 4px;
+  vertical-align : middle;
+}
+textarea {
+  margin-left : 3px;
+  margin-right : 4px;
+  vertical-align : middle;
+}
+
+/* --------------------------------------
+universal class
+---------------------------------------*/
+*.notes {
+  margin-left : 2em;
+  font-size : 90%;
+}
+*.alert {
+  margin-left : 2em;
+  font-size : 90%;
+}
+.required {
+    color: red;
+    font-size : 12px;
+    vertical-align : top;
+    font-weight : bold;
+}
+
+/* --------------------------------------
+main
+---------------------------------------*/
+div#main {
+  padding : 0 5px 6px 5px;
+  overflow : hidden;
+}
+/* --------------------------------------
+content
+---------------------------------------*/
+div.content {
+  margin : 0;
+  padding : 5px;
+  border-width : 0 1px 0 1px;
+  border-style : solid;
+  overflow : hidden;
+  background-color : #d6ecfc;
+}
+
+div.content_none_footer {
+  margin : 0;
+  padding : 5px;
+  border-width : 0 1px 1px 1px;
+  border-style : solid;
+  overflow : hidden;
+  background-color : #d6ecfc;
+}
+
+/* --------------------------------------
+main menu
+---------------------------------------*/
+h2.menu_home {
+  background-image : url(../img/standard/mailhome.gif);
+}
+
+
+/* --------------------------------------
+common
+---------------------------------------*/
+div.shadow {
+  padding : 3px 0 0 3px;
+  border-width : 1px;
+  border-style : solid;
+  background-image : url(../img/standard/box.gif);
+  background-repeat : no-repeat;
+  background-color : #ffffff;
+}
+div.shadow_top {
+  padding : 3px 3px 0px 3px;
+  border-width : 1px 1px 0 1px;
+  border-style : solid;
+  min-height : 1.5em;
+  background-image : url(../img/standard/box.gif);
+  background-repeat : no-repeat;
+  background-color : #ffffff;
+}
+div.shadow_bottom {
+  padding : 6px 3px 3px 3px;
+  border-width : 0 1px 1px 1px;
+  border-style : solid;
+  overflow : auto;
+  background-image : url(../img/standard/box.gif);
+  background-position : 0px -5px;
+  background-repeat : no-repeat;
+  background-color : #ffffff;
+}
+
+div.pop_btn {
+  margin-top : 5px;
+  text-align : center;
+}
+div.pop_error {
+  margin-top : 5px;
+  height : 20px;
+}
+
+/* --------------------------------------
+header
+---------------------------------------*/
+div.header {
+  overflow : visible;
+  margin-top : 1px;
+}
+
+/* --------------------------------------
+main menu
+---------------------------------------*/
+div.header table col.tab_home {
+  width : 30px;
+}
+
+div.header table col.tab_inbox {
+  width : 30px;
+}
+
+div.header table col.tab_smail {
+  width : 30px;
+}
+
+div.header table col.tab_addr {
+  width : 30px;
+}
+
+div.header table col.tab_sch {
+  width : 30px;
+}
+
+div.header table col.tab_file {
+  width : 30px;
+}
+
+div.header table col.tab_tool {
+  width : 30px;
+}
+
+div.header table col.tab_margin {
+  width : 4px;
+}
+
+div.header table td.tab_margin {
+  border-bottom : transparent solid 1px;
+}
+
+div.top_menu h2 {
+  margin : 0 0 0 3px;
+  padding : 4px 3px 2px 17px;
+  font-size : 10px;
+  white-space :nowrap;
+  background-position : left 2px;
+}
+div.top_menu h2.menu_home {
+  background-image : url(../img/standard/mailhome.gif);
+}
+div.top_menu h2.menu_inbox {
+  background-image : url(../img/standard/inbox.gif);
+}
+div.top_menu h2.menu_compose {
+  background-image : url(../img/standard/compose.gif);
+}
+div.top_menu h2.menu_contact {
+  background-image : url(../img/standard/address.gif);
+}
+div.top_menu h2.menu_schedule {
+  background-image : url(../img/standard/scheduler.gif);
+}
+div.top_menu h2.menu_file {
+  background-image : url(../img/standard/webfile.gif);
+}
+div.top_menu h2.menu_tool {
+  background-image : url(../img/standard/tools.gif);
+}
+
+td.tab_menu {
+  vertical-align : bottom;
+}
+td.tab_menu table td{
+  height : 21px;
+}
+
+table.selected_tab,
+table.unselected_tab {
+  border : solid;
+  border-width : 1px;
+  cursor : pointer;
+}
+
+div.top_menu div.amtop-horiz-menu {
+  margin : 0 2px 4px 0;
+}
+
+/* --------------------------------------
+help button / logout
+---------------------------------------*/
+div.top_submenu {
+  white-space : nowrap;
+}
+div.top_submenu a {
+  margin-right : 5px;
+  font-size : 90%;
+}
+div.top_submenu button img {
+  margin : 0;
+}
+div.top_submenu img.help {
+  border : none;
+}
+
+td#submenu_hline * {
+  vertical-align : middle;
+}
+
+td#submenu_hline div.top_submenu {
+  border-width : 0 0 1px 0;
+  border-style : solid;
+  text-align : right;
+  white-space : nowrap;
+}
+
+/* --------------------------------------
+button
+---------------------------------------*/
+button.imgbtn {
+  margin : 0 2px 0 2px;
+  padding : 1px 2px;
+  font-size : 12px;
+}
+button.imgbtn img {
+  margin : 0 2px 0 2px;
+  vertical-align : -2px;
+}
+
+/* --------------------------------------
+footer
+---------------------------------------*/
+div.footer {
+  padding : 0 5px 5px 5px;
+  border-style : solid;
+  border-width : 0 1px 1px 1px;
+}
+
+div.footer table {
+  width : 100%;
+  border-collapse : collapse;
+}
+div.footer table div.footer_info {
+  padding : 5px 5px 0 5px;
+  width : 100%;
+  height : 32px;
+  overflow : hidden;
+  background-color : #ffffff;
+  white-space : nowrap;
+  font-size : 80%;
+}
+div.footer td.server {
+  padding : 0;
+  margin : 0;
+  width : 21px;
+  text-align : right;
+  font-size : 70%;
+}
+
+div.footer td.clock {
+  width : 110px;
+}
+div.footer td.clock div {
+  padding : 5px 4px 2px 9px;
+  vertical-align : middle;
+  white-space : nowrap;
+}
+div.footer td.clock span {
+  vertical-align : middle;
+  overflow : hidden;
+  font-size : 9pt;
+  font-weight : bold;
+  white-space : nowrap;
+}
+div.footer td.logo {
+  width : 95px;
+  text-align : right;
+}
+
+div.footer_scroll_contents {
+  position : relative;
+  height : 100%;
+  width : 77%;
+  float: left;
+  line-height : 22px;
+  vertical-align : middle;
+}
+div.footer_scroll_contents img {
+  vertical-align : -3px;
+}
+div.footer_scroll_contents span {
+  padding-right : 1em;
+  width : 100%;
+  vertical-align : baseline;
+  overflow : hidden;
+}
+
+div.footer_scroll_controls {
+  width : auto;
+  text-align : right;
+}
+
+div.footer_scroll_controls span#footer_scroll_pager {
+  line-height : 22px;
+  vertical-align : top;
+}
+
+div.footer_scroll_controls span img {
+  vertical-align : -6px;
+}
+div.footer_scroll_controls span#footer_scroll_button_prev,
+div.footer_scroll_controls span#footer_scroll_button_next,
+div.footer_scroll_controls span#footer_scroll_button_start,
+div.footer_scroll_controls span#footer_scroll_button_stop {
+  cursor : pointer;
+}
+
+div.footer_scroll_disabled {
+  color : gray;
+}
+
+/* --------------------------------------
+address edit
+---------------------------------------*/
+div.addr_edit {
+  margin : 0;
+  padding : 0;
+  width : auto;
+  height : auto;
+  overflow : visible;
+  text-align : center;
+}
+div.addr_edit div.option_add {
+  text-align : center;
+  width : 100%;
+}
+div.addr_edit_contents {
+  background-color : #FFFFFF;
+  height : auto;
+  text-align : center;
+}
+div.addr_edit_contents table {
+  margin : 2%;
+  width : 96%;
+  border-collapse : separate;
+  border-spacing : 0px;
+  border-width : 1px 0 0 1px;
+  border-style : solid;
+  border-color : #333333;
+  font-size : 90%;
+}
+div.addr_edit_contents table th {
+  padding : 2px 5px 2px 5px;
+  border-width : 0 1px 1px 0;
+  border-style : solid;
+  border-color : #333333;
+  width : 15%;
+  background-color : #F0F0F0;
+  text-align : left;
+  vertical-align : middle;
+  white-space : nowrap;
+}
+div.addr_edit_contents table th.custom {
+  white-space : normal;
+  word-break : break-all;
+}
+div.addr_edit_contents p.required_notes {
+  text-align : right;
+  font-size : 85%;
+  margin : 5px 15px -5px 0;
+}
+div.addr_edit_contents table td {
+  padding : 3px;
+  border-width : 0 1px 1px 0;
+  border-style : solid;
+  border-color : #333333;
+  width : 35%;
+  vertical-align : middle;
+  background-color : #FFFFFF;
+  text-align : left;
+}
+div.addr_edit_contents table td.target_add_folder table {
+  width : auto;
+}
+div#edit_cancel {
+  margin : 8px 4px 0 0;
+  border : 1px solid #CCCCCC;
+  width : 4em;
+  float : right;
+  text-align : center;
+}
+
+div.addr_edit_contents div.pulldown table{
+  margin : 0;
+  border-collapse : separate;
+  border-spacing : 0px;
+  border-width : 0;
+  border-style : solid;
+  border-color : #333333;
+}
+
+div.addr_edit_contents div.pulldown table td{
+  margin : 0;
+  border-collapse : separate;
+  border-spacing : 0px;
+  border-width : 0px;
+  border-style : solid;
+  border-color : #333333;
+  width : auto;
+}
+
+div.addr_edit_contents div.pulldown div.dynarch-horiz-menu {
+  border-color : #333333;
+  margin : 0;
+  padding : 0;
+}
+
+/* --------------------------------------
+schedule edit
+---------------------------------------*/
+div.schedule_edit {
+  width : auto;
+  height : 100%;
+  overflow : visible !important;
+}
+div.schedule_edit_column div.items table {
+  border-width : 1px 0 0 1px;
+  border-style : solid;
+  border-color : #333333;
+}
+
+div.schedule_edit_column {
+  width : 95%;
+  height : auto;
+  overflow : visible;
+  background-color : #FFFFFF;
+}
+div.schedule_edit_column div.indent {
+  padding-left : 0em;
+}
+div.schedule_edit_column div.schedule_add {
+  margin : 5px 20px;
+  padding : 0;
+  width : 99%;
+  text-align : center;
+}
+div.schedule_edit_column textarea {
+  overflow : visible;
+  font-size : small;
+}
+span.daylong {
+  padding-left : 1em;
+}
+span.sch_label {
+  vertical-align : middle;
+  white-space : nowrap;
+}
+div.items {
+  width : auto;
+  background-color : transparent;
+}
+div.items table {
+  margin : 2% 2% 2% 3%;
+  border-collapse : separate;
+  border-spacing : 0px;
+  border-width : 1px 0 0 1px;
+  border : solid #333333;
+  width : 100%;
+}
+div.items td {
+  padding : 3px;
+  border-width : 0 1px 1px 0;
+  border-style : solid;
+  border-color : #333333;
+  vertical-align : top;
+  font-size : 80%;
+  text-align : left;
+  background-color : #FFFFFF;
+  width : 80%;
+}
+div.items td img {
+  vertical-align : middle;
+}
+div.items td input {
+  margin-right : 0;
+  padding : 0;
+}
+div.items td label {
+  margin-left : 0;
+  margin-right : 6px;
+  padding : 0;
+}
+div.items th {
+  padding : 2px;
+  border-width : 0 1px 1px 0;
+  border-style : solid;
+  border-color : #333333;
+  width : 20%;
+  vertical-align : middle;
+  background-color : #F0F0F0;
+  font-size : 80%;
+  text-align : right;
+}
+div.items p.required_notes {
+  width : 100%;
+  text-align : right;
+  font-size : 85%;
+  margin : 5px 0 -7px 0;
+}
+
+/* --------------------------------------
+move from html template
+---------------------------------------*/
+div.tab {
+  width : 100%;
+}
+td.darrow {
+  padding-top : 4px;
+  width : 20px;
+  height : 20px;
+}
+iframe.main_content {
+}
+
+span.news_link {
+  cursor : pointer;
+}
+
+/* --------------------------------------
+announce popup
+---------------------------------------*/
+table.popupwin_info th {
+  padding : 0 5px 15px 0;
+  line-height : 1.4;
+  vertical-align : top;
+  font-size : 80%;
+  text-align : right;
+}
+table.popupwin_info td {
+  padding : 0 0 15px 0;
+  line-height : 1.4;
+  vertical-align : top;
+  font-size : 80%;
+}
+
+/* --------------------------------------
+vpopup
+---------------------------------------*/
+div.pop_message {
+  padding : 10px 0 0 0;
+  width : 100%;
+  height : auto;
+  font-size : 95%;
+}
+div.pop_message p.required_notes {
+  text-align : right;
+  font-size : 80%;
+  margin-top : -5px;
+  margin-right : 40px;
+}
+div.pop_message table {
+  margin : 0 auto;
+  padding : 0;
+  border : none;
+  width : 76%;
+}
+div.pop_message table th {
+  padding : 2px;
+  font-size : 90%;
+  font-weight : normal;
+  text-align : right;
+  white-space : nowrap;
+}
+div.pop_message table td {
+  padding : 2px;
+  font-size : 90%;
+  white-space : nowrap;
+}
+div.pop_error {
+  margin-top : 5px;
+  height : 20px;
+}
+div.pop_btn {
+  margin-top : 5px;
+  text-align : center;
+}
+div.pop_message table input,
+div.pop_message table select {
+  width : 100%;
+}
+div.pop_message p.amvpop_check {
+  padding : 5px 12px;
+}
+
+/* --------------------------------------
+ file /file upload
+---------------------------------------*/
+div.uploadwin_form {
+  padding-top : 0;
+  padding-bottom : 0;
+  width : 100%;
+  overflow : hidden;
+}
+div.uploadwin_form input.fileselect {
+  width : 100%;
+}
+div.uploadwin_progress {
+  padding-top : 0;
+  padding-bottom : 0;
+  height : 46px;
+  overflow : hidden;
+  text-align : center;
+}
+
+div.uploadwin_bar {
+  padding : 0;
+  width : 100%;
+  overflow : hidden;
+  text-align : center;
+}
+div.uploadwin_percent {
+  padding : 0 15px 0 0;
+  width : 40%;
+  float : left;
+  overflow : hidden;
+  font-size : 70%;
+  text-align : right;
+}
+div.uploadwin_size {
+  width : 60%;
+  overflow : hidden;
+  font-size : 70%;
+  text-align : left;
+}
+div.bar1 {
+  margin-left : 70px;
+  border-style : solid;
+  border-width : 1px;
+  padding : 0;
+  width : 202px;
+  height : 18px;
+  color : #000000;
+  font-size : 13px;
+}
+div.bar2 {
+  padding : 0;
+  border-style : solid;
+  border-width : 0 1px 0 0;
+  height : 16px;
+  float : left;
+  text-align : center;
+}
+div.bar3 {
+  padding : 0;
+  border-style : solid;
+  border-width : 0;
+  height : 16px;
+  float : right;
+  text-align : center;
+}
+div.uploadwin_button {
+  padding-top : 0;
+  padding-bottom : 0;
+  position : relative;
+  bottom: 5px;
+  width : 100%;
+  height : 30px;
+  overflow : hidden;
+  text-align : center;
+}
+div.uploadwin_button button {
+  margin : 0 7px 0 7px;
+}
+div.uploadwin_form div.file_select {
+  margin : 10px auto;
+  width : 80%;
+}
+div.uploadwin_form div.file_comment {
+  margin : 10px auto;
+  width : 80%;
+}
+div.uploadwin_form div.file_comment textarea {
+  width : 99%;
+  text-align : left;
+}
+
+/* --------------------------------------
+ticket edit
+---------------------------------------*/
+div.ticket_edit {
+  width : auto;
+  height : 100%;
+  overflow : visible !important;
+}
+div.ticket_edit_column {
+  margin : 0 auto;
+  width : 98%;
+  height : auto;
+  overflow : visible;
+  background-color : #FFFFFF;
+}
+div.ticket_edit_column span.ticket_label {
+  padding-right : 1em;
+  vertical-align : middle;
+  line-height : 1.4;
+}
+div.ticket_edit_column td select {
+  margin-top : 5px;
+  vertical-align : middle;
+  white-space : nowrap;
+}
+div.ticket_edit_column input {
+  margin : 0;
+  padding : 0;
+}
+
+
+div.ticket_edit_column div.buttons {
+  margin : 5px 5%;
+  padding : 0;
+  width : 90%;
+  text-align : center;
+}
+div.ticket_edit_column table {
+  border-width : 1px 0 0 1px;
+  border-style : solid;
+  border-color : #333333;
+  border-collapse : collapse;
+  width : 100%;
+}
+div.ticket_edit_column td {
+  padding : 3px 5px;
+  border-width : 0 1px 1px 0;
+  border-style : solid;
+  border-color : #333333;
+  vertical-align : top;
+  line-height : 1.4;
+  font-size : 80%;
+  text-align : left;
+  background-color : #FFFFFF;
+  width : 82%;
+}
+div.ticket_edit_column td img {
+  vertical-align : middle;
+}
+div.ticket_edit_column th {
+  padding : 3px;
+  border-width : 0 1px 1px 0;
+  border-style : solid;
+  border-color : #333333;
+  width : 18%;
+  vertical-align : middle;
+  background-color : #F0F0F0;
+  font-size : 80%;
+  text-align : right;
+}
+div.ticket_edit_column td.passwd table {
+  border : none;
+}
+div.ticket_edit_column table td.passwd {
+  padding : 0;
+}
+div.ticket_edit_column table td.passwd table {
+  margin : 0;
+  border : none;
+  background-color : transparent;
+}
+div.ticket_edit_column table td.passwd table td {
+  border : none;
+}
+
+div.ticket_edit_column table td.passwd span.ticket_label {
+  padding-left : 0.5em;
+  padding-right : 0;
+}
+
+/* --------------------------------------
+ticket list
+---------------------------------------*/
+div.ticket_list {
+  margin : 0;
+  padding : 0;
+  width : 98%;
+  height : 90%;
+  overflow : auto;
+  border-collapse : collapse;
+  border-width : 1px;
+  border-style : solid;
+  border-color : #333333;
+  position : absolute;
+  background-color : #F0F0F0;
+}
+/* pager */
+div.ticket_list div.pager {
+  padding : 0 4px 2px 4px;
+  width : 100%;
+}
+div.ticket_list div.pager table {
+  border-collapse : collapse;
+  border : none;
+  width : 100%;
+}
+div.ticket_list div.pager table td {
+  border : none;
+  background-color : #F0F0F0;
+  font-size : 90%;
+  text-align : left;
+}
+div.ticket_list div.pager td img {
+  vertical-align : middle;
+}
+
+/* grid */
+div.ticket_list div.list_grid {
+  height : auto;
+  width : auto;
+  position : static;
+  overflow : visible;
+  background-color : #ffffff;
+  -moz-user-select : none;
+}
+
+/* button */
+div.ticket_list div.popup_button {
+  padding-top : 3px;
+  overflow : visible;
+}
+div.ticket_list div.popup_button button {
+  margin : 0 0 0 3px;
+  font-size : 12px;
+}
+div.ticket_list div.popup_button button img {
+  margin : 0 3px 0 3px;
+}
+div.ticket_list div.popup_title {
+  margin : 0;
+  padding : 4px;
+  border-bottom-width : 3px;
+  border-bottom-style : ridge;
+  width : 620px;
+  height : 30px;
+  overflow : hidden;
+  background-color : #888888;
+}
+div.ticket_list div.popup_title h3 {
+  margin-top : 3px;
+  width : 100%;
+  color : #FFFFFF;
+}
+div.ticket_list div.popup_button #ticket_searchword {
+  margin : 5px 2px 0 5px;
+}
+
+/* --------------------------------------
+background-image  --help
+---------------------------------------*/
+div.help_main_column h3 {
+  background-image : url(../img/standard/help_h3.gif);
+}
+div.help_main_column h4 {
+  background-image : url(../img/standard/help_h4.gif);
+}
+div.help_main_column h5 {
+  background-image : url(../img/standard/help_h5.gif);
+}
+
+/* --------------------------------------
+background-image  --system info
+---------------------------------------*/
+div.system_info_main h3 {
+  background-image : url(../img/standard/help_h3.gif);
+}
+div.system_info_main h4 {
+  background-image : url(../img/standard/help_h4.gif);
+}
+div.system_info_main h5 {
+  background-image : url(../img/standard/help_h5.gif);
+}
+div.op_float {
+  float : left;
+}
+
+/* --------------------------------------
+ticket list
+---------------------------------------*/
+div.shortcut_list {
+  width : 100%;
+}
+div.shortcut_list table {
+  width : 100%;
+  border-collapse : collapse;
+  font-size : 90%;
+}
+div.shortcut_list th,
+div.shortcut_list td {
+  border : 1px solid #333333;
+  padding : 3px;
+}
+div.shortcut_list th {
+  background-color : #F0F0F0;
+  text-align : center;
+}
+div.shortcut_list td.key {
+  text-align : center;
+  font-weight : bold;
+}

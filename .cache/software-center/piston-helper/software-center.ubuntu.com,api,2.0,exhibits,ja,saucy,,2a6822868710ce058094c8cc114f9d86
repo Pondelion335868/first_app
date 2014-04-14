@@ -1,0 +1,67 @@
+status: 200
+content-location: https://software-center.ubuntu.com/api/2.0/exhibits/ja/saucy/
+expires: Fri, 04 Apr 2014 03:54:52 GMT
+vary: Authorization
+server: Apache/2.2.22 (Ubuntu)
+last-modified: Fri, 04 Apr 2014 03:44:52 GMT
+etag: "2f0abe59fc5f0f5d09a5adc8057a57f1"
+cache-control: max-age=600
+date: Fri, 04 Apr 2014 03:44:52 GMT
+content-type: application/json; charset=utf-8
+
+[
+    {
+        "package_names": "amnesia-amfp", 
+        "click_url": "", 
+        "weight": 2, 
+        "banner_url": "http://software-center.ubuntu.com/site_media/exhibits/2013/09/AAMFP_Leaderboard_700x200_1.jpg", 
+        "distroseries": [
+            {
+                "version": "12.04", 
+                "code_name": "precise"
+            }, 
+            {
+                "version": "13.04", 
+                "code_name": "raring"
+            }, 
+            {
+                "version": "13.10", 
+                "code_name": "saucy"
+            }
+        ], 
+        "html": "<div style=\"background-color: #161513; width:1680px; height:200px;\">\r\n <div style=\"background: url('/site_media/exhibits/2013/09/AAMFP_Leaderboard_700x200_1.jpg') top left no-repeat; width:700px; height:200px;\"></div>\r\n</div>", 
+        "published": true, 
+        "date_created": "2013-09-20 19:12:52", 
+        "banner_urls": [
+            "http://software-center.ubuntu.com/site_media/exhibits/2013/09/AAMFP_Leaderboard_700x200_1.jpg"
+        ], 
+        "id": 99
+    }, 
+    {
+        "package_names": "zhackers-volume2-usc", 
+        "click_url": "", 
+        "weight": 3, 
+        "banner_url": "http://software-center.ubuntu.com/site_media/exhibits/2013/10/banner-zhackers-vol2.png", 
+        "distroseries": [
+            {
+                "version": "12.04", 
+                "code_name": "precise"
+            }, 
+            {
+                "version": "13.04", 
+                "code_name": "raring"
+            }, 
+            {
+                "version": "13.10", 
+                "code_name": "saucy"
+            }
+        ], 
+        "html": "<div style=\"background-color: #000000; width:1680px; height:200px;\">\r\n <div style=\"background: url('/site_media/exhibits/2013/10/banner-zhackers-vol2.png') top left no-repeat; width:700px; height:200px;\"></div>\r\n</div>", 
+        "published": true, 
+        "date_created": "2013-10-16 10:21:12", 
+        "banner_urls": [
+            "http://software-center.ubuntu.com/site_media/exhibits/2013/10/banner-zhackers-vol2.png"
+        ], 
+        "id": 100
+    }
+]

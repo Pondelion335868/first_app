@@ -1,0 +1,347 @@
+@charset "Shift_JIS";
+
+/*
+使用画面   :NAVI学生PC
+説明       :共通ヘッダーで利用するCSS
+初版作成日 :2012/06/01
+初版作成者 :mycom(navi-dev)
+*/
+#headerMain{
+	width: 850px;
+	margin: 0 auto;
+	padding:0 0px;
+	background: #fff;
+	font-size:12px;
+	
+}
+#headerMain a:link{
+	text-decoration:underline;
+}
+#headerMain a:visited{
+	text-decoration:underline;
+}
+#headerMain a:hover{
+	text-decoration:none;
+}
+#headerMain a:active{
+	text-decoration:none;
+}
+#headerMain div.innerUpper{
+	position:relative;
+	margin:0 auto;
+	width:850px;
+	overflow:hidden;
+	padding-top:0px;
+	min-height:55px;
+}
+#headerMain div.innerBottom div#globalNavMain{
+	clear:both;
+	overflow:hidden;
+	width:850px;
+	margin:0 auto;/*
+	padding:0 0 4px;*/
+}
+* html #headerMain div.innerBottom div#globalNavMain{
+	height:1%;
+	overflow:visible;
+}
+#headerMain div.innerBottom div#globalNavMain:after{
+	content:".";
+	display:block;
+ 	height:0;
+ 	clear:both;
+ 	visibility:hidden;
+}
+#headerMain div.innerUpper #logo{
+	width:200px;
+	float:left;
+	margin-top:5px;
+}
+#headerMain div.innerUpper #siteLead{
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:22px;
+	line-height: 1.5;
+}
+#headerMain div.innerUpper #headerRight{
+	float:left;
+	width:380px;
+	margin-left:17px;
+	line-height:1.35;
+}
+#headerMain div.innerUpper #headerRight #loginForm{
+	float:left;
+	margin-top:5px;
+}
+#headerMain div.innerUpper #headerRight #loginForm dl,
+#headerMain div.innerUpper #headerRight #loginForm p{
+	float:left;	
+}
+#headerMain div.innerUpper #headerRight #loginForm dl dt,
+#headerMain div.innerUpper #headerRight #loginForm dl dd{
+	margin-right:3px;
+	float:left;	
+}
+#headerMain div.innerUpper #headerRight #loginForm dl dt{
+	line-height:30px;
+}
+#headerMain div.innerUpper #headerRight #myname{
+	font-size: 91%;
+	margin-top:10px;
+}
+#headerMain div.innerUpper #headerRight #myPageHead{
+
+}
+#headerMain div.innerUpper #headerRight #myname #date{
+	display:inline;
+}
+#headerMain div.innerUpper #headerRight #myname #date .date,
+#headerMain div.innerUpper #headerRight #myname #date .kaiinid{
+	display:inline;
+	margin-right:10px;
+}
+#headerMain div.innerUpper #headerRight #myname #date .date{
+	font-size:11px;
+	color:#666666;
+}
+#headerMain div.innerUpper #headerRight #myname #date .kaiinid strong{
+
+}
+#headerMain div.innerUpper #headerRight #myname #date .kaiinid span{
+
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead{
+}
+
+#headerMain div.innerUpper #headerRight #myname #myPageHead strong.nickName{
+	color: #ff4680;
+}
+#headerMain div.innerUpper #headerRight #myname *{
+	display:inline;
+	font-size:12px;
+	line-height:15px;
+	color:#666666;
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead #myPageHeadLinks{
+	display:block;
+	overflow:hidden;
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead #myPageHeadLinks li{
+	float:left;
+	display:block;
+	margin:0px;
+	margin-right:5px;
+	font-size:11px;
+	line-height:26px;
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead #myPageHeadLinks li a{
+	font-size:11px;
+	line-height:26px;
+	text-decoration:none !important;
+	color:#0066cc;
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead #myPageHeadLinks li a:hover{
+	text-decoration:underline !important;
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead #myPageHeadLinks li:first-child:before{
+	content:"|　";
+	color:#999999;
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead #myPageHeadLinks li:after{
+	content:"|";
+	color:#999999;
+	padding-left:8px;
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead #myPageHeadLinks li:last-child:after{
+	content:" ";
+	color:#999999;
+}
+
+#assistNav{
+	clear:both;
+}
+#assistNav ul:before{
+	overflow:hidden;
+}
+#assistNav ul{
+	text-align:center;
+}
+#assistNav ul li{
+	margin-right:10px;
+	font-size:11px;
+	display:inline;
+}
+#assistNav ul li:first-child:before{
+	content:"|　";
+	color:#999999;
+}
+#assistNav ul li:after{
+	content:"|";
+	color:#999999;
+	padding-left:8px;
+}
+#assistNav ul li a{
+	text-decoration:none !important;
+	color:#0066cc;
+}
+#assistNav ul li a:hover{
+	text-decoration:underline !important;
+}
+#headerMain div.innerUpper #headerRight #myname #myPageHead #myPageHeadLinks li .btnHeaderLogout{
+	width:68px;
+	height:19px;
+	line-height:19px;
+	font-size:10px;
+	background:url("../images/share/btn_header-logout.png");
+	text-indent: -9999px;
+	margin:3px 0px 3px 0px;
+	border:none;
+	cursor:pointer;
+}
+.btnHeaderLogin{
+	width:70px;
+	height:22px;
+	line-height:22px;
+	font-size:10px;
+	background:url("../images/btn/btnSmallCommonLogout.png");
+	margin:0px 0px 0px 0px;
+	border:none;
+	cursor:pointer;
+}
+#headerMain div#globalNavMain li{
+	float:left;
+}
+#headerMain div#globalNavMain li a{
+	text-indent:-1000px;
+}
+#headerMain div#globalNavMain li.nav01{
+	background:url(../images/share/common_header_main_tab_01.png) no-repeat left top;
+}
+#headerMain div#globalNavMain li.nav02{
+	background:url(../images/share/common_header_main_tab_02.png) no-repeat left top;
+}
+#headerMain div#globalNavMain li.nav03{
+	background:url(../images/share/common_header_main_tab_03.png) no-repeat left top;
+}
+#headerMain div#globalNavMain li.nav04{
+	background:url(../images/share/common_header_main_tab_04.png) no-repeat left top;
+}
+#headerMain div#globalNavMain li.nav05{
+	background:url(../images/share/common_header_main_tab_05.png) no-repeat left top;
+}
+#headerMain div#globalNavMain li.nav06{
+	background:url(../images/share/common_header_main_tab_06.png) no-repeat left top;
+}
+#headerMain div#globalNavMain li.nav07{
+	background:url(../images/share/common_header_main_tab_07.png) no-repeat left top;
+}
+
+/**/
+#headerMain div#globalNavMain li.nav01:hover,
+#headerMain.c01 div#globalNavMain li.nav01{
+	background:url(../images/share/common_header_main_tab_01.png) no-repeat left bottom;
+}
+#headerMain div#globalNavMain li.nav02:hover,
+#headerMain.c02 div#globalNavMain li.nav02{
+	background:url(../images/share/common_header_main_tab_02.png) no-repeat left bottom;
+}
+
+#headerMain div#globalNavMain li.nav03:hover,
+#headerMain.c03 div#globalNavMain li.nav03{
+	background:url(../images/share/common_header_main_tab_03.png) no-repeat left bottom;
+}
+
+#headerMain div#globalNavMain li.nav04:hover,
+#headerMain.c04 div#globalNavMain li.nav04{
+	background:url(../images/share/common_header_main_tab_04.png) no-repeat left bottom;
+}
+#headerMain div#globalNavMain li.nav05:hover,
+#headerMain.c05 div#globalNavMain li.nav05{
+	background:url(../images/share/common_header_main_tab_05.png) no-repeat left bottom;
+}
+#headerMain div#globalNavMain li.nav06:hover,
+#headerMain.c06 div#globalNavMain li.nav06{
+	background:url(../images/share/common_header_main_tab_06.png) no-repeat left bottom;
+}
+#headerMain div#globalNavMain li.nav07:hover,
+#headerMain.c07 div#globalNavMain li.nav07{
+	background:url(../images/share/common_header_main_tab_07.png) no-repeat left bottom;
+}
+
+
+
+
+
+#headerMain div#globalNavMain li a{
+	display:block;
+	width:130px; 
+	height:38px; 
+}
+#headerMain div#globalNavMain li.nav01 a{
+	width:69px;
+}
+#headerMain div#globalNavMain li a:hover{
+	background-color:transparent;
+}
+#headerMain div#globalNavMain li a:hover img{
+	visibility:hidden;
+}
+#headerMain div#loginForm{
+	float:right;
+	font-size:11px;
+	margin-top:3px;
+}
+
+#headerMain div#loginForm input.headInput{
+	width:90px;
+	_vertical-align:baseline;
+	padding:0px !important;
+	height:22px !important;
+	line-height:22px !important;
+}
+#headerMain div#loginForm input.headInput#inputMemberId{
+
+}
+#headerMain div#loginForm input.headInput#inputPassword{
+
+}
+#headerMain p#logout{
+	float:right;
+	padding:4px 10px 0 0;
+}
+#headerMain div.bnr{
+	position:absolute;
+	right: 0px;
+	top:3px;
+	width:225px;
+	line-height:1.35;
+	text-align:center;
+	vertical-align:top;
+	font-size:10px;
+	line-height: 1.1;
+}
+#headerMain div.bnr img{
+	display:block;
+	margin-bottom:2px;
+}
+#headerMain div.bnr a:link{
+	text-decoration:none;
+}
+#headerMain div.bnr a:visited{
+	text-decoration:none;
+}
+#headerMain div.bnr a:hover{
+	text-decoration:underline;
+}
+#headerMain div.bnr a:active{
+	text-decoration:underline;
+}
+button.btnHeaderLogin{
+	border:0px;
+	padding:0px;
+}
+
+button.btnHeaderLogin span img{
+	*border:1px solid #FFFFFF;
+}

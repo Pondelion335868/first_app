@@ -1,0 +1,15 @@
+status: 200
+content-length: 2
+via: 1.1 sumac.canonical.com:3128 (squid/2.7.STABLE7)
+content-location: http://reviews.ubuntu.com/reviews/api/1.0/reviews/filter/ja/ubuntu/saucy/any/eclipse-platform/page/1/helpful/
+x-cache: MISS from sumac.canonical.com
+x-cache-lookup: HIT from sumac.canonical.com:3128
+expires: Fri, 04 Apr 2014 03:50:16 GMT
+server: Apache/2.2.22 (Ubuntu)
+last-modified: Fri, 04 Apr 2014 03:45:16 GMT
+connection: close
+cache-control: max-age=300
+date: Fri, 04 Apr 2014 03:45:16 GMT
+content-type: application/json; charset=utf-8
+
+[]

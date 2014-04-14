@@ -1,0 +1,243 @@
+<html>
+<head>
+<meta name="robots" content="noindex,nofollow">
+</head>
+<body style="background-color: transparent; padding: 0px; margin: 0px; text-align: center;">
+<div style="margin-left: auto; margin-right: auto;">
+<script type="text/javascript">
+
+function yjaxclookup(jo)
+{
+    for (var i = 0; i < jo.length; i++) {
+        document.write(jo[i]);
+    }
+}
+
+</script>
+<script type="text/javascript">
+function ydnSanitize(in_text)
+{
+    var replace = {
+        '<' : '&lt;',
+        '>' : '&gt;',
+        '"' : '&#34;',
+        "'" : '&#39;'
+    };
+    for (var text in replace) {
+        in_text = in_text.replace(new RegExp(encodeURIComponent(text), 'g'), encodeURIComponent(replace[text]));
+    }
+    return in_text;
+}
+
+function parseQuery(in_url, in_isObject)
+{
+    /*
+        in_isObject
+        true  : returns Object (field1 : value1, field2 : value2, ...)
+        false : returns Array (value1, value2, ...)
+    */
+    var ret;
+    if (in_isObject) {
+        ret = {};
+    } else {
+        ret = [];
+    }
+    var tmp = in_url.split('?');
+    if (tmp.length != 2) {
+        return ret;
+    }
+    var paramset = tmp[1].split('&');
+    for (var i = 0; i < paramset.length; i++) {
+        var f_v = paramset[i].split('=');
+        if (f_v.length == 1) {
+            if (in_isObject) {
+                ret[f_v[0]] = '';
+            } else {
+                ret.push('');
+            }
+        } else {
+            if (in_isObject) {
+                ret[f_v[0]] = ydnSanitize(f_v[1]);
+            } else {
+                ret.push(ydnSanitize(f_v[1]));
+            }
+        }
+    }
+    return ret;
+}
+
+function getYjaxcEncField(in_yjaxc_url)
+{
+    var ret = parseQuery(in_yjaxc_url, true);
+    if (ret.enc) {
+        var encWhiteList = [
+            'SHIFT-JIS',
+            'EUC-JP',
+            'ISO-2002-JP',
+            'UTF-8'
+        ];
+        for (var i = 0; i < encWhiteList.length; i++) {
+            if (ret.enc.toUpperCase() == encWhiteList[i]) {
+                return ret.enc;
+            }
+        }
+        return 'UTF-8';
+    } else {
+        return (document.charset || document.characterSet).toUpperCase();
+    }
+}
+
+function isSubDomain(in_check, in_trust)
+{
+    var t = in_trust.split('.');
+    var c = in_check.split('.');
+    if (t.length > c.length) {
+        return false;
+    }
+    for (var i = 0; i < t.length; i++) {
+        if (t[t.length - 1 - i] != c[c.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+function isSafeUrl(in_url)
+{
+    var e = in_url.split('/');
+    if (e[0].indexOf(':') > 0) {
+        if (e[0].indexOf('http') == 0) {
+            if (!e[2]) {
+                return false;
+            }
+            var whiteList = [
+                'cas.criteo.com',
+                'yahoo.co.jp',
+                'yimg.jp'
+            ];
+            for (var i = 0; i < whiteList.length; i++) {
+                if (isSubDomain(e[2], whiteList[i])) {
+                    return true;
+                }
+            }
+            return false;
+        } else {
+            // invalid-protocol
+            return false;
+        }
+    } else {
+        if (in_url.indexOf('//') == 0) {
+            // e.g. src="//www.example.com"
+            return false;
+        } else {
+            // relative-path
+            return true;
+        }
+    }
+}
+
+function isYjaxcQuery(in_url)
+{
+    return (in_url.indexOf('http://yjaxc.yahoo.co.jp/') === 0);
+}
+
+function bind(callback, self)
+{
+    return function() {
+        callback.apply(self, arguments);
+    };
+}
+
+var gAdController = {
+    scriptSrc : (function() {
+        /* query-string should include "src" of SCRIPT elements in order of the priority. */
+        var ret = parseQuery(location.href, false);
+        for (var i = 0; i < ret.length; i++) {
+            ret[i] = decodeURIComponent(ret[i]);
+        }
+        return ret;
+    })(),
+    replaceTarget : false,
+    passbackCount : 0,
+    printScript : function() {
+        var url = this.scriptSrc[this.passbackCount];
+        if (!url) {
+            return false;
+        }
+        if (!isSafeUrl(url)) {
+            return false;
+        }
+        document.write('<script type="text/javascript" src="' + url);
+        if (isYjaxcQuery(url)) {
+            this.replaceTarget = true;
+            document.write('" charset="' + getYjaxcEncField(url));
+        } else {
+            this.replaceTarget = false;
+        }
+        document.write('"></sc' + 'ript>');
+        return true;
+    },
+    loadHandler : function() {
+        var i;
+        if (this.replaceTarget) {
+            var links = document.getElementsByTagName('A');
+            for (i = 0; i < links.length; i++) {
+                links[i].target = '_parent';
+            }
+        }
+        if (0.01 < Math.random()) {
+            return;
+        } else {
+            var beacon = 'http://yjaxc.yahoo.co.jp/js/beacon.js';
+            var query = [];
+            var url = this.scriptSrc[this.passbackCount];
+            if (url) {
+                query.push('imps=' + window.encodeURIComponent(url));
+            } else {
+                query.push('imps=none');
+            }
+            /* to avoid cache */
+            query.push('random=' + Math.floor(Math.random() * 99999999999));
+            var script = document.createElement('SCRIPT');
+            script.src = beacon + '?' + query.join('&');
+            document.body.appendChild(script);
+        }
+    },
+    start : function() {
+        var callback = bind(this.loadHandler, this);
+        if (window.addEventListener) {
+            window.addEventListener('load', callback, false);
+        } else {
+            if (window.attachEvent) {
+                window.attachEvent('onload', callback);
+            }
+        }
+        if (!this.printScript()) {
+            this.noad();
+        }
+    },
+    passback : function() {
+        this.passbackCount++;
+        if (!this.printScript()) {
+            this.noad();
+        }
+    },
+    noad : function() {
+        if (window.parent && window.parent.postMessage) {
+            window.parent.postMessage(location.href, '*');
+        }
+    }
+};
+
+/* for compatibility !! */
+var gCRITEO = gAdController;
+
+</script>
+<script type="text/javascript">
+
+gAdController.start();
+
+</script>
+</div>
+</body>
+</html>

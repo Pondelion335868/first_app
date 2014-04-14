@@ -1,0 +1,7 @@
+run_im で起動される ibus 用のスクリプト。
+run_im で起動される auto 用のスクリプト。
+run_im で起動される default 用のスクリプト。
+init: gnome-settings-daemon main プロセスが終了しました、再生成しています
+init: gnome-settings-daemon プロセス main (30625) はシグナル TERM でkillされました
+init: unity-panel-service main プロセス (1746) はステータス 1 で終了しました
+init: gnome-session main プロセス (1740) はステータス 1 で終了しました

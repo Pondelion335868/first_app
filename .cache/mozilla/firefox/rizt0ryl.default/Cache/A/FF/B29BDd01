@@ -1,0 +1,810 @@
+// //////////////////////////////////////////
+// //////////////////////////////////////////
+// ==========================================
+// ==========================================
+// 
+// common.js
+//
+// --設定
+// --初期動作
+// --リンク設定
+// --スクロール
+// --IE判定
+// --ロールオーバー設定
+// --訪問者ナビ 一部コピー
+// --スマホナビゲーションコピー
+// --ソーシャルボタンコピー
+// --スマホナビゲーションコピー
+// --デバイスモード設定
+// --グローバルナビ設定
+// --スマホ：トップに戻る
+//
+// ==========================================
+// ==========================================
+// //////////////////////////////////////////
+// //////////////////////////////////////////
+
+
+// ==========================================
+// ==========================================
+// 設定
+// ==========================================
+// ==========================================
+
+
+// オブジェクトの作成
+var __resobj = {
+	
+	PAGEMAX       : 980,// サイトの最大幅
+	TABRETMAX     : 800,// タブレットのMAXサイズ
+	SMARTMAX_L    : 640,// スマホ（大）のMAXサイズ
+	SMARTMAX      : 480,// スマホのMAXサイズ
+	mode          : "",// デバイス（pc,tablet,smart）
+	pageDifferent : 0,// サイズ差分
+	ie8Flag       : false,//IE8以下のフラグ
+	android       : false//androidのフラグ
+	
+}
+
+
+
+// ==========================================
+// ==========================================
+// 初期動作
+// ==========================================
+// ==========================================
+
+
+$(function(){
+	
+	// リンク設定
+	//__resobj.linkSetting();
+	
+	// スクロール
+	__resobj.anchorScroll();
+	
+	// IE判定
+	__resobj.ie8Flag = __resobj.ieJudge();
+	
+	// Android判定
+	__resobj.android = __resobj.androidJudge();
+	
+	// デバイス設定
+	__resobj.windowSet();
+	
+	// ロールオーバー設定
+	__resobj.imgRollOver();
+	
+	// 訪問者ナビ 一部コピー
+	__resobj.targetNaviPartsCopy();
+	
+	// 選択言語コピー
+	__resobj.langCopy();
+	
+	// 言語切り替え
+	__resobj.langSelect();
+	
+	// スマホナビゲーションコピー
+	__resobj.spNaviCopy();
+	
+	// ソーシャルボタンコピー
+	__resobj.socialCopy();
+		
+	// 各グローバルメニュー
+	var globalMenu;
+	globalMenu = new globalMenuSet();
+	
+	// スマホ：トップに戻る
+	var spTopButton;
+	spTopButton = new spTopButtonSet();	
+	spTopButton.init();
+	
+	// 各要素初期設定
+	globalMenu.init();
+	
+	// ------------------------------------------
+	// リサイズ時
+	// ------------------------------------------
+	
+	$(window).resize(function(e){
+		
+		// デバイス設定
+		__resobj.windowSet();
+		
+		// 各要素再設定
+		reSizeSet();
+		
+	});
+	
+	// ------------------------------------------
+	// 各要素再設定
+	// ------------------------------------------
+	
+	function reSizeSet(){
+	
+		if(__resobj.mode == "pc"){
+			
+			// PCの場合
+			globalMenu.unInit();
+			spTopButton.unInit();
+			
+		}else if(__resobj.mode == "tablet"){
+			
+			// タブレットの場合
+			globalMenu.unInit();
+			spTopButton.init();
+			
+		}else if(__resobj.mode == "smart_large"){
+			
+			// スマホ（大）の場合
+			spTopButton.init();
+			
+		}else{
+			
+			// スマホの場合
+			spTopButton.init();
+			
+		}
+		
+	}
+	
+});
+	
+// ==========================================
+// ==========================================
+// リンクセッティング
+// ==========================================
+// ==========================================
+
+__resobj.linkSetting = function(){
+	
+	var localPath = "/lab/responsive_test";
+	
+	$('#header a, #footerNavi a').each(function() {
+			var linkhref= $(this).attr("href");
+			
+			if(linkhref.charAt(0) == "/"){
+				linkhref = localPath + linkhref;
+				$(this).attr("href", linkhref);
+			}
+	});
+	
+	/* サイドナビがある場合 */
+	if($('#sideNavi')){
+		$('#sideNavi a').each(function() {
+			var linkhref= $(this).attr("href");
+			
+			if(linkhref.charAt(0) == "/"){
+				linkhref = localPath + linkhref;
+				$(this).attr("href", linkhref);
+			}
+		});
+	}
+	
+}
+
+// ==========================================
+// ==========================================
+// スクロール
+// ==========================================
+// ==========================================
+
+__resobj.anchorScroll = function(){
+	
+	$('a[href^=#]').click(function() {
+			var speed = 500;
+			var href= $(this).attr("href");
+			var target = $(href == "#" || href == "" ? 'html' : href);
+			var position = target.offset().top;
+			$($.browser.safari ? 'body' : 'html').animate({scrollTop:position}, speed, 'easeInOutQuart');
+			return false;
+	});
+	
+}
+
+
+
+// ==========================================
+// ==========================================
+// IE判定
+// ==========================================
+// ==========================================
+
+__resobj.ieJudge = function(){
+	
+	var userAgent = window.navigator.userAgent.toLowerCase();
+	var appVersion = window.navigator.appVersion.toLowerCase();
+
+	if (userAgent.indexOf("msie") != -1) {
+		if (appVersion.indexOf("msie 6.") != -1) {
+			return true;
+		} else if (appVersion.indexOf("msie 7.") != -1) {
+			return true;
+		} else if (appVersion.indexOf("msie 8.") != -1) {
+			return true;
+		} 
+	}
+	
+}
+
+// ==========================================
+// ==========================================
+// Android判定
+// ==========================================
+// ==========================================
+
+__resobj.androidJudge = function(){
+	
+	var userAgent = window.navigator.userAgent.toLowerCase();
+	var appVersion = window.navigator.appVersion.toLowerCase();
+	
+	if(userAgent.indexOf("Android") != -1 || userAgent.indexOf("android") != -1){
+		return true;
+	}
+	
+}
+
+
+// ==========================================
+// ==========================================
+// ロールオーバー設定
+// ==========================================
+// ==========================================
+
+__resobj.imgRollOver = function(){
+        
+	var allImg = document.getElementsByTagName("img");
+	var allInput = document.getElementsByTagName("input");
+	
+	// img要素の定義
+	
+	for(var i=0; i < allImg.length; i++) {
+		if(allImg[i].className.indexOf("imgover") >= 0){
+			try{
+				// ie以外
+				
+				allImg[i].addEventListener("mouseover", mouseOver,false);
+				allImg[i].addEventListener("mouseout", mouseOut,false);
+			}catch(e){
+				// ie
+				allImg[i].attachEvent("onmouseover",mouseOver);
+				allImg[i].attachEvent("onmouseout",mouseOut);
+			}
+		}
+	}
+	
+	// input要素の定義
+	
+	for(var i=0; i < allInput.length; i++) {
+		if(allInput[i].className.indexOf("imgover") >= 0){
+			try{
+			
+				// ie以外
+				
+				allInput[i].addEventListener("mouseover", mouseOver,false);
+				allInput[i].addEventListener("mouseout", mouseOut,false);
+			}catch(e){
+				
+				// ie
+				
+				allInput[i].attachEvent("onmouseover",mouseOver);
+				allInput[i].attachEvent("onmouseout",mouseOut);
+			}
+		}
+	}
+	
+	/* マウスオーバー */
+	
+	function mouseOver(evt){    
+		var e_target = evt.srcElement || evt.target;
+		imgSrcChange(e_target);
+	}
+	
+	/* マウスアウト */
+	
+	function mouseOut(evt){
+		var e_target = evt.srcElement || evt.target;
+		imgSrcChange(e_target);
+	}
+	
+	function imgSrcChange(thisimg){
+		var imgsrc = thisimg.src;
+		var ext = imgsrc.substring(imgsrc.lastIndexOf("."), imgsrc.length);
+
+		// 画像名に「-on」「-zai」が含まれていない場合
+		
+		if(imgsrc.indexOf("-on") < 0 && imgsrc.indexOf("-zai") < 0){
+			thisimg.src = imgsrc.substring(0,imgsrc.length-ext.length) + "-on" + ext;
+		}
+		// 画像名に「-on」が含まれている場合
+		
+		else if(imgsrc.indexOf("-on") > 0){
+			thisimg.src = imgsrc.substring(0,imgsrc.length-ext.length-3) + ext;
+		}
+	}
+    
+} 
+
+// ==========================================
+// ==========================================
+// 訪問者ナビ 一部コピー
+// ==========================================
+// ==========================================
+
+__resobj.targetNaviPartsCopy = function(){
+	 
+	 // 各ナビの取得
+	 var targetNavi1 = $("#targetNavi li.headNavi1,#targetNavi li.headNavi2").clone();
+	 
+	 // 指定したエレメントの内部に書き込み
+	 $("#headerNavi > ul").append(targetNavi1);
+	 
+}
+
+// ==========================================
+// ==========================================
+// スマホナビゲーションコピー
+// ==========================================
+// ==========================================
+
+__resobj.spNaviCopy = function(){	
+	 
+	 // 各ナビの取得
+	 var targetNavi = $("#targetNavi").clone();
+	 var globalNavi = $("#globalNavi").clone();
+	 
+	 // 指定したエレメントの内部に書き込み
+	 $("#spGlobal .wrapper").append(targetNavi).append(globalNavi);
+	 
+}
+
+
+// ==========================================
+// ==========================================
+// ソーシャルボタンコピー
+// ==========================================
+// ==========================================
+
+__resobj.socialCopy = function(){
+	 
+	 // 各ソーシャルナビの取得
+	 var facebook = $("#headerNavi .social1").clone();
+	 var twitter = $("#headerNavi .social2").clone();	 
+	 
+	 $("#logoArea").append("<ul></ul>");
+	 $("#logoArea ul").append(facebook).append(twitter);
+	 
+}
+
+
+// ==========================================
+// ==========================================
+// 選択言語コピー
+// ==========================================
+// ==========================================
+
+__resobj.langCopy = function(){
+	
+ // 選択言語の取得
+ var target = $("#langSelect ul").clone();
+	
+ // 指定したエレメントの内部に書き込み
+ $("#splangNavi").append(target);
+	 
+}
+
+
+// ==========================================
+// ==========================================
+//  言語切り替え
+// ==========================================
+// ==========================================
+
+__resobj.langSelect = function(){
+	
+	var clickjudge = false;
+	
+	//リンクボタン
+	var $langBt = $("#langSelectSet .btlang");
+	
+	//言語選択領域全体の取得
+	var langElement = document.getElementById("langSelectSet");
+	var langSelectElement = document.getElementById("langSelect");  
+	
+	try{
+		//ie以外
+		langElement.addEventListener("click", mouseClick,false);
+	}catch(e){
+		//ie
+		langElement.attachEvent("onclick",mouseClick);
+	}
+	
+	/* マウスオーバー */
+	function mouseClick(evt){
+		
+		if(!clickjudge && __resobj.mode != "smart"){
+			
+			//判定に書き込み
+			clickjudge = true;
+			
+			//class追加
+			$langBt.addClass("selected");
+			
+			langSelectElement.style.display = "block";
+			
+			areaHover();
+			
+		}else{
+			
+			//判定に書き込み
+			clickjudge = false;
+			
+			//class削除
+			$langBt.removeClass("selected");
+			
+			langSelectElement.style.display = "none";
+			$("#" + "langSelectSet").unbind("mouseenter").unbind("mouseleave");
+		}
+	
+	}
+		
+	
+	function areaHover(){
+		$("#" + "langSelectSet").hover(function(){
+			
+			langSelectElement.style.display = "block";
+			
+		},function(){
+			
+			//判定に書き込み
+			clickjudge = false;
+			
+			//class削除
+			$langBt.removeClass("selected");
+			
+			langSelectElement.style.display = "none";
+			$("#" + "langSelectSet").unbind("mouseenter").unbind("mouseleave");
+			
+		})
+	}
+   
+}
+
+// ==========================================
+// ==========================================
+// デバイスモード設定
+// ==========================================
+// ==========================================
+
+__resobj.windowSet = function(){
+	
+	//ウィンドウサイズの取得
+	//var windowSize = $(window).width();
+	var windowSize = $("#container").width();
+	
+	//デバイス名の格納
+	var nowDevice;
+	
+	if(windowSize > __resobj.TABRETMAX || __resobj.ie8Flag){
+		//801px以上 ウィンドウサイズ：PC
+		nowDevice = "pc";
+	}else if( __resobj.TABRETMAX >= windowSize && windowSize > __resobj.SMARTMAX_L){
+		//800px以下 641px以上 ウィンドウサイズ：タブレット
+		nowDevice = "tablet";
+	}else if( __resobj.SMARTMAX_L >= windowSize && windowSize > __resobj.SMARTMAX){
+		//640px以下 481px以上 ウィンドウサイズ：スマートフォン（大）
+		nowDevice = "smart_large";
+	}else{
+		//ウィンドウサイズ：スマートフォン
+		nowDevice = "smart";
+	}
+	
+	//デバイスが現在と同じ場合
+	if(nowDevice != __resobj.mode){
+		__resobj.mode = nowDevice;
+	}
+	
+	//前回のウィンドウサイズと今回のサイズとの差分を計算
+	if(windowSize > __resobj.PAGEMAX){
+		__resobj.pageDifferent = windowSize - __resobj.PAGEMAX;
+	}else{
+		__resobj.pageDifferent = 0;
+	}
+	
+	/*if(nowDevice == "pc"){
+		$("#header").css("display","none");
+	}*/
+	
+}
+
+
+
+// ==========================================
+// ==========================================
+// グローバルナビ設定
+// ==========================================
+// ==========================================
+
+
+function globalMenuSet(){
+	
+	var _this = this;// this参照
+	
+	var headNaviElement = $("#headerNavi");
+	var spNaviElement = $("#spNavi");
+	
+	var spNaviArray = [];// 各スマホナビ配列格納
+	var headNaviArray = [];// 各ヘッダーナビ配列格納
+	
+	var nowSpNavi;// スマホナビの参照
+	var nowHeadNavi;// ヘッダーナビの参照
+	
+	var clickflag = false;
+	
+	var nowNum = 0;
+	
+	// ------------------------------------------
+	// 初期設定
+	// ------------------------------------------
+	
+	_this.init = function(){
+		
+		var count = 0;
+		
+		headNaviElement.find("li.resMenu").each(function() {
+			
+			headNaviArray.push($(this));
+			
+			var argumentNum = count;      
+			
+			$(this).click(function () {
+				// クリックしていない かつ スマホ表示の場合
+				if(!clickflag && __resobj.mode == "smart"){
+					_this.openMenu(argumentNum);
+				}
+
+			});
+			
+			count++;
+			
+    });
+		
+		spNaviElement.find("li.resMenu").each(function() {
+			
+      spNaviArray.push($(this));
+			
+    });
+		
+	}
+	
+	_this.openMenu = function(num){
+		
+		nowNum = num;//現在の表示ナンバー
+		
+		if(!nowHeadNavi){
+			
+			//もし何も押していなかったら
+			spNaviArray[num].slideToggle();
+			nowSpNavi = spNaviArray[num];
+			
+			nowHeadNavi = headNaviArray[num];
+			nowHeadNavi.addClass("selected");
+			
+		}
+		else if(nowSpNavi != spNaviArray[num]){
+			
+			//通常時
+			nowSpNavi.slideToggle(
+				//callback：無名関数
+				function(){
+					
+					spNaviArray[num].slideToggle();
+					nowSpNavi = spNaviArray[num];
+					
+					nowHeadNavi.removeClass("selected");
+					nowHeadNavi = headNaviArray[num];
+					nowHeadNavi.addClass("selected");
+					
+				}
+			);
+			
+		}
+		else{
+			
+			//同じボタンを押したら
+			nowSpNavi.slideToggle();
+			nowSpNavi = "";
+			
+			nowHeadNavi.removeClass("selected");
+			nowHeadNavi = "";
+			
+		}
+		
+	}
+	
+	// ------------------------------------------
+	// 解除設定
+	// ------------------------------------------
+	
+	_this.unInit = function(){
+		
+		// 各ナビの参照があれば
+		if(nowSpNavi){
+			nowSpNavi = "";
+		}
+		if(nowHeadNavi){
+			nowHeadNavi.removeClass("selected");
+			nowHeadNavi = "";
+		}
+		
+		// 各要素のスタイル削除
+		for(var i=0; i < spNaviArray.length; i++){
+			
+			var element = spNaviArray[i];
+			element.css("display","");
+			
+			
+		}
+		
+	}
+	
+}
+
+
+
+// ==========================================
+// ==========================================
+// スマホ：トップに戻る
+// ==========================================
+// ==========================================
+
+
+function spTopButtonSet(){
+	
+	var _this = this;// this参照
+	
+	var $topBtn = $('.pageTopFlow');
+	var $pageBottom = $('#pageBottom');
+	
+	var pageHeight;
+	var timer;
+	
+	var settingflag = false;
+	
+	var bottomNumSet = $pageBottom.height() + 20;
+	
+	
+	// ------------------------------------------
+	// 初期設定
+	// ------------------------------------------
+	
+	_this.init = function(){
+		
+		
+		//PC以外でie8以下でもなければ
+		if(__resobj.mode != "pc" && !__resobj.ie8Flag && !settingflag){
+			
+			settingflag = true;
+			
+			// アンドロイドなら
+			if(__resobj.android){
+				
+				// スクロール設定
+				$(window).bind("touchend",scrollFuncAndroid);
+				$(window).bind("scroll",scrollFuncAndroid);
+				
+			}else{
+				
+				$(window).bind("touchend",scrollFunc);
+				$(window).bind("scroll",scrollFunc);
+				
+				$topBtn.css({
+					"position":"fixed",
+					"z-index":"10",
+					"right":"10px",
+					"bottom":"20px"
+				});
+				
+			}
+			
+			scrollFunc();
+			
+		}else{
+			
+		}		
+		
+	}
+	
+	_this.unInit = function(){
+		
+		settingflag = false;
+		
+		$(window).unbind("touchend",scrollFuncAndroid);
+		$(window).unbind("scroll",scrollFuncAndroid);
+		$(window).unbind("touchend",scrollFunc);
+		$(window).unbind("scroll",scrollFunc);
+		
+		$topBtn.css("display","none");
+		
+	}
+	
+	// ------------------------------------------
+	// スクロール設定
+	// ------------------------------------------
+	function scrollFunc(){
+		
+		pageHeight = window.innerHeight ? window.innerHeight : $(window).height();
+		var bottomPos = $pageBottom.offset().top;
+		var bottomNum = bottomPos - pageHeight + bottomNumSet;
+		var scrollPos = pageHeight + $(this).scrollTop() - 40;
+		
+		if ($(this).scrollTop() > 1 && $(this).scrollTop() < bottomNum) {
+			
+			$topBtn.css({
+				"position":"fixed",
+				"top":"auto",
+				"bottom":"20px",
+				"display":"block"
+			});
+			
+		}else{
+			
+			$topBtn.css({
+				"position":"absolute",
+				"top":bottomPos + "px",
+				"bottom":"auto",
+				"display":"block"
+			});
+			
+		}
+		
+		if ($(this).scrollTop() == 0){
+			
+			$topBtn.css({
+				"display":"none"
+			});
+			
+		}
+		
+	}
+	
+	// ------------------------------------------
+	// スクロール設定
+	// ------------------------------------------
+	function scrollFuncAndroid(){
+		
+		pageHeight = window.innerHeight ? window.innerHeight : $(window).height();
+		var bottomPos = $pageBottom.offset().top;
+		var bottomNum = $pageBottom.offset().top - pageHeight + bottomNumSet;
+		var scrollPos = pageHeight + $(this).scrollTop() - 40;
+		
+		if ($(this).scrollTop() > 1 && $(this).scrollTop() < bottomNum) {
+			
+			$topBtn.css("display","block");
+			$topBtn.css("top",scrollPos + "px");
+			
+		}else{
+			
+			$topBtn.css("display","block");
+			$topBtn.css("top",bottomPos + "px");
+			
+		}
+		
+		if ($(this).scrollTop() == 0){
+			
+			$topBtn.css({
+				"display":"none"
+			});
+			
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+

@@ -1,0 +1,1474 @@
+/*
+DO NOT MODIFY THIS DOCUMENT.  IT WILL BE OVERWRITTEN DURING UPGRADES.
+
+This is the style sheet for this deployment - it provides the default styles.
+You can override these styles by editing customStyle.css, which is
+in the same directory as this file.
+
+Commonly overridden styles are commented... see those comments
+for details.
+*/
+
+/*
+Defines the location and size of the image that is used in
+the header of the pages in the admin application.  To change
+the image location, COPY this style into the customStyle.css
+document, and then edit them in that document.
+
+The styles found there will override these. This will make it
+clear during upgrades what is a modification and what is not.
+
+Typically, you will change the name of the image file, and you
+must specify the size of the image in pixels.
+
+If you don't specify the background-color - this will pick up
+the color in .header.
+*/
+td.admin_header_image {
+    background-image: url("../images/IdentityManager.gif");
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 380px;
+}
+
+/*
+See the comments on td.admin_header_image.
+This style controls the header in the end user application.
+Use this to specify the location and size of the of the image in the header.
+*/
+td.user_header_image {
+    background-image: url("../images/IdentityManager.gif");
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 380px;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #000000;
+	padding-top: 10px;
+}
+
+.title b {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #000000;
+}
+
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.availablenavbutton {
+	/*
+    text-align: left;
+    background-color: #71838D;
+    */
+	background-image: url(../images/tabs/level1_background.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #D2D9E1;
+}
+
+.availablenavtxt,
+A.availablenavtxt:link,
+A.availablenavtxt:visited,
+A.availablenavtxt:hover,
+A.availablenavtxt:active {
+	/*
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+	background: #71838D;
+	text-decoration: none;
+	*/
+	color: #000000;
+	font-weight: bold;
+	cursor: default;
+	display: block;
+	text-decoration: none;
+	border:  none;
+	margin: 0px;
+	padding: 3px;
+	white-space: nowrap;
+}
+
+.loginwarntext {
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.currentnavbutton {
+	/*
+    text-align: left;
+    background-color: #BEC7CC;
+    */
+	line-height: 1em;
+	background-image:url(../images/tabs/level3_selected.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#F2F4F3;
+	border-left:solid 1px #8f989f;
+	border-right:solid 1px #8f989f;
+	border-top:solid 1px #8f989f;
+	border-bottom:none;
+	margin-left: 1px;
+	margin-top: 2px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	left: 0px;
+	padding: 2px 2px 3px 3px;
+}
+
+.currentnavtxt,
+A.currentnavtxt:link,
+A.currentnavtxt:visited,
+A.currentnavtxt:hover,
+A.currentnavtxt:active {
+	/*
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+    text-decoration: none;
+    */
+	color: #000000;
+	font-weight: bold;
+	cursor: default;
+	display: block;
+	text-decoration: none;
+	border:  none;
+	margin: 0px;
+	padding: 3px;
+	white-space: nowrap;
+}
+
+.help:link,
+A.help:visited,
+A.help:hover,
+A.help:active {
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;   
+    text-align: right;
+}
+
+/*
+Override this in customStyle.css to specify the background color
+of the header in the user and admin applications.
+*/
+.header {
+    background-color: #ACACAC;
+}
+
+/*
+Override this in customStyle.css to specify the background color
+of the footer in the user and admin applications.
+*/
+.footer {
+    background-color: #FFF;
+}
+
+.internationalFlags {
+        background-color: #ACACAC;
+        text-align: center;
+}
+
+.international:link,
+A.international:visited,
+A.international:hover,
+A.international:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.mainbackground {
+        background-color: #FFFFFF;
+		margin: 0;
+}
+
+.mainbody {
+        vertical-align: top;
+    	text-align: left;
+		padding-left: 10px;
+		padding-right: 10px;
+}
+
+.tablehdr {
+	border-right:solid 1px #BEC7CC;
+	border-bottom:solid 1px #BEC7CC;
+	border-left:none;
+	border-top:solid 1px #EFEFEF;
+	background-image:url(../images/table/gradtblhdr.gif);
+	background-repeat:repeat-x;
+	background-color:#fff;
+	background-position:left bottom;
+	text-align:left;
+	color:#333;
+	text-decoration:none;
+	font-weight:bold;
+	padding:4px 5px 3px;
+	min-height:12px
+}
+
+.tablesorthdr {
+	padding:0px;
+	border:1px solid #81939B;
+	background-image:url(../images/table/gradtblhdrsrt.gif);
+	background-repeat:repeat-x;
+	background-color:#E2E4E9;
+	background-position:left top
+}
+
+.tablehdrtxt a.available:link {
+	background:none;
+	display:block;
+	text-align:left;
+	color:#333;
+	text-decoration:none;
+	font-weight:bold;
+	padding:3px 0px 3px 5px
+}
+
+.tablehdrtxt a.available:visited {
+	background:none;
+	display:block;
+	text-align:left;
+	color:#333;
+	text-decoration:none;
+	font-weight:bold;
+	padding:3px 0px 3px 5px
+}
+
+.tablehdrtxt a.available:hover {
+	color:#333;
+	text-decoration:underline;
+	text-align:left;
+	font-weight:bold
+}
+
+.tablesorthdrtxt a.current:link {
+	background:none;
+	display:block;
+	text-align:left;
+	color:#333;
+	text-decoration:none;
+	font-weight:bold;
+	padding:3px 0px 3px 5px
+}
+
+.tablesorthdrtxt a.current:visited {
+	background:none;
+	display:block;
+	text-align:left;
+	color:#333;
+	text-decoration:none;
+	font-weight:bold;
+	padding:3px 0px 3px 5px
+}
+
+.tablesorthdrtxt a.current:hover {
+	color:#333;
+	text-decoration:underline;
+	text-align:left;
+	font-weight:bold
+}
+
+.tablebody {
+    background-color: #F9F9F9;
+	border: 1px solid #BEC7CC;
+}
+
+.tablebodytxt {
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.tablebodytxtwrap {
+    font-family: arial, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.txt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.warningtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #ff0000;
+}
+
+.errortxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #ff0000;
+}
+
+.formtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.formbutton {
+    font-size: 9pt;
+    FONT-WEIGHT: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formtitles {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+    font-weight: normal;
+}
+
+.formoddrow {
+    background-color: #F4F4F4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.formevenrow {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.formsectionhead {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #000000;
+}
+
+.formsectionhead12 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #000000;
+}
+
+.darkgray {
+    background-color: #CCCCCC;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+}
+
+.ltgray {
+    background-color: #F4F4F4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.medgray {
+    background-color: #C2C2C2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+
+.hlpFldTxt {font-size:10px;color:#333}
+
+.pwchanges {
+        COLOR: #009000; CURSOR: pointer; CURSOR: hand; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px
+; PADDING-LEFT: 20px
+}
+
+
+.pwreset {
+        COLOR: #336699; CURSOR: pointer; CURSOR: hand; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px
+; PADDING-LEFT: 20px
+}
+
+.acctgens {
+        COLOR: #690931; CURSOR: pointer; CURSOR: hand; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; PADDING-LEFT: 20px
+}
+
+.clsdiv {
+   FONT-FAMILY: Arial,Helvetica; LEFT: 0px; POSITION: absolute; TOP: 0px; WIDTH: 100%
+}
+
+.clsbs {
+        COLOR: #333; CURSOR: hand; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 5px; PADDING-LEFT: 20px
+}
+
+.smblack {COLOR: black; FONT-FAMILY: Arial, Helvetica; FONT-SIZE: 11px;}
+
+.speedbtns {COLOR: #000000; FONT-FAMILY: Arial, Helvetica; FONT-WEIGHT: bold; FONT-SIZE: 9px;}
+
+.visible { visibility: visible; }
+.invisible { visibility: hidden; }
+
+.title1 {
+    font: bold 16pt helvetica, sans-serif;
+}
+.title2 {
+    font: bold 16pt helvetica, sans-serif;
+}
+.sec1 {
+    font: bold 14pt helvetica, sans-serif;
+}
+.sec2 {
+    font: bold 12pt helvetica, sans-serif;
+}
+.sec3 {
+    font: bold 10pt helvetica, sans-serif;
+}
+.sec4 {
+    font: bold 8pt helvetica, sans-serif;
+}
+
+ul.cshelp {
+    list-style: inside; list-style-position: inside; padding-left: 0px; margin-left: 0px;
+}
+
+div.fileinputs {
+	position: relative;
+	height: 30px;
+	width: 300px;
+}
+
+input.file {
+	width: 300px;
+	margin: 0;
+}
+
+/* Multivalued Text Component */
+li.mulValLi {list-style-type: none; padding-top: .2em; padding-bottom: .2em}
+ul.mulValUl ul.mulValUl li.mulValLi {list-style-type: none; padding-top: .2em; padding-bottom: .2em}
+input.mulVal {margin-left: 0px}
+
+li.mulValLi input.mulVal {margin-left: 0px}
+ul.mulValUl {padding: 0px;margin: 0px}
+li.mulValLi img.mulValWid {vertical-align: middle}
+a.mulValAdd {
+    background: url(../images/add.gif) no-repeat 0em -.2em;
+    padding-left: 19px;
+    padding-top: 2px;
+    padding-bottom: 2px
+}
+a.mulValRem {
+    background: url(../images/remove.gif) no-repeat 0em -.2em;
+    padding-left: 19px;
+    padding-top: 2px;
+    padding-bottom: 2px
+}
+a.mulValMvUp {
+    background: url(../images/moveUp.gif) no-repeat 0em -.2em;
+    padding-left: 19px;
+    padding-top: 2px;
+    padding-bottom: 2px
+}
+a.mulValMvDn {
+    background: url(../images/moveDown.gif) no-repeat 0em -.2em;
+    padding-left: 19px;
+    padding-top: 2px;
+    padding-bottom: 2px
+}
+input.mulValAdd {
+    background: url(../images/add.gif) no-repeat 0em -.2em;
+    padding-left: 19px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none 0px;
+    color:#3A2EB5;
+    text-decoration:none
+}
+input.mulValRem {
+    background: url(../images/remove.gif) no-repeat 0em -.2em;
+    padding-left: 19px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none 0px;
+    color:#3A2EB5;
+    text-decoration:none
+}
+
+/* Tabbed Panel */
+table.tabtabledep td {
+  background: url(../images/dot2x2.gif) repeat-x 0px 9px;
+}
+
+table.tabtabledep td.tabtableselectdep {
+  background-image: none;
+  padding-left: 2px;
+  padding-right: 2px
+}
+
+table.tabtable td {
+  background: none;
+}
+
+td.tabtableselect {
+    background-image: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:#FFF;
+    border-bottom:none;
+    border-left:solid 1px #8F989F;
+    border-top:solid 1px #8F989F;
+    border-right:solid 1px #8F989F;
+}
+td.tabtableselect select {
+    background-image:url(../images/tabs/level2_deselect.jpg);
+    background-repeat:repeat-x;
+    background-position:left top;
+    background-color:#C4CBD1;
+    border:solid 1px #8f989f;
+    margin-bottom: 5px;
+    padding:1px;
+}
+table.tabtablecontent {
+    background-color:#FFF;
+    color:#333;
+    border-top:none;
+    border-left: solid #ACACAC 2px;
+    border-right: solid #ACACAC 2px;
+    border-bottom: solid #ACACAC 2px;
+    padding: 10px;
+}
+textarea.readonly {
+	font-family: monospace;
+    border:none;
+    padding: 8px;
+}
+textarea {
+  	font-family: monospace;
+	font-size: 14px;
+}
+
+/******************************************
+**
+**  PRIMARY NAVIGATION BAR - DROP-DOWN MENUS
+**
+**  THE FOLLOWING STYLES SUPPORT BUG# 11077
+**
+**  Some of the background images seem
+**  to cause performance issues with Internet
+**  Explorer.  Uncomment with caution.
+**
+******************************************/
+.MstNav { 
+	background-image: url(../images/tabs/level1_background.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	background-color: #D2D9E1;
+}
+
+div#PriNav {
+	position: relative;
+	font: bold 0.95em sans-serif;
+}
+div#PriNav ul {
+	margin: 0; 
+	padding: 0 0 0 5px;
+}
+
+div#PriNav ul.NavLvl2 {
+	top: 1.8em; 
+	left: -1px;
+}
+
+div#PriNav ul.NavLvl3 {
+	top: -1px; 
+	left: 7em;
+}
+
+div#PriNav li {
+	list-style: none;  
+	line-height: 1em;
+	background-color: transparent;
+	cursor: default;
+	left: 0px;
+	padding: 2px 2px 3px 3px;
+	position: relative;
+	top: 0px;
+	border:  0;
+	margin-left: 2px;
+	margin-top: 3px;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	float: left;
+}
+
+div#PriNav li a {
+	color: #000000;
+	cursor: default;
+	display: block;
+	text-decoration: none;
+	border:  none;
+	margin: 0px;
+	padding: 2px 2px 3px 3px;
+}
+
+/* For Internet Explorer */
+div#PriNav ul.NavLvl2 a, ul.NavLvl3 a {
+  	width: 13em;
+}
+
+/*
+	Ignored by Internet Explorer -
+	NOTE: Must follow the above style.
+*/
+div#PriNav>ul a {
+	width: auto;
+	display: block;
+}
+
+div#PriNav li:hover {
+	line-height: 1em;
+	/*background-image:url(../images/tabs/level3_selected.jpg);*/
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#F2F4F3;
+	border-left:solid 1px #8f989f;
+	border-right:solid 1px #8f989f;
+	border-top:solid 1px #8f989f;
+	border-bottom:none;
+	margin-left: 1px;
+	margin-top: 2px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	left: 0px;
+	padding: 2px 2px 3px 4px;
+}
+
+/* 
+	Reset left padding -
+	ignored by Internet Explorer 
+*/
+div#PriNav>ul li:hover {
+	padding-left: 3px;
+}
+
+div#PriNav li.NavCurrent {
+	line-height: 1em;
+	background-image:url(../images/tabs/level3_selected.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#F2F4F3;
+	border-left:solid 1px #8f989f;
+	border-right:solid 1px #8f989f;
+	border-top:solid 1px #8f989f;
+	border-bottom:none;
+	margin-left: 1px;
+	margin-top: 2px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	left: 0px;
+	padding: 2px 2px 3px 3px;
+}
+
+div#PriNav li.SubNavCurrent {
+	line-height: 1em;
+	/*background-image:url(../images/tabs/level3_selected.jpg);*/
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#F2F4F3;
+	border-left:solid 1px #8f989f;
+	border-right:solid 1px #8f989f;
+	border-top:solid 1px #8f989f;
+	border-bottom:none;
+	margin-left: 1px;
+	margin-top: 2px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	left: 0px;
+	padding: 2px 2px 3px 3px;
+}
+
+div#PriNav li.SubNav:hover, li.SubNavCurrent:hover {
+	line-height: 1em;
+	/*background-image:url(../images/tabs/level3_selected.jpg);*/
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#F2F4F3;
+	border-left:solid 1px #8f989f;
+	border-right:solid 1px #8f989f;
+	border-top:solid 1px #8f989f;
+	border-bottom:none;
+	margin-left: 1px;
+	margin-top: 2px;
+	margin-right: 1px;
+	margin-bottom: 0px;
+	padding: 2px 2px 3px 3px;
+}
+
+div#PriNav ul ul {
+	display: none;
+	position: absolute;  
+  	/*background-image:url(../images/tabs/level1_background.jpg);*/
+  	background-repeat:repeat-x;
+  	background-position:left bottom;
+  	background-color:#D2D9E1;
+  	border: 2px outset #e0e0e0;
+  	left: 0px;
+  	padding: 0px 1px 1px 0px;
+  	top: 0px;
+  	width: 14em;
+  	z-index: 1000;
+}
+
+div#PriNav ul ul li {
+	width: 13em;
+}
+
+div#PriNav ul.NavLvl1 li.SubNav:hover ul.NavLvl2,
+div#PriNav ul.NavLvl1 li.SubNavCurrent:hover ul.NavLvl2, 
+div#PriNav ul.NavLvl2 li.SubNav:hover ul.NavLvl3,
+div#PriNav ul.NavLvl2 li.SubNavCurrent:hover ul.NavLvl3 {
+	display:block;
+}
+
+/******************************************
+**
+**  PRIMARY NAVIGATION BAR - LOCKHART TABS
+**
+**  THE FOLLOWING STYLES SUPPORT BUG# 11077
+**
+******************************************/
+
+/* LEVEL 1 TABS */
+.TabLvl1Div {
+	background-image:url(../images/tabs/level1_background.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#D2D9E1;
+	padding:6px 10px 0px;
+} 
+a.TabLvl1Lnk:link, a.TabLvl1Lnk:visited  {
+	display:block;
+	padding:4px 10px 3px;
+	font: bold 0.95em sans-serif;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+}
+a.TabLvl1Lnk:hover {
+	text-decoration:underline;
+}
+table.TabLvl1Tbl {
+	border-collapse:collapse;
+}
+table.TabLvl1Tbl td {
+	background-image:url(../images/tabs/level1_deselect.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	background-color:#A3ADB6;
+	border:solid 1px #8f989f;
+}
+table.TabLvl1Tbl td.TabLvl1TblSelTd {
+	background-color:#E4ECEF;
+	background-image:url(../images/tabs/level1_selected.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	border-bottom:none;
+}
+
+/* LEVEL 2 TABS */
+.TabLvl2Div {
+	background-image:url(../images/tabs/level2_background.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#E2EAED;
+	padding:6px 0px 0px 10px
+}
+a.TabLvl2Lnk:link, a.TabLvl2Lnk:visited{
+	display:block;
+	padding:3px 6px 2px;
+	font: 0.8em sans-serif;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+}
+a.TabLvl2Lnk:hover {
+	text-decoration:underline;
+}
+table.TabLvl2Tbl {
+	border-collapse:collapse;
+}
+table.TabLvl2Tbl div.TabLvl2SelTxt {
+	display:block;
+	padding:3px 6px 2px;
+	font: 0.8em sans-serif;
+	color:#000;
+	font-weight:normal;
+	text-align:center;
+}
+table.TabLvl2Tbl td {
+	background-image:url(../images/tabs/level2_deselect.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	background-color:#C4CBD1;
+	border:solid 1px #8f989f;
+}
+table.TabLvl2Tbl td.TabLvl2TblSelTd {
+	border-bottom:none;
+	background-image:url(../images/tabs/level3_selected.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#F2F4F3;
+	border-left:solid 1px #8f989f;
+	border-right:solid 1px #8f989f;
+	border-top:solid 1px #8f989f;
+}
+
+/******************************************
+**
+**  PRIMARY NAVIGATION BAR - LOCKHART TABS
+**
+**  THE FOLLOWING STYLES SUPPORT BUG# 11077
+**
+******************************************/
+
+/* USER LEVEL 1 TABS */
+.UserTabLvl1Div {
+	background-image:url(../images/tabs/level1_background.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#D2D9E1;
+	padding:6px 10px 0px;
+} 
+a.UserTabLvl1Lnk:link, a.UserTabLvl1Lnk:visited  {
+	display:block;
+	padding:5px 11px 4px;
+	font: bold 1em sans-serif;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+}
+a.UserTabLvl1Lnk:hover {
+	text-decoration:underline;
+}
+table.UserTabLvl1Tbl {
+	border-collapse:collapse;
+}
+table.UserTabLvl1Tbl td {
+	background-image:url(../images/tabs/level1_deselect.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	background-color:#A3ADB6;
+	border:solid 1px #8f989f;
+}
+table.UserTabLvl1Tbl td.UserTabLvl1TblSelTd {
+	background-color:#E4ECEF;
+	background-image:url(../images/tabs/level1_selected.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	border-bottom:none;
+}
+
+/* LEVEL 2 TABS */
+.UserTabLvl2Div {
+	background-image:url(../images/tabs/level2_background.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#E2EAED;
+	padding:6px 0px 0px 10px
+}
+a.UserTabLvl2Lnk:link, a.UserTabLvl2Lnk:visited{
+	display:block;
+	padding:4px 7px 3px;
+	font: 1em sans-serif;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+}
+a.UserTabLvl2Lnk:hover {
+	text-decoration:underline;
+}
+table.UserTabLvl2Tbl {
+	border-collapse:collapse;
+}
+table.UserTabLvl2Tbl div.UserTabLvl2SelTxt {
+	display:block;
+	padding:4px 7px 3px;
+	font: 1em sans-serif;
+	color:#000;
+	font-weight:normal;
+	text-align:center;
+}
+table.UserTabLvl2Tbl td {
+	background-image:url(../images/tabs/level2_deselect.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	background-color:#C4CBD1;
+	border:solid 1px #8f989f;
+}
+table.UserTabLvl2Tbl td.UserTabLvl2TblSelTd {
+	border-bottom:none;
+	background-image:url(../images/tabs/level2_selected.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#F2F4F3;
+	border-left:solid 1px #8f989f;
+	border-right:solid 1px #8f989f;
+	border-top:solid 1px #8f989f;
+}
+
+/* LEVEL 3 TABS */
+.UserTabLvl3Div {
+	background-image:url(../images/tabs/level2_background.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#E2EAED;
+	padding:6px 0px 0px 10px
+}
+a.UserTabLvl3Lnk:link, a.UserTabLvl3Lnk:visited{
+	display:block;
+	padding:4px 7px 3px;
+	font: 0.85em sans-serif;
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+}
+a.UserTabLvl3Lnk:hover {
+	text-decoration:underline;
+}
+table.UserTabLvl3Tbl {
+	border-collapse:collapse;
+}
+table.UserTabLvl3Tbl div.UserTabLvl3SelTxt {
+	display:block;
+	padding:4px 7px 3px;
+	font: 0.85em sans-serif;
+	color:#000;
+	font-weight:normal;
+	text-align:center;
+}
+table.UserTabLvl3Tbl td {
+	background-image:url(../images/tabs/level3_deselect.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	background-color:#E2E7EA;
+	border:solid 1px #8f989f;
+}
+table.UserTabLvl3Tbl td.UserTabLvl3TblSelTd {
+	border-bottom:none;
+	background-image:url(../images/tabs/level3_selected.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#F2F4F3;
+	border-left:solid 1px #8f989f;
+	border-right:solid 1px #8f989f;
+	border-top:solid 1px #8f989f;
+}
+
+/******************************************
+**
+**  PARENTAGE PATH
+**
+**  THE FOLLOWING STYLES SUPPORT BUG# 11077
+**
+******************************************/
+
+div#ParPth {
+	margin-top: 20px;
+	margin-left: 0px;
+	left: 0px;
+	padding: 0px;
+}
+
+div#ParPth ul {
+	margin: 0px;
+	padding-left: 10px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+div#ParPth li {
+	list-style: none;
+	float: left;
+	color: #999;
+	font-size: 0.95em;
+}
+
+div#ParPth li a {
+	font-size: 0.95em;
+}
+
+/******************************************
+**
+**  ADMIN LOGIN FORM
+**
+**  THE FOLLOWING STYLES SUPPORT BUG# 11077
+**
+******************************************/
+
+div#loginFormDiv {
+	background: url(../images/other/login-backimage.jpg) no-repeat;
+	margin-left: -10px;
+	padding: 0px 10px 0px 280px;
+	height: 435px;
+}
+
+div#loginFormTxtDiv {
+	position: relative;
+	padding: 50px 0 0 0;
+}
+
+/******************************************
+**
+**  MASTHEAD STYLES
+**
+**  THE FOLLOWING STYLES SUPPORT BUG# 11077
+**
+******************************************/
+
+td.MstTblEndImg {
+	background: url(../images/masthead/masthead-sunname.gif) no-repeat right;
+}
+
+td.MstTdLogo {
+	width: 31px;
+	height: 55px;
+	background: url(../images/other/javalogo.gif) no-repeat 5px;
+}
+
+td.MstTdSep {
+	width: 1px;
+	height: 61px;
+	background: url(../images/masthead/statusarea-separator.jpg) no-repeat center;
+}
+
+td.MstTdTtlProdNam {
+	background: url(../images/ProductName.gif) no-repeat 10px 30px;
+	padding:10px 10px 0px 10px;
+	vertical-align:top;
+	white-space:nowrap;
+	height: 75px;
+	width: 350px;
+}
+
+a.MstI18NLnk:link, 
+a.MstI18NLnk:visited {
+	color:#eef0f2;
+	text-decoration:none;
+}
+
+a.MstI18NLnk:hover {
+	text-decoration:underline;
+}
+
+span.MstI18NLnk {
+  	color: #eef0f2;
+}
+
+
+/******************************************
+**
+**  TAB PANEL STYLES
+**
+**  THE FOLLOWING STYLES SUPPORT BUG# 11079
+**
+******************************************/
+
+table.TabPnlContent {
+	background-color:#FFF;
+	color:#333;
+	border-top:none;
+	border-left: solid #8F989F 1px;
+	border-right: solid #8F989F 1px;
+	border-bottom: solid 1px #8F989F;
+	padding: 20px;
+}
+
+td.Tab2TblSpcLft {
+	border-bottom:solid 1px #8F989F;
+	width: 10px;
+}
+
+td.Tab2TblSpcRht {
+	border-bottom:solid 1px #8F989F;
+	width: 99%;
+}
+
+.TabPnlDiv {
+	border-bottom: none;
+}
+
+/******************************************
+**
+**  Treetable support
+**
+******************************************/
+
+.treeControlLayout {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #fff;
+}
+
+.treeControl {
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    padding: 6px;
+    border-right: none;
+    border-bottom: none;
+    empty-cells: show;
+}
+
+.treeContentLayout {
+    background-color: #D2D9E1;
+    padding-left: 10px;
+    padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-left: 1px solid #8F989F;
+	border-right: 1px solid #8F989F;
+	border-bottom: 1px solid #8F989F;
+}
+
+.treeBaseRow {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+	background-color: #fff;
+	border-left: solid 1px #8F989F;
+	border-right: solid 1px #8F989F;
+	border-bottom: solid 1px #8F989F;
+}
+
+.treeBaseRow td.treeRowName {
+  	padding-left: 5px;
+	padding-right: 10px;
+	width: 1%;
+}
+
+.treeButtonCell {
+	background-image:url(../images/tabs/level2_background.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-color:#E2EAED;
+    height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 11px;
+	border-left: solid 1px #8F989F;
+	border-right: solid 1px #8F989F;
+}
+
+.treeButtonCell input,
+.treeButtonCell select {
+	font-size:11px;
+}
+
+.treeButtonCell optgroup {
+  	font-size:11px;
+	background-color: #EFEFEF;
+}
+
+.treeButtonCell option {
+  	font-size: 11px;
+	background-color: #fff;
+}
+
+.treeButtonCell optgroup option {
+  	background-color: #EFEFEF;
+}
+
+.treeMastHeadRow {
+    background-color: #6a8183; /* darker then the button row */
+    height: 30px;
+}
+
+.treeFootRow {
+    background-color: #6a8183; /* darker then the button row */
+    height: 30px;
+}
+
+.treeHeadingRow {
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+.treeSelRow {
+    background-color: #ffffd5;     /* email app yellow */
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+.treeSelRow td.treeRowName {
+  	padding-left: 5px;
+	padding-right: 10px;
+	width: 1%;
+}
+
+.treeMastHeadText {
+    background-image: url(../images/table/gradtblttl.jpg);
+    background-repeat: repeat-x;
+    background-color: #71838D;
+    text-align: left;
+    color: #fff;
+    padding: 3px 10px;
+	  font-weight:bold;
+    font-size: 14px;
+    border-top: solid 1px #71838D;
+    border-left: solid 1px #71838D;
+    border-right: solid 1px #71838D;
+    background-position: 3px 3px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+}
+
+.treeFootCell {
+    background-color: #fff;
+}
+
+.treeFootRow {
+  	background-color: #fff;
+}
+
+.treeFooterText {
+        color: #ffffff;
+}
+
+/* Bug #11474
+   To maintain the visual layout, it is best not to change
+	 the width values for columns 0 & 1.  The columns can be 
+	 resized using the mouse, so these are just the widths
+	 once the page has finished rendering.
+*/
+/*
+th#UserListTreeContent_Col0 {
+	width: 1px;
+}
+th#UserListTreeContent_Col1 {
+	width: 1px;
+}
+th#UserListTreeContent_Col2 {
+	width: 50%;
+}
+th#UserListTreeContent_Col3 {
+	width: 50%;
+}
+
+th#ResourceListTreeContent_Col0 {
+	width: 1px;
+}
+th#ResourceListTreeContent_Col1 {
+	width: 1px;
+}
+th#ResourceListTreeContent_Col2 {
+	width: 33%;
+}
+th#ResourceListTreeContent_Col3 {
+	width: 33%;
+}
+th#ResourceListTreeContent_Col4 {
+	width: 33%;
+}
+*/
+
+.treeHeadingCell {
+    background-image:url(../images/table/gradtblhdr.gif);
+    background-repeat:repeat-x;
+	background-color:#fff;
+    background-position:left bottom;
+	border-right:1px solid #d2d3d8;
+    border-top:1px solid #959aa5;
+	border-left:1px solid #959aa5;
+    border-bottom:solid 1px #828da4;
+    padding:2px 5px 0px;
+	text-align: left;
+}
+
+.treeHeadingCellSortUp {
+    background-image:url(../images/table/gradtblhdr.gif);
+    background-repeat:repeat-x;
+	background-color:#fff;
+    background-position:left bottom;
+	border-right:1px solid #d2d3d8;
+    border-top:1px solid #959aa5;
+	border-left:1px solid #959aa5;
+    border-bottom:solid 1px #828da4;
+    padding:2px 5px 0px;
+	text-align: left;
+}
+
+.treeHeadingCellSortDn {
+    background-image:url(../images/table/gradtblhdr.gif);
+    background-repeat:repeat-x;
+	background-color:#fff;
+    background-position:left bottom;
+	border-right:1px solid #d2d3d8;
+    border-top:1px solid #959aa5;
+	border-left:1px solid #959aa5;
+    border-bottom:solid 1px #828da4;
+    padding:2px 5px 0px;
+	text-align: left;
+}
+
+.treeHeadingCell a:link, 
+.treeHeadingCell a:visited {
+	color:#000;
+	font-size: 11px;
+	text-decoration:none;
+	display:block;
+}
+.treeHeadingCell a:hover {
+	text-decoration:underline;
+	display:block;
+}
+.treeHeadingCellSortUp a:link,
+.treeHeadingCellSortUp a:visited {
+	background-image:url(../images/table/sort_up_nonsel.gif);
+	background-repeat: no-repeat;
+	background-position: 100% -3px;
+	font-size: 11px;
+	color:#000;
+	text-decoration:none;
+	display:block;
+}
+.treeHeadingCellSortUp a:hover {
+	background-image:url(../images/table/sort_up_nonsel.gif);
+	background-repeat: no-repeat;
+	background-position: 100% -3px;
+	text-decoration:underline;
+	display:block;
+}
+.treeHeadingCellSortDn a:link,
+.treeHeadingCellSortDn a:visited {
+	background-image:url(../images/table/sort_down_nonsel.gif);
+	background-repeat: no-repeat;
+	background-position: 100% -3px;
+	font-size: 11px;
+	color:#000;
+	text-decoration:none;
+	display:block;
+}
+.treeHeadingCellSortDn a:hover {
+	background-image:url(../images/table/sort_down_nonsel.gif);
+	background-repeat: no-repeat;
+	background-position: 100% -3px;
+	text-decoration:underline;
+	display:block;
+}
+
+.treePagingCell {
+  	font-size: 11px;
+}
+
+.treePagingCell input {
+  	font-size: 11px;
+}
+
+/******************************************
+**
+**  Icon legend subtitle
+**
+******************************************/
+.SubTtlLgdDiv {
+  	padding-top: 10px;
+	padding-bottom: 10px;
+  	padding-left: 10px;
+	font-size: 11px;
+}
+
+.SubTtlLgdDiv img {
+  	vertical-align: middle;
+}
+
+/**************************************************
+**
+**  CUSTOM INLINE ALERT STYLES
+**
+**  Standard lockhart styles are in lockhart.css
+**
+**************************************************/
+.AlrtTblDiv {margin-top:20px}
+.AlrtLev2ErrTxt {color:#000;font-weight:bold;vertical-align:middle;font-size:14px;text-align:left;margin-top: 20px}
+.AlrtLev2WrnTxt {color:#000;font-weight:bold;vertical-align:middle;font-size:14px;text-align:left;margin-top: 20px}
+.AlrtLev2InfTxt {color:#000;font-weight:bold;vertical-align:middle;font-size:14px;text-align:left;margin-top: 20px}
+
+/**************************************************
+**
+**  Tree menu styles
+**
+**************************************************/
+.treemenu_open {display: block;}
+.treemenu_closed {display: none;}
+li.treeli {list-style-type: none;padding-top:.1em;background-image: url(../images/tree/tree_linelastnode.gif);background-repeat:no-repeat;}
+li.treeli img {vertical-align: middle;}
+li.treeli a {margin-left: 16px;}
+li.treeli a.treeMenuNodeControl {margin-left: 0px;}
+li.treeli ul {padding-bottom: 5px;}
+
+div#usermenu {position:absolute;left:0;width:230px;padding-top:0px;border-right:1px solid #ccc;margin-left:-40px;}
+div#userpanel {margin-left:200px;padding:0;} 
+div#menuFormDiv form {display:inline; margin:0px}
+
+li.Usertreemenu_selected   {list-style-type: none;padding:0.2em;background: url(../images/tree/tree_linelastnode.gif) no-repeat 0.2em -0.1em;}
+li.Usertreemenu_unselected {list-style-type: none;padding:0.2em;background: url(../images/tree/tree_linelastnode.gif) no-repeat 0.2em -0.1em;}
+li.Usertreemenu_selected ul {padding-top: 5px;}
+li.Usertreemenu_selected ul li {margin-left: -20px;}
+
+a.Usertreemenu_active_link {font-weight: bold;}
+a.Usertreemenu_link {    }
+
+span.Usertreemenu_span_open a {background: url(../images/tree/tree_handledownlast.gif) no-repeat 0em -0.1em;padding-left: 16px;padding-top: 2px;padding-bottom: 2px;}
+span.Usertreemenu_span_closed a {background: url(../images/tree/tree_handlerightlast.gif) no-repeat 0em -0.1em;padding-left: 16px;padding-top: 2px;padding-bottom: 2px;}
+span.Usertreemenu_span_no_children a {padding-left: 16px;padding-top: 2px;padding-bottom: 2px;}
+
+/**
+**  Dashboard Alerts
+*/
+.DashAlrtCnt {width:545px;background-color:#FFFFCC;border:solid 1px #e1e1a7;margin-bottom:7px;}
+.DashAlrtCnt td {padding:3px 3px 3px 0;}
+.DashAlrtInfTxt {vertical-align:middle;margin-right:6px}
+.DashAlrtMsgTxt {background: url(../images/alerts/info_small.gif) no-repeat 5px 5px;padding:3px 0 3px 20px;color:#000;text-align:left;font-weight:bold;}
+.DashAlrtCnt a:link, a:visited {color:#003399;text-decoration:none;display:inline;}
+.DashAlrtCnt a:hover {color:#003399;text-decoration:underline;display:inline;}
+.DashTdCnt {width:545px;border:solid 1px #e1e1a7;padding:7px 0 7px 0;}
+.DashTdCnt td {height:1em;padding-left:18px;padding-right:18px;}
+.DashTdWelcome {width:530px;}
+span.DashTdInf {float:right;text-align:right}
+span.DashTdLbl {float:left;}
+a.DashTdLnk:link, a.DashTdLnk:visited {height:1em;color:#000;text-decoration:none;display:block;padding:2px;}
+a.DashTdLnk:hover {height:1em;color:#000;text-decoration:none; background-color:#CBDCAF;display:block;padding:2px;}
+
+/**
+**  Bug #12248 - Used by HtmlUtil#generateListHTML
+*/
+div.doMenuListDiv span {font-weight: bold}
+div.doMenuListDiv ul {list-style:none}

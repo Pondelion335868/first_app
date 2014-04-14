@@ -1,0 +1,7 @@
+[Desktop Entry]
+Comment=mozc dictionary tool
+Terminal=false
+Name=Mozc 辞書ツール
+Exec=/usr/lib/mozc/mozc_tool --mode=dictionary_tool
+Type=Application
+Icon=/usr/share/ibus-mozc/dictionary.png
