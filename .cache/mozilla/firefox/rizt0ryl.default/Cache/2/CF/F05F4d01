@@ -63,7 +63,7 @@ var htp = set[6] - 4;
 document.write(
 "<style type=text/css>" +
 "<!--" +
-".rk_6274 {" +
+".rk_9252 {" +
 "font-size: 10pt;" +
 "font-family: sans-serif !important;" +
 "COLOR: #FFFFFF;" +
@@ -79,7 +79,7 @@ document.write(
 "background-size:cover;" +
 "background-position: 50% 50%;" +
 "}" +
-".ie_6274 {" +
+".ie_9252 {" +
 "position:absolute;" +
 "WIDTH: " + wtp + "px;" +
 "HEIGHT: " + htp + "px;" +
@@ -87,16 +87,16 @@ document.write(
 "overflow:hidden;" +
 "background:#FFFFFF;" +
 "}" +
-".rank_6274, .rt_6274, .com_6274 {" +
+".rank_9252, .rt_9252, .com_9252 {" +
 "TEXT-ALIGN: center;" +
 "margin : 2px;" +
 "}" +
-".rt_6274, .com_6274 {" +
+".rt_9252, .com_9252 {" +
 "WIDTH: 58px;" +
 "position:absolute;" +
 "right:0;" +
 "}" +
-".ti_6274 {" +
+".ti_9252 {" +
 "WIDTH: 100%;" +
 "HEIGHT: 30px;" +
 "position:absolute;" +
@@ -107,21 +107,21 @@ document.write(
 "filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#cc" + set[7] + ",EndColorStr=#dd" + set[7] + ");" +
 "background-color:rgba(" + cl10 + ",0.85)" +
 "}" +
-".rank_6274 {" +
+".rank_9252 {" +
 "position:absolute;" +
 "WIDTH: 24px;" +
 "filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#dd" + set[7] + ",EndColorStr=#dd" + set[7] + ");" +
 "background-color:rgba(" + cl10 + ",0.85)" +
 "}" +
-".rt_6274 {" +
+".rt_9252 {" +
 "filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#dd0066ff,EndColorStr=#dd0066ff);" +
 "background-color:rgba(0,102,255,0.9)" +
 "}" +
-".com_6274 {" +
+".com_9252 {" +
 "filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ddff0066,EndColorStr=#ddff0066);" +
 "background-color:rgba(255,0,102,0.9)" +
 "}" +
-".stripes1_6274 {" +
+".stripes1_9252 {" +
 "-webkit-background-size: 34px 34px;" +
 "-moz-background-size: 34px 34px;" +
 "background-size: 34px 34px;" +
@@ -146,10 +146,10 @@ document.write(
 "transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%," +
 "transparent 75%, transparent);" +
 "}" +
-".stripes2_6274 {" +
+".stripes2_9252 {" +
 "background-image:url(http://www.antennash.com/img/s1.png);" +
 "}" +
-".picnic_6274 {" +
+".picnic_9252 {" +
 "background-image:-moz-linear-gradient(top, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.14) 30%, transparent 30%, transparent 33%,rgba(0,0,0,0.14) 33%, rgba(0,0,0,0.14) 40%, transparent 40%, transparent 80%,rgba(0,0,0,0.07) 80%, rgba(0,0,0,0.07) 96%, transparent 96%, transparent 100%),-moz-linear-gradient(left, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.14) 30%, transparent 30%, transparent 33%,rgba(0,0,0,0.14) 33%, rgba(0,0,0,0.14) 40%, transparent 40%, transparent 80%,rgba(0,0,0,0.07) 80%, rgba(0,0,0,0.07) 96%, transparent 96%, transparent 100%);" +
 "background-image:-webkit-gradient(linear, left top, left bottom,from(rgba(0,0,0,0.14)), color-stop(0.3,rgba(0,0,0,0.14)),color-stop(0.3,transparent), color-stop(0.33,transparent),color-stop(0.33,rgba(0,0,0,0.14)), color-stop(0.4,rgba(0,0,0,0.14)),color-stop(0.4,transparent), color-stop(0.8,transparent),color-stop(0.8,rgba(0,0,0,0.14)), color-stop(0.96,rgba(0,0,0,0.14)),color-stop(0.96,transparent), to(transparent)), -webkit-gradient(linear, left top, right top,from(rgba(0,0,0,0.14)), color-stop(0.3,rgba(0,0,0,0.14)),color-stop(0.3,transparent), color-stop(0.33,transparent),color-stop(0.33,rgba(0,0,0,0.14)), color-stop(0.4,rgba(0,0,0,0.14)),color-stop(0.4,transparent), color-stop(0.8,transparent),color-stop(0.8,rgba(0,0,0,0.14)), color-stop(0.96,rgba(0,0,0,0.14)),color-stop(0.96,transparent), to(transparent));" +
 "-moz-background-size: 30px 30px;" +
@@ -161,7 +161,7 @@ document.write(
 );
 
 //二次元配列に変換
-var str = "1397132104<>スーパーの前に繋がれている犬の紐を解いて自由にしてやった結果ｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140410121308<>http://www.antennash.com/etc/imglink/img/1364214838/68306512a.jpg<><><>,1397121543<>俺「お、献血車か、いっちょ抜いてくかな」→<>http://2ch-c.net/?gt=20140410091307<>http://www.antennash.com/etc/imglink/img/1364214838/62166863a.jpg<><><>,1397113838<>｢客来るわけないよ｣→ベトナムイオンに１日15万人の来客が押し寄せるｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140410061206<>http://www.antennash.com/etc/imglink/img/1364214838/96064404a.jpg<><><>,1397108704<>【速報】小保方さん　明言ｷﾀ━━━━━━(ﾟ∀ﾟ)━━━━━━ !!!!!<>http://2ch-c.net/?gt=20140409154254<>http://www.antennash.com/etc/imglink/img/1364214838/89470541a.jpg<><><>,1397103041<>【画像】Googleオフィス内の画像を淡々と貼ってくｗｗｗｗｗ<>http://2ch-c.net/?gt=20140410031203<>http://www.antennash.com/etc/imglink/img/1364214838/11956872a.jpg<><><>,1397098084<>【驚愕】これがMステ出演禁止歌手ｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ　道理で音楽番組がつまらない訳だ・・・<>http://2ch-c.net/?gt=20140410054226<>http://www.antennash.com/etc/imglink/img/1364214838/07779747a.jpg<><><>,1397092260<>【画像あり】深田恭子が誰だかわからなくなってる<>http://2ch-c.net/?gt=20140410001216<>http://www.antennash.com/etc/imglink/img/1364214838/99549778a.jpg<><><>,1397090538<>彼女の性癖が判明 → ガチでヤバイ奴だこれ・・・・・・<>http://2ch-c.net/?gt=20140409234346<>http://www.antennash.com/etc/imglink/img/1364214838/91098532a.jpg<><><>,1397068870<>【衝撃的】新任教師だが職員室のリアルを教える・・・・・・<>http://2ch-c.net/?gt=20140409174226<>http://www.antennash.com/etc/imglink/img/1364214838/03390939a.jpg<><><>,1397063704<>セブンの進撃の巨人キャンペーンｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140409171329<>http://www.antennash.com/etc/imglink/img/1364214838/47313547a.jpg<><><>,1397058053<>【画像あり】私の顔面偏差値っていくつですか？（マジかこれ・・・）<>http://2ch-c.net/?gt=20140409144215<>http://www.antennash.com/etc/imglink/img/1364214838/20055977a.jpg<><><>,1397053211<>【速報】小保方ちゃん会見ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!　　（画像あり）<>http://2ch-c.net/?gt=20140409141415<>http://www.antennash.com/etc/imglink/img/1364214838/76067510a.jpg<><><>,1397045445<>ドイツ人の動画が評判に!!!!　ボクが台湾を「大っ嫌い」な３つの理由―<>http://2ch-c.net/?gt=20140409111213<>http://www.antennash.com/etc/imglink/img/1364214838/77389086a.jpg<><><>,1397040304<>ハゲの上司に「頭良いですね」って言った結果ｗｗｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140409104344<>http://www.antennash.com/etc/imglink/img/1364214838/29827017a.jpg<><><>,1397034650<>【速報】実写版「ルパン三世」ビジュアル初披露ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!　（画像あり）<>http://2ch-c.net/?gt=20140409081212<>http://www.antennash.com/etc/imglink/img/1364214838/24386276a.jpg<><><>,1397029808<>最近の10代の元気の無さは異常<>http://2ch-c.net/?gt=20140409074412<>http://www.antennash.com/etc/imglink/img/1364214838/50318413a.jpg<><><>,1397024104<>【悲報】フジ「バイキング」放送開始して1周間経った結果wwwwww<>http://2ch-c.net/?gt=20140408152715<>http://www.antennash.com/etc/imglink/img/1364214838/22766334a.jpg<><><>,1397023856<>映画ドラえもんの名曲貼ってく<>http://2ch-c.net/?gt=20140409051212<>http://www.antennash.com/etc/imglink/img/1364214838/84132003a.jpg<><><>,1397022104<>『消せるボールペン』を悪用した不正が相次ぐ！痕跡が残らず・・・<>http://2ch-c.net/?gt=20140409044312<>http://www.antennash.com/etc/imglink/img/1364214838/37763773a.jpg<><><>,1397013055<>マックが｢ハンバーガー100円！｣って言ってるけどさｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140409061407<>http://www.antennash.com/etc/imglink/img/1364214838/57594782a.jpg<><><>,";
+var str = "1400147104<>【衝撃的】 元SPEEDの上原多香子が超絶激太りしててワロタｗｗｗｗｗww　（画像あり）<>http://2ch-c.net/?gt=20140514012823<>http://www.antennash.com/etc/imglink/img/1364214838/59436627a.jpg<><><>,1400136535<>男受けの悪い髪型まとめwwwwwwwwww<>http://2ch-c.net/?gt=20140515094302<>http://www.antennash.com/etc/imglink/img/1364214838/27436813a.jpg<><><>,1400128941<>フォロワー０なのにツイッターやってる奴ｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140515034349<>http://www.antennash.com/etc/imglink/img/1364214838/64999913a.jpg<><><>,1400119066<>王国復活ｗｗｗｗｗ田村ゆかりの最新画像ｗｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140515005908<>http://www.antennash.com/etc/imglink/img/1364214838/41260238a.jpg<><><>,1400111852<>職場のﾔﾘﾏﾝとHした結果ｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140514225848<>http://www.antennash.com/etc/imglink/img/1364214838/53750101a.jpg<><><>,1400100304<>【愕然】街コン行ってきた結果ｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140514204312<>http://www.antennash.com/etc/imglink/img/1364214838/76491190a.jpg<><><>,1400089746<>【悲報】ラブライブがAKB商法した結果ｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140514174310<>http://www.antennash.com/etc/imglink/img/1364214838/63027758a.jpg<><><>,1400084104<>【画像あり】男性の尻に天使の姿が浮かび上がる<>http://2ch-c.net/?gt=20140514161219<>http://www.antennash.com/etc/imglink/img/1364214838/98132050a.jpg<><><>,1400082609<>【画像あり】娘のおもちゃ箱開いたら大変なことになってた<>http://2ch-c.net/?gt=20140514145137<>http://www.antennash.com/etc/imglink/img/1364214838/09670585a.jpg<><><>,1400075315<>【画像】ちょwww台湾の特殊部隊やばすぎwwwww<>http://2ch-c.net/?gt=20140514134239<>http://www.antennash.com/etc/imglink/img/1364214838/32321621a.jpg<><><>,1400073671<>めざましテレビに出てたモー娘ｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140514122233<>http://www.antennash.com/etc/imglink/img/1364214838/41199930a.jpg<><><>,1400069541<>【画像】こういう気が強そうな子に告白されたら迷うよね・・・・・<>http://2ch-c.net/?gt=20140514111349<>http://www.antennash.com/etc/imglink/img/1364214838/76135704a.jpg<><><>,1400064155<>昔のオタクと今のオタクが違う決定的な理由！！！<>http://2ch-c.net/?gt=20140514094351<>http://www.antennash.com/etc/imglink/img/1364214838/91629040a.jpg<><><>,1400062504<>【画像】ダルビッシュが購入した3.7億円の豪邸が凄すぎるｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140514101336<>http://www.antennash.com/etc/imglink/img/1364214838/64968384a.jpg<><><>,1400058666<>【画像】女だけど暇だし今から部屋片付けるはwwwwwwww<>http://2ch-c.net/?gt=20140514081228<>http://www.antennash.com/etc/imglink/img/1364214838/53013498a.jpg<><><>,1400051985<>うちの猫が笑ってるｗｗｗｗ（※画像あり）<>http://2ch-c.net/?gt=20140514071349<>http://www.antennash.com/etc/imglink/img/1364214838/84493615a.jpg<><><>,1400047946<>Xperia Z3のコンセプト画像がスゴすぎる！！！！！<>http://2ch-c.net/?gt=20140514051342<>http://www.antennash.com/etc/imglink/img/1364214838/46732208a.jpg<><><>,1400044339<>金沢駅のバトルフィールド感は異常ｗｗｗｗｗｗｗｗ（※画像あり）<>http://2ch-c.net/?gt=20140514041347<>http://www.antennash.com/etc/imglink/img/1364214838/18152707a.jpg<><><>,1400039104<>女友達に泣きながら「ヤらせてください…！」って二時間土下座し続けた結果ｗｗｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140513114328<>http://www.antennash.com/etc/imglink/img/1364214838/68447228a.jpg<><><>,1400033299<>【衝撃的】キモオタVIPPERがヤリサーに入った結果ｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://2ch-c.net/?gt=20140514010941<>http://www.antennash.com/etc/imglink/img/1364214838/96694364a.jpg<><><>,";
 
 var scek = 21;
 var wakusuu = set[3] * set[4];
@@ -268,11 +268,11 @@ var target = " target=_blank";
 }
 
 if (set[11] == "1") {
-var strco = " stripes1" + "_6274";
+var strco = " stripes1" + "_9252";
 }else if(set[11] == "2"){
-var strco = " stripes2" + "_6274";
+var strco = " stripes2" + "_9252";
 }else if(set[11] == "3"){
-var strco = " picnic" + "_6274";
+var strco = " picnic" + "_9252";
 }else{
 var strco = "";
 }
@@ -289,7 +289,7 @@ set[9] = "http://www.antennash.com/img/noimg.gif";
 if (ary[cnt][3] == "") {
 ary[cnt][3] = set[9];
 }
-document.write("<a href=" + ary[cnt][2] + target + ">" + "<div class=antennash_imglink><span class=rk_6274 style='BACKGROUND-image: url(" + ary[cnt][3] + ");'>");
+document.write("<a href=" + ary[cnt][2] + target + ">" + "<div class=antennash_imglink><span class=rk_9252 style='BACKGROUND-image: url(" + ary[cnt][3] + ");'>");
 
 //IE
 var msie=navigator.appVersion.toLowerCase();
@@ -301,16 +301,16 @@ var gazouH = img.height;
 var gazouW = img.width;
 
 if (set[5] < set[6]) {
-document.write("<div class=ie_6274><img src='" + ary[cnt][3] + "' height='" + htp + "' border=0></div>");
+document.write("<div class=ie_9252><img src='" + ary[cnt][3] + "' height='" + htp + "' border=0></div>");
 }else{
-document.write("<div class=ie_6274><img src='" + ary[cnt][3] + "' width='" + wtp + "' border=0></div>");
+document.write("<div class=ie_9252><img src='" + ary[cnt][3] + "' width='" + wtp + "' border=0></div>");
 }
 }
 
 if (ary[cnt][4] == "ad") {
-document.write("<DIV class='rank_6274" + strco + "' style=\"right:0;\">PR</DIV>");
+document.write("<DIV class='rank_9252" + strco + "' style=\"right:0;\">PR</DIV>");
 }else if (set[2] == 1) {
-document.write("<DIV class='rank_6274" + strco + "'>" + cntno +"</DIV>");
+document.write("<DIV class='rank_9252" + strco + "'>" + cntno +"</DIV>");
 }
 
 if (ary[cnt][4] == "ad") {
@@ -329,12 +329,15 @@ document.write("<div style='display:none'><div class='adlantiss_frame zid_Z4rqTf
 }else if (0 == 105) {//アパレルUSG
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_3dAcrh6VyVD8fLKsV8NWmQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 107) {//育毛剤
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_oHrDc7V9yT%2FiGXhWbnShiw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
 }else if (0 == 108) {//おたぽる
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_cli2sIl4p9OHEDMEIG44DA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 109) {//マジこいP
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_hsQJ84IlABTQN6DOSHAX4g%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (0 == 110) {//日本文芸社
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_CwFzhBfHzIE0%2FjhaElqZiQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
 }else if (0 == 200) {//ビガーネット
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_V%2Bfd7Mir2TXao0F3FBnh%2Fg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
@@ -369,46 +372,29 @@ document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' t
 document.write("<div style='display:none'><div class='adlantiss_frame zid_iJYrzumL070n71H9KMujJw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492055/' width='0' height='0' border='0'></div>");
 }else if (0 == 409) {//4s
 document.write("<div style='display:none'><img src='http://image.j-a-net.jp/1490672/534245/' width='0' height='0' border='0'></div>");
+}else if (0 == 410) {//イマークa
+document.write("<div style='display:none'><img src='http://image.j-a-net.jp/1490672/379929/' width='0' height='0' border='0'></div>");
+}else if (0 == 411) {//イマークb
+document.write("<div style='display:none'><img src='http://image.j-a-net.jp/1490672/379930/' width='0' height='0' border='0'></div>");
+}else if (0 == 412) {//OCN
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_c7b5QMy5%2FuvcGs87wxyENA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/528768/' width='0' height='0' border='0'></div>");
 }else if (0 == 10) {//アンテナシェア-casino.com
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_Dv%2FZ7n9ZSOWjKMcbHPZ3bg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 51) {//アンテナシェア-メンズファッション+1
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_imfGf1tiHlli7IDijXji3A%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 52) {//アンテナシェア-メンズファッション+2
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_ITrS0J0Lma5Q26UhMU98pw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 53) {//アンテナシェア-メンズファッション+3
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_h%2Fh7t2hZMFYxGBI17r7YcQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 54) {//アンテナシェア-メンズファッション+4
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_QdZoO5%2Fmk8Mbn97QS8x00Q%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 55) {//アンテナシェア-メンズファッション+5
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_wQNI8dVSN1hKa56FqTOPvA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 56) {//アンテナシェア-メンズファッション+6
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_nrc7zL7M9A4JKS3up77uAA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 57) {//アンテナシェア-メンズファッション+7
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_BBxXg4Ft5zJ1xMhDOPVCZQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (0 == 58) {//アンテナシェア-メンズファッション+8
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_lE5LCXXoFFlz3HVIiQqCKA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
 }
 
 }else if (set[0] == 1) {
-document.write("<DIV class=rt_6274>" + ary[cnt][4] + "RT</DIV>");
+document.write("<DIV class=rt_9252>" + ary[cnt][4] + "RT</DIV>");
 }else if(set[0] == 2) {
-document.write("<DIV class=com_6274>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
+document.write("<DIV class=com_9252>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
 }else if(set[0] == 3) {
-document.write("<DIV class=rt_6274>" + ary[cnt][4] + "RT</DIV><br clear=left><DIV class=com_6274>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
+document.write("<DIV class=rt_9252>" + ary[cnt][4] + "RT</DIV><br clear=left><DIV class=com_9252>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
 }else if(set[0] == 99) {
-document.write("<DIV class=com_6274>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV><br clear=left><DIV class=rt_6274>" + ary[cnt][4] + "RT</DIV>");
+document.write("<DIV class=com_9252>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV><br clear=left><DIV class=rt_9252>" + ary[cnt][4] + "RT</DIV>");
 }
 
-document.write("<DIV class='ti_6274" + strco + "'>" + ary[cnt][1] + "</DIV>");
+document.write("<DIV class='ti_9252" + strco + "'>" + ary[cnt][1] + "</DIV>");
 document.write("</span></div></a>");
 
 if ( cntno % set[4] == 0 ) {
@@ -416,6 +402,7 @@ document.write("<br clear=left>");
 }
 
 }
+
 var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-33333981-4']);
   _gaq.push(['_trackPageview']);

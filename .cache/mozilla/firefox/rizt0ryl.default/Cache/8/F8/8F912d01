@@ -63,7 +63,7 @@ var htp = set[6] - 4;
 document.write(
 "<style type=text/css>" +
 "<!--" +
-".rk_2178 {" +
+".rk_3566 {" +
 "font-size: 10pt;" +
 "font-family: sans-serif !important;" +
 "COLOR: #FFFFFF;" +
@@ -79,7 +79,7 @@ document.write(
 "background-size:cover;" +
 "background-position: 50% 50%;" +
 "}" +
-".ie_2178 {" +
+".ie_3566 {" +
 "position:absolute;" +
 "WIDTH: " + wtp + "px;" +
 "HEIGHT: " + htp + "px;" +
@@ -87,16 +87,16 @@ document.write(
 "overflow:hidden;" +
 "background:#FFFFFF;" +
 "}" +
-".rank_2178, .rt_2178, .com_2178 {" +
+".rank_3566, .rt_3566, .com_3566 {" +
 "TEXT-ALIGN: center;" +
 "margin : 2px;" +
 "}" +
-".rt_2178, .com_2178 {" +
+".rt_3566, .com_3566 {" +
 "WIDTH: 58px;" +
 "position:absolute;" +
 "right:0;" +
 "}" +
-".ti_2178 {" +
+".ti_3566 {" +
 "WIDTH: 100%;" +
 "HEIGHT: 30px;" +
 "position:absolute;" +
@@ -107,21 +107,21 @@ document.write(
 "filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#cc" + set[7] + ",EndColorStr=#dd" + set[7] + ");" +
 "background-color:rgba(" + cl10 + ",0.85)" +
 "}" +
-".rank_2178 {" +
+".rank_3566 {" +
 "position:absolute;" +
 "WIDTH: 24px;" +
 "filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#dd" + set[7] + ",EndColorStr=#dd" + set[7] + ");" +
 "background-color:rgba(" + cl10 + ",0.85)" +
 "}" +
-".rt_2178 {" +
+".rt_3566 {" +
 "filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#dd0066ff,EndColorStr=#dd0066ff);" +
 "background-color:rgba(0,102,255,0.9)" +
 "}" +
-".com_2178 {" +
+".com_3566 {" +
 "filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#ddff0066,EndColorStr=#ddff0066);" +
 "background-color:rgba(255,0,102,0.9)" +
 "}" +
-".stripes1_2178 {" +
+".stripes1_3566 {" +
 "-webkit-background-size: 34px 34px;" +
 "-moz-background-size: 34px 34px;" +
 "background-size: 34px 34px;" +
@@ -146,10 +146,10 @@ document.write(
 "transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%," +
 "transparent 75%, transparent);" +
 "}" +
-".stripes2_2178 {" +
+".stripes2_3566 {" +
 "background-image:url(http://www.antennash.com/img/s1.png);" +
 "}" +
-".picnic_2178 {" +
+".picnic_3566 {" +
 "background-image:-moz-linear-gradient(top, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.14) 30%, transparent 30%, transparent 33%,rgba(0,0,0,0.14) 33%, rgba(0,0,0,0.14) 40%, transparent 40%, transparent 80%,rgba(0,0,0,0.07) 80%, rgba(0,0,0,0.07) 96%, transparent 96%, transparent 100%),-moz-linear-gradient(left, rgba(0,0,0,0.14) 0%, rgba(0,0,0,0.14) 30%, transparent 30%, transparent 33%,rgba(0,0,0,0.14) 33%, rgba(0,0,0,0.14) 40%, transparent 40%, transparent 80%,rgba(0,0,0,0.07) 80%, rgba(0,0,0,0.07) 96%, transparent 96%, transparent 100%);" +
 "background-image:-webkit-gradient(linear, left top, left bottom,from(rgba(0,0,0,0.14)), color-stop(0.3,rgba(0,0,0,0.14)),color-stop(0.3,transparent), color-stop(0.33,transparent),color-stop(0.33,rgba(0,0,0,0.14)), color-stop(0.4,rgba(0,0,0,0.14)),color-stop(0.4,transparent), color-stop(0.8,transparent),color-stop(0.8,rgba(0,0,0,0.14)), color-stop(0.96,rgba(0,0,0,0.14)),color-stop(0.96,transparent), to(transparent)), -webkit-gradient(linear, left top, right top,from(rgba(0,0,0,0.14)), color-stop(0.3,rgba(0,0,0,0.14)),color-stop(0.3,transparent), color-stop(0.33,transparent),color-stop(0.33,rgba(0,0,0,0.14)), color-stop(0.4,rgba(0,0,0,0.14)),color-stop(0.4,transparent), color-stop(0.8,transparent),color-stop(0.8,rgba(0,0,0,0.14)), color-stop(0.96,rgba(0,0,0,0.14)),color-stop(0.96,transparent), to(transparent));" +
 "-moz-background-size: 30px 30px;" +
@@ -161,7 +161,7 @@ document.write(
 );
 
 //二次元配列に変換
-var str = "1397119561<>魔法石850個無料配布キターーーーーー！2100万人に感謝！！<>http://fczblog.com/pad/gatyasoku/archives/3374011/index.html<>http://www.antennash.com/etc/imglink/img/1364214838/78859200c.jpg<><><>,1397086463<>絶賛開催中のムラコレで半蔵狙いの人の悲痛な叫び<>http://pazdra.antenam.info/items/view/44484<><><><>,1397086082<>【悲報】「日本守る」発言をした元軍曹・米ヘーゲル長官に中国が厳しい質問「挑発的なのは日本」浴びせた結果⇒効かない所かさらに踏み込む！「防衛...<>http://newpuru.doorblog.jp/archives/38158805.html<>http://www.antennash.com/etc/imglink/img/1364214838/33016691c.jpg<><><>,1397063968<>【パズドラ】イシスのLS調整の詳細が判明！レイラン、ゴーレムなどの究極進化も可能に！<>http://pazdra.antenam.info/items/view/44434<><><><>,1397041468<>ファン感謝祭2014の特設サイトがオープン！パズドラセンター試験が開催されるみたい。<>http://pazdra.antenam.info/items/view/44352<>http://www.antennash.com/etc/imglink/img/1364214838/13607051c.jpg<><><>,1397024368<>【パズドラ】「第1回パズドラセンター試験(超級)」開催決定！！反応まとめ<>http://pazdra.antenam.info/items/view/44356<>http://www.antennash.com/etc/imglink/img/1364214838/68814936c.jpg<><><>,1397003281<>【なぜ？】入浴中に撮った写真が流出しちゃた・・・ヤバすぎｗｗｗｗｗｗｗｗｗｗ<>http://newpuru.doorblog.jp/archives/38139500.html<>http://www.antennash.com/etc/imglink/img/1364214838/49145197c.jpg<><><>,1397001868<>【緊急告知】AppBankとマックスむらいから、皆さんにお願い！<>http://pazdra.antenam.info/items/view/44380<>http://www.antennash.com/etc/imglink/img/1364214838/88423804c.jpg<><><>,1396973968<>【パズドラ】究極ゴーレムのLS変更ｷﾀ━━━━(ﾟ∀ﾟ)━━━━ｯ!!<>http://pazdra.antenam.info/items/view/44318<>http://www.antennash.com/etc/imglink/img/1364214838/90127887c.jpg<><><>,1396951464<>【パズドラ】山本P「アンケートは不正投票を除外して集計しています。」<>http://pazdra.antenam.info/items/view/44191<>http://www.antennash.com/etc/imglink/img/1364214838/33069108c.jpg<><><>,1396928967<>【パズドラ】「タケミナカタ降臨!」「ドラゴンゾンビ降臨!」4月7日（月）イベント最新情報！！<>http://pazdra.antenam.info/items/view/44167<>http://www.antennash.com/etc/imglink/img/1364214838/19358107c.jpg<><><>,1396916881<>【茫然】 女だけど大学中退しようとした結果、衝撃事実が発覚した・・・・・・・・・・<>http://newpuru.doorblog.jp/archives/38119653.html<>http://www.antennash.com/etc/imglink/img/1364214838/39338646c.jpg<><><>,1396883064<>アンケ8のツイッターアンケート、不正は除外してる模様！<>http://pazdra.antenam.info/items/view/44142<>http://www.antennash.com/etc/imglink/img/1364214838/56836178c.jpg<><><>,1396834465<>【パズドラ】「集結!進化ラッシュ!!」4月7日（月）ゲリラダンジョン時間割！！<>http://pazdra.antenam.info/items/view/44130<>http://www.antennash.com/etc/imglink/img/1364214838/25872570c.jpg<><><>,1396809269<>6日のゲリラ時間割。サファドラとチョキサファ、華龍泥2倍＆幻獣3倍、ガンコラ泥2倍、降臨はベルゼブブ降臨！<>http://pazdra.antenam.info/items/view/44062<>http://www.antennash.com/etc/imglink/img/1364214838/68040698c.jpg<><><>,1396808881<>近づいてきた猫に触ろうと女の子がしゃがんだ瞬間、その子のお尻からものすごい音が聞こえてきた<>http://newpuru.doorblog.jp/archives/38100911.html<>http://www.antennash.com/etc/imglink/img/1364214838/72064409c.jpg<><><>,1396791268<>暇だから手持ちで孫悟空パ組んでみた。※パーティー例あり<>http://pazdra.antenam.info/items/view/43977<>http://www.antennash.com/etc/imglink/img/1364214838/75189215c.jpg<><><>,1396767869<>03/28(金)～04/03(木)の人気フレンドリーダーランキング作ったよー<>http://pazdra.antenam.info/items/view/44002<>http://www.antennash.com/etc/imglink/img/1364214838/97110214c.jpg<><><>,1396745370<>【パズドラ】「三蔵法師 降臨!」の制限についてどう思う？<>http://pazdra.antenam.info/items/view/43964<>http://www.antennash.com/etc/imglink/img/1364214838/56297074c.jpg<><><>,1396744082<>小学生「何？先生殴るの？体罰だよｗターイバツ！ターイバツ！ｗ」→結果ｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://newpuru.doorblog.jp/archives/38082516.html<>http://www.antennash.com/etc/imglink/img/1364214838/95829924c.jpg<><><>,";
+var str = "1400180041<>魔法石850個無料配布キターーーーーー！2100万人に感謝！！<>http://fczblog.com/pad/gatyasoku/archives/3374011/index.html<>http://www.antennash.com/etc/imglink/img/1364214838/37814621c.jpg<><><>,1400147366<>【パズドラ】9割以上のユーザーが喜ぶ情報が来週解禁になる模様！！<>http://pazdra.antenam.info/items/view/49090<>http://www.antennash.com/etc/imglink/img/1364214838/12021766c.jpg<><><>,1400146981<>【速報】松田翔太、逮捕ｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://newpuru.doorblog.jp/archives/38826795.html<>http://www.antennash.com/etc/imglink/img/1364214838/64375869c.jpg<><><>,1400123969<>【パズドラ】新キャラが登場！？「精霊の宝玉」イベント開催ｷﾀ━━━━(ﾟ∀ﾟ)━━━━ｯ!!<>http://pazdra.antenam.info/items/view/49012<>http://www.antennash.com/etc/imglink/img/1364214838/85502295c.jpg<><><>,1400122684<>【拡散】民主党が東日本大震災で戒厳令を出さなかった理由が 酷 す ぎ た …<>http://newpuru.doorblog.jp/archives/38826228.html<>http://www.antennash.com/etc/imglink/img/1364214838/77928621c.jpg<><><>,1400112781<>【驚愕】寝てる祖父に空襲警報を聞かせた結果ｗｗｗｗｗｗｗｗｗｗｗｗｗｗｗ<>http://newpuru.doorblog.jp/archives/38809097.html<>http://www.antennash.com/etc/imglink/img/1364214838/17463615c.jpg<><><>,1400099667<>ファガンの究極進化が分岐ありでｷﾀ━━━━(ﾟ∀ﾟ)━━━━ｯ!!ファガン進化用素材のダンジョンが16日から！<>http://pazdra.antenam.info/items/view/49013<>http://www.antennash.com/etc/imglink/img/1364214838/35647448c.jpg<><><>,1400092468<>【パズドラ】たまドラ「めざめよ。」<>http://pazdra.antenam.info/items/view/48877<>http://www.antennash.com/etc/imglink/img/1364214838/32953166c.jpg<><><>,1400092081<>韓国人「俺の記事が日本のサイトに翻訳された！おいコラ猿ども…」<>http://newpuru.doorblog.jp/archives/38809296.html<>http://www.antennash.com/etc/imglink/img/1364214838/86995598c.jpg<><><>,1400027281<>韓国の空港凄すぎｗｗｗｗｗｗｗｗｗ<>http://newpuru.doorblog.jp/archives/38790131.html<>http://www.antennash.com/etc/imglink/img/1364214838/53203971c.jpg<><><>,1400026381<>25歳以上で彼女できたこと無い奴ｗｗｗｗｗｗｗｗｗｗｗ<>http://newpuru.doorblog.jp/archives/38790705.html<>http://www.antennash.com/etc/imglink/img/1364214838/01569367c.jpg<><><>,1399939981<>【朗報】可愛い女子に予備のジャージを貸した結果ｗｗｗｗｗｗｗｗｗｗｗ<>http://newpuru.doorblog.jp/archives/38772680.html<>http://www.antennash.com/etc/imglink/img/1364214838/76377122c.jpg<><><>,1399853581<>すき家の時給がついに1500円に到達<>http://newpuru.doorblog.jp/archives/38755135.html<>http://www.antennash.com/etc/imglink/img/1364214838/18123064c.jpg<><><>,1399850881<>2人の男子生徒と性的接触を持って起訴された美人女性教師（24）が生徒らに送り付けたセクシー写真・映像が明らかに（アメリカ）<>http://newpuru.doorblog.jp/archives/38754509.html<>http://www.antennash.com/etc/imglink/img/1364214838/05173330c.jpg<><><>,1399830567<>05/02(金)～05/08(木)の人気フレンドリーダーランキング作ったよー<>http://pazdra.antenam.info/items/view/48474<>http://www.antennash.com/etc/imglink/img/1364214838/38639125c.jpg<><><>,1399807166<>【パズドラ】新キャラ「超絶キングメタルドラゴン」ｷﾀ━━━━(ﾟ∀ﾟ)━━━━ｯ!!<>http://pazdra.antenam.info/items/view/48462<><><><>,1399767181<>【驚愕】女性器が耐えられる尿意の限界がとんでもない、ヤバいぞ<>http://newpuru.doorblog.jp/archives/38737662.html<>http://www.antennash.com/etc/imglink/img/1364214838/72424423c.jpg<><><>,1399764481<>【速報】四国のお遍路は【 八十八か所ではない 】事が判明！！！数字「88」に隠された意味がヤバイ…<>http://newpuru.doorblog.jp/archives/38737063.html<>http://www.antennash.com/etc/imglink/img/1364214838/14566535c.jpg<><><>,1399760367<>【パズドラ】もの凄いパーティでゴッドラッシュに挑戦した勇者がパズドラ掲示板に現れて話題にwwwww<>http://pazdra.antenam.info/items/view/48432<>http://www.antennash.com/etc/imglink/img/1364214838/12299850c.jpg<><><>,1399736065<>ゴッドラッシュのダンジョン情報と、1コン、ノーコン攻略パーティーまとめたよー<>http://pazdra.antenam.info/items/view/48383<>http://www.antennash.com/etc/imglink/img/1364214838/53326215c.jpg<><><>,";
 
 var scek = 21;
 var wakusuu = set[3] * set[4];
@@ -233,23 +233,23 @@ function GetCookie(name) {
 //link
 var randnum2 = Math.floor( Math.random() * kiji );
 if(hkiji != 1){if(randnum2 == 0){randnum2 = 1;}}
-if (58 != "0") {
+if (800 != "0") {
 var imglinkcttp = GetCookie("imglink_1364214838");
 imglinkcttp ++;
 
 if(imglinkcttp > 8){
 var randnum3 = Math.floor( Math.random() * 100 );
 if(randnum3 < 25){
-ary[randnum2][1] = "星名美津紀「デートでニットにPコートを着てほしい！」";
-ary[randnum2][2] = "http://click.adlantis.jp/ad/click?aid=NzgwMjky%250A&at=2&cid=MA%253D%253D%250A&conv_id=MA%253D%253D%250A&url=http%253A%252F%252Fmensfashion.cc%252Finterviews%252Fhoshina-mizuki%252F%253Futm_source%253Dantennash%2526utm_medium%253Dantennash%2526utm_content%253Dhoshina4255%2523section_photos&zid=lE5LCXXoFFlz3HVIiQqCKA%3D%3D";
-ary[randnum2][3] = "http://pc.adimg.net/banner_ads/0078/0292/2e5f7c86cc7bfd4fe26716f0e07880eb931808e1.jpg";
+ary[randnum2][1] = "「彼氏に会いたいやん」駅のトイレに１歳長女を置き去り";
+ary[randnum2][2] = "http://goo.gl/AqMiBC";
+ary[randnum2][3] = "http://www.antennash.com/img/paadimg/20140330c.jpg";
 ary[randnum2][4] = "ad";
 ary[randnum2][5] = "ad";
 }
 }else{
-ary[randnum2][1] = "星名美津紀「デートでニットにPコートを着てほしい！」";
-ary[randnum2][2] = "http://click.adlantis.jp/ad/click?aid=NzgwMjky%250A&at=2&cid=MA%253D%253D%250A&conv_id=MA%253D%253D%250A&url=http%253A%252F%252Fmensfashion.cc%252Finterviews%252Fhoshina-mizuki%252F%253Futm_source%253Dantennash%2526utm_medium%253Dantennash%2526utm_content%253Dhoshina4255%2523section_photos&zid=lE5LCXXoFFlz3HVIiQqCKA%3D%3D";
-ary[randnum2][3] = "http://pc.adimg.net/banner_ads/0078/0292/2e5f7c86cc7bfd4fe26716f0e07880eb931808e1.jpg";
+ary[randnum2][1] = "「彼氏に会いたいやん」駅のトイレに１歳長女を置き去り";
+ary[randnum2][2] = "http://goo.gl/AqMiBC";
+ary[randnum2][3] = "http://www.antennash.com/img/paadimg/20140330c.jpg";
 ary[randnum2][4] = "ad";
 ary[randnum2][5] = "ad";
 }
@@ -268,11 +268,11 @@ var target = " target=_blank";
 }
 
 if (set[11] == "1") {
-var strco = " stripes1" + "_2178";
+var strco = " stripes1" + "_3566";
 }else if(set[11] == "2"){
-var strco = " stripes2" + "_2178";
+var strco = " stripes2" + "_3566";
 }else if(set[11] == "3"){
-var strco = " picnic" + "_2178";
+var strco = " picnic" + "_3566";
 }else{
 var strco = "";
 }
@@ -289,7 +289,7 @@ set[9] = "http://www.antennash.com/img/noimg.gif";
 if (ary[cnt][3] == "") {
 ary[cnt][3] = set[9];
 }
-document.write("<a href=" + ary[cnt][2] + target + ">" + "<div class=antennash_imglink><span class=rk_2178 style='BACKGROUND-image: url(" + ary[cnt][3] + ");'>");
+document.write("<a href=" + ary[cnt][2] + target + ">" + "<div class=antennash_imglink><span class=rk_3566 style='BACKGROUND-image: url(" + ary[cnt][3] + ");'>");
 
 //IE
 var msie=navigator.appVersion.toLowerCase();
@@ -301,114 +301,100 @@ var gazouH = img.height;
 var gazouW = img.width;
 
 if (set[5] < set[6]) {
-document.write("<div class=ie_2178><img src='" + ary[cnt][3] + "' height='" + htp + "' border=0></div>");
+document.write("<div class=ie_3566><img src='" + ary[cnt][3] + "' height='" + htp + "' border=0></div>");
 }else{
-document.write("<div class=ie_2178><img src='" + ary[cnt][3] + "' width='" + wtp + "' border=0></div>");
+document.write("<div class=ie_3566><img src='" + ary[cnt][3] + "' width='" + wtp + "' border=0></div>");
 }
 }
 
 if (ary[cnt][4] == "ad") {
-document.write("<DIV class='rank_2178" + strco + "' style=\"right:0;\">PR</DIV>");
+document.write("<DIV class='rank_3566" + strco + "' style=\"right:0;\">PR</DIV>");
 }else if (set[2] == 1) {
-document.write("<DIV class='rank_2178" + strco + "'>" + cntno +"</DIV>");
+document.write("<DIV class='rank_3566" + strco + "'>" + cntno +"</DIV>");
 }
 
 if (ary[cnt][4] == "ad") {
-if (58 == 800) {//超まとめ
+if (800 == 800) {//超まとめ
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_Ck1uyMAIetxLjXYPrSBeeg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 802) {//PICK802
+}else if (800 == 802) {//PICK802
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_xXU7YDngvgfEkRx4ufI9zw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 902) {//graceinitiativejp
+}else if (800 == 902) {//graceinitiativejp
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_4oCuMzb0%2Fnw4velpMiE62A%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 101) {//アパレル1
+}else if (800 == 101) {//アパレル1
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_Z4rqTfua515l3ewoCmY%2FIQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 105) {//アパレルUSG
+}else if (800 == 105) {//アパレルUSG
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_3dAcrh6VyVD8fLKsV8NWmQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 107) {//育毛剤
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_oHrDc7V9yT%2FiGXhWbnShiw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 108) {//おたぽる
+}else if (800 == 108) {//おたぽる
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_cli2sIl4p9OHEDMEIG44DA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 200) {//ビガーネット
+}else if (800 == 109) {//マジこいP
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_hsQJ84IlABTQN6DOSHAX4g%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (800 == 110) {//日本文芸社
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_CwFzhBfHzIE0%2FjhaElqZiQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
+}else if (800 == 200) {//ビガーネット
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_V%2Bfd7Mir2TXao0F3FBnh%2Fg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 201) {//ベラジョン
+}else if (800 == 201) {//ベラジョン
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_V0brW37RFrf0YSUQjbjReg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 4) {//bannerbridge
+}else if (800 == 4) {//bannerbridge
 document.write("<div style='display:none'><img src='http://track.bannerbridge.net/adtprod.php?adID=843391&affID=0064718&siteID=128966' width='0' height='0' border='0'></div>");
-}else if (58 == 401) {//iPhone5s
+}else if (800 == 401) {//iPhone5s
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_FeulFNXjVGSoAY4lxxQ%2Fvw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/491859/' width='0' height='0' border='0'></div>");
-}else if (58 == 402) {//iPhone5s
+}else if (800 == 402) {//iPhone5s
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_5asiz5uYV4KCwN1DgpDmDg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/491862/' width='0' height='0' border='0'></div>");
-}else if (58 == 403) {//iPhone5s
+}else if (800 == 403) {//iPhone5s
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_sC7DkoDKaqhYsFizkOPB7Q%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/491863/' width='0' height='0' border='0'></div>");
-}else if (58 == 404) {//iPhone5s
+}else if (800 == 404) {//iPhone5s
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_8ddzTe8s8hooQTw9eHEvfA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/491864/' width='0' height='0' border='0'></div>");
-}else if (58 == 405) {//iPad
+}else if (800 == 405) {//iPad
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_vwy1EJQwddoDyy2ZtEGY6Q%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492051/' width='0' height='0' border='0'></div>");
-}else if (58 == 406) {//iPad
+}else if (800 == 406) {//iPad
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_WLvkuK%2BRDoMIkgzTHjtRiQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492052/' width='0' height='0' border='0'></div>");
-}else if (58 == 407) {//iPad
+}else if (800 == 407) {//iPad
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_mWJEKmJk7fRCBXYEUi6faw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492053/' width='0' height='0' border='0'></div>");
-}else if (58 == 408) {//iPad
+}else if (800 == 408) {//iPad
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_iJYrzumL070n71H9KMujJw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/492055/' width='0' height='0' border='0'></div>");
-}else if (58 == 409) {//4s
+}else if (800 == 409) {//4s
 document.write("<div style='display:none'><img src='http://image.j-a-net.jp/1490672/534245/' width='0' height='0' border='0'></div>");
-}else if (58 == 10) {//アンテナシェア-casino.com
+}else if (800 == 410) {//イマークa
+document.write("<div style='display:none'><img src='http://image.j-a-net.jp/1490672/379929/' width='0' height='0' border='0'></div>");
+}else if (800 == 411) {//イマークb
+document.write("<div style='display:none'><img src='http://image.j-a-net.jp/1490672/379930/' width='0' height='0' border='0'></div>");
+}else if (800 == 412) {//OCN
+document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
+document.write("<div style='display:none'><div class='adlantiss_frame zid_c7b5QMy5%2FuvcGs87wxyENA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div><img src='http://image.j-a-net.jp/1490672/528768/' width='0' height='0' border='0'></div>");
+}else if (800 == 10) {//アンテナシェア-casino.com
 document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
 document.write("<div style='display:none'><div class='adlantiss_frame zid_Dv%2FZ7n9ZSOWjKMcbHPZ3bg%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 51) {//アンテナシェア-メンズファッション+1
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_imfGf1tiHlli7IDijXji3A%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 52) {//アンテナシェア-メンズファッション+2
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_ITrS0J0Lma5Q26UhMU98pw%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 53) {//アンテナシェア-メンズファッション+3
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_h%2Fh7t2hZMFYxGBI17r7YcQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 54) {//アンテナシェア-メンズファッション+4
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_QdZoO5%2Fmk8Mbn97QS8x00Q%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 55) {//アンテナシェア-メンズファッション+5
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_wQNI8dVSN1hKa56FqTOPvA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 56) {//アンテナシェア-メンズファッション+6
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_nrc7zL7M9A4JKS3up77uAA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 57) {//アンテナシェア-メンズファッション+7
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_BBxXg4Ft5zJ1xMhDOPVCZQ%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
-}else if (58 == 58) {//アンテナシェア-メンズファッション+8
-document.write("<script src='http://a.adimg.net/javascripts/AdLantisLoader.js' type='text/javascript' charset='utf-8'></script>");
-document.write("<div style='display:none'><div class='adlantiss_frame zid_lE5LCXXoFFlz3HVIiQqCKA%3D%3D color_#0000FF-#000000-#F9F9F9-#999999-#008000 container_iframe'></div></div>");
 }
 
 }else if (set[0] == 1) {
-document.write("<DIV class=rt_2178>" + ary[cnt][4] + "RT</DIV>");
+document.write("<DIV class=rt_3566>" + ary[cnt][4] + "RT</DIV>");
 }else if(set[0] == 2) {
-document.write("<DIV class=com_2178>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
+document.write("<DIV class=com_3566>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
 }else if(set[0] == 3) {
-document.write("<DIV class=rt_2178>" + ary[cnt][4] + "RT</DIV><br clear=left><DIV class=com_2178>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
+document.write("<DIV class=rt_3566>" + ary[cnt][4] + "RT</DIV><br clear=left><DIV class=com_3566>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV>");
 }else if(set[0] == 99) {
-document.write("<DIV class=com_2178>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV><br clear=left><DIV class=rt_2178>" + ary[cnt][4] + "RT</DIV>");
+document.write("<DIV class=com_3566>" + ary[cnt][5] + "ｺﾒﾝﾄ</DIV><br clear=left><DIV class=rt_3566>" + ary[cnt][4] + "RT</DIV>");
 }
 
-document.write("<DIV class='ti_2178" + strco + "'>" + ary[cnt][1] + "</DIV>");
+document.write("<DIV class='ti_3566" + strco + "'>" + ary[cnt][1] + "</DIV>");
 document.write("</span></div></a>");
 
 if ( cntno % set[4] == 0 ) {
@@ -416,6 +402,7 @@ document.write("<br clear=left>");
 }
 
 }
+
 var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-33333981-4']);
   _gaq.push(['_trackPageview']);

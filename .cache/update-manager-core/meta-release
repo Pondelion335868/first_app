@@ -201,3 +201,15 @@ ReleaseNotes: http://archive.ubuntu.com/ubuntu/dists/saucy-updates/main/dist-upg
 ReleaseNotesHtml: http://archive.ubuntu.com/ubuntu/dists/saucy-updates/main/dist-upgrader-all/current/ReleaseAnnouncement.html
 UpgradeTool: http://archive.ubuntu.com/ubuntu/dists/saucy-updates/main/dist-upgrader-all/current/saucy.tar.gz
 UpgradeToolSignature: http://archive.ubuntu.com/ubuntu/dists/saucy-updates/main/dist-upgrader-all/current/saucy.tar.gz.gpg
+
+Dist: trusty
+Name: Trusty Tahr
+Version: 14.04
+Date: Thu, 17 Apr 2014 14:04:00 UTC
+Supported: 1
+Description: This is the 14.04 release
+Release-File: http://archive.ubuntu.com/ubuntu/dists/trusty/Release
+ReleaseNotes: http://archive.ubuntu.com/ubuntu/dists/trusty/main/dist-upgrader-all/current/ReleaseAnnouncement
+ReleaseNotesHtml: http://archive.ubuntu.com/ubuntu/dists/trusty/main/dist-upgrader-all/current/ReleaseAnnouncement.html
+UpgradeTool: http://archive.ubuntu.com/ubuntu/dists/trusty/main/dist-upgrader-all/current/trusty.tar.gz
+UpgradeToolSignature: http://archive.ubuntu.com/ubuntu/dists/trusty/main/dist-upgrader-all/current/trusty.tar.gz.gpg

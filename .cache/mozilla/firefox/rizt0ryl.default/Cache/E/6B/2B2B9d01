@@ -938,12 +938,12 @@ line-height:1.1em;
 }
 
 .ress{
-margin-bottom:25px;
+margin-bottom:35px;
 }
 .ress_number,
 .ress_num{
-color:#008000;
-font-size:1.2em;
+color:#696969;
+font-size:1.4em;
 line-height:1.1em;
 font-weight:bold;
 }
@@ -951,6 +951,10 @@ font-weight:bold;
 font-size:0.8em;
 color:#0080ff;
 font-weight:bold;
+}
+.ress_date{
+font-size:0.8em;
+color:#808080;
 }
 .ress_time{
 font-size:0.8em;
@@ -994,6 +998,13 @@ font-size:0.8em;
 font-size:0.75em;
 }
 
+.kyuukyoku_table{
+margin:5px auto;
+padding:2px;
+border:1px solid #808080;
+background:#fff;
+}
+
 .main_border_box .friend_rank{
 width:143px;
 font-size:0.9em;
@@ -1031,8 +1042,16 @@ font-weight:bold;
 }
 
 .main_border_box iframe{
-margin:0 auto;
+margin-right:auto;
+margin-left:auto;
 display:block;
+}
+
+.hosoku{
+margin:3px;
+padding:3px;
+border:1px solid #121212;
+background:#cacaca;
 }
 /* カレンダー */
 #wp-calendar {
