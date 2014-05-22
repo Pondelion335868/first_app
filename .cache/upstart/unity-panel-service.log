@@ -770,3 +770,5 @@
 ** (unity-panel-service:1702): WARNING **: Unable to support GtkImageType: 0
 
 ** (unity-panel-service:1702): WARNING **: Unable to support GtkImageType: 0
+
+(unity-panel-service:1829): Indicator-Appmenu-CRITICAL **: menus_destroyed: assertion 'wm != NULL' failed
