@@ -55,7 +55,7 @@
 			return false;
 		}
 		vBtn_flg = true;
-		var popURL = url + "?RSEQ=1396502919034"
+		var popURL = url + "?RSEQ=1400728705116"
 						+ "&REQUEST_NAME=" + req_name
 						+ "&PAGE_ID=" + page_id
 						+ "&REQUEST_ITEM_NO=" + item_no + "&wintype=pop";
@@ -74,7 +74,7 @@
 			return false;
 		}
 		vBtn_flg = true;
-		var popURL = url + "?RSEQ=1396502919034"
+		var popURL = url + "?RSEQ=1400728705116"
 						+ "&REQUEST_NAME=" + req_name
 						+ "&PAGE_ID=" + page_id + "&wintype=pop" + "&targetdate=" + targetdate;
 
@@ -92,7 +92,7 @@
 			return false;
 		}
 		vBtn_flg = true;
-		var popURL = url + "?RSEQ=1396502919034"
+		var popURL = url + "?RSEQ=1400728705116"
 						+ "&REQUEST_NAME=" + req_name
 						+ "&PAGE_ID=" + page_id
 						+ "&targetstartdate=" + targetstartdate
@@ -113,7 +113,7 @@
 			return false;
 		}
 		vBtn_flg = true;
-		var popURL = url + "?RSEQ=1396502919034"
+		var popURL = url + "?RSEQ=1400728705116"
 						+ "&REQUEST_NAME=" + req_name
 						+ "&PAGE_ID=" + page_id
 						+ "&targetstartdate=" + targetstartdate
@@ -131,7 +131,7 @@
 			return false;
 		}
 		vBtn_flg = true;
-		var popURL = url + "?RSEQ=1396502919034"
+		var popURL = url + "?RSEQ=1400728705116"
 						+ "&NOTICE_TP=" + noticeTp
 						+ "&REQUEST_NAME=" + req_name
 						+ "&PAGE_ID=" + page_id + "&wintype=pop";
@@ -150,7 +150,7 @@
 			return false;
 		}
 		vBtn_flg = true;
-		var popURL = url + "?RSEQ=1396502919034"
+		var popURL = url + "?RSEQ=1400728705116"
 						+ "&NOTICE_TP=" + noticeTp
 						+ "&REQUEST_NAME=" + req_name 
 						+ "&PAGE_ID=" + page_id 
@@ -176,7 +176,7 @@
 			return false;
 		}
 		vBtn_flg = true;
-		var jumpURL = url + "?RSEQ=1396502919034";
+		var jumpURL = url + "?RSEQ=1400728705116";
 		document.form.action = jumpURL;
 		document.form.method = "post";
 		document.form.REQUEST_NAME.value = req_name;
@@ -193,7 +193,7 @@
 			return false;
 		}
 		vBtn_flg = true;
-		var jumpURL = url + "?RSEQ=1396502919034";
+		var jumpURL = url + "?RSEQ=1400728705116";
 		document.form.action = jumpURL;
 		document.form.method = "post";
 		document.form.REQUEST_NAME.value = req_name;
@@ -250,7 +250,7 @@
 <h3><img src="/images/img_header_calender.gif" alt="カレンダー" width="208" height="22"></h3>
 </div>
 <div class="portletHeaderLV2">
-<h4>2014年4月</h4>
+<h4>2014年5月</h4>
 <form name="form" method="post" action="" onSubmit="return false">
 <input type="hidden" name="USERID" value="20110000069165">
 <input type="hidden" name="ADMINFG" value="0">
@@ -290,18 +290,18 @@
 <legend>カレンダー表示切り替え機能</legend>
 <select name="year" ><option value="2009" >2009</option><option value="2010" >2010</option><option value="2011" >2011</option><option value="2012" >2012</option><option value="2013" >2013</option><option value="2014" selected>2014</option><option value="2015" >2015</option><option value="2016" >2016</option><option value="2017" >2017</option><option value="2018" >2018</option><option value="2019" >2019</option></select>
 年
-<select name="month" ><option value="1" >01</option><option value="2" >02</option><option value="3" >03</option><option value="4" selected>04</option><option value="5" >05</option><option value="6" >06</option><option value="7" >07</option><option value="8" >08</option><option value="9" >09</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option></select>
+<select name="month" ><option value="1" >01</option><option value="2" >02</option><option value="3" >03</option><option value="4" >04</option><option value="5" selected>05</option><option value="6" >06</option><option value="7" >07</option><option value="8" >08</option><option value="9" >09</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option></select>
 月
-<select name="day" ><option value="1" >01</option><option value="2" >02</option><option value="3" selected>03</option><option value="4" >04</option><option value="5" >05</option><option value="6" >06</option><option value="7" >07</option><option value="8" >08</option><option value="9" >09</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option></select>
+<select name="day" ><option value="1" >01</option><option value="2" >02</option><option value="3" >03</option><option value="4" >04</option><option value="5" >05</option><option value="6" >06</option><option value="7" >07</option><option value="8" >08</option><option value="9" >09</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" selected>22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option></select>
 日
 <a href="#" onClick="return calenderjump2('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top',document.form.year.value, document.form.month.value, document.form.day.value )"><img src="/images/button_calender.gif" alt="GO" title="GO"></a>
 </fieldset>
 <ul>
-<li class="precendWeek"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140327')" >前週</a></li>
-<li class="precendDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140402')" >前日</a></li>
-<li class="currentDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140403')" >当日</a></li>
-<li class="followDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140404')" >翌日</a></li>
-<li class="followWeek"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140410')" >翌週</a></li>
+<li class="precendWeek"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140515')" >前週</a></li>
+<li class="precendDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140521')" >前日</a></li>
+<li class="currentDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140522')" >当日</a></li>
+<li class="followDay"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140523')" >翌日</a></li>
+<li class="followWeek"><a href="#" class="calendarportlet-text-link" onClick="return calenderjump('/vespine/Top','CMD_CALENDERPORTLET_MOVE','top','20140529')" >翌週</a></li>
 </ul>
 </div>
 <div class="calender">
@@ -310,13 +310,13 @@
 <thead>
 <tr>
 <th class="summary" scope="col">&nbsp;</th>
-<th class="near" scope="col">4/3（木）&nbsp;</th>
-<th class="near" scope="col">4/4（金）&nbsp;</th>
-<th class="near" scope="col"><font color='blue'>4/5（土）</font>&nbsp;</th>
-<th class="far" scope="col"><font color='red'>4/6（日）</font>&nbsp;</th>
-<th class="far" scope="col">4/7（月）&nbsp;</th>
-<th class="far" scope="col">4/8（火）&nbsp;</th>
-<th class="far" scope="col">4/9（水）&nbsp;</th>
+<th class="near" scope="col">5/22（木）&nbsp;</th>
+<th class="near" scope="col">5/23（金）&nbsp;</th>
+<th class="near" scope="col"><font color='blue'>5/24（土）</font>&nbsp;</th>
+<th class="far" scope="col"><font color='red'>5/25（日）</font>&nbsp;</th>
+<th class="far" scope="col">5/26（月）&nbsp;</th>
+<th class="far" scope="col">5/27（火）&nbsp;</th>
+<th class="far" scope="col">5/28（水）&nbsp;</th>
 </tr>
 </thead>
 <tbody>
@@ -324,7 +324,7 @@
 <th abbr="学年暦" class="summary" scope="row">学年暦</th>
 <td class="near">&nbsp;</td>
 <td class="near">&nbsp;</td>
-<td class="near">         春学期授業開始[学部]&nbsp;</td>
+<td class="near">&nbsp;</td>
 <td class="far">&nbsp;</td>
 <td class="far">&nbsp;</td>
 <td class="far">&nbsp;</td>
@@ -350,17 +350,17 @@
 
 <tr class="personal">
 <th abbr="個人スケジュール" class="summary" scope="row">個人スケジュール</th>
-<td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140403')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140404')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140405')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140406')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140407')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140408')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140409')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td>
+<td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140522')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140523')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="near"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140524')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140525')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140526')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140527')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td><td class="far"><p><a href="#" onClick="return schedulepop('/vespine/Schedule','CMD_NEW_ENTRY','top','20140528')"><img src="/images/icon_plus.gif" alt="スケジュールの追加" width="16" height="16"></a></p>&nbsp</td>
 </tr>
 
 <tr class="personal">
 <th abbr="個人伝言/お知らせ" class="summary" scope="row">個人伝言/お知らせ</th>
-<td class="near"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000437088','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_start.gif" alt="開始日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">◇世界遺産や日本経済について考える…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436552','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">【本日開催】藤沼亜起客員教授講演会</a></li>&nbsp;</ul></td>
-<td class="near"><ul>&nbsp;</ul></td>
-<td class="near"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','2','20130000407730','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">授業支援ステーションの開室時間につ…</a></li>&nbsp;</ul></td>
+<td class="near"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000450960','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_start.gif" alt="開始日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">【第２弾開催！】『結構かんたん！コ…</a></li>&nbsp;</ul></td>
+<td class="near"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','1','20140000450004','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">テレビ放送のお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','1','20140000442429','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">人権問題研究室　第７７回公開講座の…</a></li>&nbsp;</ul></td>
+<td class="near"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','2','20140000448345','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">【再掲】★まだまだ募集中★ストレス…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','2','20140000444415','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">ストレスってなに？『ストレスマネジ…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','2','20140000444325','1','0','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">３研究所（東西学術研究所、経済・政…</a></li>&nbsp;</ul></td>
+<td class="far"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','3','20140000444461','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">【コミュニケーショ…</a></li>&nbsp;</ul></td>
 <td class="far"><ul>&nbsp;</ul></td>
-<td class="far"><ul>&nbsp;</ul></td>
-<td class="far"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','5','20140000436116','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">公認会計士試験受験…</a></li>&nbsp;</ul></td>
+<td class="far"><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','5','20140000447031','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_time_period_end.gif" alt="終了日" width="16" height="16"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">【淀川今昔明日もの…</a></li>&nbsp;</ul></td>
 <td class="far"><ul>&nbsp;</ul></td>
 </tr>
 </tbody>
@@ -371,7 +371,7 @@
 <caption>この週の個人伝言/お知らせ</caption>
 <tr>
 <th abbr="この週の個人伝言/お知らせ" scope="row">この週の個人伝言/お知らせ</th>
-<td><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436923','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月02日～06月10日&nbsp;■「大阪再考（3）～身近な大阪の学び～」■　平成26年度　関西大学おおさか文化セ…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436926','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月02日～09月18日&nbsp;§ビジネススキルを高めたい方必見！§関西社会人大学院連合 専門セミナー開催のお…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000437017','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月02日～04月16日&nbsp;【新入生必見】「STEP！」～勉強の仕方を聞こう～を開催します！</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000435756','1','20090000000002','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～04月21日&nbsp;【新メンバー募集】　ピア・コミュニティ「ＫＵサポーターズ」のメンバー募集について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436617','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【！重要！】　脱法ドラッグ（脱法ハーブ、合法アロマリキッド等）について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436634','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【注意】キャンパス内やキャンパス周辺での飲酒について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436635','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【注意】SNS（ソーシャル・ネットワーキング・サービス）の利用について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436640','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【注意】本学学生としてのマナーとモラルについて</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436754','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～07月30日&nbsp;平成２６年度春学期　国際部オフィスアワーのお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436826','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～04月19日&nbsp;（再掲）【インターンシップ】全体ガイダンスを開催します</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436578','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月28日～03月31日&nbsp;【必見】自分で考えた企画をやってみたい人募集　KUSP新メンバー募集のお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000435780','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月27日～04月30日&nbsp;４月の大学学生相談室の開室スケジュールについて</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000433350','1','20090000000051','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月22日～04月18日&nbsp;【重要】平成２６年度履修登録について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000435031','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月14日～05月31日&nbsp;3月～5月のKUコンシェルジュ対応時間について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000432897','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read_important.gif" alt="メール：未読 重要" width="16" height="16">03月07日～03月07日&nbsp;CEAS/Sakaiシステムの対応ブラウザについて</a></li></ul></td>
+<td><ul><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000450327','1','20090000000002','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月21日～05月30日&nbsp;第3回Learning　Cafe開催のお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000450334','1','0','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月21日～06月18日&nbsp;経済・政治研究所　第205回産業セミナーのご案内</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000450516','1','20090000000051','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月21日～06月10日&nbsp;6/27　経済実験参加者募集中！&lt;--6/10締めきり</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000450075','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月20日～07月04日&nbsp;◆◇建築、まちづくりに興味のある方必見!!◇◆第11回三大学連携事業開催のお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000449323','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月19日～07月31日&nbsp;【大注目】Ideaを形に!～イベントパートナー募集～</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436634','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月18日～03月31日&nbsp;【急告】キャンパス内やキャンパス周辺での飲酒について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000447774','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月12日～06月06日&nbsp;【春から変わりたい学生必見！】関大卒女性起業家の講演会を開催します!!</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000450514','1','20090000000051','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月09日～06月01日&nbsp;　募集中!!!　2014年6月13日(金】4限　---経済実験参加者募集中！---</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000445302','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月02日～03月31日&nbsp;【急告】不審な勧誘に注意</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000444887','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">05月01日～03月31日&nbsp;【急告】電車内でのマナーについて</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000444397','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月30日～06月30日&nbsp;5月～6月のKUコンシェルジュ対応時間について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000443907','1','20090000000002','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月28日～05月31日&nbsp;「ほっこり相談室」５月の開室スケジュール☆</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000443986','1','20090000000002','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月28日～07月16日&nbsp;第1回Learning　Cafe開催のお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000443160','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月24日～03月31日&nbsp;【重要】本学学生による自転車事故の発生を受けて</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000442726','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月23日～03月31日&nbsp;【警告】マナーとモラルについて</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000442363','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月22日～05月31日&nbsp;♪地域活性化にチャレンジしたい1、2回生を募集中！♪池田市　商店街空き店舗活用事…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000442424','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月22日～07月18日&nbsp;外国語会話交流会　時間割変更のお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000440848','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月16日～07月18日&nbsp;外国語＆日本語会話交流会が始まります！</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000440270','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月14日～06月06日&nbsp;◇若狭の民宿で若女将を体験する◇若女将インターンの募集についてのお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000437088','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月03日～07月03日&nbsp;◇世界遺産や日本経済について考える◇生涯学習吹田市民大学 関西大学講座 開催のお…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436923','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月02日～06月10日&nbsp;■「大阪再考（3）～身近な大阪の学び～」■　平成26年度　関西大学おおさか文化セ…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436926','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月02日～09月18日&nbsp;§ビジネススキルを高めたい方必見！§関西社会人大学院連合 専門セミナー開催のお…</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436617','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【！重要！】　脱法ドラッグ（脱法ハーブ、合法アロマリキッド等）について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436640','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【注意】本学学生としてのマナーとモラルについて</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000436754','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～07月30日&nbsp;平成２６年度春学期　国際部オフィスアワーのお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000441051','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">04月01日～03月31日&nbsp;【注意】SNS（ソーシャル・ネットワーキング・サービス）の利用について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000439261','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月28日～03月31日&nbsp;【必見】自分で考えた企画をやってみたい人募集　KUSP新メンバー募集のお知らせ</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000435031','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read.gif" alt="メール：既読" width="16" height="16">03月14日～05月31日&nbsp;3月～5月のKUコンシェルジュ対応時間について</a></li><li><a href="#" class="calendarportlet-text-link" onClick="return noticeselectpopindex('/vespine/Notice','CMD_SHOW_DETAIL','0','20140000432897','1','20080000000001','noticeinlist','0' )"><img src="/images/icon_mail_read_important.gif" alt="メール：未読 重要" width="16" height="16">03月07日～03月07日&nbsp;CEAS/Sakaiシステムの対応ブラウザについて</a></li></ul></td>
 <td class="link"><ul>
 <li class="link"><a href="#" class="calendarportlet-text-link" onClick="return mainwindowopennotice('/vespine/Notice','CMD_SHOW_IN_LIST','top','1')"><img src="/images/icon_link.gif" alt="" width="16" height="16">個人伝言一覧表を表示</a></li>
 <li class="link"><a href="#" class="calendarportlet-text-link" onClick="return mainwindowopennotice('/vespine/Notice','CMD_SHOW_IN_LIST','top','0')"><img src="/images/icon_link.gif" alt="" width="16" height="16">お知らせ一覧表を表示</a></li>

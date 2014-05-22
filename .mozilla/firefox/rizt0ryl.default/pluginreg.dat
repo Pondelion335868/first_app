@@ -5,11 +5,19 @@ Version:0.16:$
 Arch:x86_64-gcc3:$
 
 [PLUGINS]
+librhythmbox-itms-detection-plugin.so:$
+/usr/lib/mozilla/plugins/librhythmbox-itms-detection-plugin.so:$
+:$
+1396551406000:0:0:$
+This plug-in detects the presence of iTunes when opening iTunes Store URLs in a web page with Firefox.:$
+iTunes Application Detector:$
+1
+0:application/itunes-plugin:::$
 libtotem-gmp-plugin.so:$
 /usr/lib/mozilla/plugins/libtotem-gmp-plugin.so:$
 :$
-1369542426000:0:0:$
-The <a href="http://www.gnome.org/">Videos</a> 3.8.2 plugin handles video and audio streams.:$
+1396359855000:0:0:$
+The <a href="http://www.gnome.org/">Videos</a> 3.10.1 plugin handles video and audio streams.:$
 Windows Media Player Plug-in 10 (compatible; Videos):$
 13
 0:application/x-mplayer2:AVI 動画:avi, wma, wmv:$
@@ -28,7 +36,7 @@ Windows Media Player Plug-in 10 (compatible; Videos):$
 libtotem-mully-plugin.so:$
 /usr/lib/mozilla/plugins/libtotem-mully-plugin.so:$
 :$
-1369542426000:0:0:$
+1396359855000:0:0:$
 DivX Web Player version 1.4.0.233:$
 DivX® Web Player:$
 1
@@ -36,8 +44,8 @@ DivX® Web Player:$
 libtotem-narrowspace-plugin.so:$
 /usr/lib/mozilla/plugins/libtotem-narrowspace-plugin.so:$
 :$
-1369542426000:0:0:$
-The <a href="http://www.gnome.org/">Videos</a> 3.8.2 plugin handles video and audio streams.:$
+1396359855000:0:0:$
+The <a href="http://www.gnome.org/">Videos</a> 3.10.1 plugin handles video and audio streams.:$
 QuickTime Plug-in 7.6.6:$
 6
 0:video/quicktime:QuickTime 動画:mov:$
@@ -49,9 +57,9 @@ QuickTime Plug-in 7.6.6:$
 libtotem-cone-plugin.so:$
 /usr/lib/mozilla/plugins/libtotem-cone-plugin.so:$
 :$
-1369542426000:0:0:$
-The <a href="http://www.gnome.org/">Videos</a> 3.8.2 plugin handles video and audio streams.:$
-VLC Multimedia Plugin (compatible Videos 3.8.2):$
+1396359855000:0:0:$
+The <a href="http://www.gnome.org/">Videos</a> 3.10.1 plugin handles video and audio streams.:$
+VLC Multimedia Plugin (compatible Videos 3.10.1):$
 23
 0:application/x-vlc-plugin:VLC Multimedia Plugin::$
 1:application/vlc:VLC Multimedia Plugin::$
@@ -76,13 +84,5 @@ VLC Multimedia Plugin (compatible Videos 3.8.2):$
 20:video/webm:WebM 動画:webm:$
 21:application/x-totem-plugin:Videos multimedia plugin::$
 22:audio/midi:MIDI オーディオ:mid, midi:$
-librhythmbox-itms-detection-plugin.so:$
-/usr/lib/mozilla/plugins/librhythmbox-itms-detection-plugin.so:$
-:$
-1368697276000:0:0:$
-This plug-in detects the presence of iTunes when opening iTunes Store URLs in a web page with Firefox.:$
-iTunes Application Detector:$
-1
-0:application/itunes-plugin:::$
 
 [INVALID]

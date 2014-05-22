@@ -3,18 +3,7 @@
       xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
       xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
 >
-  <bookmark href="file:///home/nakajima/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89/Epson-LP-M6000-eplaser-jp.ppd" added="2014-04-01T06:35:58Z" modified="2014-04-01T06:37:57Z" visited="2014-04-01T06:35:58Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/octet-stream"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2014-04-01T06:35:58Z" count="1"/>
-          <bookmark:application name="system-config-printer.py" exec="&apos;system-config-printer.py %u&apos;" modified="2014-04-01T06:37:57Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/nakajima/tex/document.tex" added="2014-04-01T06:56:36Z" modified="2014-04-02T02:56:06Z" visited="2014-04-01T06:56:37Z">
+  <bookmark href="file:///home/nakajima/tex/document.tex" added="2014-04-01T06:56:36Z" modified="2014-05-07T08:10:46Z" visited="2014-04-01T06:56:37Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-tex"/>
@@ -22,108 +11,1780 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-02T02:56:06Z" count="3"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-07T08:10:46Z" count="5"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/tex/document.pdf" added="2014-04-01T06:57:54Z" modified="2014-04-02T02:56:16Z" visited="2014-04-01T06:57:55Z">
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/%E6%94%AF%E6%89%95%E7%A2%BA%E8%AA%8D.ods" added="2014-04-02T04:47:39Z" modified="2014-05-19T07:04:45Z" visited="2014-04-02T04:47:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-05-19T02:59:19Z" count="26"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T07:53:04Z" count="54"/>
+          <bookmark:application name="LibreOffice 4.2" exec="&apos;soffice %u&apos;" modified="2014-05-19T07:04:45Z" count="51"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2014_4%E6%9C%88%20.ods" added="2014-04-02T05:27:09Z" modified="2014-05-14T04:11:47Z" visited="2014-04-02T05:27:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-24T07:58:02Z" count="12"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:51:33Z" count="56"/>
+          <bookmark:application name="LibreOffice 4.2" exec="&apos;soffice %u&apos;" modified="2014-05-14T04:11:47Z" count="15"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_4%E6%9C%88%20.ods" added="2014-04-08T05:42:22Z" modified="2014-04-22T05:52:05Z" visited="2014-04-08T05:42:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:52:05Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2014_2%E6%9C%88.ods" added="2014-04-09T03:14:07Z" modified="2014-04-22T06:10:18Z" visited="2014-04-09T03:14:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T06:10:18Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/.gemrc" added="2014-04-09T03:32:05Z" modified="2014-04-25T07:25:51Z" visited="2014-04-09T03:32:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-25T07:25:51Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/Gemfile" added="2014-04-09T03:37:24Z" modified="2014-05-12T06:54:35Z" visited="2014-04-09T03:37:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-12T06:46:13Z" count="20"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-12T06:54:35Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/README.rdoc" added="2014-04-09T03:43:40Z" modified="2014-04-28T06:06:08Z" visited="2014-04-09T03:43:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T06:06:08Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/Rakefile" added="2014-04-09T03:44:38Z" modified="2014-04-29T06:13:48Z" visited="2014-04-09T03:44:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T06:13:48Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-29T06:13:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/config.ru" added="2014-04-09T03:44:47Z" modified="2014-05-02T05:38:22Z" visited="2014-04-09T03:44:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-02T05:38:22Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-30T07:45:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/first_app/Gemfile" added="2014-04-11T07:10:39Z" modified="2014-04-28T05:58:31Z" visited="2014-04-11T07:10:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T05:58:31Z" count="11"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/demo_app/Gemfile" added="2014-04-16T03:04:39Z" modified="2014-05-16T07:11:53Z" visited="2014-04-16T03:04:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-16T07:11:53Z" count="10"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/math.rb" added="2014-04-18T03:49:16Z" modified="2014-05-01T03:06:18Z" visited="2014-04-18T03:49:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-01T03:06:18Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/4%25E6%259C%258822%25E6%2597%25A5%25EF%25BC%2588%25E7%2581%25AB%25EF%25BC%2589%25E4%25BC%2581%25E6%25A5%25AD%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2595%25E3%2582%25A3%25E3%2583%25BC%25E3%2583%25AB.pdf" added="2014-04-21T03:10:46Z" modified="2014-04-21T03:10:48Z" visited="2014-04-21T03:10:46Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/pdf"/>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2014-04-01T06:57:54Z" count="1"/>
-          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2014-04-02T02:56:16Z" count="2"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2014-04-21T03:10:46Z" count="1"/>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2014-04-21T03:10:48Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///media/nakajima/MYLINUXLIVE/%E4%BC%9A%E8%A8%88/%E6%94%AF%E6%89%95%E7%A2%BA%E8%AA%8D.ods" added="2014-04-02T04:45:49Z" modified="2014-04-02T04:45:56Z" visited="2014-04-02T04:45:49Z">
+  <bookmark href="file:///home/nakajima/ruby_test/each_name.rb" added="2014-04-21T03:26:03Z" modified="2014-04-21T03:27:13Z" visited="2014-04-21T03:26:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T03:27:13Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/fontsize.rb" added="2014-04-21T03:32:34Z" modified="2014-04-21T03:35:54Z" visited="2014-04-21T03:32:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T03:35:54Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/fontsize.html" added="2014-04-21T03:37:19Z" modified="2014-04-21T03:37:19Z" visited="2014-04-21T03:37:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2014-04-21T03:37:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/p_and_pp.rb" added="2014-04-21T03:39:46Z" modified="2014-04-21T03:42:01Z" visited="2014-04-21T03:39:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T03:42:01Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/print_hayasi.rb" added="2014-04-21T03:51:31Z" modified="2014-04-21T03:52:57Z" visited="2014-04-21T03:51:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T03:52:57Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/print_argv.rb" added="2014-04-21T03:56:12Z" modified="2014-04-21T03:57:26Z" visited="2014-04-21T03:56:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T03:57:26Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/happybirthday.rb" added="2014-04-21T03:59:25Z" modified="2014-04-21T04:00:06Z" visited="2014-04-21T03:59:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T04:00:06Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/arg_arith.rb" added="2014-04-21T04:01:02Z" modified="2014-04-21T04:03:12Z" visited="2014-04-21T04:01:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T04:03:12Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/read_text.rb" added="2014-04-21T04:05:28Z" modified="2014-04-21T04:06:29Z" visited="2014-04-21T04:05:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T04:06:29Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/gets_text.rb" added="2014-04-21T04:13:19Z" modified="2014-04-21T04:14:19Z" visited="2014-04-21T04:13:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T04:14:19Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/simple_grep.rb" added="2014-04-21T04:17:36Z" modified="2014-04-21T04:21:46Z" visited="2014-04-21T04:17:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T04:21:46Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/scopetest.rb" added="2014-04-21T06:25:54Z" modified="2014-04-21T06:27:56Z" visited="2014-04-21T06:25:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T06:27:56Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/sub.rb" added="2014-04-21T06:26:37Z" modified="2014-04-21T06:26:46Z" visited="2014-04-21T06:26:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T06:26:46Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/ad2heisei.rb" added="2014-04-21T06:51:26Z" modified="2014-04-21T07:08:43Z" visited="2014-04-21T06:51:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T07:08:43Z" count="8"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/if_elsif.rb" added="2014-04-21T07:09:24Z" modified="2014-04-21T07:10:48Z" visited="2014-04-21T07:09:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T07:10:48Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/unless.rb" added="2014-04-21T07:13:37Z" modified="2014-04-21T07:14:18Z" visited="2014-04-21T07:13:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T07:14:18Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/case.rb" added="2014-04-21T07:19:51Z" modified="2014-04-21T07:23:02Z" visited="2014-04-21T07:19:51Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T07:23:02Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/case_class.rb" added="2014-04-21T07:25:09Z" modified="2014-04-21T07:26:55Z" visited="2014-04-21T07:25:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-21T07:26:55Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/times.rb" added="2014-04-22T03:31:43Z" modified="2014-04-22T03:32:08Z" visited="2014-04-22T03:31:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:32:08Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/times2.rb" added="2014-04-22T03:32:55Z" modified="2014-04-22T03:33:30Z" visited="2014-04-22T03:32:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:33:30Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/times3.rb" added="2014-04-22T03:34:07Z" modified="2014-04-22T03:34:36Z" visited="2014-04-22T03:34:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:34:36Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/for.rb" added="2014-04-22T03:35:48Z" modified="2014-04-22T03:36:30Z" visited="2014-04-22T03:35:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:36:30Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/for_names.rb" added="2014-04-22T03:42:16Z" modified="2014-04-22T03:43:10Z" visited="2014-04-22T03:42:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:43:10Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/while.rb" added="2014-04-22T03:44:05Z" modified="2014-04-22T03:44:37Z" visited="2014-04-22T03:44:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:44:37Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/while2.rb" added="2014-04-22T03:45:33Z" modified="2014-04-22T03:46:06Z" visited="2014-04-22T03:45:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:46:06Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/while3.rb" added="2014-04-22T03:48:23Z" modified="2014-04-22T03:49:04Z" visited="2014-04-22T03:48:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:49:04Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/until.rb" added="2014-04-22T03:51:35Z" modified="2014-04-22T03:52:22Z" visited="2014-04-22T03:51:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:52:22Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/while_not.rb" added="2014-04-22T03:53:26Z" modified="2014-04-22T03:54:01Z" visited="2014-04-22T03:53:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:54:01Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/each_names.rb" added="2014-04-22T03:55:54Z" modified="2014-04-22T03:56:38Z" visited="2014-04-22T03:55:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:56:38Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/each.rb" added="2014-04-22T03:58:54Z" modified="2014-04-22T03:59:38Z" visited="2014-04-22T03:58:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T03:59:38Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/break_next_redo.rb" added="2014-04-22T04:02:03Z" modified="2014-04-22T04:36:06Z" visited="2014-04-22T04:02:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T04:36:06Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/ten_lines_grep.rb" added="2014-04-22T04:38:38Z" modified="2014-04-22T04:42:12Z" visited="2014-04-22T04:38:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T04:42:12Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/strip.rb" added="2014-04-22T04:45:23Z" modified="2014-04-23T07:35:16Z" visited="2014-04-22T04:45:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-23T07:35:16Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/fact.rb" added="2014-04-22T04:48:14Z" modified="2014-04-22T04:49:23Z" visited="2014-04-22T04:48:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T04:49:23Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/striped_fact.rb" added="2014-04-22T04:50:41Z" modified="2014-04-23T07:35:29Z" visited="2014-04-22T04:50:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-23T07:35:29Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/hello_with_name.rb" added="2014-04-22T05:16:49Z" modified="2014-04-22T05:18:19Z" visited="2014-04-22T05:16:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T05:18:19Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/hello_with_default.rb" added="2014-04-22T05:20:42Z" modified="2014-04-22T05:22:06Z" visited="2014-04-22T05:20:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T05:22:06Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_5%E6%9C%88%20.ods" added="2014-04-22T05:51:51Z" modified="2014-05-15T07:17:31Z" visited="2014-04-22T05:51:51Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-02T04:45:49Z" count="1"/>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T04:45:56Z" count="1"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:52:00Z" count="2"/>
+          <bookmark:application name="LibreOffice 4.2" exec="&apos;soffice %u&apos;" modified="2014-05-15T07:17:31Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/%E6%94%AF%E6%89%95%E7%A2%BA%E8%AA%8D.ods" added="2014-04-02T04:47:39Z" modified="2014-04-11T03:52:25Z" visited="2014-04-02T04:47:40Z">
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_6%E6%9C%88.ods" added="2014-04-22T05:52:09Z" modified="2014-04-22T05:52:54Z" visited="2014-04-22T05:52:09Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-11T03:52:01Z" count="11"/>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-11T03:52:25Z" count="43"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:52:54Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013_4%E6%9C%88%20.ods" added="2014-04-02T04:58:31Z" modified="2014-04-02T05:25:12Z" visited="2014-04-02T04:58:31Z">
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_7-8%E6%9C%88%20.ods" added="2014-04-22T05:52:56Z" modified="2014-04-22T05:53:21Z" visited="2014-04-22T05:52:57Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
         <bookmark:applications>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T05:25:12Z" count="3"/>
-          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-02T05:25:11Z" count="1"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:53:21Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2014_2%E6%9C%88.ods" added="2014-04-02T04:59:42Z" modified="2014-04-02T05:00:05Z" visited="2014-04-02T04:59:43Z">
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_9%E6%9C%88.ods" added="2014-04-22T05:53:24Z" modified="2014-04-22T05:55:57Z" visited="2014-04-22T05:53:24Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
         <bookmark:applications>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T05:00:05Z" count="2"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:55:57Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2014_1%E6%9C%88.ods" added="2014-04-02T05:00:14Z" modified="2014-04-02T05:00:31Z" visited="2014-04-02T05:00:15Z">
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_10%E6%9C%88.ods" added="2014-04-22T05:56:01Z" modified="2014-04-22T05:57:24Z" visited="2014-04-22T05:56:01Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
         <bookmark:applications>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T05:00:31Z" count="2"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:57:24Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013_12%E6%9C%88.ods" added="2014-04-02T05:00:33Z" modified="2014-04-02T05:00:51Z" visited="2014-04-02T05:00:33Z">
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_11%E6%9C%88.ods" added="2014-04-22T05:57:27Z" modified="2014-04-22T05:58:18Z" visited="2014-04-22T05:57:27Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
         <bookmark:applications>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-02T05:00:51Z" count="2"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:58:18Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2014_4%E6%9C%88%20.ods" added="2014-04-02T05:27:09Z" modified="2014-04-11T03:54:09Z" visited="2014-04-02T05:27:09Z">
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_12%E6%9C%88.ods" added="2014-04-22T05:58:24Z" modified="2014-04-22T05:58:43Z" visited="2014-04-22T05:58:24Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-10T05:57:45Z" count="6"/>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-11T03:54:09Z" count="37"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T05:58:43Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2014_3%E6%9C%88.ods" added="2014-04-02T05:39:08Z" modified="2014-04-09T05:36:47Z" visited="2014-04-02T05:39:09Z">
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2014_1%E6%9C%88.ods" added="2014-04-22T05:58:46Z" modified="2014-04-22T06:10:20Z" visited="2014-04-22T05:58:46Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
         <bookmark:applications>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-09T05:36:47Z" count="11"/>
-          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-03T02:50:44Z" count="1"/>
+          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-22T06:10:20Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/missfont.log" added="2014-04-02T06:03:47Z" modified="2014-04-11T05:47:34Z" visited="2014-04-02T06:03:47Z">
+  <bookmark href="file:///home/nakajima/ruby_test/hello_class.rb" added="2014-04-22T06:27:18Z" modified="2014-04-22T06:34:22Z" visited="2014-04-22T06:27:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T06:34:22Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/hello_count.rb" added="2014-04-22T07:05:57Z" modified="2014-04-22T07:10:14Z" visited="2014-04-22T07:05:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T07:10:14Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/ext_string.rb" added="2014-04-22T07:12:30Z" modified="2014-04-22T07:15:35Z" visited="2014-04-22T07:12:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T07:15:35Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/ring_array.rb" added="2014-04-22T07:18:00Z" modified="2014-04-22T07:22:23Z" visited="2014-04-22T07:18:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-22T07:22:23Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/acc_test.rb" added="2014-04-22T07:31:27Z" modified="2014-04-23T06:21:02Z" visited="2014-04-22T07:31:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-23T06:21:02Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/point.rb" added="2014-04-22T07:37:19Z" modified="2014-04-23T06:21:10Z" visited="2014-04-22T07:37:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-23T06:21:10Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/4%25E6%259C%258824%25E6%2597%25A5%25EF%25BC%2588%25E6%259C%25A8%25EF%25BC%2589%25E4%25BC%2581%25E6%25A5%25AD%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2595%25E3%2582%25A3%25E3%2583%25BC%25E3%2583%25AB.pdf" added="2014-04-23T05:28:33Z" modified="2014-04-23T05:28:33Z" visited="2014-04-23T05:28:34Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2014-04-23T05:28:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/4%25E6%259C%258825%25E6%2597%25A5%25EF%25BC%2588%25E9%2587%2591%25EF%25BC%2589%25E4%25BC%2581%25E6%25A5%25AD%25E3%2583%2597%25E3%2583%25AD%25E3%2583%2595%25E3%2582%25A3%25E3%2583%25BC%25E3%2583%25AB.pdf" added="2014-04-23T05:29:54Z" modified="2014-04-23T05:29:54Z" visited="2014-04-23T05:29:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="ドキュメントビューアー" exec="&apos;evince %u&apos;" modified="2014-04-23T05:29:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/hello_module.rb" added="2014-04-23T07:01:47Z" modified="2014-04-23T07:04:57Z" visited="2014-04-23T07:01:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-23T07:04:57Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/wc.rb" added="2014-04-23T07:20:11Z" modified="2014-04-23T07:41:46Z" visited="2014-04-23T07:20:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-23T07:41:46Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/catch_throw_sample.rb" added="2014-04-23T07:54:42Z" modified="2014-04-23T07:57:30Z" visited="2014-04-23T07:54:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-23T07:57:30Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/numeric.rb" added="2014-04-24T03:39:31Z" modified="2014-04-24T04:10:20Z" visited="2014-04-24T03:39:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-24T04:10:20Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/renshu_10_1.rb" added="2014-04-24T04:48:12Z" modified="2014-04-24T04:53:19Z" visited="2014-04-24T04:48:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-24T04:53:19Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/renshu_10_2.rb" added="2014-04-24T05:13:34Z" modified="2014-04-24T05:30:33Z" visited="2014-04-24T05:13:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-24T05:30:33Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/renshu_10_3.rb" added="2014-04-24T05:32:05Z" modified="2014-04-24T05:35:09Z" visited="2014-04-24T05:32:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-24T05:35:09Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/renshu_10_4.rb" added="2014-04-24T05:35:56Z" modified="2014-04-24T06:43:21Z" visited="2014-04-24T05:35:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-24T06:43:21Z" count="12"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/array.rb" added="2014-04-25T03:53:04Z" modified="2014-04-25T06:36:43Z" visited="2014-04-25T03:53:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-25T06:36:43Z" count="15"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/list.rb" added="2014-04-25T06:37:10Z" modified="2014-04-25T06:38:32Z" visited="2014-04-25T06:37:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-25T06:38:32Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/sum_list.rb" added="2014-04-25T06:39:27Z" modified="2014-04-25T06:40:26Z" visited="2014-04-25T06:39:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-25T06:40:26Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/sum_list2.rb" added="2014-04-25T06:41:26Z" modified="2014-04-25T06:42:38Z" visited="2014-04-25T06:41:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-25T06:42:38Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/list2.rb" added="2014-04-25T06:42:59Z" modified="2014-04-25T06:44:09Z" visited="2014-04-25T06:42:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-25T06:44:09Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/sum_with_each.rb" added="2014-04-25T06:59:57Z" modified="2014-04-25T07:02:26Z" visited="2014-04-25T06:59:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-25T07:02:26Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/ruby_test/sum_with_zip.rb" added="2014-04-25T07:03:13Z" modified="2014-04-25T07:04:54Z" visited="2014-04-25T07:03:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-25T07:04:54Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/hello_controller.rb" added="2014-04-25T07:51:36Z" modified="2014-04-28T03:45:16Z" visited="2014-04-25T07:51:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T03:45:16Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/config/routes.rb" added="2014-04-25T07:57:54Z" modified="2014-05-08T08:21:59Z" visited="2014-04-25T07:57:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-08T08:21:59Z" count="42"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-28T06:07:32Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/railbook/Gemfile" added="2014-04-28T04:57:38Z" modified="2014-04-28T05:18:04Z" visited="2014-04-28T04:57:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T05:18:04Z" count="5"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-28T05:16:18Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/railbook/app/controllers/hello_controller.rb" added="2014-04-28T05:04:59Z" modified="2014-04-28T05:17:52Z" visited="2014-04-28T05:04:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T05:17:52Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/railbook/config/routes.rb" added="2014-04-28T05:07:21Z" modified="2014-04-28T05:18:00Z" visited="2014-04-28T05:07:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T05:18:00Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/railbook/config.ru" added="2014-04-28T05:11:19Z" modified="2014-04-28T05:11:19Z" visited="2014-04-28T05:11:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T05:11:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/railbook/Gemfile.lock" added="2014-04-28T05:11:40Z" modified="2014-04-28T05:11:40Z" visited="2014-04-28T05:11:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-28T05:11:40Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/controllers/hello_controller.rb" added="2014-04-28T05:22:18Z" modified="2014-04-29T07:14:22Z" visited="2014-04-28T05:22:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T07:14:22Z" count="10"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-29T07:14:14Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/controllers/application_controller.rb" added="2014-04-28T05:23:09Z" modified="2014-04-28T05:23:09Z" visited="2014-04-28T05:23:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T05:23:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/first_app/app/controllers/application_controller.rb" added="2014-04-28T06:05:08Z" modified="2014-04-28T06:05:08Z" visited="2014-04-28T06:05:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T06:05:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/Gemfile.lock" added="2014-04-28T06:05:32Z" modified="2014-04-28T06:05:32Z" visited="2014-04-28T06:05:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T06:05:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/workspace/Sample/src/Circle.java" added="2014-04-28T06:33:24Z" modified="2014-04-28T06:33:24Z" visited="2014-04-28T06:33:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-java"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T06:33:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/railbook/Gemfile" added="2014-04-28T06:59:12Z" modified="2014-04-28T07:00:49Z" visited="2014-04-28T06:59:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T07:00:49Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/views/hello/view.html.erb" added="2014-04-28T07:45:23Z" modified="2014-04-29T04:09:11Z" visited="2014-04-28T07:45:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T04:09:11Z" count="7"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-29T04:07:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/Rails" added="2014-04-28T07:50:29Z" modified="2014-05-21T07:58:50Z" visited="2014-04-28T07:50:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-21T07:58:50Z" count="28"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-20T07:18:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/config/database.yml" added="2014-04-28T07:59:58Z" modified="2014-04-29T04:13:39Z" visited="2014-04-28T07:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T04:13:39Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/config/secrets.yml" added="2014-04-28T08:00:03Z" modified="2014-04-28T08:00:03Z" visited="2014-04-28T08:00:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-28T08:00:03Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/views/layouts/application.html.erb" added="2014-04-29T04:00:03Z" modified="2014-04-29T04:00:19Z" visited="2014-04-29T04:00:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2014-04-29T04:00:03Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T04:00:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/config/application.rb" added="2014-04-29T04:07:01Z" modified="2014-04-29T04:07:01Z" visited="2014-04-29T04:07:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T04:07:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/models/book.rb" added="2014-04-29T04:49:59Z" modified="2014-04-29T05:51:45Z" visited="2014-04-29T04:49:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-29T04:49:59Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T05:51:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/db/migrate/20140429044730_create_books.rb" added="2014-04-29T05:54:24Z" modified="2014-04-29T05:54:24Z" visited="2014-04-29T05:54:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T05:54:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/test/fixtures/books.yml" added="2014-04-29T06:10:54Z" modified="2014-04-29T06:31:14Z" visited="2014-04-29T06:10:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-29T06:10:54Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T06:31:14Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/books.yml" added="2014-04-29T06:31:19Z" modified="2014-05-02T05:38:28Z" visited="2014-04-29T06:31:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-02T05:38:28Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/views/hello/list.html.erb" added="2014-04-29T06:36:25Z" modified="2014-04-29T06:57:00Z" visited="2014-04-29T06:36:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-29T06:57:00Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/controllers/books_controller.rb" added="2014-04-30T03:38:48Z" modified="2014-05-08T08:26:14Z" visited="2014-04-30T03:38:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-08T08:26:14Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/views/books/index.html.erb" added="2014-04-30T03:46:48Z" modified="2014-04-30T03:47:00Z" visited="2014-04-30T03:46:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2014-04-30T03:46:48Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-30T03:47:00Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/views/books/show.html.erb" added="2014-04-30T04:48:09Z" modified="2014-04-30T04:48:09Z" visited="2014-04-30T04:48:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-30T04:48:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/views/books/new.html.erb" added="2014-04-30T04:51:45Z" modified="2014-04-30T04:51:53Z" visited="2014-04-30T04:51:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2014-04-30T04:51:45Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-30T04:51:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/app/views/books/_form.html.erb" added="2014-04-30T04:54:44Z" modified="2014-04-30T04:54:44Z" visited="2014-04-30T04:54:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-30T04:54:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/db/migrate/20140425073313_create_users.rb" added="2014-04-30T07:30:15Z" modified="2014-04-30T07:31:13Z" visited="2014-04-30T07:30:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-30T07:30:15Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-30T07:31:13Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/db/migrate/20140430072723_create_authors_books.rb" added="2014-04-30T07:30:56Z" modified="2014-04-30T07:52:19Z" visited="2014-04-30T07:30:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-30T07:49:00Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-30T07:52:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/db/migrate/20140430032440_create_books.rb" added="2014-04-30T07:31:07Z" modified="2014-04-30T07:31:07Z" visited="2014-04-30T07:31:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-30T07:31:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/foo/test/fixtures/authors_books.yml" added="2014-04-30T07:42:01Z" modified="2014-04-30T07:42:01Z" visited="2014-04-30T07:42:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-30T07:42:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2014_5%E6%9C%88.ods" added="2014-04-30T08:17:29Z" modified="2014-05-19T02:59:26Z" visited="2014-04-30T08:17:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-05-19T02:59:19Z" count="3"/>
+          <bookmark:application name="LibreOffice 4.2" exec="&apos;soffice %u&apos;" modified="2014-05-19T02:59:26Z" count="48"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/Rails.txt" added="2014-05-07T07:37:56Z" modified="2014-05-07T07:38:08Z" visited="2014-05-07T07:37:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-07T07:37:57Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-07T07:38:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/nakajima/4E66-7DC0/desktop.ini" added="2014-05-07T07:39:24Z" modified="2014-05-07T07:39:24Z" visited="2014-05-07T07:39:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-07T07:39:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/nakajima/4E66-7DC0/Rails.txt" added="2014-05-07T07:39:45Z" modified="2014-05-07T07:48:39Z" visited="2014-05-07T07:39:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-07T07:48:39Z" count="3"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-07T07:40:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/Gemfile" added="2014-05-09T03:13:40Z" modified="2014-05-16T05:56:05Z" visited="2014-05-09T03:13:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-16T05:56:05Z" count="7"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-12T06:57:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/config/routes.rb" added="2014-05-09T03:15:48Z" modified="2014-05-15T03:39:34Z" visited="2014-05-09T03:15:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T03:39:34Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/db/development.sqlite3" added="2014-05-09T03:20:43Z" modified="2014-05-09T03:20:43Z" visited="2014-05-09T03:20:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T03:20:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/controllers/application_controller.rb" added="2014-05-09T03:20:55Z" modified="2014-05-12T07:22:01Z" visited="2014-05-09T03:20:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-12T07:22:01Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/layouts/application.html.erb" added="2014-05-09T03:21:10Z" modified="2014-05-15T03:39:00Z" visited="2014-05-09T03:21:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T08:39:36Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T03:39:00Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/controllers/hello_controller.rb" added="2014-05-09T03:26:42Z" modified="2014-05-15T08:08:47Z" visited="2014-05-09T03:26:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T08:08:47Z" count="9"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T03:30:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/config/database.yml" added="2014-05-09T05:35:37Z" modified="2014-05-09T08:48:46Z" visited="2014-05-09T05:35:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T08:48:46Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/db/migrate/20140509070051_create_funds.rb" added="2014-05-09T07:02:26Z" modified="2014-05-09T08:47:55Z" visited="2014-05-09T07:02:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:47:55Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/funds/index.html.erb" added="2014-05-09T07:32:11Z" modified="2014-05-19T04:57:42Z" visited="2014-05-09T07:32:12Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T09:08:16Z" count="6"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-19T04:57:42Z" count="29"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/controllers/funds_controller.rb" added="2014-05-09T07:33:19Z" modified="2014-05-15T04:03:53Z" visited="2014-05-09T07:33:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T04:03:53Z" count="17"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T08:57:56Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/funds/_form.html.erb" added="2014-05-09T07:37:21Z" modified="2014-05-19T05:23:21Z" visited="2014-05-09T07:37:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-12T07:05:27Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-19T05:23:21Z" count="45"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/funds/edit.html.erb" added="2014-05-09T07:37:40Z" modified="2014-05-12T07:05:53Z" visited="2014-05-09T07:37:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-12T07:05:53Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/funds/show.html.erb" added="2014-05-09T07:41:00Z" modified="2014-05-12T07:09:50Z" visited="2014-05-09T07:41:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-12T07:09:50Z" count="6"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T09:08:22Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/funds/new.html.erb" added="2014-05-09T07:41:09Z" modified="2014-05-12T07:12:05Z" visited="2014-05-09T07:41:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-12T07:12:05Z" count="7"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T09:08:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/funds/index.json.jbuilder" added="2014-05-09T07:41:17Z" modified="2014-05-15T03:53:20Z" visited="2014-05-09T07:41:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T03:53:20Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/funds/show.json.jbuilder" added="2014-05-09T07:41:43Z" modified="2014-05-09T07:41:43Z" visited="2014-05-09T07:41:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T07:41:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/models/fund.rb" added="2014-05-09T07:41:55Z" modified="2014-05-15T03:39:15Z" visited="2014-05-09T07:41:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T07:41:55Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T03:39:15Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/helpers/funds_helper.rb" added="2014-05-09T07:42:09Z" modified="2014-05-09T08:39:58Z" visited="2014-05-09T07:42:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T07:42:09Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:39:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/db/schema.rb" added="2014-05-09T07:43:14Z" modified="2014-05-09T07:43:14Z" visited="2014-05-09T07:43:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T07:43:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/db/seeds.rb" added="2014-05-09T07:43:27Z" modified="2014-05-09T07:43:27Z" visited="2014-05-09T07:43:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T07:43:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/log/development.log" added="2014-05-09T07:43:43Z" modified="2014-05-09T07:43:43Z" visited="2014-05-09T07:43:43Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/x-log"/>
@@ -131,168 +1792,219 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-04-11T05:47:32Z" count="2"/>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-11T05:47:34Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T07:43:43Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2013_4%E6%9C%88%20.ods" added="2014-04-08T05:42:22Z" modified="2014-04-08T05:50:25Z" visited="2014-04-08T05:42:22Z">
+  <bookmark href="file:///home/nakajima/work/accounting/test/test_helper.rb" added="2014-05-09T07:44:16Z" modified="2014-05-09T08:54:44Z" visited="2014-05-09T07:44:16Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
-        <bookmark:applications>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-08T05:50:25Z" count="2"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/%E4%BC%9A%E8%A8%88/2013%E5%B9%B4%E5%BA%A6/2014_2%E6%9C%88.ods" added="2014-04-09T03:14:07Z" modified="2014-04-09T05:29:42Z" visited="2014-04-09T03:14:07Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/vnd.oasis.opendocument.spreadsheet"/>
-        <bookmark:applications>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-09T05:29:42Z" count="4"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///home/nakajima/.gemrc" added="2014-04-09T03:32:05Z" modified="2014-04-14T03:17:19Z" visited="2014-04-09T03:32:05Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
+        <mime:mime-type type="application/x-ruby"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-14T03:17:19Z" count="4"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:54:44Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T08:51:07Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/work/foo/Gemfile" added="2014-04-09T03:37:24Z" modified="2014-04-09T03:48:29Z" visited="2014-04-09T03:37:24Z">
+  <bookmark href="file:///home/nakajima/work/accounting/test/controllers/funds_controller_test.rb" added="2014-05-09T07:44:26Z" modified="2014-05-09T08:51:18Z" visited="2014-05-09T07:44:26Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
+        <mime:mime-type type="application/x-ruby"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:48:29Z" count="7"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T07:44:26Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T08:51:18Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/work/foo/doc/README_FOR_APP" added="2014-04-09T03:42:35Z" modified="2014-04-09T03:42:35Z" visited="2014-04-09T03:42:35Z">
+  <bookmark href="file:///home/nakajima/work/accounting/test/fixtures/funds.yml" added="2014-05-09T07:44:44Z" modified="2014-05-09T08:53:49Z" visited="2014-05-09T07:44:44Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
+        <mime:mime-type type="application/x-yaml"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:42:35Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:53:49Z" count="6"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/work/foo/README.rdoc" added="2014-04-09T03:43:40Z" modified="2014-04-09T03:43:40Z" visited="2014-04-09T03:43:41Z">
+  <bookmark href="file:///home/nakajima/work/accounting/config/environments/development.rb" added="2014-05-09T08:48:13Z" modified="2014-05-09T08:48:13Z" visited="2014-05-09T08:48:14Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
+        <mime:mime-type type="application/x-ruby"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:43:40Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:48:13Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/work/foo/Rakefile" added="2014-04-09T03:44:38Z" modified="2014-04-09T03:44:38Z" visited="2014-04-09T03:44:39Z">
+  <bookmark href="file:///home/nakajima/work/accounting/config/environments/production.rb" added="2014-05-09T08:48:21Z" modified="2014-05-09T08:48:21Z" visited="2014-05-09T08:48:21Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
+        <mime:mime-type type="application/x-ruby"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:44:38Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:48:21Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/work/foo/config.ru" added="2014-04-09T03:44:47Z" modified="2014-04-09T03:44:47Z" visited="2014-04-09T03:44:47Z">
+  <bookmark href="file:///home/nakajima/work/accounting/config/locales/en.yml" added="2014-05-09T08:48:37Z" modified="2014-05-15T05:17:42Z" visited="2014-05-09T08:48:37Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="text/plain"/>
+        <mime:mime-type type="application/x-yaml"/>
         <bookmark:groups>
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-09T03:44:47Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T05:17:42Z" count="2"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///tmp/%EF%BC%92%EF%BC%90%EF%BC%91%EF%BC%91%E5%B9%B46%E6%9C%8823%E6%97%A5%E8%AA%B2%E9%A1%8C%E7%99%BA%E8%A1%A8%E3%80%80%E5%BE%B3%E5%B1%B1%E7%BF%94%E5%A4%AA.odp" added="2014-04-09T07:02:43Z" modified="2014-04-09T07:02:45Z" visited="2014-04-09T07:02:43Z">
+  <bookmark href="file:///home/nakajima/work/accounting/config/application.rb" added="2014-05-09T08:48:56Z" modified="2014-05-09T08:48:56Z" visited="2014-05-09T08:48:56Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/vnd.oasis.opendocument.presentation"/>
-        <bookmark:applications>
-          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2014-04-09T07:02:43Z" count="1"/>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-09T07:02:45Z" count="1"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/nakajima/4E66-7DC0/%E3%81%93%E3%81%A5%E3%81%8B%E3%81%84%E5%B8%B3%EF%BC%882014%E5%B9%B4%EF%BC%89%20(%E3%82%B3%E3%83%94%E3%83%BC).xlsx" added="2014-04-10T05:39:22Z" modified="2014-04-10T05:56:31Z" visited="2014-04-10T05:39:23Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
-        <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;libreoffice --calc %U&apos;" modified="2014-04-10T05:39:22Z" count="1"/>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-10T05:56:31Z" count="7"/>
-        </bookmark:applications>
-      </metadata>
-    </info>
-  </bookmark>
-  <bookmark href="file:///media/nakajima/4E66-7DC0/%E5%B9%B3%E6%88%9025%E5%B9%B4%E5%BA%A6%EF%BC%88%E4%B8%89%E5%9B%9E%EF%BC%89/%E3%83%A1%E3%82%AB%E3%83%88%E3%83%AD%E3%83%8B%E3%82%AF%E3%82%B9%202010%E5%B9%B4%E8%A9%A6%E9%A8%93%E5%95%8F%E9%A1%8C%20(1).JPG" added="2014-04-10T05:56:52Z" modified="2014-04-10T05:56:53Z" visited="2014-04-10T05:56:52Z">
-    <info>
-      <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="image/jpeg"/>
+        <mime:mime-type type="application/x-ruby"/>
         <bookmark:groups>
-          <bookmark:group>Graphics</bookmark:group>
+          <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;eog %U&apos;" modified="2014-04-10T05:56:52Z" count="1"/>
-          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2014-04-10T05:56:53Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:48:56Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///media/nakajima/4E66-7DC0/%E5%B9%B3%E6%88%9025%E5%B9%B4%E5%BA%A6%EF%BC%88%E4%B8%89%E5%9B%9E%EF%BC%89/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E9%81%8E%E5%8E%BB%E5%95%8F.docx" added="2014-04-10T05:57:02Z" modified="2014-04-10T05:57:04Z" visited="2014-04-10T05:57:02Z">
+  <bookmark href="file:///home/nakajima/work/accounting/config/boot.rb" added="2014-05-09T08:49:08Z" modified="2014-05-09T08:49:08Z" visited="2014-05-09T08:49:09Z">
     <info>
       <metadata owner="http://freedesktop.org">
-        <mime:mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;libreoffice --writer %U&apos;" modified="2014-04-10T05:57:02Z" count="1"/>
-          <bookmark:application name="LibreOffice 4.1" exec="&apos;soffice %u&apos;" modified="2014-04-10T05:57:04Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:49:08Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///media/nakajima/4E66-7DC0/beginning" added="2014-04-10T06:56:52Z" modified="2014-04-10T06:56:52Z" visited="2014-04-10T06:56:53Z">
+  <bookmark href="file:///home/nakajima/work/accounting/config/secrets.yml" added="2014-05-09T08:49:38Z" modified="2014-05-09T08:49:38Z" visited="2014-05-09T08:49:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-yaml"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:49:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/bin/rails" added="2014-05-09T08:50:13Z" modified="2014-05-09T08:55:52Z" visited="2014-05-09T08:50:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T08:55:52Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/bin/bundle" added="2014-05-09T08:50:21Z" modified="2014-05-09T08:55:48Z" visited="2014-05-09T08:50:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:55:48Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/test/helpers/funds_helper_test.rb" added="2014-05-09T08:54:24Z" modified="2014-05-09T08:54:24Z" visited="2014-05-09T08:54:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:54:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/test/models/fund_test.rb" added="2014-05-09T08:54:36Z" modified="2014-05-09T08:54:36Z" visited="2014-05-09T08:54:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:54:36Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/public/404.html" added="2014-05-09T08:54:57Z" modified="2014-05-09T08:54:57Z" visited="2014-05-09T08:54:58Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2014-04-10T06:56:52Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:54:57Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/rails_projects/first_app/Gemfile" added="2014-04-11T07:10:39Z" modified="2014-04-14T03:34:09Z" visited="2014-04-11T07:10:40Z">
+  <bookmark href="file:///home/nakajima/work/accounting/public/422.html" added="2014-05-09T08:55:06Z" modified="2014-05-09T08:55:06Z" visited="2014-05-09T08:55:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:55:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/public/500.html" added="2014-05-09T08:55:16Z" modified="2014-05-09T08:55:16Z" visited="2014-05-09T08:55:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:55:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/public/robots.txt" added="2014-05-09T08:55:27Z" modified="2014-05-09T08:55:27Z" visited="2014-05-09T08:55:27Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -300,12 +2012,87 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-14T03:34:09Z" count="3"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:55:27Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///home/nakajima/.gitignore" added="2014-04-14T05:55:09Z" modified="2014-04-14T05:55:09Z" visited="2014-04-14T05:55:09Z">
+  <bookmark href="file:///home/nakajima/work/accounting/bin/rake" added="2014-05-09T08:55:57Z" modified="2014-05-09T08:55:57Z" visited="2014-05-09T08:55:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:55:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/bin/spring" added="2014-05-09T08:56:02Z" modified="2014-05-09T08:56:02Z" visited="2014-05-09T08:56:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:56:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/config/initializers/backtrace_silencers.rb" added="2014-05-09T08:56:57Z" modified="2014-05-09T08:56:57Z" visited="2014-05-09T08:56:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:56:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/config/initializers/filter_parameter_logging.rb" added="2014-05-09T08:57:02Z" modified="2014-05-09T08:57:02Z" visited="2014-05-09T08:57:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:57:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/config/initializers/inflections.rb" added="2014-05-09T08:57:08Z" modified="2014-05-09T08:57:08Z" visited="2014-05-09T08:57:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-09T08:57:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/config/initializers/wrap_parameters.rb" added="2014-05-09T08:57:16Z" modified="2014-05-09T08:57:16Z" visited="2014-05-09T08:57:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-09T08:57:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/version" added="2014-05-12T06:30:25Z" modified="2014-05-14T09:11:02Z" visited="2014-05-12T06:30:26Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="text/plain"/>
@@ -313,7 +2100,356 @@
           <bookmark:group>gedit</bookmark:group>
         </bookmark:groups>
         <bookmark:applications>
-          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-04-14T05:55:09Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-14T09:11:02Z" count="8"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/Memo" added="2014-05-14T09:14:35Z" modified="2014-05-22T03:43:31Z" visited="2014-05-14T09:14:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-22T03:43:31Z" count="8"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-22T03:42:16Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/controllers/mail_controller.rb" added="2014-05-15T03:38:36Z" modified="2014-05-15T04:12:04Z" visited="2014-05-15T03:38:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T04:12:04Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/mail/index.html.erb" added="2014-05-15T03:53:46Z" modified="2014-05-15T03:54:04Z" visited="2014-05-15T03:53:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T03:54:04Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/mailers/notice_mailer.rb" added="2014-05-15T05:15:31Z" modified="2014-05-19T04:58:03Z" visited="2014-05-15T05:15:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-19T02:58:15Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-19T04:58:03Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/app/views/notice_mailer/sendmail_confirm.text.erb" added="2014-05-15T05:22:29Z" modified="2014-05-15T07:46:28Z" visited="2014-05-15T05:22:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-15T07:46:28Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/work/accounting/.gitignore" added="2014-05-16T03:48:08Z" modified="2014-05-16T03:53:39Z" visited="2014-05-16T03:48:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-16T03:53:39Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/demo_app/app/controllers/users_controller.rb" added="2014-05-16T07:33:29Z" modified="2014-05-16T07:33:29Z" visited="2014-05-16T07:33:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-16T07:33:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/demo_app/app/models/user.rb" added="2014-05-16T07:34:26Z" modified="2014-05-19T06:49:58Z" visited="2014-05-16T07:34:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-19T06:49:58Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/demo_app/app/views/users/index.html.erb" added="2014-05-16T07:35:42Z" modified="2014-05-16T07:36:05Z" visited="2014-05-16T07:35:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-16T07:36:05Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/demo_app/config/routes.rb" added="2014-05-19T06:34:29Z" modified="2014-05-19T06:34:29Z" visited="2014-05-19T06:34:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-19T06:34:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/demo_app/app/controllers/microposts_controller.rb" added="2014-05-19T06:43:43Z" modified="2014-05-19T06:43:43Z" visited="2014-05-19T06:43:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-19T06:43:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/demo_app/app/models/micropost.rb" added="2014-05-19T06:47:07Z" modified="2014-05-19T06:50:23Z" visited="2014-05-19T06:47:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-19T06:50:23Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/Gemfile" added="2014-05-20T03:31:27Z" modified="2014-05-20T04:33:12Z" visited="2014-05-20T03:31:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T04:33:12Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/.gitignore" added="2014-05-20T03:50:54Z" modified="2014-05-20T03:52:20Z" visited="2014-05-20T03:50:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T03:52:20Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/config/initializers/secret_token.rb" added="2014-05-20T03:53:18Z" modified="2014-05-20T04:00:15Z" visited="2014-05-20T03:53:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T04:00:15Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89/node-v0.10.28.tar.gz" added="2014-05-20T04:12:13Z" modified="2014-05-20T04:15:33Z" visited="2014-05-20T04:12:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2014-05-20T04:12:13Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2014-05-20T04:15:33Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/.cache/.fr-aq3RQI/node-v0.10.28/README.md" added="2014-05-20T04:15:16Z" modified="2014-05-20T04:15:16Z" visited="2014-05-20T04:15:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-markdown"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T04:15:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89/node-v0.10.26.tar.gz" added="2014-05-20T04:15:57Z" modified="2014-05-20T04:15:57Z" visited="2014-05-20T04:15:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2014-05-20T04:15:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/README.rdoc" added="2014-05-20T05:30:13Z" modified="2014-05-20T05:31:06Z" visited="2014-05-20T05:30:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T05:31:06Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/config/routes.rb" added="2014-05-20T05:52:26Z" modified="2014-05-20T06:56:29Z" visited="2014-05-20T05:52:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T06:56:29Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/app/controllers/static_pages_controller.rb" added="2014-05-20T05:57:37Z" modified="2014-05-20T06:58:46Z" visited="2014-05-20T05:57:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T06:58:46Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/app/views/static_pages/home.html.erb" added="2014-05-20T06:06:13Z" modified="2014-05-20T06:43:13Z" visited="2014-05-20T06:06:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T06:43:13Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2014-05-20T06:41:40Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/app/views/static_pages/help.html.erb" added="2014-05-20T06:06:51Z" modified="2014-05-20T06:48:56Z" visited="2014-05-20T06:06:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T06:48:56Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/spec/requests/static_pages_spec.rb" added="2014-05-20T06:33:35Z" modified="2014-05-20T06:53:41Z" visited="2014-05-20T06:33:35Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T06:53:41Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/spec/spec_helper.rb" added="2014-05-20T06:38:01Z" modified="2014-05-20T06:39:37Z" visited="2014-05-20T06:38:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T06:39:37Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/sample_app/app/views/static_pages/about.html.erb" added="2014-05-20T07:00:11Z" modified="2014-05-20T07:02:14Z" visited="2014-05-20T07:00:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-20T07:02:14Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/nakajima/rails_projects/first_app/README.md" added="2014-05-22T03:57:48Z" modified="2014-05-22T04:00:19Z" visited="2014-05-22T03:57:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-markdown"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2014-05-22T04:00:19Z" count="3"/>
         </bookmark:applications>
       </metadata>
     </info>

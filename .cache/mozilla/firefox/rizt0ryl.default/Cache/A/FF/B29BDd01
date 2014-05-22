@@ -72,6 +72,11 @@ $(function(){
 	// デバイス設定
 	__resobj.windowSet();
 	
+	// スマホ：トップに戻る
+	var spTopButton;
+	spTopButton = new spTopButtonSet();	
+	spTopButton.init();
+	
 	// ロールオーバー設定
 	__resobj.imgRollOver();
 	
@@ -93,11 +98,6 @@ $(function(){
 	// 各グローバルメニュー
 	var globalMenu;
 	globalMenu = new globalMenuSet();
-	
-	// スマホ：トップに戻る
-	var spTopButton;
-	spTopButton = new spTopButtonSet();	
-	spTopButton.init();
 	
 	// 各要素初期設定
 	globalMenu.init();
@@ -801,9 +801,6 @@ function spTopButtonSet(){
 	}
 	
 }
-
-
-
 
 
 

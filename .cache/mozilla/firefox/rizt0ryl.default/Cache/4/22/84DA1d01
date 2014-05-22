@@ -290,8 +290,9 @@ div.mainSecWrap h3.hdTxt02 span{
 div.mainSecWrap div.inner{
 	padding: 11px;
 }
-
-
+div.mainSecWrap div.inner02{
+	padding: 0px 11px;
+}
 div.contentBox{
 	padding-bottom: 11px;
 }
@@ -754,6 +755,11 @@ div.mainBnr02{
 	width:85px;
 	line-height:1.5em;
 }
+/*
+#jobSearch02 .popular h3:first-child{
+	margin-top:.8em;
+}
+*/
 #jobSearch02 .popular{
 	overflow:hidden;
 	padding: 0px 0px 5px 0px;
@@ -801,6 +807,37 @@ div.mainBnr02{
 	line-height:1.5em;
 	overflow:hidden;
 }
+#jobSearch02 .popular .keyword02{
+	font-size: 92%;
+	float:left:450px;
+	line-height:1.5em;
+	overflow:hidden;
+	padding-bottom: 2px;
+}
+#jobSearch02 .popular .keyword02 a{
+	white-space: nowrap;
+	margin-bottom:.6em;
+	margin-top:.5em;
+	text-decoration:underline;
+	font-size:13px;
+	padding-left: 25px;
+	float:left;
+	display:block;
+	background: url(../images/top/icn_calendar.png) no-repeat 0px center;
+}
+#jobSearch02 .popular .keyword02 a:link,
+#jobSearch02 .popular .keyword02 a:visited{
+	color:#0066CC;
+}
+#jobSearch02 .popular .keyword02 a:hover{
+	color:#f17f0d;
+}
+
+/*
+#jobSearch02 .popular .keyword02 a strong{
+	background:#ffff00;
+}
+*/
 #jobSearch02 .popular p.select{
 	width:350px;
 	float:left;
@@ -905,6 +942,9 @@ div.contentIndex01 div.contentBox.last{
 }
 .contentIndex01 div.contentBox div.icons span.icon.grey{
 	background:#777777;
+}
+#expo div.contentBox p span{
+	color:#f92c6e;
 }
 
 
@@ -2092,6 +2132,7 @@ hr{
 #topTopics ul.linkList li.odd{
 	background-color: #f2f7fc;
 }
+
 /*エリアナビ****************************************************************************************/
 #primary div#areaNavi{
 	width:305px; 

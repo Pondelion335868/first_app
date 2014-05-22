@@ -28,20 +28,20 @@
     <media-type>application/octet-stream</media-type>
   </entry>
   <entry type="iradio">
-    <title>Absolute Radio 80s (Modem)</title>
-    <genre>80's</genre>
-    <artist></artist>
-    <album></album>
-    <location>http://network.absoluteradio.co.uk/core/audio/ogg/live.pls?service=a8</location>
-    <date>0</date>
-    <media-type>application/octet-stream</media-type>
-  </entry>
-  <entry type="iradio">
     <title>Absolute Radio 80s (Broadband)</title>
     <genre>80's</genre>
     <artist></artist>
     <album></album>
     <location>http://network.absoluteradio.co.uk/core/audio/ogg/live.pls?service=a8bb</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>Absolute Radio 80s (Modem)</title>
+    <genre>80's</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://network.absoluteradio.co.uk/core/audio/ogg/live.pls?service=a8</location>
     <date>0</date>
     <media-type>application/octet-stream</media-type>
   </entry>
@@ -64,20 +64,20 @@
     <media-type>application/octet-stream</media-type>
   </entry>
   <entry type="iradio">
-    <title>Absolute Radio 90s (Broadband)</title>
-    <genre>90's</genre>
-    <artist></artist>
-    <album></album>
-    <location>http://network.absoluteradio.co.uk/core/audio/ogg/live.pls?service=a9bb</location>
-    <date>0</date>
-    <media-type>application/octet-stream</media-type>
-  </entry>
-  <entry type="iradio">
     <title>Absolute Radio 90s (Modem)</title>
     <genre>90's</genre>
     <artist></artist>
     <album></album>
     <location>http://network.absoluteradio.co.uk/core/audio/ogg/live.pls?service=a9</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>Absolute Radio 90s (Broadband)</title>
+    <genre>90's</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://network.absoluteradio.co.uk/core/audio/ogg/live.pls?service=a9bb</location>
     <date>0</date>
     <media-type>application/octet-stream</media-type>
   </entry>
@@ -145,20 +145,20 @@
     <media-type>application/octet-stream</media-type>
   </entry>
   <entry type="iradio">
-    <title>Radio GFM - RockPop</title>
-    <genre>Pop</genre>
-    <artist></artist>
-    <album></album>
-    <location>http://streams.radio-gfm.net/rockpop.ogg.m3u</location>
-    <date>0</date>
-    <media-type>application/octet-stream</media-type>
-  </entry>
-  <entry type="iradio">
     <title>Absolute Radio (Modem)</title>
     <genre>Pop</genre>
     <artist></artist>
     <album></album>
     <location>http://network.absoluteradio.co.uk/core/audio/ogg/live.pls?service=vr</location>
+    <date>0</date>
+    <media-type>application/octet-stream</media-type>
+  </entry>
+  <entry type="iradio">
+    <title>Radio GFM - RockPop</title>
+    <genre>Pop</genre>
+    <artist></artist>
+    <album></album>
+    <location>http://streams.radio-gfm.net/rockpop.ogg.m3u</location>
     <date>0</date>
     <media-type>application/octet-stream</media-type>
   </entry>

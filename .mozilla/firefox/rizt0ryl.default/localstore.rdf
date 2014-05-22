@@ -1,41 +1,24 @@
 <?xml version="1.0"?>
 <RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
          xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="chrome://global/content/customizeToolbar.xul#CustomizeToolbarWindow"
-                   width="650"
-                   height="420" />
   <RDF:Description RDF:about="chrome://browser/content/browser.xul#main-window"
-                   height="997"
                    screenX="65"
                    screenY="24"
+                   width="944"
+                   height="708"
+                   sizemode="maximized" />
+  <RDF:Description RDF:about="chrome://browser/content/pageinfo/pageInfo.xul#main-window"
+                   width="600"
+                   height="540"
                    sizemode="normal"
-                   width="805" />
-  <RDF:Description RDF:about="place:folder=BOOKMARKS_MENU&amp;queryType=1"
-                   NC:open="true" />
-  <RDF:Description RDF:about="chrome://global/content/customizeToolbar.xul">
-    <NC:persist RDF:resource="chrome://global/content/customizeToolbar.xul#CustomizeToolbarWindow"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-box"
-                   width="270"
-                   src="chrome://browser/content/bookmarks/bookmarksPanel.xul"
-                   sidebarcommand="" />
-  <RDF:Description RDF:about="chrome://browser/content/places/bookmarkProperties.xul">
-    <NC:persist RDF:resource="chrome://browser/content/places/bookmarkProperties.xul#bookmarkproperties"/>
-  </RDF:Description>
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
-                   collapsed="true"
-                   currentset="addonbar-closebutton,spring,status-bar" />
-  <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"
-                   screenX="153"
-                   screenY="326" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#toolbar-menubar"
-                   currentset="menubar-items" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
-                   collapsed="false"
-                   currentset="unified-back-forward-button,urlbar-container,reload-button,stop-button,search-container,webrtc-status-button,bookmarks-menu-button,bookmarks-button,downloads-button,home-button,window-controls,social-share-button" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#PersonalToolbar"
-                   collapsed="true"
-                   currentset="personal-bookmarks" />
+                   screenX="1080"
+                   screenY="482" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#TabsToolbar"
+                   currentset="appmenu-toolbar-button,tabbrowser-tabs,new-tab-button,alltabs-button,tabs-closebutton" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"
+                   screenX="513"
+                   screenY="240"
+                   lastSelected="paneMain" />
   <RDF:Description RDF:about="chrome://browser/content/browser.xul">
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#main-window"/>
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-box"/>
@@ -46,13 +29,61 @@
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#toolbar-menubar"/>
     <NC:persist RDF:resource="chrome://browser/content/browser.xul#TabsToolbar"/>
   </RDF:Description>
+  <RDF:Description RDF:about="place:folder=BOOKMARKS_MENU&amp;excludeItems=1&amp;excludeQueries=1&amp;excludeReadOnlyFolders=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-title"
+                   value="ブックマーク" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#toolbar-menubar"
+                   currentset="menubar-items" />
+  <RDF:Description RDF:about="chrome://global/content/viewSource.xul#viewSource"
+                   width="640"
+                   screenX="1040"
+                   screenY="570"
+                   height="452"
+                   sizemode="maximized" />
   <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul">
     <NC:persist RDF:resource="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"/>
   </RDF:Description>
+  <RDF:Description RDF:about="chrome://global/content/viewSource.xul">
+    <NC:persist RDF:resource="chrome://global/content/viewSource.xul#viewSource"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://global/content/customizeToolbar.xul#CustomizeToolbarWindow"
+                   width="650"
+                   height="420" />
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"
+                   screenX="558"
+                   screenY="425" />
+  <RDF:Description RDF:about="chrome://global/content/customizeToolbar.xul">
+    <NC:persist RDF:resource="chrome://global/content/customizeToolbar.xul#CustomizeToolbarWindow"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-box"
+                   width="270"
+                   src="chrome://browser/content/bookmarks/bookmarksPanel.xul"
+                   sidebarcommand="viewBookmarksSidebar" />
   <RDF:Description RDF:about="chrome://browser/content/places/bookmarkProperties.xul#bookmarkproperties"
                    screenX="587"
                    screenY="377"
                    width="440" />
-  <RDF:Description RDF:about="chrome://browser/content/browser.xul#TabsToolbar"
-                   currentset="appmenu-toolbar-button,tabbrowser-tabs,new-tab-button,alltabs-button,tabs-closebutton" />
+  <RDF:Description RDF:about="chrome://browser/content/preferences/preferences.xul">
+    <NC:persist RDF:resource="chrome://browser/content/preferences/preferences.xul#BrowserPreferences"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
+                   currentset="unified-back-forward-button,urlbar-container,reload-button,stop-button,search-container,webrtc-status-button,bookmarks-menu-button,bookmarks-button,downloads-button,home-button,window-controls,social-share-button"
+                   collapsed="false" />
+  <RDF:Description RDF:about="place:folder=UNFILED_BOOKMARKS&amp;queryType=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#PersonalToolbar"
+                   currentset="personal-bookmarks"
+                   collapsed="false" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
+                   currentset="addonbar-closebutton,spring,status-bar"
+                   collapsed="true" />
+  <RDF:Description RDF:about="place:folder=BOOKMARKS_MENU&amp;queryType=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/pageinfo/pageInfo.xul">
+    <NC:persist RDF:resource="chrome://browser/content/pageinfo/pageInfo.xul#main-window"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/places/bookmarkProperties.xul">
+    <NC:persist RDF:resource="chrome://browser/content/places/bookmarkProperties.xul#bookmarkproperties"/>
+  </RDF:Description>
 </RDF:RDF>
