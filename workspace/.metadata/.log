@@ -168,3 +168,53 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64
 !MESSAGE Could not find view: org.eclipse.ui.internal.introview
 !SUBENTRY 1 unknown 0 0 2014-04-09 13:33:03.816
 !MESSAGE OK
+!SESSION 2014-10-15 14:15:06.491 -----------------------------------------------
+eclipse.buildId=debbuild
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=ja_JP
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2014-10-15 14:15:15.724
+!MESSAGE Could not create view: 'org.eclipse.ui.internal.introview'.
+
+!ENTRY org.eclipse.ui 4 0 2014-10-15 14:15:20.218
+!MESSAGE Problems occurred restoring workbench.
+!SUBENTRY 1 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 1 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.ui 4 0 2014-10-15 14:15:20.218
+!MESSAGE Unable to restore perspective: Workspace - Java.
+!SUBENTRY 2 org.eclipse.ui 0 0 2014-10-15 14:15:20.218
+!MESSAGE Problems occurred restoring perspective.
+!SUBENTRY 3 org.eclipse.ui 0 0 2014-10-15 14:15:20.218
+!MESSAGE 
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.ui 4 0 2014-10-15 14:15:20.218
+!MESSAGE Could not find view: org.eclipse.ui.internal.introview
+!SUBENTRY 1 unknown 0 0 2014-10-15 14:15:20.218
+!MESSAGE OK

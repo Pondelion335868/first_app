@@ -7,9 +7,23 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# 最後の 検索パターン:
+~Msle0~/\<rs\>
+
+# 最後に置換された文字列:
+$
+
 # コマンドライン 項目の履歴 (新しいものから古いものへ):
+:q
+:wq
+:q!
+:nu
+:num
+:set nu
+:h
 
 # 検索文字列 項目の履歴 (新しいものから古いものへ):
+? \<rs\>
 
 # 式 項目の履歴 (新しいものから古いものへ):
 
@@ -18,35 +32,1487 @@
 # 入力行 項目の履歴 (新しいものから古いものへ):
 
 # レジスタ:
+"0	LINE	0
+	444
+<|1|fBzb356s34pP22h7OGJniDxBEp4=|xdoDTqVjp6zjfeMvkYV3Xrt5veo= ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeVHdWRwJmD3z3sl8n+yNwg5anyiSswwcq641YU2L+9nfVymCUlY6+dMdADfqE65crv/Clz8cxZvcW+UbOn4/YkdTqlVDWyNlS/Kde1vr0gbLCg/47pDoFVjmbrkmksf+ZSebWTY88R/yuPhznJZAtfEvpvsytTkosRLrKuNFUSFX5NLxWYb6bOUrSnF1SSOZAzDU1hFTDZWyPyBEj2W0oM7u1n3m95oXVjwaF6j3a1uSaFSHOlM3gnIZfj5S0tMXSZTgdBFU6YUCVmPtDT0h43PLhb1hq6rJpw7/jRxUqNPNwxYzhMMsObWL2RUAqD4Vf59Jk9azZoo6eG2yH3KGb
+"1	LINE	0
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v149)
+	"   /home/nakajima/work/quote/app/models
+	"   Sorted by      name reversed
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	r.rb~
+	.swp
+	r.rb
+	home.rb
+	.keep
+	concerns/
+	./
+	../
+"2	LINE	0
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v149)
+	"   /home/nakajima/work/quote/app/models
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	./
+	concerns/
+	.keep
+	home.rb
+	r.rb
+	.swp
+	r.rb~
+"3	LINE	0
+	444
+<|1|fBzb356s34pP22h7OGJniDxBEp4=|xdoDTqVjp6zjfeMvkYV3Xrt5veo= ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDeVHdWRwJmD3z3sl8n+yNwg5anyiSswwcq641YU2L+9nfVymCUlY6+dMdADfqE65crv/Clz8cxZvcW+UbOn4/YkdTqlVDWyNlS/Kde1vr0gbLCg/47pDoFVjmbrkmksf+ZSebWTY88R/yuPhznJZAtfEvpvsytTkosRLrKuNFUSFX5NLxWYb6bOUrSnF1SSOZAzDU1hFTDZWyPyBEj2W0oM7u1n3m95oXVjwaF6j3a1uSaFSHOlM3gnIZfj5S0tMXSZTgdBFU6YUCVmPtDT0h43PLhb1hq6rJpw7/jRxUqNPNwxYzhMMsObWL2RUAqD4Vf59Jk9azZoo6eG2yH3KGb
+""-	CHAR	0
+	v
 
 # ファイルマーク:
-'0  1  0  ~/tex/document.tex
+'0  1  0  ~/work/railbook/.env
+'1  1  0  /etc/init.d/nginx
+'2  4  33  ~/work/railbook/config/routes.rb
+'3  41  0  ~/work/railbook/config/database.yml
+'4  101  0  ~/work/quote/app/controllers/rs_controller.rb
+'5  53  0  ~/work/quote/config/database.yml
+'6  25  6  ~/work/railbook/.gitignore
+'7  3  10  ~/work/railbook/bin/rake
+'8  9  0  ~/work/railbook/Gemfile
+'9  15  0  ~/work/railbook/Gemfile
 
 # ジャンプリスト (新しいものが先):
+-'  1  0  ~/work/railbook/.env
+-'  1  0  /etc/init.d/nginx
+-'  4  33  ~/work/railbook/config/routes.rb
+-'  1  0  ~/work/railbook/config/routes.rb
+-'  41  0  ~/work/railbook/config/database.yml
+-'  1  0  ~/work/railbook/config/database.yml
+-'  101  0  ~/work/quote/app/controllers/rs_controller.rb
+-'  1  0  ~/work/quote/app/controllers/rs_controller.rb
+-'  53  0  ~/work/quote/config/database.yml
+-'  1  0  ~/work/quote/config/database.yml
+-'  25  6  ~/work/railbook/.gitignore
+-'  1  0  ~/work/railbook/.gitignore
+-'  3  10  ~/work/railbook/bin/rake
+-'  1  0  ~/work/railbook/bin/rake
+-'  9  0  ~/work/railbook/Gemfile
+-'  1  0  ~/work/railbook/Gemfile
+-'  15  0  ~/work/railbook/Gemfile
+-'  3  0  ~/work/quote/app/models/r.rb
+-'  1  0  ~/work/quote/app/models/r.rb
+-'  1  0  ~/work/quote/Gemfile
+-'  65  0  ~/work/quote/config/database.yml
+-'  14  0  ~/work/sample_mysql/app/controllers/sample_controller.rb
+-'  1  0  ~/work/sample_mysql/app/controllers/sample_controller.rb
+-'  19  0  ~/work/sample_mysql/Gemfile
+-'  1  0  ~/work/sample_mysql/Gemfile
+-'  6  23  ~/work/sample_mysql/app/controllers/sample_controller.rb
+-'  15  2  ~/work/sample_mysql/app/controllers/sample_controller.rb
+-'  33  17  ~/work/sample_mysql/config/database.yml
+-'  1  0  ~/work/sample_mysql/config/database.yml
+-'  15  0  ~/work/sample_mysql/Gemfile
+-'  1  0  ~/work/quote/db/migrate/20141003041558_create_rs.rb
+-'  24  17  ~/work/quote/config/database.yml
+-'  17  24  ~/work/quote/app/controllers/rs_controller.rb
+-'  11  23  ~/work/quote/app/controllers/rs_controller.rb
+-'  10  2  ~/work/quote/app/controllers/rs_controller.rb
+-'  1  0  ~/work/quote/app/controllers/sample_controller.rb
+-'  20  12  ~/work/quote/app/models/r.rb
+-'  64  16  ~/work/quote/config/database.yml
+-'  4  8  ~/work/quote/app/views/rs/index.html.erb
+-'  1  0  ~/work/quote/app/views/rs/index.html.erb
+-'  5  4  ~/work/quote/app/models/r.rb
+-'  43  0  ~/work/quote/Gemfile
+-'  19  0  ~/work/quote/config/database.yml
+-'  18  5  ~/work/quote/config/database.yml
+-'  60  0  ~/work/quote/app/controllers/homes_controller.rb
+-'  1  0  ~/work/quote/app/controllers/homes_controller.rb
+-'  45  0  ~/work/quote/app/controllers/rs_controller.rb
+-'  9  18  ~/work/quote/db/migrate/20141003041558_create_rs.rb
+-'  39  0  ~/work/quote/app/controllers/rs_controller.rb
+-'  5  20  ~/work/quote/db/migrate/20141003041558_create_rs.rb
+-'  4  0  ~/work/quote/app/models/r.rb
+-'  61  16  ~/work/quote/config/database.yml
+-'  25  6  ~/work/quote/.gitignore
+-'  1  0  ~/work/quote/.gitignore
+-'  1  0  ~/.ssh/known_hosts
+-'  34  0  ~/work/quote/app/models/r.rb
+-'  27  22  ~/work/quote/app/models/r.rb
+-'  45  5  ~/work/quote/config/database.yml
+-'  1  0  ~/work/quote/config/quote_database.yml
+-'  1  0  ~/work/quote/config/legacy_database.yml
+-'  89  4  ~/work/quote/app/controllers/rs_controller.rb
+-'  14  0  ~/work/quote/app/models/r.rb
+-'  25  0  ~/work/quote/config/database.yml
+-'  51  0  ~/work/quote/config/database.yml
+-'  37  0  ~/work/quote/config/database.yml
+-'  20  0  ~/work/quote/config/database.yml
+-'  9  0  ~/work/quote/Gemfile
+-'  1  0  /etc/mysql/conf.d/character_set.cnf
+-'  568  0  /var/log/mysql/error.log
+-'  1  0  /var/log/mysql/error.log
+-'  1  0  /var/log/mysql/error.log.2.gz
+-'  1  0  ~/work/quote/db/migrate/20140929070632_create_homes.rb
+-'  1  0  ~/work/quote/app/models/home.rb
+-'  1  0  ~/work/quote/config/Gemfile
+-'  56  16  ~/work/quote/config/database.yml
+-'  1  3  /tmp/sqltEql0d
+-'  1  0  ~/work/rs/config/database.yml
+-'  48  12  ~/work/rs/Gemfile
+-'  1  0  ~/work/rs/Gemfile
+-'  9  0  ~/work/rs/Gemfile
+-'  26  0  ~/work/rs/.gitignore
+-'  1  0  ~/work/rs/.gitignore
+-'  6  1  ~/work/rs/Gemfile
 -'  1  0  ~/tex/document.tex
+-'  149  0  ~/.rbenv/versions/2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb
+-'  49  4  ~/.rbenv/versions/2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb
+-'  74  4  ~/.rbenv/versions/2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb
+-'  78  0  ~/.rbenv/versions/2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb
+-'  1  0  ~/.rbenv/versions/2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb
+-'  26  28  ~/ruby_test/wc.rb
+-'  1  0  ~/ruby_test/wc.rb
+-'  1  0  ~/ruby_test/print_hayasi.rb
+-'  1  0  ~/ruby_test/renshu_11_8.rb
+-'  1  0  ~/ruby_test/renshu_13_4.rb
+-'  2  54  ~/ruby_test/strip.rb
+-'  1  0  ~/ruby_test/strip.rb
+-'  6  22  ~/ruby_test/ten_lines_grep.rb
+-'  1  0  ~/ruby_test/ten_lines_grep.rb
 
 # ファイル内マークの履歴 (新しいものから古いもの):
 
+> ~/work/railbook/.env
+	"	1	0
+
+> /etc/init.d/nginx
+	"	1	0
+
+> ~/work/railbook/config/routes.rb
+	"	4	33
+	^	4	34
+	.	4	32
+	+	4	32
+
+> ~/work/railbook/config/database.yml
+	"	41	0
+
+> ~/work/quote/app/controllers/rs_controller.rb
+	"	101	0
+	^	17	25
+	.	17	24
+	+	86	10
+	+	87	43
+	+	89	4
+	+	37	57
+	+	38	55
+	+	37	13
+	+	38	46
+	+	37	48
+	+	38	51
+	+	37	8
+	+	38	10
+	+	39	3
+	+	37	8
+	+	38	8
+	+	41	9
+	+	40	54
+	+	41	15
+	+	37	16
+	+	38	16
+	+	39	16
+	+	40	16
+	+	38	32
+	+	40	32
+	+	37	52
+	+	38	51
+	+	41	25
+	+	43	24
+	+	38	71
+	+	10	2
+	+	9	23
+	+	10	80
+	+	11	23
+	+	12	14
+	+	17	24
+
+> ~/work/quote/config/database.yml
+	"	53	0
+	^	24	18
+	.	24	19
+	+	22	9
+	+	22	16
+	+	24	0
+	+	56	3
+	+	16	19
+	+	17	17
+	+	19	16
+	+	23	17
+	+	19	16
+	+	54	17
+	+	64	15
+	+	59	16
+	+	61	25
+	+	62	19
+	+	63	17
+	+	64	17
+	+	58	2
+	+	61	15
+	+	62	15
+	+	61	17
+	+	58	2
+	+	62	15
+	+	63	19
+	+	24	19
+
+> ~/work/railbook/.gitignore
+	"	25	6
+	^	25	7
+	.	25	6
+	+	25	6
+
+> ~/work/railbook/bin/rake
+	"	3	10
+
+> ~/work/railbook/Gemfile
+	"	9	0
+	^	15	0
+	.	15	0
+	+	15	0
+
+> ~/work/quote/app/models/r.rb
+	"	3	0
+	^	3	1
+	.	3	0
+	+	14	0
+	+	12	24
+	+	27	22
+	+	16	1
+	+	19	1
+	+	20	1
+	+	21	1
+	+	22	1
+	+	23	1
+	+	24	1
+	+	16	33
+	+	28	0
+	+	32	36
+	+	29	55
+	+	30	1
+	+	31	1
+	+	32	39
+	+	25	0
+	+	16	0
+	+	17	0
+	+	17	0
+	+	12	4
+	+	26	1
+	+	27	1
+	+	15	3
+	+	12	1
+	+	16	1
+	+	32	39
+	+	33	0
+	+	2	29
+	+	11	2
+	+	3	3
+	+	12	0
+	+	34	2
+	+	9	6
+	+	4	0
+	+	6	33
+	+	7	4
+	+	2	0
+	+	3	0
+
+> ~/work/quote/Gemfile
+	"	1	0
+	^	43	0
+	.	43	0
+	+	10	19
+	+	12	17
+	+	14	21
+	+	23	17
+	+	25	13
+	+	16	0
+	+	2	11
+	+	5	0
+	+	19	25
+	+	21	23
+	+	25	13
+	+	26	37
+	+	27	2
+	+	43	0
+
+> ~/work/sample_mysql/app/controllers/sample_controller.rb
+	"	14	0
+	^	14	0
+	.	15	0
+	+	15	2
+	+	3	2
+	+	4	2
+	+	5	2
+	+	6	80
+	+	7	23
+	+	6	2
+	+	7	2
+	+	14	0
+	+	13	24
+	+	15	0
+
+> ~/work/sample_mysql/Gemfile
+	"	19	0
+	^	19	0
+	.	18	24
+	+	15	0
+	+	17	17
+	+	18	24
+
+> ~/work/sample_mysql/config/database.yml
+	"	33	17
+	^	33	18
+	.	17	17
+	+	17	17
+
+> ~/work/quote/db/migrate/20141003041558_create_rs.rb
+	"	1	0
+	^	9	19
+	.	9	19
+	+	9	19
+
+> ~/work/quote/app/controllers/sample_controller.rb
+	"	1	0
+
+> ~/work/quote/app/views/rs/index.html.erb
+	"	4	8
+	^	4	9
+	.	12	8
+	+	14	3
+	+	58	2
+	+	14	3
+	+	3	25
+	+	6	23
+	+	7	3
+	+	6	27
+	+	12	8
+
+> ~/work/quote/app/controllers/homes_controller.rb
+	"	60	0
+
+> ~/work/quote/.gitignore
+	"	25	6
+	^	25	7
+	.	25	6
+	+	25	6
+
+> ~/.ssh/known_hosts
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/work/quote/config/quote_database.yml
+	"	1	0
+
+> ~/work/quote/config/legacy_database.yml
+	"	1	0
+
+> /etc/mysql/conf.d/character_set.cnf
+	"	1	0
+
+> /var/log/mysql/error.log
+	"	568	0
+
+> /var/log/mysql/error.log.2.gz
+	"	1	0
+	.	267	0
+	+	267	0
+
+> ~/work/quote/db/migrate/20140929070632_create_homes.rb
+	"	1	0
+
+> ~/work/quote/app/models/home.rb
+	"	1	0
+
+> ~/work/quote/config/Gemfile
+	"	1	0
+
+> /tmp/sqltEql0d
+	"	1	3
+
+> ~/work/rs/config/database.yml
+	"	1	0
+
+> ~/work/rs/Gemfile
+	"	48	12
+	^	48	13
+	.	48	11
+	+	5	0
+	+	2	12
+	+	3	36
+	+	6	20
+	+	8	0
+	+	9	20
+	+	10	1
+	+	11	2
+	+	10	22
+	+	11	3
+	+	14	19
+	+	16	17
+	+	18	21
+	+	23	25
+	+	25	23
+	+	27	17
+	+	29	12
+	+	30	36
+	+	31	3
+	+	20	0
+	+	48	11
+
+> ~/work/rs/.gitignore
+	"	26	0
+	^	26	0
+	.	25	6
+	+	26	0
+	+	25	6
+
 > ~/tex/document.tex
 	"	1	0
-	^	5	0
-	.	5	0
-	+	4	14
-	+	6	0
-	+	6	0
-	+	6	0
-	+	1	0
+
+> ~/.rbenv/versions/2.0.0-p353/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb
+	"	149	0
+
+> ~/ruby_test/wc.rb
+	"	26	28
+	^	26	29
+	.	9	29
+	+	1	29
+	+	2	29
+	+	3	29
+	+	6	3
+	+	5	1
+	+	6	29
+	+	7	15
+	+	8	15
+	+	9	15
+	+	7	3
+	+	8	3
+	+	9	3
+	+	10	3
+	+	11	5
+	+	12	5
+	+	13	5
+	+	14	5
+	+	15	5
+	+	16	3
+	+	17	29
+	+	14	30
+	+	13	30
+	+	18	3
+	+	19	3
+	+	20	3
+	+	21	3
+	+	22	1
+	+	23	3
+	+	24	2
+	+	23	29
+	+	18	46
+	+	17	23
+	+	13	28
+	+	14	29
+	+	7	27
+	+	8	27
+	+	9	29
+
+> ~/ruby_test/print_hayasi.rb
+	"	1	0
+
+> ~/ruby_test/renshu_11_8.rb
+	"	1	0
+
+> ~/ruby_test/renshu_13_4.rb
+	"	1	0
+
+> ~/ruby_test/strip.rb
+	"	2	54
+	^	2	57
+	.	2	54
+	+	3	0
+	+	2	54
+
+> ~/ruby_test/ten_lines_grep.rb
+	"	6	22
+	^	6	23
+	.	6	22
 	+	2	0
+	+	1	109
+	+	5	22
+	+	6	22
+
+> ~/ruby_test/break_next_redo.rb
+	"	1	39
+	^	1	42
+	.	1	39
+	+	2	0
+	+	1	39
+
+> ~/ruby_test/each.rb
+	"	1	56
+	^	1	59
+	.	1	18
+	+	2	0
+	+	1	18
+
+> ~/ruby_test/each_names.rb
+	"	1	73
+	^	1	76
+	.	1	73
+	+	2	0
+	+	1	73
+
+> ~/ruby_test/while_not.rb
+	"	1	60
+	^	1	63
+	.	1	60
+	+	2	0
+	+	1	60
+
+> ~/ruby_test/until.rb
+	"	1	43
+	^	1	46
+	.	1	43
+	+	2	0
+	+	1	43
+
+> ~/ruby_test/while3.rb
+	"	1	40
+	^	1	43
+	.	1	40
+	+	2	0
+	+	1	40
+
+> ~/ruby_test/while2.rb
+	"	1	21
+	^	1	24
+	.	1	10
+	+	2	0
+	+	1	10
+
+> ~/ruby_test/while.rb
+	"	1	62
+	^	1	65
+	.	1	92
+	+	2	0
+	+	1	92
+
+> ~/ruby_test/for_names.rb
+	"	1	79
+	^	1	82
+	.	1	79
+	+	2	0
+	+	1	79
+
+> ~/ruby_test/for.rb
+	"	1	40
+	^	1	43
+	.	1	40
+	+	2	0
+	+	1	40
+
+> ~/ruby_test/times3.rb
+	"	1	49
+	^	1	50
+	.	1	49
+	+	2	0
+	+	1	49
+
+> ~/ruby_test/times2.rb
+	"	1	49
+	^	1	50
+	.	1	49
+	+	2	0
+	+	1	49
+
+> ~/ruby_test/times.rb
+	"	1	69
+	^	1	72
+	.	1	69
+	+	2	0
+	+	1	69
+
+> ~/ruby_test/case_class.rb
+	"	1	75
+	^	1	76
+	.	1	72
+	+	2	0
+	+	1	72
+
+> ~/ruby_test/case.rb
+	"	1	33
+	^	1	36
+	.	1	33
+	+	2	0
+	+	1	33
+
+> ~/ruby_test/unless.rb
+	"	1	35
+	^	1	38
+	.	1	35
+	+	2	0
+	+	1	35
+
+> ~/ruby_test/if_elsif.rb
+	"	1	43
+	^	1	46
+	.	1	43
+	+	2	0
+	+	1	43
+
+> ~/ruby_test/ad2heisei.rb
+	"	1	0
+
+> ~/ruby_test/scopetest.rb
+	"	6	3
+	^	6	4
+	.	6	3
+	+	2	0
+	+	1	32
+	+	6	3
+
+> ~/ruby_test/simple_grep.rb
+	"	1	80
+	^	1	83
+	.	1	80
+	+	2	0
+	+	1	80
+
+> ~/ruby_test/gets_text.rb
+	"	1	78
+	^	1	81
+	.	1	78
+	+	2	0
+	+	1	78
+
+> ~/ruby_test/read_text.rb
+	"	1	59
+	^	1	62
+	.	1	59
+	+	2	0
+	+	1	59
+
+> ~/rails_projects/sample_app/spec/requests/authentication_pages_spec.rb
+	"	75	26
+	^	75	27
+	.	63	12
+	+	23	47
+	+	24	36
+	+	25	64
+	+	26	5
+	+	3	10
+	+	3	5
+	+	7	20
+	+	14	37
+	+	7	28
+	+	34	68
+	+	36	27
+	+	34	61
+	+	36	20
+	+	17	5
+	+	14	28
+	+	17	39
+	+	23	38
+	+	29	39
+	+	36	26
+	+	34	67
+	+	36	21
+	+	34	61
+	+	36	20
+	+	3	17
+	+	7	40
+	+	34	41
+	+	34	40
+	+	35	76
+	+	36	73
+	+	35	17
+	+	36	61
+	+	35	63
+	+	39	7
+	+	46	0
+	+	39	0
+	+	41	39
+	+	43	42
+	+	44	8
+	+	40	68
+	+	36	68
+	+	35	38
+	+	37	41
+	+	36	42
+	+	35	41
+	+	32	29
+	+	32	29
+	+	32	29
+	+	32	28
+	+	32	33
+	+	32	32
+	+	32	31
+	+	32	31
+	+	33	0
+	+	33	0
+	+	47	0
+	+	48	29
+	+	50	41
+	+	51	46
+	+	53	43
+	+	55	44
+	+	56	47
+	+	57	45
+	+	60	53
+	+	61	42
+	+	62	66
+	+	65	8
+	+	66	7
+	+	67	4
 	+	4	0
-	+	4	14
-	+	4	14
+	+	8	0
+	+	15	0
+	+	17	0
+	+	24	0
+	+	61	18
+	+	62	66
+	+	61	24
+	+	67	0
+	+	68	31
+	+	69	46
+	+	70	80
+	+	73	69
+	+	74	49
+	+	75	79
+	+	76	61
+	+	79	73
+	+	80	46
+	+	81	62
+	+	83	6
+	+	61	24
+	+	74	20
+	+	80	22
+	+	61	40
+	+	74	20
+	+	80	22
+	+	62	39
+	+	62	39
+	+	80	52
+	+	76	82
+	+	62	71
+	+	63	12
+
+> ~/work/accounting/db/migrate/20140626065919_create_users.rb
+	"	3	18
+
+> ~/work/accounting/db/migrate/20140626065919.rb
+	"	1	0
+
+> ~/work/accounting/app/models/user.rb
+	"	1	0
+	^	4	0
+	.	3	28
+	+	3	0
+	+	3	28
+
+> ~/rails_projects/sample_app/spec/support/utilities.rb
+	"	16	19
+	^	13	3
+	.	11	66
+	+	36	2
+	+	30	50
+	+	33	5
+	+	34	32
+	+	35	4
+	+	37	0
+	+	1	25
+	+	5	40
+	+	4	22
+	+	7	3
+	+	9	55
+	+	10	17
+	+	11	73
+	+	13	3
+	+	15	30
+	+	9	26
+	+	3	38
+	+	27	0
+	+	15	29
+	+	20	72
+	+	23	39
+	+	24	42
+	+	23	22
+	+	25	26
+	+	26	4
+	+	27	3
+	+	20	25
+	+	4	0
+	+	10	0
+	+	16	0
+	+	30	0
+	+	11	66
+
+> ~/rails_projects/sample_app/spec/factories.rb
+	"	1	0
+	^	8	3
+	.	8	2
+	+	1	21
+	+	3	27
+	+	4	33
+	+	5	19
+	+	4	12
+	+	3	12
+	+	6	34
+	+	8	2
+
+> ~/rails_projects/sample_app/spec/spec_helper.rb
+	"	63	0
+
+> ~/rails_projects/sample_app/spec/requests/user_pages_spec.rb
+	"	70	0
+	^	102	3
+	.	98	44
+	+	18	41
+	+	19	39
+	+	20	4
+	+	15	43
+	+	21	0
+	+	22	22
+	+	25	40
+	+	27	42
+	+	28	38
+	+	29	66
+	+	40	38
+	+	42	52
+	+	43	56
+	+	44	28
+	+	45	42
+	+	44	42
+	+	43	29
+	+	42	29
+	+	48	32
+	+	49	66
+	+	51	4
+	+	40	2
+	+	41	3
+	+	42	4
+	+	43	5
+	+	44	6
+	+	45	6
+	+	46	4
+	+	48	5
+	+	49	5
+	+	50	4
+	+	51	3
+	+	61	5
+	+	62	2
+	+	39	0
+	+	32	36
+	+	35	43
+	+	36	43
+	+	37	8
+	+	30	9
+	+	32	20
+	+	51	0
+	+	52	41
+	+	54	62
+	+	56	43
+	+	58	79
+	+	59	9
+	+	60	0
+	+	61	0
+	+	60	37
+	+	60	42
+	+	60	8
+	+	61	0
+	+	61	0
+	+	32	0
+	+	33	0
+	+	53	0
+	+	56	42
+	+	62	0
+	+	64	44
+	+	65	41
+	+	71	55
+	+	72	43
+	+	73	75
+	+	77	42
+	+	78	44
+	+	80	41
+	+	81	7
+	+	101	4
+	+	62	0
+	+	63	0
+	+	65	12
+	+	65	28
+	+	65	43
+	+	65	47
+	+	84	40
+	+	85	35
+	+	86	43
+	+	88	47
+	+	89	48
+	+	90	52
+	+	91	54
+	+	90	31
+	+	89	33
+	+	88	34
+	+	92	35
+	+	95	40
+	+	96	60
+	+	97	61
+	+	98	57
+	+	99	59
+	+	100	6
+	+	83	42
+	+	76	42
+	+	65	40
+	+	65	13
+	+	66	17
+	+	67	32
+	+	68	6
+	+	98	44
+
+> ~/rails_projects/sample_app/spec/requests/static_pages_spec.rb
+	"	35	0
+	^	1	0
+	.	35	0
+	+	8	0
+	+	10	25
+	+	11	5
+	+	11	5
+	+	11	3
+	+	12	5
+	+	12	5
+	+	11	20
+	+	12	20
+	+	12	3
+	+	12	3
+	+	12	5
+	+	12	5
+	+	12	3
+	+	12	1
+	+	15	1
+	+	17	3
+	+	19	5
+	+	19	5
+	+	19	3
+	+	19	3
+	+	20	5
+	+	17	27
+	+	19	20
+	+	19	34
+	+	20	20
+	+	20	73
+	+	20	3
+	+	20	3
+	+	20	5
+	+	20	5
+	+	20	3
+	+	20	1
+	+	22	1
+	+	25	27
+	+	26	21
+	+	26	5
+	+	26	3
+	+	26	38
+	+	27	21
+	+	27	77
+	+	27	3
+	+	29	1
+	+	32	3
+	+	33	5
+	+	33	5
+	+	33	23
+	+	33	3
+	+	33	37
+	+	34	23
+	+	34	76
+	+	34	3
+	+	35	0
+	+	34	0
+	+	35	0
+	+	27	4
+	+	21	0
+	+	21	0
+	+	12	47
+	+	13	46
+	+	13	6
+	+	8	29
+	+	10	30
+	+	11	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	5	17
+	+	10	43
+	+	11	0
+	+	12	0
+	+	11	44
+	+	13	0
+	+	12	41
+	+	14	0
+	+	16	29
+	+	17	0
+	+	18	38
+	+	20	0
+	+	19	48
+	+	21	0
+	+	23	31
+	+	25	39
+	+	26	52
+	+	28	0
+	+	30	33
+	+	32	41
+	+	34	0
+	+	33	51
+	+	34	0
+	+	35	0
+
+> ~/rails_projects/sample_app/static_pages_spec.rb
+	"	1	0
+
+> ~/rails_projects/sample_app/app/helpers/sessions_helper.rb
+	"	31	0
+	^	31	0
+	.	25	5
 	+	2	0
-	+	1	0
-	+	4	14
-	+	1	0
+	+	8	4
+	+	9	0
+	+	14	27
+	+	16	4
+	+	14	19
+	+	12	5
+	+	17	0
+	+	20	66
+	+	21	4
+	+	17	0
+	+	18	0
+	+	22	0
+	+	29	35
+	+	30	4
+	+	23	25
+	+	25	5
+
+> ~/rails_projects/sample_app/app/controllers/users_controller.rb
+	"	53	2
+	^	53	3
+	.	52	6
+	+	12	0
 	+	2	0
-	+	1	0
+	+	54	0
+	+	5	10
+	+	6	32
+	+	7	5
+	+	10	19
+	+	13	12
+	+	14	35
+	+	20	18
+	+	22	4
+	+	14	31
+	+	39	60
+	+	40	58
+	+	41	6
+	+	16	18
+	+	25	34
+	+	25	5
+	+	27	12
+	+	28	34
+	+	28	42
+	+	32	19
+	+	34	5
+	+	29	41
+	+	30	22
+	+	28	29
+	+	2	54
+	+	42	0
+	+	46	72
+	+	43	20
+	+	47	6
+	+	46	23
+	+	46	42
+	+	46	8
+	+	46	1
+	+	47	0
+	+	28	29
+	+	29	31
+	+	3	54
+	+	26	0
+	+	29	0
+	+	48	0
+	+	50	36
+	+	51	56
+	+	52	6
+
+> ~/rails_projects/sample_app/app/views/layouts/_header.html.erb
+	"	31	8
+	^	31	9
+	.	17	70
+	+	2	1
+	+	3	3
+	+	4	5
+	+	5	5
+	+	6	7
+	+	7	9
+	+	8	9
+	+	9	9
+	+	10	7
+	+	11	5
+	+	12	3
+	+	13	1
+	+	4	40
+	+	7	45
+	+	8	45
+	+	9	47
+	+	17	70
+
+> ~/rails_projects/sample_app/app/views/users/edit.html.erb
+	"	25	0
+	^	1	6
+	.	27	5
+	+	1	34
+	+	6	33
+	+	7	43
+	+	18	63
+	+	21	72
+	+	27	5
+
+> ~/rails_projects/sample_app/app/controllers/users_controller.rn
+	"	1	0
+
+> ~/rails_projects/sample_app/app/views/shared/_error_messages.html.erb
+	"	1	0
+	^	12	9
+	.	12	6
+	+	4	69
+	+	7	50
+	+	12	6
+
+> ~/rails_projects/sample_app/features/step_definitions/authentication_steps.rb
+	"	31	0
+	^	31	0
+	.	30	3
+	+	4	0
+	+	6	24
+	+	10	56
+	+	14	70
+	+	15	74
+	+	19	39
+	+	20	42
+	+	21	24
+	+	25	40
+	+	29	59
+	+	30	3
+
+> ~/rails_projects/sample_app/features/signing_in.feature
+	"	14	0
+	^	14	0
+	.	13	38
+	+	1	19
+	+	13	38
+
+> ~/rails_projects/sample_app/Gemfile
+	"	22	57
+	^	22	58
+	.	22	57
+	+	8	25
+	+	9	24
+	+	20	3
+	+	19	1
+	+	18	1
+	+	13	1
+	+	14	1
+	+	20	33
+	+	43	1
+	+	47	1
+	+	48	1
+	+	21	50
+	+	22	57
+
+> ~/rails_projects/sample_app/app/controllers/sessions_controller.rb
+	"	19	23
+	^	19	24
+	.	19	23
 	+	2	0
-	+	4	14
-	+	6	0
-	+	5	0
+	+	22	0
+	+	7	65
+	+	8	61
+	+	12	70
+	+	13	18
+	+	14	6
+	+	12	62
+	+	10	21
+	+	18	12
+	+	19	23
+
+> ~/rails_projects/sample_app/app/views/_header.html.erb
+	"	1	0
+
+> ~/rails_projects/sample_app/app/views/layouts/_header
+	"	1	0
+
+> ~/rails_projects/sample_app/app/views/static_pages/home.html.erb
+	"	6	0
+	^	13	41
+	.	10	40
+	+	2	1
+	+	4	1
+	+	5	3
+	+	6	3
+	+	7	3
+	+	8	1
+	+	10	40
+
+> ~/rails_projects/sample_app/app/views/static_pages/index.html.erb
+	"	1	0
+
+> ~/rails_projects/sample_app/app/assets/javascripts/application.js
+	"	17	0
+	^	17	18
+	.	15	20
+	+	15	20
+
+> ~/rails_projects/sample_app/app/views/layouts/_helper.html.erb
+	"	31	8
+	^	28	9
+	.	31	9
+	+	1	55
+	+	31	8
+	+	2	28
+	+	17	46
+	+	10	37
+	+	23	16
+	+	25	57
+	+	26	19
+	+	30	7
+	+	31	9
+
+> ~/rails_projects/sample_app/app/models/user.rb
+	"	25	0
+	^	25	3
+	.	25	3
+	+	2	2
+	+	5	33
+	+	2	58
+	+	5	51
+	+	6	70
+	+	5	18
+	+	6	71
+	+	9	0
+	+	8	56
+	+	2	44
+	+	9	2
+	+	7	18
+	+	9	21
+	+	10	44
+	+	3	37
+	+	23	65
+	+	24	6
+	+	25	3
+
+> ~/rails_projects/sample_app/spec/models/user_spec.rb
+	"	113	0
+	^	117	17
+	.	114	46
+	+	14	78
+	+	121	19
+	+	124	33
+	+	125	3
+	+	5	78
+	+	12	33
+	+	13	33
+	+	120	0
+	+	6	69
+	+	7	4
+	+	14	0
+	+	26	4
+	+	27	0
+	+	32	4
+	+	27	0
+	+	29	5
+	+	33	0
+	+	38	5
+	+	120	0
+	+	30	0
+	+	39	0
+	+	43	99
+	+	45	41
+	+	49	7
+	+	56	39
+	+	61	4
+	+	43	67
+	+	44	20
+	+	64	51
+	+	72	4
+	+	71	3
+	+	67	52
+	+	14	43
+	+	7	3
+	+	6	68
+	+	7	72
+	+	15	37
+	+	16	50
+	+	73	0
+	+	77	71
+	+	81	4
+	+	82	0
+	+	113	0
+	+	17	40
+	+	98	57
+	+	102	62
+	+	107	76
+	+	110	63
+	+	113	0
+	+	17	42
+	+	113	0
+	+	115	30
+	+	117	48
+	+	118	4
+	+	119	3
+	+	22	23
+	+	28	24
+	+	34	38
+	+	40	60
+	+	52	51
+	+	63	45
+	+	74	27
+	+	83	57
+	+	89	54
+	+	95	16
+	+	100	29
+	+	105	35
+	+	114	46
+
+> ~/rails_projects/sample_app/db/migrate/20140627063940_add_remember_token_to_users.rb
+	"	4	0
+	^	4	38
+	.	4	37
+	+	3	47
+	+	4	37
+
+> ~/rails_projects/sample_app/app/controllers/application_controller.rb
+	"	5	23
+	^	5	24
+	.	5	23
+	+	5	23
+
+> ~/rails_projects/sample_app/app/views/sessions/new.html.erb
+	"	19	0
+	^	16	0
+	.	6	25
+	+	1	32
+	+	2	0
+	+	20	0
+	+	6	57
+	+	14	67
+	+	19	5
+	+	14	26
+	+	6	25
+
+> ~/rails_projects/sample_app/config/routes.rb
+	"	75	0
+	^	14	0
+	.	13	61
+	+	9	1
+	+	18	1
+	+	2	0
+	+	9	50
+	+	9	54
+	+	17	56
+	+	9	46
+	+	9	46
+	+	19	0
+	+	1	11
+	+	9	0
+	+	2	0
+	+	8	26
+	+	21	58
+	+	9	18
+	+	22	0
+	+	4	2
+	+	2	17
+	+	4	26
+	+	10	0
+	+	9	0
+	+	9	0
+	+	4	0
+	+	7	0
+	+	2	0
+	+	5	54
+	+	11	58
+	+	13	61
+
+> ~/rails_projects/sample_app/spec/requests/user_pages_spec.rb]
+	"	1	0
+
+> ~/rails_projects/sample_app/app/controllers/sessions_controller.rn
+	"	1	0
+
+> ~/rails_projects/sample_app/app/views/users/new.html.erb
+	"	3	0
+	^	19	22
+	.	19	19
+	+	1	31
+	+	2	10
+	+	3	0
+	+	4	17
+	+	5	29
+	+	6	33
+	+	18	59
+	+	21	77
+	+	23	7
+	+	24	5
+	+	25	0
+	+	7	42
+	+	16	19
+	+	19	19
+
+> ~/rails_projects/sample_app/app/views/signin.html.erb
+	"	1	0
+
+> spec/models/user_spec.rb
+	"	12	0
+	^	12	0
+	.	11	3
+	+	1	21
+	+	15	0
+	+	16	78
+	+	20	33
+	+	21	34
+	+	22	2
+	+	11	3
+
+> ~/rails_projects/sample_app/app/views/layouts/application.html.erb
+	"	15	28
+	^	15	29
+	.	15	25
+	+	3	1
+	+	4	1
+	+	5	1
+	+	6	26
+	+	7	1
+	+	8	1
+	+	9	3
+	+	10	1
+	+	11	1
+	+	12	3
+	+	12	37
+	+	14	5
+	+	20	5
+	+	22	3
+	+	23	1
+	+	21	51
+	+	12	34
+	+	12	33
+	+	14	38
+	+	17	62
+	+	18	14
+	+	17	68
+	+	15	25

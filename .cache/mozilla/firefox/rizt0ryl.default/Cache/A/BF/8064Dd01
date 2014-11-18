@@ -5,13 +5,7 @@
 //##    v1.0                                           ##
 //#######################################################
 (function (rakuten) {
- var lastUpdatedDate = '20140423';
-
- if ( rakuten.pointbackId.length == 0 ) {
-    document.write('<scr' + 'ipt src="//image.ias.rakuten.co.jp/www/adnw/rasi.js">');
-    document.write('</scr' + 'ipt>\n');
- }
-
+ var lastUpdatedDate = '20141028';
  rakuten.mw_api = 'on';
  rakuten.prefix = 'api_';
  rakuten.suffix = '';
@@ -32,12 +26,19 @@
  var isAdvanced = false;
  var is_corp = ( existMediaId() || rakuten.pointbackId.length > 0 && rakuten.pointbackId.substring(10, 11) == 1 ) ? true : false;
  var vsaleFlg = false;
+ var newMWRateCorp = 100;
+ var newMWRateIndv = 100;
+ var newMWRateOK = 100;
+ var timestamp = [new Date().getTime()];
+ var optout = 'off';
+ var u_id = (("000000" + Math.floor(Math.random() * 10000000)).slice(-7)) + (new Date().getTime());
+ var speed_iframe_id = 'rakuten_mw_iframe' + u_id;
+ var releaseVersion = '18';
 
  if(typeof rakuten.preview != "undefined" && "true" == rakuten.preview){
 	 previewTag = '&preview=true';
 	 rakutenPreviewTag = '&rakuten_preview=true';
  }
-
 /**
  * setMeasurementId.js
  */
@@ -76,6 +77,7 @@ var RandomMparaGetter  = ( function () {
     };
     return RandomMparaGetter;
 })();
+
 var setLoadingImage  = ( function () {
     function setLoadingImage () {};	
 
@@ -496,7 +498,11 @@ var setLoadingImage  = ( function () {
 
 new setLoadingImage().forVsale(rakuten, vsaleFlg);
  if(rakuten.size == "320x48" || rakuten.size == "320x50" || rakuten.size == "320x100" || rakuten.size == "160x900" || rakuten.size == "490x290" || rakuten.size == "240x210" || rakuten.size == "120x600" || rakuten.size == "520x160" || rakuten.size == "298x170" || rakuten.size == "160x1200" || rakuten.size == "294x355" || rakuten.size == "236x600" || rakuten.size == "236x850" || rakuten.size == "690x200" || rakuten.size == "560x180" || rakuten.size == "300x160" || rakuten.size == "300x500" || rakuten.size == "300x375" || rakuten.size == "200x1000") {
-		createPCIframe('//static.affiliate.rakuten.co.jp/widget/html/pc_pcview_all.html');
+ 		if(isNewMW()) {
+ 			createPCIframeSpeed();
+ 		} else {
+ 			createPCIframe('//static.affiliate.rakuten.co.jp/widget/html/pc_pcview_all.html');
+ 		}
  } else if (checkSmartPhone()) {
 	 iframe_width = swf_width + 2;
 	 iframe_height = swf_height + 2;
@@ -628,7 +634,11 @@ new setLoadingImage().forVsale(rakuten, vsaleFlg);
  }
  
  else {
-		createPCIframe('//static.affiliate.rakuten.co.jp/widget/html/pc_pcview_all.html');
+		if(isNewMW()) {
+ 			createPCIframeSpeed();
+ 		} else {
+ 			createPCIframe('//static.affiliate.rakuten.co.jp/widget/html/pc_pcview_all.html');
+ 		}
  }
 
  rakuten.pointbackId='';
@@ -752,12 +762,26 @@ new setLoadingImage().forVsale(rakuten, vsaleFlg);
 			 );
  }
 
+ function getNewRate() {
+	if(pointbackId == '_RTmtlk20010821') {
+		return newMWRateOK;
+	} else {
+		return is_corp ? newMWRateCorp : newMWRateIndv;
+	}
+ }
 
  function createPCIframe (url) {
  var sizeArray = rakuten.size.split("x");
  var width = sizeArray[0];
  var height = sizeArray[1];
  var isIE = checkIE() === 'IE' ? true : false;
+ var rate = getNewRate();
+ if(Math.random() * 100 < (rate <= 50 ? 100 * rate / (100 - rate) : 100)){
+	 new setMeasurementId().set(rakuten, 'ver', 'old_' + releaseVersion);
+ } else {
+	rakuten.tLogFrequency = 0;
+ }
+ 
 	 document.write('<iframe width="'    + escapeHTML(width)  + '"'
 			 + ' height="'       + escapeHTML(height) + '"'
 			 + ' frameBorder="0"'
@@ -815,6 +839,9 @@ new setLoadingImage().forVsale(rakuten, vsaleFlg);
 			 + '&rakuten_pointSiteId=' + escapeHTML(rakuten.pointSiteId)
 			 + '&rakuten_isAdvanced=' + escapeHTML(isAdvanced)
 			 + '&rakuten_isIE=' + escapeHTML(isIE)
+			 + '&rakuten_itemAmount=' + escapeHTML(rakuten.itemAmount)
+			 + '&rakuten_tLogFrequency=' + escapeHTML(rakuten.tLogFrequency)
+			 + '&rakuten_timestamp=' + escapeHTML(timestamp[0])	
 			 + '&rakuten_pUrl=' + escapeHTML(encodeURIComponent(document.URL))
 			 + '&rakuten_deviceType=' + escapeHTML(getDeviceType())
 			 + '&rakuten_version='			+ escapeHTML(lastUpdatedDate)
@@ -824,7 +851,85 @@ new setLoadingImage().forVsale(rakuten, vsaleFlg);
 			 );
  }
 
- function checkSmartPhone () {
+ function createPCIframeSpeed() {
+	 var sizeArray = rakuten.size.split("x");
+	 var width = sizeArray[0];
+	 var height = sizeArray[1];
+	 var isIE = checkIE() === 'IE' ? true : false;
+	 new setMeasurementId().set(rakuten, 'ver', 'new_' + releaseVersion);
+
+	 var param =  '?rakuten_design=' + escapeHTML(rakuten.design)
+	 		 + '&rakuten_affiliateId='  + escapeHTML(rakuten.affiliateId)
+			 + '&rakuten_items='        + escapeHTML(rakuten.items)
+			 + '&rakuten_genreId='      + escapeHTML(rakuten.genreId)
+			 + '&rakuten_size='         + escapeHTML(rakuten.size)
+			 + '&rakuten_pattern='      + escapeHTML(pattern)
+			 + '&rakuten_target='       + escapeHTML(rakuten.target)
+			 + '&rakuten_theme='        + escapeHTML(rakuten.theme)
+			 + '&rakuten_border='       + escapeHTML(rakuten.border)
+			 + '&rakuten_auto_mode='    + escapeHTML(rakuten.auto_mode)
+			 + '&rakuten_genre_title='  + escapeHTML(rakuten.genre_title)
+			 + '&rakuten_pointbackId='  + escapeHTML(pointbackId)
+			 + '&rakuten_no_link='      + escapeHTML(rakuten.no_link)
+			 + '&rakuten_no_afl='       + escapeHTML(rakuten.no_afl)
+			 + '&rakuten_no_logo='      + escapeHTML(rakuten.no_logo)
+			 + '&rakuten_undispGenre='  + escapeHTML(rakuten.undispGenre)
+			 + '&rakuten_wmode='        + escapeHTML(rakuten.wmode)
+			 + '&rakuten_noScrollButton='	+ escapeHTML(rakuten.noScrollButton)
+			 + '&rakuten_bgColor='      + escapeHTML(rakuten.bgColor)
+			 + '&rakuten_txtColor='     + escapeHTML(rakuten.txtColor)
+			 + '&rakuten_captionColor=' + escapeHTML(rakuten.captionColor)
+			 + '&rakuten_moverColor='   + escapeHTML(rakuten.moverColor)
+			 + '&rakuten_recommend='+ escapeHTML(rakuten.recommend)
+			 + '&rakuten_service_flag='	+ escapeHTML(rakuten.service_flag)
+			 + '&rakuten_adNetworkId='  + escapeHTML(rakuten.adNetworkId)
+			 + '&rakuten_adNetworkUrl=' + escapeHTML(rakuten.adNetworkUrl)
+			 + '&rakuten_searchKeyword='+ escapeHTML(rakuten.searchKeyword)
+			 + '&rakuten_disableLogo='  + escapeHTML(rakuten.disableLogo)
+			 + '&rakuten_moverItembgColor=' + escapeHTML(rakuten.moverItembgColor)
+			 + '&rakuten_moverCaptionColor='+ escapeHTML(rakuten.moverCaptionColor)
+			 + '&rakuten_slideSpeed='		+ escapeHTML(rakuten.slideSpeed)
+			 + '&rakuten_moreInfoColor='+ escapeHTML(rakuten.moreInfoColor)
+			 + '&rakuten_subTxtColor='	+ escapeHTML(rakuten.subTxtColor)
+			 + '&rakuten_loadingImage=' + escapeHTML(rakuten.loadingImage)
+			 + '&rakuten_imageDisplay=' + escapeHTML(rakuten.imageDisplay)
+			 + '&rakuten_txtDisplay='		+ escapeHTML(rakuten.txtDisplay)
+			 + '&rakuten_captionDisplay='		+ escapeHTML(rakuten.captionDisplay)
+			 + '&rakuten_moreInfoDisplay='	+ escapeHTML(rakuten.moreInfoDisplay)
+			 + '&rakuten_txtRow='				+ escapeHTML(rakuten.txtRow)
+			 + '&rakuten_captionRow='		+ escapeHTML(rakuten.captionRow)
+			 + '&rakuten_auto_interval='+ escapeHTML(rakuten.auto_interval)
+			 + '&rakuten_imageSize='		+ escapeHTML(rakuten.imageSize)
+			 + '&rakuten_slideCell='		+ escapeHTML(rakuten.slideCell)
+			 + '&rakuten_slideDirection='		+ escapeHTML(rakuten.slideDirection)
+			 + '&rakuten_order='				+ escapeHTML(rakuten.order)
+			 + '&rakuten_loadingTimeout='		+ escapeHTML(rakuten.loadingTimeout)
+			 + '&rakuten_mediaId=' + escapeHTML(rakuten.mediaId)
+			 + '&rakuten_measurementId=' + escapeHTML(rakuten.measurementId)
+			 + '&rakuten_pointSiteId=' + escapeHTML(rakuten.pointSiteId)
+			 + '&rakuten_isAdvanced=' + escapeHTML(isAdvanced)
+			 + '&rakuten_isIE=' + escapeHTML(isIE)
+			 + '&rakuten_deviceType=' + escapeHTML(getDeviceType())
+			 + '&rakuten_itemAmount=' + escapeHTML(rakuten.itemAmount)
+			 + '&rakuten_tLogFrequency=' + escapeHTML(rakuten.tLogFrequency)
+			 + '&rakuten_timestamp=' + escapeHTML(timestamp[0])
+			 + '&rakuten_optout='			+ escapeHTML(encodeURIComponent(optout))
+			 + '&rakuten_pUrl=' + escapeHTML(encodeURIComponent(document.URL))
+			 + '&rakuten_version='			+ escapeHTML(lastUpdatedDate)
+			 + escapeHTML(rakutenPreviewTag);
+
+	 document.write('<iframe width="'    + escapeHTML(width)  + '"'
+			 + ' height="'       + escapeHTML(height) + '"'
+			 + ' frameBorder="0"'
+			 + ' scrolling="no"'
+			 + ' allowtransparency="true"'
+			 + ' id="' + speed_iframe_id  + '"'
+			 + ' src="//static.affiliate.rakuten.co.jp/widget/html/mw_view.html' + param + '"'
+			 + '>'
+			 + '</iframe>');
+ }
+
+ function checkSmartPhone() {
 	 var isSmartPhone = false;
 	 var agent = navigator.userAgent;
 	 if (agent.indexOf('iPhone') != -1) {
@@ -945,6 +1050,26 @@ new setLoadingImage().forVsale(rakuten, vsaleFlg);
          return false;
  }
 
+ function isNewMW() {
+	if("https:" == document.location.protocol)return false;
+	if(rakuten.switchFlag === 'on')return true;
+	if(rakuten.switchFlag === 'off')return false;
+	
+	var rate = Math.random()*100 < getNewRate();
+
+ 	return rate;
+ }
+
+ function addOnLoadListener(obj, callback) {
+	if(obj.addEventListener) {
+		obj.addEventListener('load', callback, false);
+	} else {
+		obj.attachEvent('onload', callback);
+	}
+ }
+
+
+
  //flash player version check
  /*
 		function hasFlashPlayer() {
@@ -1023,6 +1148,9 @@ new setLoadingImage().forVsale(rakuten, vsaleFlg);
 ,mediaId:        typeof rakuten_mediaId        != 'undefined' ? rakuten_mediaId: ''
 ,pointSiteId:    typeof rakuten_pointSiteId    != 'undefined' ? rakuten_pointSiteId: ''
 ,measurementId:  typeof rakuten_measurementId  != 'undefined' ? rakuten_measurementId: ''
+,itemAmount:  typeof rakuten_itemAmount  != 'undefined' ? rakuten_itemAmount: '20'
+,switchFlag:  typeof rakuten_switchFlag != 'undefined' ? rakuten_switchFlag: ''
+,tLogFrequency:  typeof rakuten_tLogFrequency  != 'undefined' ? rakuten_tLogFrequency: '10'
 });
 rakuten_adNetworkId="";
 rakuten_mediaId="";
@@ -1036,4 +1164,5 @@ rakuten_noScrollButton="";
 rakuten_pattern="";
 rakuten_slideCell="";
 rakuten_txtDisplay="";
-
+rakuten_itemAmount="";
+rakuten_txtColor="";

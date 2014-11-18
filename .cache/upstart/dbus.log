@@ -1,128 +1,17 @@
-Activating service name='com.canonical.Unity.Webapps.Service'
-Successfully activated service 'com.canonical.Unity.Webapps.Service'
-** Message: Investigating webapp: unity-webapps-common 
+
+** (process:2754): WARNING **: send_infos_cb: パス /org/gtk/vfs/client/enumerator/2 のオブジェクト上にインターフェース 'org.gtk.vfs.Enumerator' がありません (g-dbus-error-quark, 19)
 
 
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-qml 
+** (process:2754): WARNING **: send_infos_cb: パス /org/gtk/vfs/client/enumerator/2 のオブジェクト上にインターフェース 'org.gtk.vfs.Enumerator' がありません (g-dbus-error-quark, 19)
 
 
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-qml-doc 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-qml-examples 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-service 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-amazoncloudreader 
-
-** Message: Investigating webapp: unity-webapps-bbcnews 
-
-** Message: Investigating webapp: unity-webapps-cnn-news 
-
-** Message: Investigating webapp: unity-webapps-deezer 
-
-** Message: Investigating webapp: unity-webapps-dev 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-deviantart 
-
-** Message: Investigating webapp: unity-webapps-facebookmessenger 
-
-** Message: Investigating webapp: unity-webapps-gmail 
-
-** Message: Investigating webapp: unity-webapps-googlecalendar 
-
-** Message: Investigating webapp: unity-webapps-googledocs 
-
-** Message: Investigating webapp: unity-webapps-googlenews 
-
-** Message: Investigating webapp: unity-webapps-googleplusgames 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-grooveshark 
-
-** Message: Investigating webapp: unity-webapps-hulu-player 
-
-** Message: Investigating webapp: unity-webapps-lastfm-radio 
-
-** Message: Investigating webapp: unity-webapps-launchpad 
-
-** Message: Investigating webapp: unity-webapps-librefm 
-
-** Message: Investigating webapp: unity-webapps-linkedin 
-
-** Message: Investigating webapp: unity-webapps-mail-ru 
-
-** Message: Investigating webapp: unity-webapps-newsblur 
-
-** Message: Investigating webapp: unity-webapps-pandora 
-
-** Message: Investigating webapp: unity-webapps-pandora-com 
-
-** Message: Investigating webapp: unity-webapps-qml-autopilot 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-qq-mail 
-
-** Message: Investigating webapp: unity-webapps-reddit 
-
-** Message: Investigating webapp: unity-webapps-tumblr 
-
-** Message: Investigating webapp: unity-webapps-twitter 
-
-** Message: Investigating webapp: unity-webapps-vkcom 
-
-** Message: Investigating webapp: unity-webapps-wordpress 
-
-** Message: Investigating webapp: unity-webapps-wordpress-com 
-
-** Message: Investigating webapp: unity-webapps-yahoonews 
-
-** Message: Investigating webapp: unity-webapps-yandex-music 
-
-** Message: Investigating webapp: unity-webapps-yandexmail 
-
-** Message: Investigating webapp: unity-webapps-yandexmusic 
-
-** Message: Investigating webapp: unity-webapps-yandexnews 
-
-** Message: Investigating webapp: unity-webapps-qml 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-qml-examples 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-service 
-
-
-** (process:2503): WARNING **: Found newline before all of metadata, skipping app
-** Message: Investigating webapp: unity-webapps-googleplus 
-
-** Message: Investigating webapp: unity-webapps-livemail 
-
-** Message: Investigating webapp: unity-webapps-yahoomail 
-
-** Message: Investigating webapp: unity-webapps-youtube 
+** (process:2754): WARNING **: send_done_cb: パス /org/gtk/vfs/client/enumerator/2 のオブジェクト上にインターフェース 'org.gtk.vfs.Enumerator' がありません (g-dbus-error-quark, 19)
 
 Activating service name='com.ubuntu.OneConf'
 Successfully activated service 'com.ubuntu.OneConf'
 WARNING:oneconf.hosts:Error in loading other_hosts file: [Errno 2] No such file or directory: '/home/nakajima/.cache/oneconf/05ef341ad3564f5ac110e4a1533a529d/other_hosts'
 Activating service name='com.ubuntu.sso'
 Successfully activated service 'com.ubuntu.sso'
-
-** (zeitgeist-fts:2319): WARNING **: Unable to get info on application://nautilus-autostart.desktop
 Activating service name='com.ubuntu.sso'
 Successfully activated service 'com.ubuntu.sso'
 module-cache-reaper-Message: Reaping abandoned data directories

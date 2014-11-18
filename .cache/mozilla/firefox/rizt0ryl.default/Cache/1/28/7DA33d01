@@ -1,4 +1,4 @@
-﻿// //////////////////////////////////////////
+// //////////////////////////////////////////
 // //////////////////////////////////////////
 // ==========================================
 // ==========================================
@@ -36,12 +36,11 @@ $(function(){
 	mainVidual = new mainVidualSet();
 	
 	mainVidual.init(
-	"http://www.kansai-u.ac.jp/ku130/index.html",
-	"http://www.kansai-u.ac.jp/extension/index.html",
 	"http://www.kansai-u.ac.jp/global/guide/research/",
-	"http://www.kansai-u.ac.jp/figure/",
-	"http://www.kansai-u.ac.jp/Fc_hw/",
-	"http://www.kansai-u.ac.jp/ls/revision/index.html"
+	"http://www.kansai-u.ac.jp/pdf/ku_triplei.pdf",
+	"http://www.nyusi.kansai-u.ac.jp/candai/",
+	"http://www.kansai-u.ac.jp/gov/doctoralcourse/index.html",
+	"http://www.kansai-u.ac.jp/extension/index.html"
 	);
 	
 	// ------------------------------------------

@@ -1,15 +1,14 @@
 run_im で起動される ibus 用のスクリプト。
-run_im で起動される auto 用のスクリプト。
-run_im で起動される default 用のスクリプト。
 init: unity-settings-daemon main プロセスが終了しました、再生成しています
 init: Disconnected from notified D-Bus bus
-init: upstart-dbus-session-bridge main プロセス (2134) はステータス 1 で終了しました
-init: indicator-bluetooth プロセス main (2229) はシグナル TERM でkillされました
-init: indicator-power プロセス main (2231) はシグナル TERM でkillされました
-init: indicator-datetime プロセス main (2238) はシグナル TERM でkillされました
-init: indicator-printers プロセス main (2246) はシグナル TERM でkillされました
-init: indicator-session プロセス main (2248) はシグナル TERM でkillされました
-init: indicator-application プロセス main (2323) はシグナル TERM でkillされました
-init: unity-settings-daemon プロセス main (3021) はシグナル TERM でkillされました
-init: gnome-session (Unity) プロセス main (2158) はシグナル TERM でkillされました
-init: unity-panel-service main プロセス (2162) はステータス 1 で終了しました
+init: indicator-bluetooth プロセス main (2403) はシグナル TERM でkillされました
+init: indicator-power プロセス main (2405) はシグナル TERM でkillされました
+init: indicator-datetime プロセス main (2410) はシグナル TERM でkillされました
+init: indicator-printers プロセス main (2416) はシグナル TERM でkillされました
+init: indicator-session プロセス main (2418) はシグナル TERM でkillされました
+init: indicator-application プロセス main (2429) はシグナル TERM でkillされました
+init: hud プロセス main (2331) はシグナル TERM でkillされました
+init: indicator-sound プロセス main (2412) はシグナル TERM でkillされました
+init: unity-settings-daemon プロセス main (5656) はシグナル TERM でkillされました
+init: unity-panel-service main プロセス (2338) はステータス 1 で終了しました
+init: gnome-session (Unity) main プロセス (2335) はステータス 1 で終了しました

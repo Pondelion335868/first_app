@@ -1,0 +1,45 @@
+<h1>Listing rs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Genre</th>
+      <th>Link</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Journal</th>
+      <th>Publish</th>
+      <th>Published</th>
+      <th>Value</th>
+      <th>Added</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rs.each do |r| %>
+      <tr>
+        <td><%= r.group %></td>
+        <td><%= r.genre %></td>
+        <td><%= r.link %></td>
+        <td><%= r.title %></td>
+        <td><%= r.author %></td>
+        <td><%= r.journal %></td>
+        <td><%= r.publish %></td>
+        <td><%= r.published %></td>
+        <td><%= r.value %></td>
+        <td><%= r.added %></td>
+        <td><%= r.name %></td>
+        <td><%= link_to 'Show', r %></td>
+        <td><%= link_to 'Edit', edit_r_path(r) %></td>
+        <td><%= link_to 'Destroy', r, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New R', new_r_path %>

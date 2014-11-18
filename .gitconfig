@@ -1,7 +1,7 @@
 [user]
-	name = nakajima
+	name = Nakajima
 	email = na_masabon@yahoo.co.jp
 [alias]
 	co = checkout
 [core]
-	editor = gedit -w
+	editor = vim -f

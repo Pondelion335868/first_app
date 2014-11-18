@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  group: MyString
+  genre: MyString
+  link: false
+  title: MyString
+  author: MyString
+  journal: MyString
+  publish: MyString
+  published: 2014-10-03
+  value: 1.5
+  added: 2014-10-03
+  name: MyString
+
+two:
+  group: MyString
+  genre: MyString
+  link: false
+  title: MyString
+  author: MyString
+  journal: MyString
+  publish: MyString
+  published: 2014-10-03
+  value: 1.5
+  added: 2014-10-03
+  name: MyString
